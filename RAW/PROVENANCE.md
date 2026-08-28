@@ -14,7 +14,7 @@ since eo.wikisource page wikitext is transclusion stubs only.
 - `pg-21194.txt` — Tri Noveloj — Nathaniel Hawthorne — sha256:369061e0e87f — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/21194
 - `pg-22592.txt` — Ifigenio en Taŭrido — Johann Wolfgang von Goethe — sha256:924d1c126390 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/22592
 - `pg-23093.txt` — Princo Vanc' — Eleanor Putnam — sha256:9ed422c6886c — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23093
-- `pg-23586.txt` — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — sha256:7196ed5c4818 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23586
+- `pg-23586.txt` — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — sha256:7196ed5c4818 — Project Gutenberg (**COPYRIGHTED**, not public domain: "kopirajto (c) ĉe la aŭtoro kaj la eldonejo", Progresema Esperanto-Forumo 1999; PG hosts it with permission, which does not extend to redistribution here — see esp-* bead) — https://www.gutenberg.org/ebooks/23586
 - `pg-23670.txt` — Nuntempaj Rakontoj — G. P. Stamatov — sha256:663556da01d1 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23670
 - `pg-24145.txt` — Doktoro Jekyll kaj Sinjoro Hyde — Robert Louis Stevenson — sha256:1fc80715c3cd — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24145
 - `pg-24292.txt` — La Montarino: la poemaro pri Veslemey — Arne Garborg — sha256:3d9c57933949 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24292
@@ -98,3 +98,38 @@ since eo.wikisource page wikitext is transclusion stubs only.
 - `wsrc-Originala_Verkaro_I_10.txt` — Originala Verkaro I 10 — sha256:6ea49a952031 — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_10
 - `wsrc-Originala_Verkaro_I_11.txt` — Originala Verkaro I 11 — sha256:a21c8aac7b8a — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_11
 - `wsrc-Originala_Verkaro_I_12.txt` — Originala Verkaro I 12 — sha256:fbae3726bf1a — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_12
+
+## Batch 2 — Project Gutenberg, curated
+
+Selected by category (see tools/fetch_raw_gutenberg.py for the criteria); `grammar` sources are largely English prose about Esperanto and should be filtered out of lemma mining.
+
+- `pg-8224.txt` — Fundamenta Krestomatio — Zamenhof, L. L. (Ludwik Lejzer), 1859-1917 — canon — sha256:24e93978f35b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/8224
+- `pg-11307.txt` — El la Biblio Elektitaj ĉapitroj de la Psalmaro, Sentencoj de Salomono kaj Predikanto — Zamenhof, L. L. (Ludwik Lejzer), 1859-1917 — canon — sha256:6b81af390acb — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/11307
+- `pg-7787.txt` — A Complete Grammar of Esperanto — Reed, Ivy Kellerman, 1877-1968 — grammar — sha256:6de5ae16505c — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/7787
+- `pg-8177.txt` — The Esperanto Teacher: A Simple Course for Non-Grammarians — Fryer, Helen — grammar — sha256:1e453188da58 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/8177
+- `pg-47855.txt` — Esperanta sintakso Laŭ verkoj de S-ro D-ro Zamenhof kaj aliaj aŭtoroj — Fruictier, Paul, 1879-1947 — grammar — sha256:e8969f181437 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/47855
+- `pg-24525.txt` — Karlo Facila Legolibro por la Lernado de Esperanto — Privat, Edmond, 1889-1962 — grammar — sha256:114838e6cbec — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/24525
+- `pg-74344.txt` — Perdita kaj retrovita : originala rakonto — Boirac, Emile, 1851-1917 — originala — sha256:b67699ed4f68 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/74344
+- `pg-55954.txt` — Stranga heredaĵo: Romano originale verkita — Luyken, Heinrich August, 1864-1947 — originala — sha256:ac769c42ebbc — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/55954
+- `pg-64579.txt` — Idoj de Orfeo — Bulthuis, H. J. (Hindrik Jan), 1865-1945 — originala — sha256:d8b15ebe98eb — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/64579
+- `pg-63064.txt` — Salome: Dramo En Unu Akto — Wilde, Oscar, 1854-1900 — originala — sha256:06f44947e2f0 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/63064
+- `pg-69123.txt` — Saltego trans jarmiloj — Forge, Jean, 1903-1980 — originala — sha256:2f19bdf33df6 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/69123
+- `pg-42774.txt` — Mondo kaj koro Poemoj de K. de Kalocsay — Kalocsay, K. (Kálmán), 1891-1976 — originala — sha256:dc73c9d7ff24 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/42774
+- `pg-52111.txt` — Ama Stelaro — Baena, Nuno, 1865-1922 — originala — sha256:cf3bc08845ec — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52111
+- `pg-62118.txt` — Legendoj — Niemojewski, Andrzej, 1864-1921 — originala — sha256:e17276971e92 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/62118
+- `pg-48896.txt` — "Verdaj fajreroj": Kolekto da versaĵoj — Frenkel, Roman — originala — sha256:fff83cce0cb7 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/48896
+- `pg-32035.txt` — Laŭroj Kolekto de la originalaj verkoj premiitaj en la unua literatura konkurso de "La Revuo" — Various — originala — sha256:eb1f86841412 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/32035
+- `pg-47259.txt` — La Vendreda Klubo 11 diversaj originalaj artikoloj verkitaj de la "Vendredoklubanoj" en Leipzig — Dietterle, Johannes, 1866-1943 — originala — sha256:0cf6327ddbea — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/47259
+- `pg-76273.txt` — Por kaj kontraŭ Esperanto : Dialogo — Vallienne, Henri, 1854-1908 — originala — sha256:5ad96340a96b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/76273
+- `pg-61581.txt` — La kialo de la vivo — Anonymous — originala — sha256:541ef4aaa37f — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/61581
+- `pg-61579.txt` — Al mia fratineto: Letero pri la seksvivo — Ortt, Felix, 1866-1959 — originala — sha256:67421043df13 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/61579
+- `pg-63105.txt` — Tri Noveloj — Pushkin, Aleksandr Sergeevich, 1799-1837 — originala — sha256:7dc46be6f663 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/63105
+- `pg-26359.txt` — Vivo de Zamenhof — Privat, Edmond, 1889-1962 — movado — sha256:c4a10e26d7ca — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/26359
+- `pg-26959.txt` — La Lastaj Tagoj de Dro L. L. Zamenhof kaj la Funebra Ceremonio — Oberrotman, Adolf, 1893- — movado — sha256:907216ed376e — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/26959
+- `pg-57184.txt` — Dokumentoj de Esperanto Informilo pri la historio kaj organizo de la Esperanta movado — Möbusz, A. (Albin), 1871-1934 — movado — sha256:0a2a815cc437 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/57184
+- `pg-55574.txt` — Raporto pri la oka kongreso de esperantistoj (Krakovo 1912) — Katryn, Ned — movado — sha256:8b12ddf178a3 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/55574
+- `pg-42028.txt` — En Rusujo per Esperanto — Rivier, A. — movado — sha256:d55d0e6bf95b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/42028
+- `pg-25311.txt` — El la vivo de esperantistoj — Stankiević, V. — movado — sha256:3a8c7323f700 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/25311
+- `pg-52062.txt` — Literatura Mondo, numero 1, 1922 Oktobro — Soros, Tivadar, 1894-1968 — movado — sha256:0c6b41a46c47 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52062
+- `pg-52063.txt` — Literatura Mondo, numero 2, 1922 Novembro — Soros, Tivadar, 1894-1968 — movado — sha256:16f843d84102 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52063
+- `pg-52064.txt` — Literatura Mondo, numero 3, 1922 Decembro — Soros, Tivadar, 1894-1968 — movado — sha256:c3ad412d8e95 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52064
