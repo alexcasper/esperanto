@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eo-EO">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="eo" />
+        <meta name="description" content="UEA.ORG: retejo de Universala Esperanto-Asocio" />
+        <meta name="keywords" content="UEA uea esperanto Universala Esperanto-Asocio esperantisto Centra Oficejo Jarlibro Libroservo Kongreso Revuo"/>
+       <link rel="icon" type="image/png" href="/dat/ikoneto.png" /> 
+       <link rel="apple-touch-icon" href="/dat/ikoneto-ap.png" /> 
+
+	<title>Universala Esperanto-Asocio</title>
+		 <!-- JavaSkripto -->
+ <!--   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
+        
+        <script src="/skriptoj/jquery-3.1.0.min.js" ></script>
+        <script src="/skriptoj/movilo2.js" defer></script>
+          </head>
+<body id="korpo">
+	<div id="enhavo">
+		    <div id="kapo">  
+			<div id="titola_kapo"><a href="/"><img src="/bildoj/emblemo_n.png"  alt="Universala Esperanto-Asocio" border="1"/></a>    
+			<div class="ensaluta desupre">  <div class="portlet" id="yw0">
+<div class="portlet-content">
+  <a href="?ensalutu" class='ligilo'>ensalutu</a>&nbsp;&#8226;&nbsp;<a href="?registru" class='ligilo'>registru vin</a>
+  </div>
+</div>   </div> 
+			</div>
+		    </div>
+
+			<div class="portlet" id="yw1">
+<div class="portlet-content">
+
+    <div class="navigado">    
+   <ul class="ero" ><li><a href="/alighoj" class="linio ">Aliĝoj</a></li><li><a href="/kongresoj" class="linio ">Kongresoj</a></li><li><a href="/reto" class="linio ">Delegita reto</a></li><li><a href="/revuoj" class="linio ">Revuoj</a></li><li><a href="/katalogo" class="linio ">Katalogo</a></li><li><a href="/via" class="noto ">Via spaco</a></li></ul><div class="dekstra" style="padding-right:40px"><a href="/alighoj/donacoj" class="ligilo">Subtenu UEA!</a></div><ul class="tabo" id="konstanta"><li id="info" class="elektita"><a href="/info" accesskey="1"><img src="/bildoj/flagoj/eo.png" border="0" width="16" height="11"/> UEA?</a></li>
+<li id="aktuale"><a href="/aktuale" accesskey="2">Aktuale</a></li>
+<li id="asocio"><a href="/asocio" accesskey="3">Asocio</a></li>
+<li id="strategio"><a href="/strategio" accesskey="4">Strategio</a></li>
+<li id="landoj"><a href="/landoj" accesskey="5">Landoj</a></li>
+<li id="fakoj"><a href="/fakoj" accesskey="6">Fakoj</a></li>
+<li id="tejo"><a href="/tejo" accesskey="7">TEJO</a></li>
+<li id="teko"><a href="/teko" accesskey="8">Teko</a></li>
+</ul>
+<div id='mch' class='menu_elektilo'><div id="k_landoj" class="nevidebla k"><a href="/landoj" class="ligilo">Landoj</a></div>
+<div id="k_fakoj" class="nevidebla k"><a href="/fakoj" class="ligilo">Fakoj</a></div>
+<div id="k_tejo" class="nevidebla k"><a href="/tejo" class="ligilo">TEJO</a></div>
+<div id="k_teko" class="nevidebla k"><a href="/teko" class="ligilo">Teko</a></div>
+</div>
+</div>
+</div>
+</div>			
+			<!-- 
+             	<div id="titolo"><a href="/"><img src="/bildoj/emblemo.png" width="327px" height="119px" alt="Universala Esperanto-Asocio" border="0"/></a></div> 	
+             	-->
+<!-- chefa parto -->
+<div id="averto">Pardonpeton!<br /><br />La vera aspekto de la retejo ne povas por esti korekte rigardata per via retumilo. </div>
+
+        <div id="chefa_bloko"><a name="supren"></a>
+
+ 
+    <div id="blokaro">
+            <div class="bloko">	
+            <div class="portlet" id="yw2">
+<div class="portlet-content">
+<ul class="menuo info">
+<a href="/info/eo/kio_estas_uea"><li>Kio estas UEA?</li></a>
+<a href="/info/eo/vialande"><li>Vialande</li></a>
+<a href="/info/eo/ghisdate_pri_esperanto"><li>Ĝisdate pri Esperanto</li></a>
+<a href="/info/eo/ligiloj"><li>Esperanto rete</li></a>
+<a href="/info/eo/membreco"><li>Aliĝu!</li></a>
+</ul>
+<div class="lingvo_elektilo"><div class='ovalo'>Elektebla lingvo: </div><a href="/info/en/kio_estas_uea" title="english"><img src="/bildoj/flagoj/en.png" width="16" height="11"/></a>&nbsp;<a href="/info/fr/kio_estas_uea" title="français"><img src="/bildoj/flagoj/fr.png" width="16" height="11"/></a>&nbsp;<a href="/info/de/kio_estas_uea" title="deutsch"><img src="/bildoj/flagoj/de.png" width="16" height="11"/></a>&nbsp;<a href="/info/es/kio_estas_uea" title="español"><img src="/bildoj/flagoj/es.png" width="16" height="11"/></a>&nbsp;<a href="/info/pt/kio_estas_uea" title="português"><img src="/bildoj/flagoj/pt.png" width="16" height="11"/></a>&nbsp;<a href="/info/nl/kio_estas_uea" title="nederlands"><img src="/bildoj/flagoj/nl.png" width="16" height="11"/></a>&nbsp;<a href="/info/ru/kio_estas_uea" title="русский"><img src="/bildoj/flagoj/ru.png" width="16" height="11"/></a>&nbsp;<a href="/info/ua/kio_estas_uea" title="українська мова"><img src="/bildoj/flagoj/ua.png" width="16" height="11"/></a>&nbsp;</div>
+<div class="kontakta desupre"><div class="rugha granda">Kontakta adreso de UEA:</div><div class="dika desupre">Universala Esperanto-Asocio</div><div>Nieuwe Binnenweg 176, 3015 BJ Rotterdam,<br />Nederlando</div>
+       <div><strong>tel.:</strong> <span class="nobr">+31 10 436 1044</span><br /><strong>faks.:</strong><span class="nobr">
+      +49 30 364280169</span><br /><strong>retadreso:</strong> <a rel='uea.org'  j='info' class='retadreso' title='Retletero: UEA'><nomo@de\.la>info</nomo@de\.la><etikedo class='rugha'>&#64;</etikedo><span class='nevidebla'>.spamaĵo?</span>uea.org</a></div> </div>
+</div>
+</div> 
+ 
+
+</div>
+<div id="bloko1" class="bloka">
+ 
+       <div id="teknikaj_ligiloj">
+    <div class="portlet" id="yw3">
+<div class="portlet-content">
+<form id="serchado" name="serchado" action="" method="get">  
+<div id="trovu">
+<input type="text" name="s" id="s" class="stiligo" value="" />&nbsp;
+<input type="submit" value="Trovu" class="butono"/>
+</div> 
+</form>
+</div>
+</div> 
+  </div>  
+<div class='formatigo'><div class='pagha_titolo'>Eraro!</div>
+<div class="sekcia titolo">La paĝo ne ekzistas.</div></div><div class='desupre2'>&nbsp;</div><a href="#" class="reflugu">Supren</a></div>
+</div>  
+
+
+  <!-- fino de chefa parto -->
+
+<div id="sub">UEA, 2026</div>
+	</div>	  
+        </div>
+     <!-- Stiloj -->
+  	<link rel="stylesheet" type="text/css" href="/css/stiloj.css?4" media="screen, projection" />
+
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+ <style type="text/css">	
+@font-face{ 
+	font-family: 'Open Sans';
+	src: url('/css/literaroj/OpenSans-Regular-webfont.eot');
+	src: url('/css/literaroj/OpenSans-Regular-webfont.eot?iefix') format('eot'),
+	url('/css/literaroj/OpenSans-Regular-webfont.woff') format('woff'),
+	url('/css/literaroj/OpenSans-Regular-webfont.svg#webfont') format('svg');
+}    
+    </style>  
+      </body>
+</html>
