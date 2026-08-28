@@ -4,3 +4,6 @@
 *.db
 .beads-credential-key
 .beads/proxieddb/
+
+# Normalized corpus derived from RAW/ (regenerate: python3 tools/normalize_corpus.py)
+CORPUS/*.txt

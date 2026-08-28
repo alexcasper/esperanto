@@ -7,6 +7,11 @@ Standing-orders worksite for building Esperanto language assets: raw corpus, dic
 - `RAW/` — raw Esperanto corpus materials (input texts; see SKL-8m1r.2)
 - `DICT/` — JSONL dictionary artifacts (see SKL-8m1r.3)
 - `GRAMMAR/` — grammar guide (see SKL-8m1r.4)
+- `CORPUS/` — RAW/ normalized for machine reading: Gutenberg and Vikifontaro
+  furniture stripped, x-system spellings folded to UTF-8 diacritics. Derived,
+  so only `CORPUS/MANIFEST.tsv` is committed; regenerate the text with
+  `python3 tools/normalize_corpus.py`.
+- `tools/` — corpus tooling shared by the DICT and GRAMMAR passes
 
 ## Conventions
 
