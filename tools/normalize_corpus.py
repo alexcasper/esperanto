@@ -170,6 +170,10 @@ def normalize(path):
 
     if name.startswith('pg-'):
         body, method, head, tail = slice_gutenberg(lines, name)
+    elif name.startswith('wsdump-'):
+        # Extracted from the Wikisource dump, which has no page furniture to
+        # strip — only the shared cleanup below applies.
+        body, method, head, tail = lines, 'wsdump-clean', 0, 0
     else:
         body, method, head, tail = slice_vikifontaro(lines)
 

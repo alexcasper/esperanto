@@ -11,7 +11,11 @@ Standing-orders worksite for building Esperanto language assets: raw corpus, dic
   furniture stripped, x-system spellings folded to UTF-8 diacritics. Derived,
   so only `CORPUS/MANIFEST.tsv` is committed; regenerate the text with
   `python3 tools/normalize_corpus.py`.
-- `tools/` — corpus tooling shared by the DICT and GRAMMAR passes
+- `tools/` — corpus tooling shared by the DICT and GRAMMAR passes:
+  `normalize_corpus.py` (RAW → CORPUS), `fetch_raw_gutenberg.py` and
+  `fetch_raw_vikifontaro.py` (source acquisition, both gated on licence and
+  text quality), `score_esperanto_text.py` (how much of a candidate text is
+  recognisable Esperanto, for judging OCR before it reaches the corpus)
 
 ## Conventions
 

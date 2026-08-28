@@ -133,3 +133,25 @@ Selected by category (see tools/fetch_raw_gutenberg.py for the criteria); `gramm
 - `pg-52062.txt` — Literatura Mondo, numero 1, 1922 Oktobro — Soros, Tivadar, 1894-1968 — movado — sha256:0c6b41a46c47 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52062
 - `pg-52063.txt` — Literatura Mondo, numero 2, 1922 Novembro — Soros, Tivadar, 1894-1968 — movado — sha256:16f843d84102 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52063
 - `pg-52064.txt` — Literatura Mondo, numero 3, 1922 Decembro — Soros, Tivadar, 1894-1968 — movado — sha256:c3ad412d8e95 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52064
+
+
+
+
+
+## Batch 3 — Vikifontaro, proofread scans from the XML dump
+
+Extracted from the eo.wikisource dump (https://dumps.wikimedia.org/eowikisource/latest/eowikisource-latest-pages-articles.xml.bz2) by `tools/fetch_raw_vikifontaro.py`. Only pages a human has proofread (ProofreadPage quality level >= 3) are included, and only books published 1929 or earlier; unproofread OCR is left out because it invents lemmas. One file per book, pages joined in order.
+
+- `wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt` — Zamenhof, Dietterle - Originala Verkaro, 1929.pdf — Vikifontaro — 1929 — 605/614 proofread pages — sha256:442b48f2371d — https://eo.wikisource.org/wiki/Indekso:Zamenhof,_Dietterle_-_Originala_Verkaro,_1929.pdf
+- `wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt` — Vallienne - Kastelo de Prelongo, 1907.pdf — Vikifontaro — 1907 — 517/528 proofread pages — sha256:86eba0985192 — https://eo.wikisource.org/wiki/Indekso:Vallienne_-_Kastelo_de_Prelongo,_1907.pdf
+- `wsdump-Vallienne_Ĉu_li_1908.txt` — Vallienne - Ĉu li?, 1908.pdf — Vikifontaro — 1908 — 448/458 proofread pages — sha256:a2e619cc6c59 — https://eo.wikisource.org/wiki/Indekso:Vallienne_-_Ĉu_li?,_1908.pdf
+- `wsdump-Luyken_Mirinda_amo_1913.txt` — Luyken - Mirinda amo, 1913.pdf — Vikifontaro — 1913 — 300/321 proofread pages — sha256:9a2282e9567a — https://eo.wikisource.org/wiki/Indekso:Luyken_-_Mirinda_amo,_1913.pdf
+- `wsdump-Orzeszko_Marta_1928_Zamenhof.txt` — Orzeszko - Marta, 1928, Zamenhof.pdf — Vikifontaro — 1928 — 239/241 proofread pages — sha256:ef09e24a46f3 — https://eo.wikisource.org/wiki/Indekso:Orzeszko_-_Marta,_1928,_Zamenhof.pdf
+- `wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt` — Grabowski - El Parnaso de Popoloj, 1913.pdf — Vikifontaro — 1913 — 228/240 proofread pages — sha256:703109a532c6 — https://eo.wikisource.org/wiki/Indekso:Grabowski_-_El_Parnaso_de_Popoloj,_1913.pdf
+- `wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt` — Prévost - Manon Lescaut, 1908, Vallienne.pdf — Vikifontaro — 1908 — 185/194 proofread pages — sha256:32feb39fc4f8 — https://eo.wikisource.org/wiki/Indekso:Prévost_-_Manon_Lescaut,_1908,_Vallienne.pdf
+- `wsdump-Kabe_Vortaro_de_Esperanto_1922.txt` — Kabe - Vortaro de Esperanto, 1922.pdf — Vikifontaro — 1922 — 176/188 proofread pages — sha256:0e48618c8dfa — https://eo.wikisource.org/wiki/Indekso:Kabe_-_Vortaro_de_Esperanto,_1922.pdf
+- `wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt` — Zakrzewski - Historio de Esperanto, 1913.pdf — Vikifontaro — 1913 — 122/125 proofread pages — sha256:cc302318ed6a — https://eo.wikisource.org/wiki/Indekso:Zakrzewski_-_Historio_de_Esperanto,_1913.pdf
+- `wsdump-Molière_Don_Juan_1906_Boirac.txt` — Molière - Don Juan, 1906, Boirac.djvu — Vikifontaro — 1906 — 106/106 proofread pages — sha256:d62144c569f5 — https://eo.wikisource.org/wiki/Indekso:Molière_-_Don_Juan,_1906,_Boirac.djvu
+- `wsdump-Homero_Iliado_1896_Kofman.txt` — Homero - Iliado, 1896, Kofman.pdf — Vikifontaro — 1896 — 103/112 proofread pages — sha256:965f14789ba3 — https://eo.wikisource.org/wiki/Indekso:Homero_-_Iliado,_1896,_Kofman.pdf
+- `wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt` — Prus - Pekoj de l’infaneco, 1913, Grabowski.pdf — Vikifontaro — 1913 — 102/116 proofread pages — sha256:b50e7938fbb8 — https://eo.wikisource.org/wiki/Indekso:Prus_-_Pekoj_de_l’infaneco,_1913,_Grabowski.pdf
+- `wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt` — Defoe - Robinsono Kruso, 1908, Krafft.djvu — Vikifontaro — 1908 — 100/128 proofread pages — sha256:e3c463406060 — https://eo.wikisource.org/wiki/Indekso:Defoe_-_Robinsono_Kruso,_1908,_Krafft.djvu
