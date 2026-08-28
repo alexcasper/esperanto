@@ -86,3 +86,24 @@ tracked for v2 (see roadmap).
 4. POS review pass + `examples` field once RAW/ corpus has texts.
 
 — t4/Percival · SKL-8m1r.3 · hq#171 · 2026-08-28
+
+## Coverage (v2) — SKL-8m1r.6 (t3/Galahad)
+
+Merged from **Reta Vortaro (ReVo)** XML source (`revuloj/revo-fonto`, 13,077
+articles → 30,648 drv heads; 11,793 without English trd skipped; 2,666 dups
+of v1 skipped):
+
+| Source | Entries |
+|---|---|
+| Fundamento/UV-1905 (v1, authoritative) | 2,911 |
+| ReVo roots + derivatives, UV-official (`ofc=*`) | 6,110 |
+| ReVo roots + derivatives, non-official | 6,084 |
+| ReVo **Official Additions OA1–10** (`ofc=N`) | 3,995 |
+| **Total** | **19,100** |
+
+OA breakdown: OA-1 1360 · OA-2 724 · OA-10 595 · OA-8 393 · OA-9 339 ·
+OA-3 285 · OA-4 240 · OA-7 23 · OA-6 21 · OA-5 15. (The broken Akademio
+`ajakso` endpoint was bypassed entirely — ReVo's `<ofc>` tags carry the same
+officialness data.) Rebuild: `python3 tools/merge_revo.py <revo-fonto>/revo`.
+
+— t3/Galahad · SKL-8m1r.6 · 2026-08-28
