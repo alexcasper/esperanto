@@ -173,3 +173,207 @@ Extracted from the eo.wikisource dump (https://dumps.wikimedia.org/eowikisource/
 - `wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt` — Lanti - El verkoj de E. Lanti, 1982, II.pdf — Vikifontaro — 1982 — 136/144 proofread pages — public domain (source-country: last death 1947) — sha256:5b7dfcabaf0f — https://eo.wikisource.org/wiki/Indekso:Lanti_-_El_verkoj_de_E._Lanti,_1982,_II.pdf
 - `wsdump-Lanti_Naciismo_1930.txt` — Lanti - Naciismo, 1930.pdf — Vikifontaro — 1930 — 121/128 proofread pages — public domain (source-country: last death 1947) — sha256:f59e98cb924a — https://eo.wikisource.org/wiki/Indekso:Lanti_-_Naciismo,_1930.pdf
 - `wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt` — Lanti - El verkoj de E. Lanti, 1985, III.pdf — Vikifontaro — 1985 — 118/124 proofread pages — public domain (source-country: last death 1947) — sha256:641c848beb32 — https://eo.wikisource.org/wiki/Indekso:Lanti_-_El_verkoj_de_E._Lanti,_1985,_III.pdf
+- RAW/podkastoj/rss-kernpunkto.xml | https://kern.punkto.info/feed/ | sha256:2ede9a497348d4c1 | 15083 bytes | podcast feed/show-notes; license varies per episode | fetched 2026-08-28Z
+- RAW/podkastoj/rss-uea-videos.txt | https://uea.org/komunikado/podkastoj | sha256:4e69b3bb580f8153 | 6751 bytes | podcast feed/show-notes; license varies per episode | fetched 2026-08-28Z
+librejo.net TERMINALLY UNAVAILABLE (diagnosed 10:45Z 2026-08-28, j2): NXDOMAIN from authoritative .net GTLD servers (dns.google DoH Status=3) — domain does not exist globally; node DNS healthy (github.com/gutenberg.org resolve); 09:3xZ "conn 000" was the same failure. archive.org wayback: zero snapshots of librejo.net (never archived). librejo.com = Librejo de Mondial, commercial publisher — NOT a public-domain substitute. Librejo source dropped; PD-gap alternatives for owner decision: Internet Archive Esperanto collection, expanded PG eo shelf — SKL-8m1r.2
+- RAW/podkastoj/kernpunkto-ep1.html | https://kern.punkto.info/2026/04/12/kp238-monda-heredajxo/ | sha256:3f16e1550ae25b35 | 54485 bytes | episode page/show-notes; license varies | fetched 2026-08-28Z
+- RAW/podkastoj/kernpunkto-ep2.html | https://kern.punkto.info/2026/03/18/kp238-nobel-suttner/ | sha256:c1ae201825b11bf1 | 48168 bytes | episode page/show-notes; license varies | fetched 2026-08-28Z
+- RAW/podkastoj/kernpunkto-ep3.html | https://kern.punkto.info/2026/02/16/kp237-genetiko/ | sha256:b0f4f92a946cefed | 51349 bytes | episode page/show-notes; license varies | fetched 2026-08-28Z
+- RAW/podkastoj/kernpunkto-ep4.html | https://kern.punkto.info/2026/01/11/kp236-korupto/ | sha256:98cf8eb63b200c25 | 48637 bytes | episode page/show-notes; license varies | fetched 2026-08-28Z
+- RAW/podkastoj/kernpunkto-ep5.html | https://kern.punkto.info/2025/12/23/kp235-santunoj/ | sha256:7f075aeea9a54cb2 | 50319 bytes | episode page/show-notes; license varies | fetched 2026-08-28Z
+
+## Supplement 2026-08-28 (SKL-i2qi, t4/Percival) — Librejo substitution per PR #7 diagnosis
+
+Sources: (1) Project Gutenberg complete `languages=eo` shelf via Gutendex — 145 total, 134 new fetched (1 download failed); (2) Internet Archive `language:esperanto AND mediatype:texts AND subject:"Esperanto"` (576 found), top 60 by downloads, 57 fetched as DjVuTXT (4 items lacked text extract). Selection and sha256 exact-copy dedup (0 duplicates) as above.
+
+- `pg-11307.txt` — El la Biblio: Elektitaj ĉapitroj de la Psalmaro, Sentencoj de Salomono kaj Predikanto — 6b81af390acb — sha256:11307 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-11511.txt` — Robinsono Kruso — 22b51004bb82 — sha256:11511 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-17425.txt` — La Falo de Uŝero-Domo — 8a78d8735a20 — sha256:17425 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-17665.txt` — Mia kontrabandulo — cbe1ea9a263f — sha256:17665 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-17945.txt` — Mark Twain: Tri Noveloj — 19e2ca68a54b — sha256:17945 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-18178.txt` — Rakontoj — e3ed41319480 — sha256:18178 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-18326.txt` — La Murdoj de Kadavrejo-Strato — 3196a73c3e71 — sha256:18326 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-18836.txt` — Aliaj Tempoj — c9b27a3d8379 — sha256:18836 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19030.txt` — Puphejmo : $b Dramo en tri aktoj — a2b0d12cc07c — sha256:19030 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19182.txt` — La Sinjorino el la Maro — 1257a496b4f4 — sha256:19182 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19183.txt` — Hedda Gabler : $b Dramo en kvar aktoj — 829b74274e26 — sha256:19183 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19293.txt` — La Legendo de Dorm-Valeto — 799aa917cc3f — sha256:19293 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19803.txt` — Popolmalamiko : $b Dramo en kvin aktoj — a402266a4333 — sha256:19803 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-19858.txt` — Konstruestro Solness — dc3a773ef997 — sha256:19858 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-20162.txt` — La kolonoj de la socio : $b Dramo en kvar aktoj — 715a1a5f030b — sha256:20162 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-20178.txt` — John Gabriel Borkman — b65870bf04b8 — sha256:20178 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-20802.txt` — Ĉe la koro de la tero — 2954fd03ca9e — sha256:20802 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-20931.txt` — Tri Noveloj de Usona Verkisto Bret Harte — 0abf2f50f017 — sha256:20931 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-20943.txt` — Mark Twain: Tri Ceteraj Noveloj — e603f5ddfe9f — sha256:20943 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-21195.txt` — Tri Noveloj — 42bb1b2e8c68 — sha256:21195 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-21951.txt` — Jan Amos Komenský: Johano Amos Comenius — 1462d9cd94cd — sha256:21951 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-22070.txt` — La Karavano — 04186c9c3050 — sha256:22070 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-22901.txt` — Taglibro de Vilaĝ-pedelo — 2c349d03632c — sha256:22901 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-23774.txt` — La Asocio de la Junuloj: Dramo en kvin aktoj — 6477235d3280 — sha256:23774 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-23837.txt` — Eta Eyolf — 6af4c8da9ab5 — sha256:23837 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24057.txt` — La Libro Ruth — 41692dae56f1 — sha256:24057 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24074.txt` — La Nigra Galero — 509846f2ecae — sha256:24074 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24355.txt` — Rosmersholm: Dramo en kvar aktoj — a5f263a44819 — sha256:24355 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24501.txt` — La Batalo de l' Vivo — d99eaf2bce8e — sha256:24501 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24525.txt` — Karlo: Facila Legolibro por la Lernado de Esperanto — 114838e6cbec — sha256:24525 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24575.txt` — Úplná učebnice mezinárodní řeči dra. Esperanta — 2f4cf4090b86 — sha256:24575 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-24763.txt` — La Kantistino — eabe0ee4f99e — sha256:24763 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-25311.txt` — El la vivo de esperantistoj — 3a8c7323f700 — sha256:25311 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-25386.txt` — La lasta Usonano — f8d7b7e38f5d — sha256:25386 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-25539.txt` — Vojaĝo interne de mia ĉambro — 1890c4f25000 — sha256:25539 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-25964.txt` — Batalo pri la Domo Heikkilä — 3ee66b2ade0e — sha256:25964 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-26099.txt` — Aventuroj de Antonio — 1e1184fb2d1f — sha256:26099 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-26359.txt` — Vivo de Zamenhof — c4a10e26d7ca — sha256:26359 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-26480.txt` — La Tronpretendantoj — 5ee4eaa53771 — sha256:26480 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-26959.txt` — La Lastaj Tagoj de Dro L. L. Zamenhof: kaj la Funebra Ceremonio — 907216ed376e — sha256:26959 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-27170.txt` — Jeppe sur la Monto; aŭ la Transformita Kamparano — 64ba4b4840ca — sha256:27170 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-27593.txt` — La Majstro kaj Martinelli — 385a22f956d6 — sha256:27593 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-27915.txt` — Fabeloj de Andersen — 28f8f74f1c50 — sha256:27915 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-28720.txt` — The Esperantist, Vol. 1, No. 1 — a4cd46ba767c — sha256:28720 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-28721.txt` — The Esperantist, Vol. 1, No. 2 — 7bb5296bccc5 — sha256:28721 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-28968.txt` — La Botistoj — ce9bf1381a97 — sha256:28968 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-28971.txt` — Inaŭgura parolado de Barack Obama: 20-a de januaro, 2009 — 1cd8a3b3ef8e — sha256:28971 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-29403.txt` — The Esperantist, Vol. 1, No. 3 — de6a7d0a4f95 — sha256:29403 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-30536.txt` — Rolandkanto — 8f0aeb927327 — sha256:30536 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-30991.txt` — The Esperantist, Vol. 1, No. 4 — a025896783a0 — sha256:30991 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-30992.txt` — The Esperantist, Vol. 1, No. 5 — a48f55e19798 — sha256:30992 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-31348.txt` — La Mirinda Sorĉisto de Oz — dd3a4754e332 — sha256:31348 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-32035.txt` — Laŭroj: Kolekto de la originalaj verkoj premiitaj en la unua literatura konkurso de "La Revuo" — eb1f86841412 — sha256:32035 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-32313.txt` — The Esperantist, Vol. 1, No. 6 — f7db54055b05 — sha256:32313 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-32314.txt` — The Esperantist, Vol. 1, No. 7 — b73a2808c5f0 — sha256:32314 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-32480.txt` — La Alaska stafeto kaj Kaptitoj de la glacirokoj — 9d8f5a0bd9d8 — sha256:32480 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-34042.txt` — The Esperantist, Vol. 1, No. 8 — 717676f3432b — sha256:34042 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-34043.txt` — The Esperantist, Vol. 1, No. 9 — 6be04f7fa965 — sha256:34043 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-35743.txt` — Tri unuaktaj komedioj — 8df1ddb14548 — sha256:35743 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-35917.txt` — Rikke-tikke-tak — 8c70c3902f4c — sha256:35917 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-35981.txt` — La kolomba premio — eaf971790baf — sha256:35981 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37279.txt` — Hamleto, Reĝido de Danujo — e506e499f7a6 — sha256:37279 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37642.txt` — The Esperantist, Vol. 1, No. 10 — 53c5fcd8d887 — sha256:37642 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37643.txt` — The Esperantist, Vol. 1, No. 11 — 103c02fa8e5a — sha256:37643 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37644.txt` — The Esperantist, Vol. 1, No. 12 — c80aee816cff — sha256:37644 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37977.txt` — The Esperantist, Vol. 1, No. 13 — 86ecaea0cbcb — sha256:37977 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-37978.txt` — The Esperantist, Vol. 1, No. 14 — a54d82bc9d72 — sha256:37978 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-39840.txt` — The Esperantist, Vol. 2, No. 1 — a90d2c9c1db7 — sha256:39840 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-39841.txt` — The Esperantist, Vol. 2, No. 2 — 5ae598022aec — sha256:39841 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-39842.txt` — The Esperantist, Vol. 2, No. 3 — 5f0e2412eb4b — sha256:39842 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-42028.txt` — En Rusujo per Esperanto — d55d0e6bf95b — sha256:42028 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-42774.txt` — Mondo kaj koro: Poemoj de K. de Kalocsay — dc73c9d7ff24 — sha256:42774 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44128.txt` — The Esperantist, Vol. 2, No. 6 — 9a22bc662eca — sha256:44128 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44130.txt` — The Esperantist, Vol. 2, No. 4 — d065ea1f8bdf — sha256:44130 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44131.txt` — The Esperantist, Vol. 2, No. 5 — 21fd217ecb2a — sha256:44131 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44666.txt` — The Esperantist, Vol. 2, No. 7 — b25df5a649c2 — sha256:44666 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44667.txt` — The Esperantist, Vol. 2, No. 8 — e3d808197321 — sha256:44667 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-44668.txt` — The Esperantist, Vol. 2, No. 9 — 8f7af62db715 — sha256:44668 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-45612.txt` — Sub la Meznokta Suno: Nordlandaj Rakontoj — 81ed77312e33 — sha256:45612 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-45713.txt` — Aspazio: Tragedio en Kvin Aktoj — 21444c0077cf — sha256:45713 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-47249.txt` — La jeso de knabinoj: Triakta proza komedio — 02a4c171b13a — sha256:47249 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-47259.txt` — La Vendreda Klubo: 11 diversaj originalaj artikoloj verkitaj de la "Vendredoklubanoj" en Leipzig — 0cf6327ddbea — sha256:47259 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-47855.txt` — Esperanta sintakso: Laŭ verkoj de S-ro D-ro Zamenhof kaj aliaj aŭtoroj — e8969f181437 — sha256:47855 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-47913.txt` — Makbeto — 2f1ed00bf390 — sha256:47913 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-48033.txt` — Paĝoj el la Flandra Literaturo — 1dc5a8a5bf90 — sha256:48033 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-48896.txt` — "Verdaj fajreroj": Kolekto da versaĵoj — fff83cce0cb7 — sha256:48896 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-48900.txt` — Tiel do: Rakontoj por malgrandaj infanoj — b2bb1613ec77 — sha256:48900 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-49232.txt` — The Esperantist, Vol. 2, No. 10 — 14f6f0438fc8 — sha256:49232 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-49233.txt` — The Esperantist, Vol. 2, No. 11 — 7af5a29aedd2 — sha256:49233 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-49234.txt` — The Esperantist, Vol. 2, No. 12 — 73c67e48f5c6 — sha256:49234 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-51069.txt` — La Granda Admiralo: Unua vojaĝo ĉirkaŭ la mondo — d36c7b6e3f68 — sha256:51069 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-51690.txt` — Elektitaj fabloj de J. de La Fontaine — 8ac91970b2fa — sha256:51690 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52062.txt` — Literatura Mondo, numero 1, 1922 Oktobro — 0c6b41a46c47 — sha256:52062 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52063.txt` — Literatura Mondo, numero 2, 1922 Novembro — 16f843d84102 — sha256:52063 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52064.txt` — Literatura Mondo, numero 3, 1922 Decembro — c3ad412d8e95 — sha256:52064 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52111.txt` — Ama Stelaro — cf3bc08845ec — sha256:52111 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52556.txt` — Esperanto-Germana frazlibro de la ĉiutaga vivo: Deutsche und Esperanto-Gespräche über Alltägliches — 61a50f091383 — sha256:52556 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52577.txt` — Verkaro de V. N. Devjatnin, Libro Unua — 3cda63465864 — sha256:52577 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-52876.txt` — Advokato Patelin: Triakta proza komedio — 366045cf126c — sha256:52876 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-55302.txt` — Princo Serebrjanij — c7ef3504ca80 — sha256:55302 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-55574.txt` — Raporto pri la oka kongreso de esperantistoj (Krakovo 1912) — 8b12ddf178a3 — sha256:55574 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-55954.txt` — Stranga heredaĵo: Romano originale verkita — ac769c42ebbc — sha256:55954 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-56351.txt` — Parizina — 336797f247be — sha256:56351 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-57184.txt` — Dokumentoj de Esperanto: Informilo pri la historio kaj organizo de la Esperanta movado — 0a2a815cc437 — sha256:57184 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-60429.txt` — Hermano kaj Doroteo: Eposo idilia — 1032d4763d26 — sha256:60429 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-61103.txt` — Kiel plaĉas al vi: komedio en kvin aktoj — a60501f5248d — sha256:61103 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-61190.txt` — La Puto kaj la Pendolo: Rakonto el la Hispana Inkvizicio — b386e99f941d — sha256:61190 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-61579.txt` — Al mia fratineto: Letero pri la seksvivo — 67421043df13 — sha256:61579 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-61581.txt` — La kialo de la vivo — 541ef4aaa37f — sha256:61581 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-61860.txt` — Marta — 16334a615927 — sha256:61860 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-62118.txt` — Legendoj — e17276971e92 — sha256:62118 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-62394.txt` — Ascendo al Monto-Blanka en 1787 — 35ae5549be57 — sha256:62394 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-62511.txt` — Ses noveloj el "Rakontoj de mistero kaj imago" — 6254c932f99b — sha256:62511 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-63064.txt` — Salome: Dramo En Unu Akto — 06f44947e2f0 — sha256:63064 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-63105.txt` — Tri Noveloj — 7dc46be6f663 — sha256:63105 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-63926.txt` — La mirinda historio de Petro Schlemihl — d4d46f9520fd — sha256:63926 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-64579.txt` — Idoj de Orfeo — d8b15ebe98eb — sha256:64579 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-65835.txt` — La Reĝo de la Montoj — 6620a2e1d5b6 — sha256:65835 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-65958.txt` — La Rabistoj: Dramo en kvin aktoj — 9030b194b079 — sha256:65958 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-66037.txt` — Elektitaj noveloj — 4307b7f39e36 — sha256:66037 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-68874.txt` — El la "Camera obscura" — cfd27ad5b465 — sha256:68874 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-68878.txt` — Deklaracio — 8732a9a634b5 — sha256:68878 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-68879.txt` — La firmao de la kato kiu pilkludas — ed12a6f8550c — sha256:68879 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-69123.txt` — Saltego trans jarmiloj — 2f19bdf33df6 — sha256:69123 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-71836.txt` — La ventego de Shakespeare — 4f81b6c592ad — sha256:71836 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-74344.txt` — Perdita kaj retrovita : $b originala rakonto — b67699ed4f68 — sha256:74344 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-74405.txt` — Orientaj fabeloj — 5bc9a8c77f18 — sha256:74405 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-75983.txt` — La gefratoj : $b Komedio en unu akto — b34a23919680 — sha256:75983 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-76273.txt` — Por kaj kontraŭ Esperanto : $b Dialogo — 5ad96340a96b — sha256:76273 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-76310.txt` — Cindrulino — f19231709d1f — sha256:76310 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-7787.txt` — A Complete Grammar of Esperanto — 6de5ae16505c — sha256:7787 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-78054.txt` — Mallonga biografio de Henry Fawcett la blinda ĉefpoŝtestro de Anglujo : $b Por ĉiuj infanoj, ĉie — af7442bbec9d — sha256:78054 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-8177.txt` — The Esperanto Teacher: A Simple Course for Non-Grammarians — 1e453188da58 — sha256:8177 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `pg-8224.txt` — Fundamenta Krestomatio — 24e93978f35b — sha256:8224 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/
+- `ia-LaHeroojDeLaNovaTagiolaKronikoDeNabil.txt` — La Herooj de la Nova Tagigxo (La Kroniko de Nabil) — sha256:2e40b12f5a7b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/LaHeroojDeLaNovaTagiolaKronikoDeNabil
+- `ia-TranslationOfTheMeaningsOfTheNobleQuranInTheEsperantopdf.txt` — Quran in Esperanto pdf — sha256:6b1dce913cda — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/TranslationOfTheMeaningsOfTheNobleQuranInTheEsperantopdf
+- `ia-Pichismo----.....1992-2014.txt` — PICHISMO "Ĥ-ĥ-ĥ-ĥ-ĥ....." (1992-2014) — sha256:7e9d85352976 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/Pichismo----.....1992-2014
+- `ia-KvarvoajKantojPorEsperantistoj.txt` — Kvarvoĉaj Kantoj por Esperantistoj — sha256:b171c5983b6e — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/KvarvoajKantojPorEsperantistoj
+- `ia-poemo-de-utnoa-eo-1jun-2023.txt` — Poemo de Utnoa (Eo 1jun 2023) — sha256:b3e55af7ff90 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/poemo-de-utnoa-eo-1jun-2023
+- `ia-traduction_de_lekzercaro.txt` — Traduction de l'Ekzercaro — sha256:827b4061116d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/traduction_de_lekzercaro
+- `ia-key_to_the_ekzercaro.txt` — Key to the Ekzercaro — sha256:029380035b4f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/key_to_the_ekzercaro
+- `ia-esperanto-the-international-language-a-complete-textbook-w-j-downes-1982.txt` — Esperanto : The International Language : A Complete Textbook — sha256:5b77924601f7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/esperanto-the-international-language-a-complete-textbook-w-j-downes-1982
+- `ia-eowiki-Kopta_lingvo-20200726.pdf.txt` — eowiki-Kopta_lingvo-20200726.pdf — sha256:d18ba209a6a2 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kopta_lingvo-20200726.pdf
+- `ia-eowiki-Nigrapieda_lingvo-20200728.pdf.txt` — eowiki-Nigrapieda_lingvo-20200728.pdf — sha256:04b8feaf7850 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nigrapieda_lingvo-20200728.pdf
+- `ia-eowiki-Arumana_lingvo-20200726.pdf.txt` — eowiki-Arumana_lingvo-20200726.pdf — sha256:c6599706dfd0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Arumana_lingvo-20200726.pdf
+- `ia-eowiki-Historio_de_la_mondo-20200721.pdf.txt` — eowiki-Historio_de_la_mondo-20200721.pdf — sha256:3e3dc776bcbe — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Historio_de_la_mondo-20200721.pdf
+- `ia-eowiki-Azio-20200722.pdf.txt` — eowiki-Azio-20200722.pdf — sha256:ba0c2b8a2516 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Azio-20200722.pdf
+- `ia-eowiki-Germana_lingvo-20200722.pdf.txt` — eowiki-Germana_lingvo-20200722.pdf — sha256:4afffd67f2a0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Germana_lingvo-20200722.pdf
+- `ia-eowiki-Svahila_lingvo-20200724.pdf.txt` — eowiki-Svahila_lingvo-20200724.pdf — sha256:22c2d51a97cc — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Svahila_lingvo-20200724.pdf
+- `ia-eowiki-Turka_lingvo-20200723.pdf.txt` — eowiki-Turka_lingvo-20200723.pdf — sha256:6ae1ed8301ac — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Turka_lingvo-20200723.pdf
+- `ia-eowiki-Krika_lingvo-20200728.pdf.txt` — eowiki-Krika_lingvo-20200728.pdf — sha256:4e91681a928f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Krika_lingvo-20200728.pdf
+- `ia-eowiki-Hindustana_lingvo-20200725.pdf.txt` — eowiki-Hindustana_lingvo-20200725.pdf — sha256:97d5a161e5bd — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Hindustana_lingvo-20200725.pdf
+- `ia-eowiki-Mezpersa_lingvo-20200728.pdf.txt` — eowiki-Mezpersa_lingvo-20200728.pdf — sha256:d50f5507a021 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Mezpersa_lingvo-20200728.pdf
+- `ia-eowiki-Araba_lingvo-20200723.pdf.txt` — eowiki-Araba_lingvo-20200723.pdf — sha256:bb1913779b92 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Araba_lingvo-20200723.pdf
+- `ia-eowiki-Nejoj-20200726.pdf.txt` — eowiki-Nejoj-20200726.pdf — sha256:7672bd0795d0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nejoj-20200726.pdf
+- `ia-eowiki-Latina_lingvo-20200723.pdf.txt` — eowiki-Latina_lingvo-20200723.pdf — sha256:f085b45a30bd — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Latina_lingvo-20200723.pdf
+- `ia-eowiki-Filipina_lingvo-20200726.pdf.txt` — eowiki-Filipina_lingvo-20200726.pdf — sha256:09f218dac899 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Filipina_lingvo-20200726.pdf
+- `ia-eowiki-Rapanuia_lingvo-20200727.pdf.txt` — eowiki-Rapanuia_lingvo-20200727.pdf — sha256:f3b0d5a41265 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Rapanuia_lingvo-20200727.pdf
+- `ia-eowiki-Naura_lingvo-20200727.pdf.txt` — eowiki-Naura_lingvo-20200727.pdf — sha256:9f9bc9c96a41 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Naura_lingvo-20200727.pdf
+- `ia-eowiki-Odia_lingvo-20200725.pdf.txt` — eowiki-Odia_lingvo-20200725.pdf — sha256:7635faa51db7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Odia_lingvo-20200725.pdf
+- `ia-eowiki-Jakuta_lingvo-20200725.pdf.txt` — eowiki-Jakuta_lingvo-20200725.pdf — sha256:3b9bff9302bf — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Jakuta_lingvo-20200725.pdf
+- `ia-eowiki-Malnovaltgermana_lingvo-20200728.pdf.txt` — eowiki-Malnovaltgermana_lingvo-20200728.pdf — sha256:f93ab58af51e — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Malnovaltgermana_lingvo-20200728.pdf
+- `ia-eowiki-Zazaa_lingvo-20200725.pdf.txt` — eowiki-Zazaa_lingvo-20200725.pdf — sha256:cc6897c5d6ed — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Zazaa_lingvo-20200725.pdf
+- `ia-dlibra.kul.pl.49099.txt` — Germana Esperantisto : monata gazeto por la vastigado de la lingvo Esperanto. Jaro 8, No 5 (majo1911) — sha256:4a51101cacde — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/dlibra.kul.pl.49099
+- `ia-eowiki-Voroa_lingvo-20200727.pdf.txt` — eowiki-Voroa_lingvo-20200727.pdf — sha256:6526a1101334 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Voroa_lingvo-20200727.pdf
+- `ia-eowiki-Oroma_lingvo-20200727.pdf.txt` — eowiki-Oroma_lingvo-20200727.pdf — sha256:f5a85be79875 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Oroma_lingvo-20200727.pdf
+- `ia-eowiki-Palatinata_germana_dialektaro-20200728.pdf.txt` — eowiki-Palatinata_germana_dialektaro-20200728.pdf — sha256:20102c35d748 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Palatinata_germana_dialektaro-20200728.pdf
+- `ia-eowiki-Nama_lingvo-20200728.pdf.txt` — eowiki-Nama_lingvo-20200728.pdf — sha256:d01c173fac54 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nama_lingvo-20200728.pdf
+- `ia-eowiki-Tibeta_lingvo-20200725.pdf.txt` — eowiki-Tibeta_lingvo-20200725.pdf — sha256:7a3926b2b58a — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Tibeta_lingvo-20200725.pdf
+- `ia-eowiki-Romanido-20200725.pdf.txt` — eowiki-Romanido-20200725.pdf — sha256:ddff073acfd0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Romanido-20200725.pdf
+- `ia-eowiki-Afriko-20200722.pdf.txt` — eowiki-Afriko-20200722.pdf — sha256:e55021c00f98 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Afriko-20200722.pdf
+- `ia-eowiki-Jida_lingvo-20200724.pdf.txt` — eowiki-Jida_lingvo-20200724.pdf — sha256:dd67090dc63d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Jida_lingvo-20200724.pdf
+- `ia-eowiki-Rusa_lingvo-20200723.pdf.txt` — eowiki-Rusa_lingvo-20200723.pdf — sha256:66329e7203f6 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Rusa_lingvo-20200723.pdf
+- `ia-eowiki-Veda_Sanskrito-20200728.pdf.txt` — eowiki-Veda_Sanskrito-20200728.pdf — sha256:2081cc175779 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Veda_Sanskrito-20200728.pdf
+- `ia-eowiki-Srana_lingvo-20200728.pdf.txt` — eowiki-Srana_lingvo-20200728.pdf — sha256:cef9e576ba70 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Srana_lingvo-20200728.pdf
+- `ia-eowiki-Evea_lingvo-20200727.pdf.txt` — eowiki-Evea_lingvo-20200727.pdf — sha256:ec39c018fffc — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Evea_lingvo-20200727.pdf
+- `ia-eowiki-Agula_lingvo-20200728.pdf.txt` — eowiki-Agula_lingvo-20200728.pdf — sha256:d6fc6a46217d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Agula_lingvo-20200728.pdf
+- `ia-eowiki-Kria_lingvo-20200727.pdf.txt` — eowiki-Kria_lingvo-20200727.pdf — sha256:0bce9b12769d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kria_lingvo-20200727.pdf
+- `ia-eowiki-Balia_lingvo-20200727.pdf.txt` — eowiki-Balia_lingvo-20200727.pdf — sha256:c85139943f02 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Balia_lingvo-20200727.pdf
+- `ia-eowiki-Kefa_lingvo-20200725.pdf.txt` — eowiki-Kefa_lingvo-20200725.pdf — sha256:fb682d7240c4 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kefa_lingvo-20200725.pdf
+- `ia-eowiki-Slovaka_lingvo-20200724.pdf.txt` — eowiki-Slovaka_lingvo-20200724.pdf — sha256:d370ece5e76b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Slovaka_lingvo-20200724.pdf
+- `ia-eowiki-Ruanda_lingvo-20200726.pdf.txt` — eowiki-Ruanda_lingvo-20200726.pdf — sha256:6edbcc1c5b3f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Ruanda_lingvo-20200726.pdf
+- `ia-eowiki-Navaha_lingvo-20200726.pdf.txt` — eowiki-Navaha_lingvo-20200726.pdf — sha256:8fdc86942ca9 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Navaha_lingvo-20200726.pdf
+- `ia-eowiki-Pitjantjatjara_lingvo-20200725.pdf.txt` — eowiki-Pitjantjatjara_lingvo-20200725.pdf — sha256:97aaafedb5f7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Pitjantjatjara_lingvo-20200725.pdf
+- `ia-eowiki-Tata_lingvo-20200728.pdf.txt` — eowiki-Tata_lingvo-20200728.pdf — sha256:1a622b32cf83 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Tata_lingvo-20200728.pdf
+- `ia-eowiki-Lingvo-20200721.pdf.txt` — eowiki-Lingvo-20200721.pdf — sha256:59d889bff4e5 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Lingvo-20200721.pdf
+- `ia-eowiki-Luba_lingvo-20200728.pdf.txt` — eowiki-Luba_lingvo-20200728.pdf — sha256:eb7d14c87783 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Luba_lingvo-20200728.pdf
+- `ia-eowiki-Bengala_lingvo-20200724.pdf.txt` — eowiki-Bengala_lingvo-20200724.pdf — sha256:e13305c5850f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Bengala_lingvo-20200724.pdf
+- `ia-eowiki-Okinava_lingvo-20200728.pdf.txt` — eowiki-Okinava_lingvo-20200728.pdf — sha256:ed5c0370a0c0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Okinava_lingvo-20200728.pdf
+- `ia-eowiki-Vilamovica_lingvo-20200728.pdf.txt` — eowiki-Vilamovica_lingvo-20200728.pdf — sha256:7b4c3d4fa94b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Vilamovica_lingvo-20200728.pdf
+- `ia-eowiki-Parta_lingvo-20200728.pdf.txt` — eowiki-Parta_lingvo-20200728.pdf — sha256:177fd5cf1b89 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Parta_lingvo-20200728.pdf
