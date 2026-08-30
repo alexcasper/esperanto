@@ -43,7 +43,15 @@ LEDGER = os.path.join(ROOT, 'DICT', 'verdicts.jsonl')
 
 # 'grammar' sources are English prose about Esperanto; mining them for Esperanto
 # lemmas yields English. PROVENANCE.md marks them; match them by id here.
-ENGLISH_HEAVY = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt'}
+ENGLISH_HEAVY = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt',
+                 # archive.org additions that are English or French prose
+                 # about Esperanto, not Esperanto: scored 28-54% recognisable
+                 # by tools/score_esperanto_text.py against 90%+ for real
+                 # Esperanto, because most of their tokens are not Esperanto.
+                 'ia-key_to_the_ekzercaro.txt',
+                 'ia-traduction_de_lekzercaro.txt',
+                 'ia-esperanto-the-international-language-a-complete-'
+                 'textbook-w-j-downes-1982.txt'}
 
 # The Fundamento's multilingual tables put French, German, Russian and Polish
 # gloss columns beside the Esperanto, so mining them yields those languages.
