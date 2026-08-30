@@ -149,19 +149,28 @@ def field(value):
 
 
 def main():
-    if not os.path.exists(MBOX):
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--mbox', default=MBOX,
+                    help='input mbox (default: RAW/usenet/soc.culture.esperanto.mbox)')
+    ap.add_argument('--outdir', default=OUTDIR,
+                    help='output dir (default: QUARANTINE/soc.culture.esperanto)')
+    args = ap.parse_args()
+    if not os.path.exists(args.mbox):
         raise SystemExit('%s missing; run tools/fetch_raw_usenet.py first'
-                         % MBOX)
-    os.makedirs(OUTDIR, exist_ok=True)
+                         % args.mbox)
+    os.makedirs(args.outdir, exist_ok=True)
+    out = os.path.join(args.outdir, 'extracted.tsv')
+    manifest = os.path.join(args.outdir, 'MANIFEST.tsv')
 
-    with open(MBOX, 'rb') as fh:
+    with open(args.mbox, 'rb') as fh:
         data = fh.read()
     starts = [m.start() for m in ENVELOPE.finditer(data)]
 
     roots, words = ses.load_vocabulary()
     kept = scored = skipped_short = dropped = folded = 0
     per_year = {}
-    tmp = OUT + '.tmp'
+    tmp = out + '.tmp'
     with open(tmp, 'w', encoding='utf-8', newline='\n') as out:
         out.write('msgid\tdate\tauthor\tsubject\tscore\ttext\n')
         for i, start in enumerate(starts):
@@ -188,14 +197,14 @@ def main():
                 field(msg.get('message-id')), iso_date(msg),
                 field(email.utils.parseaddr(msg.get('from'))[0]),
                 field(msg.get('subject')), s, field(body)))
-    os.replace(tmp, OUT)
+    os.replace(tmp, out)
 
-    with open(MANIFEST, 'w', encoding='utf-8', newline='\n') as fh:
+    with open(manifest, 'w', encoding='utf-8', newline='\n') as fh:
         rows = [
             ('file', 'sha256', 'rows', 'note'),
-            ('soc.culture.esperanto.mbox', sha256_of(MBOX)[:12],
+            (os.path.basename(args.mbox), sha256_of(args.mbox)[:12],
              str(len(starts)), 'RAW/usenet input; 69,804 Usenet messages'),
-            ('extracted.tsv', sha256_of(OUT)[:12], str(kept),
+            ('extracted.tsv', sha256_of(out)[:12], str(kept),
              'Esperanto messages: score>=%.2f, >=%d tokens; quote/sig-stripped '
              'text/plain bodies; %d x-system-folded; LICENCE-HOLD: do not '
              'promote to CORPUS without a ruling'
@@ -210,7 +219,7 @@ def main():
     print('years kept: %s' % ', '.join(
         '%s:%d' % (y, n) for y, n in sorted(per_year.items())[:5]),
         '...', '%s:%d' % max(per_year.items()))
-    print('wrote %s and %s' % (OUT, MANIFEST))
+    print('wrote %s and %s' % (out, manifest))
 
 
 if __name__ == '__main__':
