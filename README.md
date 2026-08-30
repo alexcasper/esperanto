@@ -22,7 +22,10 @@ Standing-orders worksite for building Esperanto language assets: raw corpus, dic
   text quality), `score_esperanto_text.py` (how much of a candidate text is
   recognisable Esperanto, for judging OCR before it reaches the corpus),
   `fetch_tatoeba.py` / `build_tatoeba_pairs.py` (Tatoeba export acquisition
-  and the en–epo parallel join; idempotent, digest-recorded)
+  and the en–epo parallel join; idempotent, digest-recorded),
+  `fetch_raw_usenet.py` / `extract_usenet_esperanto.py` (soc.culture.
+  esperanto archive from archive.org: fetch + Esperanto extraction; output
+  is licence-hold — see QUARANTINE/soc.culture.esperanto/)
 
 ## Conventions
 
