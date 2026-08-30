@@ -170,30 +170,48 @@ ESPERANTO_LETTERS = set('abcĉdefgĝhĥijĵklmnoprsŝtuŭvzABCĈDEFGĜHĤIJĴKLM
 def citation_form(token):
     """Reduce an unrecognised token to the form we would file it under.
 
-    analyse() only returns a root for words built on roots we know, so unknown
-    vocabulary would otherwise split across its inflections — kongreso,
-    kongresoj and kongreson filed as three separate discoveries. Esperanto
-    endings are regular, so strip one and re-attach the nominal ending.
+    Two mistakes to avoid, both found by reviewers reading the output:
+
+    * Not every final -n is an accusative. It attaches to nouns, adjectives
+      and adverbs, so it follows o/a/e/u/j — never i. Stripping it blindly
+      turned the name Martin into 'marti' and Komintern into 'kominter'.
+    * Stripping -en must leave the adverb, not a bare stem: malsupren is
+      malsupre + n, so it files under malsupre, not 'malsupr'.
+
+    Finite verbs are filed as infinitives, so envenis, envenas and envenos
+    are one entry (enveni) rather than three.
     """
-    low = token.lower().strip("'")
-    for ending in ('ojn', 'ajn', 'oj', 'aj', 'on', 'an', 'en', 'j', 'n'):
-        if low.endswith(ending) and len(low) > len(ending) + 2:
-            stem = low[:-len(ending)]
-            if ending in ('ojn', 'oj', 'on'):
-                return stem + 'o'
-            if ending in ('ajn', 'aj', 'an'):
-                return stem + 'a'
-            if ending in ('j', 'n'):
-                return stem
-            return stem
+    low = token.lower()
+    # An apostrophe replaces the elided noun ending: hord' is hordo, mens' is
+    # menso. Stripping it alone leaves a bare stem that is not a word.
+    if low.endswith("'"):
+        return low[:-1] + 'o'
+    low = low.strip("'")
+    # The imperative is not a citation form either: eliru files under eliri.
+    if low.endswith('u') and len(low) > 3:
+        return low[:-1] + 'i'
+    for tense in ('as', 'is', 'os', 'us'):
+        if low.endswith(tense) and len(low) > len(tense) + 1:
+            return low[:-len(tense)] + 'i'
+    for ending, replacement in (('ojn', 'o'), ('ajn', 'a'), ('ojn', 'o'),
+                                ('oj', 'o'), ('aj', 'a'),
+                                ('on', 'o'), ('an', 'a'), ('en', 'e')):
+        if low.endswith(ending) and len(low) > len(ending) + 1:
+            return low[:-len(ending)] + replacement
+    if low.endswith('j') and len(low) > 2 and low[-2] in 'oa':
+        return low[:-1]
+    # A bare final -n is only an accusative after a vowel that can carry one.
+    if low.endswith('n') and len(low) > 2 and low[-2] in 'oaeu':
+        return low[:-1]
     return low
 
 
 def strip_ending(word):
     """Remove one grammatical ending, leaving the stem.
 
-    vortojn -> vort, estas -> est, granda -> grand. This is inflection only;
-    derivational affixes are left in place, so reĝino -> reĝin.
+    vortojn -> vort, estas -> est, granda -> grand. Inflection only: any
+    derivational affix stays, so reĝino -> reĝin, which is what distinguishes
+    a derivation from a mere inflected form.
     """
     low = word.lower()
     for ending in ENDINGS:

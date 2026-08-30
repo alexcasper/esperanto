@@ -48,14 +48,18 @@ ENGLISH_HEAVY = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt'}
 # The Fundamento's multilingual tables put French, German, Russian and Polish
 # gloss columns beside the Esperanto, so mining them yields those languages.
 MULTILINGUAL = {'wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt',
-                'wsrc-Fundamento_de_Esperanto_Grammar.txt'}
+                'wsrc-Fundamento_de_Esperanto_Grammar.txt',
+                # A 61-line index page: no body text, only the title block and
+                # the publisher list, which fed 'irgend', 'any', 'przypadek'
+                # into the candidate queue.
+                'wsrc-Fundamento_de_Esperanto.txt'}
 
 # Not words: the elided article, Roman numerals, and the abbreviations that
 # recur across sources (Kabe's subject labels, citation shorthand). Every
 # reviewer hit these, and 'l' alone reached 2884 occurrences.
 STOPWORDS = {'l', 'ktp', 'ekz', 'prof', 'kop', 'esp', 'fr', 'np', 'ex',
              'zool', 'ĥem', 'med', 'geom', 'fiz', 'bot', 'anat', 'mat',
-             'haml', 'kos', 'no', 'nro', 'vol', 'pĝ', 'red'}
+             'haml', 'kos', 'no', 'nro', 'vol', 'pĝ', 'red', 'ks'}
 ROMAN = re.compile(r'^[ivxlcdm]+$')
 
 
@@ -209,6 +213,13 @@ def main():
                     continue
                 decided = json.loads(line)
                 record = lemmas.get(decided['lemma'])
+                if record is None:
+                    # The citation form can change when the morphology is
+                    # corrected — eliris and eliras now both file under
+                    # eliri — so a verdict keyed on the old surface form
+                    # would be silently orphaned. Follow it to the new key.
+                    record = lemmas.get(
+                        esperanto.citation_form(decided['lemma']))
                 if record:
                     record['verdict'] = decided.get('verdict')
                     record['gloss'] = decided.get('gloss')

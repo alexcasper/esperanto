@@ -84,10 +84,9 @@ HSYS_MAX_DIACRITIC_RATIO = 0.05
 DIACRITIC = re.compile(r'[ĉĝĥĵŝŭĈĜĤĴŜŬ]')
 # ŭ is written as bare u and cannot be recovered by rule; these are the words
 # where it actually occurs, which covers the great majority of tokens.
-U_BREVE = ['antau', 'ankau', 'hodiau', 'baldau', 'preskau', 'kvazau',
-           'morgau', 'chirkau', 'cirkau', 'apenau', 'adiau', 'anstatau',
-           'malgrau', 'ambau', 'hierau', 'laut', 'laud', 'aud', 'nau',
-           'antaua', 'antauen']
+# Compounds where 'eu' or 'au' spans a morpheme boundary and is NOT a
+# diphthong: ne+uzebla, ne+utila, tre+uzata.
+U_COMPOUND = ['neuzebl', 'neuzat', 'neutil', 'neuzind', 'treuz', 'reuz']
 
 
 def hsystem_hits(text):
@@ -107,11 +106,24 @@ def from_hsystem(text):
         text = text.replace(digraph, letter)
         text = text.replace(digraph.upper(), letter.upper())
         text = text.replace(digraph.capitalize(), letter.upper())
-    for bare in U_BREVE:
-        restored = bare.replace('u', 'ŭ', 1) if bare.startswith('u') \
-            else re.sub(r'u(?!.*u)', 'ŭ', bare, count=1)
-        text = re.sub(r'\b%s' % bare, restored, text)
-        text = re.sub(r'\b%s' % bare.capitalize(), restored.capitalize(), text)
+    # ŭ occurs only in the diphthongs aŭ and eŭ, so inside an h-system file
+    # every 'au' and 'eu' is one — a word list was too narrow and left
+    # ankorau, lau, fraulino and ĉirkau behind. The exception is a compound
+    # where a prefix ending in e meets a root starting with u (ne+uzebla), so
+    # those are protected explicitly.
+    protected = {}
+    for i, word in enumerate(U_COMPOUND):
+        token = '\x00%d\x00' % i
+        protected[token] = word
+        text = re.sub(r'\b%s' % word, token, text, flags=re.IGNORECASE)
+    text = re.sub(r'au', 'aŭ', text)
+    text = re.sub(r'AU', 'AŬ', text)
+    text = re.sub(r'Au', 'Aŭ', text)
+    text = re.sub(r'eu', 'eŭ', text)
+    text = re.sub(r'EU', 'EŬ', text)
+    text = re.sub(r'Eu', 'Eŭ', text)
+    for token, word in protected.items():
+        text = text.replace(token, word)
     return text
 
 

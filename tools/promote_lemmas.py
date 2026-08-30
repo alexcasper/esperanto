@@ -104,6 +104,11 @@ def part_of_speech(word, gloss):
         return 'num'
     if is_preposition(word):
         return 'prep'
+    # hodiaŭ, morgaŭ, postmorgaŭ: the -aŭ adverbs carry no POS ending.
+    if word.endswith('aŭ'):
+        return 'adv'
+    if "'" in word and is_preposition(word.split("'")[-1]):
+        return 'prep'          # dank'al
     return 'unknown'
 
 
@@ -172,7 +177,18 @@ def main():
         existing = [e for e in existing if e.get('source') != SOURCE_TAG]
         dropped = before - len(existing)
     known = {e['word'].lower() for e in existing}
-    roots, words = esperanto.load_vocabulary()
+    # Build the vocabulary from what will actually remain, not from the file on
+    # disk: after --rebuild that file still holds the previous run's mined
+    # entries, so every derivation would match a root promoted last time and
+    # none would be flagged.
+    roots, words = set(), set()
+    for entry in existing:
+        words.add(entry['word'].lower())
+        if entry.get('root'):
+            roots.add(entry['root'].lower())
+        stem = (entry.get('morphology') or {}).get('stem')
+        if stem:
+            roots.add(stem.lower())
 
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
@@ -194,6 +210,11 @@ def main():
                 continue
             if key in seen:
                 skipped.append((entry['word'], 'duplicate citation form'))
+                continue
+            if entry['pos'] == 'unknown':
+                # The schema has a closed POS list; an entry we cannot classify
+                # is reported rather than shipped with an invalid value.
+                skipped.append((entry['word'], 'part of speech unresolved'))
                 continue
             seen.add(key)
             promoted.append(entry)

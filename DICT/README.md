@@ -32,32 +32,38 @@ unchangeable core vocabulary of the language.
 
 ### v2 — corpus-mined (`source: corpus-mined`)
 
-518 entries the 1905 core cannot contain, mined from the 131-source corpus in
-`CORPUS/` and reviewed by hand: chiefly the internationalisms Esperanto took
-on after the Fundamento (*kongreso*, *akademio*, *literaturo*, *telegramo*,
-*spesmilo*), lexicalised compounds (*lernolibro*, *samideano*) and
-interjections the UV omits. 445 of the 518 are attested in three or more
-independent sources.
+2216 entries the 1905 core cannot contain, mined from the 141-source corpus in
+`CORPUS/` and reviewed by hand across two rounds: the internationalisms
+Esperanto took on after the Fundamento (*kongreso*, *telefono*, *aeroplano*,
+*sennaciismo*), lexicalised compounds (*lernolibro*, *samideano*) and
+productive derivations (*virino*, *malgranda*, *esperantisto*). 1592 are
+attested in three or more independent sources.
+
+555 entries carry `derived: true`, marking a word built by regular affixation
+on a root already held — *abonanto*, *agado*, *aliulo*. Settled policy is that
+these earn entries, because a reader looking up *reĝino* should find it; the
+flag lets a consumer wanting only roots and opaque compounds filter them out.
 
 Mined by `tools/mine_lemmas.py`, reviewed via `tools/review_shard.py`, merged
 by `tools/reconcile_lemmas.py` and written here by `tools/promote_lemmas.py`.
 Candidates judged proper nouns, foreign words, fragments or OCR artefacts are
-excluded by construction; the full verdict record is `DICT/verdicts.jsonl`.
+excluded by construction; the full verdict record, including disagreements
+between reviewers, is `DICT/verdicts.jsonl`.
 
 | Kind | Count |
 |---|---|
-| noun | 321 |
-| adj | 102 |
-| adv | 61 |
-| verb | 21 |
-| interj | 6 |
-| num | 5 |
-| prep | 2 |
-| **Subtotal** | **518** |
+| noun | 1315 |
+| adj | 550 |
+| adv | 237 |
+| verb | 92 |
+| num | 11 |
+| interj | 8 |
+| prep | 3 |
+| **Subtotal** | **2216** |
 
-**Total: 3429 entries.**
+**Total: 5127 entries.**
 
-POS distribution: 2151 noun · 577 verb · 453 adj · 103 adv · 31 suffix · 29 prep · 24 pron · 17 num · 12 particle · 9 ending · 8 prefix · 7 interj · 7 conj · 1 art.
+POS distribution: 3145 noun · 901 adj · 648 verb · 279 adv · 31 suffix · 30 prep · 24 pron · 23 num · 12 particle · 9 ending · 9 interj · 8 prefix · 7 conj · 1 art.
 
 ## Schema
 
