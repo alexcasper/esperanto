@@ -114,6 +114,16 @@ def mine(files, roots, words, min_count, max_citations):
                     low = token.lower()
                     if low in STOPWORDS or ROMAN.match(low):
                         continue
+                    if kind == 'known' and lemma != low:
+                        # analyse() collapses a word onto its root, which is
+                        # right for inflection (reĝon -> reĝ) but loses the
+                        # word for derivation (reĝino -> reĝ). Settled policy
+                        # is that a productive derivation earns its own entry,
+                        # so it has to survive mining as its own lemma.
+                        stem = esperanto.strip_ending(low)
+                        if stem != lemma:
+                            lemma = esperanto.citation_form(token)
+                            kind = 'derived'
                     if kind == 'unknown':
                         # Capitalised tokens keep their surface form: stripping
                         # a final -n as if it were the accusative turned
@@ -208,17 +218,18 @@ def main():
     os.makedirs(SHARDS, exist_ok=True)
     out = os.path.join(SHARDS, 'shard-%d-of-%d.jsonl' % (index, count))
     ordered = sorted(lemmas.values(),
-                     key=lambda r: ({'unknown': 0, 'name': 1, 'fragment': 2,
-                                     'known': 3}.get(r['kind'], 4),
+                     key=lambda r: ({'unknown': 0, 'derived': 1, 'name': 2,
+                                     'fragment': 3, 'known': 4}.get(r['kind'], 5),
                                     -r['count']))
     with open(out, 'w', encoding='utf-8') as fh:
         for record in ordered:
             fh.write(json.dumps(record, ensure_ascii=False) + '\n')
 
     unknown = sum(1 for r in ordered if r['kind'] == 'unknown')
+    derived = sum(1 for r in ordered if r['kind'] == 'derived')
     print('shard %d/%d: %d files → %s' % (index, count, len(files), out))
-    print('  %d lemmas (%d unknown, %d built on known roots)'
-          % (len(ordered), unknown, len(ordered) - unknown))
+    print('  %d lemmas (%d unknown, %d derived, %d other)'
+          % (len(ordered), unknown, derived, len(ordered) - unknown - derived))
     if args.ledger:
         print('  %d verdicts restored from %s'
               % (restored, os.path.basename(args.ledger)))

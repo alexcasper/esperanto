@@ -20,10 +20,11 @@ the archive.org Esperanto scans unusable. But Wikisource records a
 validated by a second one. That metadata is the gate archive.org lacks, so we
 take level 3+ pages only and report what each book contributed.
 
-Selection is by criterion, not a hand-list: a book qualifies on published year
-(<= 1929, from the index filename, keeping this to texts old enough to be
-clearly out of copyright) and on having at least MIN_PAGES proofread pages.
-Run --list to see every candidate and why it was taken or left.
+Selection is by criterion, not a hand-list: a book qualifies on the
+source-country copyright term (70 years from the last credited death, with
+death years verified against Wikidata) and on having at least MIN_PAGES
+proofread pages. Run --list to see every candidate and why it was taken or
+left.
 """
 import bz2
 import collections
@@ -41,8 +42,49 @@ DUMP_URL = ('https://dumps.wikimedia.org/eowikisource/latest/'
 INDEX_URL = 'https://eo.wikisource.org/wiki/Indekso:%s'
 
 MIN_QUALITY = 3      # 3 = proofread by a human, 4 = validated by a second
-MAX_YEAR = 1929      # published no later than this
 MIN_PAGES = 100      # enough proofread pages to be worth a corpus file
+
+# Copyright test: source-country term, 70 years from the death of the last
+# surviving credited author or translator. Publication year is the wrong test
+# for these books — Zamenhof died in 1917, so his 1934 translations have been
+# out of copyright in Europe since 1988, while Privat's 1935 book is protected
+# until 2033 because he lived to 1962.
+#
+# Death years are verified against Wikidata rather than recalled; the QID is
+# given so each is checkable. A work whose credited people cannot all be
+# matched here is skipped, so the rule fails closed.
+TERM_YEARS = 70
+US_TERM_YEARS = 95   # US publication-based term
+THIS_YEAR = 2026
+AUTHOR_DEATH = {
+    'Zamenhof': (1917, 'Q11758'),        # L. L. Zamenhof
+    'FeZ': (1933, 'Q3889237'),           # Felikso Zamenhof
+    'Sienkiew': (1916, 'Q41502'),        # Henryk Sienkiewicz (spelt Sienkiewikz)
+    'Lanti': (1947, 'Q52580'),           # Eŭgeno Lanti (Eugène Adam)
+    'Rossetti': (1950, 'Q2947206'),      # Cezaro Rossetti
+    'Bulthuis': (1945, 'Q3562233'),      # Hendrik Jan Bulthuis
+    'Privat': (1962, 'Q12571'),          # Edmond Privat — NOT yet public domain
+    'Voltaire': (1778, 'Q9068'),
+    'Vallienne': (1908, 'Q3132907'),
+    'Luyken': (1947, 'Q1603477'),
+    'Grabowski': (1921, 'Q347371'),
+    'Kabe': (1959, 'Q551161'),           # Kazimierz Bein — protected until 2030
+    'Orzeszko': (1910, 'Q233502'),
+    'Homero': (-700, 'Q6691'),
+    'Defoe': (1731, 'Q40946'),
+    'Prus': (1912, 'Q78481'),
+    'Moli': (1673, 'Q687'),              # Molière
+    'Prévost': (1763, 'Q313617'),
+    'Zakrzewski': (1936, 'Q9376033'),
+    'Kofman': (1924, 'Q210703'),
+    'Boirac': (1917, 'Q2914907'),
+    'Krafft': (1934, None),
+    'Isaacs': (1895, 'Q463322'),
+    'Virgilio': (-19, 'Q1398'),
+    'Mickiewicz': (1855, 'Q79822'),
+    'Rivera': (1928, 'Q332004'),
+    'Andersen': (1875, 'Q5673'),
+}
 
 # Already held in full from Project Gutenberg or the batch-1 wsrc- scrape; a
 # second edition would double every lemma count without adding vocabulary.
@@ -168,6 +210,12 @@ def read_books(dump_path):
     return books
 
 
+def credited(index):
+    """Death years of everyone this index credits, author and translator."""
+    return {name: AUTHOR_DEATH[name][0] for name in AUTHOR_DEATH
+            if name in index}
+
+
 def assess(index, pages):
     good = [p for p in pages if p[1] >= MIN_QUALITY]
     years = YEAR.findall(index)
@@ -175,13 +223,33 @@ def assess(index, pages):
     reasons = []
     if any(name in index for name in EXCLUDE):
         reasons.append('already held from Gutenberg')
-    if year is None:
-        reasons.append('no year in index name')
-    elif year > MAX_YEAR:
-        reasons.append('published %d > %d' % (year, MAX_YEAR))
+
+    # A work is taken if it is public domain under EITHER test: the
+    # source-country term (70 years from the last credited death) or the US
+    # term (95 years from publication). The two disagree in both directions —
+    # Zamenhof's 1934 Quo vadis is free in Europe but not yet in the US, while
+    # Kabe's 1922 dictionary is the reverse — so the union admits both.
+    deaths = credited(index)
+    basis = None
+    if deaths:
+        last = max(deaths.values())
+        if last + TERM_YEARS + 1 <= THIS_YEAR:
+            basis = 'source-country: last death %d' % last
+    if basis is None and year and year + US_TERM_YEARS + 1 <= THIS_YEAR:
+        basis = 'US: published %d' % year
+    if basis is None:
+        if not deaths and not year:
+            reasons.append('no credited author and no year: cannot establish '
+                           'public domain either way')
+        else:
+            last = max(deaths.values()) if deaths else None
+            reasons.append(
+                'in copyright under both tests (%s; published %s)'
+                % ('last death %s' % last if last else 'no verified death',
+                   year or 'unknown'))
     if len(good) < MIN_PAGES:
         reasons.append('only %d proofread pages' % len(good))
-    return good, year, reasons
+    return good, year, reasons, basis
 
 
 def slug(index):
@@ -203,18 +271,19 @@ def main():
     books = read_books(dump)
     candidates = []
     for index, pages in books.items():
-        good, year, reasons = assess(index, pages)
-        candidates.append((index, pages, good, year, reasons))
+        good, year, reasons, basis = assess(index, pages)
+        candidates.append((index, pages, good, year, reasons, basis))
     candidates.sort(key=lambda c: -len(c[2]))
 
     if listing:
-        print('%d scanned books in the dump; quality gate: level >= %d, '
-              'year <= %d, >= %d pages\n' % (len(books), MIN_QUALITY, MAX_YEAR,
-                                             MIN_PAGES))
+        print('%d scanned books in the dump; gate: proofread level >= %d, '
+              '>= %d pages, and public domain under the source-country (%d yr) or US term\n'
+              % (len(books), MIN_QUALITY, MIN_PAGES, TERM_YEARS))
         print('%-52s %6s %6s %s' % ('index', 'pages', 'proof', 'verdict'))
-        for index, pages, good, year, reasons in candidates[:40]:
+        for index, pages, good, year, reasons, basis in candidates[:40]:
             print('%-52s %6d %6d %s' % (index[:52], len(pages), len(good),
-                                        '; '.join(reasons) or 'TAKE'))
+                                        '; '.join(reasons) or
+                                        'TAKE (%s)' % basis))
         return 0
 
     existing = {}
@@ -224,7 +293,7 @@ def main():
                 existing[hashlib.sha256(fh.read()).hexdigest()] = name
 
     added, skipped = [], []
-    for index, pages, good, year, reasons in candidates:
+    for index, pages, good, year, reasons, basis in candidates:
         if reasons:
             if len(good) >= MIN_PAGES:   # only report near-misses, not all 666
                 skipped.append((index, '; '.join(reasons)))
@@ -247,7 +316,8 @@ def main():
         existing[digest] = name
         added.append({'file': name, 'index': index, 'year': year,
                       'proofread': len(good), 'scanned': len(pages),
-                      'bytes': len(blob), 'sha': digest[:12]})
+                      'bytes': len(blob), 'sha': digest[:12],
+                      'basis': basis})
 
     if added and not dry_run:
         with open(PROVENANCE, 'a', encoding='utf-8') as fh:
@@ -257,12 +327,16 @@ def main():
                      'proofread (ProofreadPage quality level >= %d) are '
                      'included, and only books published %d or earlier; '
                      'unproofread OCR is left out because it invents lemmas. '
+                     'A work is included if it is public domain under either '
+                     'the source-country term (70 years from the last credited '
+                     'death, verified against Wikidata) or the US term (95 '
+                     'years from publication); each line records which. '
                      'One file per book, pages joined in order.\n\n'
-                     % (DUMP_URL, MIN_QUALITY, MAX_YEAR))
+                     % (DUMP_URL, MIN_QUALITY, TERM_YEARS))
             for rec in added:
                 fh.write('- `%(file)s` — %(index)s — Vikifontaro — %(year)d — '
                          '%(proofread)d/%(scanned)d proofread pages — '
-                         'sha256:%(sha)s — ' % rec)
+                         'public domain (%(basis)s) — sha256:%(sha)s — ' % rec)
                 fh.write('%s\n' % (INDEX_URL % rec['index'].replace(' ', '_')))
 
     print('%s%d books added, %d near-misses skipped'

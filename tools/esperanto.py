@@ -64,20 +64,39 @@ def load_vocabulary(path=ENTRIES):
     return roots, words
 
 
-def peel_affixes(stem, roots):
-    """Strip prefixes and suffixes until a known root falls out."""
-    peeling = True
-    while peeling and len(stem) > 2:
-        if stem in roots:
-            return stem
-        peeling = False
-        for affix in sorted(PREFIX + PARTICIPLE + SUFFIX, key=len, reverse=True):
-            if stem.startswith(affix) and len(stem) > len(affix) + 1:
-                stem, peeling = stem[len(affix):], True
-                break
-            if stem.endswith(affix) and len(stem) > len(affix) + 1:
-                stem, peeling = stem[:-len(affix)], True
-                break
+def peel_affixes(stem, roots, max_depth=4):
+    """Strip affixes until a known root falls out, searching rather than
+    peeling greedily.
+
+    Greedy peeling picks whichever affix matches first and cannot back out of
+    a wrong choice. That mangles words whose root merely begins or ends like an
+    affix: reĝin- loses the "prefix" re- and becomes ĝin, so reĝino — plainly
+    reĝ + in + o — is reported as unknown vocabulary. Trying every single-step
+    strip breadth-first and stopping at the first known root fixes it, because
+    the correct decomposition is reachable even when a wrong one is tried
+    first.
+    """
+    if stem in roots:
+        return stem
+    affixes = sorted(set(PREFIX + PARTICIPLE + SUFFIX), key=len, reverse=True)
+    seen = {stem}
+    frontier = [stem]
+    for _ in range(max_depth):
+        nxt = []
+        for current in frontier:
+            for affix in affixes:
+                for candidate in (
+                        current[len(affix):] if current.startswith(affix) else None,
+                        current[:-len(affix)] if current.endswith(affix) else None):
+                    if not candidate or len(candidate) < 2 or candidate in seen:
+                        continue
+                    if candidate in roots:
+                        return candidate
+                    seen.add(candidate)
+                    nxt.append(candidate)
+        if not nxt:
+            break
+        frontier = nxt
     return stem
 
 
@@ -105,8 +124,16 @@ def analyse(token, roots, words):
             peeled = peel_affixes(stem, roots)
             if peeled in roots:
                 return peeled, 'known'
+            peeled = peel_affixes(stem, words)
+            if peeled in words:
+                return peeled, 'known'
     peeled = peel_affixes(low, roots)
     if peeled in roots:
+        return peeled, 'known'
+    # Some derivations rest on a grammatical word rather than a UV root —
+    # treege is tre + eg + e — so retry against the whole-word vocabulary.
+    peeled = peel_affixes(low, words)
+    if peeled in words:
         return peeled, 'known'
     for cut in range(3, len(low) - 2):
         head, tail = low[:cut], low[cut:]
@@ -159,4 +186,17 @@ def citation_form(token):
             if ending in ('j', 'n'):
                 return stem
             return stem
+    return low
+
+
+def strip_ending(word):
+    """Remove one grammatical ending, leaving the stem.
+
+    vortojn -> vort, estas -> est, granda -> grand. This is inflection only;
+    derivational affixes are left in place, so reĝino -> reĝin.
+    """
+    low = word.lower()
+    for ending in ENDINGS:
+        if low.endswith(ending) and len(low) > len(ending) + 1:
+            return low[:-len(ending)]
     return low

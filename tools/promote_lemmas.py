@@ -32,6 +32,9 @@ import os
 import re
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import esperanto  # noqa: E402  (path set above)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENTRIES = os.path.join(ROOT, 'DICT', 'entries.jsonl')
 CANDIDATES = os.path.join(ROOT, 'DICT', 'candidates.jsonl')
@@ -111,7 +114,23 @@ def morphology(word, pos):
     return None
 
 
-def build_entry(record):
+def is_derived(word, roots, words):
+    """True if the word is built by regular affixation on a root we hold.
+
+    Settled policy: a productive derivation (reĝino, duono, treege) earns an
+    entry, but is flagged, so a consumer wanting only roots and opaque
+    compounds can filter on it. Reviewers disagreed 37 times about whether
+    such words were headwords or inflections; both readings were defensible,
+    so the dictionary records the fact rather than picking a side and
+    discarding the other reading's view.
+    """
+    bare = word[:-1] if word[-1:] in ENDING_POS else word
+    if bare in roots or bare in words:
+        return False
+    return esperanto.peel_affixes(bare, roots) in roots
+
+
+def build_entry(record, roots, words):
     gloss = (record.get('gloss') or '').strip()
     word = citation_form(record['lemma'], gloss)
     pos = part_of_speech(word, gloss)
@@ -127,6 +146,8 @@ def build_entry(record):
     }
     entry['citations'] = [{'source': c['source'], 'text': c['text']}
                           for c in (record.get('citations') or [])[:3]]
+    if is_derived(word, roots, words):
+        entry['derived'] = True
     return entry
 
 
@@ -134,6 +155,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--dry-run', action='store_true')
     parser.add_argument('--candidates', default=CANDIDATES)
+    parser.add_argument('--rebuild', action='store_true',
+                        help='drop existing corpus-mined entries first, so the '
+                             'promotion can be re-run after a review round')
     args = parser.parse_args()
 
     if not os.path.exists(args.candidates):
@@ -142,7 +166,13 @@ def main():
 
     with open(ENTRIES, encoding='utf-8') as fh:
         existing = [json.loads(line) for line in fh if line.strip()]
+    dropped = 0
+    if args.rebuild:
+        before = len(existing)
+        existing = [e for e in existing if e.get('source') != SOURCE_TAG]
+        dropped = before - len(existing)
     known = {e['word'].lower() for e in existing}
+    roots, words = esperanto.load_vocabulary()
 
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
@@ -157,7 +187,7 @@ def main():
             if not (record.get('gloss') or '').strip():
                 ungloss.append(record['lemma'])
                 continue
-            entry = build_entry(record)
+            entry = build_entry(record, roots, words)
             key = entry['word'].lower()
             if key in known:
                 skipped.append((entry['word'], 'already in the dictionary'))
@@ -182,7 +212,11 @@ def main():
     print('%s%d accepted, %d promoted, %d skipped, %d without a gloss'
           % ('[dry run] ' if args.dry_run else '', accepted, len(promoted),
              len(skipped), len(ungloss)))
-    print('  dictionary: %d → %d entries' % (len(existing), len(merged)))
+    derived = sum(1 for e in promoted if e.get('derived'))
+    if dropped:
+        print('  rebuild: dropped %d existing corpus-mined entries' % dropped)
+    print('  dictionary: %d → %d entries (%d flagged derived)'
+          % (len(existing), len(merged), derived))
     print('  by pos: %s' % ', '.join('%s=%d' % kv for kv in
                                      sorted(by_pos.items(), key=lambda kv: -kv[1])))
     for word, why in skipped[:8]:
