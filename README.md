@@ -17,7 +17,20 @@ Standing-orders worksite for building Esperanto language assets: raw corpus, dic
   `normalize_corpus.py` (RAW → CORPUS), `fetch_raw_gutenberg.py` and
   `fetch_raw_vikifontaro.py` (source acquisition, both gated on licence and
   text quality), `score_esperanto_text.py` (how much of a candidate text is
-  recognisable Esperanto, for judging OCR before it reaches the corpus)
+  recognisable Esperanto, for judging OCR before it reaches the corpus),
+  `repair_diacritics.py` (restores diacritics a scan dropped, only where the
+  restoration is unambiguous)
+
+Building `CORPUS/` takes two commands, in this order:
+
+```sh
+python3 tools/normalize_corpus.py            # RAW/ -> CORPUS/
+python3 tools/repair_diacritics.py --apply   # fix dropped diacritics in place
+```
+
+The repair runs second because it needs the dictionary to tell a damaged word
+from a merely unknown one, and it edits `CORPUS/` in place — so re-normalising
+undoes it and it has to be re-run.
 
 ## Conventions
 

@@ -231,7 +231,10 @@ def main():
                 if record:
                     record['verdict'] = decided.get('verdict')
                     record['gloss'] = decided.get('gloss')
-                    record['note'] = decided.get('note')
+                    # Bound the restored note too, so a ledger written by an
+                    # older build cannot reintroduce the growth.
+                    note = decided.get('note')
+                    record['note'] = note[:600] if note else None
                     restored += 1
 
     os.makedirs(SHARDS, exist_ok=True)

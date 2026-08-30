@@ -59,6 +59,28 @@ def pick_citations(citations, limit=5):
     return picked
 
 
+NOTE_LIMIT = 600
+
+
+def join_notes(notes):
+    """One note per distinct observation, bounded.
+
+    Reviewers write a sentence or two per lemma; several shards seeing the
+    same word should not multiply that. The cap is a backstop against any
+    future path that reintroduces duplication.
+    """
+    seen, unique = set(), []
+    for note in notes:
+        text = note.strip()
+        if text and text not in seen:
+            seen.add(text)
+            unique.append(text)
+    joined = '; '.join(unique)
+    if len(joined) > NOTE_LIMIT:
+        joined = joined[:NOTE_LIMIT].rsplit(' ', 1)[0] + ' …'
+    return joined or None
+
+
 def merge(records):
     merged = {}
     for shard, record in records:
@@ -88,7 +110,13 @@ def merge(records):
                     {'field': field, 'shard': shard, 'value': value,
                      'kept': entry[field]})
         note = record.get('note')
-        if note:
+        if note and note not in entry['notes']:
+            # Deduplicate. Without this the ledger grows 8x per round: the
+            # reduce joins the note from all eight shards, the next map
+            # restores that joined string into every shard, and the round
+            # after joins eight copies of it. Three rounds took one note to
+            # 1.2 million characters and the ledger to 431 MB, which GitHub
+            # refused outright.
             entry['notes'].append(note)
 
     for entry in merged.values():
@@ -130,7 +158,7 @@ def main():
                 fh.write(json.dumps({
                     'lemma': entry['lemma'], 'verdict': entry['verdict'],
                     'gloss': entry['gloss'],
-                    'note': '; '.join(entry['notes']) or None,
+                    'note': join_notes(entry['notes']),
                     'reviewed_in': sorted(set(entry['shards'])),
                     # Carry disagreements into the ledger. Without this the
                     # ledger flattens each lemma to one verdict, re-mining
