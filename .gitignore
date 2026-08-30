@@ -15,3 +15,9 @@ DICT/candidates.jsonl
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Tatoeba export blobs (fetch: python3 tools/fetch_tatoeba.py; digests in RAW/tatoeba/README.md)
+RAW/tatoeba/*
+!RAW/tatoeba/README.md
+# Derived en-epo pair corpus (rebuild: python3 tools/build_tatoeba_pairs.py)
+CORPUS/tatoeba/pairs.tsv
