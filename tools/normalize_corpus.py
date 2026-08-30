@@ -71,6 +71,73 @@ def to_utf8_diacritics(text):
     return text
 
 
+# ---------------------------------------------------------------- h-system
+# Zamenhof's own fallback spelling: ch gh hh jh sh for ĉ ĝ ĥ ĵ ŝ, and plain u
+# for ŭ. Riskier to undo than the x-system, because 'gh' and 'ch' occur
+# legitimately across morpheme boundaries in compounds (flug+haveno), and x
+# is not an Esperanto letter at all. So convert only where the file shows the
+# digraphs *and* essentially no diacritics — a file already using ĉ cannot be
+# in the h-system, and its digraphs are compounds or foreign words.
+HSYS = [('ch', 'ĉ'), ('gh', 'ĝ'), ('hh', 'ĥ'), ('jh', 'ĵ'), ('sh', 'ŝ')]
+HSYS_MIN = 100
+HSYS_MAX_DIACRITIC_RATIO = 0.05
+DIACRITIC = re.compile(r'[ĉĝĥĵŝŭĈĜĤĴŜŬ]')
+# ŭ is written as bare u and cannot be recovered by rule; these are the words
+# where it actually occurs, which covers the great majority of tokens.
+U_BREVE = ['antau', 'ankau', 'hodiau', 'baldau', 'preskau', 'kvazau',
+           'morgau', 'chirkau', 'cirkau', 'apenau', 'adiau', 'anstatau',
+           'malgrau', 'ambau', 'hierau', 'laut', 'laud', 'aud', 'nau',
+           'antaua', 'antauen']
+
+
+def hsystem_hits(text):
+    return sum(len(re.findall(r'\w*%s\w*' % a, text, re.IGNORECASE))
+               for a, _ in HSYS)
+
+
+def is_hsystem(text):
+    hits = hsystem_hits(text)
+    if hits < HSYS_MIN:
+        return False
+    return len(DIACRITIC.findall(text)) < hits * HSYS_MAX_DIACRITIC_RATIO
+
+
+def from_hsystem(text):
+    for digraph, letter in HSYS:
+        text = text.replace(digraph, letter)
+        text = text.replace(digraph.upper(), letter.upper())
+        text = text.replace(digraph.capitalize(), letter.upper())
+    for bare in U_BREVE:
+        restored = bare.replace('u', 'ŭ', 1) if bare.startswith('u') \
+            else re.sub(r'u(?!.*u)', 'ŭ', bare, count=1)
+        text = re.sub(r'\b%s' % bare, restored, text)
+        text = re.sub(r'\b%s' % bare.capitalize(), restored.capitalize(), text)
+    return text
+
+
+# ------------------------------------------------------------- homoglyphs
+# Three Dua Libro pages carry Cyrillic letters inside otherwise-Latin words
+# (роv for pov, ѵоrt for vort) — invisible to a reader, but they split the
+# affected words off as unexplained near-miss lemmas downstream.
+HOMOGLYPH = {'а': 'a', 'е': 'e', 'о': 'o', 'р': 'p', 'с': 'c', 'у': 'y',
+             'х': 'x', 'і': 'i', 'ѵ': 'v', 'ј': 'j', 'ѕ': 's',
+             'А': 'A', 'Е': 'E', 'О': 'O', 'Р': 'P', 'С': 'C', 'Х': 'X',
+             'І': 'I', 'Ј': 'J'}
+CYRILLIC = re.compile(r'[Ѐ-ӿ]')
+MIXED_TOKEN = re.compile(r'\b(?=\w*[Ѐ-ӿ])(?=\w*[A-Za-zĉĝĥĵŝŭ])\w+\b')
+
+
+def repair_homoglyphs(text):
+    """Latinise Cyrillic letters that appear inside otherwise-Latin words.
+
+    Only mixed-script tokens are touched, so genuine Russian glosses — the
+    Universala Vortaro carries a whole Russian column — are left alone.
+    """
+    def fix(match):
+        return ''.join(HOMOGLYPH.get(ch, ch) for ch in match.group())
+    return MIXED_TOKEN.sub(fix, text)
+
+
 # ---------------------------------------------------------------- slicing
 def strip_pg_frontmatter(lines):
     """Drop the proofreader credit and transcriber's note the body opens with."""
@@ -184,6 +251,12 @@ def normalize(path):
     converted = hits >= XSYS_MIN
     if converted:
         text = to_utf8_diacritics(text)
+    hsystem = is_hsystem(text)
+    if hsystem:
+        text = from_hsystem(text)
+    homoglyphs = len(MIXED_TOKEN.findall(text))
+    if homoglyphs:
+        text = repair_homoglyphs(text)
     text = unicodedata.normalize('NFC', text)
 
     return {
@@ -195,6 +268,8 @@ def normalize(path):
         'method': method,
         'xsystem': 'converted:%d' % hits if converted else
                    ('left:%d' % hits if hits else '-'),
+        'hsystem': 'converted' if hsystem else '-',
+        'homoglyphs': homoglyphs or '-',
         'sha256': hashlib.sha256(text.encode('utf-8')).hexdigest()[:12],
         'text': text,
     }
@@ -218,7 +293,8 @@ def main():
         records.append(record)
 
     columns = ['source', 'method', 'in_lines', 'out_lines', 'head_stripped',
-               'tail_stripped', 'xsystem', 'sha256']
+               'tail_stripped', 'xsystem', 'hsystem', 'homoglyphs',
+               'sha256']
     with open(os.path.join(OUT, 'MANIFEST.tsv'), 'w', encoding='utf-8') as fh:
         fh.write('\t'.join(columns) + '\n')
         for record in records:
@@ -228,8 +304,9 @@ def main():
     dropped = sum(r['in_lines'] for r in records) - kept
     print('normalized %d/%d sources → %s' % (len(records), len(sources), OUT))
     print('  %d body lines kept, %d furniture lines dropped' % (kept, dropped))
-    print('  x-system converted: %d file(s)'
-          % sum(1 for r in records if r['xsystem'].startswith('converted')))
+    print('  x-system converted: %d file(s); h-system converted: %d file(s)'
+          % (sum(1 for r in records if r['xsystem'].startswith('converted')),
+             sum(1 for r in records if r['hsystem'] == 'converted')))
     print('  wsrc fallback (verify by hand): %s'
           % (', '.join(r['source'] for r in records
                        if r['method'] == 'wsrc-fallback') or 'none'))

@@ -1,132 +1,132 @@
-source	method	in_lines	out_lines	head_stripped	tail_stripped	xsystem	sha256
-pg-11307.txt	pg-markers	2146	1626	28	351	left:5	7921f170cbfd
-pg-16967.txt	pg-markers	14676	14123	42	351	left:7	39b7c7006bc6
-pg-17482.txt	pg-markers	4349	3854	46	351	converted:3989	8368f0bfcfd1
-pg-20006.txt	pg-markers	2317	1860	79	351	converted:1844	295e937b2cd3
-pg-21194.txt	pg-markers	1838	1418	32	351	-	38080d55f664
-pg-22592.txt	pg-markers	4379	3844	40	355	left:1	a769208b0f6d
-pg-23093.txt	pg-markers	2749	2248	49	355	converted:2074	e5d2f9d83642
-pg-23670.txt	pg-markers	3527	3080	42	351	converted:3151	aaa63d40c94c
-pg-24145.txt	pg-markers	3834	3417	38	351	converted:2697	8a322e5df8bd
-pg-24292.txt	pg-markers	6196	5497	36	351	converted:2918	c26030bdc407
-pg-24525.txt	pg-markers	1863	1376	43	351	converted:1165	96e182a4584d
-pg-25311.txt	pg-markers	1470	1038	30	351	-	aec8797a8e13
-pg-26359.txt	pg-markers	3837	3364	44	351	-	79ede42e23ab
-pg-26959.txt	pg-markers	1356	922	43	355	converted:516	c60c1ffb404f
-pg-32035.txt	pg-markers	5758	5258	42	351	left:1	d35a1e52e2f4
-pg-42028.txt	pg-markers	3393	2949	31	351	-	652c899392b8
-pg-42774.txt	pg-markers	1472	989	30	351	-	3d2ff3d73a0b
-pg-47259.txt	pg-markers	5526	5048	31	351	left:1	a74a09697273
-pg-47855.txt	pg-markers	3923	3403	31	351	left:2	b3d2cbe2087b
-pg-48896.txt	pg-markers	1553	1037	30	351	-	658e1a86bd58
-pg-52062.txt	pg-markers	2444	1949	39	351	left:2	b5018c11cbba
-pg-52063.txt	pg-markers	2664	2164	39	351	-	711663a44244
-pg-52064.txt	pg-markers	3356	2840	39	351	left:4	af2073932eae
-pg-52111.txt	pg-markers	3979	3483	30	351	-	a5d7a29c180b
-pg-55574.txt	pg-markers	4383	3958	30	351	-	e6de833542c2
-pg-55954.txt	pg-markers	10952	10498	31	355	left:1	6a91bd50ab77
-pg-57184.txt	pg-markers	8990	8358	43	351	left:15	c27b4c3c0b98
-pg-61579.txt	pg-markers	1406	1010	31	351	-	338d65273edf
-pg-61581.txt	pg-markers	783	368	28	351	-	d0ad22a8eba5
-pg-62118.txt	pg-markers	3215	2787	31	351	-	d20de06a5214
-pg-63064.txt	pg-markers	2070	1633	31	351	-	449b29acc01f
-pg-63105.txt	pg-markers	2455	2027	31	355	-	c5bbd7df2c5f
-pg-64579.txt	pg-markers	19840	19287	28	351	-	8662590bebda
-pg-69123.txt	pg-markers	7351	6701	30	351	left:2	17104cb14de3
-pg-74344.txt	pg-markers	1124	710	34	351	-	f0b933e0ec0c
-pg-76273.txt	pg-markers	1235	837	31	351	left:1	780baa7a722f
-pg-7787.txt	pg-markers	14972	13977	62	351	converted:4043	b1bc3a37acdb
-pg-8177.txt	pg-markers	8874	8283	48	351	converted:2815	9d22d07ea960
-pg-8224.txt	pg-markers	16956	16448	35	351	converted:14820	09532d5b559d
-wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt	wsdump-clean	1014	1014	0	0	-	e3c463406060
-wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt	wsdump-clean	5699	5688	0	0	-	7b80773475a5
-wsdump-Homero_Iliado_1896_Kofman.txt	wsdump-clean	3896	3896	0	0	-	965f14789ba3
-wsdump-Kabe_Vortaro_de_Esperanto_1922.txt	wsdump-clean	14216	14211	0	0	left:1	997212270a6a
-wsdump-Luyken_Mirinda_amo_1913.txt	wsdump-clean	4524	4524	0	0	-	9a2282e9567a
-wsdump-Molière_Don_Juan_1906_Boirac.txt	wsdump-clean	3330	3330	0	0	-	d62144c569f5
-wsdump-Orzeszko_Marta_1928_Zamenhof.txt	wsdump-clean	3299	3299	0	0	left:4	ef09e24a46f3
-wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt	wsdump-clean	2783	2783	0	0	-	b50e7938fbb8
-wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt	wsdump-clean	1521	1521	0	0	left:7	32feb39fc4f8
-wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt	wsdump-clean	9456	9456	0	0	left:1	86eba0985192
-wsdump-Vallienne_Ĉu_li_1908.txt	wsdump-clean	9170	9170	0	0	-	a2e619cc6c59
-wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt	wsdump-clean	834	834	0	0	left:22	cc302318ed6a
-wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt	wsdump-clean	12616	12592	0	0	left:49	859330162d3a
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_Antaŭparolo.txt	wsrc-marker	200	192	7	0	-	99fb5d8f81a3
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_I.txt	wsrc-marker	46	37	8	0	-	251abc7d15b5
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_II.txt	wsrc-marker	17	8	8	0	-	10f04dd119f9
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_III.txt	wsrc-marker	755	747	7	0	-	5072e4016107
-wsrc-Fabeloj_de_Andersen_(Zamenhof).txt	wsrc-marker	225	119	103	0	-	c71a26ffc32e
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Abio.txt	wsrc-marker	136	127	8	0	-	772324005d7c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Anĝelo.txt	wsrc-marker	38	29	8	0	-	b322fd76e4c5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Avineto.txt	wsrc-marker	26	17	8	0	-	c346e948cf76
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Bildo_el_kastelremparo.txt	wsrc-marker	18	9	8	0	-	27a66c8740fc
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Cikonioj.txt	wsrc-marker	105	96	8	0	-	819d9ddf3d2f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dano_Holger.txt	wsrc-marker	50	41	8	0	-	774fdc5d134d
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dio_de_Dormo.txt	wsrc-marker	229	220	8	0	-	52ee7e2c1381
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_El_fenestro_en_Vartou.txt	wsrc-marker	30	21	8	0	-	04611aa28cb1
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elfo_de_la_rozo.txt	wsrc-marker	68	59	8	0	-	308d99c0637f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elinjo-Fingreto.txt	wsrc-marker	130	121	8	0	-	2d15aa38c012
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fajrilo.txt	wsrc-marker	114	107	6	0	-	49b1a543b438
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Feliĉa_familio.txt	wsrc-marker	56	49	6	0	-	49bfc0588d65
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Flikilo.txt	wsrc-marker	60	51	8	0	-	6f90d8e87918
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Floroj_de_la_malgranda_Ida.txt	wsrc-marker	94	85	8	0	-	18477f769dd5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fluganta_Kofro.txt	wsrc-marker	108	99	8	0	-	904ba85c574f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Galoŝoj_de_feliĉo.txt	wsrc-marker	433	424	8	0	-	89ac6dd6fa90
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Gefianĉoj.txt	wsrc-marker	50	41	8	0	-	0f122581d3d3
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Guto_da_akvo.txt	wsrc-marker	22	13	8	0	-	bc9aa3b8c277
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Knabineto_kun_alumetoj.txt	wsrc-marker	38	29	8	0	-	d600d5867372
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Konkurso_de_Saltado.txt	wsrc-marker	44	35	8	0	-	a1bff59955ad
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Kupra_porko.txt	wsrc-marker	128	119	8	0	-	9a8218689ab9
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_malbela_anasido.txt	wsrc-marker	142	133	8	0	-	326615c1f73c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_najtingalo.txt	wsrc-marker	163	154	8	0	-	5a7c3639aca7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_novaj_vestoj_de_la_Reĝo.txt	wsrc-marker	70	61	8	0	-	fd95f526712c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_virineto_de_maro.txt	wsrc-marker	212	203	8	0	-	64e2430f5f74
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Lekanto.txt	wsrc-marker	46	37	8	0	-	f55ba5335571
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ligo_de_Amikeco.txt	wsrc-marker	88	79	8	0	-	aeecb1e90cb7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malbonkonduta_knabo.txt	wsrc-marker	36	27	8	0	-	e5cba5128d69
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Niko_kaj_granda_Niko.txt	wsrc-marker	240	231	8	0	-	7820c3383e2f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Tuk.txt	wsrc-marker	62	53	8	0	-	d57686c617bb
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_domo.txt	wsrc-marker	72	63	8	0	-	832b731edee4
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_strata_lanterno.txt	wsrc-marker	90	81	8	0	-	da10696cba76
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Monteto_de_elfoj.txt	wsrc-marker	106	97	8	0	-	d8f6b95f8969
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Najbaraj_familioj.txt	wsrc-marker	160	151	8	0	-	f14a06ffa349
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Neĝa_Reĝino.txt	wsrc-marker	435	426	8	0	-	0d9436a1fdad
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ombro.txt	wsrc-marker	218	209	8	0	-	1e39d73d8618
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtistino_kaj_kamentubisto.txt	wsrc-marker	88	79	8	0	-	eeac25f6825c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtisto_de_porkoj.txt	wsrc-marker	135	126	8	0	-	f76ce08b6692
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Persista_stana_soldato.txt	wsrc-marker	61	52	8	0	-	641489c01557
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Poligono.txt	wsrc-marker	38	29	8	0	-	747f8f39b6d5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Reĝidino_sur_pizo.txt	wsrc-marker	26	17	8	0	-	948703898a15
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Rozo_de_la_tombo_de_Homero.txt	wsrc-marker	55	48	6	0	-	903299ccdb61
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ruĝaj_ŝuoj.txt	wsrc-marker	94	85	8	0	-	40f47c7b8f5c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sambura_virineto.txt	wsrc-marker	140	131	8	0	-	685825115d88
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sonorilo.txt	wsrc-marker	54	45	8	0	-	174497462dfb
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sovaĝaj_cignoj.txt	wsrc-marker	68	59	8	0	-	928d1975263c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Vojkamarado.txt	wsrc-marker	187	178	8	0	-	abd3a0e370d7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ĝardeno_de_la_paradizo.txt	wsrc-marker	196	187	8	0	-	6ae66eafd6eb
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_fratoj.txt	wsrc-marker	133	125	7	0	-	4a0f1b80e031
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_historio_de_la_provoj_de_lingvoj_tutmondaj_de_Leibnitz_ĝis_la_nuna_tempo.txt	wsrc-marker	68	60	7	0	left:1	bb690f379bd4
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_memoro_de_Józef_Wasniewski.txt	wsrc-marker	107	99	7	0	-	9726fc1cbcc0
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_reĝo.txt	wsrc-marker	43	35	7	0	-	6b8bdfa8bfc4
-wsrc-Fundamenta_Krestomatio_(1903)_Alaŭdeto.txt	wsrc-marker	44	36	7	0	-	e375260d2ae5
-wsrc-Fundamenta_Krestomatio_(1903)_Aleksandro_Macedona.txt	wsrc-marker	68	59	8	0	-	3791e75d0bd7
-wsrc-Fundamenta_Krestomatio_(1903)_El_la_unua_libro_de_la_lingvo_Esperanto.txt	wsrc-marker	151	143	7	0	-	001bd1aa9b04
-wsrc-Fundamento_de_Esperanto.txt	wsrc-fallback	62	61	1	0	-	86cc37b45aed
-wsrc-Fundamento_de_Esperanto_Antaŭparolo.txt	wsrc-marker	42	33	8	0	-	e702cd8b8d01
-wsrc-Fundamento_de_Esperanto_Ekzercaro.txt	wsrc-marker	1724	1715	8	0	left:14	7dc298230fbe
-wsrc-Fundamento_de_Esperanto_Grammar.txt	wsrc-fallback	194	193	0	0	-	034a1c8eb022
-wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt	wsrc-marker	5872	5863	8	0	left:48	eac5f4df0c9c
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro.txt	wsrc-marker	320	311	8	0	-	44c225a678a5
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_1.txt	wsrc-marker	23	15	7	0	-	6ffa5ac90419
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_10.txt	wsrc-marker	49	41	7	0	-	d97223d75f0e
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_100.txt	wsrc-marker	21	13	7	0	-	2b78b5778de4
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_101.txt	wsrc-marker	27	19	7	0	-	fec8ff88fa34
-wsrc-Originala_Verkaro.txt	wsrc-marker	169	160	8	0	-	19b6a3ef7db0
-wsrc-Originala_Verkaro_Aldono.txt	wsrc-marker	243	232	10	0	-	9908118b26bf
-wsrc-Originala_Verkaro_Antaŭparolo.txt	wsrc-marker	146	135	10	0	-	97e473f1071b
-wsrc-Originala_Verkaro_Enhavo.txt	wsrc-marker	58	51	6	0	-	d6fb9e85c728
-wsrc-Originala_Verkaro_I.txt	wsrc-marker	52	41	10	0	-	ceb72dd5f1a2
-wsrc-Originala_Verkaro_I_1.txt	wsrc-marker	87	76	10	0	-	8c6cb7e75c70
-wsrc-Originala_Verkaro_I_10.txt	wsrc-marker	27	16	10	0	-	35bcced955a1
-wsrc-Originala_Verkaro_I_11.txt	wsrc-marker	22	11	10	0	-	56a2cd93a0ea
-wsrc-Originala_Verkaro_I_12.txt	wsrc-marker	21	10	10	0	-	df731450972c
+source	method	in_lines	out_lines	head_stripped	tail_stripped	xsystem	hsystem	homoglyphs	sha256
+pg-11307.txt	pg-markers	2146	1626	28	351	left:5	-	-	7921f170cbfd
+pg-16967.txt	pg-markers	14676	14123	42	351	left:7	-	-	39b7c7006bc6
+pg-17482.txt	pg-markers	4349	3854	46	351	converted:3989	-	-	8368f0bfcfd1
+pg-20006.txt	pg-markers	2317	1860	79	351	converted:1844	-	-	295e937b2cd3
+pg-21194.txt	pg-markers	1838	1418	32	351	-	-	-	38080d55f664
+pg-22592.txt	pg-markers	4379	3844	40	355	left:1	-	-	a769208b0f6d
+pg-23093.txt	pg-markers	2749	2248	49	355	converted:2074	-	-	e5d2f9d83642
+pg-23670.txt	pg-markers	3527	3080	42	351	converted:3151	-	-	aaa63d40c94c
+pg-24145.txt	pg-markers	3834	3417	38	351	converted:2697	-	-	8a322e5df8bd
+pg-24292.txt	pg-markers	6196	5497	36	351	converted:2918	-	-	c26030bdc407
+pg-24525.txt	pg-markers	1863	1376	43	351	converted:1165	-	-	96e182a4584d
+pg-25311.txt	pg-markers	1470	1038	30	351	-	-	-	aec8797a8e13
+pg-26359.txt	pg-markers	3837	3364	44	351	-	-	-	79ede42e23ab
+pg-26959.txt	pg-markers	1356	922	43	355	converted:516	-	-	c60c1ffb404f
+pg-32035.txt	pg-markers	5758	5258	42	351	left:1	converted	-	2da105683340
+pg-42028.txt	pg-markers	3393	2949	31	351	-	-	-	652c899392b8
+pg-42774.txt	pg-markers	1472	989	30	351	-	-	-	3d2ff3d73a0b
+pg-47259.txt	pg-markers	5526	5048	31	351	left:1	-	-	a74a09697273
+pg-47855.txt	pg-markers	3923	3403	31	351	left:2	-	-	b3d2cbe2087b
+pg-48896.txt	pg-markers	1553	1037	30	351	-	-	-	658e1a86bd58
+pg-52062.txt	pg-markers	2444	1949	39	351	left:2	-	-	b5018c11cbba
+pg-52063.txt	pg-markers	2664	2164	39	351	-	-	-	711663a44244
+pg-52064.txt	pg-markers	3356	2840	39	351	left:4	-	-	af2073932eae
+pg-52111.txt	pg-markers	3979	3483	30	351	-	-	-	a5d7a29c180b
+pg-55574.txt	pg-markers	4383	3958	30	351	-	-	-	e6de833542c2
+pg-55954.txt	pg-markers	10952	10498	31	355	left:1	-	-	6a91bd50ab77
+pg-57184.txt	pg-markers	8990	8358	43	351	left:15	-	-	c27b4c3c0b98
+pg-61579.txt	pg-markers	1406	1010	31	351	-	-	-	338d65273edf
+pg-61581.txt	pg-markers	783	368	28	351	-	-	-	d0ad22a8eba5
+pg-62118.txt	pg-markers	3215	2787	31	351	-	-	-	d20de06a5214
+pg-63064.txt	pg-markers	2070	1633	31	351	-	-	-	449b29acc01f
+pg-63105.txt	pg-markers	2455	2027	31	355	-	-	-	c5bbd7df2c5f
+pg-64579.txt	pg-markers	19840	19287	28	351	-	-	-	8662590bebda
+pg-69123.txt	pg-markers	7351	6701	30	351	left:2	-	-	17104cb14de3
+pg-74344.txt	pg-markers	1124	710	34	351	-	-	-	f0b933e0ec0c
+pg-76273.txt	pg-markers	1235	837	31	351	left:1	-	-	780baa7a722f
+pg-7787.txt	pg-markers	14972	13977	62	351	converted:4043	-	-	b1bc3a37acdb
+pg-8177.txt	pg-markers	8874	8283	48	351	converted:2815	-	-	9d22d07ea960
+pg-8224.txt	pg-markers	16956	16448	35	351	converted:14820	-	-	09532d5b559d
+wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt	wsdump-clean	1014	1014	0	0	-	-	-	e3c463406060
+wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt	wsdump-clean	5699	5688	0	0	-	-	-	7b80773475a5
+wsdump-Homero_Iliado_1896_Kofman.txt	wsdump-clean	3896	3896	0	0	-	-	-	965f14789ba3
+wsdump-Kabe_Vortaro_de_Esperanto_1922.txt	wsdump-clean	14216	14211	0	0	left:1	-	-	997212270a6a
+wsdump-Luyken_Mirinda_amo_1913.txt	wsdump-clean	4524	4524	0	0	-	-	-	9a2282e9567a
+wsdump-Molière_Don_Juan_1906_Boirac.txt	wsdump-clean	3330	3330	0	0	-	-	-	d62144c569f5
+wsdump-Orzeszko_Marta_1928_Zamenhof.txt	wsdump-clean	3299	3299	0	0	left:4	-	-	ef09e24a46f3
+wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt	wsdump-clean	2783	2783	0	0	-	-	-	b50e7938fbb8
+wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt	wsdump-clean	1521	1521	0	0	left:7	-	-	32feb39fc4f8
+wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt	wsdump-clean	9456	9456	0	0	left:1	-	-	86eba0985192
+wsdump-Vallienne_Ĉu_li_1908.txt	wsdump-clean	9170	9170	0	0	-	-	-	a2e619cc6c59
+wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt	wsdump-clean	834	834	0	0	left:22	-	-	cc302318ed6a
+wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt	wsdump-clean	12616	12592	0	0	left:49	-	-	859330162d3a
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_Antaŭparolo.txt	wsrc-marker	200	192	7	0	-	-	8	2079cb12177b
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_I.txt	wsrc-marker	46	37	8	0	-	-	4	83984a77c835
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_II.txt	wsrc-marker	17	8	8	0	-	-	-	10f04dd119f9
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_III.txt	wsrc-marker	755	747	7	0	-	-	14	b72448eb1fae
+wsrc-Fabeloj_de_Andersen_(Zamenhof).txt	wsrc-marker	225	119	103	0	-	-	-	c71a26ffc32e
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Abio.txt	wsrc-marker	136	127	8	0	-	-	-	772324005d7c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Anĝelo.txt	wsrc-marker	38	29	8	0	-	-	-	b322fd76e4c5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Avineto.txt	wsrc-marker	26	17	8	0	-	-	-	c346e948cf76
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Bildo_el_kastelremparo.txt	wsrc-marker	18	9	8	0	-	-	-	27a66c8740fc
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Cikonioj.txt	wsrc-marker	105	96	8	0	-	-	-	819d9ddf3d2f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dano_Holger.txt	wsrc-marker	50	41	8	0	-	-	-	774fdc5d134d
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dio_de_Dormo.txt	wsrc-marker	229	220	8	0	-	-	-	52ee7e2c1381
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_El_fenestro_en_Vartou.txt	wsrc-marker	30	21	8	0	-	-	-	04611aa28cb1
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elfo_de_la_rozo.txt	wsrc-marker	68	59	8	0	-	-	-	308d99c0637f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elinjo-Fingreto.txt	wsrc-marker	130	121	8	0	-	-	-	2d15aa38c012
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fajrilo.txt	wsrc-marker	114	107	6	0	-	-	-	49b1a543b438
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Feliĉa_familio.txt	wsrc-marker	56	49	6	0	-	-	-	49bfc0588d65
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Flikilo.txt	wsrc-marker	60	51	8	0	-	-	-	6f90d8e87918
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Floroj_de_la_malgranda_Ida.txt	wsrc-marker	94	85	8	0	-	-	-	18477f769dd5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fluganta_Kofro.txt	wsrc-marker	108	99	8	0	-	-	-	904ba85c574f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Galoŝoj_de_feliĉo.txt	wsrc-marker	433	424	8	0	-	-	-	89ac6dd6fa90
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Gefianĉoj.txt	wsrc-marker	50	41	8	0	-	-	-	0f122581d3d3
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Guto_da_akvo.txt	wsrc-marker	22	13	8	0	-	-	-	bc9aa3b8c277
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Knabineto_kun_alumetoj.txt	wsrc-marker	38	29	8	0	-	-	-	d600d5867372
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Konkurso_de_Saltado.txt	wsrc-marker	44	35	8	0	-	-	-	a1bff59955ad
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Kupra_porko.txt	wsrc-marker	128	119	8	0	-	-	-	9a8218689ab9
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_malbela_anasido.txt	wsrc-marker	142	133	8	0	-	-	-	326615c1f73c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_najtingalo.txt	wsrc-marker	163	154	8	0	-	-	-	5a7c3639aca7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_novaj_vestoj_de_la_Reĝo.txt	wsrc-marker	70	61	8	0	-	-	-	fd95f526712c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_virineto_de_maro.txt	wsrc-marker	212	203	8	0	-	-	-	64e2430f5f74
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Lekanto.txt	wsrc-marker	46	37	8	0	-	-	-	f55ba5335571
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ligo_de_Amikeco.txt	wsrc-marker	88	79	8	0	-	-	-	aeecb1e90cb7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malbonkonduta_knabo.txt	wsrc-marker	36	27	8	0	-	-	-	e5cba5128d69
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Niko_kaj_granda_Niko.txt	wsrc-marker	240	231	8	0	-	-	-	7820c3383e2f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Tuk.txt	wsrc-marker	62	53	8	0	-	-	-	d57686c617bb
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_domo.txt	wsrc-marker	72	63	8	0	-	-	-	832b731edee4
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_strata_lanterno.txt	wsrc-marker	90	81	8	0	-	-	-	da10696cba76
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Monteto_de_elfoj.txt	wsrc-marker	106	97	8	0	-	-	-	d8f6b95f8969
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Najbaraj_familioj.txt	wsrc-marker	160	151	8	0	-	-	-	f14a06ffa349
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Neĝa_Reĝino.txt	wsrc-marker	435	426	8	0	-	-	-	0d9436a1fdad
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ombro.txt	wsrc-marker	218	209	8	0	-	-	-	1e39d73d8618
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtistino_kaj_kamentubisto.txt	wsrc-marker	88	79	8	0	-	-	-	eeac25f6825c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtisto_de_porkoj.txt	wsrc-marker	135	126	8	0	-	-	-	f76ce08b6692
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Persista_stana_soldato.txt	wsrc-marker	61	52	8	0	-	-	-	641489c01557
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Poligono.txt	wsrc-marker	38	29	8	0	-	-	-	747f8f39b6d5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Reĝidino_sur_pizo.txt	wsrc-marker	26	17	8	0	-	-	-	948703898a15
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Rozo_de_la_tombo_de_Homero.txt	wsrc-marker	55	48	6	0	-	-	-	903299ccdb61
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ruĝaj_ŝuoj.txt	wsrc-marker	94	85	8	0	-	-	-	40f47c7b8f5c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sambura_virineto.txt	wsrc-marker	140	131	8	0	-	-	-	685825115d88
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sonorilo.txt	wsrc-marker	54	45	8	0	-	-	-	174497462dfb
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sovaĝaj_cignoj.txt	wsrc-marker	68	59	8	0	-	-	-	928d1975263c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Vojkamarado.txt	wsrc-marker	187	178	8	0	-	-	-	abd3a0e370d7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ĝardeno_de_la_paradizo.txt	wsrc-marker	196	187	8	0	-	-	-	6ae66eafd6eb
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_fratoj.txt	wsrc-marker	133	125	7	0	-	-	-	4a0f1b80e031
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_historio_de_la_provoj_de_lingvoj_tutmondaj_de_Leibnitz_ĝis_la_nuna_tempo.txt	wsrc-marker	68	60	7	0	left:1	-	-	bb690f379bd4
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_memoro_de_Józef_Wasniewski.txt	wsrc-marker	107	99	7	0	-	-	-	9726fc1cbcc0
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_reĝo.txt	wsrc-marker	43	35	7	0	-	-	-	6b8bdfa8bfc4
+wsrc-Fundamenta_Krestomatio_(1903)_Alaŭdeto.txt	wsrc-marker	44	36	7	0	-	-	-	e375260d2ae5
+wsrc-Fundamenta_Krestomatio_(1903)_Aleksandro_Macedona.txt	wsrc-marker	68	59	8	0	-	-	-	3791e75d0bd7
+wsrc-Fundamenta_Krestomatio_(1903)_El_la_unua_libro_de_la_lingvo_Esperanto.txt	wsrc-marker	151	143	7	0	-	-	-	001bd1aa9b04
+wsrc-Fundamento_de_Esperanto.txt	wsrc-fallback	62	61	1	0	-	-	-	86cc37b45aed
+wsrc-Fundamento_de_Esperanto_Antaŭparolo.txt	wsrc-marker	42	33	8	0	-	-	-	e702cd8b8d01
+wsrc-Fundamento_de_Esperanto_Ekzercaro.txt	wsrc-marker	1724	1715	8	0	left:14	-	2	1eac051d1ff1
+wsrc-Fundamento_de_Esperanto_Grammar.txt	wsrc-fallback	194	193	0	0	-	-	-	034a1c8eb022
+wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt	wsrc-marker	5872	5863	8	0	left:48	-	-	eac5f4df0c9c
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro.txt	wsrc-marker	320	311	8	0	-	-	-	44c225a678a5
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_1.txt	wsrc-marker	23	15	7	0	-	-	-	6ffa5ac90419
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_10.txt	wsrc-marker	49	41	7	0	-	-	-	d97223d75f0e
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_100.txt	wsrc-marker	21	13	7	0	-	-	-	2b78b5778de4
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_101.txt	wsrc-marker	27	19	7	0	-	-	-	fec8ff88fa34
+wsrc-Originala_Verkaro.txt	wsrc-marker	169	160	8	0	-	-	-	19b6a3ef7db0
+wsrc-Originala_Verkaro_Aldono.txt	wsrc-marker	243	232	10	0	-	-	-	9908118b26bf
+wsrc-Originala_Verkaro_Antaŭparolo.txt	wsrc-marker	146	135	10	0	-	-	-	97e473f1071b
+wsrc-Originala_Verkaro_Enhavo.txt	wsrc-marker	58	51	6	0	-	-	-	d6fb9e85c728
+wsrc-Originala_Verkaro_I.txt	wsrc-marker	52	41	10	0	-	-	-	ceb72dd5f1a2
+wsrc-Originala_Verkaro_I_1.txt	wsrc-marker	87	76	10	0	-	-	-	8c6cb7e75c70
+wsrc-Originala_Verkaro_I_10.txt	wsrc-marker	27	16	10	0	-	-	-	35bcced955a1
+wsrc-Originala_Verkaro_I_11.txt	wsrc-marker	22	11	10	0	-	-	-	56a2cd93a0ea
+wsrc-Originala_Verkaro_I_12.txt	wsrc-marker	21	10	10	0	-	-	-	df731450972c

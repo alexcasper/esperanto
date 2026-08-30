@@ -28,6 +28,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHARDS = os.path.join(ROOT, 'DICT', 'shards')
 DEFAULT_OUT = os.path.join(ROOT, 'DICT', 'candidates.jsonl')
+LEDGER = os.path.join(ROOT, 'DICT', 'verdicts.jsonl')
 
 # Strictest first: a lemma seen as a fragment anywhere keeps that warning.
 KIND_RANK = {'fragment': 0, 'unknown': 1, 'known': 2}
@@ -101,6 +102,10 @@ def main():
     parser.add_argument('--shards', type=int, default=None,
                         help='expected shard count, for the completeness check')
     parser.add_argument('--out', default=DEFAULT_OUT)
+    parser.add_argument('--write-ledger', metavar='FILE', nargs='?',
+                        const=LEDGER, default=None,
+                        help='also write the verdicts to a ledger keyed by '
+                             'lemma, so re-mining does not lose review work')
     args = parser.parse_args()
 
     pattern = 'shard-*-of-%d.jsonl' % args.shards if args.shards else 'shard-*.jsonl'
@@ -118,6 +123,25 @@ def main():
         for entry in ordered:
             fh.write(json.dumps(entry, ensure_ascii=False) + '\n')
 
+    if args.write_ledger:
+        reviewed = [e for e in ordered if e.get('verdict')]
+        with open(args.write_ledger, 'w', encoding='utf-8') as fh:
+            for entry in reviewed:
+                fh.write(json.dumps({
+                    'lemma': entry['lemma'], 'verdict': entry['verdict'],
+                    'gloss': entry['gloss'],
+                    'note': '; '.join(entry['notes']) or None,
+                    'reviewed_in': sorted(set(entry['shards'])),
+                    # Carry disagreements into the ledger. Without this the
+                    # ledger flattens each lemma to one verdict, re-mining
+                    # writes that verdict back to every shard, and the fact
+                    # that reviewers disagreed is silently erased.
+                    'disputed': [c for c in entry['conflicts']
+                                 if c['field'] == 'verdict'] or None,
+                }, ensure_ascii=False) + '\n')
+        print('  ledger: %d verdicts → %s'
+              % (len(reviewed), args.write_ledger))
+
     verdicts = collections.Counter(e['verdict'] or '(unreviewed)'
                                    for e in ordered)
     kinds = collections.Counter(e['kind'] for e in ordered)
@@ -130,15 +154,25 @@ def main():
     print('  kinds: %s' % ', '.join('%s=%d' % kv for kv in kinds.most_common()))
     print('  verdicts: %s'
           % ', '.join('%s=%d' % kv for kv in verdicts.most_common()))
-    if conflicted:
-        print('  %d lemmas with disagreeing verdicts:' % len(conflicted))
-        for entry in conflicted[:10]:
-            clash = entry['conflicts'][0]
-            print('    %-20s %s: kept %r, %s said %r'
-                  % (entry['lemma'][:20], clash['field'], clash['kept'],
-                     clash['shard'], clash['value']))
+    # A gloss worded two ways is a style difference; two reviewers calling the
+    # same word a lemma and a proper noun is a real disagreement. Only the
+    # second needs anyone's attention, so do not report them as one number.
+    verdict_clash = [e for e in conflicted
+                     if any(c['field'] == 'verdict' for c in e['conflicts'])]
+    gloss_clash = [e for e in conflicted if e not in verdict_clash]
+    print('  %d gloss wordings differ between shards (benign)'
+          % len(gloss_clash))
+    if verdict_clash:
+        print('  %d SUBSTANTIVE verdict disagreements:' % len(verdict_clash))
+        for entry in verdict_clash[:15]:
+            clash = next(c for c in entry['conflicts']
+                         if c['field'] == 'verdict')
+            print('    %-22s count=%-5d kept %-12s %s said %s'
+                  % (entry['lemma'][:22], entry['count'], clash['kept'],
+                     clash['shard'].replace('shard-', '').replace('.jsonl', ''),
+                     clash['value']))
     else:
-        print('  no verdict conflicts')
+        print('  no substantive verdict disagreements')
     return 0
 
 

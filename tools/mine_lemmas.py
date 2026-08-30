@@ -39,10 +39,24 @@ import esperanto  # noqa: E402  (path set above)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CORPUS = os.path.join(ROOT, 'CORPUS')
 SHARDS = os.path.join(ROOT, 'DICT', 'shards')
+LEDGER = os.path.join(ROOT, 'DICT', 'verdicts.jsonl')
 
 # 'grammar' sources are English prose about Esperanto; mining them for Esperanto
 # lemmas yields English. PROVENANCE.md marks them; match them by id here.
 ENGLISH_HEAVY = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt'}
+
+# The Fundamento's multilingual tables put French, German, Russian and Polish
+# gloss columns beside the Esperanto, so mining them yields those languages.
+MULTILINGUAL = {'wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt',
+                'wsrc-Fundamento_de_Esperanto_Grammar.txt'}
+
+# Not words: the elided article, Roman numerals, and the abbreviations that
+# recur across sources (Kabe's subject labels, citation shorthand). Every
+# reviewer hit these, and 'l' alone reached 2884 occurrences.
+STOPWORDS = {'l', 'ktp', 'ekz', 'prof', 'kop', 'esp', 'fr', 'np', 'ex',
+             'zool', 'ĥem', 'med', 'geom', 'fiz', 'bot', 'anat', 'mat',
+             'haml', 'kos', 'no', 'nro', 'vol', 'pĝ', 'red'}
+ROMAN = re.compile(r'^[ivxlcdm]+$')
 
 
 def is_fragment(line, match):
@@ -65,8 +79,9 @@ def is_fragment(line, match):
 
 
 def corpus_files():
+    skip = ENGLISH_HEAVY | MULTILINGUAL
     return sorted(f for f in os.listdir(CORPUS)
-                  if f.endswith('.txt') and f not in ENGLISH_HEAVY)
+                  if f.endswith('.txt') and f not in skip)
 
 
 def plan_shards(count):
@@ -96,22 +111,36 @@ def mine(files, roots, words, min_count, max_citations):
                     lemma, kind = esperanto.analyse(token, roots, words)
                     if lemma is None or kind in ('grammatical', 'correlative'):
                         continue
+                    low = token.lower()
+                    if low in STOPWORDS or ROMAN.match(low):
+                        continue
                     if kind == 'unknown':
-                        # Unknown words would otherwise split across their
-                        # inflections, filing kongreso/kongresoj/kongreson as
-                        # three separate discoveries.
-                        lemma = esperanto.citation_form(token)
+                        # Capitalised tokens keep their surface form: stripping
+                        # a final -n as if it were the accusative turned
+                        # Hutton into 'hutto' and London into 'londo', which
+                        # four reviewers reported independently.
+                        if token[:1].isupper():
+                            lemma = low
+                        else:
+                            # Otherwise unknown words split across their
+                            # inflections, filing kongreso/kongresoj/kongreson
+                            # as three separate discoveries.
+                            lemma = esperanto.citation_form(token)
                         if is_fragment(line, match):
                             kind = 'fragment'
                     record = lemmas.setdefault(lemma, {
                         'lemma': lemma, 'kind': kind, 'count': 0,
                         'pos_guess': esperanto.guess_pos(token),
                         'forms': {}, 'citations': [],
+                        'caps': 0, 'lower': 0,
                         'verdict': None, 'gloss': None, 'note': None,
                     })
                     record['count'] += 1
-                    low = token.lower()
                     record['forms'][low] = record['forms'].get(low, 0) + 1
+                    if token[:1].isupper():
+                        record['caps'] += 1
+                    else:
+                        record['lower'] += 1
                     if len(record['citations']) < max_citations:
                         snippet = ' '.join(line.split())
                         if len(snippet) > 160:
@@ -121,7 +150,14 @@ def mine(files, roots, words, min_count, max_citations):
                                 snippet[start:start + 150] + '…'
                         record['citations'].append({
                             'source': name, 'line': lineno, 'text': snippet})
-    return {k: v for k, v in lemmas.items() if v['count'] >= min_count}
+    kept = {}
+    for lemma, record in lemmas.items():
+        if record['count'] < min_count:
+            continue
+        if record['kind'] == 'unknown' and record['lower'] == 0:
+            record['kind'] = 'name'
+        kept[lemma] = record
+    return kept
 
 
 def main():
@@ -130,6 +166,10 @@ def main():
     parser.add_argument('--plan', type=int, help='print the shard assignment')
     parser.add_argument('--min-count', type=int, default=2)
     parser.add_argument('--max-citations', type=int, default=3)
+    parser.add_argument('--ledger', nargs='?', const=LEDGER, default=None,
+                        help='re-apply verdicts from a ledger after mining, so '
+                             'the map can be re-run without discarding review '
+                             'work held in the shard files')
     args = parser.parse_args()
 
     if args.plan:
@@ -151,10 +191,26 @@ def main():
     roots, words = esperanto.load_vocabulary()
     lemmas = mine(files, roots, words, args.min_count, args.max_citations)
 
+    restored = 0
+    if args.ledger and os.path.exists(args.ledger):
+        with open(args.ledger, encoding='utf-8') as fh:
+            for line in fh:
+                if not line.strip():
+                    continue
+                decided = json.loads(line)
+                record = lemmas.get(decided['lemma'])
+                if record:
+                    record['verdict'] = decided.get('verdict')
+                    record['gloss'] = decided.get('gloss')
+                    record['note'] = decided.get('note')
+                    restored += 1
+
     os.makedirs(SHARDS, exist_ok=True)
     out = os.path.join(SHARDS, 'shard-%d-of-%d.jsonl' % (index, count))
     ordered = sorted(lemmas.values(),
-                     key=lambda r: ({'unknown': 0, 'fragment': 1, 'known': 2}.get(r['kind'], 3), -r['count']))
+                     key=lambda r: ({'unknown': 0, 'name': 1, 'fragment': 2,
+                                     'known': 3}.get(r['kind'], 4),
+                                    -r['count']))
     with open(out, 'w', encoding='utf-8') as fh:
         for record in ordered:
             fh.write(json.dumps(record, ensure_ascii=False) + '\n')
@@ -163,6 +219,9 @@ def main():
     print('shard %d/%d: %d files → %s' % (index, count, len(files), out))
     print('  %d lemmas (%d unknown, %d built on known roots)'
           % (len(ordered), unknown, len(ordered) - unknown))
+    if args.ledger:
+        print('  %d verdicts restored from %s'
+              % (restored, os.path.basename(args.ledger)))
     return 0
 
 
