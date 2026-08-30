@@ -1,0 +1,56 @@
+{"base": "patro", "base_gloss": "father", "derived": "bopatro", "derived_gloss": "father-in-law", "segmentation": "bo'patro", "source": "oconnor-1906"}
+{"base": "patrino", "base_gloss": "mother", "derived": "bopatrino", "derived_gloss": "mother-in-law", "segmentation": "bo'patrino", "source": "oconnor-1906"}
+{"base": "semi", "base_gloss": "to sow", "derived": "dissemi", "derived_gloss": "to scatter", "segmentation": "dis'semi", "source": "oconnor-1906"}
+{"base": "ŝiri", "base_gloss": "to tear", "derived": "disŝiri", "derived_gloss": "to tear in pieces", "segmentation": "dis'ŝiri", "source": "oconnor-1906"}
+{"base": "kanti", "base_gloss": "to sing", "derived": "ekkanti", "derived_gloss": "to begin to sing", "segmentation": "ek'kanti", "source": "oconnor-1906"}
+{"base": "ridi", "base_gloss": "to laugh", "derived": "ekridi", "derived_gloss": "to burst out laughing", "segmentation": "ek'ridi", "source": "oconnor-1906"}
+{"base": "mastro", "base_gloss": "master", "derived": "gemastroj", "derived_gloss": "master and mistress", "segmentation": "ge'mastroj", "source": "oconnor-1906"}
+{"base": "edzo", "base_gloss": "husband", "derived": "geedzoj", "derived_gloss": "husband and wife", "segmentation": "ge'edzoj", "source": "oconnor-1906"}
+{"base": "estimi", "base_gloss": "to esteem", "derived": "malestimi", "derived_gloss": "to despise", "segmentation": "mal'estimi", "source": "oconnor-1906"}
+{"base": "varma", "base_gloss": "warm", "derived": "malvarma", "derived_gloss": "cold", "segmentation": "mal'varma", "source": "oconnor-1906"}
+{"base": "amiko", "base_gloss": "friend", "derived": "malamiko", "derived_gloss": "enemy", "segmentation": "mal'amiko", "source": "oconnor-1906"}
+{"base": "doni", "base_gloss": "to give", "derived": "redoni", "derived_gloss": "to give back", "segmentation": "re'doni", "source": "oconnor-1906"}
+{"base": "iri", "base_gloss": "to go", "derived": "reiri", "derived_gloss": "to go again", "segmentation": "re'iri", "source": "oconnor-1906"}
+{"base": "diri", "base_gloss": "to say", "derived": "rediri", "derived_gloss": "to repeat", "segmentation": "re'diri", "source": "oconnor-1906"}
+{"base": "veni", "base_gloss": "to come", "derived": "reveni", "derived_gloss": "to return", "segmentation": "re'veni", "source": "oconnor-1906"}
+{"base": "spiri", "base_gloss": "to breathe", "derived": "spirado", "derived_gloss": "breathing", "segmentation": "spir'ad'o", "source": "oconnor-1906"}
+{"base": "mola", "base_gloss": "soft", "derived": "molaĵo", "derived_gloss": "a soft thing or substance", "segmentation": "mol'aĵ'o", "source": "oconnor-1906"}
+{"base": "ovo", "base_gloss": "egg", "derived": "ovaĵo", "derived_gloss": "omelet", "segmentation": "ov'aĵ'o", "source": "oconnor-1906"}
+{"base": "vorto", "base_gloss": "a word", "derived": "vortaro", "derived_gloss": "a dictionary", "segmentation": "vort'ar'o", "source": "oconnor-1906"}
+{"base": "homo", "base_gloss": "a man", "derived": "homaro", "derived_gloss": "mankind", "segmentation": "hom'ar'o", "source": "oconnor-1906"}
+{"base": "legi", "base_gloss": "to read", "derived": "legebla", "derived_gloss": "legible", "segmentation": "leg'ebl'a", "source": "oconnor-1906"}
+{"base": "kredi", "base_gloss": "to believe", "derived": "kredebla", "derived_gloss": "credible", "segmentation": "kred'ebl'a", "source": "oconnor-1906"}
+{"base": "bona", "base_gloss": "good", "derived": "boneco", "derived_gloss": "goodness", "segmentation": "bon'ec'o", "source": "oconnor-1906"}
+{"base": "pura", "base_gloss": "clean", "derived": "pureco", "derived_gloss": "cleanliness", "segmentation": "pur'ec'o", "source": "oconnor-1906"}
+{"base": "granda", "base_gloss": "great", "derived": "grandega", "derived_gloss": "enormous", "segmentation": "grand'eg'a", "source": "oconnor-1906"}
+{"base": "pafilo", "base_gloss": "gun", "derived": "pafilego", "derived_gloss": "cannon", "segmentation": "pafil'eg'o", "source": "oconnor-1906"}
+{"base": "dormi", "base_gloss": "to sleep", "derived": "dormejo", "derived_gloss": "a dormitory", "segmentation": "dorm'ej'o", "source": "oconnor-1906"}
+{"base": "lerni", "base_gloss": "to learn", "derived": "lernejo", "derived_gloss": "a school", "segmentation": "lern'ej'o", "source": "oconnor-1906"}
+{"base": "timi", "base_gloss": "to fear", "derived": "timema", "derived_gloss": "timorous", "segmentation": "tim'em'a", "source": "oconnor-1906"}
+{"base": "amo", "base_gloss": "love", "derived": "amema", "derived_gloss": "lovable", "segmentation": "am'em'a", "source": "oconnor-1906"}
+{"base": "sablo", "base_gloss": "sand", "derived": "sablero", "derived_gloss": "a grain of sand", "segmentation": "sabl'er'o", "source": "oconnor-1906"}
+{"base": "mono", "base_gloss": "money", "derived": "monero", "derived_gloss": "a coin", "segmentation": "mon'er'o", "source": "oconnor-1906"}
+{"base": "imperio", "base_gloss": "an empire", "derived": "imperiestro", "derived_gloss": "an emperor", "segmentation": "imperi'estr'o", "source": "oconnor-1906"}
+{"base": "ŝipo", "base_gloss": "a ship", "derived": "ŝipestro", "derived_gloss": "captain (of a ship)", "segmentation": "ŝip'estr'o", "source": "oconnor-1906"}
+{"base": "ridi", "base_gloss": "to laugh", "derived": "rideti", "derived_gloss": "to smile", "segmentation": "rid'et'i", "source": "oconnor-1906"}
+{"base": "monto", "base_gloss": "a mountain", "derived": "monteto", "derived_gloss": "a hill", "segmentation": "mont'et'o", "source": "oconnor-1906"}
+{"base": "kato", "base_gloss": "a cat", "derived": "katido", "derived_gloss": "a kitten", "segmentation": "kat'id'o", "source": "oconnor-1906"}
+{"base": "morti", "base_gloss": "to die", "derived": "mortigi", "derived_gloss": "to kill (to cause to die)", "segmentation": "mort'ig'i", "source": "oconnor-1906"}
+{"base": "pura", "base_gloss": "clean", "derived": "purigi", "derived_gloss": "to clean (to make clean)", "segmentation": "pur'ig'i", "source": "oconnor-1906"}
+{"base": "ruĝa", "base_gloss": "red", "derived": "ruĝiĝi", "derived_gloss": "to become red (to blush)", "segmentation": "ruĝ'iĝ'i", "source": "oconnor-1906"}
+{"base": "riĉa", "base_gloss": "rich", "derived": "riĉiĝi", "derived_gloss": "to become (or to grow) rich", "segmentation": "riĉ'iĝ'i", "source": "oconnor-1906"}
+{"base": "kombi", "base_gloss": "to comb", "derived": "kombilo", "derived_gloss": "a comb", "segmentation": "komb'il'o", "source": "oconnor-1906"}
+{"base": "razi", "base_gloss": "to shave", "derived": "razilo", "derived_gloss": "a razor", "segmentation": "raz'il'o", "source": "oconnor-1906"}
+{"base": "frato", "base_gloss": "brother", "derived": "fratino", "derived_gloss": "sister", "segmentation": "frat'in'o", "source": "oconnor-1906"}
+{"base": "leono", "base_gloss": "lion", "derived": "leonino", "derived_gloss": "lioness", "segmentation": "leon'in'o", "source": "oconnor-1906"}
+{"base": "laŭdi", "base_gloss": "to praise", "derived": "laŭdinda", "derived_gloss": "praiseworthy, worthy of praise", "segmentation": "laŭd'ind'a", "source": "oconnor-1906"}
+{"base": "estimi", "base_gloss": "to esteem", "derived": "estiminda", "derived_gloss": "estimable, worthy of esteem", "segmentation": "estim'ind'a", "source": "oconnor-1906"}
+{"base": "cigaro", "base_gloss": "a cigar", "derived": "cigaringo", "derived_gloss": "a cigar holder", "segmentation": "cigar'ing'o", "source": "oconnor-1906"}
+{"base": "kandelo", "base_gloss": "a candle", "derived": "kandelingo", "derived_gloss": "a candlestick", "segmentation": "kandel'ing'o", "source": "oconnor-1906"}
+{"base": "drogo", "base_gloss": "a drug", "derived": "drogisto", "derived_gloss": "druggist", "segmentation": "drog'ist'o", "source": "oconnor-1906"}
+{"base": "maro", "base_gloss": "the sea", "derived": "maristo", "derived_gloss": "a sailor", "segmentation": "mar'ist'o", "source": "oconnor-1906"}
+{"base": "pomo", "base_gloss": "apple", "derived": "pomujo", "derived_gloss": "apple-tree", "segmentation": "pom'uj'o", "source": "oconnor-1906"}
+{"base": "mono", "base_gloss": "money", "derived": "monujo", "derived_gloss": "a purse", "segmentation": "mon'uj'o", "source": "oconnor-1906"}
+{"base": "cigaro", "base_gloss": "a cigar", "derived": "cigarujo", "derived_gloss": "a cigar-case", "segmentation": "cigar'uj'o", "source": "oconnor-1906"}
+{"base": "timo", "base_gloss": "fear", "derived": "timulo", "derived_gloss": "a coward, a poltroon", "segmentation": "tim'ul'o", "source": "oconnor-1906"}
+{"base": "avara", "base_gloss": "miserly", "derived": "avarulo", "derived_gloss": "a miserly person (a miser)", "segmentation": "avar'ul'o", "source": "oconnor-1906"}

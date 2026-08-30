@@ -61,9 +61,33 @@ between reviewers, is `DICT/verdicts.jsonl`.
 | prep | 3 |
 | **Subtotal** | **2216** |
 
-**Total: 5127 entries.**
+### v3 — O'Connor & Hayes, English-Esperanto Dictionary (c.1906)
 
-POS distribution: 3145 noun · 901 adj · 648 verb · 279 adv · 31 suffix · 30 prep · 24 pron · 23 num · 12 particle · 9 ending · 9 interj · 8 prefix · 7 conj · 1 art.
+5935 entries parsed from `CORPUS/pg-16967.txt`, tagged `source: oconnor-1906`,
+of which 2655 are flagged `derived`. This is a different class of evidence from
+the corpus-mined layer: an editorially compiled word list rather than attested
+usage, so these entries carry **no `attestation` field** — a consumer can tell
+which claim rests on citations and which on a lexicographer's authority.
+Nothing here overwrites a Fundamento or corpus-mined entry; only words absent
+from both are added, and each keeps its `english_headwords`.
+
+Caveat: the English glosses are the source's own, and eleven of them use
+period terms (*negro*, *heathen*, *lunatic*, *cripple*). They are shipped as
+the source has them, with the tag marking provenance; deciding whether to
+modernise them is tracked as a bead, not settled here.
+
+Two further artefacts come from the same source:
+
+- `english-index.jsonl` — 12497 English headwords to their Esperanto
+  equivalents, including 242 phrasal translations (*abaft → posta parto*).
+  This is the lookup direction `entries.jsonl` cannot serve.
+- `affix-examples.jsonl` — 56 morpheme-segmented affix demonstrations from
+  the grammar preface (*bo'patro = father-in-law*), which state the direction
+  the other way round and would corrupt the headword list if read as entries.
+
+**Total: 11062 entries** (2911 Fundamento · 2216 corpus-mined · 5935 O'Connor).
+
+POS distribution: 6555 noun · 2047 adj · 1907 verb · 399 adv · 31 suffix · 30 prep · 24 pron · 23 num · 12 particle · 9 ending · 9 interj · 8 prefix · 7 conj · 1 art.
 
 ## Schema
 
