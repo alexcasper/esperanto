@@ -11,6 +11,8 @@ Standing-orders worksite for building Esperanto language assets: raw corpus, dic
   furniture stripped, x-system spellings folded to UTF-8 diacritics. Derived,
   so only `CORPUS/MANIFEST.tsv` is committed; regenerate the text with
   `python3 tools/normalize_corpus.py`.
+- `QUARANTINE/` — sources held out of the corpus for licensing reasons; not
+  read by any tool. See `QUARANTINE/README.md`
 - `tools/` — corpus tooling shared by the DICT and GRAMMAR passes:
   `normalize_corpus.py` (RAW → CORPUS), `fetch_raw_gutenberg.py` and
   `fetch_raw_vikifontaro.py` (source acquisition, both gated on licence and

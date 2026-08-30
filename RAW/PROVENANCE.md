@@ -14,7 +14,7 @@ since eo.wikisource page wikitext is transclusion stubs only.
 - `pg-21194.txt` — Tri Noveloj — Nathaniel Hawthorne — sha256:369061e0e87f — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/21194
 - `pg-22592.txt` — Ifigenio en Taŭrido — Johann Wolfgang von Goethe — sha256:924d1c126390 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/22592
 - `pg-23093.txt` — Princo Vanc' — Eleanor Putnam — sha256:9ed422c6886c — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23093
-- `pg-23586.txt` — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — sha256:7196ed5c4818 — Project Gutenberg (**COPYRIGHTED**, not public domain: "kopirajto (c) ĉe la aŭtoro kaj la eldonejo", Progresema Esperanto-Forumo 1999; PG hosts it with permission, which does not extend to redistribution here — see esp-* bead) — https://www.gutenberg.org/ebooks/23586
+- ~~`pg-23586.txt`~~ — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — **QUARANTINED, not part of the corpus**: copyrighted, moved to `QUARANTINE/`. See `QUARANTINE/README.md` — https://www.gutenberg.org/ebooks/23586
 - `pg-23670.txt` — Nuntempaj Rakontoj — G. P. Stamatov — sha256:663556da01d1 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23670
 - `pg-24145.txt` — Doktoro Jekyll kaj Sinjoro Hyde — Robert Louis Stevenson — sha256:1fc80715c3cd — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24145
 - `pg-24292.txt` — La Montarino: la poemaro pri Veslemey — Arne Garborg — sha256:3d9c57933949 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24292
