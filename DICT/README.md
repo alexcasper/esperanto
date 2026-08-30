@@ -17,7 +17,9 @@ unchangeable core vocabulary of the language.
   dictionary keeps `gloss_en` (primary) and `gloss_fr` (etymological hint).
 - Rebuild: `sh tools/scrape_uv.sh` (fetches, parses, rebuilds `entries.jsonl`).
 
-## Coverage (v1)
+## Coverage
+
+### v1 — Fundamento (Universala Vortaro, 1905)
 
 | Kind | Count |
 |---|---|
@@ -26,16 +28,44 @@ unchangeable core vocabulary of the language.
 | — compound demonstrations with morphology | 210 |
 | — word-building affixes (39: 8 prefixes, 31 suffixes) | 39 |
 | Grammatical words (endings, particles, correlatives, pronouns, numerals, prepositions, conjunctions) | 138 |
-| **Total** | **2911** |
+| **Subtotal** | **2911** |
 
-POS distribution: 1830 noun · 556 verb · 351 adj · 42 adv · 31 suffix ·
-27 prep · 24 pron · 12 particle · 12 num · 9 ending · 8 prefix · 7 conj ·
-1 art · 1 interj.
+### v2 — corpus-mined (`source: corpus-mined`)
+
+518 entries the 1905 core cannot contain, mined from the 131-source corpus in
+`CORPUS/` and reviewed by hand: chiefly the internationalisms Esperanto took
+on after the Fundamento (*kongreso*, *akademio*, *literaturo*, *telegramo*,
+*spesmilo*), lexicalised compounds (*lernolibro*, *samideano*) and
+interjections the UV omits. 445 of the 518 are attested in three or more
+independent sources.
+
+Mined by `tools/mine_lemmas.py`, reviewed via `tools/review_shard.py`, merged
+by `tools/reconcile_lemmas.py` and written here by `tools/promote_lemmas.py`.
+Candidates judged proper nouns, foreign words, fragments or OCR artefacts are
+excluded by construction; the full verdict record is `DICT/verdicts.jsonl`.
+
+| Kind | Count |
+|---|---|
+| noun | 321 |
+| adj | 102 |
+| adv | 61 |
+| verb | 21 |
+| interj | 6 |
+| num | 5 |
+| prep | 2 |
+| **Subtotal** | **518** |
+
+**Total: 3429 entries.**
+
+POS distribution: 2151 noun · 577 verb · 453 adj · 103 adv · 31 suffix · 29 prep · 24 pron · 17 num · 12 particle · 9 ending · 8 prefix · 7 interj · 7 conj · 1 art.
 
 ## Schema
 
 Every line is one JSON object. Required keys: `word`, `pos`, `gloss_en`.
-Optional keys: `gloss_fr`, `root`, `morphology`, `source`.
+Optional keys: `gloss_fr`, `root`, `morphology`, `source`, and on
+corpus-mined entries `attestation` (`count` of occurrences and number of
+independent `sources`) and `citations` (up to three real passages, each with
+its `source` file and `text`).
 
 ```json
 {"word":"abelo","pos":"noun","gloss_en":"bee","gloss_fr":"abeille","root":"abel","morphology":{"stem":"abel","ending":"o"},"source":"Fundamento/UV-1905"}
