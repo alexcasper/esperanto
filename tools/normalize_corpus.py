@@ -101,11 +101,34 @@ def is_hsystem(text):
     return len(DIACRITIC.findall(text)) < hits * HSYS_MAX_DIACRITIC_RATIO
 
 
-def from_hsystem(text):
+# Foreign spellings that must survive an h-system file untouched. This catches
+# the common damage but not every case: a foreign name whose 'ch' sits between
+# vowels (Michael) is indistinguishable by rule from an h-system spelling and
+# is still converted. Converting
+# blindly turned the German names Schneider and Bloch into "Sĉneider" and
+# "Bloĉ" — 'sch' is not an Esperanto sequence, and no Esperanto word ends in a
+# bare ĉ/ĝ/ĥ/ĵ/ŝ, so both are detectable per word rather than per file.
+FOREIGN_MARK = re.compile(r'sch|[qwxy]', re.IGNORECASE)
+WORDLIKE = re.compile(r'[A-Za-zĉĝĥĵŝŭĈĜĤĴŜŬ]+')
+
+
+def convert_word(word):
+    if FOREIGN_MARK.search(word):
+        return word
+    converted = word
     for digraph, letter in HSYS:
-        text = text.replace(digraph, letter)
-        text = text.replace(digraph.upper(), letter.upper())
-        text = text.replace(digraph.capitalize(), letter.upper())
+        converted = converted.replace(digraph, letter)
+        converted = converted.replace(digraph.upper(), letter.upper())
+        converted = converted.replace(digraph.capitalize(), letter.upper())
+    # An Esperanto word does not end in a bare circumflexed consonant; if the
+    # conversion produces one, the digraph belonged to a foreign name.
+    if converted[-1:] in 'ĉĝĥĵŝĈĜĤĴŜ':
+        return word
+    return converted
+
+
+def from_hsystem(text):
+    text = WORDLIKE.sub(lambda m: convert_word(m.group()), text)
     # ŭ occurs only in the diphthongs aŭ and eŭ, so inside an h-system file
     # every 'au' and 'eu' is one — a word list was too narrow and left
     # ankorau, lau, fraulino and ĉirkau behind. The exception is a compound
@@ -249,10 +272,14 @@ def normalize(path):
 
     if name.startswith('pg-'):
         body, method, head, tail = slice_gutenberg(lines, name)
-    elif name.startswith('wsdump-'):
-        # Extracted from the Wikisource dump, which has no page furniture to
-        # strip — only the shared cleanup below applies.
-        body, method, head, tail = lines, 'wsdump-clean', 0, 0
+    elif name.startswith(('wsdump-', 'ia-')):
+        # Extracted from the Wikisource dump or fetched from archive.org:
+        # neither carries the Vikifontaro page furniture, and routing them
+        # through that stripper would have them judged against a preamble
+        # they do not have.
+        body, method, head, tail = (
+            lines, 'wsdump-clean' if name.startswith('wsdump-') else 'ia-clean',
+            0, 0)
     else:
         body, method, head, tail = slice_vikifontaro(lines)
 
