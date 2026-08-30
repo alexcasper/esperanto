@@ -17,7 +17,9 @@ unchangeable core vocabulary of the language.
   dictionary keeps `gloss_en` (primary) and `gloss_fr` (etymological hint).
 - Rebuild: `sh tools/scrape_uv.sh` (fetches, parses, rebuilds `entries.jsonl`).
 
-## Coverage (v1)
+## Coverage
+
+### v1 — Fundamento (Universala Vortaro, 1905)
 
 | Kind | Count |
 |---|---|
@@ -26,16 +28,74 @@ unchangeable core vocabulary of the language.
 | — compound demonstrations with morphology | 210 |
 | — word-building affixes (39: 8 prefixes, 31 suffixes) | 39 |
 | Grammatical words (endings, particles, correlatives, pronouns, numerals, prepositions, conjunctions) | 138 |
-| **Total** | **2911** |
+| **Subtotal** | **2911** |
 
-POS distribution: 1830 noun · 556 verb · 351 adj · 42 adv · 31 suffix ·
-27 prep · 24 pron · 12 particle · 12 num · 9 ending · 8 prefix · 7 conj ·
-1 art · 1 interj.
+### v2 — corpus-mined (`source: corpus-mined`)
+
+2216 entries the 1905 core cannot contain, mined from the 141-source corpus in
+`CORPUS/` and reviewed by hand across two rounds: the internationalisms
+Esperanto took on after the Fundamento (*kongreso*, *telefono*, *aeroplano*,
+*sennaciismo*), lexicalised compounds (*lernolibro*, *samideano*) and
+productive derivations (*virino*, *malgranda*, *esperantisto*). 1592 are
+attested in three or more independent sources.
+
+555 entries carry `derived: true`, marking a word built by regular affixation
+on a root already held — *abonanto*, *agado*, *aliulo*. Settled policy is that
+these earn entries, because a reader looking up *reĝino* should find it; the
+flag lets a consumer wanting only roots and opaque compounds filter them out.
+
+Mined by `tools/mine_lemmas.py`, reviewed via `tools/review_shard.py`, merged
+by `tools/reconcile_lemmas.py` and written here by `tools/promote_lemmas.py`.
+Candidates judged proper nouns, foreign words, fragments or OCR artefacts are
+excluded by construction; the full verdict record, including disagreements
+between reviewers, is `DICT/verdicts.jsonl`.
+
+| Kind | Count |
+|---|---|
+| noun | 1315 |
+| adj | 550 |
+| adv | 237 |
+| verb | 92 |
+| num | 11 |
+| interj | 8 |
+| prep | 3 |
+| **Subtotal** | **2216** |
+
+### v3 — O'Connor & Hayes, English-Esperanto Dictionary (c.1906)
+
+5935 entries parsed from `CORPUS/pg-16967.txt`, tagged `source: oconnor-1906`,
+of which 2655 are flagged `derived`. This is a different class of evidence from
+the corpus-mined layer: an editorially compiled word list rather than attested
+usage, so these entries carry **no `attestation` field** — a consumer can tell
+which claim rests on citations and which on a lexicographer's authority.
+Nothing here overwrites a Fundamento or corpus-mined entry; only words absent
+from both are added, and each keeps its `english_headwords`.
+
+Caveat: the English glosses are the source's own, and eleven of them use
+period terms (*negro*, *heathen*, *lunatic*, *cripple*). They are shipped as
+the source has them, with the tag marking provenance; deciding whether to
+modernise them is tracked as a bead, not settled here.
+
+Two further artefacts come from the same source:
+
+- `english-index.jsonl` — 12497 English headwords to their Esperanto
+  equivalents, including 242 phrasal translations (*abaft → posta parto*).
+  This is the lookup direction `entries.jsonl` cannot serve.
+- `affix-examples.jsonl` — 56 morpheme-segmented affix demonstrations from
+  the grammar preface (*bo'patro = father-in-law*), which state the direction
+  the other way round and would corrupt the headword list if read as entries.
+
+**Total: 11062 entries** (2911 Fundamento · 2216 corpus-mined · 5935 O'Connor).
+
+POS distribution: 6555 noun · 2047 adj · 1907 verb · 399 adv · 31 suffix · 30 prep · 24 pron · 23 num · 12 particle · 9 ending · 9 interj · 8 prefix · 7 conj · 1 art.
 
 ## Schema
 
 Every line is one JSON object. Required keys: `word`, `pos`, `gloss_en`.
-Optional keys: `gloss_fr`, `root`, `morphology`, `source`.
+Optional keys: `gloss_fr`, `root`, `morphology`, `source`, and on
+corpus-mined entries `attestation` (`count` of occurrences and number of
+independent `sources`) and `citations` (up to three real passages, each with
+its `source` file and `text`).
 
 ```json
 {"word":"abelo","pos":"noun","gloss_en":"bee","gloss_fr":"abeille","root":"abel","morphology":{"stem":"abel","ending":"o"},"source":"Fundamento/UV-1905"}

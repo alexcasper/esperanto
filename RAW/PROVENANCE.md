@@ -14,7 +14,7 @@ since eo.wikisource page wikitext is transclusion stubs only.
 - `pg-21194.txt` — Tri Noveloj — Nathaniel Hawthorne — sha256:369061e0e87f — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/21194
 - `pg-22592.txt` — Ifigenio en Taŭrido — Johann Wolfgang von Goethe — sha256:924d1c126390 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/22592
 - `pg-23093.txt` — Princo Vanc' — Eleanor Putnam — sha256:9ed422c6886c — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23093
-- `pg-23586.txt` — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — sha256:7196ed5c4818 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23586
+- ~~`pg-23586.txt`~~ — La liturgio de l' foiro (Elementoj por ekzegezo) — Jorge Camacho — **QUARANTINED, not part of the corpus**: copyrighted, moved to `QUARANTINE/`. See `QUARANTINE/README.md` — https://www.gutenberg.org/ebooks/23586
 - `pg-23670.txt` — Nuntempaj Rakontoj — G. P. Stamatov — sha256:663556da01d1 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/23670
 - `pg-24145.txt` — Doktoro Jekyll kaj Sinjoro Hyde — Robert Louis Stevenson — sha256:1fc80715c3cd — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24145
 - `pg-24292.txt` — La Montarino: la poemaro pri Veslemey — Arne Garborg — sha256:3d9c57933949 — Project Gutenberg (public domain) — https://www.gutenberg.org/ebooks/24292
@@ -98,6 +98,81 @@ since eo.wikisource page wikitext is transclusion stubs only.
 - `wsrc-Originala_Verkaro_I_10.txt` — Originala Verkaro I 10 — sha256:6ea49a952031 — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_10
 - `wsrc-Originala_Verkaro_I_11.txt` — Originala Verkaro I 11 — sha256:a21c8aac7b8a — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_11
 - `wsrc-Originala_Verkaro_I_12.txt` — Originala Verkaro I 12 — sha256:fbae3726bf1a — Vikifontaro (eo.wikisource.org), public domain / CC-BY-SA per source — https://eo.wikisource.org/wiki/Originala_Verkaro_I_12
+
+## Batch 2 — Project Gutenberg, curated
+
+Selected by category (see tools/fetch_raw_gutenberg.py for the criteria); `grammar` sources are largely English prose about Esperanto and should be filtered out of lemma mining.
+
+- `pg-8224.txt` — Fundamenta Krestomatio — Zamenhof, L. L. (Ludwik Lejzer), 1859-1917 — canon — sha256:24e93978f35b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/8224
+- `pg-11307.txt` — El la Biblio Elektitaj ĉapitroj de la Psalmaro, Sentencoj de Salomono kaj Predikanto — Zamenhof, L. L. (Ludwik Lejzer), 1859-1917 — canon — sha256:6b81af390acb — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/11307
+- `pg-7787.txt` — A Complete Grammar of Esperanto — Reed, Ivy Kellerman, 1877-1968 — grammar — sha256:6de5ae16505c — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/7787
+- `pg-8177.txt` — The Esperanto Teacher: A Simple Course for Non-Grammarians — Fryer, Helen — grammar — sha256:1e453188da58 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/8177
+- `pg-47855.txt` — Esperanta sintakso Laŭ verkoj de S-ro D-ro Zamenhof kaj aliaj aŭtoroj — Fruictier, Paul, 1879-1947 — grammar — sha256:e8969f181437 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/47855
+- `pg-24525.txt` — Karlo Facila Legolibro por la Lernado de Esperanto — Privat, Edmond, 1889-1962 — grammar — sha256:114838e6cbec — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/24525
+- `pg-74344.txt` — Perdita kaj retrovita : originala rakonto — Boirac, Emile, 1851-1917 — originala — sha256:b67699ed4f68 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/74344
+- `pg-55954.txt` — Stranga heredaĵo: Romano originale verkita — Luyken, Heinrich August, 1864-1947 — originala — sha256:ac769c42ebbc — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/55954
+- `pg-64579.txt` — Idoj de Orfeo — Bulthuis, H. J. (Hindrik Jan), 1865-1945 — originala — sha256:d8b15ebe98eb — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/64579
+- `pg-63064.txt` — Salome: Dramo En Unu Akto — Wilde, Oscar, 1854-1900 — originala — sha256:06f44947e2f0 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/63064
+- `pg-69123.txt` — Saltego trans jarmiloj — Forge, Jean, 1903-1980 — originala — sha256:2f19bdf33df6 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/69123
+- `pg-42774.txt` — Mondo kaj koro Poemoj de K. de Kalocsay — Kalocsay, K. (Kálmán), 1891-1976 — originala — sha256:dc73c9d7ff24 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/42774
+- `pg-52111.txt` — Ama Stelaro — Baena, Nuno, 1865-1922 — originala — sha256:cf3bc08845ec — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52111
+- `pg-62118.txt` — Legendoj — Niemojewski, Andrzej, 1864-1921 — originala — sha256:e17276971e92 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/62118
+- `pg-48896.txt` — "Verdaj fajreroj": Kolekto da versaĵoj — Frenkel, Roman — originala — sha256:fff83cce0cb7 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/48896
+- `pg-32035.txt` — Laŭroj Kolekto de la originalaj verkoj premiitaj en la unua literatura konkurso de "La Revuo" — Various — originala — sha256:eb1f86841412 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/32035
+- `pg-47259.txt` — La Vendreda Klubo 11 diversaj originalaj artikoloj verkitaj de la "Vendredoklubanoj" en Leipzig — Dietterle, Johannes, 1866-1943 — originala — sha256:0cf6327ddbea — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/47259
+- `pg-76273.txt` — Por kaj kontraŭ Esperanto : Dialogo — Vallienne, Henri, 1854-1908 — originala — sha256:5ad96340a96b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/76273
+- `pg-61581.txt` — La kialo de la vivo — Anonymous — originala — sha256:541ef4aaa37f — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/61581
+- `pg-61579.txt` — Al mia fratineto: Letero pri la seksvivo — Ortt, Felix, 1866-1959 — originala — sha256:67421043df13 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/61579
+- `pg-63105.txt` — Tri Noveloj — Pushkin, Aleksandr Sergeevich, 1799-1837 — originala — sha256:7dc46be6f663 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/63105
+- `pg-26359.txt` — Vivo de Zamenhof — Privat, Edmond, 1889-1962 — movado — sha256:c4a10e26d7ca — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/26359
+- `pg-26959.txt` — La Lastaj Tagoj de Dro L. L. Zamenhof kaj la Funebra Ceremonio — Oberrotman, Adolf, 1893- — movado — sha256:907216ed376e — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/26959
+- `pg-57184.txt` — Dokumentoj de Esperanto Informilo pri la historio kaj organizo de la Esperanta movado — Möbusz, A. (Albin), 1871-1934 — movado — sha256:0a2a815cc437 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/57184
+- `pg-55574.txt` — Raporto pri la oka kongreso de esperantistoj (Krakovo 1912) — Katryn, Ned — movado — sha256:8b12ddf178a3 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/55574
+- `pg-42028.txt` — En Rusujo per Esperanto — Rivier, A. — movado — sha256:d55d0e6bf95b — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/42028
+- `pg-25311.txt` — El la vivo de esperantistoj — Stankiević, V. — movado — sha256:3a8c7323f700 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/25311
+- `pg-52062.txt` — Literatura Mondo, numero 1, 1922 Oktobro — Soros, Tivadar, 1894-1968 — movado — sha256:0c6b41a46c47 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52062
+- `pg-52063.txt` — Literatura Mondo, numero 2, 1922 Novembro — Soros, Tivadar, 1894-1968 — movado — sha256:16f843d84102 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52063
+- `pg-52064.txt` — Literatura Mondo, numero 3, 1922 Decembro — Soros, Tivadar, 1894-1968 — movado — sha256:c3ad412d8e95 — Project Gutenberg (Public domain in the USA.) — https://www.gutenberg.org/ebooks/52064
+
+
+
+
+
+## Batch 3 — Vikifontaro, proofread scans from the XML dump
+
+Extracted from the eo.wikisource dump (https://dumps.wikimedia.org/eowikisource/latest/eowikisource-latest-pages-articles.xml.bz2) by `tools/fetch_raw_vikifontaro.py`. Only pages a human has proofread (ProofreadPage quality level >= 3) are included, and only books published 1929 or earlier; unproofread OCR is left out because it invents lemmas. One file per book, pages joined in order.
+
+- `wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt` — Zamenhof, Dietterle - Originala Verkaro, 1929.pdf — Vikifontaro — 1929 — 605/614 proofread pages — sha256:442b48f2371d — https://eo.wikisource.org/wiki/Indekso:Zamenhof,_Dietterle_-_Originala_Verkaro,_1929.pdf
+- `wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt` — Vallienne - Kastelo de Prelongo, 1907.pdf — Vikifontaro — 1907 — 517/528 proofread pages — sha256:86eba0985192 — https://eo.wikisource.org/wiki/Indekso:Vallienne_-_Kastelo_de_Prelongo,_1907.pdf
+- `wsdump-Vallienne_Ĉu_li_1908.txt` — Vallienne - Ĉu li?, 1908.pdf — Vikifontaro — 1908 — 448/458 proofread pages — sha256:a2e619cc6c59 — https://eo.wikisource.org/wiki/Indekso:Vallienne_-_Ĉu_li?,_1908.pdf
+- `wsdump-Luyken_Mirinda_amo_1913.txt` — Luyken - Mirinda amo, 1913.pdf — Vikifontaro — 1913 — 300/321 proofread pages — sha256:9a2282e9567a — https://eo.wikisource.org/wiki/Indekso:Luyken_-_Mirinda_amo,_1913.pdf
+- `wsdump-Orzeszko_Marta_1928_Zamenhof.txt` — Orzeszko - Marta, 1928, Zamenhof.pdf — Vikifontaro — 1928 — 239/241 proofread pages — sha256:ef09e24a46f3 — https://eo.wikisource.org/wiki/Indekso:Orzeszko_-_Marta,_1928,_Zamenhof.pdf
+- `wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt` — Grabowski - El Parnaso de Popoloj, 1913.pdf — Vikifontaro — 1913 — 228/240 proofread pages — sha256:703109a532c6 — https://eo.wikisource.org/wiki/Indekso:Grabowski_-_El_Parnaso_de_Popoloj,_1913.pdf
+- `wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt` — Prévost - Manon Lescaut, 1908, Vallienne.pdf — Vikifontaro — 1908 — 185/194 proofread pages — sha256:32feb39fc4f8 — https://eo.wikisource.org/wiki/Indekso:Prévost_-_Manon_Lescaut,_1908,_Vallienne.pdf
+- `wsdump-Kabe_Vortaro_de_Esperanto_1922.txt` — Kabe - Vortaro de Esperanto, 1922.pdf — Vikifontaro — 1922 — 176/188 proofread pages — sha256:0e48618c8dfa — https://eo.wikisource.org/wiki/Indekso:Kabe_-_Vortaro_de_Esperanto,_1922.pdf
+- `wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt` — Zakrzewski - Historio de Esperanto, 1913.pdf — Vikifontaro — 1913 — 122/125 proofread pages — sha256:cc302318ed6a — https://eo.wikisource.org/wiki/Indekso:Zakrzewski_-_Historio_de_Esperanto,_1913.pdf
+- `wsdump-Molière_Don_Juan_1906_Boirac.txt` — Molière - Don Juan, 1906, Boirac.djvu — Vikifontaro — 1906 — 106/106 proofread pages — sha256:d62144c569f5 — https://eo.wikisource.org/wiki/Indekso:Molière_-_Don_Juan,_1906,_Boirac.djvu
+- `wsdump-Homero_Iliado_1896_Kofman.txt` — Homero - Iliado, 1896, Kofman.pdf — Vikifontaro — 1896 — 103/112 proofread pages — sha256:965f14789ba3 — https://eo.wikisource.org/wiki/Indekso:Homero_-_Iliado,_1896,_Kofman.pdf
+- `wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt` — Prus - Pekoj de l’infaneco, 1913, Grabowski.pdf — Vikifontaro — 1913 — 102/116 proofread pages — sha256:b50e7938fbb8 — https://eo.wikisource.org/wiki/Indekso:Prus_-_Pekoj_de_l’infaneco,_1913,_Grabowski.pdf
+- `wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt` — Defoe - Robinsono Kruso, 1908, Krafft.djvu — Vikifontaro — 1908 — 100/128 proofread pages — sha256:e3c463406060 — https://eo.wikisource.org/wiki/Indekso:Defoe_-_Robinsono_Kruso,_1908,_Krafft.djvu
+
+## Batch 3 — Vikifontaro, proofread scans from the XML dump
+
+
+## Batch 3 — Vikifontaro, proofread scans from the XML dump
+
+Extracted from the eo.wikisource dump (https://dumps.wikimedia.org/eowikisource/latest/eowikisource-latest-pages-articles.xml.bz2) by `tools/fetch_raw_vikifontaro.py`. Only pages a human has proofread (ProofreadPage quality level >= 3) are included, and only books published 70 or earlier; unproofread OCR is left out because it invents lemmas. A work is included if it is public domain under either the source-country term (70 years from the last credited death, verified against Wikidata) or the US term (95 years from publication); each line records which. One file per book, pages joined in order.
+
+- `wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt` — Voltaire - Tri Verkoj de Volter, 1956, Lanti.pdf — Vikifontaro — 1956 — 308/316 proofread pages — public domain (source-country: last death 1947) — sha256:d3715fe43bf2 — https://eo.wikisource.org/wiki/Indekso:Voltaire_-_Tri_Verkoj_de_Volter,_1956,_Lanti.pdf
+- `wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt` — Sienkiewikz - Quo vadis?, 1934, Zamenhof, I.pdf — Vikifontaro — 1934 — 269/280 proofread pages — public domain (source-country: last death 1917) — sha256:c59310919e02 — https://eo.wikisource.org/wiki/Indekso:Sienkiewikz_-_Quo_vadis?,_1934,_Zamenhof,_I.pdf
+- `wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt` — Sienkiewikz - Quo vadis?, 1934, Zamenhof, II.pdf — Vikifontaro — 1934 — 268/280 proofread pages — public domain (source-country: last death 1917) — sha256:90f16929f8f7 — https://eo.wikisource.org/wiki/Indekso:Sienkiewikz_-_Quo_vadis?,_1934,_Zamenhof,_II.pdf
+- `wsdump-Verkoj_de_FeZ_1935.txt` — Verkoj de FeZ, 1935.pdf — Vikifontaro — 1935 — 261/284 proofread pages — public domain (source-country: last death 1933) — sha256:3b68b897626d — https://eo.wikisource.org/wiki/Indekso:Verkoj_de_FeZ,_1935.pdf
+- `wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt` — Rossetti Cezaro - Kredu min, Sinjorino!, 1950.pdf — Vikifontaro — 1950 — 258/260 proofread pages — public domain (source-country: last death 1950) — sha256:443c6da81170 — https://eo.wikisource.org/wiki/Indekso:Rossetti_Cezaro_-_Kredu_min,_Sinjorino!,_1950.pdf
+- `wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt` — Lanti - El verkoj de E. Lanti, 1991, I.pdf — Vikifontaro — 1991 — 165/181 proofread pages — public domain (source-country: last death 1947) — sha256:d9116c847523 — https://eo.wikisource.org/wiki/Indekso:Lanti_-_El_verkoj_de_E._Lanti,_1991,_I.pdf
+- `wsdump-Bulthuis_Inferio_1938.txt` — Bulthuis - Inferio, 1938.pdf — Vikifontaro — 1938 — 148/160 proofread pages — public domain (source-country: last death 1945) — sha256:30ac9fe64d10 — https://eo.wikisource.org/wiki/Indekso:Bulthuis_-_Inferio,_1938.pdf
+- `wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt` — Lanti - El verkoj de E. Lanti, 1982, II.pdf — Vikifontaro — 1982 — 136/144 proofread pages — public domain (source-country: last death 1947) — sha256:5b7dfcabaf0f — https://eo.wikisource.org/wiki/Indekso:Lanti_-_El_verkoj_de_E._Lanti,_1982,_II.pdf
+- `wsdump-Lanti_Naciismo_1930.txt` — Lanti - Naciismo, 1930.pdf — Vikifontaro — 1930 — 121/128 proofread pages — public domain (source-country: last death 1947) — sha256:f59e98cb924a — https://eo.wikisource.org/wiki/Indekso:Lanti_-_Naciismo,_1930.pdf
+- `wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt` — Lanti - El verkoj de E. Lanti, 1985, III.pdf — Vikifontaro — 1985 — 118/124 proofread pages — public domain (source-country: last death 1947) — sha256:641c848beb32 — https://eo.wikisource.org/wiki/Indekso:Lanti_-_El_verkoj_de_E._Lanti,_1985,_III.pdf
 - RAW/podkastoj/rss-kernpunkto.xml | https://kern.punkto.info/feed/ | sha256:2ede9a497348d4c1 | 15083 bytes | podcast feed/show-notes; license varies per episode | fetched 2026-08-28Z
 - RAW/podkastoj/rss-uea-videos.txt | https://uea.org/komunikado/podkastoj | sha256:4e69b3bb580f8153 | 6751 bytes | podcast feed/show-notes; license varies per episode | fetched 2026-08-28Z
 librejo.net TERMINALLY UNAVAILABLE (diagnosed 10:45Z 2026-08-28, j2): NXDOMAIN from authoritative .net GTLD servers (dns.google DoH Status=3) — domain does not exist globally; node DNS healthy (github.com/gutenberg.org resolve); 09:3xZ "conn 000" was the same failure. archive.org wayback: zero snapshots of librejo.net (never archived). librejo.com = Librejo de Mondial, commercial publisher — NOT a public-domain substitute. Librejo source dropped; PD-gap alternatives for owner decision: Internet Archive Esperanto collection, expanded PG eo shelf — SKL-8m1r.2
