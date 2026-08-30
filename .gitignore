@@ -21,3 +21,9 @@ RAW/tatoeba/*
 !RAW/tatoeba/README.md
 # Derived en-epo pair corpus (rebuild: python3 tools/build_tatoeba_pairs.py)
 CORPUS/tatoeba/pairs.tsv
+
+# Usenet archive blobs (fetch: python3 tools/fetch_raw_usenet.py; digests in RAW/usenet/README.md)
+RAW/usenet/*
+!RAW/usenet/README.md
+# Licence-hold bulk extraction (regenerate: python3 tools/extract_usenet_esperanto.py)
+QUARANTINE/soc.culture.esperanto/extracted.tsv
