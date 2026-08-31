@@ -37,13 +37,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CORPUS = os.path.join(ROOT, 'CORPUS')
 
 # What a scan turns each diacritic into, observed in this corpus.
+# Observed in this corpus, and enumerated in detail by a reviewer working
+# through the worst-damaged source.
 CONFUSIONS = {
     'ĉ': ('o', 'c', 'e', '6'),
     'ĝ': ('a', 'S', 'g', 'e'),
-    'ŝ': ('s', 'S', 'g'),
-    'ĵ': ('j', 'i'),
+    'ŝ': ('s', 'S', 'g', 'e'),
+    'ĵ': ('j', 'i', 'f', 'r'),
     'ĥ': ('h',),
-    'ŭ': ('u', 'ii'),
+    'ŭ': ('u',),
 }
 TOKEN = re.compile(r'[A-Za-zĉĝĥĵŝŭĈĜĤĴŜŬ]{2,}')
 
@@ -86,23 +88,49 @@ FOREIGN_WORDS = {'ein', 'eine', 'sein', 'aus', 'aux', 'ais', 'ces', 'cet',
 # A file only qualifies if it carries damage that cannot be anything else:
 # 'oiuj' and 'oirkaŭ' are not words in any language, so their presence is
 # proof the scan dropped diacritics here.
-DAMAGE_PROOF = re.compile(r'\b(oiuj?|oirkaŭ|oiam|oio|oiel|ains|aisi)\b', re.I)
+# Includes content-word markers as well as function words: the first pass
+# repairs the function words and would otherwise erase the evidence that the
+# file was ever damaged, so a later pass would skip it.
+DAMAGE_PROOF = re.compile(
+    r'\b(oiuj?|oirkaŭ|oiam|oio|oiel|ains|aisi|oefo|oefa|oambro|oielo|oevalo'
+    r'|loaanto|loaejo|vizaao|vilaao|vojaao|aardeno|aenerala|troviai|preao'
+    r'|martiriao|konstruafo|nutrafo|okazafo)\b', re.I)
 MIN_PROOF = 3
 
 
 def repair_token(token, words, roots):
+    """Two rules, the second only safe because of the file gate.
+
+    A reviewer working through the damaged chronicle enumerated its full
+    substitution table, and the closed word list caught only the function
+    words in it: ĉefo arrived as 'oefo', loĝanto as 'loaanto', vizaĝo as
+    'vizaao'. Those are content words, so no fixed list will do.
+
+    Inside a file already proven damaged, a substitution that turns a non-word
+    into a dictionary word is almost certainly the repair. That same rule
+    applied corpus-wide is what produced "Petronĵus" and "ĉur", so it is
+    confined here to proven files, to lower-case tokens — the proper names in
+    this material are capitalised — and to cases where exactly one candidate
+    resolves.
+    """
     low = token.lower()
     if len(low) < 3 or low in FOREIGN_WORDS:
         return None
     if esperanto.analyse(low, roots, words)[1] != 'unknown':
         return None
+
     fixes = {c for c in candidates(low) if c in TARGETS}
-    if len(fixes) != 1:
-        return None                      # zero: nothing to say; two: ambiguous
-    fixed = fixes.pop()
+    if len(fixes) == 1:
+        fixed = fixes.pop()
+        return fixed[0].upper() + fixed[1:] if token[0].isupper() else fixed
+
     if token[0].isupper():
-        fixed = fixed[0].upper() + fixed[1:]
-    return fixed
+        return None                      # leave names alone
+    resolved = {c for c in candidates(low)
+                if esperanto.analyse(c, roots, words)[1] != 'unknown'}
+    if len(resolved) != 1:
+        return None                      # zero: nothing; two: ambiguous
+    return resolved.pop()
 
 
 def main():

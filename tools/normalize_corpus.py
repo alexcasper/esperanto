@@ -120,9 +120,11 @@ def convert_word(word):
         converted = converted.replace(digraph, letter)
         converted = converted.replace(digraph.upper(), letter.upper())
         converted = converted.replace(digraph.capitalize(), letter.upper())
-    # An Esperanto word does not end in a bare circumflexed consonant; if the
-    # conversion produces one, the digraph belonged to a foreign name.
-    if converted[-1:] in 'ĉĝĥĵŝĈĜĤĴŜ':
+    # A long word does not end in a bare circumflexed consonant, so such a
+    # result means the digraph belonged to a foreign name (Bloch -> "Bloĉ").
+    # Short words are the exception: eĉ is exactly that shape, and blocking it
+    # left 'ech' unconverted in three h-system sources.
+    if len(converted) > 3 and converted[-1:] in 'ĉĝĥĵŝĈĜĤĴŜ':
         return word
     return converted
 
