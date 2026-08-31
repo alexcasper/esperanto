@@ -70,6 +70,64 @@ STOPWORDS = {'l', 'ktp', 'ekz', 'prof', 'kop', 'esp', 'fr', 'np', 'ex',
              'haml', 'kos', 'no', 'nro', 'vol', 'pĝ', 'red', 'ks'}
 ROMAN = re.compile(r'^[ivxlcdm]+$')
 
+# Function words of the languages this corpus is mixed with. Every entry was
+# checked against the dictionary: several look-alikes are deliberately absent
+# because they are Esperanto words in their own right — des ("ju pli, des
+# pli"), para ("paired"), jako ("jacket"), plus, por, sur, for, de, ne, la, je,
+# da, ili. Each of those has the shape of a foreign word and is not available.
+# Bare roots and endings are safe: est, las, not, mit and and are Esperanto
+# roots, and is and ist are the past-tense ending and the -ist suffix, which
+# the Fundamento lists as headwords. An Esperanto word always carries an
+# ending, so these bare forms only ever appear in running text as German or
+# English.
+FOREIGN_MARKERS = {
+    'the', 'and', 'of', 'is', 'was', 'were', 'this', 'that', 'these', 'with',
+    'which', 'have', 'has', 'been', 'they', 'their', 'there', 'from', 'not',
+    'are', 'you', 'his', 'her', 'its', 'but', 'what', 'when', 'would',
+    'der', 'die', 'das', 'dem', 'den', 'und', 'ist', 'sind', 'nicht',
+    'ein', 'eine', 'einer', 'einem', 'einen', 'auf', 'aus', 'mit', 'nach',
+    'sich', 'sie', 'ihre', 'werden', 'wurde', 'haben', 'auch', 'wie',
+    'les', 'une', 'est', 'sont', 'dans', 'pour', 'que', 'qui', 'avec',
+    'cette', 'nous', 'vous', 'leur', 'tout',
+    'nie', 'jest', 'przez', 'oraz', 'jednak', 'ktory',
+    'del', 'las', 'los', 'como', 'esta',
+}
+FOREIGN_MARKERS -= esperanto.GRAMMATICAL     # never fight the real vocabulary
+
+MIN_LINE_TOKENS = 4
+MIN_LINE_KNOWN = 0.5
+
+
+def line_is_foreign(line, roots, words):
+    """True if this line is not Esperanto, so nothing on it is a candidate.
+
+    Excluding whole files is too coarse. The sources that flooded the review
+    queue are mixed: the dlibra periodical is 70% Esperanto and 6% German, the
+    Ekzercaro prints its German, French and English translations beside the
+    Esperanto, and even a clean book carries a publisher's address page, a
+    quoted passage of Leibniz and a transliterated Russian paradigm. Reviewers
+    reported that two thirds of every 320-item queue was foreign words.
+
+    Measured per line the two languages separate almost completely: in
+    Originala Verkaro 97.4% of lines are at least 80% recognisable and only 42
+    fall below half, and every one of those 42 is furniture, formulae, an
+    alphabet table or a foreign quotation. So the rule is a recognisability
+    floor, plus a list of foreign function words for lines too short to score.
+    """
+    tokens = [t for t in esperanto.TOKEN.findall(line) if len(t) > 1]
+    if not tokens:
+        return False
+    lowered = {t.lower() for t in tokens}
+    if lowered & FOREIGN_MARKERS:
+        # One 'und' or 'the' settles it, and settles the short lines that a
+        # ratio cannot: a two-word table cell, a running head, a caption.
+        return True
+    if len(tokens) < MIN_LINE_TOKENS:
+        return False        # too little evidence to judge; let it through
+    known = sum(1 for t in tokens
+                if esperanto.analyse(t, roots, words)[1] != 'unknown')
+    return known / len(tokens) < MIN_LINE_KNOWN
+
 
 def is_fragment(line, match):
     """True if the token is a piece of a longer word, not a word itself.
@@ -110,12 +168,16 @@ def plan_shards(count):
     return shards, weights
 
 
-def mine(files, roots, words, min_count, max_citations):
+def mine(files, roots, words, min_count, max_citations, filter_lines=True):
     lemmas = {}
+    skipped = 0
     for name in files:
         path = os.path.join(CORPUS, name)
         with open(path, encoding='utf-8') as fh:
             for lineno, line in enumerate(fh, 1):
+                if filter_lines and line_is_foreign(line, roots, words):
+                    skipped += 1
+                    continue
                 for match in esperanto.TOKEN.finditer(line):
                     token = match.group()
                     if len(token) < 2:
@@ -179,7 +241,7 @@ def mine(files, roots, words, min_count, max_citations):
         if record['kind'] == 'unknown' and record['lower'] == 0:
             record['kind'] = 'name'
         kept[lemma] = record
-    return kept
+    return kept, skipped
 
 
 def main():
@@ -188,6 +250,9 @@ def main():
     parser.add_argument('--plan', type=int, help='print the shard assignment')
     parser.add_argument('--min-count', type=int, default=2)
     parser.add_argument('--max-citations', type=int, default=3)
+    parser.add_argument('--keep-foreign-lines', action='store_true',
+                        help='do not skip lines that fail the Esperanto '
+                             'recognisability check (for comparing runs)')
     parser.add_argument('--ledger', nargs='?', const=LEDGER, default=None,
                         help='re-apply verdicts from a ledger after mining, so '
                              'the map can be re-run without discarding review '
@@ -211,7 +276,8 @@ def main():
     shards, _ = plan_shards(count)
     files = shards[index - 1]
     roots, words = esperanto.load_vocabulary()
-    lemmas = mine(files, roots, words, args.min_count, args.max_citations)
+    lemmas, skipped = mine(files, roots, words, args.min_count,
+                           args.max_citations, not args.keep_foreign_lines)
 
     restored = 0
     if args.ledger and os.path.exists(args.ledger):
@@ -252,6 +318,8 @@ def main():
     print('shard %d/%d: %d files → %s' % (index, count, len(files), out))
     print('  %d lemmas (%d unknown, %d derived, %d other)'
           % (len(ordered), unknown, derived, len(ordered) - unknown - derived))
+    if not args.keep_foreign_lines:
+        print('  %d lines skipped as not Esperanto' % skipped)
     if args.ledger:
         print('  %d verdicts restored from %s'
               % (restored, os.path.basename(args.ledger)))

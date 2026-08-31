@@ -17,16 +17,20 @@ Three source-specific concerns, each handled and reported separately:
     Andersen...', 'book...', or a bare page number followed by the title).
     Two index-like pages have no such line and fall back to pattern matching;
     the manifest flags them as 'wsrc-fallback' for eyeballing.
-  * Six pg-* files are written in x-system ASCII (cx gx hx jx sx ux) rather than
-    UTF-8 diacritics. Conversion is per-file and gated on the x-system being
-    dominant, because 'aux'/'auxiliary'/'flux' are ordinary words in the
-    English-Esperanto dictionary (pg-16967) and would be corrupted by it.
+  * Many pg-* files are written in ASCII rather than UTF-8 diacritics, in the
+    x-system (cx gx hx jx sx ux) or Zamenhof's h-system (ch gh hh jh sh).
+    Undoing either is gated per file on measuring the result — see
+    conversion_is_sound — because 'aux', 'auxiliary', 'such' and 'Schiller'
+    are ordinary words that the same substitutions would corrupt.
 """
 import hashlib
 import os
 import re
 import sys
 import unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import esperanto  # noqa: E402  (path set above)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'RAW')
@@ -80,7 +84,6 @@ def to_utf8_diacritics(text):
 # in the h-system, and its digraphs are compounds or foreign words.
 HSYS = [('ch', 'ĉ'), ('gh', 'ĝ'), ('hh', 'ĥ'), ('jh', 'ĵ'), ('sh', 'ŝ')]
 HSYS_MIN = 100
-HSYS_MAX_DIACRITIC_RATIO = 0.05
 DIACRITIC = re.compile(r'[ĉĝĥĵŝŭĈĜĤĴŜŬ]')
 # ŭ is written as bare u and cannot be recovered by rule; these are the words
 # where it actually occurs, which covers the great majority of tokens.
@@ -94,11 +97,52 @@ def hsystem_hits(text):
                for a, _ in HSYS)
 
 
-def is_hsystem(text):
-    hits = hsystem_hits(text)
-    if hits < HSYS_MIN:
-        return False
-    return len(DIACRITIC.findall(text)) < hits * HSYS_MAX_DIACRITIC_RATIO
+# Whether to undo an ASCII spelling system is decided by measuring the result
+# rather than by a proxy. The proxy tried first was "convert only if the file
+# has essentially no diacritics already", which is wrong in both directions:
+#
+#   * it rejected pg-24575, a Czech-language textbook that writes its Esperanto
+#     in the h-system and merely quotes a few diacritic spellings, so regho,
+#     ghi, chiuj and ech reached the review queue as vocabulary;
+#   * it accepted pg-60429, whose diacritics had been mangled to replacement
+#     characters and so counted as none, and whose 104 "digraphs" were all in
+#     the English licence and the name Schiller.
+#
+# Converting a word and asking whether the result is Esperanto settles both.
+# Counted over distinct spellings the two populations do not overlap: every
+# genuine x- or h-system source in RAW/ improves at least 4 spellings for each
+# one it breaks (usually 20 to 1), while the three files that must not be
+# converted all break more than they fix — the English and French Ekzercaro
+# translations at roughly 1 gain per 3 losses, pg-60429 at 6 against 22.
+SOUND_RATIO = 2.0
+_vocabulary = None
+
+
+def vocabulary():
+    global _vocabulary
+    if _vocabulary is None:
+        _vocabulary = esperanto.load_vocabulary()
+    return _vocabulary
+
+
+def conversion_is_sound(text, convert, ratio=SOUND_RATIO):
+    """True if converting this text makes more Esperanto words than it breaks.
+
+    Distinct spellings are counted, not occurrences, so one frequent foreign
+    word cannot decide the file on its own: 'such' appears 285 times in one
+    English grammar and would otherwise outweigh every real conversion.
+    """
+    roots, words = vocabulary()
+    gained = broken = 0
+    for word in {w.lower() for w in WORDLIKE.findall(text)}:
+        converted = convert(word)
+        if converted == word:
+            continue
+        if esperanto.analyse(converted, roots, words)[1] != 'unknown':
+            gained += 1
+        else:
+            broken += 1
+    return gained >= ratio * broken and gained > 0
 
 
 # Foreign spellings that must survive an h-system file untouched. This catches
@@ -127,6 +171,33 @@ def convert_word(word):
     if len(converted) > 3 and converted[-1:] in 'ĉĝĥĵŝĈĜĤĴŜ':
         return word
     return converted
+
+
+# UTF-8 read as Latin-1 and re-encoded, twice over: 'ĝ' (C4 9D) becomes 'Ä\x9d'
+# and then 'Ã\x84Â\x9d'. One RAW source arrived this way, and the damage was
+# invisible downstream because the result is valid UTF-8 — the file simply had
+# no diacritics, which then made the h-system gate misfire on its English
+# licence text. Undo it by round-tripping each run of high Latin-1 characters
+# until it stops changing, and only where it succeeds: a run that is genuinely
+# Latin-1 (Achtélik, a French quotation) fails to decode as UTF-8 and is left
+# exactly as found.
+MOJIBAKE_RUN = re.compile('[\u00c2-\u00c5][\u0080-\u00ff]'
+                          '(?:[\u00c2-\u00c5][\u0080-\u00ff])*')
+MOJIBAKE_MIN = 20
+
+
+def unmojibake_run(run, rounds=3):
+    for _ in range(rounds):
+        try:
+            candidate = run.encode('latin-1').decode('utf-8')
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            return run
+        run = candidate
+    return run
+
+
+def repair_mojibake(text):
+    return MOJIBAKE_RUN.sub(lambda m: unmojibake_run(m.group()), text)
 
 
 def from_hsystem(text):
@@ -267,10 +338,38 @@ def clean(lines):
     return collapsed
 
 
+def unsound_hits(verdict):
+    return int(verdict.split(':')[1]) if str(verdict).startswith('unsound') else 0
+
+
+def spelling_verdict(hits, minimum, sound):
+    """How the manifest records a conversion decision.
+
+    Three outcomes worth distinguishing: converted, rejected by measurement
+    ('unsound' — the file looked like an ASCII spelling and is not one), and
+    never a candidate ('left' — a handful of incidental matches, which almost
+    every source has).
+    """
+    if not hits:
+        return '-'
+    if sound:
+        return 'converted:%d' % hits
+    return ('unsound:%d' if hits >= minimum else 'left:%d') % hits
+
+
 def normalize(path):
     name = os.path.basename(path)
     with open(path, encoding='utf-8') as fh:
-        lines = fh.read().splitlines()
+        text = fh.read()
+    # Before anything else: a mis-encoded file has no diacritics to reason
+    # about, so every later decision about its orthography would be made on
+    # false evidence.
+    mojibake = len(MOJIBAKE_RUN.findall(text))
+    if mojibake >= MOJIBAKE_MIN:
+        text = repair_mojibake(text)
+    else:
+        mojibake = 0
+    lines = text.splitlines()
 
     if name.startswith('pg-'):
         body, method, head, tail = slice_gutenberg(lines, name)
@@ -289,11 +388,13 @@ def normalize(path):
     text = '\n'.join(body) + '\n'
 
     hits = xsystem_hits(text)
-    converted = hits >= XSYS_MIN
-    if converted:
+    x_sound = hits >= XSYS_MIN and conversion_is_sound(text, to_utf8_diacritics)
+    if x_sound:
         text = to_utf8_diacritics(text)
-    hsystem = is_hsystem(text)
-    if hsystem:
+    hsystem_count = hsystem_hits(text)
+    h_sound = (hsystem_count >= HSYS_MIN
+               and conversion_is_sound(text, convert_word))
+    if h_sound:
         text = from_hsystem(text)
     homoglyphs = len(MIXED_TOKEN.findall(text))
     if homoglyphs:
@@ -307,9 +408,9 @@ def normalize(path):
         'head_stripped': head,
         'tail_stripped': tail,
         'method': method,
-        'xsystem': 'converted:%d' % hits if converted else
-                   ('left:%d' % hits if hits else '-'),
-        'hsystem': 'converted' if hsystem else '-',
+        'xsystem': spelling_verdict(hits, XSYS_MIN, x_sound),
+        'hsystem': spelling_verdict(hsystem_count, HSYS_MIN, h_sound),
+        'mojibake': mojibake or '-',
         'homoglyphs': homoglyphs or '-',
         'sha256': hashlib.sha256(text.encode('utf-8')).hexdigest()[:12],
         'text': text,
@@ -334,7 +435,7 @@ def main():
         records.append(record)
 
     columns = ['source', 'method', 'in_lines', 'out_lines', 'head_stripped',
-               'tail_stripped', 'xsystem', 'hsystem', 'homoglyphs',
+               'tail_stripped', 'xsystem', 'hsystem', 'mojibake', 'homoglyphs',
                'sha256']
     with open(os.path.join(OUT, 'MANIFEST.tsv'), 'w', encoding='utf-8') as fh:
         fh.write('\t'.join(columns) + '\n')
@@ -347,7 +448,24 @@ def main():
     print('  %d body lines kept, %d furniture lines dropped' % (kept, dropped))
     print('  x-system converted: %d file(s); h-system converted: %d file(s)'
           % (sum(1 for r in records if r['xsystem'].startswith('converted')),
-             sum(1 for r in records if r['hsystem'] == 'converted')))
+             sum(1 for r in records
+                 if str(r['hsystem']).startswith('converted'))))
+    # Most of these are unremarkable: any long Esperanto text has a hundred
+    # compounds whose morpheme boundary spells 'gh' or 'ch'. Only the files
+    # where the pattern is dense enough to have fooled a threshold are worth
+    # naming, so print the count and then the worst offenders.
+    rejected = sorted(
+        ((max(unsound_hits(r['xsystem']), unsound_hits(r['hsystem'])), r)
+         for r in records
+         if unsound_hits(r['xsystem']) or unsound_hits(r['hsystem'])),
+        reverse=True, key=lambda pair: pair[0])
+    print('  %d file(s) looked like an ASCII spelling and measured otherwise%s'
+          % (len(rejected), ':' if rejected else ''))
+    for hits, record in rejected[:5]:
+        print('      %-58s %d matches' % (record['source'][:58], hits))
+    mojibake = [r['source'] for r in records if r['mojibake'] != '-']
+    if mojibake:
+        print('  mojibake repaired: %s' % ', '.join(mojibake))
     print('  wsrc fallback (verify by hand): %s'
           % (', '.join(r['source'] for r in records
                        if r['method'] == 'wsrc-fallback') or 'none'))
