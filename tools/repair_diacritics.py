@@ -126,6 +126,15 @@ def repair_token(token, words, roots):
 
     if token[0].isupper():
         return None                      # leave names alone
+    # A candidate the dictionary actually lists beats one the morphology can
+    # merely build. Without this tie-break the repair declines almost
+    # everything, because -aĉ- and -ĉj- are real suffixes and so 'vojaĝo' is
+    # always accompanied by 'vojaaĉ', 'malĝojo' by 'malaĉjo' and 'ĝenerala' by
+    # 'aĉnerala'. All three were left unrepaired in the 240k-token chronicle
+    # for exactly that reason.
+    listed = {c for c in candidates(low) if c in words}
+    if len(listed) == 1:
+        return listed.pop()
     resolved = {c for c in candidates(low)
                 if esperanto.analyse(c, roots, words)[1] != 'unknown'}
     if len(resolved) != 1:

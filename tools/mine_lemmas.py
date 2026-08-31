@@ -15,6 +15,11 @@ the corpus is lopsided: Originala Verkaro is 1.4 MB and the smallest sources
 are a few kilobytes, so round-robin would leave one shard doing most of the
 work.
 
+Lines that are not Esperanto are skipped before tokenizing — see
+line_is_foreign. Whole files can be excluded too, but only a line-level test
+reaches a bilingual periodical, a translation printed beside its original, or
+the page of publisher's addresses in an otherwise clean book.
+
 Output records are one JSON object per line:
 
   {"lemma": "...", "kind": "unknown", "count": 12, "pos_guess": "noun",
@@ -129,6 +134,45 @@ def line_is_foreign(line, roots, words):
     return known / len(tokens) < MIN_LINE_KNOWN
 
 
+def normalise_token(token, roots, words):
+    """Resolve the three apostrophe constructions, or reject the token.
+
+    The tokenizer accepts the apostrophe, so three unrelated things arrive
+    looking like vocabulary, and reviewers on three shards reported all three:
+
+      * the elided article in verse — l'homaro, l'aero, l'espero, l'ĉielo,
+        nine of them in one shard, all from Kofman's Iliad and Zamenhof's
+        verse. The article is dropped and the noun kept.
+      * Zamenhof's early morpheme-separated spelling — inter'naci'e, sci'i,
+        frat'in'o. The apostrophes are morpheme boundaries, so the word is the
+        pieces joined, and we accept that reading only if it yields something
+        the dictionary recognises.
+      * eye-dialect elision — h'm, s'pozi, n'nio, 'strordinare, kam'rado.
+        Nothing can be recovered from these: the missing letters are the point.
+        They are not vocabulary and are dropped.
+
+    A trailing apostrophe (hord' for hordo) is deliberately left alone, since
+    citation_form already restores the elided noun ending.
+    """
+    if "'" not in token.rstrip("'"):
+        return token
+    lowered = token.lower()
+    if lowered.startswith("l'") and len(token) > 3:
+        return token[2:]
+    head, _, tail = token.partition("'")
+    # A fixed expression in which the apostrophe elides an ending rather than
+    # joining morphemes: dank' al (thanks to), where danke is the adverb and al
+    # the preposition. Joining it would give 'dankal', dropping it would lose a
+    # preposition the dictionary carries, so it is kept as written.
+    if (tail.lower() in esperanto.GRAMMATICAL
+            and (head.lower() + 'e') in words):
+        return token
+    joined = token.replace("'", '')
+    if len(joined) > 2 and esperanto.analyse(joined, roots, words)[1] != 'unknown':
+        return joined
+    return None
+
+
 def is_fragment(line, match):
     """True if the token is a piece of a longer word, not a word itself.
 
@@ -179,8 +223,8 @@ def mine(files, roots, words, min_count, max_citations, filter_lines=True):
                     skipped += 1
                     continue
                 for match in esperanto.TOKEN.finditer(line):
-                    token = match.group()
-                    if len(token) < 2:
+                    token = normalise_token(match.group(), roots, words)
+                    if token is None or len(token) < 2:
                         continue
                     lemma, kind = esperanto.analyse(token, roots, words)
                     if lemma is None or kind in ('grammatical', 'correlative'):
@@ -190,13 +234,20 @@ def mine(files, roots, words, min_count, max_citations, filter_lines=True):
                         continue
                     if kind == 'known' and lemma != low:
                         # analyse() collapses a word onto its root, which is
-                        # right for inflection (reĝon -> reĝ) but loses the
-                        # word for derivation (reĝino -> reĝ). Settled policy
-                        # is that a productive derivation earns its own entry,
-                        # so it has to survive mining as its own lemma.
+                        # the right key for neither purpose here: 'vort' and
+                        # 'banlok' are stems, not words, so a reviewer's
+                        # verdict is filed under something they never saw. Key
+                        # every recognised word by its own citation form
+                        # instead. That also keeps the key stable when the
+                        # morphology improves — keying by the analysed root
+                        # cost 917 approved lemmas their record, and they left
+                        # the dictionary silently.
                         stem = esperanto.strip_ending(low)
-                        if stem != lemma:
-                            lemma = esperanto.citation_form(token)
+                        lemma = esperanto.citation_form(token)
+                        if stem != esperanto.analyse(low, roots, words)[0]:
+                            # More than root plus ending: a derivation, and
+                            # settled policy is that a productive derivation
+                            # earns its own entry, so it goes to review.
                             kind = 'derived'
                     if kind == 'unknown':
                         # Capitalised tokens keep their surface form: stripping
@@ -205,6 +256,12 @@ def mine(files, roots, words, min_count, max_citations, filter_lines=True):
                         # four reviewers reported independently.
                         if token[:1].isupper():
                             lemma = low
+                        elif esperanto.participle_infinitive(
+                                token, roots, words):
+                            # A participle of a verb we know is that verb.
+                            lemma = esperanto.participle_infinitive(
+                                token, roots, words)
+                            kind = 'derived'
                         else:
                             # Otherwise unknown words split across their
                             # inflections, filing kongreso/kongresoj/kongreson
@@ -238,8 +295,23 @@ def mine(files, roots, words, min_count, max_citations, filter_lines=True):
     for lemma, record in lemmas.items():
         if record['count'] < min_count:
             continue
-        if record['kind'] == 'unknown' and record['lower'] == 0:
-            record['kind'] = 'name'
+        # A word that never appears in lower case is a name, whatever the
+        # morphology thinks of it. The check used to apply only to unknown
+        # words, which was enough while the compound rule was strict. Once it
+        # allowed the second root to carry an ending, Esperanto morphology
+        # began to accept the names in these books as compounds — Vinicii as
+        # vin + icii, 910 occurrences of it, and Vilfrido, Petronii, Alicio,
+        # Lundestad, Rorlund and twenty more besides. Two capitalised
+        # occurrences and no lower-case one is the signal; one occurrence is
+        # not, since a word can simply begin a sentence.
+        if record['lower'] == 0:
+            if record['kind'] == 'unknown':
+                record['kind'] = 'name'
+            elif record['kind'] in ('known', 'derived') and record['caps'] > 1:
+                # Overriding the morphology needs more evidence than
+                # overriding nothing: one capitalised occurrence can just be
+                # a word beginning a sentence.
+                record['kind'] = 'name'
         kept[lemma] = record
     return kept, skipped
 
@@ -248,7 +320,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--shard', help='I/N, e.g. 3/8')
     parser.add_argument('--plan', type=int, help='print the shard assignment')
-    parser.add_argument('--min-count', type=int, default=2)
+    parser.add_argument('--min-count', type=int, default=1,
+                        help='drop lemmas seen fewer than this many times IN '
+                             'THIS SHARD. Defaults to 1, i.e. keep everything: '
+                             'the threshold belongs in the reduce, where the '
+                             'counts from all shards have been summed. Applied '
+                             'here at 2 it silently lost every word attested '
+                             'once in each of several books — duondorme in '
+                             'four, eŭkaristio in two, enrigardado in three — '
+                             'because no single shard ever reached 2.')
     parser.add_argument('--max-citations', type=int, default=3)
     parser.add_argument('--keep-foreign-lines', action='store_true',
                         help='do not skip lines that fail the Esperanto '
@@ -294,6 +374,13 @@ def main():
                     # would be silently orphaned. Follow it to the new key.
                     record = lemmas.get(
                         esperanto.citation_form(decided['lemma']))
+                if record is None:
+                    # Same for the participles, which now file under their
+                    # verb: a verdict on 'alnajlita' belongs to 'alnajli'.
+                    moved = esperanto.participle_infinitive(
+                        decided['lemma'], roots, words)
+                    if moved:
+                        record = lemmas.get(moved)
                 if record:
                     record['verdict'] = decided.get('verdict')
                     record['gloss'] = decided.get('gloss')

@@ -23,11 +23,20 @@ TOKEN = re.compile(r"[a-zA-ZĉĝĥĵŝŭĈĜĤĴŜŬ']+")
 ENDINGS = ['ajn', 'ojn', 'aj', 'oj', 'an', 'on', 'en', 'as', 'is', 'os', 'us',
            'a', 'o', 'e', 'i', 'u', 'n', 'j']
 PARTICIPLE = ['ant', 'int', 'ont', 'at', 'it', 'ot']
+# Every preposition also serves as a verbal prefix — enveni, alporti,
+# surkudri, trapasi, ĉirkaŭblovi — and leaving them out was the largest single
+# source of false 'unknown' verdicts: englutinta failed while glutinta
+# resolved, though engluti is a dictionary entry. Three reviewers reported it.
 PREFIX = ['mal', 'ne', 'ge', 'bo', 'ek', 'el', 're', 'dis', 'for', 'pra',
-          'eks', 'mis', 'fi', 'retro']
+          'eks', 'mis', 'fi', 'retro',
+          'al', 'antaŭ', 'apud', 'ĉe', 'ĉirkaŭ', 'de', 'en', 'inter',
+          'kontraŭ', 'krom', 'kun', 'per', 'post', 'preter', 'pri', 'pro',
+          'sen', 'sub', 'super', 'sur', 'tra', 'trans']
+# -il- (an instrument: tranĉilo, ventomontrilo) is one of the most productive
+# suffixes in the language and was missing outright, as was -ing-.
 SUFFIX = ['estr', 'ebl', 'ind', 'em', 'ec', 'aĵ', 'ist', 'an', 'ul', 'in',
           'id', 'ig', 'iĝ', 'uj', 'op', 'obl', 'on', 'eg', 'et', 'ar', 'er',
-          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism']
+          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism', 'il', 'ing']
 
 # Closed classes that carry no root: they are words in their own right.
 GRAMMATICAL = {
@@ -48,19 +57,34 @@ CORRELATIVE = re.compile(
 
 
 def load_vocabulary(path=ENTRIES):
-    """Roots and whole words from the dictionary, lowercased."""
+    """Roots and whole words from the dictionary, lowercased.
+
+    An entry promoted from the corpus usually records no root, so its stem was
+    in neither set and only its exact citation form was recognised: laŭtlegi
+    was known and laŭtlegis was not. The same lemma then came out 'known' in
+    one shard and 'unknown' in another, decided by which surface form that
+    shard happened to meet — visible in the round-4 shard files and reported by
+    three reviewers. So every whole word contributes its stem as a root.
+    """
     roots, words = set(), set()
     with open(path, encoding='utf-8') as fh:
         for line in fh:
             if not line.strip():
                 continue
             entry = json.loads(line)
-            words.add(entry['word'].lower())
+            word = entry['word'].lower()
+            words.add(word)
             if entry.get('root'):
                 roots.add(entry['root'].lower())
             stem = (entry.get('morphology') or {}).get('stem')
             if stem:
                 roots.add(stem.lower())
+            # Only for words long enough that the stem is not a fragment: 'la'
+            # and 'ke' would otherwise contribute 'l' and 'k'.
+            if len(word) > 3 and "'" not in word:
+                derived = strip_ending(word)
+                if len(derived) > 2:
+                    roots.add(derived)
     return roots, words
 
 
@@ -127,6 +151,12 @@ def analyse(token, roots, words):
             peeled = peel_affixes(stem, words)
             if peeled in words:
                 return peeled, 'known'
+            # The compound test has to see the stem, not the inflected word.
+            # Checked only on the whole token, 'banloko' resolved and
+            # 'banlokoj' did not, because the tail was matched as 'lokoj'.
+            # A reviewer measured 19% of one queue in this class.
+            if is_compound(stem, roots, words):
+                return stem, 'known'
     peeled = peel_affixes(low, roots)
     if peeled in roots:
         return peeled, 'known'
@@ -135,12 +165,42 @@ def analyse(token, roots, words):
     peeled = peel_affixes(low, words)
     if peeled in words:
         return peeled, 'known'
-    for cut in range(3, len(low) - 2):
-        head, tail = low[:cut], low[cut:]
-        if head in roots and (tail in roots or tail in words
-                              or peel_affixes(tail, roots) in roots):
-            return low, 'known'
+    if is_compound(low, roots, words):
+        return low, 'known'
     return low, 'unknown'
+
+
+def known_stem(part, roots, words):
+    """True if this piece of a compound is something we recognise."""
+    if len(part) < 2:
+        return False
+    if part in roots or part in words:
+        return True
+    if peel_affixes(part, roots) in roots:
+        return True
+    bare = strip_ending(part)
+    return bare in roots or bare in words or peel_affixes(bare, roots) in roots
+
+
+def is_compound(word, roots, words):
+    """True if the word splits into a known root plus a known remainder.
+
+    Esperanto joins roots directly — fervojo is fer + vojo, samideano is
+    sam + ide + an + o — but it also joins them through a connecting vowel,
+    vent-o-montrilo, and the second root carries the word's ending. Both had to
+    be allowed: without the connecting vowel ventomontrilo stayed unknown even
+    though vent and montr are both roots, and without stripping the tail's
+    ending the tail of banlokoj was matched as 'lokoj'.
+    """
+    for cut in range(3, len(word) - 2):
+        head, tail = word[:cut], word[cut:]
+        if head not in roots:
+            continue
+        if known_stem(tail, roots, words):
+            return True
+        if tail[:1] in 'oae' and known_stem(tail[1:], roots, words):
+            return True
+    return False
 
 
 def guess_pos(token):
@@ -193,6 +253,7 @@ def citation_form(token):
     for tense in ('as', 'is', 'os', 'us'):
         if low.endswith(tense) and len(low) > len(tense) + 1:
             return low[:-len(tense)] + 'i'
+
     for ending, replacement in (('ojn', 'o'), ('ajn', 'a'), ('ojn', 'o'),
                                 ('oj', 'o'), ('aj', 'a'),
                                 ('on', 'o'), ('an', 'a'), ('en', 'e')):
@@ -204,6 +265,37 @@ def citation_form(token):
     if low.endswith('n') and len(low) > 2 and low[-2] in 'oaeu':
         return low[:-1]
     return low
+
+
+def participle_infinitive(token, roots, words):
+    """The infinitive a participle belongs to, or None.
+
+    A participle is a form of its verb, not a headword of its own. Filed as
+    written, alnajlita, neĝkovrita, mokridante and duonfrenezigite each became
+    a separate discovery; one reviewer measured 31 of 320 candidates in this
+    class and two others reported it.
+
+    Only the adjectival and adverbial participles are reduced. The nominal
+    ones are not, for two separate reasons that point the same way: -anto and
+    -into name a person and are words in their own right (komencanto is a
+    beginner, and a reader looks it up), while -ato and -ito are the shape of
+    a great many Latinate nouns whose root merely ends that way. Reducing
+    those turned vizito into 'vizi', soldato into 'soldi', komitato into
+    'komiti' and apetito into 'apeti' — and no vocabulary check catches it,
+    because sold- and vizit- are roots and Esperanto really would build 'soldi'
+    from one of them. Every case the reviewers reported is adjectival or
+    adverbial: alnajlita, neĝkovrita, mokridante, duonfrenezigite, altirata.
+    """
+    low = token.lower().strip("'")
+    for affix in PARTICIPLE:
+        for ending in ('ajn', 'aj', 'an', 'a', 'e'):
+            suffix = affix + ending
+            if not low.endswith(suffix) or len(low) <= len(suffix) + 2:
+                continue
+            infinitive = low[:-len(suffix)] + 'i'
+            if analyse(infinitive, roots, words)[1] == 'known':
+                return infinitive
+    return None
 
 
 def strip_ending(word):

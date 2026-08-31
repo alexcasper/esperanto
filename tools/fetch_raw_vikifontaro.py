@@ -114,13 +114,53 @@ PAGENUM = re.compile(r'^\s*\d{1,4}\s*$', re.M)
 
 # Templates that are page furniture: nothing inside them is body text.
 TEMPLATE_DROP = {'rh', 'runningheader', 'tab', '---', 'nop', 'pagequality',
-                 'reflist', 'ppoem-close'}
+                 'reflist', 'ppoem-close',
+                 # A drawn brace spanning table rows: {{krampo|4|r}} is a
+                 # glyph, so neither argument is text.
+                 'krampo'}
 # Templates whose *last* argument carries the text: {{lang|eo|vorto}},
 # {{VdE|Buko|buko}} cross-references, {{SIC|as-printed|corrected}} where we
 # prefer the correction so a known misprint does not enter DICT as a lemma.
-TEMPLATE_LAST_ARG = {'lang', 'sic', 'vde', 'vdk', 'vdf'}
-FORMAT_ARG = re.compile(r'^(?:\d+(?:px|%|em)?|[clrjm]|left|right|center|'
-                        r'small|big)$', re.I)
+# 'lingvo' is eo.wikisource's own alias for 'lang' and is used 552 times.
+# Missing it published the language code instead of the word: 'en la
+# {{Lingvo|la|frigidarium}}' became 'en la la', 105 times in Quo vadis I
+# against 7 in volume II. A survey of every template in the dump whose first
+# argument is a language code found these two and no others.
+TEMPLATE_LAST_ARG = {'lang', 'lingvo', 'sic', 'vde'}
+
+# Vortdivido: a word broken across a page break, marked {{vdk|mal|trankvile}}
+# at the foot of one page and {{vdf|mal|trankvile}} at the head of the next.
+# The two arguments are the two halves, so the word is their concatenation —
+# 442 and 412 occurrences respectively. Treating them like the other
+# two-argument templates and taking the last argument lost the first half and
+# duplicated the second: 'vi sendube {{vdk|de|mandos}}' / '{{vdf|de|mandos}},
+# kunŝovante la brovojn' came out as 'mandos mandos'. Three reviewers found
+# this independently, counting about 240 orphaned halves — 'traŭ' for kontraŭ,
+# 'zemplero' for ekzemplerojn, 'tino' for Valentino.
+#
+# The word is emitted once, by the opening half, and the closing half yields
+# nothing. Emitting at the opening covers the 30 {{vdk}} that have no surviving
+# {{vdf}} partner, which happens when the following page is not yet proofread
+# and so is excluded by the quality gate.
+HYPHEN_OPEN = {'vdk'}
+HYPHEN_CLOSE = {'vdf'}
+# A bare or dimensioned number is never running text here: it is a size
+# ({{gap|3.5em}}), a footnote or anchor key ({{NVR|20}}, {{refq|13}}) or a
+# reference to another edition's page ({{PE - 1925|409}}) — 5000 occurrences
+# of those three alone. Corrections like {{SIC|583|533}}, where the number IS
+# the content, are unaffected: those take the last-argument path below, which
+# does no filtering at all.
+MEASURE_ARG = re.compile(r'^\d+(?:\.\d+)?(?:px|%|em|ex|pt)?$', re.I)
+# An alignment or size keyword, on the other hand, is only ever an *extra*
+# argument beside the text. Treating it as never-content cost real letters:
+# 'c', 'l', 'r', 'j' and 'm' are alignment codes and also the initials of
+# Cezaro, Ligia, Romo, Jesuo and Marko, so {{sc|C}}ezaro — a small-capital
+# initial, which is how these books print a name at the start of a paragraph —
+# resolved to 'ezaro'. That form stands 113 times in Quo vadis I beside 132
+# correct spellings of cezaro. So these are dropped only when another argument
+# survives to be the text.
+ALIGN_ARG = re.compile(r'^(?:[clrjm]|left|right|center|centre|just|'
+                       r'small|big|larger|smaller)$', re.I)
 
 
 def resolve_template(match):
@@ -132,15 +172,28 @@ def resolve_template(match):
     """
     parts = match.group(1).split('|')
     name = parts[0].strip().lower()
-    if name in TEMPLATE_DROP:
+    if name in TEMPLATE_DROP or name in HYPHEN_CLOSE:
         return ''
-    args = [p.strip() for p in parts[1:]
-            if '=' not in p and p.strip() and not FORMAT_ARG.match(p.strip())]
-    if not args:
-        return ''
+    args = [p.strip() for p in parts[1:] if '=' not in p]
+    if name in HYPHEN_OPEN:
+        return ''.join(args)
     if name in TEMPLATE_LAST_ARG:
-        return args[-1]
-    return args[0]
+        # The text is the last argument, so an empty one means the template
+        # wrapped nothing. Falling back to the argument before it published the
+        # language code as though it were a word: {{lang|la|}} became 'la', and
+        # 'en la la, kie en la mezo ŝprucis fontano' is the result — 105 such
+        # lines in Quo vadis I against 7 in volume II.
+        return args[-1] if args else ''
+    content = [a for a in args if a and not MEASURE_ARG.match(a)]
+    text = [a for a in content if not ALIGN_ARG.match(a)]
+    if text:
+        return text[0]
+    # A template given exactly one argument cannot be using it for alignment:
+    # that argument is what the template wraps, however much it reads like a
+    # code. This is the {{sc|C}} case. With two or more arguments the reading
+    # flips — in {{f|1913|c|g=150%}} the 'c' really is 'centre' — so there the
+    # answer is nothing.
+    return args[0] if len(args) == 1 and content else ''
 
 
 def strip_page_furniture(wikitext):

@@ -1828,7 +1828,7 @@ Atesti. - 1. Doni sciigojn pri fakto aŭ afero, por konfirmi aŭ kontraŭparoli 
 
 Atingi. Sukcesi tuŝi, veni ĝis, sin etendi ĝis : atingi la plafonon per etendita mano; atingi celon; atingi urbon antaŭ la nokto; atingi aĝon de dudek jaroj. Atingebla. Kiu povas esti atingita : neatingebla perfekteco.
 
-Atlaso. - I. Kolekto de geografiaj kartoj; kolekto de desegnaĵoj aŭ pentraĵoj, ilustrantaj specialan temon : atlaso geografia, historia, anatomia, botanika. - II. Glata brila silka ŝtofo kun nerimarkebla transversaj fadenoj. - III. Filo de Jupitero; giganto, kiu portis sur siaj ŝultroj la ĉielon.
+Atlaso. - 1. Kolekto de geografiaj kartoj; kolekto de desegnaĵoj aŭ pentraĵoj, ilustrantaj specialan temon : atlaso geografia, historia, anatomia, botanika. - 2. Glata brila silka ŝtofo kun nerimarkebla transversaj fadenoj. - 3. Filo de Jupitero; giganto, kiu portis sur siaj ŝultroj la ĉielon.
 
 Atleto. - 1. Luktisto. - 2. Homo tre forta.
 
@@ -5172,8 +5172,8 @@ Hamstro (Zool.). Besto el la familio de l' musoj (Cricetus frumentarius).
 Hanzo. Potenca komerca asocio de kelkdeko da urboj en la mezaj jarcentoj.
 
 Haro. Fadenforma elasta elkreskaĵo de la besta kaj homa korpo, pli aŭ malpli dense kovranta kelkajn ĝiajn partojn : blondaj, grizaj haroj.
-Harligo. Kunplektitaj kapharoj de l' virino : La virinoj portas la harojn ordinare en unu aŭ du oj
-oj.
+Harligo. Kunplektitaj kapharoj de l' virino : La virinoj portas la harojn ordinare en unu aŭ du harligoj
+.
 Senhara. Ne havanta harojn; perdinta harojn : Senhara, kiel la genuo.
 Senharaĵo. Parto de la kapo, perdinta la harojn : brili, kiel senharaĵo.
 Senharulo. Homo, perdinta kapharojn.
@@ -5952,9 +5952,9 @@ Ironie. En ironia maniero.
 
 Islamo. Mahometana religio.
 
-- Ist. Sufikso por derivi nomojn de la personoj, kies konstanta okupo, sio
+- Ist. Sufikso por derivi nomojn de la personoj, kies konstanta okupo, profesio
 
-sio, metio, specialo estas tio, kion esprimas la radiko  : forĝisto, telegrafisto, dentisto.
+, metio, specialo estas tio, kion esprimas la radiko  : forĝisto, telegrafisto, dentisto.
 
 Istmo. Mallarĝa tero, kuniganta du kontinentojn : Panamo.
 
@@ -7303,9 +7303,9 @@ Krepusko. Nehela lumo antaŭ la leviĝo de la suno kaj post ĝia subiro.
 
 Kreso (Bot.). Vegetaĵo el la familio de la kruciferoj, rimedo kontraŭ la puloj (Lepidium).
 
-Kreski. - 1. Aperi, ekzisti (pri la vegetaĵoj) : En la dezerto kreskas nenio. - 2. Fariĝi pli alta, pli granda (pri la aĵoj
+Kreski. - 1. Aperi, ekzisti (pri la vegetaĵoj) : En la dezerto kreskas nenio. - 2. Fariĝi pli alta, pli granda (pri la vegetaĵoj
 
-aĵoj kaj bestoj) : La malbonaj herboj kreskas rapide. - 3. Pligrandiĝi, fariĝi pli multenombra : societo kreskas.
+ kaj bestoj) : La malbonaj herboj kreskas rapide. - 3. Pligrandiĝi, fariĝi pli multenombra : societo kreskas.
 Kresko. - 1. Stato de tio, kio kreskas. - 2. Alteco de estaĵo, kiel rezultato de la kreskado  : infanoj de sama kresko.
 Kreskaĵo. Vegetaĵo.
 Altkreska. De alta kresko  : altkreska viro.
@@ -7377,9 +7377,9 @@ Krono. - 1. Kunplektaĵo de floroj kaj folioj en la formo de cirklo : Dum la pro
 Kroni. - 1. Meti kronon sur la kapon : kroni la kapon per floroj. - 2. Unuafoje solene surmeti la reĝan kronon kiel signon de la reĝa povo : Napoleono estis kronita kiel imperiestro en la jaro 1804.
 Glorkrono. Nimbo.
 
-Kroniko. - 1. Simplaj, laŭjaraj notoj pri faktoj, okazantaj en regno, umo
+Kroniko. - 1. Simplaj, laŭjaraj notoj pri faktoj, okazantaj en regno, komunumo
 
-umo, familio. - 2. Artikolo en gazeto pri la lastaj novaĵoj : politika kroniko.
+, familio. - 2. Artikolo en gazeto pri la lastaj novaĵoj : politika kroniko.
 
 Kronologio. Scienco pri la historiaj datoj.
 
@@ -9391,9 +9391,9 @@ Ostracismo. Juĝo en la antikva Grekujo, kondamnanta al ekzilo civitanon, danĝe
 
 -Ot. Finiĝo de la pasiva participo de la estonta tempo.
 
-Ovo. Korpo, produktata de la inoj de diversaj klasoj de l’ bestoj, el kiu iĝas
+Ovo. Korpo, produktata de la inoj de diversaj klasoj de l’ bestoj, el kiu formiĝas
 
-iĝas ido de la sama speco : ovo de birdo.
+ ido de la sama speco : ovo de birdo.
 Ovblanko, ovflavo. Blanka, flava parto de ovo.
 Ovforma. Havanta formon de ovo.
 
@@ -9824,7 +9824,7 @@ Pentri. Kolore reprodukti estaĵojn, objektojn sur papero, sur tolo : pentri por
 Pentrado. Pentrarto.
 Pentristo. Homo, kies arto estas pentri.
 Pentraĵo. Pentrita bildo.
-inda
+Pentrinda
 
 inda. Meritanta esti pentrita (pri scenoj kaj vidaĵoj) : pentrinda lando.
 
@@ -12099,8 +12099,8 @@ Smirgi. Poluri per smirgo.
 Sobra. Modere trinkanta kaj manĝanta.
 Sobre. En sobra maniero, kun sobreco.
 Sobreco. Eco de tiu, kiu estas sobra.
-Malsobra. Malmodere trinkanta kaj anta
-anta.
+Malsobra. Malmodere trinkanta kaj manĝanta
+.
 Malsobre. En malsobra maniero, kun malsobreco.
 Malsobreco. Eco de tiu, kiu estas malsobra.
 

@@ -130,6 +130,14 @@ def main():
     parser.add_argument('--shards', type=int, default=None,
                         help='expected shard count, for the completeness check')
     parser.add_argument('--out', default=DEFAULT_OUT)
+    parser.add_argument('--min-count', type=int, default=2,
+                        help='drop lemmas whose summed count across all shards '
+                             'is below this, unless a reviewer has already '
+                             'judged them. This is the right place for the '
+                             'threshold: the corpus is split by file, so a '
+                             'word attested once in each of four books is '
+                             'attested four times and must not be discarded '
+                             'for reaching only 1 in every shard.')
     parser.add_argument('--write-ledger', metavar='FILE', nargs='?',
                         const=LEDGER, default=None,
                         help='also write the verdicts to a ledger keyed by '
@@ -144,6 +152,11 @@ def main():
         print('WARNING: merged %d shard files, expected %d — %s'
               % (len(seen_shards), args.shards,
                  'reduce is running on an incomplete map'), file=sys.stderr)
+
+    dropped = [lemma for lemma, entry in merged.items()
+               if entry['count'] < args.min_count and not entry['verdict']]
+    for lemma in dropped:
+        del merged[lemma]
 
     ordered = sorted(merged.values(),
                      key=lambda e: (KIND_RANK.get(e['kind'], 9), -e['count']))
@@ -177,6 +190,9 @@ def main():
     multi = sum(1 for e in ordered if len(set(e['shards'])) > 1)
 
     print('merged %d shard files → %s' % (len(seen_shards), args.out))
+    if dropped:
+        print('  %d lemmas below the count threshold of %d, dropped'
+              % (len(dropped), args.min_count))
     print('  %d distinct lemmas, %d seen in more than one shard'
           % (len(ordered), multi))
     print('  kinds: %s' % ', '.join('%s=%d' % kv for kv in kinds.most_common()))
