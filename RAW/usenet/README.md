@@ -42,7 +42,12 @@ More avenues probed the same day, all empty: the group's own FAQ threads
 esperanto-l); Wayback trees of esperanto.org (the 2004 "Arkivoj" capture
 is itself a 404), donh.best.vwh.net, and Edmund Grimley-Evans' site
 (personal pages, no group archives); narkive.com (covers 2004+). The
-Google 429 persisted all session, including the old-UI redirect. Clue for
+Google 429 persisted all session, including the old-UI redirect.
+Follow-up 2026-08-31: egress here is a *residential* BT IP (86.153.76.111)
+and every /g/* page still 429s with no Retry-After, while google.com and
+web search return 200 from the same IP — i.e. a Groups-specific IP flag
+that "residential IP" does not cure; likely armed by our own probing.
+Leave this IP alone; run the probe from a different network only. Clue for
 a future attempt: much 90s group traffic was two-way gatewayed from the
 esperanto-l mailing list (majordomo at esperanto.org in 2003, per
 Received headers in this mbox) — a surfacing list archive would recover

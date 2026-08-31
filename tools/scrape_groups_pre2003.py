@@ -14,7 +14,13 @@ into the existing pipeline:
              --mbox RAW/usenet/soc.culture.esperanto.pre2003.mbox \
              --outdir QUARANTINE/soc.culture.esperanto.pre2003
 
-Run it from a residential IP (the repo container is 429-blocked). Google's
+Run it from an IP/Network with a clean Groups history. NOTE 2026-08-31:
+this repo's own egress is a BT residential IP (86.153.76.111) and is
+STILL Groups-429'd on every /g/* page (google.com + web search fine from
+the same IP) — the "just use a residential IP" theory is dead; the flag
+follows the IP, likely tripped by our own probing, and shows no
+Retry-After. Don't re-canary more than once/week, one request only.
+Google's
 ToS prohibits automated access; this is a maintainer call, so it crawls
 politely — one page per ~12 s with jitter, exponential backoff on errors,
 and a state file so it never re-does work:
@@ -134,7 +140,7 @@ def run(probe, window, headless):
         for win in windows:
             if not probe and win in st['done']:
                 continue
-            q = 'after%3A%s-01%20before%3A%s-01' % (win, next_month(win))
+            q = f'after%3A{win}-01%20before%3A{next_month(win)}-01'
             url = SEARCH_URL + q
             print('%s  %s' % (time.strftime('%H:%M:%S'), url))
             for attempt in range(5):

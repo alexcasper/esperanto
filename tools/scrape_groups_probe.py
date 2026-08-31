@@ -3,7 +3,9 @@
 (pre-2003 recovery, beads esp-r8p — see RAW/usenet/README.md).
 
 Zero dependencies. Run this from the machine that will do the scraping
-(residential IP — the repo container is 429-blocked):
+(an IP with a clean Groups history — NOT this repo's egress: it is
+residential BT and still Groups-429'd as of 2026-08-31, see
+scrape_groups_pre2003.py's note):
 
     python3 tools/scrape_groups_probe.py
 
