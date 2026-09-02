@@ -27,3 +27,10 @@ RAW/usenet/*
 !RAW/usenet/README.md
 # Licence-hold bulk extraction (regenerate: python3 tools/extract_usenet_esperanto.py)
 QUARANTINE/soc.culture.esperanto/extracted.tsv
+
+# LF-arkivo blobs (kdrive share digests in RAW/lf-arkivo/README.md)
+RAW/lf-arkivo/*
+!RAW/lf-arkivo/README.md
+
+# nix build artifacts (playwright/chromium install leaves one)
+/result

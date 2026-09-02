@@ -37,6 +37,22 @@ which the issue's link points at — but Google is rate-limiting this host
 default. If that material is ever extracted, feed it through the same
 pipeline: same envelope split, same scoring, same QUARANTINE placement.
 
+More avenues probed the same day, all empty: the group's own FAQ threads
+(no archive location in the text); marc.info and mail-archive.com (no
+esperanto-l); Wayback trees of esperanto.org (the 2004 "Arkivoj" capture
+is itself a 404), donh.best.vwh.net, and Edmund Grimley-Evans' site
+(personal pages, no group archives); narkive.com (covers 2004+). The
+Google 429 persisted all session, including the old-UI redirect.
+Follow-up 2026-08-31: egress here is a *residential* BT IP (86.153.76.111)
+and every /g/* page still 429s with no Retry-After, while google.com and
+web search return 200 from the same IP — i.e. a Groups-specific IP flag
+that "residential IP" does not cure; likely armed by our own probing.
+Leave this IP alone; run the probe from a different network only. Clue for
+a future attempt: much 90s group traffic was two-way gatewayed from the
+esperanto-l mailing list (majordomo at esperanto.org in 2003, per
+Received headers in this mbox) — a surfacing list archive would recover
+overlapping content ToS-cleanly.
+
 Fetched 2026-08-30 by t3 (Galahad).
 - `soc.culture.esperanto.69804.mbox.7z` — archive.org FULL-USENET-BACKUP-2020-Oct — sha256:8e8df1ea98a6 — 27,755,969 bytes
 - `soc.culture.esperanto.mbox` — extracted; 69,804 Usenet messages — sha256:4cc041bb6ddd — 187,741,489 bytes
