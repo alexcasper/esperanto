@@ -15,10 +15,11 @@ the corpus is lopsided: Originala Verkaro is 1.4 MB and the smallest sources
 are a few kilobytes, so round-robin would leave one shard doing most of the
 work.
 
-Lines that are not Esperanto are skipped before tokenizing — see
-line_is_foreign. Whole files can be excluded too, but only a line-level test
-reaches a bilingual periodical, a translation printed beside its original, or
-the page of publisher's addresses in an otherwise clean book.
+Text that is not Esperanto is skipped before tokenizing, at three scales:
+whole files (a foreign-language grammar), single lines (see line_is_foreign,
+which reaches a bilingual periodical or a translation printed beside its
+original), and spans within a line (see foreign_spans, which reaches a Latin
+binomial or a translator's credit in parentheses).
 
 Output records are one JSON object per line:
 
@@ -103,7 +104,24 @@ MIN_LINE_TOKENS = 4
 MIN_LINE_KNOWN = 0.5
 
 
-def line_is_foreign(line, roots, words):
+def recognised(token, roots, words, cache=None):
+    """Is this token Esperanto the morphology knows? Memoized.
+
+    Three separate tests ask this of every token in the corpus — the line
+    filter, the span filter and classification itself — so the answer is
+    computed once per distinct token rather than once per occurrence. Without
+    the memo a single shard took seven minutes.
+    """
+    if cache is None:
+        return esperanto.analyse(token, roots, words)[1] != 'unknown'
+    hit = cache.get(token)
+    if hit is None:
+        hit = esperanto.analyse(token, roots, words)[1] != 'unknown'
+        cache[token] = hit
+    return hit
+
+
+def line_is_foreign(line, roots, words, cache=None):
     """True if this line is not Esperanto, so nothing on it is a candidate.
 
     Excluding whole files is too coarse. The sources that flooded the review
@@ -129,9 +147,44 @@ def line_is_foreign(line, roots, words):
         return True
     if len(tokens) < MIN_LINE_TOKENS:
         return False        # too little evidence to judge; let it through
-    known = sum(1 for t in tokens
-                if esperanto.analyse(t, roots, words)[1] != 'unknown')
+    known = sum(1 for t in tokens if recognised(t, roots, words, cache))
     return known / len(tokens) < MIN_LINE_KNOWN
+
+
+PARENTHESIS = re.compile(r'\(([^()]{3,80})\)')
+MAX_SPAN_TOKENS = 4
+
+
+def foreign_spans(line, roots, words, cache=None):
+    """Character ranges on this line that are not Esperanto, as (start, end).
+
+    Latin is the one language a per-line test cannot reach, and reviewers said
+    so: Kabe's Vortaro prints its binomials inside otherwise Esperanto lines —
+    'Muŝo (Musca domestica)' — so the line scores as Esperanto and the
+    binomial is mined. Six arrived disguised as verbs, because citation_form
+    read the Latin -us and -is as tense endings and filed domesticus under
+    'domestici'.
+
+    The parenthesis alone cannot decide it: the same shape holds Esperanto
+    stage directions, (Vilhelmo silentas), (Volas iri), (Post semajno). What
+    decides it is that a short parenthesis with nothing recognisable inside is
+    not Esperanto. Measured over the mined corpus that is 517 spans and 730
+    distinct tokens, and they are exactly what a reviewer should never see:
+    Latin binomials (Abies pectinata, Ascaris lumbricoides), translator
+    credits (translated by Clarence Bicknell), currency notes (francs,
+    roubles, cents) and citation shorthand (ibid, pp, Oxon). One recognisable
+    word anywhere in the span is enough to keep the whole of it.
+    """
+    spans = []
+    for match in PARENTHESIS.finditer(line):
+        tokens = [t for t in esperanto.TOKEN.findall(match.group(1))
+                  if len(t) > 1]
+        if not 2 <= len(tokens) <= MAX_SPAN_TOKENS:
+            continue
+        if any(recognised(t, roots, words, cache) for t in tokens):
+            continue
+        spans.append(match.span(1))
+    return spans
 
 
 def normalise_token(token, roots, words):
@@ -212,63 +265,100 @@ def plan_shards(count):
     return shards, weights
 
 
+def classify(token, roots, words, cache):
+    """(lemma, kind) for one token, memoized on the token.
+
+    The corpus is 5.3 million tokens over a few hundred thousand distinct
+    forms and each classification walks the morphology, so without the memo
+    the same word is analysed thousands of times. Nothing here may depend on
+    the line the token came from; the one test that does — is_fragment — stays
+    at the call site.
+    """
+    hit = cache.get(token)
+    if hit is not None:
+        return hit
+
+    lemma, kind = esperanto.analyse(token, roots, words)
+    low = token.lower()
+
+    if lemma is not None and kind == 'known' and lemma != low:
+        # analyse() collapses a word onto its root, which is the right key for
+        # neither purpose here: 'vort' and 'banlok' are stems, not words, so a
+        # reviewer's verdict would be filed under something they never saw.
+        # Key every recognised word by its own citation form instead — that
+        # also keeps the key stable when the morphology improves, and keying
+        # by the analysed root once cost 917 approved lemmas their record.
+        citation = esperanto.citation_form(token)
+        infinitive = esperanto.participle_infinitive(token, roots, words)
+        if infinitive:
+            # A participle of a verb we know is a form of that verb, not a
+            # derivation of it. Reducing it only on the unknown path left the
+            # whole class in the derived queue, where four reviewers
+            # independently measured it at 36-46% of everything they were
+            # shown: rostita, balancante, meritanta, ŝtelita.
+            lemma = infinitive
+        elif citation in words:
+            # Already a headword, so not a discovery. Reviewers kept meeting
+            # the same handful — boato, frido, kato, vermo, tamburo — which
+            # arrive in verse with an elided ending (boat', frid') that
+            # strip_ending cannot reduce, so the derivation test fired on a
+            # word the dictionary already holds.
+            lemma = citation
+        elif esperanto.strip_ending(low) != lemma:
+            # More than root plus ending: a derivation, and settled policy is
+            # that a productive derivation earns its own entry.
+            lemma, kind = citation, 'derived'
+        else:
+            lemma = citation
+
+    elif kind == 'unknown':
+        if token[:1].isupper():
+            # Capitalised tokens keep their surface form: stripping a final -n
+            # as if it were the accusative turned Hutton into 'hutto' and
+            # London into 'londo', which four reviewers reported.
+            lemma = low
+        else:
+            infinitive = esperanto.participle_infinitive(token, roots, words)
+            if infinitive:
+                lemma, kind = infinitive, 'derived'
+            else:
+                # Otherwise unknown words split across their inflections,
+                # filing kongreso/kongresoj/kongreson as three discoveries.
+                lemma = esperanto.citation_form(token)
+
+    cache[token] = (lemma, kind)
+    return lemma, kind
+
+
 def mine(files, roots, words, min_count, max_citations, filter_lines=True):
     lemmas = {}
     skipped = 0
+    cache = {}         # token -> (lemma, kind)
+    seen = {}          # token -> is it recognisable at all
     for name in files:
         path = os.path.join(CORPUS, name)
         with open(path, encoding='utf-8') as fh:
             for lineno, line in enumerate(fh, 1):
-                if filter_lines and line_is_foreign(line, roots, words):
+                if filter_lines and line_is_foreign(line, roots, words, seen):
                     skipped += 1
                     continue
+                spans = (foreign_spans(line, roots, words, seen)
+                         if filter_lines and '(' in line else ())
                 for match in esperanto.TOKEN.finditer(line):
+                    if any(start <= match.start() < end
+                           for start, end in spans):
+                        continue
                     token = normalise_token(match.group(), roots, words)
                     if token is None or len(token) < 2:
                         continue
-                    lemma, kind = esperanto.analyse(token, roots, words)
+                    lemma, kind = classify(token, roots, words, cache)
                     if lemma is None or kind in ('grammatical', 'correlative'):
                         continue
                     low = token.lower()
                     if low in STOPWORDS or ROMAN.match(low):
                         continue
-                    if kind == 'known' and lemma != low:
-                        # analyse() collapses a word onto its root, which is
-                        # the right key for neither purpose here: 'vort' and
-                        # 'banlok' are stems, not words, so a reviewer's
-                        # verdict is filed under something they never saw. Key
-                        # every recognised word by its own citation form
-                        # instead. That also keeps the key stable when the
-                        # morphology improves — keying by the analysed root
-                        # cost 917 approved lemmas their record, and they left
-                        # the dictionary silently.
-                        stem = esperanto.strip_ending(low)
-                        lemma = esperanto.citation_form(token)
-                        if stem != esperanto.analyse(low, roots, words)[0]:
-                            # More than root plus ending: a derivation, and
-                            # settled policy is that a productive derivation
-                            # earns its own entry, so it goes to review.
-                            kind = 'derived'
-                    if kind == 'unknown':
-                        # Capitalised tokens keep their surface form: stripping
-                        # a final -n as if it were the accusative turned
-                        # Hutton into 'hutto' and London into 'londo', which
-                        # four reviewers reported independently.
-                        if token[:1].isupper():
-                            lemma = low
-                        elif esperanto.participle_infinitive(
-                                token, roots, words):
-                            # A participle of a verb we know is that verb.
-                            lemma = esperanto.participle_infinitive(
-                                token, roots, words)
-                            kind = 'derived'
-                        else:
-                            # Otherwise unknown words split across their
-                            # inflections, filing kongreso/kongresoj/kongreson
-                            # as three separate discoveries.
-                            lemma = esperanto.citation_form(token)
-                        if is_fragment(line, match):
-                            kind = 'fragment'
+                    if kind == 'unknown' and is_fragment(line, match):
+                        kind = 'fragment'
                     record = lemmas.setdefault(lemma, {
                         'lemma': lemma, 'kind': kind, 'count': 0,
                         'pos_guess': esperanto.guess_pos(token),

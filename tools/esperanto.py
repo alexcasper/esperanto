@@ -50,10 +50,15 @@ GRAMMATICAL = {
     'trans', 'anstataŭ', 'antaŭ', 'malgraŭ', 'kvazaŭ', 'laŭ', 'pere',
     'unu', 'du', 'tri', 'kvar', 'kvin', 'ses', 'sep', 'ok', 'naŭ', 'dek',
     'cent', 'mil', 'nulo',
+    'mem',
 }
 
 CORRELATIVE = re.compile(
     r'^(ki|ti|i|ĉi|neni)(u|o|a|e|am|al|el|om|es)(j?n?)$')
+
+# Cheap gate for participle_infinitive, which is otherwise 30 vocabulary
+# lookups per token and made a mining pass twenty times slower.
+PARTICIPLE_ENDING = re.compile(r'(?:ant|int|ont|at|it|ot)(?:ajn|aj|an|a|e)$')
 
 
 def load_vocabulary(path=ENTRIES):
@@ -92,6 +97,15 @@ def peel_affixes(stem, roots, max_depth=4):
     """Strip affixes until a known root falls out, searching rather than
     peeling greedily.
 
+    A prefix is stripped only from the front and a suffix only from the end.
+    Stripping either from either end — which is what this did until a reviewer
+    traced it — dissolves ordinary roots into affixes that were never there:
+    instanco lost the *suffix* -in- from its front and became 'stanc', tunelo
+    lost the *prefix* el- from its end and became 'tun', and eksperto, instali,
+    kapelano and familiara went the same way. Those words then reach a reviewer
+    filed as derivations of a root they have nothing to do with, and the
+    obvious verdict on them — inflection — deletes real vocabulary.
+
     Greedy peeling picks whichever affix matches first and cannot back out of
     a wrong choice. That mangles words whose root merely begins or ends like an
     affix: reĝin- loses the "prefix" re- and becomes ĝin, so reĝino — plainly
@@ -102,22 +116,30 @@ def peel_affixes(stem, roots, max_depth=4):
     """
     if stem in roots:
         return stem
-    affixes = sorted(set(PREFIX + PARTICIPLE + SUFFIX), key=len, reverse=True)
+    prefixes = sorted(set(PREFIX), key=len, reverse=True)
+    suffixes = sorted(set(SUFFIX + PARTICIPLE), key=len, reverse=True)
+    # An affix is not a root, however faithfully the Fundamento lists it as a
+    # headword. Accepting one as the answer dissolved ordinary international
+    # words into their own suffixes: ulano (a lancer) peeled to 'ul', etono to
+    # 'et'. The word then reads as a derivation of something it has nothing to
+    # do with, and the obvious verdict on it deletes real vocabulary.
+    endpoints = roots - set(PREFIX) - set(SUFFIX) - set(PARTICIPLE)
     seen = {stem}
     frontier = [stem]
     for _ in range(max_depth):
         nxt = []
         for current in frontier:
-            for affix in affixes:
-                for candidate in (
-                        current[len(affix):] if current.startswith(affix) else None,
-                        current[:-len(affix)] if current.endswith(affix) else None):
-                    if not candidate or len(candidate) < 2 or candidate in seen:
-                        continue
-                    if candidate in roots:
-                        return candidate
-                    seen.add(candidate)
-                    nxt.append(candidate)
+            candidates = [current[len(a):] for a in prefixes
+                          if current.startswith(a)]
+            candidates += [current[:-len(a)] for a in suffixes
+                           if current.endswith(a)]
+            for candidate in candidates:
+                if len(candidate) < 2 or candidate in seen:
+                    continue
+                if candidate in endpoints:
+                    return candidate
+                seen.add(candidate)
+                nxt.append(candidate)
         if not nxt:
             break
         frontier = nxt
@@ -186,7 +208,8 @@ def is_compound(word, roots, words):
     """True if the word splits into a known root plus a known remainder.
 
     Esperanto joins roots directly — fervojo is fer + vojo, samideano is
-    sam + ide + an + o — but it also joins them through a connecting vowel,
+    sam + ide + an + o, tetablo is te + tablo — but it also joins them through
+    a connecting vowel,
     vent-o-montrilo, and the second root carries the word's ending. Both had to
     be allowed: without the connecting vowel ventomontrilo stayed unknown even
     though vent and montr are both roots, and without stripping the tail's
@@ -194,7 +217,16 @@ def is_compound(word, roots, words):
     """
     for cut in range(3, len(word) - 2):
         head, tail = word[:cut], word[cut:]
-        if head not in roots:
+        # The first piece may be a preposition or a pronoun rather than a root
+        # in the dictionary sense: laŭ-plana, ĝis-hejma, mem-turmento.
+        #
+        # The floor stays at three characters. Lowering it to two admits
+        # te-tablo, du-flanke and ok-taga, which are real, but it also admits
+        # et-apo, ul-ano and in-stanco, which dissolves three ordinary
+        # international words into affixes and costs a reviewer the vocabulary
+        # rather than saving them a verdict. Measured both ways; the shorter
+        # floor loses more than it gains.
+        if head not in roots and head not in GRAMMATICAL:
             continue
         if known_stem(tail, roots, words):
             return True
@@ -287,6 +319,8 @@ def participle_infinitive(token, roots, words):
     adverbial: alnajlita, neĝkovrita, mokridante, duonfrenezigite, altirata.
     """
     low = token.lower().strip("'")
+    if not PARTICIPLE_ENDING.search(low):
+        return None
     for affix in PARTICIPLE:
         for ending in ('ajn', 'aj', 'an', 'a', 'e'):
             suffix = affix + ending

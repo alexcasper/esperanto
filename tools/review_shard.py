@@ -21,7 +21,15 @@ Verdicts (closed set):
   ocr-artifact misprint or scanning corruption
   fragment     piece of a longer word, not a word itself
   inflection   regular form of a root already in DICT/entries.jsonl
+  numeral      a compound number written solid — okdekkvin, dudeksepa. A
+               regular formation from an infinite set, so it is real Esperanto
+               and still not a headword
+  nonce        a word coined by one author and used only in that text, whether
+               or not the text glosses it. Attested, but not the language's
   uncertain    cannot be judged from the citations shown
+
+Only 'lemma' reaches the dictionary. The other verdicts exist to record a
+judgement once, so that no later round asks anyone the same question again.
 """
 import argparse
 import json
@@ -31,7 +39,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHARDS = os.path.join(ROOT, 'DICT', 'shards')
 VERDICTS = {'lemma', 'proper-noun', 'foreign', 'ocr-artifact', 'fragment',
-            'inflection', 'uncertain'}
+            'inflection', 'numeral', 'nonce', 'uncertain'}
 
 
 def shard_path(spec):

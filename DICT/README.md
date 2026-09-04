@@ -2,92 +2,106 @@
 
 Machine-readable Esperanto dictionary, seeded from the **Universala Vortaro**
 (UV) of the *Fundamento de Esperanto* (Zamenhof, 1905) — the authoritative,
-unchangeable core vocabulary of the language.
+unchangeable core vocabulary of the language — and extended from Reta Vortaro,
+a 1906 English-Esperanto dictionary, and the attested corpus in `CORPUS/`.
 
 - `entries.jsonl` — one JSON object per line, UTF-8, Esperanto alphabetical order
-- `tools/` — the full scrape → parse → build pipeline (reproducible)
-
-## Source
-
-- **Document**: *Universala Vortaro de la Lingvo Internacia Esperanto*,
-  Fundamento de Esperanto, 1905 edition as published by the
-  [Akademio de Esperanto](https://akademio-de-esperanto.org/fundamento/universala_vortaro.html).
-- Each UV entry carries parallel glosses in French, English, German, Russian
-  (pre-1918 orthography), and Polish; the pipeline parses all five, the
-  dictionary keeps `gloss_en` (primary) and `gloss_fr` (etymological hint).
-- Rebuild: `sh tools/scrape_uv.sh` (fetches, parses, rebuilds `entries.jsonl`).
+- `english-index.jsonl` — the reverse direction, English headword to Esperanto
+- `affix-examples.jsonl` — morpheme-segmented affix demonstrations
+- `verdicts.jsonl` — every review judgement made about a corpus candidate
+- `DICT/tools/` — the scrape → parse → merge pipeline for the lexicographic
+  layers; `tools/` at the repository root holds the corpus pipeline
 
 ## Coverage
 
-### v1 — Fundamento (Universala Vortaro, 1905)
+**27272 entries.** Every count in this section was measured against
+`entries.jsonl` as it stands, not carried forward from an earlier pass. The
+dictionary has four layers of evidence, and the `source` tag on each line says
+which one an entry rests on:
 
-| Kind | Count |
-|---|---|
-| Root-cited entries (`abat'`, `zorg'ant'`, …) | 2773 |
-| — plain roots | 2523 |
-| — compound demonstrations with morphology | 210 |
-| — word-building affixes (39: 8 prefixes, 31 suffixes) | 39 |
-| Grammatical words (endings, particles, correlatives, pronouns, numerals, prepositions, conjunctions) | 138 |
-| **Subtotal** | **2911** |
+| Layer | `source` | Entries |
+|---|---|---|
+| Fundamento (Universala Vortaro, 1905) | `Fundamento/UV-1905` | 2911 |
+| Reta Vortaro, UV-official roots and derivatives | `ReVo/UV-*` | 5770 |
+| Reta Vortaro, non-official | `ReVo` | 6039 |
+| Reta Vortaro, Official Additions I–X | `ReVo/OA-1` … `ReVo/OA-10` | 3513 |
+| O'Connor & Hayes, English-Esperanto Dictionary (c.1906) | `oconnor-1906` | 4224 |
+| Corpus-mined, reviewed by hand | `corpus-mined` | 4815 |
 
-### v2 — corpus-mined (`source: corpus-mined`)
+OA breakdown: OA-1 1077 · OA-2 638 · OA-10 574 · OA-8 372 · OA-9 327 ·
+OA-3 248 · OA-4 223 · OA-7 23 · OA-6 18 · OA-5 13.
 
-2216 entries the 1905 core cannot contain, mined from the 141-source corpus in
-`CORPUS/` and reviewed by hand across two rounds: the internationalisms
-Esperanto took on after the Fundamento (*kongreso*, *telefono*, *aeroplano*,
-*sennaciismo*), lexicalised compounds (*lernolibro*, *samideano*) and
-productive derivations (*virino*, *malgranda*, *esperantisto*). 1592 are
-attested in three or more independent sources.
+By part of speech: noun 18029 · verb 4138 · adj 4102 · adv 837 · suffix 31 ·
+prep 31 · num 29 · pron 24 · interj 14 · particle 12 · ending 9 · prefix 8 ·
+conj 7 · art 1.
 
-555 entries carry `derived: true`, marking a word built by regular affixation
-on a root already held — *abonanto*, *agado*, *aliulo*. Settled policy is that
+4110 entries carry `derived: true`, marking a word built by regular affixation
+on a root already held — *abonanto*, *agado*, *reĝino*. Settled policy is that
 these earn entries, because a reader looking up *reĝino* should find it; the
 flag lets a consumer wanting only roots and opaque compounds filter them out.
 
-Mined by `tools/mine_lemmas.py`, reviewed via `tools/review_shard.py`, merged
-by `tools/reconcile_lemmas.py` and written here by `tools/promote_lemmas.py`.
-Candidates judged proper nouns, foreign words, fragments or OCR artefacts are
-excluded by construction; the full verdict record, including disagreements
-between reviewers, is `DICT/verdicts.jsonl`.
+### What the layers are for
 
-| Kind | Count |
-|---|---|
-| noun | 1315 |
-| adj | 550 |
-| adv | 237 |
-| verb | 92 |
-| num | 11 |
-| interj | 8 |
-| prep | 3 |
-| **Subtotal** | **2216** |
+The three lexicographic layers (Fundamento, ReVo, O'Connor) are compiled word
+lists: they rest on an editor's authority. The corpus-mined layer rests on
+attested usage, and is the only one that carries evidence you can check.
 
-### v3 — O'Connor & Hayes, English-Esperanto Dictionary (c.1906)
+**Fundamento** is the authoritative, unchangeable core: the 1905 Universala
+Vortaro as published by the
+[Akademio de Esperanto](https://akademio-de-esperanto.org/fundamento/universala_vortaro.html).
+Each UV entry carries parallel glosses in French, English, German, Russian
+(pre-1918 orthography) and Polish; the pipeline parses all five and keeps
+`gloss_en` (primary) and `gloss_fr` (etymological hint). Rebuild:
+`sh DICT/tools/scrape_uv.sh`.
 
-5935 entries parsed from `CORPUS/pg-16967.txt`, tagged `source: oconnor-1906`,
-of which 2655 are flagged `derived`. This is a different class of evidence from
-the corpus-mined layer: an editorially compiled word list rather than attested
-usage, so these entries carry **no `attestation` field** — a consumer can tell
-which claim rests on citations and which on a lexicographer's authority.
-Nothing here overwrites a Fundamento or corpus-mined entry; only words absent
-from both are added, and each keeps its `english_headwords`.
+**Reta Vortaro (ReVo)** supplies the official additions and the modern
+vocabulary the 1905 core cannot contain, from the `revuloj/revo-fonto` XML
+(13077 articles → 30648 derivation heads; 11793 with no English translation
+skipped, 2666 duplicates of the Fundamento skipped). ReVo's `<ofc>` tags carry
+the same officialness data as the Akademio's *Akademia Vortaro*, whose search
+endpoint returns raw PHP and could not be scraped. Rebuild:
+`python3 DICT/tools/merge_revo.py <revo-fonto>/revo`.
 
-Caveat: the English glosses are the source's own, and eleven of them use
-period terms (*negro*, *heathen*, *lunatic*, *cripple*). They are shipped as
-the source has them, with the tag marking provenance; deciding whether to
-modernise them is tracked as a bead, not settled here.
-
-Two further artefacts come from the same source:
+**O'Connor & Hayes** is parsed from `RAW/pg-16967.txt`. These entries carry
+**no `attestation` field**, deliberately: a consumer can tell which claim rests
+on citations and which on a lexicographer's authority. Nothing here overwrites
+a Fundamento or ReVo entry; only words absent from both are added, and each
+keeps its `english_headwords`. Two further artefacts come from the same source:
 
 - `english-index.jsonl` — 12497 English headwords to their Esperanto
   equivalents, including 242 phrasal translations (*abaft → posta parto*).
   This is the lookup direction `entries.jsonl` cannot serve.
-- `affix-examples.jsonl` — 56 morpheme-segmented affix demonstrations from
-  the grammar preface (*bo'patro = father-in-law*), which state the direction
-  the other way round and would corrupt the headword list if read as entries.
+- `affix-examples.jsonl` — 56 morpheme-segmented affix demonstrations from the
+  grammar preface (*bo'patro = father-in-law*), which state the direction the
+  other way round and would corrupt the headword list if read as entries.
 
-**Total: 11062 entries** (2911 Fundamento · 2216 corpus-mined · 5935 O'Connor).
+Caveat: the English glosses are the source's own, and eleven use period terms
+(*negro*, *heathen*, *lunatic*, *cripple*). They ship as the source has them,
+with the tag marking provenance; whether to modernise them is tracked as a
+bead rather than settled here.
 
-POS distribution: 6555 noun · 2047 adj · 1907 verb · 399 adv · 31 suffix · 30 prep · 24 pron · 23 num · 12 particle · 9 ending · 9 interj · 8 prefix · 7 conj · 1 art.
+**Corpus-mined** entries come from the 299-source corpus in `CORPUS/`: the
+internationalisms Esperanto took on after the Fundamento (*kongreso*,
+*telefono*, *aeroplano*, *sennaciismo*), lexicalised compounds (*lernolibro*,
+*samideano*) and productive derivations. All 4815 carry `attestation` (a
+corpus `count` and the number of independent `sources`) and up to three real
+`citations`; 3522 are attested in three or more independent sources.
+
+The pipeline is a map-reduce over the corpus, run in rounds:
+
+```
+tools/mine_lemmas.py --shard I/N --ledger     # map: candidates, one file per shard
+tools/review_shard.py --shard I/N --list      # a reviewer judges them
+tools/review_shard.py --shard I/N --apply F   # nine verdicts, closed set
+tools/reconcile_lemmas.py --shards N --write-ledger   # reduce: merge, record conflicts
+tools/promote_lemmas.py --rebuild             # verdict 'lemma' + a gloss -> entries.jsonl
+```
+
+Only the verdict `lemma` reaches the dictionary. Candidates judged
+`proper-noun`, `foreign`, `fragment`, `ocr-artifact`, `inflection`, `numeral`,
+`nonce` or `uncertain` are excluded by construction, and the judgement is kept
+so no later round asks the same question again: `DICT/verdicts.jsonl` holds
+7440 of them, including the cases where two reviewers disagreed.
 
 ## Schema
 
@@ -130,40 +144,28 @@ tracked for v2 (see roadmap).
 ## Validation
 
 - Every line parses as JSON (`python3 -m json.tool` per line / jq).
-- No duplicate `word` values; Esperanto-alphabetical sort order
+- Esperanto-alphabetical sort order
   (a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z).
+- Headwords are unique with eight known exceptions — *dio, julia, kristo,
+  mario, marto, mesio, pasko, pentekosto* — where the ReVo merge produced both
+  a common noun and a proper noun under one spelling. They are tracked as a
+  bead rather than silently deduplicated, because picking one loses a real
+  sense. Any other duplicate is a defect.
 
-## Roadmap (v2+)
+## Outstanding
 
-1. **Official Additions (Oficialaj Aldonoj I–X)** — the Akademio's
-   *Akademia Vortaro* search is AJAX-only and its `ajakso` endpoint currently
-   returns raw PHP source (misconfigured), so the ~1k added official roots
-   could not be scraped cleanly this pass. Alternative source: Reta Vortaro
-   (ReVo) XML dumps or the printed OA lists.
-2. **Baza Radikaro Oficiala (BRO)** groups for frequency banding.
-3. **Extended vocabulary** (~16k+ incl. non-official words) via ReVo/PIV-open
-   lists and RAW/ corpus extraction (SKL-8m1r.2 corpus work).
-4. POS review pass + `examples` field once RAW/ corpus has texts.
+Done since this was first written: the Official Additions I–X are in, by way
+of ReVo's `<ofc>` tags rather than the Akademio's broken endpoint, and the
+extended vocabulary is in from ReVo and the corpus.
 
-— t4/Percival · SKL-8m1r.3 · hq#171 · 2026-08-28
+1. **POS review pass.** A minority of UV roots carry a default-noun POS
+   despite a verbal or adjectival primary sense — a consequence of the
+   inference heuristic above, and a data problem rather than a code one.
+2. **`examples` field** drawn from the corpus, so an entry can show usage as
+   well as a gloss. The citations on corpus-mined entries are the start of
+   this; the lexicographic layers have none.
+3. **Baza Radikaro Oficiala (BRO)** groups, for frequency banding.
+4. **Cross-links to `GRAMMAR/`**, so an entry for an affix or a grammatical
+   word points at the section explaining it.
 
-## Coverage (v2) — SKL-8m1r.6 (t3/Galahad)
 
-Merged from **Reta Vortaro (ReVo)** XML source (`revuloj/revo-fonto`, 13,077
-articles → 30,648 drv heads; 11,793 without English trd skipped; 2,666 dups
-of v1 skipped):
-
-| Source | Entries |
-|---|---|
-| Fundamento/UV-1905 (v1, authoritative) | 2,911 |
-| ReVo roots + derivatives, UV-official (`ofc=*`) | 6,110 |
-| ReVo roots + derivatives, non-official | 6,084 |
-| ReVo **Official Additions OA1–10** (`ofc=N`) | 3,995 |
-| **Total** | **19,100** |
-
-OA breakdown: OA-1 1360 · OA-2 724 · OA-10 595 · OA-8 393 · OA-9 339 ·
-OA-3 285 · OA-4 240 · OA-7 23 · OA-6 21 · OA-5 15. (The broken Akademio
-`ajakso` endpoint was bypassed entirely — ReVo's `<ofc>` tags carry the same
-officialness data.) Rebuild: `python3 tools/merge_revo.py <revo-fonto>/revo`.
-
-— t3/Galahad · SKL-8m1r.6 · 2026-08-28

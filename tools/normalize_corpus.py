@@ -181,8 +181,16 @@ def convert_word(word):
 # until it stops changing, and only where it succeeds: a run that is genuinely
 # Latin-1 (Achtélik, a French quotation) fails to decode as UTF-8 and is left
 # exactly as found.
-MOJIBAKE_RUN = re.compile('[\u00c2-\u00c5][\u0080-\u00ff]'
-                          '(?:[\u00c2-\u00c5][\u0080-\u00ff])*')
+# The lead character spans C2-EF, not just C2-C5: a two-byte UTF-8 sequence
+# mojibakes to a lead in C2-DF, and a three-byte one — every curly quote, dash
+# and ellipsis in these books — to a lead in E0-EF. Matching only C2-C5 left
+# 364 characters unrepaired in the one affected file, all of them punctuation
+# ('â\x80\x9e' for the low quote „), which a reviewer spotted. Widening is safe
+# because the round trip below still has to succeed: a lead character that is
+# genuinely Latin-1 is followed by an ordinary letter, and that does not decode
+# as UTF-8.
+MOJIBAKE_RUN = re.compile('[\u00c2-\u00ef][\u0080-\u00ff]{1,2}'
+                          '(?:[\u00c2-\u00ef][\u0080-\u00ff]{1,2})*')
 MOJIBAKE_MIN = 20
 
 

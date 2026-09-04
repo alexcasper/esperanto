@@ -166,7 +166,7 @@ pg-55574.txt	pg-markers	4383	3958	30	351	-	left:37	-	-	e6de833542c2
 pg-55954.txt	pg-markers	10952	10498	31	355	left:1	left:32	-	-	6a91bd50ab77
 pg-56351.txt	pg-markers	927	430	45	351	-	-	-	-	e0a16d6feacf
 pg-57184.txt	pg-markers	8990	8358	43	351	left:15	unsound:225	-	-	c27b4c3c0b98
-pg-60429.txt	pg-markers	2872	2408	45	355	-	left:14	2786	-	6c5f68c1969e
+pg-60429.txt	pg-markers	2872	2408	45	355	-	left:14	3139	-	3f634941457b
 pg-61103.txt	pg-markers	6139	5643	33	355	-	left:10	-	-	7a1072189a1b
 pg-61190.txt	pg-markers	998	581	30	355	-	-	-	-	2a24c3d3ff8f
 pg-61579.txt	pg-markers	1406	1010	31	351	-	left:1	-	-	338d65273edf
@@ -180,7 +180,7 @@ pg-63105.txt	pg-markers	2455	2027	31	355	-	left:5	-	-	c5bbd7df2c5f
 pg-63926.txt	pg-markers	2839	2374	31	351	-	left:79	-	-	5f43751964f0
 pg-64579.txt	pg-markers	19840	19287	28	351	-	left:74	-	-	8662590bebda
 pg-65835.txt	pg-markers	8384	7918	32	351	left:3	left:77	-	-	49ca8a7d672b
-pg-65958.txt	pg-markers	5942	5520	30	351	-	converted:163	-	-	bb57760e015c
+pg-65958.txt	pg-markers	5942	5520	30	351	-	unsound:163	-	-	6b7c0926a5ad
 pg-66037.txt	pg-markers	3034	2613	30	351	-	left:4	-	-	c673a830c8c7
 pg-68874.txt	pg-markers	2493	2075	32	351	-	left:27	-	-	8a6f36f725cb
 pg-68878.txt	pg-markers	4449	4008	32	351	-	left:2	-	-	e59a60a729ec
