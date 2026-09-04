@@ -53,10 +53,20 @@ BY_POS = {
 
 
 def anchor(heading):
-    """The fragment GitHub derives from a Markdown heading."""
+    """The fragment GitHub derives from a Markdown heading.
+
+    Lowercase, drop everything that is not a letter, digit, space or hyphen,
+    then turn each remaining space into a hyphen — each one, not each run.
+    That distinction is the whole of the correctness here: every heading in
+    this file separates its Esperanto and English halves with an em dash
+    surrounded by spaces, the dash is dropped as punctuation, and the two
+    spaces it leaves behind become two hyphens. Collapsing them produces
+    '#2-morfologio-morphology', which is a dead link.
+    """
     text = heading.lstrip('#').strip().lower()
     text = re.sub(r'[^\w\s-]', '', text, flags=re.UNICODE)
-    return '#' + re.sub(r'\s+', '-', text)
+    return '#' + ''.join('-' if character.isspace() else character
+                         for character in text)
 
 
 def load_sections():
