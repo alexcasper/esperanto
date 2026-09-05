@@ -24,6 +24,11 @@ BASE = 'https://www.reta-vortaro.de/revo/xml/%s.xml'
 AGENT = ('esperanto-corpus-repair/1.0 (repairing ~1300 headwords a local '
          'merge damaged; github.com/alexcasper/esperanto)')
 PARALLEL = 4
+# Some articles are 60-90 KB and the link here is slow; under four-way
+# parallelism the largest of them exceeded a 60 second limit and were recorded
+# as missing although they exist. 323 of 1101 came back that way on the first
+# pass.
+TIMEOUT = 300
 LONG_HEADWORD = 18
 
 
@@ -79,6 +84,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--out', required=True)
     parser.add_argument('--limit', type=int)
+    parser.add_argument('--parallel', type=int, default=PARALLEL)
+    parser.add_argument('--timeout', type=int, default=TIMEOUT)
     args = parser.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
@@ -116,7 +123,8 @@ def main():
                          % (BASE % target,
                             os.path.join(args.out, name + '.xml')))
         subprocess.run(['curl', '-sS', '--fail', '--parallel',
-                        '--parallel-max', str(PARALLEL), '--max-time', '60',
+                        '--parallel-max', str(args.parallel),
+                        '--max-time', str(args.timeout), '--retry', '2',
                         '-A', AGENT, '-K', config],
                        capture_output=True, text=True)
         os.remove(config)

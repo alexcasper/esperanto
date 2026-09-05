@@ -65,7 +65,10 @@ def render(element, root):
             parts.append(render(child, root))
         if child.tail:
             parts.append(child.tail)
-    return ''.join(parts)
+    # The XML wraps lines inside a <kap>, so a rendered form can carry a
+    # newline and stray indentation: 'borela sigma-algebro' came out with its
+    # variant split across two lines.
+    return re.sub(r'\s+', ' ', ''.join(parts)).strip()
 
 
 def headwords(kap, root):
@@ -80,6 +83,10 @@ def headwords(kap, root):
             if form and form != main:
                 variants.append(form)
     return main, variants
+
+
+def squash(form):
+    return form.lower().replace(' ', '').replace('-', '').replace('’', '')
 
 
 def article_root(tree):
@@ -112,6 +119,12 @@ def index_article(path):
         main, variants = headwords(kap, root)
         if main:
             forms[main.lower()] = (main, variants)
+            # Also index without spaces and hyphens. A multi-word headword
+            # reached us with its spaces already flattened away — that is the
+            # other half of the same defect — so 'aleksandrolagranda' has to
+            # find 'Aleksandro la Granda', and it can only do so on a key that
+            # ignores the separators the merge dropped.
+            forms.setdefault(squash(main), (main, variants))
     return root, forms
 
 
@@ -143,7 +156,26 @@ def main():
         entries = [json.loads(line) for line in fh if line.strip()]
 
     cache = {}
-    recovered, respaced, unmatched, no_article = [], [], [], []
+    # A form-level index over every article fetched, used when the entry's own
+    # root does not lead to the right article. The merge recorded the last
+    # component of a compound as the root — aerarmeo came out with root 'arme'
+    # rather than 'aer' — so those entries point at an article that is not
+    # theirs. Matching on the form instead is sound as long as exactly one
+    # article defines it; where two do, the entry is left alone.
+    everywhere, ambiguous = {}, set()
+    for name in sorted(os.listdir(args.articles)):
+        if not name.endswith('.xml'):
+            continue
+        found_root, forms = index_article(os.path.join(args.articles, name))
+        if not forms:
+            continue
+        for key, value in forms.items():
+            if key in everywhere and everywhere[key][0] != value[0]:
+                ambiguous.add(key)
+            everywhere[key] = value
+
+    recovered, respaced, unmatched = [], [], []
+    no_article, wrong_article = [], []
     for entry in entries:
         raw = entry.get('revo_raw')
         long_head = (len(entry['word']) >= 18
@@ -156,11 +188,28 @@ def main():
         if root not in cache:
             path = find_article(args.articles, root)
             cache[root] = index_article(path) if path else (None, None)
-        _found_root, forms = cache[root]
+        found_root, forms = cache[root]
         if not forms:
             no_article.append(entry['word'])
             continue
-        match = forms.get(entry['word'].lower())
+        # The fetcher retries a missing article under a shortened name and
+        # caches the result under the name asked for, so aliz.xml can hold the
+        # article for ali — a different word entirely. Repairing an entry from
+        # an unrelated article is the one way this tool could invent a
+        # headword, so the article has to say it is the root we wanted.
+        if article_name(found_root) != article_name(root):
+            forms = None
+        match = None
+        for key in (entry['word'].lower(), squash(entry['word'])):
+            if forms and key in forms:
+                match = forms[key]
+                break
+            if key in everywhere and key not in ambiguous:
+                match = everywhere[key]
+                if forms is None:
+                    wrong_article.append(
+                        '%s: root %s, matched elsewhere' % (entry['word'], root))
+                break
         if not match:
             unmatched.append('%s (%s)' % (entry['word'], raw or 'long'))
             continue
@@ -182,8 +231,11 @@ def main():
         print('      %s' % row)
     for row in respaced[:args.limit]:
         print('      %s' % row)
-    print('  %d had no article, %d did not match their article'
-          % (len(no_article), len(unmatched)))
+    print('  %d had no article, %d had the wrong article, '
+          '%d did not match their article'
+          % (len(no_article), len(wrong_article), len(unmatched)))
+    for row in wrong_article[:4]:
+        print('      %s' % row)
     for row in unmatched[:6]:
         print('      %s' % row)
 
