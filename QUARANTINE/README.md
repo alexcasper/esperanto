@@ -100,3 +100,43 @@ the measured rates are above — but the direction was right.
 
 Reversing this is one `git mv` back; the reason to reverse it would be a use
 for the articles other than mining vocabulary.
+
+### Two redundant copies — the same translation held twice
+
+`wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt` and
+`wsdump-Orzeszko_Marta_1928_Zamenhof.txt` duplicate `pg-11511.txt` and
+`pg-61860.txt`. Nothing is wrong with either text; the problem is that an
+attestation count is the evidence a corpus-mined entry rests on, and holding a
+work twice counts every word in it twice.
+
+Reviewers suspected this and an exact-line comparison appeared to refute it,
+finding only 3.5% of lines shared. That was the wrong instrument: the same
+translation broken into lines differently shares almost no whole lines.
+8-gram token shingles ignore line breaking and settle it:
+
+| pair | containment of the smaller | Jaccard |
+|---|---|---|
+| pg-11511 / wsdump Robinsono Kruso | **98.4%** | 91.3% |
+| pg-61860 / wsdump Marta | **96.0%** | 91.9% |
+| two unrelated books (control) | 0.0% | 0.0% |
+| Quo vadis I / Quo vadis II (control) | 0.0% | 0.0% |
+
+The Gutenberg copy is kept in both pairs because it is the more complete one.
+The Wikisource *Robinsono Kruso* holds 100 of 128 scanned pages and is 21353
+tokens against 20042 — it scores 0.9 points better on recognisability, which
+does not buy back a missing 6% of the book. For *Marta* the Gutenberg copy is
+better on both counts: 98.3% against 98.0%, 75735 tokens against 75457.
+
+A reviewer also reported that `wsdump-Orzeszko_Marta` reads *t* as *l*
+throughout. It does not: lempo, lasla and instruislino occur once each and
+akcepli and posluli not at all, against 84 correct occurrences of *tempo*.
+That was not why it was moved.
+
+**A third source was accused and cleared.** `ia-poemo-de-utnoa-eo-1jun-2023.txt`
+was reported to contain the whole poem twice, from about line 13100. Split at
+its midpoint the two halves share 4 8-grams out of 28000 tokens — 0.0%. Line
+13100 begins ANEKSO 1, a critical essay by Mariano Martin Rodriguez which
+quotes the poem; that tail is 2048 tokens and shares 20.8% of its shingles
+with the body. So a handful of count-2 candidates from that file are one
+attestation plus one quotation, which is not worth acting on. The file stays.
+

@@ -149,7 +149,6 @@ pg-78054.txt	pg-markers	880	460	35	351	-	left:9	-	-	-	5bc5b94abf48
 pg-8177.txt	pg-markers	8874	8283	48	351	converted:2815	unsound:1157	-	-	-	9d22d07ea960
 pg-8224.txt	pg-markers	16956	16448	35	351	converted:14820	unsound:109	-	-	-	09532d5b559d
 wsdump-Bulthuis_Inferio_1938.txt	wsdump-clean	5717	5717	0	0	-	left:5	-	7	-	3e1aee181341
-wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt	wsdump-clean	1014	1014	0	0	-	left:1	-	-	-	e3c463406060
 wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt	wsdump-clean	5699	5688	0	0	-	left:51	-	-	-	2f4641eac706
 wsdump-Homero_Iliado_1896_Kofman.txt	wsdump-clean	3896	3896	0	0	-	-	-	-	-	965f14789ba3
 wsdump-Kabe_Vortaro_de_Esperanto_1922.txt	wsdump-clean	14216	14211	0	0	left:1	left:30	-	-	-	2a434da1a803
@@ -159,7 +158,6 @@ wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt	wsdump-clean	1688	1688	0	0	-	left:5
 wsdump-Lanti_Naciismo_1930.txt	wsdump-clean	1533	1533	0	0	-	left:2	-	14	-	7a2eaa993c4d
 wsdump-Luyken_Mirinda_amo_1913.txt	wsdump-clean	4524	4524	0	0	-	left:62	-	3	-	e1798d643690
 wsdump-Molière_Don_Juan_1906_Boirac.txt	wsdump-clean	3330	3330	0	0	-	left:1	-	6	-	fa31cd0a176b
-wsdump-Orzeszko_Marta_1928_Zamenhof.txt	wsdump-clean	3299	3299	0	0	left:4	left:13	-	26	-	800f27bc2e45
 wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt	wsdump-clean	2783	2783	0	0	-	left:2	-	1	-	0083e1f128a4
 wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt	wsdump-clean	1521	1521	0	0	left:7	left:38	-	25	-	eeb3aae3c0ce
 wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt	wsdump-clean	4061	4061	0	0	-	left:45	-	12	-	fb402fc42f17
