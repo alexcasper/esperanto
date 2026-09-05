@@ -296,6 +296,7 @@
 {"lemma": "aliuj", "verdict": "inflection", "note": "Plural of Lanti's non-standard correlative 'aliu'; the miner keeps 'aliuj' as a lemma of its own instead of folding it into 'aliu'."}
 {"lemma": "aliulo", "verdict": "lemma", "gloss": "another person, someone else"}
 {"lemma": "aliurba", "verdict": "lemma", "gloss": "of another town"}
+{"lemma": "alivesti", "verdict": "lemma", "gloss": "disguised"}
 {"lemma": "alivestita", "verdict": "lemma", "gloss": "disguised"}
 {"lemma": "aliĝi", "verdict": "lemma", "gloss": "to join, adhere to"}
 {"lemma": "aliĝinto", "verdict": "lemma", "gloss": "adherent, one who has joined"}
@@ -1303,6 +1304,7 @@
 {"lemma": "bimm", "verdict": "nonce", "note": "Onomatopoeia for a bell stroke, glossed inside the text itself."}
 {"lemma": "bimmbumm", "verdict": "nonce", "note": "Onomatopoeia in the same sketch."}
 {"lemma": "bin", "verdict": "foreign", "note": "German 'am', pg-52556"}
+{"lemma": "bindi", "verdict": "lemma", "gloss": "bound (of a book)"}
 {"lemma": "bindita", "verdict": "lemma", "gloss": "bound (of a book)"}
 {"lemma": "biografio", "verdict": "lemma", "gloss": "biography"}
 {"lemma": "bioskopo", "verdict": "lemma", "gloss": "a cinema, a picture house"}
@@ -1703,6 +1705,7 @@
 {"lemma": "ciuj", "verdict": "ocr-artifact", "note": "Nabil chronicle: 'Ĉiuj' with ĉ read as plain c; same pattern as cu/Car"}
 {"lemma": "civila", "verdict": "lemma", "gloss": "civil (as opposed to religious or military)"}
 {"lemma": "civilizacio", "verdict": "lemma", "gloss": "civilisation"}
+{"lemma": "civilizi", "verdict": "inflection", "note": "past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past …"}
 {"lemma": "civilizita", "verdict": "inflection", "note": "past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past passive participle of civilizi; past …"}
 {"lemma": "civita", "verdict": "lemma", "gloss": "civic, of the city-state"}
 {"lemma": "civitano", "verdict": "lemma", "gloss": "citizen"}
@@ -3090,7 +3093,7 @@
 {"lemma": "ensalti", "verdict": "lemma", "gloss": "to jump in"}
 {"lemma": "enseignement", "verdict": "foreign", "note": "French, from quoted periodical and society titles."}
 {"lemma": "enskribas", "verdict": "inflection", "note": "present tense of enskribi"}
-{"lemma": "enskribi", "verdict": "inflection", "gloss": "to enter, register, inscribe", "note": "present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; …; …; …"}
+{"lemma": "enskribi", "verdict": "inflection", "gloss": "to enter, register, inscribe", "note": "present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; …; …"}
 {"lemma": "enskribigi", "verdict": "lemma", "gloss": "to enrol, have someone registered"}
 {"lemma": "enskribita", "verdict": "inflection", "gloss": "inscribed, entered (on a list)", "note": "passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); …"}
 {"lemma": "enskribo", "verdict": "lemma", "gloss": "entry, registration, enrolment"}
@@ -3322,7 +3325,7 @@
 {"lemma": "eŭnuko", "verdict": "lemma", "gloss": "eunuch"}
 {"lemma": "eŭropa", "verdict": "lemma", "gloss": "European"}
 {"lemma": "eŭropano", "verdict": "lemma", "gloss": "a European, an inhabitant of Europe", "note": "Regular -ano on a place name; an infinite, transparent set (usonano, azianano)."}
-{"lemma": "fa", "verdict": "foreign", "note": "Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'"}
+{"lemma": "fa", "verdict": "foreign", "note": "Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'"}
 {"lemma": "fabaco", "verdict": "lemma", "gloss": "legume, plant of the pea family (Fabaceae)"}
 {"lemma": "fabelisto", "verdict": "inflection"}
 {"lemma": "fablislo", "verdict": "ocr-artifact", "note": "'fablisto' with t misread as l."}
@@ -3392,6 +3395,7 @@
 {"lemma": "familiara", "verdict": "lemma", "gloss": "familiar, intimate, unceremonious", "note": "Root word, not famili-ar-a; \"familia\" is the adjective of familio."}
 {"lemma": "familje", "verdict": "foreign", "note": "Same quoted constructed-language sample line as homoze."}
 {"lemma": "famkonata", "verdict": "lemma", "gloss": "famous, widely known"}
+{"lemma": "famkoni", "verdict": "lemma", "gloss": "famous, widely known"}
 {"lemma": "famulo", "verdict": "lemma", "gloss": "a celebrity, a famous person"}
 {"lemma": "fan", "verdict": "foreign", "note": "Danish, in the quoted oath 'Go til fanen!'"}
 {"lemma": "fanatika", "verdict": "lemma", "gloss": "fanatical"}
@@ -3691,7 +3695,7 @@
 {"lemma": "forgesinte", "verdict": "inflection"}
 {"lemma": "forgesita", "verdict": "inflection", "note": "past passive participle of forgesi"}
 {"lemma": "forhaki", "verdict": "inflection"}
-{"lemma": "forigi", "verdict": "inflection", "gloss": "to remove, get rid of", "note": "regular participle of forigi; past passive participle of forigi; regular participle of forigi"}
+{"lemma": "forigi", "verdict": "inflection", "gloss": "to remove, get rid of", "note": "regular participle of forigi; regular participle of forigi; past passive participle of forigi; regular participle of forigi"}
 {"lemma": "forigita", "verdict": "inflection", "note": "regular participle of forigi"}
 {"lemma": "forirante", "verdict": "inflection"}
 {"lemma": "foriras", "verdict": "inflection", "gloss": "to go away, leave", "note": "present tense of foriri"}
@@ -4074,6 +4078,7 @@
 {"lemma": "grandfrape", "verdict": "lemma", "gloss": "with heavy beats, poundingly"}
 {"lemma": "grandioza", "verdict": "lemma", "gloss": "grandiose, magnificent"}
 {"lemma": "grandkvante", "verdict": "lemma", "gloss": "in large quantity, wholesale"}
+{"lemma": "grandkvi", "verdict": "lemma", "gloss": "in large quantity, wholesale"}
 {"lemma": "grandnombra", "verdict": "lemma", "gloss": "numerous, large in number"}
 {"lemma": "grandoficiro", "verdict": "lemma", "gloss": "grand officer of the crown"}
 {"lemma": "grandparte", "verdict": "lemma", "gloss": "largely, to a great extent"}
@@ -5133,7 +5138,7 @@
 {"lemma": "klifo", "verdict": "lemma", "gloss": "cliff"}
 {"lemma": "klinante", "verdict": "inflection"}
 {"lemma": "klingo", "verdict": "lemma", "gloss": "blade"}
-{"lemma": "klini", "verdict": "inflection"}
+{"lemma": "klini", "verdict": "inflection", "gloss": "bent, bowed, inclined"}
 {"lemma": "klinita", "verdict": "lemma", "gloss": "bent, bowed, inclined"}
 {"lemma": "kliniĝante", "verdict": "inflection"}
 {"lemma": "kliniĝi", "verdict": "inflection", "note": "past tense of kliniĝi, to bend down"}
@@ -6372,7 +6377,7 @@
 {"lemma": "maharajaho", "verdict": "lemma", "gloss": "maharajah"}
 {"lemma": "maharo", "verdict": "lemma", "gloss": "Mahar (winged reptilian species in Burroughs's Pellucidar)", "note": "fictional species used as a common noun; only pg-20802"}
 {"lemma": "mahometana", "verdict": "lemma", "gloss": "Muslim, Mohammedan"}
-{"lemma": "mai", "verdict": "foreign", "note": "French; French; French"}
+{"lemma": "mai", "verdict": "foreign", "note": "French"}
 {"lemma": "maiforteco", "verdict": "ocr-artifact", "note": "for \"malforteco\"."}
 {"lemma": "mais", "verdict": "foreign", "note": "French"}
 {"lemma": "majesteco", "verdict": "inflection"}
@@ -7026,6 +7031,7 @@
 {"lemma": "milionulo", "verdict": "lemma", "gloss": "millionaire"}
 {"lemma": "militado", "verdict": "inflection"}
 {"lemma": "militiro", "verdict": "lemma", "gloss": "military expedition, campaign; Krucaj militiroj = the Crusades"}
+{"lemma": "militkapti", "verdict": "lemma", "gloss": "captured in war, taken prisoner of war"}
 {"lemma": "militkaptita", "verdict": "lemma", "gloss": "captured in war, taken prisoner of war"}
 {"lemma": "militkrozoŝipo", "verdict": "inflection"}
 {"lemma": "militpreni", "verdict": "lemma", "gloss": "to capture by force of arms, conquer", "note": "milit-+preni; attested repeatedly in the 2020 eowiki Historio de la mondo article"}
@@ -7132,6 +7138,7 @@
 {"lemma": "mondoparto", "verdict": "lemma", "gloss": "part of the world"}
 {"lemma": "mondparto", "verdict": "lemma", "gloss": "part of the world, continent"}
 {"lemma": "mondreganta", "verdict": "lemma", "gloss": "world-ruling"}
+{"lemma": "mondregi", "verdict": "lemma", "gloss": "world-ruling"}
 {"lemma": "mondskale", "verdict": "lemma", "gloss": "on a world scale, globally"}
 {"lemma": "monduma", "verdict": "lemma", "gloss": "worldly, belonging to fashionable society", "note": "A -um- derivative (mondumo, high society); neither mondumo nor monduma is in DICT/entries.jsonl."}
 {"lemma": "mondumo", "verdict": "lemma", "gloss": "fashionable society, the social world (French 'le monde')", "note": "The -um- suffix is unpredictable; attested in five separate texts."}
@@ -8022,6 +8029,7 @@
 {"lemma": "patres", "verdict": "foreign", "note": "Latin left untranslated in Quo vadis"}
 {"lemma": "patri", "verdict": "fragment", "note": "poetic elision patrin' for patrino, with final -n further stripped as if accusative"}
 {"lemma": "patricio", "verdict": "lemma", "gloss": "patrician"}
+{"lemma": "patrii", "verdict": "lemma", "gloss": "patriotic"}
 {"lemma": "patrindukino", "verdict": "lemma", "gloss": "dowager duchess, the duke's mother"}
 {"lemma": "patrino", "verdict": "lemma", "gloss": "mother"}
 {"lemma": "patrio", "verdict": "lemma", "gloss": "fatherland, homeland"}
@@ -8115,6 +8123,7 @@
 {"lemma": "peremptora", "verdict": "lemma", "gloss": "peremptory, admitting no refusal", "note": "Latinism; the standard form is 'peremptoria'."}
 {"lemma": "pereonta", "verdict": "inflection"}
 {"lemma": "peresperanta", "verdict": "lemma", "gloss": "done by means of Esperanto"}
+{"lemma": "peresperi", "verdict": "lemma", "gloss": "done by means of Esperanto"}
 {"lemma": "pereŭ", "verdict": "ocr-artifact", "note": "misprint of pereu, the volitive of perei"}
 {"lemma": "perfalka", "verdict": "lemma", "gloss": "done with falcons (of hunting)"}
 {"lemma": "perfbrto", "verdict": "ocr-artifact", "note": "'perforto' with o read as b."}
@@ -8484,7 +8493,7 @@
 {"lemma": "postkongresa", "verdict": "lemma", "gloss": "post-congress"}
 {"lemma": "postkuri", "verdict": "lemma", "gloss": "to run after, chase"}
 {"lemma": "postlasante", "verdict": "inflection", "note": "Present adverbial participle of postlasi, which is already in entries.jsonl."}
-{"lemma": "postlasi", "verdict": "inflection", "gloss": "left behind, posthumous", "note": "past tense of postlasi, to leave behind"}
+{"lemma": "postlasi", "verdict": "lemma", "gloss": "left behind, posthumous", "note": "past tense of postlasi, to leave behind"}
 {"lemma": "postlasis", "verdict": "inflection", "note": "past tense of postlasi, to leave behind"}
 {"lemma": "postlasita", "verdict": "lemma", "gloss": "left behind, posthumous"}
 {"lemma": "postmeznokto", "verdict": "inflection"}
@@ -8973,6 +8982,7 @@
 {"lemma": "rajdistaro", "verdict": "inflection"}
 {"lemma": "rajdito", "verdict": "lemma", "gloss": "a mount; a saddle horse or other riding animal", "note": "Nominalised participle used as a concrete noun; attested in pg-44128 as well as two Vallienne texts."}
 {"lemma": "rajdobesto", "verdict": "lemma", "gloss": "riding animal, mount"}
+{"lemma": "rajtigi", "verdict": "lemma", "gloss": "authorised, entitled", "note": "past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised';"}
 {"lemma": "rajtigilo", "verdict": "lemma", "gloss": "warrant, document conferring a right"}
 {"lemma": "rajtigita", "verdict": "lemma", "gloss": "authorised, entitled", "note": "past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised'; past passive participle of rajtigi; 'authorised';"}
 {"lemma": "rakonti", "verdict": "inflection"}

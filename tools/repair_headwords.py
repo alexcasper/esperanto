@@ -170,10 +170,16 @@ def main():
         for row in rows[:args.limit]:
             print('        %s' % row)
 
-    remaining = [e['word'] for e in kept
-                 if ',' in e['word'] or ' ' in e['word']]
-    print('  headwords still not a single word: %d %s'
-          % (len(remaining), remaining[:4]))
+    broken = [e['word'] for e in kept if ',' in e['word']]
+    # A space is not a defect. Once repair_revo_headwords has recovered the
+    # multi-word terms from the source, 'Aleksandro la Granda' and 'amina
+    # acido' are headwords with spaces in them, and reporting those as
+    # unrepaired damage would be crying wolf.
+    multiword = [e['word'] for e in kept if ' ' in e['word']]
+    print('  headwords still carrying a comma: %d %s'
+          % (len(broken), broken[:4]))
+    print('  multi-word headwords (not a defect): %d %s'
+          % (len(multiword), multiword[:3]))
 
     if args.apply:
         with open(ENTRIES, 'w', encoding='utf-8') as fh:
