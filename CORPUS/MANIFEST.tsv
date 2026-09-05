@@ -1,300 +1,252 @@
-source	method	in_lines	out_lines	head_stripped	tail_stripped	xsystem	hsystem	mojibake	homoglyphs	sha256
-ia-LaHeroojDeLaNovaTagiolaKronikoDeNabil.txt	ia-clean	24387	21969	0	0	left:3	unsound:891	-	-	cbdccdbd9fc1
-ia-dlibra.kul.pl.49099.txt	ia-clean	4200	3755	0	0	left:3	unsound:937	-	-	49f4bf10183c
-ia-eowiki-Afriko-20200722.pdf.txt	ia-clean	1616	1038	0	0	-	left:25	-	-	9170fbf052b7
-ia-eowiki-Agula_lingvo-20200728.pdf.txt	ia-clean	318	267	0	0	left:2	left:8	-	-	c00ec89e50ee
-ia-eowiki-Araba_lingvo-20200723.pdf.txt	ia-clean	1896	1551	0	0	left:1	left:29	-	-	3454abd0ae21
-ia-eowiki-Arumana_lingvo-20200726.pdf.txt	ia-clean	407	324	0	0	-	left:6	-	-	e2bcb35cab57
-ia-eowiki-Azio-20200722.pdf.txt	ia-clean	1381	987	0	0	-	left:34	-	-	caa181e40fa5
-ia-eowiki-Balia_lingvo-20200727.pdf.txt	ia-clean	338	265	0	0	-	left:2	-	-	d74b7d09f4de
-ia-eowiki-Bengala_lingvo-20200724.pdf.txt	ia-clean	648	511	0	0	-	left:15	-	-	0072449eaec2
-ia-eowiki-Evea_lingvo-20200727.pdf.txt	ia-clean	174	131	0	0	-	-	-	-	ccb6070efd96
-ia-eowiki-Filipina_lingvo-20200726.pdf.txt	ia-clean	48	38	0	0	-	left:3	-	-	db8cac0f591e
-ia-eowiki-Germana_lingvo-20200722.pdf.txt	ia-clean	1437	1075	0	0	-	left:94	-	-	f2b389c81e4d
-ia-eowiki-Hindustana_lingvo-20200725.pdf.txt	ia-clean	916	732	0	0	-	left:17	-	-	4ea4da8a0e73
-ia-eowiki-Historio_de_la_mondo-20200721.pdf.txt	ia-clean	2894	1887	0	0	left:3	left:91	-	-	e3619b24b91b
-ia-eowiki-Jakuta_lingvo-20200725.pdf.txt	ia-clean	396	334	0	0	-	left:17	-	-	0f28c39f8ffe
-ia-eowiki-Jida_lingvo-20200724.pdf.txt	ia-clean	1222	986	0	0	-	left:28	-	-	09dc119c3009
-ia-eowiki-Kefa_lingvo-20200725.pdf.txt	ia-clean	46	34	0	0	-	left:7	-	-	3e5468de1a9e
-ia-eowiki-Kopta_lingvo-20200726.pdf.txt	ia-clean	580	497	0	0	left:5	unsound:108	-	-	ec6d3587fed9
-ia-eowiki-Kria_lingvo-20200727.pdf.txt	ia-clean	165	141	0	0	-	left:2	-	-	a2481e1ab278
-ia-eowiki-Krika_lingvo-20200728.pdf.txt	ia-clean	89	73	0	0	-	-	-	-	494561e57466
-ia-eowiki-Latina_lingvo-20200723.pdf.txt	ia-clean	624	495	0	0	-	left:3	-	-	03c15814d749
-ia-eowiki-Lingvo-20200721.pdf.txt	ia-clean	908	701	0	0	left:1	left:46	-	-	5e9e9a9cce16
-ia-eowiki-Luba_lingvo-20200728.pdf.txt	ia-clean	106	66	0	0	-	left:6	-	-	7f8b39f67879
-ia-eowiki-Malnovaltgermana_lingvo-20200728.pdf.txt	ia-clean	173	132	0	0	left:1	left:7	-	-	3f55f2329210
-ia-eowiki-Mezpersa_lingvo-20200728.pdf.txt	ia-clean	63	34	0	0	-	-	-	-	cf2c74d11d75
-ia-eowiki-Nama_lingvo-20200728.pdf.txt	ia-clean	53	31	0	0	-	left:1	-	-	49f3fef7bb35
-ia-eowiki-Naura_lingvo-20200727.pdf.txt	ia-clean	337	255	0	0	-	left:3	-	-	c41f91eb1a67
-ia-eowiki-Navaha_lingvo-20200726.pdf.txt	ia-clean	139	114	0	0	-	-	-	-	b8fab8ef9cfc
-ia-eowiki-Nejoj-20200726.pdf.txt	ia-clean	40	28	0	0	-	left:1	-	-	908e96e0c3fa
-ia-eowiki-Nigrapieda_lingvo-20200728.pdf.txt	ia-clean	38	27	0	0	-	-	-	-	05be7cf869be
-ia-eowiki-Odia_lingvo-20200725.pdf.txt	ia-clean	96	81	0	0	-	-	-	-	061c078fc2b7
-ia-eowiki-Okinava_lingvo-20200728.pdf.txt	ia-clean	24	16	0	0	-	-	-	-	89b1a6dd7910
-ia-eowiki-Oroma_lingvo-20200727.pdf.txt	ia-clean	147	106	0	0	-	left:3	-	-	d0ea2cd35261
-ia-eowiki-Palatinata_germana_dialektaro-20200728.pdf.txt	ia-clean	274	259	0	0	-	left:17	-	-	d7419dbca7d6
-ia-eowiki-Parta_lingvo-20200728.pdf.txt	ia-clean	189	153	0	0	-	-	-	-	eff089a470ae
-ia-eowiki-Pitjantjatjara_lingvo-20200725.pdf.txt	ia-clean	25	17	0	0	-	-	-	-	5e7c9a341606
-ia-eowiki-Rapanuia_lingvo-20200727.pdf.txt	ia-clean	122	95	0	0	-	left:6	-	-	b0901583556b
-ia-eowiki-Romanido-20200725.pdf.txt	ia-clean	235	199	0	0	-	left:2	-	-	8bf7bee0b814
-ia-eowiki-Ruanda_lingvo-20200726.pdf.txt	ia-clean	141	121	0	0	-	left:1	-	-	a8002c40587b
-ia-eowiki-Rusa_lingvo-20200723.pdf.txt	ia-clean	1028	757	0	0	-	left:17	-	-	29f465329985
-ia-eowiki-Slovaka_lingvo-20200724.pdf.txt	ia-clean	339	251	0	0	-	left:3	-	-	b0b69432b884
-ia-eowiki-Srana_lingvo-20200728.pdf.txt	ia-clean	72	54	0	0	-	left:1	-	-	02887431f575
-ia-eowiki-Svahila_lingvo-20200724.pdf.txt	ia-clean	823	674	0	0	left:1	left:24	-	-	e2db3466c170
-ia-eowiki-Tata_lingvo-20200728.pdf.txt	ia-clean	51	38	0	0	-	-	-	-	562878874956
-ia-eowiki-Tibeta_lingvo-20200725.pdf.txt	ia-clean	149	126	0	0	-	left:26	-	-	07e77f94a3bb
-ia-eowiki-Turka_lingvo-20200723.pdf.txt	ia-clean	744	613	0	0	left:2	left:60	-	-	4278ca0eae73
-ia-eowiki-Veda_Sanskrito-20200728.pdf.txt	ia-clean	105	68	0	0	-	left:7	-	-	2fee8d6b661d
-ia-eowiki-Vilamovica_lingvo-20200728.pdf.txt	ia-clean	625	555	0	0	-	left:29	-	-	0ff4daa65cb4
-ia-eowiki-Voroa_lingvo-20200727.pdf.txt	ia-clean	175	126	0	0	-	left:1	-	-	0d54de3dcc0a
-ia-eowiki-Zazaa_lingvo-20200725.pdf.txt	ia-clean	50	39	0	0	-	left:2	-	-	8211add77aaa
-ia-esperanto-the-international-language-a-complete-textbook-w-j-downes-1982.txt	ia-clean	14468	12696	0	0	left:1	unsound:1306	-	-	132fcabd0e96
-ia-key_to_the_ekzercaro.txt	ia-clean	724	722	0	0	-	unsound:339	-	-	67923f98e2da
-ia-poemo-de-utnoa-eo-1jun-2023.txt	ia-clean	15420	13489	0	0	-	left:23	-	-	d2fbb28780bd
-ia-traduction_de_lekzercaro.txt	ia-clean	728	726	0	0	left:76	unsound:201	-	-	4f5012fb2e3c
-pg-11307.txt	pg-markers	2146	1626	28	351	left:5	-	-	-	7921f170cbfd
-pg-11511.txt	pg-markers	2764	2360	30	351	-	left:17	-	-	510ce5cbc39b
-pg-16967.txt	pg-markers	14676	14123	42	351	left:7	unsound:1243	-	-	39b7c7006bc6
-pg-17425.txt	pg-markers	1195	777	42	351	-	left:5	-	-	61edc84df2df
-pg-17482.txt	pg-markers	4349	3854	46	351	converted:3989	left:11	-	-	8368f0bfcfd1
-pg-17665.txt	pg-markers	1439	1011	41	351	-	left:1	-	-	e0247f767e56
-pg-17945.txt	pg-markers	1593	1150	43	351	converted:1289	left:3	-	-	69c33111a31d
-pg-18178.txt	pg-markers	6094	5641	41	351	converted:5093	left:1	-	-	b72fdf9f22af
-pg-18326.txt	pg-markers	1775	1355	41	355	left:1	left:1	-	-	ae8ba095c815
-pg-18836.txt	pg-markers	1788	1356	41	351	converted:1914	-	-	-	6486dc362eb6
-pg-19030.txt	pg-markers	4564	4151	40	351	converted:2257	-	-	-	79feae209258
-pg-19182.txt	pg-markers	6383	5961	38	351	converted:2521	left:1	-	-	153288f3d7a7
-pg-19183.txt	pg-markers	6597	6179	40	351	converted:2804	left:6	-	-	6916228d92c0
-pg-19293.txt	pg-markers	1748	1330	41	355	converted:1555	left:3	-	-	23cd4ac42406
-pg-19803.txt	pg-markers	6503	6080	40	351	converted:2632	left:1	-	-	e5be90f02fa4
-pg-19858.txt	pg-markers	6307	5891	40	351	converted:2291	left:1	-	-	552d68397b97
-pg-20006.txt	pg-markers	2317	1860	79	351	converted:1844	left:6	-	-	295e937b2cd3
-pg-20162.txt	pg-markers	6596	6176	39	351	converted:3298	-	-	-	6bb578c977f5
-pg-20178.txt	pg-markers	5474	5057	38	351	converted:2229	left:1	-	-	a2c6411f7589
-pg-20802.txt	pg-markers	5743	5253	41	362	converted:5549	left:13	-	-	351ef7716653
-pg-20931.txt	pg-markers	1622	1197	41	351	-	-	-	-	0470dd0275a9
-pg-20943.txt	pg-markers	1741	1309	42	351	converted:1463	-	-	-	43323c0cdd92
-pg-21194.txt	pg-markers	1838	1418	32	351	-	left:4	-	-	38080d55f664
-pg-21195.txt	pg-markers	1380	965	32	351	-	left:5	-	-	9b55237e78b8
-pg-21951.txt	pg-markers	1017	619	31	351	left:2	left:5	-	-	23ae6288d293
-pg-22070.txt	pg-markers	4465	3113	968	351	-	left:10	-	-	2caee653b747
-pg-22592.txt	pg-markers	4379	3844	40	355	left:1	left:22	-	-	a769208b0f6d
-pg-22901.txt	pg-markers	1896	1347	41	351	left:1	left:5	-	-	e521c7fe739a
-pg-23093.txt	pg-markers	2749	2248	49	355	converted:2074	left:7	-	-	e5d2f9d83642
-pg-23670.txt	pg-markers	3527	3080	42	351	converted:3151	left:7	-	-	aaa63d40c94c
-pg-23774.txt	pg-markers	9930	9499	38	351	converted:3457	-	-	-	1414ac20550d
-pg-23837.txt	pg-markers	6134	5712	43	351	converted:1834	unsound:125	-	-	72ccca0d94af
-pg-24057.txt	pg-markers	728	297	46	351	converted:377	left:9	-	-	c59f82ee0c99
-pg-24074.txt	pg-markers	2467	2030	41	351	converted:1973	left:21	-	-	f26a8c1826c1
-pg-24145.txt	pg-markers	3834	3417	38	351	converted:2697	left:18	-	-	8a322e5df8bd
-pg-24292.txt	pg-markers	6196	5497	36	351	converted:2918	left:4	-	-	c26030bdc407
-pg-24355.txt	pg-markers	7084	6663	39	351	converted:2350	left:48	-	-	1ad8df92562c
-pg-24501.txt	pg-markers	4116	3695	45	351	converted:3602	unsound:180	-	-	d0e700d7da43
-pg-24525.txt	pg-markers	1863	1376	43	351	converted:1165	-	-	-	96e182a4584d
-pg-24575.txt	pg-markers	2020	1557	41	351	-	converted:412	-	-	924829bc1a3c
-pg-24763.txt	pg-markers	2501	2040	34	351	-	left:52	-	-	9613e825b7bd
-pg-25311.txt	pg-markers	1470	1038	30	351	-	left:10	-	-	aec8797a8e13
-pg-25386.txt	pg-markers	1920	1422	32	351	-	left:13	-	-	a1ce7e1fe74a
-pg-25539.txt	pg-markers	2543	1942	32	351	-	left:4	-	-	627d691b2943
-pg-25964.txt	pg-markers	2196	1787	32	351	-	left:1	-	-	78abe76c4e1b
-pg-26099.txt	pg-markers	1988	1522	47	358	-	left:1	-	-	adeb38fc8913
-pg-26359.txt	pg-markers	3837	3364	44	351	-	left:16	-	-	79ede42e23ab
-pg-26480.txt	pg-markers	9575	9140	38	351	-	-	-	-	a216741365f8
-pg-26959.txt	pg-markers	1356	922	43	355	converted:516	left:4	-	-	c60c1ffb404f
-pg-27170.txt	pg-markers	2873	2409	39	351	-	left:4	-	-	ac080ed3ce02
-pg-27593.txt	pg-markers	2098	1629	38	362	-	left:17	-	-	82ae3d507ec5
-pg-27915.txt	pg-markers	1637	1181	44	355	converted:1057	left:31	-	-	e58e2609a83e
-pg-28720.txt	pg-markers	2280	1715	97	355	left:3	unsound:186	-	-	8d9501d51c04
-pg-28721.txt	pg-markers	2595	2033	75	355	left:3	unsound:188	-	-	4820ac49a34f
-pg-28968.txt	pg-markers	5396	4955	42	351	-	left:4	-	-	daf16c96c746
-pg-28971.txt	pg-markers	683	282	36	355	-	left:2	-	-	f4af1dccc64a
-pg-29403.txt	pg-markers	2411	1851	75	355	left:3	unsound:167	-	-	0891eb591c35
-pg-30536.txt	pg-markers	6889	6249	42	351	-	left:2	-	-	791d9a3f8d70
-pg-30991.txt	pg-markers	2296	1787	44	355	converted:936	unsound:168	-	-	fbeb879072e6
-pg-30992.txt	pg-markers	2330	1825	44	355	converted:1108	unsound:187	-	-	9ebcef1fcfed
-pg-31348.txt	pg-markers	5046	4531	38	355	converted:4383	left:3	-	-	d9d4494d2503
-pg-32035.txt	pg-markers	5758	5258	42	351	left:1	converted:4043	-	-	4d2fa956b12d
-pg-32313.txt	pg-markers	2437	1929	42	355	converted:833	unsound:167	-	-	ade319a33e33
-pg-32314.txt	pg-markers	2443	1951	43	355	converted:959	unsound:204	-	-	4b504610012e
-pg-32480.txt	pg-markers	5556	5046	41	358	-	converted:2912	-	-	37379c28ddeb
-pg-34042.txt	pg-markers	2325	1828	31	356	converted:1152	unsound:107	-	-	e9c11666608d
-pg-34043.txt	pg-markers	2359	1864	31	356	converted:1178	unsound:130	-	-	e9f9e829b3de
-pg-35743.txt	pg-markers	4020	3565	33	351	left:1	converted:1113	-	-	ab8f030cf582
-pg-35917.txt	pg-markers	3069	2614	33	351	-	converted:2079	-	-	d9cca95f5606
-pg-35981.txt	pg-markers	1555	1136	33	351	-	left:2	-	-	885310844d45
-pg-37279.txt	pg-markers	8934	8477	33	351	left:4	converted:2758	-	-	759d8e17380f
-pg-37642.txt	pg-markers	2625	2138	31	356	left:3	unsound:107	-	-	04f9114664cf
-pg-37643.txt	pg-markers	2289	1814	31	356	left:10	unsound:205	-	-	7ad861bdd398
-pg-37644.txt	pg-markers	2312	1822	31	356	left:4	unsound:186	-	-	b7b6d820a485
-pg-37977.txt	pg-markers	2393	1884	44	351	left:1	unsound:178	-	-	623ef7803d0f
-pg-37978.txt	pg-markers	2569	2063	44	351	left:2	unsound:151	-	-	3a969569fa2b
-pg-39840.txt	pg-markers	2413	1905	43	355	left:2	unsound:124	-	-	4c74b38a6f2e
-pg-39841.txt	pg-markers	2282	1792	43	355	left:2	unsound:111	-	-	3628293c3a2e
-pg-39842.txt	pg-markers	2366	1863	43	355	left:1	unsound:117	-	-	6214fd9d3824
-pg-42028.txt	pg-markers	3393	2949	31	351	-	left:9	-	-	652c899392b8
-pg-42774.txt	pg-markers	1472	989	30	351	-	left:4	-	-	3d2ff3d73a0b
-pg-44128.txt	pg-markers	2297	1783	63	355	left:7	left:84	-	-	a620b7634971
-pg-44130.txt	pg-markers	2422	1905	63	355	-	left:84	-	-	7a4e4f86f3a3
-pg-44131.txt	pg-markers	2439	1911	63	355	-	left:76	-	-	dc13c4fc05cd
-pg-44666.txt	pg-markers	2215	1692	63	351	-	left:62	-	-	356d8406e9e5
-pg-44667.txt	pg-markers	2275	1757	63	351	-	left:37	-	-	ed085dcd53fa
-pg-44668.txt	pg-markers	2337	1832	63	351	left:21	unsound:142	-	-	aaab85c24c3a
-pg-45612.txt	pg-markers	2570	2077	31	351	-	left:1	-	-	1f0c18bf360d
-pg-45713.txt	pg-markers	8085	7553	31	351	left:1	left:16	-	-	2f6d368f0f77
-pg-47249.txt	pg-markers	3512	3067	31	351	-	left:4	-	-	dfbab9e49d61
-pg-47259.txt	pg-markers	5526	5048	31	351	left:1	unsound:337	-	-	a74a09697273
-pg-47855.txt	pg-markers	3923	3403	31	351	left:2	left:5	-	-	b3d2cbe2087b
-pg-47913.txt	pg-markers	5836	5353	33	351	-	left:4	-	-	17f556b7d591
-pg-48033.txt	pg-markers	4751	4224	32	351	left:2	left:29	-	-	e0cb052e4911
-pg-48896.txt	pg-markers	1553	1037	30	351	-	-	-	-	658e1a86bd58
-pg-48900.txt	pg-markers	1785	1352	32	358	-	left:2	-	-	12144135209f
-pg-49232.txt	pg-markers	2176	1666	63	355	left:11	unsound:136	-	-	724e63014fe3
-pg-49233.txt	pg-markers	2270	1736	63	355	left:4	left:35	-	-	4c21609d4359
-pg-49234.txt	pg-markers	2133	1623	31	355	-	left:65	-	-	2441467c68d5
-pg-51069.txt	pg-markers	10406	9931	32	358	-	left:9	-	-	fd294b05dd01
-pg-51690.txt	pg-markers	2627	2152	33	351	left:6	left:29	-	-	019005dd0500
-pg-52062.txt	pg-markers	2444	1949	39	351	left:2	left:14	-	-	b5018c11cbba
-pg-52063.txt	pg-markers	2664	2164	39	351	-	left:11	-	-	711663a44244
-pg-52064.txt	pg-markers	3356	2840	39	351	left:4	left:42	-	-	af2073932eae
-pg-52111.txt	pg-markers	3979	3483	30	351	-	left:2	-	-	a5d7a29c180b
-pg-52556.txt	pg-markers	3739	3266	32	351	-	unsound:1001	-	-	26649779b3c2
-pg-52577.txt	pg-markers	6662	6203	29	351	left:5	left:28	-	-	b14190d0c0bc
-pg-52876.txt	pg-markers	2200	1757	32	351	left:1	left:19	-	-	7f961819c6ff
-pg-55302.txt	pg-markers	15194	14619	32	351	-	left:16	-	-	03717a848da3
-pg-55574.txt	pg-markers	4383	3958	30	351	-	left:37	-	-	e6de833542c2
-pg-55954.txt	pg-markers	10952	10498	31	355	left:1	left:32	-	-	6a91bd50ab77
-pg-56351.txt	pg-markers	927	430	45	351	-	-	-	-	e0a16d6feacf
-pg-57184.txt	pg-markers	8990	8358	43	351	left:15	unsound:225	-	-	c27b4c3c0b98
-pg-60429.txt	pg-markers	2872	2408	45	355	-	left:14	3139	-	3f634941457b
-pg-61103.txt	pg-markers	6139	5643	33	355	-	left:10	-	-	7a1072189a1b
-pg-61190.txt	pg-markers	998	581	30	355	-	-	-	-	2a24c3d3ff8f
-pg-61579.txt	pg-markers	1406	1010	31	351	-	left:1	-	-	338d65273edf
-pg-61581.txt	pg-markers	783	368	28	351	-	-	-	-	d0ad22a8eba5
-pg-61860.txt	pg-markers	9540	9141	33	351	left:4	left:15	-	-	acf8d72f7c76
-pg-62118.txt	pg-markers	3215	2787	31	351	-	left:4	-	-	d20de06a5214
-pg-62394.txt	pg-markers	1434	1021	30	351	-	left:27	-	-	7eb4ad290414
-pg-62511.txt	pg-markers	2754	2327	30	351	-	left:11	-	-	3ba1cbb097d2
-pg-63064.txt	pg-markers	2070	1633	31	351	-	left:1	-	-	449b29acc01f
-pg-63105.txt	pg-markers	2455	2027	31	355	-	left:5	-	-	c5bbd7df2c5f
-pg-63926.txt	pg-markers	2839	2374	31	351	-	left:79	-	-	5f43751964f0
-pg-64579.txt	pg-markers	19840	19287	28	351	-	left:74	-	-	8662590bebda
-pg-65835.txt	pg-markers	8384	7918	32	351	left:3	left:77	-	-	49ca8a7d672b
-pg-65958.txt	pg-markers	5942	5520	30	351	-	unsound:163	-	-	6b7c0926a5ad
-pg-66037.txt	pg-markers	3034	2613	30	351	-	left:4	-	-	c673a830c8c7
-pg-68874.txt	pg-markers	2493	2075	32	351	-	left:27	-	-	8a6f36f725cb
-pg-68878.txt	pg-markers	4449	4008	32	351	-	left:2	-	-	e59a60a729ec
-pg-68879.txt	pg-markers	2579	2176	32	351	left:28	left:18	-	-	49ca2d5eff32
-pg-69123.txt	pg-markers	7351	6701	30	351	left:2	left:8	-	-	17104cb14de3
-pg-71836.txt	pg-markers	5103	4673	36	351	-	left:9	-	-	732ed7decdc5
-pg-74344.txt	pg-markers	1124	710	34	351	-	-	-	-	f0b933e0ec0c
-pg-74405.txt	pg-markers	2751	2313	32	351	-	left:3	-	-	4489fd99b893
-pg-75983.txt	pg-markers	1233	829	33	351	-	left:5	-	-	6b9d66f0b42e
-pg-76273.txt	pg-markers	1235	837	31	351	left:1	left:3	-	-	780baa7a722f
-pg-76310.txt	pg-markers	609	191	35	351	-	-	-	-	0879cf01b702
-pg-7787.txt	pg-markers	14972	13977	62	351	converted:4043	unsound:2068	-	-	b1bc3a37acdb
-pg-78054.txt	pg-markers	880	460	35	351	-	left:9	-	-	5bc5b94abf48
-pg-8177.txt	pg-markers	8874	8283	48	351	converted:2815	unsound:1157	-	-	9d22d07ea960
-pg-8224.txt	pg-markers	16956	16448	35	351	converted:14820	unsound:109	-	-	09532d5b559d
-wsdump-Bulthuis_Inferio_1938.txt	wsdump-clean	5717	5717	0	0	-	left:5	-	-	767e5540f062
-wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt	wsdump-clean	1014	1014	0	0	-	left:1	-	-	e3c463406060
-wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt	wsdump-clean	5699	5688	0	0	-	left:51	-	-	2f4641eac706
-wsdump-Homero_Iliado_1896_Kofman.txt	wsdump-clean	3896	3896	0	0	-	-	-	-	965f14789ba3
-wsdump-Kabe_Vortaro_de_Esperanto_1922.txt	wsdump-clean	14216	14211	0	0	left:1	left:30	-	-	2a434da1a803
-wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt	wsdump-clean	1479	1479	0	0	left:8	left:6	-	-	5b7dfcabaf0f
-wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt	wsdump-clean	1535	1535	0	0	-	left:19	-	-	9aa7789d2674
-wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt	wsdump-clean	1688	1688	0	0	-	left:5	-	-	d9116c847523
-wsdump-Lanti_Naciismo_1930.txt	wsdump-clean	1533	1533	0	0	-	left:2	-	-	f59e98cb924a
-wsdump-Luyken_Mirinda_amo_1913.txt	wsdump-clean	4524	4524	0	0	-	left:62	-	-	4fe8414b408c
-wsdump-Molière_Don_Juan_1906_Boirac.txt	wsdump-clean	3330	3330	0	0	-	left:1	-	-	abf8779c097e
-wsdump-Orzeszko_Marta_1928_Zamenhof.txt	wsdump-clean	3299	3299	0	0	left:4	left:13	-	-	c6fe96dc4886
-wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt	wsdump-clean	2783	2783	0	0	-	left:2	-	-	3bc8d8ee0c14
-wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt	wsdump-clean	1521	1521	0	0	left:7	left:38	-	-	32feb39fc4f8
-wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt	wsdump-clean	4061	4061	0	0	-	left:45	-	-	1c7a1b7e05c2
-wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt	wsdump-clean	12506	12506	0	0	-	unsound:263	-	-	1b5e49e8ae30
-wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt	wsdump-clean	12179	12177	0	0	-	unsound:128	-	-	4da3f570524f
-wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt	wsdump-clean	9456	9456	0	0	left:1	left:10	-	-	806596f6fdb8
-wsdump-Vallienne_Ĉu_li_1908.txt	wsdump-clean	9170	9170	0	0	-	left:44	-	-	7fdb6b4a2239
-wsdump-Verkoj_de_FeZ_1935.txt	wsdump-clean	4466	4466	0	0	-	left:6	-	-	3b68b897626d
-wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt	wsdump-clean	10168	10168	0	0	-	left:7	-	-	f9e8399bdf37
-wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt	wsdump-clean	834	834	0	0	left:22	unsound:184	-	-	ede3fd576cba
-wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt	wsdump-clean	12616	12592	0	0	left:49	unsound:577	-	-	a75110bd3d5e
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_Antaŭparolo.txt	wsrc-marker	200	192	7	0	-	-	-	8	2079cb12177b
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_I.txt	wsrc-marker	46	37	8	0	-	-	-	4	83984a77c835
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_II.txt	wsrc-marker	17	8	8	0	-	-	-	-	10f04dd119f9
-wsrc-Dua_Libro_de_l'_Lingvo_Internacia_III.txt	wsrc-marker	755	747	7	0	-	-	-	14	b72448eb1fae
-wsrc-Fabeloj_de_Andersen_(Zamenhof).txt	wsrc-marker	225	119	103	0	-	-	-	-	c71a26ffc32e
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Abio.txt	wsrc-marker	136	127	8	0	-	left:1	-	-	772324005d7c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Anĝelo.txt	wsrc-marker	38	29	8	0	-	-	-	-	b322fd76e4c5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Avineto.txt	wsrc-marker	26	17	8	0	-	-	-	-	c346e948cf76
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Bildo_el_kastelremparo.txt	wsrc-marker	18	9	8	0	-	-	-	-	27a66c8740fc
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Cikonioj.txt	wsrc-marker	105	96	8	0	-	-	-	-	819d9ddf3d2f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dano_Holger.txt	wsrc-marker	50	41	8	0	-	left:1	-	-	774fdc5d134d
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dio_de_Dormo.txt	wsrc-marker	229	220	8	0	-	-	-	-	52ee7e2c1381
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_El_fenestro_en_Vartou.txt	wsrc-marker	30	21	8	0	-	-	-	-	04611aa28cb1
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elfo_de_la_rozo.txt	wsrc-marker	68	59	8	0	-	-	-	-	308d99c0637f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elinjo-Fingreto.txt	wsrc-marker	130	121	8	0	-	-	-	-	2d15aa38c012
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fajrilo.txt	wsrc-marker	114	107	6	0	-	-	-	-	49b1a543b438
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Feliĉa_familio.txt	wsrc-marker	56	49	6	0	-	-	-	-	49bfc0588d65
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Flikilo.txt	wsrc-marker	60	51	8	0	-	-	-	-	6f90d8e87918
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Floroj_de_la_malgranda_Ida.txt	wsrc-marker	94	85	8	0	-	-	-	-	18477f769dd5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fluganta_Kofro.txt	wsrc-marker	108	99	8	0	-	-	-	-	904ba85c574f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Galoŝoj_de_feliĉo.txt	wsrc-marker	433	424	8	0	-	left:1	-	-	89ac6dd6fa90
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Gefianĉoj.txt	wsrc-marker	50	41	8	0	-	-	-	-	0f122581d3d3
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Guto_da_akvo.txt	wsrc-marker	22	13	8	0	-	-	-	-	bc9aa3b8c277
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Knabineto_kun_alumetoj.txt	wsrc-marker	38	29	8	0	-	-	-	-	d600d5867372
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Konkurso_de_Saltado.txt	wsrc-marker	44	35	8	0	-	-	-	-	a1bff59955ad
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Kupra_porko.txt	wsrc-marker	128	119	8	0	-	left:6	-	-	9a8218689ab9
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_malbela_anasido.txt	wsrc-marker	142	133	8	0	-	left:1	-	-	326615c1f73c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_najtingalo.txt	wsrc-marker	163	154	8	0	-	-	-	-	5a7c3639aca7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_novaj_vestoj_de_la_Reĝo.txt	wsrc-marker	70	61	8	0	-	-	-	-	fd95f526712c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_virineto_de_maro.txt	wsrc-marker	212	203	8	0	-	-	-	-	64e2430f5f74
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Lekanto.txt	wsrc-marker	46	37	8	0	-	-	-	-	f55ba5335571
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ligo_de_Amikeco.txt	wsrc-marker	88	79	8	0	-	-	-	-	aeecb1e90cb7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malbonkonduta_knabo.txt	wsrc-marker	36	27	8	0	-	-	-	-	e5cba5128d69
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Niko_kaj_granda_Niko.txt	wsrc-marker	240	231	8	0	-	-	-	-	7820c3383e2f
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Tuk.txt	wsrc-marker	62	53	8	0	-	-	-	-	d57686c617bb
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_domo.txt	wsrc-marker	72	63	8	0	-	-	-	-	832b731edee4
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_strata_lanterno.txt	wsrc-marker	90	81	8	0	-	-	-	-	da10696cba76
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Monteto_de_elfoj.txt	wsrc-marker	106	97	8	0	-	-	-	-	d8f6b95f8969
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Najbaraj_familioj.txt	wsrc-marker	160	151	8	0	-	-	-	-	f14a06ffa349
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Neĝa_Reĝino.txt	wsrc-marker	435	426	8	0	-	-	-	-	0d9436a1fdad
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ombro.txt	wsrc-marker	218	209	8	0	-	-	-	-	1e39d73d8618
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtistino_kaj_kamentubisto.txt	wsrc-marker	88	79	8	0	-	-	-	-	eeac25f6825c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtisto_de_porkoj.txt	wsrc-marker	135	126	8	0	-	left:1	-	-	f76ce08b6692
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Persista_stana_soldato.txt	wsrc-marker	61	52	8	0	-	-	-	-	641489c01557
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Poligono.txt	wsrc-marker	38	29	8	0	-	-	-	-	747f8f39b6d5
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Reĝidino_sur_pizo.txt	wsrc-marker	26	17	8	0	-	-	-	-	948703898a15
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Rozo_de_la_tombo_de_Homero.txt	wsrc-marker	55	48	6	0	-	-	-	-	903299ccdb61
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ruĝaj_ŝuoj.txt	wsrc-marker	94	85	8	0	-	-	-	-	40f47c7b8f5c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sambura_virineto.txt	wsrc-marker	140	131	8	0	-	left:1	-	-	685825115d88
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sonorilo.txt	wsrc-marker	54	45	8	0	-	-	-	-	174497462dfb
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sovaĝaj_cignoj.txt	wsrc-marker	68	59	8	0	-	-	-	-	928d1975263c
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Vojkamarado.txt	wsrc-marker	187	178	8	0	-	-	-	-	abd3a0e370d7
-wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ĝardeno_de_la_paradizo.txt	wsrc-marker	196	187	8	0	-	-	-	-	6ae66eafd6eb
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_fratoj.txt	wsrc-marker	133	125	7	0	-	-	-	-	4a0f1b80e031
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_historio_de_la_provoj_de_lingvoj_tutmondaj_de_Leibnitz_ĝis_la_nuna_tempo.txt	wsrc-marker	68	60	7	0	left:1	left:42	-	-	bb690f379bd4
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_memoro_de_Józef_Wasniewski.txt	wsrc-marker	107	99	7	0	-	-	-	-	9726fc1cbcc0
-wsrc-Fundamenta_Krestomatio_(1903)_Al_la_reĝo.txt	wsrc-marker	43	35	7	0	-	-	-	-	6b8bdfa8bfc4
-wsrc-Fundamenta_Krestomatio_(1903)_Alaŭdeto.txt	wsrc-marker	44	36	7	0	-	-	-	-	e375260d2ae5
-wsrc-Fundamenta_Krestomatio_(1903)_Aleksandro_Macedona.txt	wsrc-marker	68	59	8	0	-	-	-	-	3791e75d0bd7
-wsrc-Fundamenta_Krestomatio_(1903)_El_la_unua_libro_de_la_lingvo_Esperanto.txt	wsrc-marker	151	143	7	0	-	left:4	-	-	001bd1aa9b04
-wsrc-Fundamento_de_Esperanto.txt	wsrc-fallback	62	61	1	0	-	left:1	-	-	86cc37b45aed
-wsrc-Fundamento_de_Esperanto_Antaŭparolo.txt	wsrc-marker	42	33	8	0	-	-	-	-	e702cd8b8d01
-wsrc-Fundamento_de_Esperanto_Ekzercaro.txt	wsrc-marker	1724	1715	8	0	left:14	unsound:442	-	2	1eac051d1ff1
-wsrc-Fundamento_de_Esperanto_Grammar.txt	wsrc-fallback	194	193	0	0	-	left:29	-	-	034a1c8eb022
-wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt	wsrc-marker	5872	5863	8	0	left:48	unsound:1550	-	-	eac5f4df0c9c
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro.txt	wsrc-marker	320	311	8	0	-	-	-	-	44c225a678a5
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_1.txt	wsrc-marker	23	15	7	0	-	-	-	-	6ffa5ac90419
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_10.txt	wsrc-marker	49	41	7	0	-	-	-	-	d97223d75f0e
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_100.txt	wsrc-marker	21	13	7	0	-	-	-	-	2b78b5778de4
-wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_101.txt	wsrc-marker	27	19	7	0	-	-	-	-	fec8ff88fa34
-wsrc-Originala_Verkaro.txt	wsrc-marker	169	160	8	0	-	left:4	-	-	19b6a3ef7db0
-wsrc-Originala_Verkaro_Aldono.txt	wsrc-marker	243	232	10	0	-	left:17	-	-	9908118b26bf
-wsrc-Originala_Verkaro_Antaŭparolo.txt	wsrc-marker	146	135	10	0	-	left:18	-	-	97e473f1071b
-wsrc-Originala_Verkaro_Enhavo.txt	wsrc-marker	58	51	6	0	-	-	-	-	d6fb9e85c728
-wsrc-Originala_Verkaro_I.txt	wsrc-marker	52	41	10	0	-	left:2	-	-	ceb72dd5f1a2
-wsrc-Originala_Verkaro_I_1.txt	wsrc-marker	87	76	10	0	-	-	-	-	8c6cb7e75c70
-wsrc-Originala_Verkaro_I_10.txt	wsrc-marker	27	16	10	0	-	left:6	-	-	35bcced955a1
-wsrc-Originala_Verkaro_I_11.txt	wsrc-marker	22	11	10	0	-	left:1	-	-	56a2cd93a0ea
-wsrc-Originala_Verkaro_I_12.txt	wsrc-marker	21	10	10	0	-	-	-	-	df731450972c
+source	method	in_lines	out_lines	head_stripped	tail_stripped	xsystem	hsystem	mojibake	hyphens	homoglyphs	sha256
+ia-LaHeroojDeLaNovaTagiolaKronikoDeNabil.txt	ia-clean	24387	21969	0	0	left:3	unsound:891	-	9	-	44b423bec48b
+ia-dlibra.kul.pl.49099.txt	ia-clean	4200	3755	0	0	left:3	unsound:937	-	309	-	a95a08ee5c7c
+ia-esperanto-the-international-language-a-complete-textbook-w-j-downes-1982.txt	ia-clean	14468	12696	0	0	left:1	unsound:1306	-	108	-	14406b4f0460
+ia-key_to_the_ekzercaro.txt	ia-clean	724	722	0	0	-	unsound:339	-	-	-	67923f98e2da
+ia-poemo-de-utnoa-eo-1jun-2023.txt	ia-clean	15420	13489	0	0	-	left:23	-	1	-	a87b645e9c2f
+ia-traduction_de_lekzercaro.txt	ia-clean	728	726	0	0	left:76	unsound:201	-	-	-	4f5012fb2e3c
+pg-11307.txt	pg-markers	2146	1626	28	351	left:5	-	-	-	-	7921f170cbfd
+pg-11511.txt	pg-markers	2764	2360	30	351	-	left:17	-	-	-	510ce5cbc39b
+pg-16967.txt	pg-markers	14676	14123	42	351	left:7	unsound:1243	-	-	-	39b7c7006bc6
+pg-17425.txt	pg-markers	1195	777	42	351	-	left:5	-	-	-	61edc84df2df
+pg-17482.txt	pg-markers	4349	3854	46	351	converted:3989	left:11	-	-	-	8368f0bfcfd1
+pg-17665.txt	pg-markers	1439	1011	41	351	-	left:1	-	-	-	e0247f767e56
+pg-17945.txt	pg-markers	1593	1150	43	351	converted:1289	left:3	-	1	-	b0786fd5119b
+pg-18178.txt	pg-markers	6094	5641	41	351	converted:5093	left:1	-	-	-	b72fdf9f22af
+pg-18326.txt	pg-markers	1775	1355	41	355	left:1	left:1	-	-	-	ae8ba095c815
+pg-18836.txt	pg-markers	1788	1356	41	351	converted:1914	-	-	-	-	6486dc362eb6
+pg-19030.txt	pg-markers	4564	4151	40	351	converted:2257	-	-	-	-	79feae209258
+pg-19182.txt	pg-markers	6383	5961	38	351	converted:2521	left:1	-	-	-	153288f3d7a7
+pg-19183.txt	pg-markers	6597	6179	40	351	converted:2804	left:6	-	-	-	6916228d92c0
+pg-19293.txt	pg-markers	1748	1330	41	355	converted:1555	left:3	-	-	-	23cd4ac42406
+pg-19803.txt	pg-markers	6503	6080	40	351	converted:2632	left:1	-	-	-	e5be90f02fa4
+pg-19858.txt	pg-markers	6307	5891	40	351	converted:2291	left:1	-	-	-	552d68397b97
+pg-20006.txt	pg-markers	2317	1860	79	351	converted:1844	left:6	-	-	-	295e937b2cd3
+pg-20162.txt	pg-markers	6596	6176	39	351	converted:3298	-	-	-	-	6bb578c977f5
+pg-20178.txt	pg-markers	5474	5057	38	351	converted:2229	left:1	-	-	-	a2c6411f7589
+pg-20802.txt	pg-markers	5743	5253	41	362	converted:5549	left:13	-	-	-	351ef7716653
+pg-20931.txt	pg-markers	1622	1197	41	351	-	-	-	-	-	0470dd0275a9
+pg-20943.txt	pg-markers	1741	1309	42	351	converted:1463	-	-	-	-	43323c0cdd92
+pg-21194.txt	pg-markers	1838	1418	32	351	-	left:4	-	-	-	38080d55f664
+pg-21195.txt	pg-markers	1380	965	32	351	-	left:5	-	-	-	9b55237e78b8
+pg-21951.txt	pg-markers	1017	619	31	351	left:2	left:5	-	-	-	23ae6288d293
+pg-22070.txt	pg-markers	4465	3113	968	351	-	left:10	-	-	-	2caee653b747
+pg-22592.txt	pg-markers	4379	3844	40	355	left:1	left:22	-	-	-	a769208b0f6d
+pg-22901.txt	pg-markers	1896	1347	41	351	left:1	left:5	-	-	-	e521c7fe739a
+pg-23093.txt	pg-markers	2749	2248	49	355	converted:2074	left:7	-	-	-	e5d2f9d83642
+pg-23670.txt	pg-markers	3527	3080	42	351	converted:3151	left:7	-	-	-	aaa63d40c94c
+pg-23774.txt	pg-markers	9930	9499	38	351	converted:3457	-	-	-	-	1414ac20550d
+pg-23837.txt	pg-markers	6134	5712	43	351	converted:1834	unsound:125	-	-	-	72ccca0d94af
+pg-24057.txt	pg-markers	728	297	46	351	converted:377	left:9	-	-	-	c59f82ee0c99
+pg-24074.txt	pg-markers	2467	2030	41	351	converted:1973	left:21	-	-	-	f26a8c1826c1
+pg-24145.txt	pg-markers	3834	3417	38	351	converted:2697	left:18	-	-	-	8a322e5df8bd
+pg-24292.txt	pg-markers	6196	5497	36	351	converted:2918	left:4	-	-	-	c26030bdc407
+pg-24355.txt	pg-markers	7084	6663	39	351	converted:2350	left:48	-	-	-	1ad8df92562c
+pg-24501.txt	pg-markers	4116	3695	45	351	converted:3602	unsound:180	-	-	-	d0e700d7da43
+pg-24525.txt	pg-markers	1863	1376	43	351	converted:1165	-	-	-	-	96e182a4584d
+pg-24575.txt	pg-markers	2020	1557	41	351	-	converted:412	-	-	-	924829bc1a3c
+pg-24763.txt	pg-markers	2501	2040	34	351	-	left:52	-	-	-	9613e825b7bd
+pg-25311.txt	pg-markers	1470	1038	30	351	-	left:10	-	-	-	aec8797a8e13
+pg-25386.txt	pg-markers	1920	1422	32	351	-	left:13	-	-	-	a1ce7e1fe74a
+pg-25539.txt	pg-markers	2543	1942	32	351	-	left:4	-	-	-	627d691b2943
+pg-25964.txt	pg-markers	2196	1787	32	351	-	left:1	-	-	-	78abe76c4e1b
+pg-26099.txt	pg-markers	1988	1522	47	358	-	left:1	-	-	-	adeb38fc8913
+pg-26359.txt	pg-markers	3837	3364	44	351	-	left:16	-	-	-	79ede42e23ab
+pg-26480.txt	pg-markers	9575	9140	38	351	-	-	-	-	-	a216741365f8
+pg-26959.txt	pg-markers	1356	922	43	355	converted:516	left:4	-	-	-	c60c1ffb404f
+pg-27170.txt	pg-markers	2873	2409	39	351	-	left:4	-	-	-	ac080ed3ce02
+pg-27593.txt	pg-markers	2098	1629	38	362	-	left:17	-	1	-	5f534da8d606
+pg-27915.txt	pg-markers	1637	1181	44	355	converted:1057	left:31	-	-	-	e58e2609a83e
+pg-28720.txt	pg-markers	2280	1715	97	355	left:3	unsound:186	-	-	-	8d9501d51c04
+pg-28721.txt	pg-markers	2595	2033	75	355	left:3	unsound:188	-	-	-	4820ac49a34f
+pg-28968.txt	pg-markers	5396	4955	42	351	-	left:4	-	-	-	daf16c96c746
+pg-28971.txt	pg-markers	683	282	36	355	-	left:2	-	-	-	f4af1dccc64a
+pg-29403.txt	pg-markers	2411	1851	75	355	left:3	unsound:167	-	-	-	0891eb591c35
+pg-30536.txt	pg-markers	6889	6249	42	351	-	left:2	-	-	-	791d9a3f8d70
+pg-30991.txt	pg-markers	2296	1787	44	355	converted:936	unsound:168	-	-	-	fbeb879072e6
+pg-30992.txt	pg-markers	2330	1825	44	355	converted:1108	unsound:187	-	-	-	9ebcef1fcfed
+pg-31348.txt	pg-markers	5046	4531	38	355	converted:4383	left:3	-	-	-	d9d4494d2503
+pg-32035.txt	pg-markers	5758	5258	42	351	left:1	converted:4043	-	-	-	4d2fa956b12d
+pg-32313.txt	pg-markers	2437	1929	42	355	converted:833	unsound:167	-	-	-	ade319a33e33
+pg-32314.txt	pg-markers	2443	1951	43	355	converted:959	unsound:204	-	-	-	4b504610012e
+pg-32480.txt	pg-markers	5556	5046	41	358	-	converted:2912	-	-	-	37379c28ddeb
+pg-34042.txt	pg-markers	2325	1828	31	356	converted:1152	unsound:107	-	1	-	be1a11747ccc
+pg-34043.txt	pg-markers	2359	1864	31	356	converted:1178	unsound:130	-	-	-	e9f9e829b3de
+pg-35743.txt	pg-markers	4020	3565	33	351	left:1	converted:1113	-	-	-	ab8f030cf582
+pg-35917.txt	pg-markers	3069	2614	33	351	-	converted:2079	-	-	-	d9cca95f5606
+pg-35981.txt	pg-markers	1555	1136	33	351	-	left:2	-	-	-	885310844d45
+pg-37279.txt	pg-markers	8934	8477	33	351	left:4	converted:2758	-	-	-	759d8e17380f
+pg-37642.txt	pg-markers	2625	2138	31	356	left:3	unsound:107	-	-	-	04f9114664cf
+pg-37643.txt	pg-markers	2289	1814	31	356	left:10	unsound:205	-	-	-	7ad861bdd398
+pg-37644.txt	pg-markers	2312	1822	31	356	left:4	unsound:186	-	-	-	b7b6d820a485
+pg-37977.txt	pg-markers	2393	1884	44	351	left:1	unsound:178	-	-	-	623ef7803d0f
+pg-37978.txt	pg-markers	2569	2063	44	351	left:2	unsound:151	-	-	-	3a969569fa2b
+pg-39840.txt	pg-markers	2413	1905	43	355	left:2	unsound:124	-	-	-	4c74b38a6f2e
+pg-39841.txt	pg-markers	2282	1792	43	355	left:2	unsound:111	-	-	-	3628293c3a2e
+pg-39842.txt	pg-markers	2366	1863	43	355	left:1	unsound:117	-	-	-	6214fd9d3824
+pg-42028.txt	pg-markers	3393	2949	31	351	-	left:9	-	-	-	652c899392b8
+pg-42774.txt	pg-markers	1472	989	30	351	-	left:4	-	-	-	3d2ff3d73a0b
+pg-44128.txt	pg-markers	2297	1783	63	355	left:7	left:84	-	-	-	a620b7634971
+pg-44130.txt	pg-markers	2422	1905	63	355	-	left:84	-	-	-	7a4e4f86f3a3
+pg-44131.txt	pg-markers	2439	1911	63	355	-	left:76	-	-	-	dc13c4fc05cd
+pg-44666.txt	pg-markers	2215	1692	63	351	-	left:62	-	-	-	356d8406e9e5
+pg-44667.txt	pg-markers	2275	1757	63	351	-	left:37	-	-	-	ed085dcd53fa
+pg-44668.txt	pg-markers	2337	1832	63	351	left:21	unsound:142	-	-	-	aaab85c24c3a
+pg-45612.txt	pg-markers	2570	2077	31	351	-	left:1	-	-	-	1f0c18bf360d
+pg-45713.txt	pg-markers	8085	7553	31	351	left:1	left:16	-	-	-	2f6d368f0f77
+pg-47249.txt	pg-markers	3512	3067	31	351	-	left:4	-	-	-	dfbab9e49d61
+pg-47259.txt	pg-markers	5526	5048	31	351	left:1	unsound:337	-	-	-	a74a09697273
+pg-47855.txt	pg-markers	3923	3403	31	351	left:2	left:5	-	-	-	b3d2cbe2087b
+pg-47913.txt	pg-markers	5836	5353	33	351	-	left:4	-	-	-	17f556b7d591
+pg-48033.txt	pg-markers	4751	4224	32	351	left:2	left:29	-	1	-	0b069f46291c
+pg-48896.txt	pg-markers	1553	1037	30	351	-	-	-	-	-	658e1a86bd58
+pg-48900.txt	pg-markers	1785	1352	32	358	-	left:2	-	-	-	12144135209f
+pg-49232.txt	pg-markers	2176	1666	63	355	left:11	unsound:136	-	-	-	724e63014fe3
+pg-49233.txt	pg-markers	2270	1736	63	355	left:4	left:35	-	-	-	4c21609d4359
+pg-49234.txt	pg-markers	2133	1623	31	355	-	left:65	-	-	-	2441467c68d5
+pg-51069.txt	pg-markers	10406	9931	32	358	-	left:9	-	-	-	fd294b05dd01
+pg-51690.txt	pg-markers	2627	2152	33	351	left:6	left:29	-	-	-	019005dd0500
+pg-52062.txt	pg-markers	2444	1949	39	351	left:2	left:14	-	-	-	b5018c11cbba
+pg-52063.txt	pg-markers	2664	2164	39	351	-	left:11	-	-	-	711663a44244
+pg-52064.txt	pg-markers	3356	2840	39	351	left:4	left:42	-	-	-	af2073932eae
+pg-52111.txt	pg-markers	3979	3483	30	351	-	left:2	-	-	-	a5d7a29c180b
+pg-52556.txt	pg-markers	3739	3266	32	351	-	unsound:1001	-	-	-	26649779b3c2
+pg-52577.txt	pg-markers	6662	6203	29	351	left:5	left:28	-	-	-	b14190d0c0bc
+pg-52876.txt	pg-markers	2200	1757	32	351	left:1	left:19	-	-	-	7f961819c6ff
+pg-55302.txt	pg-markers	15194	14619	32	351	-	left:16	-	-	-	03717a848da3
+pg-55574.txt	pg-markers	4383	3958	30	351	-	left:37	-	-	-	e6de833542c2
+pg-55954.txt	pg-markers	10952	10498	31	355	left:1	left:32	-	-	-	6a91bd50ab77
+pg-56351.txt	pg-markers	927	430	45	351	-	-	-	-	-	e0a16d6feacf
+pg-57184.txt	pg-markers	8990	8358	43	351	left:15	unsound:225	-	-	-	c27b4c3c0b98
+pg-60429.txt	pg-markers	2872	2408	45	355	-	left:14	3139	-	-	3f634941457b
+pg-61103.txt	pg-markers	6139	5643	33	355	-	left:10	-	-	-	7a1072189a1b
+pg-61190.txt	pg-markers	998	581	30	355	-	-	-	-	-	2a24c3d3ff8f
+pg-61579.txt	pg-markers	1406	1010	31	351	-	left:1	-	-	-	338d65273edf
+pg-61581.txt	pg-markers	783	368	28	351	-	-	-	-	-	d0ad22a8eba5
+pg-61860.txt	pg-markers	9540	9141	33	351	left:4	left:15	-	-	-	acf8d72f7c76
+pg-62118.txt	pg-markers	3215	2787	31	351	-	left:4	-	-	-	d20de06a5214
+pg-62394.txt	pg-markers	1434	1021	30	351	-	left:27	-	-	-	7eb4ad290414
+pg-62511.txt	pg-markers	2754	2327	30	351	-	left:11	-	-	-	3ba1cbb097d2
+pg-63064.txt	pg-markers	2070	1633	31	351	-	left:1	-	-	-	449b29acc01f
+pg-63105.txt	pg-markers	2455	2027	31	355	-	left:5	-	-	-	c5bbd7df2c5f
+pg-63926.txt	pg-markers	2839	2374	31	351	-	left:79	-	-	-	5f43751964f0
+pg-64579.txt	pg-markers	19840	19287	28	351	-	left:74	-	-	-	8662590bebda
+pg-65835.txt	pg-markers	8384	7918	32	351	left:3	left:77	-	-	-	49ca8a7d672b
+pg-65958.txt	pg-markers	5942	5520	30	351	-	unsound:163	-	-	-	6b7c0926a5ad
+pg-66037.txt	pg-markers	3034	2613	30	351	-	left:4	-	-	-	c673a830c8c7
+pg-68874.txt	pg-markers	2493	2075	32	351	-	left:27	-	-	-	8a6f36f725cb
+pg-68878.txt	pg-markers	4449	4008	32	351	-	left:2	-	-	-	e59a60a729ec
+pg-68879.txt	pg-markers	2579	2176	32	351	left:28	left:18	-	-	-	49ca2d5eff32
+pg-69123.txt	pg-markers	7351	6701	30	351	left:2	left:8	-	1	-	2c906c0598b7
+pg-71836.txt	pg-markers	5103	4673	36	351	-	left:9	-	-	-	732ed7decdc5
+pg-74344.txt	pg-markers	1124	710	34	351	-	-	-	-	-	f0b933e0ec0c
+pg-74405.txt	pg-markers	2751	2313	32	351	-	left:3	-	-	-	4489fd99b893
+pg-75983.txt	pg-markers	1233	829	33	351	-	left:5	-	-	-	6b9d66f0b42e
+pg-76273.txt	pg-markers	1235	837	31	351	left:1	left:3	-	-	-	780baa7a722f
+pg-76310.txt	pg-markers	609	191	35	351	-	-	-	-	-	0879cf01b702
+pg-7787.txt	pg-markers	14972	13977	62	351	converted:4043	unsound:2068	-	-	-	b1bc3a37acdb
+pg-78054.txt	pg-markers	880	460	35	351	-	left:9	-	-	-	5bc5b94abf48
+pg-8177.txt	pg-markers	8874	8283	48	351	converted:2815	unsound:1157	-	-	-	9d22d07ea960
+pg-8224.txt	pg-markers	16956	16448	35	351	converted:14820	unsound:109	-	-	-	09532d5b559d
+wsdump-Bulthuis_Inferio_1938.txt	wsdump-clean	5717	5717	0	0	-	left:5	-	7	-	3e1aee181341
+wsdump-Defoe_Robinsono_Kruso_1908_Krafft.txt	wsdump-clean	1014	1014	0	0	-	left:1	-	-	-	e3c463406060
+wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt	wsdump-clean	5699	5688	0	0	-	left:51	-	-	-	2f4641eac706
+wsdump-Homero_Iliado_1896_Kofman.txt	wsdump-clean	3896	3896	0	0	-	-	-	-	-	965f14789ba3
+wsdump-Kabe_Vortaro_de_Esperanto_1922.txt	wsdump-clean	14216	14211	0	0	left:1	left:30	-	-	-	2a434da1a803
+wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt	wsdump-clean	1479	1479	0	0	left:8	left:6	-	7	-	0b3b2c4e4c4f
+wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt	wsdump-clean	1535	1535	0	0	-	left:19	-	9	-	a236424b8742
+wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt	wsdump-clean	1688	1688	0	0	-	left:5	-	25	-	5b2437197e2e
+wsdump-Lanti_Naciismo_1930.txt	wsdump-clean	1533	1533	0	0	-	left:2	-	14	-	7a2eaa993c4d
+wsdump-Luyken_Mirinda_amo_1913.txt	wsdump-clean	4524	4524	0	0	-	left:62	-	3	-	e1798d643690
+wsdump-Molière_Don_Juan_1906_Boirac.txt	wsdump-clean	3330	3330	0	0	-	left:1	-	6	-	fa31cd0a176b
+wsdump-Orzeszko_Marta_1928_Zamenhof.txt	wsdump-clean	3299	3299	0	0	left:4	left:13	-	26	-	800f27bc2e45
+wsdump-Prus_Pekoj_de_l_infaneco_1913_Grabowski.txt	wsdump-clean	2783	2783	0	0	-	left:2	-	1	-	0083e1f128a4
+wsdump-Prévost_Manon_Lescaut_1908_Vallienne.txt	wsdump-clean	1521	1521	0	0	left:7	left:38	-	25	-	eeb3aae3c0ce
+wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt	wsdump-clean	4061	4061	0	0	-	left:45	-	12	-	fb402fc42f17
+wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt	wsdump-clean	12506	12506	0	0	-	unsound:263	-	16	-	d0fa9addcfc8
+wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt	wsdump-clean	12179	12177	0	0	-	unsound:128	-	2	-	20e4fe0e523c
+wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt	wsdump-clean	9456	9456	0	0	left:1	left:10	-	1	-	a9d5d3bc85f5
+wsdump-Vallienne_Ĉu_li_1908.txt	wsdump-clean	9170	9170	0	0	-	left:44	-	1	-	0e25f66992d9
+wsdump-Verkoj_de_FeZ_1935.txt	wsdump-clean	4466	4466	0	0	-	left:6	-	10	-	2461d80517e3
+wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt	wsdump-clean	10168	10168	0	0	-	left:7	-	7	-	91d63aa37481
+wsdump-Zakrzewski_Historio_de_Esperanto_1913.txt	wsdump-clean	834	834	0	0	left:22	unsound:184	-	35	-	541dc27b3631
+wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt	wsdump-clean	12616	12592	0	0	left:49	unsound:577	-	36	-	2c7b179c56c2
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_Antaŭparolo.txt	wsrc-marker	200	192	7	0	-	-	-	-	8	2079cb12177b
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_I.txt	wsrc-marker	46	37	8	0	-	-	-	-	4	83984a77c835
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_II.txt	wsrc-marker	17	8	8	0	-	-	-	-	-	10f04dd119f9
+wsrc-Dua_Libro_de_l'_Lingvo_Internacia_III.txt	wsrc-marker	755	747	7	0	-	-	-	-	14	b72448eb1fae
+wsrc-Fabeloj_de_Andersen_(Zamenhof).txt	wsrc-marker	225	119	103	0	-	-	-	-	-	c71a26ffc32e
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Abio.txt	wsrc-marker	136	127	8	0	-	left:1	-	-	-	772324005d7c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Anĝelo.txt	wsrc-marker	38	29	8	0	-	-	-	-	-	b322fd76e4c5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Avineto.txt	wsrc-marker	26	17	8	0	-	-	-	-	-	c346e948cf76
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Bildo_el_kastelremparo.txt	wsrc-marker	18	9	8	0	-	-	-	-	-	27a66c8740fc
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Cikonioj.txt	wsrc-marker	105	96	8	0	-	-	-	-	-	819d9ddf3d2f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dano_Holger.txt	wsrc-marker	50	41	8	0	-	left:1	-	-	-	774fdc5d134d
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Dio_de_Dormo.txt	wsrc-marker	229	220	8	0	-	-	-	-	-	52ee7e2c1381
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_El_fenestro_en_Vartou.txt	wsrc-marker	30	21	8	0	-	-	-	-	-	04611aa28cb1
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elfo_de_la_rozo.txt	wsrc-marker	68	59	8	0	-	-	-	-	-	308d99c0637f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Elinjo-Fingreto.txt	wsrc-marker	130	121	8	0	-	-	-	-	-	2d15aa38c012
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fajrilo.txt	wsrc-marker	114	107	6	0	-	-	-	-	-	49b1a543b438
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Feliĉa_familio.txt	wsrc-marker	56	49	6	0	-	-	-	-	-	49bfc0588d65
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Flikilo.txt	wsrc-marker	60	51	8	0	-	-	-	-	-	6f90d8e87918
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Floroj_de_la_malgranda_Ida.txt	wsrc-marker	94	85	8	0	-	-	-	-	-	18477f769dd5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Fluganta_Kofro.txt	wsrc-marker	108	99	8	0	-	-	-	-	-	904ba85c574f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Galoŝoj_de_feliĉo.txt	wsrc-marker	433	424	8	0	-	left:1	-	-	-	89ac6dd6fa90
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Gefianĉoj.txt	wsrc-marker	50	41	8	0	-	-	-	-	-	0f122581d3d3
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Guto_da_akvo.txt	wsrc-marker	22	13	8	0	-	-	-	-	-	bc9aa3b8c277
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Knabineto_kun_alumetoj.txt	wsrc-marker	38	29	8	0	-	-	-	-	-	d600d5867372
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Konkurso_de_Saltado.txt	wsrc-marker	44	35	8	0	-	-	-	-	-	a1bff59955ad
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Kupra_porko.txt	wsrc-marker	128	119	8	0	-	left:6	-	-	-	9a8218689ab9
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_malbela_anasido.txt	wsrc-marker	142	133	8	0	-	left:1	-	-	-	326615c1f73c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_najtingalo.txt	wsrc-marker	163	154	8	0	-	-	-	-	-	5a7c3639aca7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_novaj_vestoj_de_la_Reĝo.txt	wsrc-marker	70	61	8	0	-	-	-	-	-	fd95f526712c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_La_virineto_de_maro.txt	wsrc-marker	212	203	8	0	-	-	-	-	-	64e2430f5f74
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Lekanto.txt	wsrc-marker	46	37	8	0	-	-	-	-	-	f55ba5335571
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ligo_de_Amikeco.txt	wsrc-marker	88	79	8	0	-	-	-	-	-	aeecb1e90cb7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malbonkonduta_knabo.txt	wsrc-marker	36	27	8	0	-	-	-	-	-	e5cba5128d69
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Niko_kaj_granda_Niko.txt	wsrc-marker	240	231	8	0	-	-	-	-	-	7820c3383e2f
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malgranda_Tuk.txt	wsrc-marker	62	53	8	0	-	-	-	-	-	d57686c617bb
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_domo.txt	wsrc-marker	72	63	8	0	-	-	-	-	-	832b731edee4
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Malnova_strata_lanterno.txt	wsrc-marker	90	81	8	0	-	-	-	-	-	da10696cba76
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Monteto_de_elfoj.txt	wsrc-marker	106	97	8	0	-	-	-	-	-	d8f6b95f8969
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Najbaraj_familioj.txt	wsrc-marker	160	151	8	0	-	-	-	-	-	f14a06ffa349
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Neĝa_Reĝino.txt	wsrc-marker	435	426	8	0	-	-	-	-	-	0d9436a1fdad
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ombro.txt	wsrc-marker	218	209	8	0	-	-	-	-	-	1e39d73d8618
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtistino_kaj_kamentubisto.txt	wsrc-marker	88	79	8	0	-	-	-	-	-	eeac25f6825c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Paŝtisto_de_porkoj.txt	wsrc-marker	135	126	8	0	-	left:1	-	-	-	f76ce08b6692
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Persista_stana_soldato.txt	wsrc-marker	61	52	8	0	-	-	-	-	-	641489c01557
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Poligono.txt	wsrc-marker	38	29	8	0	-	-	-	-	-	747f8f39b6d5
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Reĝidino_sur_pizo.txt	wsrc-marker	26	17	8	0	-	-	-	-	-	948703898a15
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Rozo_de_la_tombo_de_Homero.txt	wsrc-marker	55	48	6	0	-	-	-	-	-	903299ccdb61
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ruĝaj_ŝuoj.txt	wsrc-marker	94	85	8	0	-	-	-	-	-	40f47c7b8f5c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sambura_virineto.txt	wsrc-marker	140	131	8	0	-	left:1	-	-	-	685825115d88
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sonorilo.txt	wsrc-marker	54	45	8	0	-	-	-	-	-	174497462dfb
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Sovaĝaj_cignoj.txt	wsrc-marker	68	59	8	0	-	-	-	-	-	928d1975263c
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Vojkamarado.txt	wsrc-marker	187	178	8	0	-	-	-	-	-	abd3a0e370d7
+wsrc-Fabeloj_de_Andersen_(Zamenhof)_Ĝardeno_de_la_paradizo.txt	wsrc-marker	196	187	8	0	-	-	-	-	-	6ae66eafd6eb
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_fratoj.txt	wsrc-marker	133	125	7	0	-	-	-	-	-	4a0f1b80e031
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_historio_de_la_provoj_de_lingvoj_tutmondaj_de_Leibnitz_ĝis_la_nuna_tempo.txt	wsrc-marker	68	60	7	0	left:1	left:42	-	-	-	bb690f379bd4
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_memoro_de_Józef_Wasniewski.txt	wsrc-marker	107	99	7	0	-	-	-	-	-	9726fc1cbcc0
+wsrc-Fundamenta_Krestomatio_(1903)_Al_la_reĝo.txt	wsrc-marker	43	35	7	0	-	-	-	-	-	6b8bdfa8bfc4
+wsrc-Fundamenta_Krestomatio_(1903)_Alaŭdeto.txt	wsrc-marker	44	36	7	0	-	-	-	-	-	e375260d2ae5
+wsrc-Fundamenta_Krestomatio_(1903)_Aleksandro_Macedona.txt	wsrc-marker	68	59	8	0	-	-	-	-	-	3791e75d0bd7
+wsrc-Fundamenta_Krestomatio_(1903)_El_la_unua_libro_de_la_lingvo_Esperanto.txt	wsrc-marker	151	143	7	0	-	left:4	-	-	-	001bd1aa9b04
+wsrc-Fundamento_de_Esperanto.txt	wsrc-fallback	62	61	1	0	-	left:1	-	-	-	86cc37b45aed
+wsrc-Fundamento_de_Esperanto_Antaŭparolo.txt	wsrc-marker	42	33	8	0	-	-	-	-	-	e702cd8b8d01
+wsrc-Fundamento_de_Esperanto_Ekzercaro.txt	wsrc-marker	1724	1715	8	0	left:14	unsound:442	-	-	2	1eac051d1ff1
+wsrc-Fundamento_de_Esperanto_Grammar.txt	wsrc-fallback	194	193	0	0	-	left:29	-	-	-	034a1c8eb022
+wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt	wsrc-marker	5872	5863	8	0	left:48	unsound:1550	-	-	-	eac5f4df0c9c
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro.txt	wsrc-marker	320	311	8	0	-	-	-	-	-	44c225a678a5
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_1.txt	wsrc-marker	23	15	7	0	-	-	-	-	-	6ffa5ac90419
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_10.txt	wsrc-marker	49	41	7	0	-	-	-	-	-	d97223d75f0e
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_100.txt	wsrc-marker	21	13	7	0	-	-	-	-	-	2b78b5778de4
+wsrc-Malnova_Testamento_(Zamenhof)_Psalmaro_101.txt	wsrc-marker	27	19	7	0	-	-	-	-	-	fec8ff88fa34
+wsrc-Originala_Verkaro.txt	wsrc-marker	169	160	8	0	-	left:4	-	-	-	19b6a3ef7db0
+wsrc-Originala_Verkaro_Aldono.txt	wsrc-marker	243	232	10	0	-	left:17	-	-	-	9908118b26bf
+wsrc-Originala_Verkaro_Antaŭparolo.txt	wsrc-marker	146	135	10	0	-	left:18	-	-	-	97e473f1071b
+wsrc-Originala_Verkaro_Enhavo.txt	wsrc-marker	58	51	6	0	-	-	-	-	-	d6fb9e85c728
+wsrc-Originala_Verkaro_I.txt	wsrc-marker	52	41	10	0	-	left:2	-	-	-	ceb72dd5f1a2
+wsrc-Originala_Verkaro_I_1.txt	wsrc-marker	87	76	10	0	-	-	-	-	-	8c6cb7e75c70
+wsrc-Originala_Verkaro_I_10.txt	wsrc-marker	27	16	10	0	-	left:6	-	-	-	35bcced955a1
+wsrc-Originala_Verkaro_I_11.txt	wsrc-marker	22	11	10	0	-	left:1	-	-	-	56a2cd93a0ea
+wsrc-Originala_Verkaro_I_12.txt	wsrc-marker	21	10	10	0	-	-	-	-	-	df731450972c

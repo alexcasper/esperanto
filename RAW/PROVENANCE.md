@@ -328,55 +328,7 @@ Sources: (1) Project Gutenberg complete `languages=eo` shelf via Gutendex — 14
 - `ia-traduction_de_lekzercaro.txt` — Traduction de l'Ekzercaro — sha256:827b4061116d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/traduction_de_lekzercaro
 - `ia-key_to_the_ekzercaro.txt` — Key to the Ekzercaro — sha256:029380035b4f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/key_to_the_ekzercaro
 - `ia-esperanto-the-international-language-a-complete-textbook-w-j-downes-1982.txt` — Esperanto : The International Language : A Complete Textbook — sha256:5b77924601f7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/esperanto-the-international-language-a-complete-textbook-w-j-downes-1982
-- `ia-eowiki-Kopta_lingvo-20200726.pdf.txt` — eowiki-Kopta_lingvo-20200726.pdf — sha256:d18ba209a6a2 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kopta_lingvo-20200726.pdf
-- `ia-eowiki-Nigrapieda_lingvo-20200728.pdf.txt` — eowiki-Nigrapieda_lingvo-20200728.pdf — sha256:04b8feaf7850 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nigrapieda_lingvo-20200728.pdf
-- `ia-eowiki-Arumana_lingvo-20200726.pdf.txt` — eowiki-Arumana_lingvo-20200726.pdf — sha256:c6599706dfd0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Arumana_lingvo-20200726.pdf
-- `ia-eowiki-Historio_de_la_mondo-20200721.pdf.txt` — eowiki-Historio_de_la_mondo-20200721.pdf — sha256:3e3dc776bcbe — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Historio_de_la_mondo-20200721.pdf
-- `ia-eowiki-Azio-20200722.pdf.txt` — eowiki-Azio-20200722.pdf — sha256:ba0c2b8a2516 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Azio-20200722.pdf
-- `ia-eowiki-Germana_lingvo-20200722.pdf.txt` — eowiki-Germana_lingvo-20200722.pdf — sha256:4afffd67f2a0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Germana_lingvo-20200722.pdf
-- `ia-eowiki-Svahila_lingvo-20200724.pdf.txt` — eowiki-Svahila_lingvo-20200724.pdf — sha256:22c2d51a97cc — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Svahila_lingvo-20200724.pdf
-- `ia-eowiki-Turka_lingvo-20200723.pdf.txt` — eowiki-Turka_lingvo-20200723.pdf — sha256:6ae1ed8301ac — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Turka_lingvo-20200723.pdf
-- `ia-eowiki-Krika_lingvo-20200728.pdf.txt` — eowiki-Krika_lingvo-20200728.pdf — sha256:4e91681a928f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Krika_lingvo-20200728.pdf
-- `ia-eowiki-Hindustana_lingvo-20200725.pdf.txt` — eowiki-Hindustana_lingvo-20200725.pdf — sha256:97d5a161e5bd — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Hindustana_lingvo-20200725.pdf
-- `ia-eowiki-Mezpersa_lingvo-20200728.pdf.txt` — eowiki-Mezpersa_lingvo-20200728.pdf — sha256:d50f5507a021 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Mezpersa_lingvo-20200728.pdf
-- `ia-eowiki-Araba_lingvo-20200723.pdf.txt` — eowiki-Araba_lingvo-20200723.pdf — sha256:bb1913779b92 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Araba_lingvo-20200723.pdf
-- `ia-eowiki-Nejoj-20200726.pdf.txt` — eowiki-Nejoj-20200726.pdf — sha256:7672bd0795d0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nejoj-20200726.pdf
-- `ia-eowiki-Latina_lingvo-20200723.pdf.txt` — eowiki-Latina_lingvo-20200723.pdf — sha256:f085b45a30bd — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Latina_lingvo-20200723.pdf
-- `ia-eowiki-Filipina_lingvo-20200726.pdf.txt` — eowiki-Filipina_lingvo-20200726.pdf — sha256:09f218dac899 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Filipina_lingvo-20200726.pdf
-- `ia-eowiki-Rapanuia_lingvo-20200727.pdf.txt` — eowiki-Rapanuia_lingvo-20200727.pdf — sha256:f3b0d5a41265 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Rapanuia_lingvo-20200727.pdf
-- `ia-eowiki-Naura_lingvo-20200727.pdf.txt` — eowiki-Naura_lingvo-20200727.pdf — sha256:9f9bc9c96a41 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Naura_lingvo-20200727.pdf
-- `ia-eowiki-Odia_lingvo-20200725.pdf.txt` — eowiki-Odia_lingvo-20200725.pdf — sha256:7635faa51db7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Odia_lingvo-20200725.pdf
-- `ia-eowiki-Jakuta_lingvo-20200725.pdf.txt` — eowiki-Jakuta_lingvo-20200725.pdf — sha256:3b9bff9302bf — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Jakuta_lingvo-20200725.pdf
-- `ia-eowiki-Malnovaltgermana_lingvo-20200728.pdf.txt` — eowiki-Malnovaltgermana_lingvo-20200728.pdf — sha256:f93ab58af51e — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Malnovaltgermana_lingvo-20200728.pdf
-- `ia-eowiki-Zazaa_lingvo-20200725.pdf.txt` — eowiki-Zazaa_lingvo-20200725.pdf — sha256:cc6897c5d6ed — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Zazaa_lingvo-20200725.pdf
 - `ia-dlibra.kul.pl.49099.txt` — Germana Esperantisto : monata gazeto por la vastigado de la lingvo Esperanto. Jaro 8, No 5 (majo1911) — sha256:4a51101cacde — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/dlibra.kul.pl.49099
-- `ia-eowiki-Voroa_lingvo-20200727.pdf.txt` — eowiki-Voroa_lingvo-20200727.pdf — sha256:6526a1101334 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Voroa_lingvo-20200727.pdf
-- `ia-eowiki-Oroma_lingvo-20200727.pdf.txt` — eowiki-Oroma_lingvo-20200727.pdf — sha256:f5a85be79875 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Oroma_lingvo-20200727.pdf
-- `ia-eowiki-Palatinata_germana_dialektaro-20200728.pdf.txt` — eowiki-Palatinata_germana_dialektaro-20200728.pdf — sha256:20102c35d748 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Palatinata_germana_dialektaro-20200728.pdf
-- `ia-eowiki-Nama_lingvo-20200728.pdf.txt` — eowiki-Nama_lingvo-20200728.pdf — sha256:d01c173fac54 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Nama_lingvo-20200728.pdf
-- `ia-eowiki-Tibeta_lingvo-20200725.pdf.txt` — eowiki-Tibeta_lingvo-20200725.pdf — sha256:7a3926b2b58a — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Tibeta_lingvo-20200725.pdf
-- `ia-eowiki-Romanido-20200725.pdf.txt` — eowiki-Romanido-20200725.pdf — sha256:ddff073acfd0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Romanido-20200725.pdf
-- `ia-eowiki-Afriko-20200722.pdf.txt` — eowiki-Afriko-20200722.pdf — sha256:e55021c00f98 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Afriko-20200722.pdf
-- `ia-eowiki-Jida_lingvo-20200724.pdf.txt` — eowiki-Jida_lingvo-20200724.pdf — sha256:dd67090dc63d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Jida_lingvo-20200724.pdf
-- `ia-eowiki-Rusa_lingvo-20200723.pdf.txt` — eowiki-Rusa_lingvo-20200723.pdf — sha256:66329e7203f6 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Rusa_lingvo-20200723.pdf
-- `ia-eowiki-Veda_Sanskrito-20200728.pdf.txt` — eowiki-Veda_Sanskrito-20200728.pdf — sha256:2081cc175779 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Veda_Sanskrito-20200728.pdf
-- `ia-eowiki-Srana_lingvo-20200728.pdf.txt` — eowiki-Srana_lingvo-20200728.pdf — sha256:cef9e576ba70 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Srana_lingvo-20200728.pdf
-- `ia-eowiki-Evea_lingvo-20200727.pdf.txt` — eowiki-Evea_lingvo-20200727.pdf — sha256:ec39c018fffc — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Evea_lingvo-20200727.pdf
-- `ia-eowiki-Agula_lingvo-20200728.pdf.txt` — eowiki-Agula_lingvo-20200728.pdf — sha256:d6fc6a46217d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Agula_lingvo-20200728.pdf
-- `ia-eowiki-Kria_lingvo-20200727.pdf.txt` — eowiki-Kria_lingvo-20200727.pdf — sha256:0bce9b12769d — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kria_lingvo-20200727.pdf
-- `ia-eowiki-Balia_lingvo-20200727.pdf.txt` — eowiki-Balia_lingvo-20200727.pdf — sha256:c85139943f02 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Balia_lingvo-20200727.pdf
-- `ia-eowiki-Kefa_lingvo-20200725.pdf.txt` — eowiki-Kefa_lingvo-20200725.pdf — sha256:fb682d7240c4 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Kefa_lingvo-20200725.pdf
-- `ia-eowiki-Slovaka_lingvo-20200724.pdf.txt` — eowiki-Slovaka_lingvo-20200724.pdf — sha256:d370ece5e76b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Slovaka_lingvo-20200724.pdf
-- `ia-eowiki-Ruanda_lingvo-20200726.pdf.txt` — eowiki-Ruanda_lingvo-20200726.pdf — sha256:6edbcc1c5b3f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Ruanda_lingvo-20200726.pdf
-- `ia-eowiki-Navaha_lingvo-20200726.pdf.txt` — eowiki-Navaha_lingvo-20200726.pdf — sha256:8fdc86942ca9 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Navaha_lingvo-20200726.pdf
-- `ia-eowiki-Pitjantjatjara_lingvo-20200725.pdf.txt` — eowiki-Pitjantjatjara_lingvo-20200725.pdf — sha256:97aaafedb5f7 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Pitjantjatjara_lingvo-20200725.pdf
-- `ia-eowiki-Tata_lingvo-20200728.pdf.txt` — eowiki-Tata_lingvo-20200728.pdf — sha256:1a622b32cf83 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Tata_lingvo-20200728.pdf
-- `ia-eowiki-Lingvo-20200721.pdf.txt` — eowiki-Lingvo-20200721.pdf — sha256:59d889bff4e5 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Lingvo-20200721.pdf
-- `ia-eowiki-Luba_lingvo-20200728.pdf.txt` — eowiki-Luba_lingvo-20200728.pdf — sha256:eb7d14c87783 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Luba_lingvo-20200728.pdf
-- `ia-eowiki-Bengala_lingvo-20200724.pdf.txt` — eowiki-Bengala_lingvo-20200724.pdf — sha256:e13305c5850f — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Bengala_lingvo-20200724.pdf
-- `ia-eowiki-Okinava_lingvo-20200728.pdf.txt` — eowiki-Okinava_lingvo-20200728.pdf — sha256:ed5c0370a0c0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Okinava_lingvo-20200728.pdf
-- `ia-eowiki-Vilamovica_lingvo-20200728.pdf.txt` — eowiki-Vilamovica_lingvo-20200728.pdf — sha256:7b4c3d4fa94b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Vilamovica_lingvo-20200728.pdf
-- `ia-eowiki-Parta_lingvo-20200728.pdf.txt` — eowiki-Parta_lingvo-20200728.pdf — sha256:177fd5cf1b89 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Parta_lingvo-20200728.pdf
 
 ## Batch 3 — Vikifontaro, proofread scans from the XML dump
 
@@ -406,3 +358,19 @@ Extracted from the eo.wikisource dump (https://dumps.wikimedia.org/eowikisource/
 - `wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt` — Sienkiewikz - Quo vadis?, 1934, Zamenhof, II.pdf — Vikifontaro — 1934 — 268/280 proofread pages — public domain (source-country: last death 1917) — sha256:a2d6ef936995 — https://eo.wikisource.org/wiki/Indekso:Sienkiewikz_-_Quo_vadis?,_1934,_Zamenhof,_II.pdf
 - `wsdump-Orzeszko_Marta_1928_Zamenhof.txt` — Orzeszko - Marta, 1928, Zamenhof.pdf — Vikifontaro — 1928 — 239/241 proofread pages — public domain (source-country: last death 1917) — sha256:c6fe96dc4886 — https://eo.wikisource.org/wiki/Indekso:Orzeszko_-_Marta,_1928,_Zamenhof.pdf
 - `wsdump-Bulthuis_Inferio_1938.txt` — Bulthuis - Inferio, 1938.pdf — Vikifontaro — 1938 — 148/160 proofread pages — public domain (source-country: last death 1945) — sha256:e74f5fe7d61f — https://eo.wikisource.org/wiki/Indekso:Bulthuis_-_Inferio,_1938.pdf
+
+### Moved to QUARANTINE/ — the 48 `ia-eowiki-*` articles
+
+Encyclopedia articles about individual languages, dumped from the Esperanto
+Wikipedia as PDFs. Moved after measuring what they cost rather than what they
+score: mined with the current line, span and column filters they yield 46.2
+unknown candidates per 1000 tokens kept, against 2.5 for three clean sources
+(Originala Verkaro, Marta, Hermano kaj Doroteo) — eighteen times the rate, for
+0.6% of the corpus by tokens. Their commonest contributions are `http`,
+`wikipedia`, `org`, `www`, `https`, `com`, `km` and `mln`.
+
+An earlier triage kept them deliberately, reasoning that they score low only
+because they are short, quote heavily in the language each describes, and
+carry alphabet tables. That reasoning was sound and is why the filters were
+built; the measurement above is what it looks like after those filters exist.
+See QUARANTINE/README.md.

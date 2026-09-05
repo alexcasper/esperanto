@@ -47,10 +47,10 @@ for the wrong reason by the metric alone.
 
 **Deliberately NOT moved**, though the metric scored them poorly:
 
-- The 41 `ia-eowiki-*_lingvo` articles are real Esperanto prose. They score
-  low because they are short, quote heavily in the language each describes,
-  and carry alphabet tables — a run of single letters reads as 46% "single
-  character tokens" without a thing being wrong with the text.
+- ~~The 41 `ia-eowiki-*_lingvo` articles are real Esperanto prose.~~
+  **Superseded — see below.** That reading was right about why they score low
+  and is why the language filters were built; it did not survive measuring
+  what they cost once those filters existed.
 - `ia-dlibra.kul.pl.49099.txt` is a genuine bilingual Esperanto-German
   periodical: 70.6% Esperanto against 5.6% German, the German being
   advertising pages.
@@ -67,3 +67,36 @@ re-checked without repeating the work.
 Move the file with `git mv`, strike its line in `RAW/PROVENANCE.md` with the
 reason, add a section here, and regenerate `CORPUS/MANIFEST.tsv` by running
 `python3 tools/normalize_corpus.py`.
+
+### The 48 `ia-eowiki-*` articles — measured cost, not measured score
+
+Encyclopedia articles about individual languages, dumped from the Esperanto
+Wikipedia as PDFs. Kept through two earlier triages on the reasoning that a
+low recognisability score is what an article *about* Agul or Coptic should
+look like: it quotes the language it describes, it is short, and it carries an
+alphabet table. That reasoning was sound, and it is why `mine_lemmas` grew
+filters for foreign lines, parenthesised spans and gloss columns.
+
+Moved once those filters existed and the question could be put properly — not
+what do they score, but what do they still cost a reviewer:
+
+| | tokens kept | unknown candidates per 1000 tokens |
+|---|---|---|
+| the 48 `ia-eowiki-*` articles | 33482 | **46.2** |
+| Originala Verkaro, Marta, Hermano kaj Doroteo | 118512 | 2.5 |
+
+Eighteen times the rate, for 0.6% of the corpus by tokens. What they
+contribute at the top of the queue is not vocabulary: `http` (60),
+`wikipedia` (54), `mln` (41), `org` (36), `km` (34), `www` (32),
+`https` (24), `uea` (21), `com` (18), `language` (15), `deutsche` (13).
+
+Five of them additionally carry real scan corruption, which is what first drew
+reviewers' attention: `Srana_lingvo` reads lowercase *l* as *i* in 5.8% of its
+tokens (`nederianda`, `ioĝantaro`, `iarĝe`), `Parta_lingvo` in 1.7% and
+`Mezpersa_lingvo` in 1.4%; `Kopta_lingvo` carries Coptic mojibake at 65.3%
+recognisable and `Rusa_lingvo` renders Cyrillic as Latin lookalikes. The
+reviewers' report that *every* lowercase l was affected was an overstatement —
+the measured rates are above — but the direction was right.
+
+Reversing this is one `git mv` back; the reason to reverse it would be a use
+for the articles other than mining vocabulary.
