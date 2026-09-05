@@ -208,6 +208,35 @@ def repair_mojibake(text):
     return MOJIBAKE_RUN.sub(lambda m: unmojibake_run(m.group()), text)
 
 
+# A word the typesetter broke across a line. Distinct from the page-break case,
+# which eo.wikisource marks with {{vdk}}/{{vdf}} and which is handled at
+# extraction: here the hyphen is inside the page and carries no markup at all.
+LINE_HYPHEN = re.compile(r'([A-Za-zĉĝĥĵŝŭĈĜĤĴŜŬ]{2,})-[ \t]*\n[ \t]*'
+                         r'([a-zĉĝĥĵŝŭ]{2,})')
+
+
+def rejoin_hyphens(text):
+    """Join a word broken across a line, but only where the join is a word.
+
+    Reviewers kept meeting the halves as vocabulary — 'taĝo' from
+    'avan- taĝojn', 'tanta' from 'konsis-tanta', 'ĝas' from 'lo-ĝas'. Across
+    the corpus there are 724 such breaks and 480 of them join into something
+    the dictionary recognises; the rest are left exactly as found, because a
+    hyphen at end of line is also how a genuine compound falls
+    (Nordrejn-Vestfalio), and joining those would invent words.
+    """
+    roots, words = vocabulary()
+
+    def join(match):
+        head, tail = match.group(1), match.group(2)
+        joined = head + tail
+        if esperanto.analyse(joined.lower(), roots, words)[1] == 'unknown':
+            return match.group()
+        return joined + '\n'
+
+    return LINE_HYPHEN.sub(join, text)
+
+
 def from_hsystem(text):
     text = WORDLIKE.sub(lambda m: convert_word(m.group()), text)
     # ŭ occurs only in the diphthongs aŭ and eŭ, so inside an h-system file
@@ -404,6 +433,11 @@ def normalize(path):
                and conversion_is_sound(text, convert_word))
     if h_sound:
         text = from_hsystem(text)
+    hyphens = len(LINE_HYPHEN.findall(text))
+    if hyphens:
+        before = text
+        text = rejoin_hyphens(text)
+        hyphens = 0 if text == before else hyphens
     homoglyphs = len(MIXED_TOKEN.findall(text))
     if homoglyphs:
         text = repair_homoglyphs(text)
@@ -419,6 +453,7 @@ def normalize(path):
         'xsystem': spelling_verdict(hits, XSYS_MIN, x_sound),
         'hsystem': spelling_verdict(hsystem_count, HSYS_MIN, h_sound),
         'mojibake': mojibake or '-',
+        'hyphens': hyphens or '-',
         'homoglyphs': homoglyphs or '-',
         'sha256': hashlib.sha256(text.encode('utf-8')).hexdigest()[:12],
         'text': text,
@@ -443,8 +478,8 @@ def main():
         records.append(record)
 
     columns = ['source', 'method', 'in_lines', 'out_lines', 'head_stripped',
-               'tail_stripped', 'xsystem', 'hsystem', 'mojibake', 'homoglyphs',
-               'sha256']
+               'tail_stripped', 'xsystem', 'hsystem', 'mojibake', 'hyphens',
+               'homoglyphs', 'sha256']
     with open(os.path.join(OUT, 'MANIFEST.tsv'), 'w', encoding='utf-8') as fh:
         fh.write('\t'.join(columns) + '\n')
         for record in records:

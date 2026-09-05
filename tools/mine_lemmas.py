@@ -15,11 +15,12 @@ the corpus is lopsided: Originala Verkaro is 1.4 MB and the smallest sources
 are a few kilobytes, so round-robin would leave one shard doing most of the
 work.
 
-Text that is not Esperanto is skipped before tokenizing, at three scales:
+Text that is not Esperanto is skipped before tokenizing, at four scales:
 whole files (a foreign-language grammar), single lines (see line_is_foreign,
-which reaches a bilingual periodical or a translation printed beside its
-original), and spans within a line (see foreign_spans, which reaches a Latin
-binomial or a translator's credit in parentheses).
+which reaches a bilingual periodical), spans within a line (see foreign_spans,
+which reaches a Latin binomial or a translator's credit in parentheses), and
+columns (see foreign_columns, which reaches the Fundamento's five translation
+columns without discarding the Esperanto beside them).
 
 Output records are one JSON object per line:
 
@@ -187,6 +188,85 @@ def foreign_spans(line, roots, words, cache=None):
     return spans
 
 
+MIN_GLOSS_COLUMNS = 4
+# Above this share of later-column tokens being real dictionary words, the
+# columns are an Esperanto table rather than translations. One stray hit does
+# not decide it: the German column of 'kaj et | and | und | и | i.' contains
+# 'and', which is a genuine Esperanto root.
+MAX_GLOSS_ESPERANTO = 0.6
+
+
+def listed(token, roots, words):
+    """Stricter than recognised(): the dictionary must actually hold this.
+
+    No morphology, one ending at most. Used where an over-accepting analysis
+    would be worse than a missed one.
+    """
+    low = token.lower()
+    if low in words or low in roots:
+        return True
+    stem = esperanto.strip_ending(low)
+    return stem in roots or stem in words
+
+
+def foreign_columns(line, roots, words, cache=None):
+    """Spans covering the translation columns of a multilingual gloss row.
+
+    The Fundamento prints its vocabulary as one row per word with the
+    Esperanto first and five translations after it, pipe-separated:
+
+        patro père | father | Vater | отецъ | ojciec.
+
+    Mining that yields French, English, German and Polish, and it did: 18 of
+    one reviewer's 33 foreign verdicts came from this one file. Excluding the
+    file is the wrong answer, because the Ekzercaro is also a core Esperanto
+    text — its sibling files, which are nothing but tables, are excluded
+    already.
+
+    Pipes alone cannot decide it. Two other sources use them for tables that
+    are Esperanto throughout: pg-42028 sets administrative, military, naval
+    and ecclesiastical vocabulary side by side, and pg-51690 marks verse
+    scansion.
+
+    The ordinary recognisability test is not strict enough here either, because
+    with 27000 entries the morphology builds 'father' and reads 'Vater' as the
+    root vat-. So the later columns are judged by a stricter test — the token,
+    or the token with one grammatical ending removed, must be a root or a
+    headword the dictionary actually lists. That separates them cleanly:
+    father, Vater, ojciec, earth, Erde, ziemia, clean, rein and czysty all
+    fail it, while administraciaj, militistaj, maristaj and ekleziaj all pass.
+    """
+    if line.count('|') < MIN_GLOSS_COLUMNS - 1:
+        return []
+    columns, offset = [], 0
+    for field in line.split('|'):
+        columns.append((offset, offset + len(field), field))
+        offset += len(field) + 1
+    head = columns[0][2]
+    if not any(recognised(t, roots, words, cache)
+               for t in esperanto.TOKEN.findall(head) if len(t) > 1):
+        return []            # the first column is not Esperanto either
+
+    tokens = [t for _s, _e, field in columns[1:]
+              for t in esperanto.TOKEN.findall(field) if len(t) > 1]
+    if not tokens:
+        return []
+    passing = sum(1 for t in tokens if listed(t, roots, words))
+    if passing / len(tokens) >= MAX_GLOSS_ESPERANTO:
+        return []            # the later columns are Esperanto: a table
+
+    spans = [(start, end) for start, end, _field in columns[1:]]
+    # The first column is not purely Esperanto either: the Fundamento prints
+    # the headword and then its French gloss, 'patro père', so 'père',
+    # 'terre', 'homme' and 'mourir' leak from the column we keep. Once the row
+    # is known to be a gloss row, everything after the first token of the
+    # first column is a translation too.
+    head_tokens = list(esperanto.TOKEN.finditer(columns[0][2]))
+    if len(head_tokens) > 1:
+        spans.append((head_tokens[0].end(), columns[0][1]))
+    return spans
+
+
 def normalise_token(token, roots, words):
     """Resolve the three apostrophe constructions, or reject the token.
 
@@ -342,8 +422,13 @@ def mine(files, roots, words, min_count, max_citations, filter_lines=True):
                 if filter_lines and line_is_foreign(line, roots, words, seen):
                     skipped += 1
                     continue
-                spans = (foreign_spans(line, roots, words, seen)
-                         if filter_lines and '(' in line else ())
+                spans = ()
+                if filter_lines:
+                    if '(' in line:
+                        spans = foreign_spans(line, roots, words, seen)
+                    if '|' in line:
+                        spans = list(spans) + foreign_columns(
+                            line, roots, words, seen)
                 for match in esperanto.TOKEN.finditer(line):
                     if any(start <= match.start() < end
                            for start, end in spans):
