@@ -39,7 +39,7 @@
 {"lemma": "absorba", "verdict": "inflection"}
 {"lemma": "absorbanta", "verdict": "inflection"}
 {"lemma": "absorbante", "verdict": "inflection"}
-{"lemma": "absorbi", "verdict": "lemma", "gloss": "to absorb", "note": "lexicalised passive participle; base verb absorbi not in DICT"}
+{"lemma": "absorbi", "verdict": "lemma", "gloss": "absorbed, engrossed", "note": "lexicalised passive participle; base verb absorbi not in DICT"}
 {"lemma": "absorbita", "verdict": "lemma", "gloss": "absorbed, engrossed", "note": "lexicalised passive participle; base verb absorbi not in DICT"}
 {"lemma": "absorbiĝi", "verdict": "inflection"}
 {"lemma": "abstract", "verdict": "foreign", "note": "English metalanguage of pg-29403/pg-28721."}
@@ -273,7 +273,7 @@
 {"lemma": "alies", "verdict": "lemma", "gloss": "someone else's, another's"}
 {"lemma": "aliflanke", "verdict": "lemma", "gloss": "on the other hand"}
 {"lemma": "alifoje", "verdict": "lemma", "gloss": "at another time, on another occasion"}
-{"lemma": "aliformigi", "verdict": "inflection", "gloss": "to transform, alter", "note": "past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform; past participle of aliformigi, to transform"}
+{"lemma": "aliformigi", "verdict": "inflection", "gloss": "to transform, alter", "note": "past participle of aliformigi, to transform"}
 {"lemma": "aliformigis", "verdict": "inflection", "note": "past tense of aliformigi, to transform"}
 {"lemma": "aliformigita", "verdict": "inflection", "note": "past participle of aliformigi, to transform"}
 {"lemma": "aliformiĝi", "verdict": "inflection", "note": "past tense of aliformiĝi (ali+form+iĝi)"}
@@ -316,7 +316,7 @@
 {"lemma": "alkonstruita", "verdict": "inflection", "note": "Passive participle of alkonstrui."}
 {"lemma": "alkreski", "verdict": "lemma", "gloss": "to grow onto, become attached by growing"}
 {"lemma": "alkroĉante", "verdict": "inflection", "note": "Adverbial present participle of alkroĉi, which is already an entry."}
-{"lemma": "alkroĉi", "verdict": "inflection", "gloss": "to hook on, attach, cling to", "note": "past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook on, fasten to; past participle of alkroĉi, to hook …"}
+{"lemma": "alkroĉi", "verdict": "inflection", "gloss": "to hook on, attach, cling to", "note": "past participle of alkroĉi, to hook on, fasten to"}
 {"lemma": "alkroĉita", "verdict": "inflection", "note": "past participle of alkroĉi, to hook on, fasten to"}
 {"lemma": "alkroĉiĝi", "verdict": "inflection", "note": "past tense of alkroĉiĝi, to cling to, hook onto"}
 {"lemma": "alkroĉiĝis", "verdict": "inflection", "note": "past tense of alkroĉiĝi, to cling to, hook onto"}
@@ -347,7 +347,7 @@
 {"lemma": "alli", "verdict": "fragment", "note": "Nabil chronicle (ia-LaHeroojDeLaNovaTagio...) OCR damage: leftover letters where the OCR dropped part of a Persian/Arabic name or word"}
 {"lemma": "allia", "verdict": "ocr-artifact", "note": "\"al Lia/al Liaj\" run together."}
 {"lemma": "alligas", "verdict": "inflection", "note": "present tense of alligi, to tie to, moor"}
-{"lemma": "alligi", "verdict": "inflection", "gloss": "to tie to, bind, attach (alligi)", "note": "passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi; passive participle of alligi;"}
+{"lemma": "alligi", "verdict": "inflection", "gloss": "to tie to, bind, attach (alligi)", "note": "passive participle of alligi"}
 {"lemma": "alligis", "verdict": "lemma", "gloss": "to tie to, bind, attach (alligi)", "note": "cited in past tense"}
 {"lemma": "alligita", "verdict": "inflection", "note": "passive participle of alligi"}
 {"lemma": "alligiĝi", "verdict": "inflection"}
@@ -364,7 +364,7 @@
 {"lemma": "almetante", "verdict": "inflection", "note": "Adverbial participle of almeti."}
 {"lemma": "almetas", "verdict": "inflection", "note": "present tense of almeti, to put on, place against"}
 {"lemma": "almetata", "verdict": "inflection", "note": "passive participle of almeti, already an entry"}
-{"lemma": "almeti", "verdict": "inflection", "note": "past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past participle of almeti, to put on, apply; past …"}
+{"lemma": "almeti", "verdict": "inflection", "note": "past participle of almeti, to put on, apply"}
 {"lemma": "almetinta", "verdict": "inflection", "note": "Active past participle of almeti."}
 {"lemma": "almetinte", "verdict": "inflection", "note": "adverbial past participle of almeti, already in DICT"}
 {"lemma": "almetita", "verdict": "inflection", "note": "past participle of almeti, to put on, apply"}
@@ -436,7 +436,7 @@
 {"lemma": "alsaltis", "verdict": "lemma", "gloss": "to leap up to, spring at (alsalti)", "note": "cited in past tense"}
 {"lemma": "alsekvi", "verdict": "lemma", "gloss": "to follow after, accompany"}
 {"lemma": "alsendas", "verdict": "inflection", "note": "present tense of alsendi"}
-{"lemma": "alsendi", "verdict": "inflection", "gloss": "to send in, send to someone", "note": "passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of alsendi; passive participle of alsendi; past passive participle of …"}
+{"lemma": "alsendi", "verdict": "inflection", "gloss": "to send in, send to someone", "note": "past passive participle of alsendi"}
 {"lemma": "alsendis", "verdict": "inflection", "note": "past tense of alsendi, to send to"}
 {"lemma": "alsendita", "verdict": "inflection", "note": "past passive participle of alsendi"}
 {"lemma": "alsendo", "verdict": "lemma", "gloss": "sending in, submission"}
@@ -464,7 +464,7 @@
 {"lemma": "altiradi", "verdict": "inflection", "note": "Regular -ad- frequentative of altiri, already in entries.jsonl."}
 {"lemma": "altirante", "verdict": "inflection", "note": "adverbial present participle of altiri, already in the dictionary"}
 {"lemma": "altirata", "verdict": "inflection", "note": "passive present participle of altiri, already an entry"}
-{"lemma": "altiri", "verdict": "inflection", "note": "past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, draw; past passive participle of altiri; past participle of altiri, to attract, …"}
+{"lemma": "altiri", "verdict": "inflection", "note": "past passive participle of altiri"}
 {"lemma": "altirinta", "verdict": "inflection", "note": "Active participle of altiri, already an entry."}
 {"lemma": "altirinte", "verdict": "inflection", "note": "past active adverbial participle of altiri, having drawn (someone) to oneself"}
 {"lemma": "altirinto", "verdict": "lemma", "gloss": "one who has won someone over, recruiter"}
@@ -772,7 +772,7 @@
 {"lemma": "apene", "verdict": "lemma", "gloss": "hardly, barely (archaic variant of apenaŭ)", "note": "Same -aŭ > -e pattern as balde/almene/ambe, all confined to pg-62394."}
 {"lemma": "aperadi", "verdict": "inflection"}
 {"lemma": "aperanta", "verdict": "inflection", "note": "present active participle of aperi"}
-{"lemma": "aperi", "verdict": "inflection", "note": "past active participle of aperi; regular participle of aperi"}
+{"lemma": "aperi", "verdict": "inflection", "note": "regular participle of aperi"}
 {"lemma": "aperiao", "verdict": "ocr-artifact", "note": "Scan of aperiĝo."}
 {"lemma": "aperigi", "verdict": "lemma", "gloss": "to publish, bring out, cause to appear"}
 {"lemma": "aperinta", "verdict": "inflection", "note": "regular participle of aperi"}
@@ -802,7 +802,7 @@
 {"lemma": "apply", "verdict": "foreign", "note": "English"}
 {"lemma": "apprendre", "verdict": "foreign", "note": "French, in a cited book title."}
 {"lemma": "apriore", "verdict": "lemma", "gloss": "a priori, by reasoning from principles"}
-{"lemma": "aprobi", "verdict": "inflection", "note": "past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past passive participle of aprobi; past"}
+{"lemma": "aprobi", "verdict": "inflection", "note": "past passive participle of aprobi"}
 {"lemma": "aprobita", "verdict": "inflection", "note": "past passive participle of aprobi"}
 {"lemma": "apudborda", "verdict": "lemma", "gloss": "coastal, lying by the shore"}
 {"lemma": "apudlima", "verdict": "lemma", "gloss": "bordering, near the frontier"}
@@ -820,7 +820,7 @@
 {"lemma": "aqra", "verdict": "foreign", "note": "Arabic word quoted in the text."}
 {"lemma": "aquiler", "verdict": "foreign", "note": "Spanish, same phrase."}
 {"lemma": "araba", "verdict": "lemma", "gloss": "Arab, Arabic"}
-{"lemma": "arabic", "verdict": "foreign", "note": "English, from the reference list of the eowiki Arabic-language article; English, in bibliography of the eo-Wikipedia article on Coptic"}
+{"lemma": "arabic", "verdict": "foreign", "note": "English, in bibliography of the eo-Wikipedia article on Coptic"}
 {"lemma": "arabio", "verdict": "proper-noun", "note": "Arabia"}
 {"lemma": "arabl", "verdict": "ocr-artifact", "note": "OCR of the Arabic ‘arabī in ia-eowiki-Araba_lingvo."}
 {"lemma": "arablingva", "verdict": "lemma", "gloss": "Arabic-language"}
@@ -831,7 +831,7 @@
 {"lemma": "aranda", "verdict": "proper-noun", "note": "surname Aranda in the Magellan biography; pos_guess adj is wrong"}
 {"lemma": "araneosimila", "verdict": "lemma", "gloss": "spider-like, arachnid"}
 {"lemma": "aranĝata", "verdict": "inflection"}
-{"lemma": "aranĝi", "verdict": "inflection", "gloss": "arranged, laid out", "note": "past passive participle of aranĝi; regular passive past participle of aranĝi; regular passive participle of aranĝi"}
+{"lemma": "aranĝi", "verdict": "inflection", "gloss": "arranged, laid out", "note": "regular passive participle of aranĝi"}
 {"lemma": "aranĝita", "verdict": "inflection", "gloss": "arranged, laid out", "note": "regular passive participle of aranĝi"}
 {"lemma": "aranĝiĝi", "verdict": "inflection"}
 {"lemma": "arbarego", "verdict": "inflection"}
@@ -876,7 +876,7 @@
 {"lemma": "arlekenaĵo", "verdict": "inflection"}
 {"lemma": "armeniaca", "verdict": "foreign", "note": "Part of a Latin binomial; the miner stripped the Latin ending as if Esperanto (sativus->sativi, campestris->campestri)."}
 {"lemma": "armeo", "verdict": "lemma", "gloss": "army"}
-{"lemma": "armi", "verdict": "inflection", "gloss": "armed", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of armi; regular participle of armi; regular passive participle of armi"}
+{"lemma": "armi", "verdict": "inflection", "gloss": "armed", "note": "regular passive participle of armi"}
 {"lemma": "armilo", "verdict": "lemma", "gloss": "weapon"}
 {"lemma": "armita", "verdict": "inflection", "gloss": "armed", "note": "regular passive participle of armi"}
 {"lemma": "armito", "verdict": "lemma", "gloss": "an armed man, man-at-arms, soldier", "note": "Lexicalised as a bare noun in four texts, always plural 'armitoj'."}
@@ -893,7 +893,7 @@
 {"lemma": "artefari", "verdict": "lemma", "gloss": "artificial"}
 {"lemma": "artefarita", "verdict": "lemma", "gloss": "artificial"}
 {"lemma": "artefariteco", "verdict": "inflection"}
-{"lemma": "article", "verdict": "foreign", "note": "English; pg-37977 'The Esperantist' carries long English-language editorial/minutes sections; English; pg-34042; English"}
+{"lemma": "article", "verdict": "foreign", "note": "English"}
 {"lemma": "articles", "verdict": "foreign", "note": "English"}
 {"lemma": "artifikaĵo", "verdict": "inflection"}
 {"lemma": "artikel", "verdict": "foreign", "note": "German 'Artikel' (article) in ia-dlibra.kul.pl.49099"}
@@ -1188,7 +1188,7 @@
 {"lemma": "bavi", "verdict": "ocr-artifact", "note": "b/h misread: \"ili bavis nur unu kokinon\" should be \"havis\"."}
 {"lemma": "bavto", "verdict": "foreign", "note": "Arabic 'bayt' (verse), glossed in the text as '(versojn)' and scanned with v for y."}
 {"lemma": "bazarulo", "verdict": "lemma", "gloss": "market trader, fairground showman"}
-{"lemma": "bazi", "verdict": "inflection", "note": "past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past passive participle of bazi; past …"}
+{"lemma": "bazi", "verdict": "inflection", "note": "past passive participle of bazi"}
 {"lemma": "bazilisko", "verdict": "lemma", "gloss": "basilisk"}
 {"lemma": "bazilo", "verdict": "proper-noun", "note": "given name of Bazilo Musatov; given name of Bazilo Musatov"}
 {"lemma": "bazita", "verdict": "inflection", "note": "past passive participle of bazi"}
@@ -1244,7 +1244,7 @@
 {"lemma": "benata", "verdict": "inflection", "note": "regular participle of beni"}
 {"lemma": "bendera", "verdict": "foreign", "note": "Swahili, glossed in the article as \"flago\"."}
 {"lemma": "bendo", "verdict": "lemma", "gloss": "band, ribbon"}
-{"lemma": "beni", "verdict": "inflection", "gloss": "blessed", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of beni; regular participle of beni"}
+{"lemma": "beni", "verdict": "inflection", "gloss": "blessed", "note": "regular participle of beni"}
 {"lemma": "benita", "verdict": "inflection", "gloss": "blessed", "note": "regular participle of beni"}
 {"lemma": "benketo", "verdict": "inflection"}
 {"lemma": "benkvico", "verdict": "lemma", "gloss": "row of benches"}
@@ -1989,7 +1989,7 @@
 {"lemma": "despli", "verdict": "inflection", "note": "'des pli' written solid.; des pli set solid: 6 occurrences in 4 files against 570 of the two-word form"}
 {"lemma": "desterham", "verdict": "foreign", "note": "Persian title quoted in guillemets in the Esperanto Candide."}
 {"lemma": "destinata", "verdict": "inflection"}
-{"lemma": "destini", "verdict": "inflection", "gloss": "intended, destined", "note": "past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle of destini; past passive participle"}
+{"lemma": "destini", "verdict": "lemma", "gloss": "intended, destined", "note": "past passive participle of destini"}
 {"lemma": "destinita", "verdict": "lemma", "gloss": "intended, destined", "note": "past passive participle of destini"}
 {"lemma": "destino", "verdict": "lemma", "gloss": "destiny, fate"}
 {"lemma": "desur", "verdict": "lemma", "gloss": "from off, down from", "note": "Compound preposition de + sur."}
@@ -2927,7 +2927,7 @@
 {"lemma": "enabismiĝanta", "verdict": "inflection", "note": "Active participle of enabismiĝi, already an entry."}
 {"lemma": "enabismiĝi", "verdict": "inflection", "note": "Active participle of enabismiĝi, already an entry."}
 {"lemma": "enabismiĝinta", "verdict": "inflection", "note": "Active participle of enabismiĝi, already an entry."}
-{"lemma": "enami", "verdict": "inflection", "gloss": "in love, enamoured", "note": "participle of enami, which is absent from entries.jsonl; older usage; the modern form is enamiĝinta"}
+{"lemma": "enami", "verdict": "lemma", "gloss": "in love, enamoured", "note": "older usage; the modern form is enamiĝinta"}
 {"lemma": "enamita", "verdict": "lemma", "gloss": "in love, enamoured", "note": "older usage; the modern form is enamiĝinta"}
 {"lemma": "enamiĝi", "verdict": "inflection", "note": "past tense of enamiĝi"}
 {"lemma": "enamiĝinta", "verdict": "inflection", "note": "active past participle of enamiĝi"}
@@ -2956,7 +2956,7 @@
 {"lemma": "enfalinta", "verdict": "lemma", "gloss": "sunken, hollow (of eyes or cheeks)", "note": "lexicalised participle; base verb enfali not in DICT"}
 {"lemma": "enfalis", "verdict": "lemma", "gloss": "to fall into (enfali)", "note": "cited in past tense"}
 {"lemma": "enfermata", "verdict": "inflection", "note": "Passive present participle of enfermi, already an entry."}
-{"lemma": "enfermi", "verdict": "inflection", "gloss": "shut in, confined, enclosed", "note": "past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past participle of enfermi, to shut in, confine; past …"}
+{"lemma": "enfermi", "verdict": "lemma", "gloss": "shut in, confined, enclosed", "note": "past participle of enfermi, to shut in, confine"}
 {"lemma": "enfermigi", "verdict": "lemma", "gloss": "to have someone shut up or imprisoned"}
 {"lemma": "enfermis", "verdict": "lemma", "gloss": "to shut in, enclose, confine (enfermi)", "note": "cited in past tense"}
 {"lemma": "enfermita", "verdict": "lemma", "gloss": "shut in, confined, enclosed", "note": "past participle of enfermi, to shut in, confine"}
@@ -3001,7 +3001,7 @@
 {"lemma": "eniru", "verdict": "inflection", "note": "imperative of eniri"}
 {"lemma": "eniĝi", "verdict": "lemma", "gloss": "to get into, penetrate, enter"}
 {"lemma": "enjungi", "verdict": "lemma", "gloss": "to harness, yoke up"}
-{"lemma": "enkadrigi", "verdict": "inflection", "note": "Passive participle of the entry enkadrigi.; Passive participle of enkadrigi.; participle of enkadrigi, already in entries.jsonl; passive participle of enkadrigi, already an entry"}
+{"lemma": "enkadrigi", "verdict": "inflection", "note": "passive participle of enkadrigi, already an entry"}
 {"lemma": "enkadrigita", "verdict": "inflection", "note": "passive participle of enkadrigi, already an entry"}
 {"lemma": "enkalkuli", "verdict": "lemma", "gloss": "to include in the count, take into account"}
 {"lemma": "enkarcerigi", "verdict": "inflection"}
@@ -3030,7 +3030,7 @@
 {"lemma": "enkuris", "verdict": "inflection", "gloss": "ran in, rushed in", "note": "past tense of enkuri, to run in"}
 {"lemma": "enlasadi", "verdict": "inflection", "note": "Regular -ad- form of enlasi, already in entries.jsonl."}
 {"lemma": "enlasas", "verdict": "inflection", "note": "present tense of enlasi, to let in, admit"}
-{"lemma": "enlasi", "verdict": "inflection", "note": "Passive participle of enlasi, which is already an entry.; passive participle of enlasi, already an entry"}
+{"lemma": "enlasi", "verdict": "inflection", "note": "passive participle of enlasi, already an entry"}
 {"lemma": "enlasita", "verdict": "inflection", "note": "passive participle of enlasi, already an entry"}
 {"lemma": "enlaso", "verdict": "inflection", "note": "Regular noun form of the entry enlasi."}
 {"lemma": "enlitigi", "verdict": "lemma", "gloss": "to put to bed (sin enlitigi: to go to bed)"}
@@ -3044,7 +3044,7 @@
 {"lemma": "enmanigi", "verdict": "lemma", "gloss": "to hand over, place in someone's hands"}
 {"lemma": "enmare", "verdict": "lemma", "gloss": "at sea, out to sea"}
 {"lemma": "enmaro", "verdict": "lemma", "gloss": "out at sea", "note": "Krafft's Robinsono idiom"}
-{"lemma": "enmeti", "verdict": "inflection", "gloss": "to put in, insert (enmeti)", "note": "passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of enmeti, to insert, set into; passive participle of enmeti; past participle of …"}
+{"lemma": "enmeti", "verdict": "inflection", "gloss": "to put in, insert (enmeti)", "note": "past participle of enmeti, to insert, set into"}
 {"lemma": "enmetis", "verdict": "lemma", "gloss": "to put in, insert (enmeti)", "note": "cited in past tense"}
 {"lemma": "enmetita", "verdict": "inflection", "note": "past participle of enmeti, to insert, set into"}
 {"lemma": "enmiksi", "verdict": "lemma", "gloss": "to mix in, meddle, involve (oneself) in"}
@@ -3090,12 +3090,12 @@
 {"lemma": "ensalti", "verdict": "lemma", "gloss": "to jump in"}
 {"lemma": "enseignement", "verdict": "foreign", "note": "French, from quoted periodical and society titles."}
 {"lemma": "enskribas", "verdict": "inflection", "note": "present tense of enskribi"}
-{"lemma": "enskribi", "verdict": "inflection", "gloss": "to enter, register, inscribe", "note": "present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; …; …"}
+{"lemma": "enskribi", "verdict": "inflection", "gloss": "to enter, register, inscribe", "note": "present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; present tense of enskribi; …; …; …"}
 {"lemma": "enskribigi", "verdict": "lemma", "gloss": "to enrol, have someone registered"}
 {"lemma": "enskribita", "verdict": "inflection", "gloss": "inscribed, entered (on a list)", "note": "passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); passive participle of enskribi; past passive participle of enskribi; past participle of enskribi (to enrol, register); …"}
 {"lemma": "enskribo", "verdict": "lemma", "gloss": "entry, registration, enrolment"}
 {"lemma": "ensorbi", "verdict": "lemma", "gloss": "to absorb, soak up"}
-{"lemma": "ensorĉi", "verdict": "inflection", "gloss": "enchanted, bewitched", "note": "past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle of ensorĉi; past passive participle"}
+{"lemma": "ensorĉi", "verdict": "lemma", "gloss": "enchanted, bewitched", "note": "past passive participle of ensorĉi"}
 {"lemma": "ensorĉita", "verdict": "lemma", "gloss": "enchanted, bewitched", "note": "past passive participle of ensorĉi"}
 {"lemma": "ensuĉebla", "verdict": "lemma", "gloss": "able to be absorbed or imbibed"}
 {"lemma": "ensuĉi", "verdict": "lemma", "gloss": "to suck in"}
@@ -3103,7 +3103,7 @@
 {"lemma": "entenata", "verdict": "inflection", "note": "passive participle of enteni (en + teni)"}
 {"lemma": "enteni", "verdict": "inflection", "note": "past tense of enteni, judged separately in this shard"}
 {"lemma": "entenis", "verdict": "inflection", "note": "past tense of enteni, judged separately in this shard"}
-{"lemma": "enterigi", "verdict": "inflection", "gloss": "buried", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword"}
+{"lemma": "enterigi", "verdict": "lemma", "gloss": "buried", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword"}
 {"lemma": "enterigita", "verdict": "lemma", "gloss": "buried", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword"}
 {"lemma": "enterpreni", "verdict": "ocr-artifact", "note": "Scan of entrepreni with transposed letters."}
 {"lemma": "entiri", "verdict": "inflection"}
@@ -3112,7 +3112,7 @@
 {"lemma": "entrafi", "verdict": "inflection", "note": "past tense of entrafi (en- + trafi)"}
 {"lemma": "entrafis", "verdict": "inflection", "note": "past tense of entrafi (en- + trafi)"}
 {"lemma": "entranĉo", "verdict": "lemma", "gloss": "notch, incision"}
-{"lemma": "entre", "verdict": "foreign", "note": "French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French; French"}
+{"lemma": "entre", "verdict": "foreign", "note": "French"}
 {"lemma": "entrudante", "verdict": "inflection", "note": "Adverbial participle of entrudi, which is itself absent from entries.jsonl."}
 {"lemma": "entrudi", "verdict": "inflection", "gloss": "to intrude, thrust in", "note": "Adverbial participle of entrudi, which is itself absent from entries.jsonl."}
 {"lemma": "entrudiĝi", "verdict": "lemma", "gloss": "to intrude, force one's way in"}
@@ -3261,7 +3261,7 @@
 {"lemma": "etendita", "verdict": "inflection", "gloss": "outstretched, extended", "note": "regular participle of etendi"}
 {"lemma": "etendiĝi", "verdict": "lemma", "gloss": "to extend, stretch out"}
 {"lemma": "eternulo", "verdict": "lemma", "gloss": "the Eternal, the Lord", "note": "Zamenhof's rendering of the Tetragrammaton in his Bible translation"}
-{"lemma": "ethnologue", "verdict": "proper-noun", "note": "Ethnologue, the language database cited in eowiki references; SIL Ethnologue, the language catalogue, cited in the eowiki Lingvo article"}
+{"lemma": "ethnologue", "verdict": "proper-noun", "note": "SIL Ethnologue, the language catalogue, cited in the eowiki Lingvo article"}
 {"lemma": "etika", "verdict": "lemma", "gloss": "ethical"}
 {"lemma": "etiko", "verdict": "lemma", "gloss": "ethics"}
 {"lemma": "etono", "verdict": "ocr-artifact", "note": "Misprint of 'ŝtono'; cf. 'iris serĉi grandegan etonon'."}
@@ -3322,7 +3322,7 @@
 {"lemma": "eŭnuko", "verdict": "lemma", "gloss": "eunuch"}
 {"lemma": "eŭropa", "verdict": "lemma", "gloss": "European"}
 {"lemma": "eŭropano", "verdict": "lemma", "gloss": "a European, an inhabitant of Europe", "note": "Regular -ano on a place name; an infinite, transparent set (usonano, azianano)."}
-{"lemma": "fa", "verdict": "foreign", "note": "Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'"}
+{"lemma": "fa", "verdict": "foreign", "note": "Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'; Danish, in the quoted oath 'Go til fanen!'"}
 {"lemma": "fabaco", "verdict": "lemma", "gloss": "legume, plant of the pea family (Fabaceae)"}
 {"lemma": "fabelisto", "verdict": "inflection"}
 {"lemma": "fablislo", "verdict": "ocr-artifact", "note": "'fablisto' with t misread as l."}
@@ -3525,7 +3525,7 @@
 {"lemma": "figuraĵo", "verdict": "inflection"}
 {"lemma": "fiksante", "verdict": "inflection"}
 {"lemma": "fikse", "verdict": "lemma", "gloss": "fixedly, intently"}
-{"lemma": "fiksi", "verdict": "inflection", "gloss": "fixed, fastened, set", "note": "past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive participle of fiksi; past passive …"}
+{"lemma": "fiksi", "verdict": "inflection", "gloss": "fixed, fastened, set", "note": "past passive participle of fiksi"}
 {"lemma": "fiksita", "verdict": "inflection", "gloss": "fixed, fastened, set", "note": "past passive participle of fiksi"}
 {"lemma": "fiksrigardante", "verdict": "inflection", "note": "Adverbial participle of fiksrigardi, already in entries.jsonl."}
 {"lemma": "fiksrigardi", "verdict": "lemma", "gloss": "to stare at, gaze fixedly at", "note": "Adverbial participle of fiksrigardi, already in entries.jsonl."}
@@ -3686,12 +3686,12 @@
 {"lemma": "forfluginta", "verdict": "inflection"}
 {"lemma": "forfuĝi", "verdict": "inflection"}
 {"lemma": "forgesante", "verdict": "inflection"}
-{"lemma": "forgesi", "verdict": "inflection", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of forgesi"}
+{"lemma": "forgesi", "verdict": "inflection", "note": "past passive participle of forgesi"}
 {"lemma": "forgesinta", "verdict": "inflection"}
 {"lemma": "forgesinte", "verdict": "inflection"}
 {"lemma": "forgesita", "verdict": "inflection", "note": "past passive participle of forgesi"}
 {"lemma": "forhaki", "verdict": "inflection"}
-{"lemma": "forigi", "verdict": "inflection", "gloss": "to remove, get rid of", "note": "past passive participle of forigi; regular participle of forigi"}
+{"lemma": "forigi", "verdict": "inflection", "gloss": "to remove, get rid of", "note": "regular participle of forigi; past passive participle of forigi; regular participle of forigi"}
 {"lemma": "forigita", "verdict": "inflection", "note": "regular participle of forigi"}
 {"lemma": "forirante", "verdict": "inflection"}
 {"lemma": "foriras", "verdict": "inflection", "gloss": "to go away, leave", "note": "present tense of foriri"}
@@ -4140,7 +4140,7 @@
 {"lemma": "gvidisto", "verdict": "lemma", "gloss": "guide"}
 {"lemma": "gvidmarkilo", "verdict": "lemma", "gloss": "navigation beacon, guide marker"}
 {"lemma": "gvidpunkto", "verdict": "lemma", "gloss": "guiding principle, guideline"}
-{"lemma": "gvo", "verdict": "ocr-artifact", "note": "'lingvo' split as 'lin gvo' by the PDF text layer; happens in at least 8 places across the ia-eowiki files.; 'lingvo' broken across a column in the PDF text layer ('lin gvo')."}
+{"lemma": "gvo", "verdict": "fragment", "note": "'lingvo' broken across a column in the PDF text layer ('lin gvo')."}
 {"lemma": "h'm", "verdict": "fragment", "note": "Apostrophe-spelled hesitation noise, not a lexical word."}
 {"lemma": "ha", "verdict": "lemma", "gloss": "ah (interjection)"}
 {"lemma": "hab", "verdict": "foreign", "note": "German haben/habe"}
@@ -4366,9 +4366,9 @@
 {"lemma": "hr", "verdict": "fragment", "note": "Remnant of a Persian place name (B... hr)."}
 {"lemma": "hrrr", "verdict": "uncertain", "note": "onomatopoeic snoring sound in a FeZ sketch, glossed there as a joke neologism for ronki"}
 {"lemma": "ht", "verdict": "fragment", "note": "A piece of a transliterated Persian or Arabic name broken up by the scan."}
-{"lemma": "htm", "verdict": "fragment", "note": "file extension in URLs; file extension in URL footnotes"}
+{"lemma": "htm", "verdict": "fragment", "note": "file extension in URL footnotes"}
 {"lemma": "htt", "verdict": "fragment", "note": "Piece of a line-broken http(s) URL."}
-{"lemma": "http", "verdict": "fragment", "note": "URL scheme, split off from citation links; URL scheme from Wikipedia reference lists; URL scheme; URL scheme from Wikipedia PDF reference lists; URL scheme in citation footnotes; URL scheme in reference lists"}
+{"lemma": "http", "verdict": "fragment", "note": "URL scheme in reference lists"}
 {"lemma": "https", "verdict": "fragment", "note": "URL scheme; URL scheme in the archived Wikipedia PDFs; URL scheme from scanned Wikipedia footnotes; URL scheme in citation footnotes; URL scheme in reference lists"}
 {"lemma": "hu", "verdict": "uncertain", "note": "onomatopoeic interjection in verse; mixed: interjection 'Hu!' in one source, but also phonetic English 'Hu is Jafet?' in pg-64579; onomatopoeic interjection in verse; mixed: interjection 'Hu!' in one source, but also phonetic English 'Hu is Jafet?' in pg-64579; onomatopoeic interjection in verse; mixed: interjection 'Hu!' in one source, but also phonetic English 'Hu is Jafet?' in pg-64579; onomatopoeic interjection in verse; mixed: interjection 'Hu!' in one source, but also phonetic English 'Hu is Jafet?' in pg-64579; onomatopoeic interjection in verse; mixed: interjection 'Hu!' in one …"}
 {"lemma": "hufofero", "verdict": "lemma", "gloss": "horseshoe"}
@@ -4462,7 +4462,7 @@
 {"lemma": "iih", "verdict": "fragment", "note": "Tail of the month name Dhi'l-Hijjih."}
 {"lemma": "iii", "verdict": "fragment", "note": "Roman numeral III from chapter headings"}
 {"lemma": "iiia", "verdict": "ocr-artifact", "note": "Two sources merged: OCR of 'ilia' in the Voltaire dump, and the ordinal 'III-a' in pg-21951."}
-{"lemma": "iingvo", "verdict": "ocr-artifact", "note": "'lingvo' with l misread as i; ia-eowiki-Srana_lingvo PDF has systematic l->i (ia=la, ioĝantaro=loĝantaro, ei=en); lingvo with l misread as i; ia-eowiki-Mezpersa_lingvo also reads la as ia and plurajn as piuraj — that PDF has systematic l->i confusion"}
+{"lemma": "iingvo", "verdict": "ocr-artifact", "note": "lingvo with l misread as i; ia-eowiki-Mezpersa_lingvo also reads la as ia and plurajn as piuraj — that PDF has systematic l->i confusion"}
 {"lemma": "iinua", "verdict": "ocr-artifact", "note": "Scan of unua."}
 {"lemma": "iirza", "verdict": "ocr-artifact", "note": "'Mirza' with M read as ii."}
 {"lemma": "ikiasifikoi", "verdict": "ocr-artifact", "note": "'klasifiko' mangled by the PDF text layer of the ia-eowiki files."}
@@ -4519,7 +4519,7 @@
 {"lemma": "incensilo", "verdict": "lemma", "gloss": "censer, thurible"}
 {"lemma": "incognita", "verdict": "foreign", "note": "Latin, in \"terra incognita\"."}
 {"lemma": "indeed", "verdict": "foreign", "note": "English, pg-44668"}
-{"lemma": "index", "verdict": "fragment", "note": "URL path component 'index.php'; URL path component (index.php); English, pg-39840; English; URL path component; URL component from Wikipedia PDF footers; English word from the Fundamento's English gloss column / the English-language periodical text (pg-32314, pg-30991); English, plus index.php in URLs"}
+{"lemma": "index", "verdict": "foreign", "note": "English, plus index.php in URLs"}
 {"lemma": "indicates", "verdict": "foreign", "note": "English"}
 {"lemma": "indiferenteco", "verdict": "lemma", "gloss": "indifference"}
 {"lemma": "indiferentigi", "verdict": "inflection"}
@@ -4551,7 +4551,7 @@
 {"lemma": "influi", "verdict": "inflection"}
 {"lemma": "info", "verdict": "fragment", "note": "TLD of the URL e-novosti.info"}
 {"lemma": "informejo", "verdict": "inflection"}
-{"lemma": "informi", "verdict": "inflection", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of informi"}
+{"lemma": "informi", "verdict": "inflection", "note": "past passive participle of informi"}
 {"lemma": "informita", "verdict": "inflection", "note": "past passive participle of informi"}
 {"lemma": "informiĝi", "verdict": "inflection", "note": "past tense of informiĝi"}
 {"lemma": "informiĝis", "verdict": "inflection", "note": "past tense of informiĝi"}
@@ -4676,7 +4676,7 @@
 {"lemma": "invariabili", "verdict": "foreign", "note": "Latin, from the mock species name \"Crinolina invariabilis\"; the -s was wrongly stripped as a verb ending."}
 {"lemma": "investituro", "verdict": "lemma", "gloss": "investiture"}
 {"lemma": "invitaĵo", "verdict": "lemma", "gloss": "an invitation, an invitation card"}
-{"lemma": "inviti", "verdict": "inflection", "gloss": "invited", "note": "A cell of the Fundamento's own participle paradigm, not a word of the text.; Occurs only in the grammar-drill paradigm of pg-8224 (\"Li estas invitota. Li estis invitota...\")."}
+{"lemma": "inviti", "verdict": "inflection", "gloss": "invited", "note": "Occurs only in the grammar-drill paradigm of pg-8224 (\"Li estas invitota. Li estis invitota...\")."}
 {"lemma": "invitita", "verdict": "lemma", "gloss": "invited"}
 {"lemma": "invitito", "verdict": "lemma", "gloss": "invited guest"}
 {"lemma": "invitota", "verdict": "inflection", "note": "Occurs only in the grammar-drill paradigm of pg-8224 (\"Li estas invitota. Li estis invitota...\")."}
@@ -4684,7 +4684,7 @@
 {"lemma": "ioeapb", "verdict": "ocr-artifact", "note": "Latin-letter mis-OCR of Russian 'словарь'."}
 {"lemma": "iomete", "verdict": "lemma", "gloss": "a little, slightly"}
 {"lemma": "iomvorte", "verdict": "lemma", "gloss": "in a few words, briefly"}
-{"lemma": "ioĝantaro", "verdict": "ocr-artifact", "note": "OCR of loĝantaro (l read as i) in ia-eowiki-Afriko.; \"loĝantaro\"; l->i corruption throughout ia-eowiki-Srana_lingvo."}
+{"lemma": "ioĝantaro", "verdict": "ocr-artifact", "note": "\"loĝantaro\"; l->i corruption throughout ia-eowiki-Srana_lingvo."}
 {"lemma": "ipsilona", "verdict": "lemma", "gloss": "of the letter y, y-type (of a dialect)"}
 {"lemma": "iptio", "verdict": "fragment", "note": "Egiptio split as 'Eg iptio' by the PDF text layer"}
 {"lemma": "iq", "verdict": "fragment", "note": "Nabil chronicle (ia-LaHeroojDeLaNovaTagio...) OCR damage: leftover letters where the OCR dropped part of a Persian/Arabic name or word"}
@@ -4790,7 +4790,7 @@
 {"lemma": "jj", "verdict": "ocr-artifact", "note": "Coptic-script transliteration mangled by OCR in ia-eowiki-Kopta_lingvo-20200726.pdf.txt"}
 {"lemma": "jjjam", "verdict": "nonce", "note": "Stammering/comic spelling in the FeZ 1935 cabaret sketch, not a word."}
 {"lemma": "jjjes", "verdict": "nonce", "note": "Stammered spelling of 'jes' in the same sketch."}
-{"lemma": "jkiasifiko", "verdict": "ocr-artifact", "note": "\"klasifikoj\" in a PDF scrape where l reads as i.; OCR of 'klasifiko' in two eowiki PDF dumps."}
+{"lemma": "jkiasifiko", "verdict": "ocr-artifact", "note": "OCR of 'klasifiko' in two eowiki PDF dumps."}
 {"lemma": "jn", "verdict": "fragment", "note": "Quoted grammatical ending \"-jn\"."}
 {"lemma": "jo", "verdict": "fragment", "note": "scansion-split syllable in pg-51690; also Danish 'jo' quoted in pg-48900"}
 {"lemma": "jodelkanto", "verdict": "lemma", "gloss": "yodelling song"}
@@ -5008,7 +5008,7 @@
 {"lemma": "kaŭzanta", "verdict": "inflection", "note": "regular participle of kaŭzi"}
 {"lemma": "kaŭzante", "verdict": "inflection"}
 {"lemma": "kaŭzata", "verdict": "inflection"}
-{"lemma": "kaŭzi", "verdict": "inflection", "note": "past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past passive participle of kauxzi; past"}
+{"lemma": "kaŭzi", "verdict": "inflection", "note": "past passive participle of kauxzi"}
 {"lemma": "kaŭzita", "verdict": "inflection", "note": "past passive participle of kauxzi"}
 {"lemma": "kde", "verdict": "foreign", "note": "Czech, from the Czech-Esperanto textbook pg-24575."}
 {"lemma": "kdo", "verdict": "fragment", "note": "abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in Lanti's letters; abbreviation of kamarado (comrade), used in …"}
@@ -5148,7 +5148,7 @@
 {"lemma": "klozelo", "verdict": "proper-noun"}
 {"lemma": "klu", "verdict": "ocr-artifact", "note": "Misprint for 'kiu'."}
 {"lemma": "klubkunveno", "verdict": "lemma", "gloss": "club meeting"}
-{"lemma": "kludo", "verdict": "fragment", "note": "Line-start/line-end truncation of konkludo.; Tail of 'konkludo' broken across a line."}
+{"lemma": "kludo", "verdict": "fragment", "note": "Tail of 'konkludo' broken across a line."}
 {"lemma": "klumpfuss", "verdict": "foreign", "note": "German 'Klumpfuss', quoted in a list of names for club-foot."}
 {"lemma": "km", "verdict": "fragment", "note": "unit abbreviation, kilometro"}
 {"lemma": "knabaĉo", "verdict": "inflection"}
@@ -5226,7 +5226,7 @@
 {"lemma": "komintern", "verdict": "proper-noun", "note": "the Comintern"}
 {"lemma": "komipermjaka", "verdict": "proper-noun"}
 {"lemma": "komisaro", "verdict": "lemma", "gloss": "commissioner"}
-{"lemma": "komisii", "verdict": "inflection", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; regular participle of komisii"}
+{"lemma": "komisii", "verdict": "inflection", "note": "regular participle of komisii"}
 {"lemma": "komisiita", "verdict": "inflection", "note": "regular participle of komisii"}
 {"lemma": "komisiito", "verdict": "lemma", "gloss": "a commissioner, agent, person entrusted with a commission"}
 {"lemma": "komisiono", "verdict": "lemma", "gloss": "commission, committee"}
@@ -5405,7 +5405,7 @@
 {"lemma": "konstruata", "verdict": "inflection"}
 {"lemma": "konstruaĵo", "verdict": "lemma", "gloss": "building"}
 {"lemma": "konstruestro", "verdict": "lemma", "gloss": "master builder, building contractor"}
-{"lemma": "konstrui", "verdict": "inflection", "gloss": "built, constructed", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of konstrui; regular participle of konstrui; regular passive past participle of konstrui; regular passive participle of konstrui"}
+{"lemma": "konstrui", "verdict": "inflection", "gloss": "built, constructed", "note": "regular passive participle of konstrui"}
 {"lemma": "konstruigi", "verdict": "inflection"}
 {"lemma": "konstruita", "verdict": "inflection", "gloss": "built, constructed", "note": "regular passive participle of konstrui"}
 {"lemma": "konstruiĝi", "verdict": "inflection"}
@@ -5669,7 +5669,7 @@
 {"lemma": "kunhavi", "verdict": "lemma", "gloss": "to have with one, carry along"}
 {"lemma": "kuniai", "verdict": "ocr-artifact", "note": "Nabil chronicle (ia-LaHeroojDeLaNovaTagio...) OCR damage: 'kuniai' should be 'kuniĝi'"}
 {"lemma": "kuniganta", "verdict": "inflection", "note": "regular participle of kunigi"}
-{"lemma": "kunigi", "verdict": "inflection", "gloss": "to unite, join together", "note": "past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past passive participle of kunigi; past"}
+{"lemma": "kunigi", "verdict": "inflection", "gloss": "to unite, join together", "note": "past passive participle of kunigi"}
 {"lemma": "kunigita", "verdict": "inflection", "note": "past passive participle of kunigi"}
 {"lemma": "kuniri", "verdict": "lemma", "gloss": "to go along with, accompany"}
 {"lemma": "kuniĝi", "verdict": "inflection", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword"}
@@ -5690,7 +5690,7 @@
 {"lemma": "kunlaboranto", "verdict": "lemma", "gloss": "collaborator, co-worker"}
 {"lemma": "kunlabori", "verdict": "lemma", "gloss": "to collaborate, work together (kunlabori)", "note": "cited in past tense"}
 {"lemma": "kunlaboris", "verdict": "lemma", "gloss": "to collaborate, work together (kunlabori)", "note": "cited in past tense"}
-{"lemma": "kunligi", "verdict": "inflection", "gloss": "linked, bound together", "note": "passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle of kunligi; past participle of kunligi, to bind together, join; passive participle"}
+{"lemma": "kunligi", "verdict": "lemma", "gloss": "linked, bound together", "note": "past participle of kunligi, to bind together, join"}
 {"lemma": "kunligita", "verdict": "lemma", "gloss": "linked, bound together", "note": "past participle of kunligi, to bind together, join"}
 {"lemma": "kunligo", "verdict": "lemma", "gloss": "link, connection, combination"}
 {"lemma": "kunliĝi", "verdict": "ocr-artifact", "note": "kunligos misprinted as kunliĝos; the verb is transitive in both citations"}
@@ -5700,7 +5700,7 @@
 {"lemma": "kunludi", "verdict": "inflection", "note": "Active participle of kunludi."}
 {"lemma": "kunmanĝanto", "verdict": "lemma", "gloss": "fellow diner, table companion"}
 {"lemma": "kunmarŝanto", "verdict": "lemma", "gloss": "fellow walker, marching companion"}
-{"lemma": "kunmeti", "verdict": "inflection", "gloss": "to put together, assemble", "note": "past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past passive participle of kunmeti; past passive participle of kunmeti (kun + meti); past"}
+{"lemma": "kunmeti", "verdict": "inflection", "gloss": "to put together, assemble", "note": "past passive participle of kunmeti (kun + meti)"}
 {"lemma": "kunmetis", "verdict": "lemma", "gloss": "put together, composed", "note": "past tense of kunmeti"}
 {"lemma": "kunmetita", "verdict": "inflection", "note": "past passive participle of kunmeti (kun + meti)"}
 {"lemma": "kunmiksi", "verdict": "lemma", "gloss": "mixed together, blended", "note": "passive participle of kunmiksi (kun+miksi)"}
@@ -5747,7 +5747,7 @@
 {"lemma": "kunvojaĝi", "verdict": "lemma", "gloss": "to travel together with"}
 {"lemma": "kunvoki", "verdict": "inflection", "note": "past tense of kunvoki"}
 {"lemma": "kunvokis", "verdict": "inflection", "note": "past tense of kunvoki"}
-{"lemma": "kunvolvi", "verdict": "inflection", "gloss": "to roll up, fold up", "note": "Passive participle of kunvolvi, already an entry.; Passive participle of kunvolvi.; passive participle of kunvolvi, already an entry"}
+{"lemma": "kunvolvi", "verdict": "inflection", "gloss": "to roll up, fold up", "note": "passive participle of kunvolvi, already an entry"}
 {"lemma": "kunvolvita", "verdict": "inflection", "note": "passive participle of kunvolvi, already an entry"}
 {"lemma": "kunwar", "verdict": "proper-noun", "note": "Indian princely title used as part of a name"}
 {"lemma": "kunŝerci", "verdict": "lemma", "gloss": "to join in the joking, quip back"}
@@ -5952,7 +5952,7 @@
 {"lemma": "latuna", "verdict": "lemma", "gloss": "brass, made of brass"}
 {"lemma": "laudami", "verdict": "foreign", "note": "Latin \"laudamus\" (Te Deum); the -s was wrongly stripped as a verb ending."}
 {"lemma": "lavado", "verdict": "inflection"}
-{"lemma": "lavi", "verdict": "inflection", "note": "A cell of the Fundamento's own participle paradigm, not a word of the text.; Occurs only in a grammar-drill paradigm in pg-8224 (\"Vi estas lavita. Vi estis lavita...\")."}
+{"lemma": "lavi", "verdict": "inflection", "note": "Occurs only in a grammar-drill paradigm in pg-8224 (\"Vi estas lavita. Vi estis lavita...\")."}
 {"lemma": "lavioleto", "verdict": "proper-noun", "note": "servant La Violette in Don Juan"}
 {"lemma": "lavita", "verdict": "inflection", "note": "Occurs only in a grammar-drill paradigm in pg-8224 (\"Vi estas lavita. Vi estis lavita...\")."}
 {"lemma": "lavogel", "verdict": "foreign", "note": "Volapük forms quoted for comparison in pg-24575."}
@@ -6116,7 +6116,7 @@
 {"lemma": "levadi", "verdict": "lemma", "gloss": "to keep raising, to raise repeatedly"}
 {"lemma": "levante", "verdict": "lemma", "gloss": "raising, lifting"}
 {"lemma": "leveti", "verdict": "inflection"}
-{"lemma": "levi", "verdict": "inflection", "note": "past passive participle of levi; regular participle of levi; regular passive participle of levi", "gloss": "raised, lifted"}
+{"lemma": "levi", "verdict": "inflection", "gloss": "raised, lifted", "note": "regular passive participle of levi"}
 {"lemma": "levinte", "verdict": "inflection", "note": "adverbial past participle of levi"}
 {"lemma": "levita", "verdict": "inflection", "gloss": "raised, lifted", "note": "regular passive participle of levi"}
 {"lemma": "leviĝadi", "verdict": "lemma", "gloss": "to keep rising, get up habitually"}
@@ -6326,7 +6326,7 @@
 {"lemma": "lumbricoides", "verdict": "foreign", "note": "Latin binomial or Latin word in a Kabe definition; the miner strips the Latin ending as if Esperanto (e.g. arvensis->arvensi, achoryon->achoryo)."}
 {"lemma": "lumi", "verdict": "inflection"}
 {"lemma": "lumigante", "verdict": "inflection"}
-{"lemma": "lumigi", "verdict": "inflection", "gloss": "lit up, illuminated", "note": "past passive participle of lumigi; regular participle of lumigi; regular passive participle of lumigi"}
+{"lemma": "lumigi", "verdict": "inflection", "gloss": "lit up, illuminated", "note": "regular passive participle of lumigi"}
 {"lemma": "lumigita", "verdict": "inflection", "gloss": "lit up, illuminated", "note": "regular passive participle of lumigi"}
 {"lemma": "lumita", "verdict": "inflection"}
 {"lemma": "lumradio", "verdict": "lemma", "gloss": "ray of light"}
@@ -6374,7 +6374,7 @@
 {"lemma": "mahometana", "verdict": "lemma", "gloss": "Muslim, Mohammedan"}
 {"lemma": "mai", "verdict": "foreign", "note": "French; French; French"}
 {"lemma": "maiforteco", "verdict": "ocr-artifact", "note": "for \"malforteco\"."}
-{"lemma": "mais", "verdict": "foreign", "note": "French; French; French"}
+{"lemma": "mais", "verdict": "foreign", "note": "French"}
 {"lemma": "majesteco", "verdict": "inflection"}
 {"lemma": "majlaĥ", "verdict": "proper-noun", "note": "character name"}
 {"lemma": "makabra", "verdict": "lemma", "gloss": "macabre, ghastly"}
@@ -6417,7 +6417,7 @@
 {"lemma": "malaojiga", "verdict": "ocr-artifact", "note": "Scan of malĝojiga."}
 {"lemma": "malaojigi", "verdict": "ocr-artifact", "note": "Scan of malĝojigi."}
 {"lemma": "malaojo", "verdict": "ocr-artifact", "note": "Scan of malĝojo."}
-{"lemma": "malaperi", "verdict": "inflection", "note": "participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle of malaperi, not a distinct headword; participle …"}
+{"lemma": "malaperi", "verdict": "inflection", "note": "participle of malaperi, not a distinct headword"}
 {"lemma": "malaperigi", "verdict": "inflection"}
 {"lemma": "malaperinta", "verdict": "inflection", "note": "participle of malaperi, not a distinct headword"}
 {"lemma": "malapobri", "verdict": "ocr-artifact", "note": "malaprobis with letters transposed"}
@@ -6561,7 +6561,7 @@
 {"lemma": "mallerle", "verdict": "ocr-artifact", "note": "for \"mallerte\"."}
 {"lemma": "mallertulo", "verdict": "inflection"}
 {"lemma": "mallevante", "verdict": "inflection"}
-{"lemma": "mallevi", "verdict": "inflection", "gloss": "to lower, cast down (mallevi)", "note": "past passive participle of mallevi; regular passive participle of mallevi"}
+{"lemma": "mallevi", "verdict": "inflection", "gloss": "to lower, cast down (mallevi)", "note": "regular passive participle of mallevi"}
 {"lemma": "mallevinte", "verdict": "inflection"}
 {"lemma": "mallevis", "verdict": "lemma", "gloss": "to lower, cast down (mallevi)", "note": "cited in past tense"}
 {"lemma": "mallevita", "verdict": "inflection", "note": "regular passive participle of mallevi"}
@@ -6963,7 +6963,7 @@
 {"lemma": "metamorfozo", "verdict": "lemma", "gloss": "metamorphosis"}
 {"lemma": "metante", "verdict": "inflection", "note": "adverbial present participle of meti"}
 {"lemma": "metata", "verdict": "inflection", "note": "regular participle of meti"}
-{"lemma": "meti", "verdict": "inflection", "note": "past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past passive participle of meti; past …"}
+{"lemma": "meti", "verdict": "inflection", "note": "past passive participle of meti"}
 {"lemma": "metinta", "verdict": "inflection"}
 {"lemma": "metinte", "verdict": "inflection"}
 {"lemma": "metita", "verdict": "inflection", "note": "past passive participle of meti"}
@@ -7162,7 +7162,7 @@
 {"lemma": "montranta", "verdict": "inflection", "note": "present participle of montri"}
 {"lemma": "montrante", "verdict": "lemma", "gloss": "showing, pointing out", "note": "present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri; present adverbial participle of montri;"}
 {"lemma": "montrata", "verdict": "inflection"}
-{"lemma": "montri", "verdict": "inflection", "note": "past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past passive participle of montri; past"}
+{"lemma": "montri", "verdict": "inflection", "note": "past passive participle of montri"}
 {"lemma": "montrinta", "verdict": "inflection"}
 {"lemma": "montrita", "verdict": "inflection", "note": "past passive participle of montri"}
 {"lemma": "montriĝas", "verdict": "inflection", "note": "present tense of montriĝi"}
@@ -7840,7 +7840,7 @@
 {"lemma": "organizanto", "verdict": "inflection"}
 {"lemma": "organizatoro", "verdict": "lemma", "gloss": "organiser"}
 {"lemma": "organizaĵo", "verdict": "lemma", "gloss": "organization"}
-{"lemma": "organizi", "verdict": "inflection", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; regular participle of organizi"}
+{"lemma": "organizi", "verdict": "inflection", "note": "regular participle of organizi"}
 {"lemma": "organizita", "verdict": "inflection", "note": "regular participle of organizi"}
 {"lemma": "organiziĝi", "verdict": "inflection"}
 {"lemma": "organizo", "verdict": "lemma", "gloss": "organization"}
@@ -7867,7 +7867,7 @@
 {"lemma": "orminejo", "verdict": "inflection"}
 {"lemma": "orministo", "verdict": "lemma", "gloss": "gold miner, prospector"}
 {"lemma": "ormonero", "verdict": "lemma", "gloss": "gold coin"}
-{"lemma": "ornami", "verdict": "inflection", "gloss": "decorated, ornate", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of ornami; regular passive past participle of ornami; regular passive participle of ornami"}
+{"lemma": "ornami", "verdict": "inflection", "gloss": "decorated, ornate", "note": "regular passive participle of ornami"}
 {"lemma": "ornamita", "verdict": "inflection", "gloss": "decorated, ornate", "note": "regular passive participle of ornami"}
 {"lemma": "ornato", "verdict": "lemma", "gloss": "vestment, ceremonial robe", "note": "pg-8224 \"Briliantoj en pastraj ornatoj\"."}
 {"lemma": "orornamita", "verdict": "inflection"}
@@ -8045,7 +8045,7 @@
 {"lemma": "paŝtistino", "verdict": "lemma", "gloss": "shepherdess"}
 {"lemma": "paŝtisto", "verdict": "lemma", "gloss": "shepherd"}
 {"lemma": "paŭlo", "verdict": "proper-noun", "note": "Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul; Paul;"}
-{"lemma": "pdf", "verdict": "fragment", "note": "file extension in reference URLs; file-extension in URLs; file extension in URL footnotes"}
+{"lemma": "pdf", "verdict": "fragment", "note": "file extension in URL footnotes"}
 {"lemma": "pe", "verdict": "foreign", "note": "Romanian line quoted in wsdump-Grabowski_El_Parnaso_de_Popoloj_1913.txt slipped past the language filter."}
 {"lemma": "peb", "verdict": "foreign", "note": "Hypothetical Volapuk-style monosyllable in Zamenhof's list."}
 {"lemma": "peceto", "verdict": "lemma", "gloss": "little piece, bit, scrap"}
@@ -8089,7 +8089,7 @@
 {"lemma": "pentofari", "verdict": "inflection", "gloss": "to do penance, atone", "note": "present active participle of pentofari, already in DICT"}
 {"lemma": "pentofaro", "verdict": "lemma", "gloss": "penance, act of atonement"}
 {"lemma": "pentraĵo", "verdict": "lemma", "gloss": "painting"}
-{"lemma": "pentri", "verdict": "inflection", "note": "participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a distinct headword; participle of pentri, not a …"}
+{"lemma": "pentri", "verdict": "inflection", "note": "participle of pentri, not a distinct headword"}
 {"lemma": "pentristino", "verdict": "inflection"}
 {"lemma": "pentrita", "verdict": "inflection", "note": "participle of pentri, not a distinct headword"}
 {"lemma": "pentriĝi", "verdict": "inflection"}
@@ -8185,7 +8185,7 @@
 {"lemma": "pha", "verdict": "foreign"}
 {"lemma": "philosophical", "verdict": "foreign", "note": "English, in the quoted title of Wilkins's Essay"}
 {"lemma": "phonetic", "verdict": "foreign", "note": "English; pg-29403"}
-{"lemma": "php", "verdict": "fragment", "note": "file extension in MediaWiki URLs; file extension in URLs; URL component from Wikipedia citations; URL file extension; URL component from Wikipedia reference lists; file extension in URL footnotes; index.php in cited URLs"}
+{"lemma": "php", "verdict": "fragment", "note": "index.php in cited URLs"}
 {"lemma": "phrase", "verdict": "foreign", "note": "English; pg-49232"}
 {"lemma": "phrases", "verdict": "foreign", "note": "English; pg-29403"}
 {"lemma": "piacula", "verdict": "foreign", "note": "Latin realia or binomial epithet quoted in an Esperanto line"}
@@ -8266,7 +8266,7 @@
 {"lemma": "plendinda", "verdict": "lemma", "gloss": "pitiable, deplorable"}
 {"lemma": "plenforme", "verdict": "lemma", "gloss": "in full form, completely"}
 {"lemma": "plenigante", "verdict": "inflection"}
-{"lemma": "plenigi", "verdict": "inflection", "gloss": "filled, full", "note": "past passive participle of plenigi; regular participle of plenigi"}
+{"lemma": "plenigi", "verdict": "inflection", "gloss": "filled, full", "note": "regular participle of plenigi"}
 {"lemma": "plenigis", "verdict": "inflection", "gloss": "filled", "note": "past tense of plenigi, to fill"}
 {"lemma": "plenigita", "verdict": "inflection", "gloss": "filled, full", "note": "regular participle of plenigi"}
 {"lemma": "pleniĝi", "verdict": "lemma", "gloss": "to fill up, become full"}
@@ -8484,7 +8484,7 @@
 {"lemma": "postkongresa", "verdict": "lemma", "gloss": "post-congress"}
 {"lemma": "postkuri", "verdict": "lemma", "gloss": "to run after, chase"}
 {"lemma": "postlasante", "verdict": "inflection", "note": "Present adverbial participle of postlasi, which is already in entries.jsonl."}
-{"lemma": "postlasi", "verdict": "lemma", "gloss": "left behind, posthumous", "note": "past tense of postlasi, to leave behind"}
+{"lemma": "postlasi", "verdict": "inflection", "gloss": "left behind, posthumous", "note": "past tense of postlasi, to leave behind"}
 {"lemma": "postlasis", "verdict": "inflection", "note": "past tense of postlasi, to leave behind"}
 {"lemma": "postlasita", "verdict": "lemma", "gloss": "left behind, posthumous"}
 {"lemma": "postmeznokto", "verdict": "inflection"}
@@ -8511,7 +8511,7 @@
 {"lemma": "pov's", "verdict": "fragment", "note": "elided pov's = povas, Rossetti's rendering of clipped market speech"}
 {"lemma": "povanta", "verdict": "inflection"}
 {"lemma": "povante", "verdict": "inflection", "note": "adverbial present participle of povi"}
-{"lemma": "povi", "verdict": "inflection", "note": "past active participle of povi; regular participle of povi"}
+{"lemma": "povi", "verdict": "inflection", "note": "regular participle of povi"}
 {"lemma": "povinta", "verdict": "inflection", "note": "regular participle of povi"}
 {"lemma": "povinti", "verdict": "inflection", "note": "artefact of the contracted compound tense povintus (= estus povinta) of povi"}
 {"lemma": "povosciado", "verdict": "lemma", "gloss": "skill, technical know-how, craftsmanship"}
@@ -8576,7 +8576,7 @@
 {"lemma": "premiteco", "verdict": "inflection"}
 {"lemma": "prenadi", "verdict": "inflection"}
 {"lemma": "prenante", "verdict": "inflection", "note": "adverbial present participle of preni"}
-{"lemma": "preni", "verdict": "inflection", "note": "past passive participle of preni; regular participle of preni"}
+{"lemma": "preni", "verdict": "inflection", "note": "regular participle of preni"}
 {"lemma": "preninta", "verdict": "inflection"}
 {"lemma": "preninte", "verdict": "inflection", "note": "adverbial past participle of preni"}
 {"lemma": "prenita", "verdict": "inflection", "note": "regular participle of preni"}
@@ -8636,7 +8636,7 @@
 {"lemma": "prezentanta", "verdict": "inflection", "note": "present participle of prezenti"}
 {"lemma": "prezentante", "verdict": "inflection", "note": "adverbial present participle of prezenti"}
 {"lemma": "prezentata", "verdict": "inflection", "note": "present passive participle of prezenti"}
-{"lemma": "prezenti", "verdict": "inflection", "note": "past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past passive participle of prezenti; past …"}
+{"lemma": "prezenti", "verdict": "inflection", "note": "past passive participle of prezenti"}
 {"lemma": "prezentigi", "verdict": "inflection"}
 {"lemma": "prezentita", "verdict": "inflection", "note": "past passive participle of prezenti"}
 {"lemma": "prezentiĝi", "verdict": "lemma", "gloss": "to present itself, appear, arise"}
@@ -8837,7 +8837,7 @@
 {"lemma": "provi", "verdict": "inflection"}
 {"lemma": "providenco", "verdict": "lemma", "gloss": "providence"}
 {"lemma": "provita", "verdict": "inflection"}
-{"lemma": "provizi", "verdict": "inflection", "note": "past passive participle of provizi; regular participle of provizi"}
+{"lemma": "provizi", "verdict": "inflection", "note": "regular participle of provizi"}
 {"lemma": "provizita", "verdict": "inflection", "note": "regular participle of provizi"}
 {"lemma": "provizora", "verdict": "lemma", "gloss": "provisional, temporary"}
 {"lemma": "provizore", "verdict": "lemma", "gloss": "provisionally, temporarily"}
@@ -8870,7 +8870,7 @@
 {"lemma": "pt", "verdict": "fragment", "note": "Chemical symbol in Kabe, not a word."}
 {"lemma": "pu", "verdict": "uncertain", "note": "Both an exclamation in pg-23093 and a bibliographic sigil in pg-27593; neither settles a headword.; Coptic-script transliteration mangled by OCR in ia-eowiki-Kopta_lingvo-20200726.pdf.txt"}
 {"lemma": "publikigata", "verdict": "inflection"}
-{"lemma": "publikigi", "verdict": "inflection", "gloss": "to publish, make public", "note": "past passive participle of publikigi; regular participle of publikigi"}
+{"lemma": "publikigi", "verdict": "inflection", "gloss": "to publish, make public", "note": "regular participle of publikigi"}
 {"lemma": "publikigis", "verdict": "inflection", "note": "past tense of publikigi"}
 {"lemma": "publikigita", "verdict": "inflection", "note": "regular participle of publikigi"}
 {"lemma": "published", "verdict": "foreign", "note": "English, pg-39840; English; English word from the Fundamento's English gloss column / English-language periodical text (pg-32314, pg-30991, pg-44667)"}
@@ -9201,7 +9201,7 @@
 {"lemma": "restariĝi", "verdict": "inflection"}
 {"lemma": "restasvia", "verdict": "ocr-artifact", "note": "Lost word space: restas via."}
 {"lemma": "restaĵo", "verdict": "lemma", "gloss": "remainder, remains, rest"}
-{"lemma": "restaŭri", "verdict": "lemma", "gloss": "to restore (a building, a painting, a fossil reconstruction)"}
+{"lemma": "restaŭri", "verdict": "inflection", "gloss": "to restore (a building, a painting, a fossil reconstruction)", "note": "regular participle of restaŭri, which is itself absent from entries.jsonl"}
 {"lemma": "restaŭrita", "verdict": "inflection", "note": "regular participle of restaŭri, which is itself absent from entries.jsonl"}
 {"lemma": "resti", "verdict": "inflection"}
 {"lemma": "restinta", "verdict": "inflection", "note": "past active participle of resti"}
@@ -9574,6 +9574,7 @@
 {"lemma": "samtribano", "verdict": "lemma", "gloss": "fellow tribesman"}
 {"lemma": "sand", "verdict": "foreign", "note": "the novelist George Sand in Kabe; also English 'sand' in the Fundamento glossary"}
 {"lemma": "saneco", "verdict": "inflection", "note": "Occurs inside a derivation drill list in pg-8224 (\"Sano, sana, sane, sani, sanu, saniga, saneco, sanilo...\")."}
+{"lemma": "sangmakuli", "verdict": "lemma", "gloss": "bloodstained"}
 {"lemma": "sangmakulita", "verdict": "lemma", "gloss": "bloodstained"}
 {"lemma": "sangokovri", "verdict": "lemma", "gloss": "blood-covered"}
 {"lemma": "sangokovrita", "verdict": "lemma", "gloss": "blood-covered"}
@@ -9586,7 +9587,7 @@
 {"lemma": "sangruĝa", "verdict": "lemma", "gloss": "blood-red"}
 {"lemma": "sanigejo", "verdict": "lemma", "gloss": "sanatorium, health resort"}
 {"lemma": "saniĝi", "verdict": "inflection", "note": "Occurs inside the derivation drill list in pg-8224 (\"Sano, sana, sane, sani...\")."}
-{"lemma": "sankcii", "verdict": "inflection", "note": "passive participle of sankcii; passive participle of sankcii"}
+{"lemma": "sankcii", "verdict": "inflection", "note": "passive participle of sankcii"}
 {"lemma": "sankciita", "verdict": "inflection", "note": "passive participle of sankcii"}
 {"lemma": "sankcio", "verdict": "lemma", "gloss": "sanction, official approval"}
 {"lemma": "sanktega", "verdict": "inflection"}
@@ -9608,7 +9609,7 @@
 {"lemma": "saturi", "verdict": "inflection", "note": "past passive participle of saturi"}
 {"lemma": "saturita", "verdict": "inflection", "note": "past passive participle of saturi"}
 {"lemma": "savanto", "verdict": "inflection"}
-{"lemma": "savi", "verdict": "inflection", "gloss": "saved, rescued", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of savi; regular participle of savi"}
+{"lemma": "savi", "verdict": "inflection", "gloss": "saved, rescued", "note": "regular participle of savi"}
 {"lemma": "savinako", "verdict": "proper-noun"}
 {"lemma": "savinto", "verdict": "lemma", "gloss": "saviour, rescuer"}
 {"lemma": "savita", "verdict": "inflection", "gloss": "saved, rescued", "note": "regular participle of savi"}
@@ -9974,7 +9975,7 @@
 {"lemma": "sentumo", "verdict": "lemma", "gloss": "a sense, a faculty of perception"}
 {"lemma": "senutila", "verdict": "lemma", "gloss": "useless"}
 {"lemma": "senvalora", "verdict": "lemma", "gloss": "worthless"}
-{"lemma": "senvesti", "verdict": "inflection", "note": "Participle of senvesti/senvestigi, already an entry.; Passive participle of senvesti (root vest-); the base verb itself is missing from DICT/entries.jsonl."}
+{"lemma": "senvesti", "verdict": "inflection", "note": "Passive participle of senvesti (root vest-); the base verb itself is missing from DICT/entries.jsonl."}
 {"lemma": "senvestita", "verdict": "inflection", "note": "Passive participle of senvesti (root vest-); the base verb itself is missing from DICT/entries.jsonl."}
 {"lemma": "senviolenti", "verdict": "nonce", "note": "Built on the neologism \"violento\"; this text only."}
 {"lemma": "senviva", "verdict": "lemma", "gloss": "lifeless"}
@@ -10355,7 +10356,7 @@
 {"lemma": "staranta", "verdict": "lemma", "gloss": "standing", "note": "present active participle of stari"}
 {"lemma": "starante", "verdict": "inflection", "note": "adverbial present participle of stari"}
 {"lemma": "stari", "verdict": "inflection", "note": "adverbial participle of stari; regular participle of stari; present adverbial participle of stari; adverbial present participle of stari"}
-{"lemma": "starigi", "verdict": "inflection", "gloss": "to set up, erect, establish", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of starigi; regular participle of starigi"}
+{"lemma": "starigi", "verdict": "inflection", "gloss": "to set up, erect, establish", "note": "regular participle of starigi"}
 {"lemma": "starigis", "verdict": "inflection", "note": "finite tense form of starigi"}
 {"lemma": "starigita", "verdict": "inflection", "note": "regular participle of starigi"}
 {"lemma": "stariĝi", "verdict": "lemma", "gloss": "to stand up, take a stand (stariĝi)", "note": "cited in past tense"}
@@ -10405,7 +10406,7 @@
 {"lemma": "stremlenija", "verdict": "foreign", "note": "Russian stremlenija, quoted in a discussion of a printing error."}
 {"lemma": "streta", "verdict": "lemma", "gloss": "narrow"}
 {"lemma": "streĉado", "verdict": "inflection"}
-{"lemma": "streĉi", "verdict": "inflection", "note": "regular participle of streĉi; past passive participle of streĉi (taut, tense); regular passive participle of streĉi"}
+{"lemma": "streĉi", "verdict": "inflection", "note": "regular passive participle of streĉi"}
 {"lemma": "streĉita", "verdict": "inflection", "note": "regular passive participle of streĉi"}
 {"lemma": "strigli", "verdict": "lemma", "gloss": "to curry, groom (a horse) with a currycomb"}
 {"lemma": "strigovitro", "verdict": "uncertain", "note": "nonce compound 'owl glasses' for thick spectacles, only in pg-69123"}
@@ -10465,7 +10466,7 @@
 {"lemma": "sublevis", "verdict": "inflection", "note": "past tense of sublevi, to lift, raise"}
 {"lemma": "sublevita", "verdict": "inflection", "note": "past participle of sublevi, to lift, raise up"}
 {"lemma": "subleviĝi", "verdict": "lemma", "gloss": "to rise slightly, heave"}
-{"lemma": "submeti", "verdict": "inflection", "gloss": "to submit, subject, place under", "note": "past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential'; past participle of submeti; here 'submissive, deferential';"}
+{"lemma": "submeti", "verdict": "inflection", "gloss": "to submit, subject, place under", "note": "past participle of submeti; here 'submissive, deferential'"}
 {"lemma": "submetita", "verdict": "inflection", "note": "past participle of submeti; here 'submissive, deferential'"}
 {"lemma": "submetiĝo", "verdict": "lemma", "gloss": "submission, submissiveness"}
 {"lemma": "subnaĝi", "verdict": "lemma", "gloss": "to swim under, dive"}
@@ -10583,7 +10584,7 @@
 {"lemma": "supervestaĵo", "verdict": "lemma", "gloss": "an outer garment, a wrap or overcoat"}
 {"lemma": "supervivi", "verdict": "lemma", "gloss": "to survive, outlive"}
 {"lemma": "superĵeti", "verdict": "lemma", "gloss": "to shower, heap over"}
-{"lemma": "superŝuti", "verdict": "inflection", "gloss": "to shower with, heap upon", "note": "past passive participle of superŝuti (to shower/heap upon); past passive participle of superŝuti, accepted as a lemma this round"}
+{"lemma": "superŝuti", "verdict": "inflection", "gloss": "to shower with, heap upon", "note": "past passive participle of superŝuti, accepted as a lemma this round"}
 {"lemma": "superŝutita", "verdict": "inflection", "note": "past passive participle of superŝuti, accepted as a lemma this round"}
 {"lemma": "supozante", "verdict": "inflection"}
 {"lemma": "supozata", "verdict": "inflection"}
@@ -10609,7 +10610,7 @@
 {"lemma": "suprensalti", "verdict": "inflection", "gloss": "to jump up, spring to one's feet", "note": "present adverbial participle of suprensalti, to leap up; a stage direction"}
 {"lemma": "suprensendi", "verdict": "lemma", "gloss": "to send up"}
 {"lemma": "suprenstari", "verdict": "lemma", "gloss": "to stick up, stand upright, protrude"}
-{"lemma": "suprentiri", "verdict": "lemma", "gloss": "drawn up, pulled up", "note": "finite verb form of suprentiri"}
+{"lemma": "suprentiri", "verdict": "inflection", "gloss": "drawn up, pulled up", "note": "finite verb form of suprentiri"}
 {"lemma": "suprentiris", "verdict": "inflection", "note": "finite verb form of suprentiri"}
 {"lemma": "suprentirita", "verdict": "lemma", "gloss": "drawn up, pulled up"}
 {"lemma": "suprenturni", "verdict": "lemma", "gloss": "upturned, turned upward"}
@@ -10646,7 +10647,7 @@
 {"lemma": "surmara", "verdict": "lemma", "gloss": "maritime, sea- (attributive)"}
 {"lemma": "surmare", "verdict": "lemma", "gloss": "at sea"}
 {"lemma": "surmaro", "verdict": "lemma", "gloss": "the sea as a place to go (surmaron: to sea)", "note": "Krafft's Robinsono uses surmaron where modern usage has surmaren"}
-{"lemma": "surmeti", "verdict": "inflection", "gloss": "to put on (clothing)", "note": "passive participle of surmeti; passive participle of surmeti; passive participle of surmeti; passive participle of surmeti"}
+{"lemma": "surmeti", "verdict": "inflection", "gloss": "to put on (clothing)", "note": "passive participle of surmeti"}
 {"lemma": "surmetis", "verdict": "inflection", "note": "past tense of surmeti (sur+met)"}
 {"lemma": "surmetita", "verdict": "inflection", "note": "passive participle of surmeti"}
 {"lemma": "surneĝe", "verdict": "lemma", "gloss": "on the snow"}
@@ -10657,7 +10658,7 @@
 {"lemma": "surporti", "verdict": "lemma", "gloss": "to wear, to have on"}
 {"lemma": "surpreni", "verdict": "inflection", "gloss": "to put on (clothing), take upon oneself", "note": "Already present in DICT/entries.jsonl."}
 {"lemma": "surprizata", "verdict": "inflection"}
-{"lemma": "surprizi", "verdict": "inflection", "note": "adverbial past passive participle of surprizi; past passive adverbial participle of surprizi"}
+{"lemma": "surprizi", "verdict": "inflection", "note": "past passive adverbial participle of surprizi"}
 {"lemma": "surprizita", "verdict": "inflection", "note": "participle of surprizi, not a distinct headword"}
 {"lemma": "surprizite", "verdict": "inflection", "note": "past passive adverbial participle of surprizi"}
 {"lemma": "surprovi", "verdict": "lemma", "gloss": "to try on (a garment)"}
@@ -10769,7 +10770,7 @@
 {"lemma": "tamburo", "verdict": "inflection", "note": "Already a headword in DICT/entries.jsonl (\"tamburo\", drum) — a duplicate leaked past the filter."}
 {"lemma": "tandorazo", "verdict": "nonce", "note": "\"sea tandor\", same invented fauna as tandoro."}
 {"lemma": "tandoro", "verdict": "nonce", "note": "Burroughs' invented Pellucidar beast, only in the pg-20802 translation."}
-{"lemma": "tanta", "verdict": "fragment", "note": "The tail of a participle; the citation line starts mid-word.; second half of 'konsis-tanta', broken across a line in the wsdump Quo vadis and never rejoined"}
+{"lemma": "tanta", "verdict": "fragment", "note": "second half of 'konsis-tanta', broken across a line in the wsdump Quo vadis and never rejoined"}
 {"lemma": "tanto", "verdict": "foreign", "note": "Italian, first line of a Dante sonnet quoted by Grabowski"}
 {"lemma": "tarago", "verdict": "uncertain", "note": "Invented beast name (Burroughs' tarag) in pg-20802, not general vocabulary."}
 {"lemma": "tarazat", "verdict": "proper-noun", "note": "Tarazat, the title of a Bahai tablet."}
@@ -11145,7 +11146,7 @@
 {"lemma": "trapiki", "verdict": "inflection", "note": "past tense of trapiki"}
 {"lemma": "trapikis", "verdict": "inflection", "note": "past tense of trapiki"}
 {"lemma": "trapikita", "verdict": "inflection"}
-{"lemma": "traplekti", "verdict": "inflection", "note": "Past passive participle of traplekti, already in entries.jsonl.; participle of traplekti, already in entries.jsonl"}
+{"lemma": "traplekti", "verdict": "inflection", "note": "participle of traplekti, already in entries.jsonl"}
 {"lemma": "traplektita", "verdict": "inflection", "note": "participle of traplekti, already in entries.jsonl"}
 {"lemma": "trapremi", "verdict": "lemma", "gloss": "to squeeze through, force through"}
 {"lemma": "trarajdi", "verdict": "lemma", "gloss": "to ride through, ride across"}
@@ -11161,6 +11162,7 @@
 {"lemma": "trasuferi", "verdict": "lemma", "gloss": "to suffer through, endure to the end"}
 {"lemma": "tratata", "verdict": "nonce", "note": "Imitation of military music."}
 {"lemma": "tratempe", "verdict": "lemma", "gloss": "through time, throughout time"}
+{"lemma": "trati", "verdict": "nonce", "note": "Imitation of military music."}
 {"lemma": "trato", "verdict": "lemma", "gloss": "draft, bill of exchange payable by a third party"}
 {"lemma": "tratranĉi", "verdict": "lemma", "gloss": "cut through, slashed"}
 {"lemma": "tratranĉita", "verdict": "lemma", "gloss": "cut through, slashed"}
@@ -11555,13 +11557,13 @@
 {"lemma": "venenita", "verdict": "inflection"}
 {"lemma": "venezia", "verdict": "proper-noun", "note": "Italian-spelled adjective for Venice (standard Esperanto: venecia)."}
 {"lemma": "vengo", "verdict": "ocr-artifact", "note": "venĝo with the diacritic lost; the second citation is unrelated Italian 'io vengo'"}
-{"lemma": "veni", "verdict": "inflection", "note": "past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active participle adverb of veni; past active …"}
+{"lemma": "veni", "verdict": "inflection", "note": "past active participle adverb of veni"}
 {"lemma": "venigi", "verdict": "lemma", "gloss": "to summon, send for"}
 {"lemma": "veninta", "verdict": "inflection", "note": "regular past active participle of veni"}
 {"lemma": "veninte", "verdict": "inflection", "note": "past active participle adverb of veni"}
 {"lemma": "venintino", "verdict": "inflection"}
 {"lemma": "veninto", "verdict": "inflection"}
-{"lemma": "venki", "verdict": "inflection", "gloss": "defeated, vanquished", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of venki; regular participle of venki"}
+{"lemma": "venki", "verdict": "inflection", "gloss": "defeated, vanquished", "note": "past passive participle of venki"}
 {"lemma": "venkita", "verdict": "inflection", "gloss": "defeated, vanquished", "note": "past passive participle of venki"}
 {"lemma": "venkito", "verdict": "inflection"}
 {"lemma": "venonta", "verdict": "lemma", "gloss": "coming, next", "note": "future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next'; future active participle of veni; 'coming, next';"}
@@ -11859,7 +11861,7 @@
 {"lemma": "wie", "verdict": "foreign", "note": "German"}
 {"lemma": "wieder", "verdict": "foreign", "note": "German, pg-52556"}
 {"lemma": "wieviel", "verdict": "foreign", "note": "German 'how much', pg-52556"}
-{"lemma": "wikipedia", "verdict": "proper-noun", "note": "Wikipedia, in page furniture of the archived eowiki PDFs; site name in the header/footer boilerplate of the ia-eowiki PDF scrapes; masthead of the archived eo-Wikipedia PDFs; Wikipedia; site name in the scanned ia-eowiki PDF headers; masthead of the archived Wikipedia PDFs; the online encyclopaedia; masthead text in the scanned eo-Wikipedia PDFs; site name in the ia-eowiki PDF dumps"}
+{"lemma": "wikipedia", "verdict": "proper-noun", "note": "site name in the ia-eowiki PDF dumps"}
 {"lemma": "wild", "verdict": "foreign", "note": "English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; English, Universala Vortaro glosses; …"}
 {"lemma": "will", "verdict": "foreign", "note": "English; pg-37977 'The Esperantist' carries long English-language editorial/minutes sections; English modal / German 'will'; bilingual source text; English, pg-39840 bilingual magazine; English; German verb 'wants', pg-52556; English/German 'will'; German sentences in ia-dlibra.kul.pl.49099; given name Will (Will Ŝannon) in pg-32480; also English auxiliary in pg-37643"}
 {"lemma": "willem", "verdict": "proper-noun"}
@@ -12240,7 +12242,7 @@
 {"lemma": "ĵetdisketo", "verdict": "lemma", "gloss": "quoit, small throwing disc"}
 {"lemma": "ĵetegi", "verdict": "lemma", "gloss": "to hurl, fling violently"}
 {"lemma": "ĵetfermiĝi", "verdict": "lemma", "gloss": "to slam shut"}
-{"lemma": "ĵeti", "verdict": "inflection", "note": "past passive participle of ĵeti; regular participle of ĵeti; regular passive participle of ĵeti"}
+{"lemma": "ĵeti", "verdict": "inflection", "note": "regular passive participle of ĵeti"}
 {"lemma": "ĵetilflugi", "verdict": "lemma", "gloss": "to fly as if hurled from a sling", "note": "nonce compound in the Muenchhausen play pg-28968"}
 {"lemma": "ĵetilo", "verdict": "lemma", "gloss": "javelin, throwing weapon"}
 {"lemma": "ĵetinte", "verdict": "inflection"}
@@ -12286,7 +12288,7 @@
 {"lemma": "ŝanĝiĝis", "verdict": "inflection", "note": "finite tense form of ŝanĝiĝi"}
 {"lemma": "ŝarkodento", "verdict": "lemma", "gloss": "shark's tooth"}
 {"lemma": "ŝarĝaŭto", "verdict": "lemma", "gloss": "lorry, truck"}
-{"lemma": "ŝarĝi", "verdict": "inflection", "gloss": "loaded, laden", "note": "regular participial form (-it/-at/-ant/-int + a/e) of a verb already held; not a separate headword; past passive participle of ŝarĝi"}
+{"lemma": "ŝarĝi", "verdict": "lemma", "gloss": "loaded, laden", "note": "past passive participle of ŝarĝi"}
 {"lemma": "ŝarĝita", "verdict": "lemma", "gloss": "loaded, laden", "note": "past passive participle of ŝarĝi"}
 {"lemma": "ŝarĝo", "verdict": "lemma", "gloss": "load, cargo, burden"}
 {"lemma": "ŝatata", "verdict": "inflection", "note": "regular participle of ŝati"}
