@@ -22,6 +22,12 @@ one. So the headword is truncated at the first comma, which is correct in
 every case sampled, and the original string is kept in `revo_raw` so that a
 proper re-merge from the ReVo XML can find and replace exactly these entries.
 
+That re-merge now exists: `tools/repair_revo_headwords.py` fetches the source
+articles and recovers the second form properly — 'abrikotujo,arbo' is
+abrikotujo and abrikotarbo, not the 'abrikotujarbo' guessed here. Run it after
+this one. What remains below is still the right first step, because it makes
+every headword a word even for the articles that cannot be fetched.
+
 Two further repairs, both small and both certain:
 
   * Eight headwords differ from an existing entry only in case, because the

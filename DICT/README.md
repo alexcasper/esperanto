@@ -163,20 +163,30 @@ tracked for v2 (see roadmap).
 - Every line parses as JSON (`python3 -m json.tool` per line / jq).
 - Esperanto-alphabetical sort order
   (a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z).
-- Headwords are unique, and every one is a single word: no commas, no spaces.
-  Both were false until `tools/repair_headwords.py`, which is what enforces
-  them — the ReVo merge had written 1466 variant pairs into one field
-  (*adultulo,ulino*) and left 8 spellings differing only in case (*Dio/dio*,
-  *Pasko/pasko*, where one is 'God' and 'Easter' and the other 'god' and
-  'Passover'). The case pairs are merged keeping the Fundamento spelling and
-  both senses; the variant pairs are truncated at the comma with the original
-  string kept in `revo_raw`, since the second form cannot be recovered from it
-  reliably. Run the tool after any merge that adds entries.
-- Not fixed, and visible in the data: an unknown number of ReVo headwords are
-  multi-word terms whose spaces were lost by the same merge —
-  *analitikageometrio*, *bosniokajhercegovino*. No rule separates them from
-  genuine compounds (segmenting into dictionary words splits *admiralo* into
-  *ad mi ralo*), so they await a re-merge from the ReVo XML.
+- Headwords are unique, and none contains a comma. 134 contain a space, and
+  should: they are multi-word terms — *Aleksandro la Granda*, *artefarita
+  intelekto*, *amina acido*.
+- Both of those were false before `tools/repair_headwords.py` and
+  `tools/repair_revo_headwords.py`, which together undo three defects of one
+  bad merge. ReVo writes a headword as a `<kap>` in which `<tld/>` stands for
+  the article's root, and a variant spelling as a nested `<var><kap>`; the
+  merge expanded `<tld/>` at the top level only, so *adultulo, adultulino*
+  arrived as *adultulo,ulino* — 1466 of those — and multi-word headwords
+  arrived with their spaces flattened away. It also recorded the last
+  component of a compound as the root, so *aerarmeo* carries root *arme* where
+  ReVo files it under *aer*.
+- Order matters. `repair_headwords.py` first: it truncates at the comma, which
+  makes every headword a word even where the source article cannot be
+  fetched, and merges the 8 case pairs (*Dio/dio*, *Pasko/pasko*) keeping the
+  Fundamento spelling and both senses. Then `repair_revo_headwords.py`, which
+  fetches the ~1100 source articles and recovers the real form and its
+  variants. 810 of 1166 damaged entries were recovered that way, 134 of them
+  regaining a space; 356 keep their truncated headword and a `revo_raw` field
+  recording what the merge produced.
+- `variants` holds alternative spellings recovered from the source, on 651
+  entries: *anarĥio* carries *anarkio*, *akreo* carries *akro*. They are not
+  separate headwords, which is the ordinary lexicographic treatment — a
+  consumer wanting to look up *anarkio* should index this field.
 
 ## Outstanding
 
