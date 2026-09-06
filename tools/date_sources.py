@@ -25,7 +25,9 @@ unambiguous about the Esperanto edition:
   filename    the year in a Vikifontaro scan's name. Unambiguous about the
               edition, silent about composition, so on its own it dates a
               single work and not a collection.
-  intext      the earliest plausible year in the first 40 lines. Tested against
+  intext      the earliest plausible year in the first 40 lines, excluding
+              years in a birth or death statement, which date a person rather
+              than the text. Tested against
               both other sources: on single works 7 right, 1 wrong, 4 silent;
               on collected works 11 of 23 wrong, several by 30-60 years,
               because it finds the composition date of the first piece. So it
@@ -73,9 +75,34 @@ def head(path, lines=HEAD_LINES):
         return ''
 
 
+# A year in a birth or death statement dates a PERSON, not the text, and the
+# in-text rule takes the earliest year it finds — so a biographical note puts
+# the text decades before it was written. Frantisek Omelka's `La Alaska
+# stafeto` opens `Mi naskigxis en la jaro 1904` and came out dated 1904; it was
+# written in 1951, and the two together looked like one author moving from
+# -ujo to -io over 33 years, which was the strongest single piece of evidence
+# in the diachronic study and was an artefact. One file in the corpus has this
+# shape, and it was the one that mattered.
+BIOGRAPHICAL = re.compile(
+    r'naski\w*|mort(?:is|into)|\bnat[ae]\b|\bborn\b|\bdied\b', re.I)
+BIO_WINDOW = 30
+
+
+def biographical_years(text):
+    """Years standing close to a birth or death word."""
+    out = set()
+    for match in YEAR.finditer(text):
+        window = text[max(0, match.start() - BIO_WINDOW):
+                      match.end() + BIO_WINDOW]
+        if BIOGRAPHICAL.search(window):
+            out.add(int(match.group(1)))
+    return out
+
+
 def plausible(text):
+    skip = biographical_years(text)
     return sorted({int(y) for y in YEAR.findall(text)
-                   if FIRST_YEAR <= int(y) <= LAST_YEAR})
+                   if FIRST_YEAR <= int(y) <= LAST_YEAR and int(y) not in skip})
 
 
 def evidence(name, wikidata):
@@ -113,7 +140,24 @@ def evidence(name, wikidata):
 # hold-out test that is supposed to catch a period carried by one writer
 # silently stops working — which is how Lanti's Naciismo was able to look like
 # a 1930s trend.
-WS_AUTHOR = re.compile(r'^ws(?:dump|rc)-([A-Za-zĈĜĤĴŜŬĉĝĥĵŝŭ\']+)_')
+# Any letter, not an Esperanto-alphabet whitelist: the whitelist dropped
+# Moliere and Prevost on their accents and filed them as '(unattributed)',
+# which is precisely the collapse this regex exists to prevent. Source
+# names are transliterated from the scan and carry whatever the original
+# language uses.
+WS_AUTHOR = re.compile(r"^ws(?:dump|rc)-([^\W\d_]+'?[^\W\d_]*)_")
+
+
+# A periodical run is one editorial line, not one independent hand per issue.
+# Eighteen issues of `The Esperantist` came out as eighteen '(unattributed)'
+# sources, which made the pre-1911 corpus look like eighteen writers agreeing
+# and made the author hold-out unable to drop the magazine. Attributing each
+# issue to the periodical pools them into one observation, which is the
+# conservative reading: it can only weaken a claim, never manufacture one.
+# `\b` after a literal dot never fires: `Vol. 1` has a space where \b wants a
+# word character, so `The Esperantist, Vol. 1, No. 4` matched nothing.
+PERIODICAL = re.compile(
+    r'^(.+?),\s*(?:vol\.|volumo|numero|n-?ro\.?|no\.|jaro)(?=[\s\d])', re.I)
 
 
 def metadata(name):
@@ -125,6 +169,10 @@ def metadata(name):
         match = WS_AUTHOR.match(name)
         if match and len(match.group(1)) > 2:
             found['Author'] = match.group(1)
+    if 'Author' not in found and 'Translator' not in found:
+        match = PERIODICAL.match(found.get('Title', ''))
+        if match:
+            found['Author'] = match.group(1).strip()
     return found
 
 

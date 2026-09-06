@@ -198,6 +198,31 @@ lopsided in their favour: *Francujo* 172 occurrences against *Francio* 1;
 A reader of these texts should expect `-ujo`; a writer of new Esperanto should
 not conclude from the corpus that `-io` is rare today.
 
+The corpus can say when `-io` enters. Across 30 dated texts written before 1911
+— 13 hands, 543 country names — it does not occur once. From 1911 it appears
+and does not go away. The transition is visible inside single sentences, where
+both systems stand in one list:
+
+> *172 (44 en Germanujo, 38 — Francujo, 30 — Svedujo, 13 — Finnlando, 12 —
+> Portugalujo, 6 — Un. ŝtatoj, 5 — Bulgarujo, 3 — Italujo, 3 — Aŭstrio, po 1
+> en Anglujo, Belgujo, Svisujo, Nederlando, Argentinio, Tunizio, Aŭstralio)*
+> — wsdump-Zakrzewski_Historio_de_Esperanto_1913:378
+
+`Argentinio`, `Tunizio` and `Aŭstralio` in that list say less than they look
+like they do: the pre-1911 corpus never names those three countries in either
+form, so it cannot testify about them. Where it does name one of this kind, it
+still writes `-ujo` — *Brazilujo* twice before 1911, against *Brazilio* 11 and
+*Brazilujo* 1 after. So the tempting explanation, that `-io` was already
+established for countries not named after a people and spread from there, is
+not something this corpus supports; it has no pre-1911 `-io` of any kind.
+`Aŭstrio` is the one word in Zakrzewski's list on the new side of a change,
+and the rest of the list is the old system.
+
+The change is far from complete within the corpus, which ends before it ran
+its course: `-io` is 91 tokens against 1,312 `-ujo` overall, and 61 of the 91
+are one author, Lanti. See `ANALYSIS/diachronic.md` for the dating method and
+the author hold-out.
+
 ### 6.2 Negation is single, not doubled
 
 One negative word suffices and is not reinforced by *ne*. Negative
