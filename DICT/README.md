@@ -14,14 +14,14 @@ a 1906 English-Esperanto dictionary, and the attested corpus in `CORPUS/`.
 
 ## Coverage
 
-**27356 entries.** Every count in this section was measured against
+**27366 entries.** Every count in this section was measured against
 `entries.jsonl` as it stands, not carried forward from an earlier pass. The
 dictionary has four kinds of evidence, and the `source` tag on each line says
 which one an entry rests on:
 
 | Layer | `source` | Entries |
 |---|---|---|
-| Fundamento (Universala Vortaro, 1905) | `Fundamento/UV-1905` | 2911 |
+| Fundamento (Universala Vortaro, 1905) | `Fundamento/UV-1905` | 2921 |
 | Reta Vortaro, UV-official roots and derivatives | `ReVo/UV-*` | 5659 |
 | Reta Vortaro, non-official | `ReVo` | 6018 |
 | Reta Vortaro, Official Additions I–X | `ReVo/OA-1` … `ReVo/OA-10` | 3489 |
@@ -32,7 +32,7 @@ which one an entry rests on:
 OA breakdown: OA-1 1070 · OA-2 635 · OA-10 568 · OA-8 366 · OA-9 326 ·
 OA-3 247 · OA-4 223 · OA-7 23 · OA-6 18 · OA-5 13.
 
-By part of speech: noun 18101 · verb 4153 · adj 4072 · adv 854 · suffix 31 ·
+By part of speech: noun 18101 · verb 4169 · adj 4072 · adv 854 · suffix 31 ·
 prep 31 · num 29 · pron 26 · interj 16 · particle 12 · ending 9 · prefix 8 ·
 conj 7 · art 1.
 

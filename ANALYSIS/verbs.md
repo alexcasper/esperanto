@@ -18,11 +18,11 @@ python3 tools/verb_frequency.py --by-author        # is it the language or the w
 
 ## The list
 
-808,711 verb tokens over 240 files, 11,386 distinct verbs.
+809,160 verb tokens over 240 files, 11,448 distinct verbs.
 
 | rank | verb | tokens | share | cumulative | commonest forms |
 |---|---|---|---|---|---|
-| 1 | `esti` | 105,336 | 13.03% | 13.0% | pres 51% past 30% |
+| 1 | `esti` | 105,336 | 13.02% | 13.0% | pres 51% past 30% |
 | 2 | `povi` | 22,603 | 2.79% | 15.8% | pres 48% past 22% cond 15% |
 | 3 | `diri` | 21,801 | 2.70% | 18.5% | past 59% pres 14% |
 | 4 | `havi` | 13,958 | 1.73% | 20.2% | pres 48% past 26% |
@@ -39,13 +39,13 @@ four combined. After that the curve falls away fast and then flattens:
 | | share of verb tokens |
 |---|---|
 | top 10 | 27.7% |
-| top 50 | 45.0% |
+| top 50 | 44.9% |
 | top 100 | 55.5% |
-| top 500 | 81.4% |
+| top 500 | 81.3% |
 | top 1000 | 89.9% |
 
-**1,009 verbs — 8.9% of the distinct verbs — cover 90% of verb tokens**, and
-3,994 verbs (35.1%) occur exactly once. An ordinary Zipf shape, which is worth
+**1,014 verbs — 8.9% of the distinct verbs — cover 90% of verb tokens**, and
+4,021 verbs (35.1%) occur exactly once. An ordinary Zipf shape, which is worth
 saying plainly: Esperanto is a constructed language, and one of the things this
 measures is that its use is not constructed. Nobody planned that distribution.
 
@@ -58,8 +58,8 @@ the language. `--affixes` tests it directly by counting verbs that reduce to a
 
 | | derived | of total |
 |---|---|---|
-| distinct verbs | 6,880 | **60.4%** |
-| verb tokens | 57,334 | **7.1%** |
+| distinct verbs | 6,950 | **60.7%** |
+| verb tokens | 57,898 | **7.2%** |
 
 **The affix machinery generates most of the vocabulary and carries little of
 the running text.** Six in ten distinct verbs are built rather than listed, but
@@ -69,7 +69,7 @@ almost entirely in the tail.
 
 The affixes doing the work, by token: `-iĝ-` 8,557, `-ig-` 6,739, `ek-` 6,625,
 `-ad-` 5,800, `for-` 4,624, `al-` 4,287, `re-` 4,190, `el-` 3,408, `mal-`
-2,376. The transitivity pair `-ig-`/`-iĝ-` leads, and `-iĝ-` leads `-ig-`,
+2,376 (the counts shift by a few tokens as the dictionary changes). The transitivity pair `-ig-`/`-iĝ-` leads, and `-iĝ-` leads `-ig-`,
 which is the reverse of what a grammar's presentation order suggests.
 
 `mal-` last in that list is an artefact of the question, not a finding, and it
@@ -129,11 +129,11 @@ because they carry different confidence:
 
 | tier | tokens | distinct | test |
 |---|---|---|---|
-| listed | 697,354 | 3,455 | a dictionary entry with `pos: verb` |
-| derived | 57,334 | 6,880 | reduces by verbal affixes to one |
-| root-listed | 54,023 | 1,051 | Rule 6: the stem is a headword under `-o`, `-a` or `-e` |
+| listed | 730,872 | 3,465 | a dictionary entry with `pos: verb` |
+| derived | 57,898 | 6,950 | reduces by verbal affixes to one |
+| root-listed | 20,390 | 1,033 | Rule 6: the stem is a headword under `-o`, `-a` or `-e` |
 | unconjugated | 4,573 | — | root-listed, but the corpus never inflects it — dropped |
-| rejected | 30,941 | — | none of the above |
+| rejected | 30,492 | — | none of the above |
 
 The audit found two failure classes that nothing else would have:
 
@@ -148,36 +148,50 @@ One rule removes both: a root-listed lemma must be attested somewhere in the
 corpus in a finite or imperative form. **A real verb gets conjugated**; a bare
 `-i` or a participle is not enough. Neither `subi` nor `mardi` ever is.
 
-## What the gate found in the dictionary
+## What the gate found in the dictionary — since fixed
 
-`povi` and `voli` — the second and eighth commonest verbs in the corpus, 32,310
-tokens between them — **are not in the dictionary**. What is there is
-`pova (adj) "be able, can"` and `vola (adj) "wish, will"`, both from the
-Fundamento's Universala Vortaro, both with plainly verbal glosses filed under
-an adjective ending. A reviewer had also seen `povi` during mining and marked
-it `inflection — regular participle of povi`, so it was never promoted either.
-Two independent failures, on the same two words.
+`povi` and `voli` — the second and eighth commonest verbs in the corpus,
+32,310 tokens between them — **were not in the dictionary**. What was there was
+`pova (adj) "be able, can"` and `vola (adj) "wish, will"`: plainly verbal
+glosses filed under an adjective ending.
 
-They are not alone. 1,051 lemmas reach the root-listed tier, meaning the
-dictionary records a root's noun or adjective but not its verb, while the
-corpus conjugates it:
+The cause was in the source, and reading it turned two entries into ten. The
+Universala Vortaro glosses each root in five languages, and English is the only
+one that cannot mark a verb:
 
-| infinitive | corpus tokens | what the dictionary has instead |
-|---|---|---|
-| `povi` | 22,603 | `pova` (adj) |
-| `voli` | 9,707 | `vola` (adj) |
-| `eniri` | 2,628 | `eniro` (noun) |
-| `foriri` | 2,153 | `foriro` (noun) |
-| `plenigi` | 750 | `plenigo` (noun) |
-| `aspekti` | 750 | `aspekte` (adv) |
-| `trafi` | 635 | `trafo` (noun) |
-| `klopodi` | 470 | `klopodo` (noun) |
-| `kapabli` | 459 | `kapabla` (adj) |
-| `rajti` | 426 | `rajta` (adj) |
+```
+pov' pouvoir | be able, can | können | мочь | módz.
+vol' vouloir | wish, will   | wollen | хотѣть | chcieć.
+```
 
-Filed as a bead rather than fixed here: deciding which of 1,051 belong in the
-dictionary is review work, not a code change, and `DICT/entries.jsonl` is
-rebuilt from reviewed candidates.
+*pouvoir*, *können*, *мочь* and *módz* are all infinitives. *be able, can* is
+not marked either way, and the importer read English alone. `tools/repair_uv_verbs.py`
+reads the other columns instead and added the ten verb roots the Fundamento
+implies and the dictionary lacked: **`povi`, `voli`, `trafi`, `koleri`,
+`sorĉi`, `volvi`, `deci`, `insidi`, `frandi`, `ĉarpenti`.**
+
+Which column to trust was itself measured. Neither German nor Russian is
+sufficient alone — `rein` and `nüchtern` are German adjectives that end like
+infinitives and nominated `pur'` and `sobr'`; `ртуть` (mercury) ends in `-ть`
+exactly as a Russian verb does and nominated `hidrarg'`. Requiring both
+separates them, because German marks the distinction by capitalising nouns and
+Russian by inflection, so their errors do not coincide. Against the 901 roots
+the dictionary already files as verbs the rule recovers 61%, and of 1,471
+roots with only a noun entry it nominates 10 — every one a real verb.
+
+**Four of the ten had been mined and rejected by a reviewer as an
+`inflection`**, one with the note *"regular participle of povi"*. In each case
+an `-o` or `-a` entry for the root already existed, so the `-i` form looked
+like an inflected form of it. It is not: `povo` and `povi` are two words built
+from one root, and neither is an inflection of the other. Those verdicts are
+reported by the tool and deliberately not rewritten — `verdicts.jsonl` is human
+judgement, and correcting someone's verdict is a decision rather than a repair.
+
+A larger version of the same gap remains: 1,033 lemmas still reach the
+root-listed tier, meaning the dictionary records a root's noun or adjective but
+not its verb while the corpus conjugates it — `eniri` 2,628 tokens, `foriri`
+2,153, `aspekti` 750. Those are not Fundamento roots, so nothing authoritative
+settles them; filed as a bead.
 
 ## Caveats
 

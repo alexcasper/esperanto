@@ -87,10 +87,10 @@ below is the main reason a small root stock covers a large vocabulary.
 | **-at- / -it- / -ot-** | passive participles | *legata, legita, legota* |
 
 **How much of the language this actually builds.** The claim above is
-measurable and it holds — for the vocabulary. Of the 11386 distinct verbs in
-the corpus, **60.4% are derivations** that reduce to a separately listed verb
+measurable and it holds — for the vocabulary. Of the 11448 distinct verbs in
+the corpus, **60.7% are derivations** that reduce to a separately listed verb
 by stripping affixes: *ekvidi* to *vidi*, *plibonigi* to *bonigi*. But those
-6880 derived verbs are only **7.1% of verb tokens**.
+6950 derived verbs are only **7.2% of verb tokens**.
 
 So derivation carries the dictionary, not the sentence. The verbs a reader
 meets constantly are plain roots; the derived ones are individually rare and
@@ -347,8 +347,8 @@ combined. The ten commonest verbs are a quarter of all verb use:
 | 4 | *havi* | 1.73% | | 9 | *scii* | 1.05% |
 | 5 | *fari* | 1.59% | | 10 | *veni* | 0.97% |
 
-The top ten are 27.7% of verb tokens, the top hundred 55.5%. **1009 verbs —
-8.9% of the 11386 distinct verbs — cover 90%**, and 35.1% of the distinct
+The top ten are 27.7% of verb tokens, the top hundred 55.5%. **1014 verbs —
+8.9% of the 11448 distinct verbs — cover 90%**, and 35.1% of the distinct
 verbs occur exactly once. That is an ordinary Zipf distribution, which is
 worth stating plainly about a constructed language: Esperanto's grammar was
 designed, and the way people use it was not.
@@ -357,9 +357,9 @@ Two cautions before treating this as a study list. The corpus is mostly
 narrative fiction in translation, so *diri* at rank 3 and the past tense at
 34% describe that register rather than the language at large — Kabe's 1922
 *Vortaro* puts *diri* at rank 44, because a dictionary does not say "he said".
-And frequency is not usefulness: *povi* and *voli* are rank 2 and 8 here and
-are missing from `DICT/entries.jsonl` altogether, which is how the gap was
-found.
+And frequency measured against a dictionary is only as good as the dictionary:
+*povi* and *voli* are rank 2 and 8 here and were missing from
+`DICT/entries.jsonl` altogether until this measurement found them.
 
 The ranking is otherwise stable across writers, which little else measured in
 this project is: all fifteen authors with enough text put *esti* first, and
