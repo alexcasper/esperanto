@@ -237,7 +237,35 @@ The *esti* + participle construction is fully grammatical and is attested
 (`pg-17482:1813`), but simple tenses carry most narrative in the corpus. The
 periphrastic forms are worth recognising rather than imitating by default.
 
-### 6.4 Note on evidence
+Measured: **14262 of 576866 finite verbs, 2.47%**. Grammars devote a table of
+thirty-six cells to the compound tenses; the corpus spends one finite verb in
+forty on them.
+
+### 6.4 Mood follows the verb, not the average
+
+Across the corpus the finite forms divide as past 34.0%, present 26.0%,
+participle 13.5%, infinitive 13.3%, future 5.4%, imperative 5.0% and
+conditional 2.8% — a distribution that describes narrative fiction, which is
+most of what the corpus contains.
+
+Individual verbs depart from that in a way that is predictable from their
+meaning, which is worth knowing before imitating a frequency list. The
+imperative belongs to the verbs of request: *pardoni* appears in the
+imperative 57% of the time, because that is how one apologises.
+
+> *"Ho, pardonu! mi petegas," ekkriis Alicio* — pg-17482:561
+
+> *"Ah -- pardonu!" respondis Mozart* — pg-18178:404
+
+*Aŭskulti* is 35% imperative, *lasi* 26%, *permesi* 24%. The present belongs to
+the stative and modal verbs — *ekzisti* 64%, *devi* 64%, *ami* 63%, *scii* 60%.
+The past belongs to narration — *ekkrii* 88%, *respondi* 76%, *demandi* 68%.
+The conditional is almost entirely modal: *povi* 15%, *voli* 10%, *devi* 9%.
+
+See `ANALYSIS/verbs.md` for the frequency ranking and the method.
+
+### 6.5 Note on evidence
+
 
 Frequencies above come from `tools/find_examples.py --compare` over the 126
 Esperanto-language sources in `CORPUS/`; the English-language grammars

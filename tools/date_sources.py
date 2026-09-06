@@ -227,6 +227,31 @@ def decide(name, found):
     return None, 'none', 'no evidence', ''
 
 
+def merge_surnames(rows, index=5):
+    """Fold a bare surname into the full name when exactly one matches.
+
+    Vikifontaro filenames give `Luyken`; Gutenberg headers give `Heinrich
+    August Luyken`. Left alone that is two contributors, which quietly defeats
+    the author hold-out — the whole purpose of which is to stop one writer
+    counting twice. Four writers in this corpus were split this way: Bulthuis,
+    Grabowski, Luyken and Vallienne. Merged only where the surname resolves to
+    exactly one full name, so an ambiguous surname stays as it is.
+    """
+    names = {row[index] for row in rows if row[index]}
+    full = [n for n in names if ' ' in n]
+    merge = {}
+    for name in names:
+        if ' ' in name:
+            continue
+        matches = [f for f in full if f.split()[-1] == name]
+        if len(matches) == 1:
+            merge[name] = matches[0]
+    if not merge:
+        return rows, merge
+    return ([row[:index] + (merge.get(row[index], row[index]),) + row[index + 1:]
+             for row in rows], merge)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--write', action='store_true')
@@ -254,7 +279,11 @@ def main():
                      meta.get('Translator', '') or meta.get('Author', ''),
                      note))
 
+    rows, merged = merge_surnames(rows)
     print('%d sources' % len(rows))
+    if merged:
+        print('  merged split attributions: %s'
+              % ', '.join('%s -> %s' % kv for kv in sorted(merged.items())))
     for confidence in ('high', 'medium', 'none'):
         print('  %-8s %4d' % (confidence, counts.get(confidence, 0)))
     print('  dated share of corpus by bytes: %.1f%%'

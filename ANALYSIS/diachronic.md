@@ -53,7 +53,7 @@ The cost is coverage: **46% of the corpus by bytes is dated** — 25 sources at
 high confidence, 55 at medium. `RAW/DATES.tsv` records the basis and confidence
 for every source, and the undated ones say why.
 
-### Three dating bugs, and the one that nearly produced a finding
+### Four dating bugs, and the one that nearly produced a finding
 
 Each of these was found by looking at *why* a number was what it was, and each
 had been silently in place through the previous round of analysis.
@@ -74,11 +74,20 @@ Esperanto-alphabet whitelist, so `Molière` and `Prévost` failed it and were
 filed `(unattributed)` — the exact collapse the regex exists to prevent. It now
 matches any letter.
 
+**One writer under two names is two writers to a hold-out.** Vikifontaro
+filenames give a bare surname and Gutenberg headers give a full name, so
+`Luyken` and `Heinrich August Luyken` were two contributors, as were Bulthuis,
+Grabowski and Vallienne. Four writers counted as eight, which is exactly what
+the author-pooling test exists to prevent. A surname now folds into the full
+name where exactly one full name matches it. This one surfaced while building
+`tools/verb_frequency.py`, whose own author breakdown listed both Luykens side
+by side; merging them moved the accusative control from −0.27 (p=0.08) to
+−0.35 (p=0.03), which is why the floor above is set where it is.
+
 **Twenty-six issues of one magazine are not twenty-six writers.** *The
 Esperantist* (1903–05) is 26 separate Gutenberg files with no author header.
-Pooled as
-`(unattributed)` they inflated the count of independent pre-1911 hands and made
-the magazine impossible to hold out. Issues of a periodical are now attributed
+Pooled as `(unattributed)` they inflated the count of independent pre-1911
+hands and made the magazine impossible to hold out. Issues of a periodical are now attributed
 to the periodical, which is the conservative direction: it can only weaken a
 claim about author diversity, never manufacture one.
 
@@ -112,29 +121,34 @@ analysis:
 
 | feature | by decade | by text | by author | verdict |
 |---|---|---|---|---|
-| `ĥ` rate | swings, dies under hold-out | −0.09 (p=0.48) | −0.12 (p=0.46) | **null everywhere** |
-| compound tenses | swings, no direction | **−0.35 (p=0.003)** | −0.16 (p=0.30) | **an author effect** |
+| `ĥ` rate | swings, dies under hold-out | −0.09 (p=0.48) | −0.12 (p=0.45) | **null everywhere** |
+| compound tenses | swings, no direction | **−0.35 (p=0.003)** | −0.13 (p=0.44) | **an author effect** |
 | `-ujo` share | 100% until 1910, 48% in the 1930s | −0.45 (p=0.001) | **−0.57 (p=0.003)** | **survives** |
-| `accusative` *(control)* | flat, 835–1040 | +0.16 (p=0.18) | −0.27 (p=0.08) | behaves, but not perfectly |
+| `accusative` *(control)* | flat, 835–1040 | +0.16 (p=0.18) | **−0.35 (p=0.03)** | **trends when it cannot** |
 
 `rho` is Spearman's; `p` is a permutation test — the years shuffled against the
-values 20,000 times — because with 27 authors an asymptotic p would assume more
+values 20,000 times — because with 26 authors an asymptotic p would assume more
 than we know.
 
 **Compound tenses are the cautionary case.** At text level they are the
 second-strongest result in the table and comfortably significant. Pooling each
-author's texts into one observation takes rho from −0.35 to −0.16 and p from
-0.003 to 0.30. Nothing about the language changed between those two lines; what
+author's texts into one observation takes rho from −0.35 to −0.13 and p from
+0.003 to 0.44. Nothing about the language changed between those two lines; what
 changed is that an author with six dated texts stopped counting as six pieces
 of evidence. In a corpus where author and period are confounded by
 construction, the text is not an independent observation and the by-text row is
 the wrong row to read.
 
-**The control does not fully behave, and that sets a floor.** The accusative is
-fixed by the Fundamento and should not trend; it reads −0.27 (p=0.08) at author
-level. That does not reach significance, but it means a rho of −0.2 to −0.3 in
-this corpus is within what a quantity that *cannot* change produces. Only
-`ujo-share` clears that floor by a clear margin.
+**The control does not behave, and that sets the floor.** The accusative is
+fixed by the Fundamento and cannot trend. It reads **−0.35 (p=0.03)** at author
+level — significant, on a quantity that by construction has nothing to be
+significant about. So the periods differ by something other than date, and a
+rho up to about 0.35 in this corpus is inside what an unchangeable quantity
+produces. That is the number to measure any claim here against.
+
+Only `ujo-share` clears it (−0.57), and the first-attestation result below does
+not depend on a rho at all — which, given a control that misbehaves at this
+size, is the better reason to trust it.
 
 Earlier, the control earned its place more dramatically: the 1980s came out at
 565 accusatives per 10,000 against 850–1,040 everywhere else — a 40% drop in
@@ -151,7 +165,7 @@ categorical rather than a coefficient.
 ```
 first attestation of -io, split at 1911:
    before  30 texts, 13 hands,  543 country names,  0 use -io
-   after   30 texts, 22 hands,  860 country names, 10 use -io
+   after   30 texts, 20 hands,  860 country names, 10 use -io
    permutation p (one-sided, text-level) = 0.0005
 ```
 
@@ -167,25 +181,29 @@ writes `Anglio`. From 1911 ten texts do.
 The rate trend agrees. At author level rho = −0.57 (p=0.003), and it survives
 the harshest available robustness check: dropping the **two authors it leans on
 most** — found by refitting without every pair, not by picking names — leaves
-rho = −0.45 (p=0.025).
+rho = −0.45 (p=0.030).
 
 Three things this does **not** show, all of which the table makes plain:
 
 | author | mean year | `-ujo` share |
 |---|---|---|
-| Devjatnin, Stankiević, Fruictier, Zamenhof, Vallienne, Kotzebue, Anton | 1892–1908 | 100% |
-| Ned Katryn, Grabowski, Luyken | 1912–1913 | 100% |
+| Devjatnin, Stankiević, Grabowski, Fruictier, *The Esperantist*, Zamenhof, Molière, Vallienne, Kotzebue, Prévost, Anton, *Various* | 1892–1908 | 100% |
+| Ned Katryn | 1912 | 100% |
 | Zakrzewski | 1913 | 92% |
-| The Esperantist | 1904 | 100% |
 | Edmond Privat | 1915 | 97% |
+| Heinrich August Luyken | 1918 | 100% |
 | Kabe | 1922 | 98% |
-| Bulthuis, Tooguu, Sienkiewicz, Rossetti | 1923–1950 | 100% |
+| *Literatura Mondo* | 1922 | 97% |
+| Tojosato Tooguu | 1924 | 100% |
 | **Lanti** | **1930** | **0%** |
+| H. J. Bulthuis, Sienkiewicz, Rossetti | 1930–1950 | 100% |
+| *(unattributed)* | 1939 | 94% |
 | František Omelka | 1944 | 91% |
 | Jorge Camacho | 1993 | 83% |
 
-1. **It is not a completed change.** Twenty-one of twenty-seven authors are at
-   100% `-ujo`, including every one of them after 1930 except Camacho. Across
+1. **It is not a completed change.** Eighteen of twenty-six authors are at
+   100% `-ujo`, including every one of them after 1930 except Omelka and
+   Camacho. Across
    the whole dated corpus `-io` is 91 tokens against 1,312 `-ujo`. What the
    corpus shows is a form entering, not a form winning.
 2. **It is not evenly spread.** Eight of the ten `-io` texts are movement or
