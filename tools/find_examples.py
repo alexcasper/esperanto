@@ -27,9 +27,18 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CORPUS = os.path.join(ROOT, 'CORPUS')
 # English-language and multilingual sources: their sentences are not Esperanto.
-EXCLUDE = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt',
-           'wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt',
-           'wsrc-Fundamento_de_Esperanto_Grammar.txt'}
+# The list lives in mine_lemmas so that a frequency quoted in GRAMMAR/ and a
+# figure in ANALYSIS/ rest on the same corpus. They did not: this file kept its
+# own shorter list and so counted four sources the rest of the project drops,
+# among them the Downes textbook — English prose about Esperanto, and the
+# source whose inclusion made the accusative control read 565 per 10000 against
+# 850-1040 everywhere else in the diachronic study.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import mine_lemmas  # noqa: E402  (path set above)
+
+EXCLUDE = (mine_lemmas.ENGLISH_HEAVY | mine_lemmas.MULTILINGUAL | {
+    'wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt',
+    'wsrc-Fundamento_de_Esperanto_Grammar.txt'})
 
 
 def sources(pattern='*.txt'):

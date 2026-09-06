@@ -268,8 +268,21 @@ kind.
 
 `angl` is the counter-case and it is honest to leave it in: England is the most
 frequently named country in the corpus and it is 100% `-ujo` on both sides of
-1911. The change is not uniform across stems, and *Anglio* — today the ordinary
-form — never once appears.
+1911, in every dated text. The change is not uniform across stems.
+
+*Anglio* is not absent from the corpus, though — it is absent from the **dated**
+corpus. Over all 240 sources it occurs 26 times, against 240 *Anglujo*. That
+gap between the dated and the full corpus is not a flaw in the sample; it is
+the finding again, from the other side. The undated sources carrying the `-io`
+forms are overwhelmingly the *El verkoj de E. Lanti* volumes, and they are
+undated for a good reason — posthumous collections whose printing year says
+nothing about when the prose was written, which is the first rule in this
+document. Across the whole corpus: 79 of 85 *Francio*, 48 of 59 *Germanio* and
+43 of 44 *Rusio* are Lanti.
+
+So the half of the corpus this study had to exclude corroborates its
+conclusion rather than threatening it. `-io` in this corpus is one author,
+measured two independent ways.
 
 ## What would make this answerable
 

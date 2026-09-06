@@ -72,6 +72,12 @@ The affixes doing the work, by token: `-iĝ-` 8,557, `-ig-` 6,739, `ek-` 6,625,
 2,376. The transitivity pair `-ig-`/`-iĝ-` leads, and `-iĝ-` leads `-ig-`,
 which is the reverse of what a grammar's presentation order suggests.
 
+`mal-` last in that list is an artefact of the question, not a finding, and it
+is worth saying so before someone quotes it. These are **verb** tokens. Across
+all parts of speech `mal-` is the most used affix in the corpus by a wide
+margin — 70,290 tokens, 39% of them adjectives, 24% nouns and only 17% verbs.
+The list says which affixes you meet inside a verb, not which affixes matter.
+
 ## Mood tracks meaning, cleanly
 
 The overall form mix reflects a corpus that is mostly narrative fiction:

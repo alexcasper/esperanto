@@ -86,10 +86,50 @@ below is the main reason a small root stock covers a large vocabulary.
 | **-ant- / -int- / -ont-** | active participles | *leganta, leginta, legonta* |
 | **-at- / -it- / -ot-** | passive participles | *legata, legita, legota* |
 
+**How much of the language this actually builds.** The claim above is
+measurable and it holds — for the vocabulary. Of the 11386 distinct verbs in
+the corpus, **60.4% are derivations** that reduce to a separately listed verb
+by stripping affixes: *ekvidi* to *vidi*, *plibonigi* to *bonigi*. But those
+6880 derived verbs are only **7.1% of verb tokens**.
+
+So derivation carries the dictionary, not the sentence. The verbs a reader
+meets constantly are plain roots; the derived ones are individually rare and
+collectively numerous. Both halves of that are worth knowing: a learner who
+studies the affix table is learning how to *read* an unfamiliar word, which is
+what the table is for, and not learning the words that will actually recur.
+
+Nor is the inventory used evenly. Measured over verb tokens, the affixes that
+do the work are:
+
+| affix | verb tokens | | affix | verb tokens |
+|---|---|---|---|---|
+| **-iĝ-** | 8557 | | **for-** | 4624 |
+| **-ig-** | 6739 | | **al-** | 4287 |
+| **ek-** | 6625 | | **re-** | 4190 |
+| **-ad-** | 5800 | | **el-** | 3408 |
+| | | | **mal-** | 2376 |
+
+The transitivity pair leads everything, and **-iĝ- leads -ig-**, which is the
+reverse of the order grammars introduce them in.
+
+*mal-* comes last in that table, and the reason is a caution about reading it:
+the counts are verb tokens only. Across all parts of speech *mal-* is the most
+used affix in the corpus by a wide margin — **70290 tokens**, of which 39% are
+adjectives, 24% nouns and only **17% verbs**. It is a great deal commoner than
+*ek-*; it simply is not mainly a way of making verbs. Read the table as what
+it is: which affixes you meet inside a verb, not which affixes matter.
+
+*ek-*, third here, is the inceptive, and it is genuinely a verb affix:
+
+> *Sed tre baldaŭ li eksaltis, ekridis kaj manfrapis* — pg-11511:1453
+
+> *tio Alicio tiel laŭte ekridis, ke ŝi devis rekaŝi sin en la arbaron*
+> — pg-17482:1459
+
 **Compound tenses** combine *esti* with a participle: *li estis rigardeginta
 Alicion kun evidenta scivolemo* — `pg-17482:1813`. Participles in `-e` form
-adverbial clauses: *leginte la leteron, li foriris* (having read the letter,
-he left).
+adverbial clauses — *kaj tion farinte, mi fermis* (and having done that, I
+closed), `pg-11511:605`; *Tiel parolinte, kaj zorge* — `pg-17425:554`.
 
 ## 3. Sintakso — Syntax
 
@@ -186,17 +226,32 @@ blindly.
 
 ## 6. Uzado — where the corpus complicates the rule
 
-The corpus is period material (1887–1929). Three places where its usage should
-not be mistaken for present-day Esperanto, and one where the guide was simply
-wrong before the evidence was checked.
+The dated part of the corpus runs 1888–2023 and is centred on 1900–1935; most
+sources carry no reliable date at all (`RAW/DATES.tsv`). Five places where its
+usage should not be mistaken for present-day Esperanto, and where the guide
+was wrong before the evidence was checked.
 
 ### 6.1 Country names: `-ujo` dominates, not `-io`
 
 Rule 15 and the `-uj-` suffix give *Francujo*, *Anglujo*. The corpus is
-lopsided in their favour: *Francujo* 172 occurrences against *Francio* 1;
-*Anglujo* 95 against *Anglio* 4. Modern Esperanto has largely moved to `-io`.
-A reader of these texts should expect `-ujo`; a writer of new Esperanto should
-not conclude from the corpus that `-io` is rare today.
+lopsided in their favour, across all 240 Esperanto-language sources:
+
+| | `-ujo` | `-io` |
+|---|---|---|
+| *Franc-* | 299 | 85 |
+| *Rus-* | 265 | 44 |
+| *Angl-* | 240 | 26 |
+| *German-* | 185 | 59 |
+
+Modern Esperanto has largely moved to `-io`. A reader of these texts should
+expect `-ujo`; a writer of new Esperanto should not conclude from the corpus
+that `-io` is rare today.
+
+**Almost every `-io` in that column is one author.** Of the 85 *Francio*, 79
+are in Lanti's collected works or his Voltaire translation; of 59 *Germanio*,
+48; of 44 *Rusio*, 43. Lanti founded the anationalist movement, and the
+international form is the one a reformist reaches for. So the second column is
+not a cross-section of usage drifting — it is one writer, quoted at length.
 
 The corpus can say when `-io` enters. Across 30 dated texts written before 1911
 — 13 hands, 543 country names — it does not occur once. From 1911 it appears
@@ -205,7 +260,8 @@ both systems stand in one list:
 
 > *172 (44 en Germanujo, 38 — Francujo, 30 — Svedujo, 13 — Finnlando, 12 —
 > Portugalujo, 6 — Un. ŝtatoj, 5 — Bulgarujo, 3 — Italujo, 3 — Aŭstrio, po 1
-> en Anglujo, Belgujo, Svisujo, Nederlando, Argentinio, Tunizio, Aŭstralio)*
+> en Anglujo, Belgujo, Svisujo, Nederlando, Argentinio, Tunizio, Aŭstralio,
+> 11 poŝtaj abonantoj)*
 > — wsdump-Zakrzewski_Historio_de_Esperanto_1913:378
 
 `Argentinio`, `Tunizio` and `Aŭstralio` in that list say less than they look
@@ -218,18 +274,31 @@ not something this corpus supports; it has no pre-1911 `-io` of any kind.
 `Aŭstrio` is the one word in Zakrzewski's list on the new side of a change,
 and the rest of the list is the old system.
 
-The change is far from complete within the corpus, which ends before it ran
-its course: `-io` is 91 tokens against 1,312 `-ujo` overall, and 61 of the 91
-are one author, Lanti. See `ANALYSIS/diachronic.md` for the dating method and
+The change is far from complete within the dated corpus, which ends before it
+ran its course: there `-io` is 91 tokens against 1312 `-ujo`, and 61 of the 91
+are Lanti's *Naciismo* alone. See `ANALYSIS/diachronic.md` for the dating method and
 the author hold-out.
 
 ### 6.2 Negation is single, not doubled
 
-One negative word suffices and is not reinforced by *ne*. Negative
-correlatives appear on 5965 lines; the pattern *ne* followed closely by a
-`neni-` word appears on 10, and those are mostly contrastive rather than
-genuine double negation. *Mi nenion vidis* (I saw nothing), not *mi ne vidis
-nenion*.
+One negative word suffices and is not reinforced by *ne*. *Mi nenion vidis*
+(I saw nothing), not *mi ne vidis nenion*.
+
+Negative correlatives appear on **13761 lines**. Lines where *ne* plus a
+finite verb stands within 25 characters of a `neni-` word, either order and
+without crossing a clause boundary, number **58** — and reading them, that is
+still an overcount rather than a count. Most are two negations in coordinated
+clauses (*ne invadis lin kaj nenio ŝajnis*), and the nearest thing to a real
+double negative is contrastive:
+
+> *vi ne faros tion por nenio* — pg-23774:7114
+
+which means the opposite of a reinforced negative: you will not do it for
+nothing, so you will be paid. A looser search — any *ne* within 30 characters
+of any `neni-` — returns 449 lines and is worth ignoring: it catches *Ne,* as
+the answer particle beginning a sentence (*"Ne, nenion strangan," mi diris*,
+pg-18326:677) and the verb *neniigi*, to annihilate (*ne estis neniigitaj*,
+pg-18178:660), neither of which is negation doubled.
 
 ### 6.3 Compound tenses are rarer than their prominence suggests
 
@@ -264,18 +333,62 @@ The conditional is almost entirely modal: *povi* 15%, *voli* 10%, *devi* 9%.
 
 See `ANALYSIS/verbs.md` for the frequency ranking and the method.
 
-### 6.5 Note on evidence
+### 6.5 A few verbs carry most of the text
+
+*Esti* is **13.0% of every verb token in the corpus** — more than the next four
+combined. The ten commonest verbs are a quarter of all verb use:
+
+| | verb | share | | | verb | share |
+|---|---|---|---|---|---|---|
+| 1 | *esti* | 13.03% | | 6 | *vidi* | 1.36% |
+| 2 | *povi* | 2.79% | | 7 | *devi* | 1.30% |
+| 3 | *diri* | 2.70% | | 8 | *voli* | 1.20% |
+| 4 | *havi* | 1.73% | | 9 | *scii* | 1.05% |
+| 5 | *fari* | 1.59% | | 10 | *veni* | 0.97% |
+
+The top ten are 27.7% of verb tokens, the top hundred 55.5%. **1009 verbs —
+8.9% of the 11386 distinct verbs — cover 90%**, and 35.1% of the distinct
+verbs occur exactly once. That is an ordinary Zipf distribution, which is
+worth stating plainly about a constructed language: Esperanto's grammar was
+designed, and the way people use it was not.
+
+Two cautions before treating this as a study list. The corpus is mostly
+narrative fiction in translation, so *diri* at rank 3 and the past tense at
+34% describe that register rather than the language at large — Kabe's 1922
+*Vortaro* puts *diri* at rank 44, because a dictionary does not say "he said".
+And frequency is not usefulness: *povi* and *voli* are rank 2 and 8 here and
+are missing from `DICT/entries.jsonl` altogether, which is how the gap was
+found.
+
+The ranking is otherwise stable across writers, which little else measured in
+this project is: all fifteen authors with enough text put *esti* first, and
+mean pairwise rank agreement on the verbs they share is rho = +0.66 over 105
+author pairs. See `ANALYSIS/verbs.md`.
+
+### 6.6 Note on evidence
 
 
-Frequencies above come from `tools/find_examples.py --compare` over the 126
-Esperanto-language sources in `CORPUS/`; the English-language grammars
-(`pg-7787`, `pg-8177`, `pg-16967`) and the Fundamento's multilingual tables
-are excluded, since their sentences are not Esperanto and would corrupt any
-count taken over them.
+Frequencies above come from `tools/find_examples.py` over the **240**
+Esperanto-language sources in `CORPUS/`. Excluded are the English- and
+French-language grammars and textbooks — `pg-7787`, `pg-8177`, `pg-16967`,
+the Downes textbook, `key_to_the_ekzercaro`, `traduction_de_lekzercaro` — and
+the Fundamento's multilingual tables, since their sentences are not Esperanto
+and would corrupt any count taken over them.
+
+That exclusion list now lives in one place, `tools/mine_lemmas.py`, and
+`find_examples` imports it. It used to keep its own shorter copy, so every
+frequency quoted in this guide was counted over four sources the rest of the
+project drops — including the Downes textbook, English prose *about*
+Esperanto, whose inclusion in the diachronic analysis made a Fundamento-fixed
+control read 40% low. Counts here and in `ANALYSIS/` now rest on the same
+corpus. Several figures in this section changed when that was fixed, and the
+ones that changed most were the ones nobody had rechecked since the corpus
+grew.
 
 ## Indekso / Index
 
-1. Fundamentoj — the 16 rules · 2. Morfologio — affixes, compound tenses ·
-3. Sintakso — word order, correlatives, clauses · 4. Fonologio kaj Ortografio
-— sounds, stress, x- and h-systems · 5. Pragmatiko kaj Registro ·
-6. Uzado — corpus divergences
+1. Fundamentoj — the 16 rules · 2. Morfologio — affixes, what they build,
+compound tenses · 3. Sintakso — word order, correlatives, clauses ·
+4. Fonologio kaj Ortografio — sounds, stress, x- and h-systems ·
+5. Pragmatiko kaj Registro · 6. Uzado — corpus divergences: country names,
+negation, compound tenses, mood, verb frequency
