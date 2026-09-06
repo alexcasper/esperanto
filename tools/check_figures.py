@@ -38,7 +38,9 @@ Available in an expression:
 
     total()                    entries in DICT/entries.jsonl
     count(pos=, source=, has=) entries matching all given conditions;
-                               `has` tests for a field being present
+                               `has` tests for a field being present, and
+                               `where=('field','key',value)` reaches one level
+                               into a nested object
     corpus(regex)              lines matching, over the Esperanto-language
                                sources, using the same exclusion list as
                                find_examples, which is mine_lemmas' plus the
@@ -116,10 +118,15 @@ class Data(object):
     def namespace(self):
         def count(**conditions):
             field = conditions.pop('has', None)
+            nested = conditions.pop('where', None)
             hits = 0
             for entry in self.entries:
                 if field and field not in entry:
                     continue
+                if nested:
+                    holder, key, want = nested
+                    if (entry.get(holder) or {}).get(key) != want:
+                        continue
                 if all(entry.get(k) == v for k, v in conditions.items()):
                     hits += 1
             return hits

@@ -14,7 +14,7 @@ a 1906 English-Esperanto dictionary, and the attested corpus in `CORPUS/`.
 
 ## Coverage
 
-**27366 entries.** <!--= total() --> Every count in this section was measured against
+**27370 entries.** <!--= total() --> Every count in this section was measured against
 `entries.jsonl` as it stands, not carried forward from an earlier pass. The
 dictionary has four kinds of evidence, and the `source` tag on each line says
 which one an entry rests on:
@@ -22,7 +22,7 @@ which one an entry rests on:
 | Layer | `source` | Entries |
 |---|---|---|
 | Fundamento (Universala Vortaro, 1905) | `Fundamento/UV-1905` | 2921 <!--= count(source='Fundamento/UV-1905') --> |
-| Reta Vortaro, UV-official roots and derivatives | `ReVo/UV-*` | 5659 <!--= count(source='ReVo/UV-*') --> |
+| Reta Vortaro, UV-official roots and derivatives | `ReVo/UV-*` | 5662 <!--= count(source='ReVo/UV-*') --> |
 | Reta Vortaro, non-official | `ReVo` | 6018 <!--= count(source='ReVo') --> |
 | Reta Vortaro, Official Additions I–X | `ReVo/OA-1` … `ReVo/OA-10` | 3489 |
 | O'Connor & Hayes, English-Esperanto Dictionary (c.1906) | `oconnor-1906` | 4147 <!--= count(source='oconnor-1906') --> |
@@ -32,15 +32,26 @@ which one an entry rests on:
 OA breakdown: OA-1 1070 · OA-2 635 · OA-10 568 · OA-8 366 · OA-9 326 ·
 OA-3 247 · OA-4 223 · OA-7 23 · OA-6 18 · OA-5 13.
 
-By part of speech: noun 18101 <!--= count(pos='noun') --> · verb 4169 <!--= count(pos='verb') --> · adj 4072 <!--= count(pos='adj') --> · adv 854 <!--= count(pos='adv') --> · suffix 31 ·
+By part of speech: noun 18101 <!--= count(pos='noun') --> · verb 4173 <!--= count(pos='verb') --> · adj 4072 <!--= count(pos='adj') --> · adv 854 <!--= count(pos='adv') --> · suffix 31 ·
 prep 31 · num 29 · pron 26 · interj 16 · particle 12 · ending 9 · prefix 8 ·
 conj 7 · art 1.
 
-**662 <!--= count(has='transitivity') --> verb entries carry measured
-`transitivity`** — 366 transitive, 155 intransitive, 141 uncertain — out of
-4169 <!--= count(pos='verb') --> verbs. The other 84% appear in fewer
+**665 <!--= count(has='transitivity') --> verb entries carry measured
+`transitivity`** — 368 <!--= count(where=('transitivity','verdict','transitive')) -->
+transitive, 155 <!--= count(where=('transitivity','verdict','intransitive')) -->
+intransitive, 142 <!--= count(where=('transitivity','verdict','uncertain')) -->
+uncertain — out of
+4173 <!--= count(pos='verb') --> verbs. The other 84% appear in fewer
 than 100 corpus clauses, which is too little to measure, and carry no field
 rather than a guess.
+
+Four of those entries exist at all only because the audit behind
+`tools/restore_revo_gaps.py` went looking: `fiksi`, `forlasi`, `rediri` and
+`sanigi` are ReVo headwords with English glosses that the dictionary lacked,
+three of them rejected during mining as an `inflection` of themselves —
+`fiksi` noted "past passive participle of fiksi". The dictionary held `fiksa`,
+`fikse`, `fikseco` and `fiksiĝi` but not `fiksi`; `forlasebla` and `forlaso`
+but not `forlasi`.
 
 This is the first field in the dictionary derived from measured syntax instead
 of a source's assertion. `tools/transitivity.py` finds each verb's clause and
