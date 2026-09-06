@@ -75,7 +75,17 @@ IO_FORM = re.compile(r'\b(%s)i(o|on|oj|ojn)\b' % '|'.join(COUNTRY), re.I)
 BE = re.compile(r'\b(estas|estis|estos|estus)\s+(\w+?)(anta|inta|onta|ata|ita|ota)\b',
                 re.I)
 FINITE = re.compile(r'\b\w+(as|is|os|us)\b', re.I)
-ACCUSATIVE = re.compile(r'\b\w*[oaeu]n\b', re.I)
+# The obvious accusative test — any -n after a vowel that can carry one — is
+# 25% function words on this corpus, and `en` alone is 16% of everything it
+# matches, followed by `kun`, `nun`, `jen`, `tamen`, `sen`. As a control that
+# is worse than useless: it was largely measuring how often a period's authors
+# wrote the preposition `en`. The accusative proper is -on/-ojn/-an/-ajn, the
+# accusative pronouns and the -un correlatives; nothing in -en, which is an
+# adverb plus the directional -n.
+ACCUSATIVE = re.compile(
+    r'\b(?:\w{2,}(?:ojn|ajn|on|an)'
+    r'|min|vin|lin|ŝin|ĝin|nin|ilin|sin|onin|cin'
+    r'|(?:ki|ti|i|ĉi|neni)un)\b', re.I)
 
 
 def spearman(pairs):

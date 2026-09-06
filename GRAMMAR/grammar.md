@@ -79,8 +79,8 @@ below is the main reason a small root stock covers a large vocabulary.
 | **-em-** | disposition | *laborema* industrious |
 | **-ind-** | worthy of | *leginda* worth reading |
 | **-ebl-** | possible to | *legebla* legible |
-| **-ig-** | causative, make | *beligi* beautify |
-| **-iĝ-** | become | *fariĝi* become |
+| **-ig-** | causative, make; takes an object (§6.6) | *beligi* beautify |
+| **-iĝ-** | become; takes none (§6.6) | *fariĝi* become |
 | **-obl- / -on- / -op-** | multiple / fraction / collective numeral | *duobla*, *duono*, *duope* |
 | **-um-** | indeterminate relation | *kolumo* collar |
 | **-ant- / -int- / -ont-** | active participles | *leganta, leginta, legonta* |
@@ -227,9 +227,10 @@ blindly.
 ## 6. Uzado — where the corpus complicates the rule
 
 The dated part of the corpus runs 1888–2023 and is centred on 1900–1935; most
-sources carry no reliable date at all (`RAW/DATES.tsv`). Five places where its
-usage should not be mistaken for present-day Esperanto, and where the guide
-was wrong before the evidence was checked.
+sources carry no reliable date at all (`RAW/DATES.tsv`). Six places where its
+usage should not be mistaken for present-day Esperanto, where the guide was
+wrong before the evidence was checked, and one place where the stated rule
+turns out to hold exactly.
 
 ### 6.1 Country names: `-ujo` dominates, not `-io`
 
@@ -365,7 +366,45 @@ this project is: all fifteen authors with enough text put *esti* first, and
 mean pairwise rank agreement on the verbs they share is rho = +0.66 over 105
 author pairs. See `ANALYSIS/verbs.md`.
 
-### 6.6 Note on evidence
+### 6.6 `-ig-` and `-iĝ-` do what they promise
+
+The affix table in §2 says `-ig-` is causative and `-iĝ-` inchoative. What that
+means in practice is transitivity: the `-ig-` form takes a direct object and
+the `-iĝ-` form does not. This is the hardest single thing about Esperanto
+verbs for a learner, and it is the one claim in this guide the corpus confirms
+without qualification.
+
+Across 17 roots where both forms are common enough to measure, the `-ig-` form
+takes an object in 55–83% of its clauses and the `-iĝ-` form in 0–9%. Mean gap
+**72 points, all 17 in the predicted direction**. The minimal pairs read as
+cleanly as the rule:
+
+> *ili plenigis la tutan spacon* — pg-11511:710
+>
+> *de Roberto pleniĝis, la fikstenitaj manoj sterniĝis* — pg-17665:502
+
+> *esperante lin trankviligi* — pg-17665:316
+>
+> *Trihore, ĉio trankviliĝis* — pg-11511:753
+
+`plenigi` takes *la spacon*; `pleniĝi` takes nothing. `trankviligi` takes
+*lin*; `trankviliĝi` has only its subject. `efektiviĝi` and `trankviliĝi` take
+an object in **none** of their 163 and 168 clauses in the corpus.
+
+Two cautions. A transitive verb is not obliged to take an object in every
+clause — *li skribis al mi* is ordinary — so these are propensities and not
+categories; `skribi` measures 34% and is transitive. And `sciiĝi` is the least
+clean of the 17 at 9%, because it governs *pri* rather than the accusative
+(*sciiĝi pri io*).
+
+Not every accusative is an object, which matters for reading as much as for
+counting. `en la domon` and `iri Parizon` mark motion toward; `la tutan tagon`
+and `okazis la okan de Majo` mark time. And in *li iris vidi la plimulton* the
+object belongs to *vidi*, not to *iri*.
+
+See `ANALYSIS/transitivity.md` for the method and the calibration.
+
+### 6.7 Note on evidence
 
 
 Frequencies above come from `tools/find_examples.py` over the **240**
@@ -391,4 +430,4 @@ grew.
 compound tenses · 3. Sintakso — word order, correlatives, clauses ·
 4. Fonologio kaj Ortografio — sounds, stress, x- and h-systems ·
 5. Pragmatiko kaj Registro · 6. Uzado — corpus divergences: country names,
-negation, compound tenses, mood, verb frequency
+negation, compound tenses, mood, verb frequency, transitivity

@@ -81,8 +81,9 @@ Grabowski and Vallienne. Four writers counted as eight, which is exactly what
 the author-pooling test exists to prevent. A surname now folds into the full
 name where exactly one full name matches it. This one surfaced while building
 `tools/verb_frequency.py`, whose own author breakdown listed both Luykens side
-by side; merging them moved the accusative control from −0.27 (p=0.08) to
-−0.35 (p=0.03), which is why the floor above is set where it is.
+by side. (Merging them moved the accusative control from −0.27 to −0.35, which
+looked at the time like a reason to distrust the whole analysis. The control
+was simply broken; see *The control behaves*.)
 
 **Twenty-six issues of one magazine are not twenty-six writers.** *The
 Esperantist* (1903–05) is 26 separate Gutenberg files with no author header.
@@ -124,7 +125,7 @@ analysis:
 | `ĥ` rate | swings, dies under hold-out | −0.09 (p=0.48) | −0.12 (p=0.45) | **null everywhere** |
 | compound tenses | swings, no direction | **−0.35 (p=0.003)** | −0.13 (p=0.44) | **an author effect** |
 | `-ujo` share | 100% until 1910, 48% in the 1930s | −0.45 (p=0.001) | **−0.57 (p=0.003)** | **survives** |
-| `accusative` *(control)* | flat, 835–1040 | +0.16 (p=0.18) | **−0.35 (p=0.03)** | **trends when it cannot** |
+| `accusative` *(control)* | flat, 922–1081 | +0.22 (p=0.07) | −0.07 (p=0.66) | **behaves** |
 
 `rho` is Spearman's; `p` is a permutation test — the years shuffled against the
 values 20,000 times — because with 26 authors an asymptotic p would assume more
@@ -139,22 +140,35 @@ of evidence. In a corpus where author and period are confounded by
 construction, the text is not an independent observation and the by-text row is
 the wrong row to read.
 
-**The control does not behave, and that sets the floor.** The accusative is
-fixed by the Fundamento and cannot trend. It reads **−0.35 (p=0.03)** at author
-level — significant, on a quantity that by construction has nothing to be
-significant about. So the periods differ by something other than date, and a
-rho up to about 0.35 in this corpus is inside what an unchangeable quantity
-produces. That is the number to measure any claim here against.
+**The control behaves, and it took two fixes to find that out.** The accusative
+is fixed by the Fundamento and cannot trend. It now reads −0.07 (p=0.66) at
+author level and 922–1081 per 10,000 across every decade with real material,
+which is what a control is supposed to look like.
 
-Only `ujo-share` clears it (−0.57), and the first-attestation result below does
-not depend on a rho at all — which, given a control that misbehaves at this
-size, is the better reason to trust it.
+It read −0.35 (p=0.03) until the measure itself was checked. The obvious test
+for an accusative — a word ending in `-n` after a vowel that can carry one —
+turns out to be **25% function words** on this corpus. Its single commonest
+match is `en`, at 16% of everything it caught, followed by `kun`, `nun`, `jen`,
+`tamen` and `sen`. The control was substantially measuring how often a period's
+authors wrote the preposition *en*. Counting only real accusatives —
+`-on/-ojn/-an/-ajn`, the accusative pronouns, the `-un` correlatives, and
+nothing in `-en`, which is an adverb plus the directional `-n` — flattens it.
 
-Earlier, the control earned its place more dramatically: the 1980s came out at
-565 accusatives per 10,000 against 850–1,040 everywhere else — a 40% drop in
-something that cannot drop. The cause was the Downes textbook, English-language
-prose *about* Esperanto, already on the mining exclusion list and never removed
-from this analysis.
+This matters twice over. It removes the noise floor an earlier version of this
+document set at 0.35 and warned readers to measure every claim against: the
+floor is not there, and `ujo-share` at −0.57 stands clear of a control that is
+flat rather than of one that misbehaves. **And it is a warning about controls
+in general.** A control only licenses the other measurements if the control
+itself is measuring what its name says. This one had a plausible name, a
+plausible regex, and caught the wrong words for two rounds of analysis. It was
+found by building an accusative test carefully for a different question
+entirely — see `ANALYSIS/transitivity.md`.
+
+The control earned its place before that, too: the 1980s came out at 565
+accusatives per 10,000 against 850–1,040 everywhere else — a 40% drop in
+something that cannot drop. The cause was the Downes textbook,
+English-language prose *about* Esperanto, already on the mining exclusion list
+and never removed from this analysis.
 
 ## The one positive result: `-ujo` → `-io`
 
@@ -310,7 +324,8 @@ better statistics.
    with date in the same way author is.
 
 Until at least the first two hold, read `--by-author` and never `--by-text`,
-treat any rho weaker than about 0.3 as inside what the control produces, and
-prefer a categorical claim — this form does not occur before this year — to a
-rate, because that is the only kind of claim in this study that survived
-scrutiny.
+and prefer a categorical claim — this form does not occur before this year —
+to a rate, because that is the kind of claim in this study that survived
+scrutiny best. And check what a control is actually counting before letting it
+license anything: this one was 25% function words and said so to nobody for
+two rounds.
