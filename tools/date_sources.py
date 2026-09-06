@@ -34,13 +34,55 @@ unambiguous about the Esperanto edition:
               corroborates and never decides.
   wikidata    publication date of the Esperanto work. Fetched separately and
               cached; see --wikidata.
+  translator  an in-text year that falls inside the translator's documented
+              working life. See below; not standalone, never high.
 
 A date is recorded only when a standalone source gives it, or two independent
 sources agree within THRESHOLD years. Otherwise the row says so and the source
 is excluded from the diachronic analysis rather than being given a number
 somebody might trust.
+
+THE `translator` EVIDENCE, and why it is not a relaxation of the rule above
+
+68 of the undated sources name a translator, which is 28% of the corpus by
+bytes, and they are undated because an in-text year under a named translator
+is inadmissible. That gate is correct and stays: Tangerud's Ibsen title pages
+say 1888-1896 and he translated them in the 1990s.
+
+What the gate lacks is a way to tell one printed year from another, and
+tools/date_by_translator.py supplies it: the translator's lifespan, from
+Wikidata, as a window [birth+16, death+3] clipped to 1887..now. A year printed
+in the book AND inside that window is a year the translator could actually
+have produced, which the original work's date, the author's dates and the
+scanning date all are not. Two independent facts, so it is recorded as
+`medium` and never `high` — the year could still be a preface signature or a
+performance date rather than the imprint, and on `Ifigenio en Taurido` it is
+in fact the Dresden performance of August 1908, which happens to be the
+publication year too.
+
+Two details that were measured rather than assumed:
+
+  reading order, not the earliest year. The `intext` rule takes the smallest
+  year it finds, and under a translator window that is wrong four times in
+  the forty-one it dates: `Rolandkanto` yields 1899 (a French edition cited in
+  the introduction) where the title page says 1906, and `Batalo pri la Domo
+  Heikkila` yields 1908 where the title page says HELSINGFORSO 1919. The
+  imprint sits at the top of the body and the bibliography sits below it, so
+  the FIRST admissible year in reading order is taken. This is only safe
+  because the window has already removed the original work's date; without it,
+  the first year on a translation's title page is usually the original's.
+
+  the digitisation year is not a publication year. Project Gutenberg's own
+  `Edition 1, (April 20, 2007)` line survives normalisation into some files,
+  and for a translator still alive in 2007 it sits squarely inside the window.
+  Years matching the RAW/ header's `Release date` or `Most recently updated`
+  are therefore struck. This removes two candidate years today and changes no
+  outcome, because both files carry `Unua Eldono: Oktobro 1998` as well — but
+  it is the difference between dating Grobe's Hawthorne 1998 and 2007 the day
+  a file turns up without the second line.
 """
 import argparse
+import csv
 import json
 import os
 import re
@@ -87,15 +129,29 @@ BIOGRAPHICAL = re.compile(
     r'naski\w*|mort(?:is|into)|\bnat[ae]\b|\bborn\b|\bdied\b', re.I)
 BIO_WINDOW = 30
 
+# The same defect with no word attached to it: `ARNE GARBORG (1851-1924)` and
+# `Baum, L. Frank (Lyman Frank), 1856-1919` are lifespans written as a range,
+# and the second number is a death year that BIOGRAPHICAL cannot see because
+# nothing near it says 'died'. Six files in the corpus are affected and all six
+# are translations; none of them is currently dated, so striking these changes
+# no existing row — but `1933-` is Donald Broadribb's own birth year sitting in
+# a catalogue line of the book he translated, which is precisely the
+# birth-year-read-as-publication-year error that once manufactured a finding.
+LIFESPAN = re.compile(r'(?<!\d)(1[89]\d\d|20[0-2]\d)\s*[-‐-―]\s*'
+                      r'(1[89]\d\d|20[0-2]\d)(?!\d)')
+
 
 def biographical_years(text):
-    """Years standing close to a birth or death word."""
+    """Years that date a person rather than the text."""
     out = set()
     for match in YEAR.finditer(text):
         window = text[max(0, match.start() - BIO_WINDOW):
                       match.end() + BIO_WINDOW]
         if BIOGRAPHICAL.search(window):
             out.add(int(match.group(1)))
+    for first, last in LIFESPAN.findall(text):
+        out.add(int(first))
+        out.add(int(last))
     return out
 
 
@@ -105,9 +161,54 @@ def plausible(text):
                    if FIRST_YEAR <= int(y) <= LAST_YEAR and int(y) not in skip})
 
 
-def evidence(name, wikidata):
-    """Every year we can find for this source, by where it came from."""
-    found = {}
+def ordered_years(text):
+    """The same years, in the order they are printed rather than sorted."""
+    skip = biographical_years(text)
+    out = []
+    for match in YEAR.finditer(text):
+        year = int(match.group(1))
+        if FIRST_YEAR <= year <= LAST_YEAR and year not in skip:
+            out.append(year)
+    return out
+
+
+# Project Gutenberg's own dates, which date the scan and nothing else.
+RELEASE = re.compile(r'^(?:Release date|Most recently updated):.*?(\d{4})',
+                     re.M)
+
+
+def load_translators(path):
+    """{translator: (from, to)} from RAW/TRANSLATORS.tsv, verified rows only.
+
+    Written by tools/date_by_translator.py, which is where the verification
+    lives: a row reaches `verified` only if Wikidata says the name is a human
+    with an eo.wikipedia article or Esperanto among their written languages.
+    An unverified name carries no window and so dates nothing, which is the
+    intended outcome for `A. Muller`.
+    """
+    windows = {}
+    if not path or not os.path.exists(path):
+        return windows
+    with open(path, encoding='utf-8') as fh:
+        for row in csv.DictReader(fh, delimiter='\t'):
+            if row.get('verdict') != 'verified':
+                continue
+            try:
+                windows[row['translator']] = (int(row['window_from']),
+                                              int(row['window_to']))
+            except (KeyError, ValueError):
+                continue
+    return windows
+
+
+def evidence(name, wikidata, translators):
+    """Every year we can find for this source, by where it came from.
+
+    Returns (found, note): the note carries the translator window when there
+    is one, so a source that has a verified translator but no year inside his
+    working life says so in its row instead of coming out 'no evidence'.
+    """
+    found, note = {}, ''
     raw_head = head(os.path.join(RAW, name))
 
     match = ORIGINAL.search(raw_head)
@@ -124,14 +225,31 @@ def evidence(name, wikidata):
     # in the 1990s; he came out as 43% of the '1890s' before this rule. So
     # where the source names a translator, the in-text year is inadmissible
     # and the text stays undated unless something dates the Esperanto itself.
-    if not FIELD['Translator'].search(raw_head):
+    translator = FIELD['Translator'].search(raw_head)
+    if not translator:
         body = plausible(head(os.path.join(CORPUS, name)))
         if body:
             found['intext'] = body[0]
+    else:
+        # The gate above stays shut. What opens beside it is narrower: an
+        # in-text year is admissible only where the translator is identified
+        # and was alive and adult when it was printed. See the module
+        # docstring for why this is reading order and not the earliest year.
+        who = translator.group(1).strip()
+        span = translators.get(who)
+        if span:
+            struck = {int(y) for y in RELEASE.findall(raw_head)}
+            inside = [y for y in ordered_years(head(os.path.join(CORPUS, name)))
+                      if span[0] <= y <= span[1] and y not in struck]
+            note = '%s active %d-%d' % (who, span[0], span[1])
+            if inside:
+                found['translator'] = inside[0]
+            else:
+                note += '; no in-text year inside it'
 
     if name in wikidata:
         found['wikidata'] = wikidata[name]
-    return found
+    return found, note
 
 
 # A Vikifontaro scan is named Author_Title_Year, so the author is recoverable
@@ -212,6 +330,13 @@ def decide(name, found):
                 % found['filename'])
     if len(found) == 1:
         basis, year = next(iter(found.items()))
+        if basis == 'translator':
+            # Two independent facts — the year is printed in the book, and the
+            # translator could have been the one printing it — but neither is a
+            # publication record of the Esperanto edition. Medium, so the
+            # headline analysis can be run without these and report what
+            # changes when they are included.
+            return year, 'medium', basis, 'in-text year inside translator life'
         if basis == 'intext' and not collection:
             # On single works this is right 7 times in 8 against independently
             # known dates — good enough to use, not good enough to trust
@@ -256,18 +381,28 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--write', action='store_true')
     parser.add_argument('--wikidata', help='JSON cache of source -> year')
+    parser.add_argument('--translators', default=os.path.join(RAW,
+                                                              'TRANSLATORS.tsv'),
+                        help='TSV of translator -> working-life window, from '
+                             'tools/date_by_translator.py')
     args = parser.parse_args()
 
     wikidata = {}
     if args.wikidata and os.path.exists(args.wikidata):
         wikidata = json.load(open(args.wikidata, encoding='utf-8'))
 
+    translators = load_translators(args.translators)
+
     rows, counts, tokens_dated, tokens_all = [], {}, 0, 0
     for name in sorted(os.listdir(CORPUS)):
         if not name.endswith('.txt'):
             continue
-        found = evidence(name, wikidata)
+        found, span_note = evidence(name, wikidata, translators)
         year, confidence, basis, note = decide(name, found)
+        if span_note:
+            note = '%s (%s)' % (note, span_note) if note else span_note
+            if not year:
+                basis = 'translator-window'
         meta = metadata(name)
         size = os.path.getsize(os.path.join(CORPUS, name))
         tokens_all += size
@@ -288,6 +423,11 @@ def main():
         print('  %-8s %4d' % (confidence, counts.get(confidence, 0)))
     print('  dated share of corpus by bytes: %.1f%%'
           % (100.0 * tokens_dated / max(tokens_all, 1)))
+    if translators:
+        print('  translator windows loaded: %d' % len(translators))
+    else:
+        print('  no translator windows (run tools/date_by_translator.py '
+              '--write)')
 
     if args.write:
         with open(OUT, 'w', encoding='utf-8') as fh:

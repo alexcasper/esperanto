@@ -254,10 +254,16 @@ are in Lanti's collected works or his Voltaire translation; of 59 *Germanio*,
 international form is the one a reformist reaches for. So the second column is
 not a cross-section of usage drifting — it is one writer, quoted at length.
 
-The corpus can say when `-io` enters. Across 30 dated texts written before 1911
-— 13 hands, 543 country names — it does not occur once. From 1911 it appears
-and does not go away. The transition is visible inside single sentences, where
-both systems stand in one list:
+The corpus can say when `-io` enters. Across 44 dated texts written before
+1911 — 24 hands, 832 country names — it occurs **once**, and that once is a
+printer's address rather than a writer's choice — the place-of-publication
+line of a Czech translation:
+
+> *Eldonis FERD. BOHÁCEK, Jevícko Moravio, Aŭstrio* — pg-18178:12
+
+From 1911 it appears in running prose and does not go away: 21 of the 50 dated
+texts after that date use it. The transition is visible inside single
+sentences, where both systems stand in one list:
 
 > *172 (44 en Germanujo, 38 — Francujo, 30 — Svedujo, 13 — Finnlando, 12 —
 > Portugalujo, 6 — Un. ŝtatoj, 5 — Bulgarujo, 3 — Italujo, 3 — Aŭstrio, po 1

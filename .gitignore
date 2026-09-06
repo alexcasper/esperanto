@@ -15,3 +15,6 @@ DICT/candidates.jsonl
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Wikidata API responses cached by tools/date_by_translator.py (re-fetchable)
+RAW/.cache-wikidata/

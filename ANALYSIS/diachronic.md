@@ -333,6 +333,70 @@ two rounds.
 
 ---
 
+## Addendum, 2026-09-06: the translations are dated (esp-e0q)
+
+Next step 3 above is done, and it moved the coverage a long way and the
+1940–1990 gap not at all. The figures in the body of this document are the
+2026-09-06 snapshot of the run they describe and are **not** updated here; what
+follows is a second run beside them.
+
+`tools/date_by_translator.py` resolves each name in a `Translator:` header to a
+Wikidata person and records a working-life window, `[birth+16, death+3]`
+clipped to 1887..now. `tools/date_sources.py` then re-admits an in-text year
+under a named translator — and only then — if it falls inside that window. The
+gate itself is unchanged: Tangerud's 1888 is still inadmissible, because he was
+not alive to print it.
+
+- 34 of 48 translator names resolved and verified; 14 did not and date nothing.
+- 41 sources newly dated, all at `medium`, all with the window in the note.
+- Dated share of the corpus by bytes: **46% → 64%**. Sources: 80 → 121.
+- `--by-author`: 38 authors / 69 texts → **59 authors / 110 texts**.
+
+The `-ujo` trend survives the twenty-one new authors and gets stronger, which
+is the outcome that was not guaranteed:
+
+| | before | after |
+|---|---|---|
+| `ujo-share` rho (authors) | −0.57 (p=0.003), n=26 | **−0.61 (p=0.0001), n=40** |
+| same, largest two held out | −0.45 (p=0.030) | **−0.54 (p=0.0006)** |
+| `accusative` control | −0.07 (p=0.66) | −0.13 (p=0.33), −0.05 held out |
+
+The control stays flat, so the new dates did not import a genre difference
+along with them.
+
+**The categorical claim is the one that weakened, and it has to be said.** The
+body of this document reports zero `-io` in 30 pre-1911 texts. With 14 more
+pre-1911 texts and 289 more country names the count is no longer zero:
+
+```
+   before  44 texts, 24 hands,  832 country names,  1 use -io
+   after   50 texts, 30 hands,  992 country names, 21 use -io
+```
+
+The single occurrence is `Aŭstrio` in a publisher's imprint — *Eldonis FERD.
+BOHÁCEK, Jevícko Moravio, Aŭstrio*, pg-18178:12, the place-of-publication line
+of a Czech translation printed in 1908. It is a printer's address, not a
+writer's choice of suffix, and the date is the imprint's own year rather than
+an inferred one. The permutation p is unchanged at 0.0000.
+
+So the finding survives and is weaker than stated: not "never before 1911" but
+"once before 1911, in an address line". Fourteen new pre-1911 texts from eleven
+new hands produced exactly one counterexample, and it is the least lexical
+occurrence the corpus could have offered — which is a better test of the claim
+than the original run was. GRAMMAR §6.1 has been corrected to match; that
+section is a live reference rather than a dated snapshot.
+
+**Next step 2 is not helped, and now looks unreachable from this corpus.**
+Sources between 1939 and 1990: three before, three after. The 41 new dates land
+1891–1924 (26 of them) and 1997–2003 (15), because that is what Project
+Gutenberg holds — pre-1929 public domain, plus Grobe's and Tangerud's modern
+translations released by their authors. Half a century of Esperanto is missing
+from the sample and no amount of re-dating what is already here will produce
+it. The completion of the `-ujo`/`-io` change stays out of reach until sources
+from that period are fetched.
+
+---
+
 *The figures in this document are a snapshot of the analysis run it describes,
 dated 2026-09-06, and are not live counts — updating them silently would
 rewrite a finding rather than maintain a total. Figures elsewhere that are

@@ -8,64 +8,64 @@ ia-traduction_de_lekzercaro.txt			none	no evidence
 pg-11307.txt	1924		medium	intext	L. L. Zamenhof	uncorroborated in-text year
 pg-11511.txt			none	no evidence	Adolf Krafft	
 pg-16967.txt	1906		medium	intext	J. C. O'Connor	uncorroborated in-text year
-pg-17425.txt			none	no evidence	Edwin Grobe	
-pg-17482.txt			none	no evidence	Elfric Leofwin Kearney	
-pg-17665.txt			none	no evidence	Edwin Grobe	
-pg-17945.txt			none	no evidence	Edwin Grobe	
-pg-18178.txt			none	no evidence	Josef Grňa	
-pg-18326.txt			none	no evidence	Edwin Grobe	
-pg-18836.txt			none	no evidence	Edwin Grobe	
-pg-19030.txt			none	no evidence	Odd Tangerud	
-pg-19182.txt			none	no evidence	Odd Tangerud	
-pg-19183.txt			none	no evidence	Odd Tangerud	
-pg-19293.txt			none	no evidence	Edwin Grobe	
-pg-19803.txt			none	no evidence	Odd Tangerud	
-pg-19858.txt			none	no evidence	Odd Tangerud	
+pg-17425.txt	2000		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-17482.txt	1910		medium	translator	Elfric Leofwin Kearney	in-text year inside translator life (Elfric Leofwin Kearney active 1887-1916)
+pg-17665.txt	1998		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-17945.txt	1999		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-18178.txt	1908		medium	translator	Josef Grňa	in-text year inside translator life (Josef Grňa active 1896-1922)
+pg-18326.txt	1998		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-18836.txt	1999		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-19030.txt	1998		medium	translator	Odd Tangerud	in-text year inside translator life (Odd Tangerud active 1935-2013)
+pg-19182.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-19183.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-19293.txt	1998		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-19803.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-19858.txt	1997		medium	translator	Odd Tangerud	in-text year inside translator life (Odd Tangerud active 1935-2013)
 pg-20006.txt	1888		medium	intext	L. L. Zamenhof	uncorroborated in-text year
-pg-20162.txt			none	no evidence	Odd Tangerud	
-pg-20178.txt			none	no evidence	Odd Tangerud	
+pg-20162.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-20178.txt	1997		medium	translator	Odd Tangerud	in-text year inside translator life (Odd Tangerud active 1935-2013)
 pg-20802.txt			none	no evidence	Gary Mickle	
-pg-20931.txt			none	no evidence	Edwin Grobe	
-pg-20943.txt			none	no evidence	Edwin Grobe	
-pg-21194.txt			none	no evidence	Edwin Grobe	
-pg-21195.txt			none	no evidence	Edwin Grobe	
+pg-20931.txt	2003		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-20943.txt	1999		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-21194.txt	1998		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
+pg-21195.txt	1998		medium	translator	Edwin Grobe	in-text year inside translator life (Edwin Grobe active 1943-2018)
 pg-21951.txt			none	no evidence	Jan Václav Novák	
 pg-22070.txt			none	no evidence	J. W. Eggleton	
-pg-22592.txt			none	no evidence	L. L. Zamenhof	
-pg-22901.txt			none	no evidence	H. J. Bulthuis	
+pg-22592.txt	1908		medium	translator	L. L. Zamenhof	in-text year inside translator life (L. L. Zamenhof active 1887-1920)
+pg-22901.txt	1922		medium	translator	H. J. Bulthuis	in-text year inside translator life (H. J. Bulthuis active 1887-1948)
 pg-23093.txt	1914		high	pg-header	Herbert Harris	
 pg-23670.txt			none	no evidence	Ivan H. Krestanoff	
-pg-23774.txt			none	no evidence	Odd Tangerud	
-pg-23837.txt			none	no evidence	Odd Tangerud	
+pg-23774.txt	1999		medium	translator	Odd Tangerud	in-text year inside translator life (Odd Tangerud active 1935-2013)
+pg-23837.txt	1997		medium	translator	Odd Tangerud	in-text year inside translator life (Odd Tangerud active 1935-2013)
 pg-24057.txt			none	no evidence	E. Neumark	
-pg-24074.txt			none	no evidence	Fritz Wicke	
-pg-24145.txt			none	no evidence	William W. Mann	
-pg-24292.txt			none	no evidence	Odd Tangerud	
-pg-24355.txt			none	no evidence	Odd Tangerud	
-pg-24501.txt			none	no evidence	L. L. Zamenhof	
+pg-24074.txt	1922		medium	translator	Fritz Wicke	in-text year inside translator life (Fritz Wicke active 1897-1943)
+pg-24145.txt			none	translator-window	William W. Mann	William W. Mann active 1897-1975; no in-text year inside it
+pg-24292.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-24355.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
+pg-24501.txt	1891		medium	translator	L. L. Zamenhof	in-text year inside translator life (L. L. Zamenhof active 1887-1920)
 pg-24525.txt	1910		medium	intext	Edmond Privat	uncorroborated in-text year
 pg-24575.txt	1890		medium	intext	František Vladimír Lorenc	uncorroborated in-text year
-pg-24763.txt			none	no evidence	Eugen Wüster	
+pg-24763.txt	1921		medium	translator	Eugen Wüster	in-text year inside translator life (Eugen Wüster active 1914-1980)
 pg-25311.txt	1896		medium	intext	V. Stankiević	uncorroborated in-text year
-pg-25386.txt			none	no evidence	Lehman Wendell	
-pg-25539.txt			none	no evidence	Samuel Meyer	
-pg-25964.txt			none	no evidence	Vilho Setälä	
+pg-25386.txt			none	translator-window	Lehman Wendell	Lehman Wendell active 1894-1980; no in-text year inside it
+pg-25539.txt	1906		medium	translator	Samuel Meyer	in-text year inside translator life (Samuel Meyer active 1887-1924)
+pg-25964.txt	1919		medium	translator	Vilho Setälä	in-text year inside translator life (Vilho Setälä active 1908-1988)
 pg-26099.txt	1937		medium	intext	František Omelka	uncorroborated in-text year
 pg-26359.txt	1920		medium	intext	Edmond Privat	uncorroborated in-text year
-pg-26480.txt			none	no evidence	Odd Tangerud	
+pg-26480.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
 pg-26959.txt	1921		medium	intext		uncorroborated in-text year
-pg-27170.txt			none	no evidence	Odd Tangerud	
+pg-27170.txt			none	translator-window	Odd Tangerud	Odd Tangerud active 1935-2013; no in-text year inside it
 pg-27593.txt	1993		medium	intext	Jorge Camacho	uncorroborated in-text year
-pg-27915.txt			none	no evidence	Frederik Skeel-Giørling	
+pg-27915.txt			none	translator-window	Frederik Skeel-Giørling	Frederik Skeel-Giørling active 1892-1913; no in-text year inside it
 pg-28720.txt			none	no evidence	The Esperantist	
 pg-28721.txt			none	no evidence	The Esperantist	
-pg-28968.txt			none	no evidence	Hilma Hall	
+pg-28968.txt			none	translator-window	Hilma Hall	Hilma Hall active 1887-1925; no in-text year inside it
 pg-28971.txt	2009		medium	intext	Barack Obama	uncorroborated in-text year
 pg-29403.txt			none	no evidence	The Esperantist	
-pg-30536.txt			none	no evidence	Eugène Noël	
+pg-30536.txt	1906		medium	translator	Eugène Noël	in-text year inside translator life (Eugène Noël active 1887-1924)
 pg-30991.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-30992.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
-pg-31348.txt			none	no evidence	Donald Broadribb	
+pg-31348.txt			none	translator-window	Donald Broadribb	Donald Broadribb active 1949-2015; no in-text year inside it
 pg-32035.txt	1908		medium	intext	Various	uncorroborated in-text year
 pg-32313.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-32314.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
@@ -73,9 +73,9 @@ pg-32480.txt	1952		medium	intext	František Omelka	uncorroborated in-text year
 pg-34042.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-34043.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-35743.txt	1908		medium	intext	August von Kotzebue	uncorroborated in-text year
-pg-35917.txt			none	no evidence	Maria Posenaer	
+pg-35917.txt	1912		medium	translator	Maria Posenaer	in-text year inside translator life (Maria Posenaer active 1890-1959)
 pg-35981.txt			none	no evidence	Bénédict Papot	
-pg-37279.txt			none	no evidence	L. L. Zamenhof	
+pg-37279.txt			none	translator-window	L. L. Zamenhof	L. L. Zamenhof active 1887-1920; no in-text year inside it
 pg-37642.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-37643.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
 pg-37644.txt	1904		medium	intext	The Esperantist	uncorroborated in-text year
@@ -92,15 +92,15 @@ pg-44131.txt			none	no evidence	The Esperantist
 pg-44666.txt			none	no evidence	The Esperantist	
 pg-44667.txt			none	no evidence	The Esperantist	
 pg-44668.txt			none	no evidence	The Esperantist	
-pg-45612.txt			none	no evidence	Lehman Wendell	
-pg-45713.txt			none	no evidence	Leon Zamenhof	
+pg-45612.txt	1910		medium	translator	Lehman Wendell	in-text year inside translator life (Lehman Wendell active 1894-1980)
+pg-45713.txt	1908		medium	translator	Leon Zamenhof	in-text year inside translator life (Leon Zamenhof active 1891-1937)
 pg-47249.txt	1907		medium	intext	Leandro Fernández de Moratín	uncorroborated in-text year
 pg-47259.txt	1921		medium	intext		uncorroborated in-text year
 pg-47855.txt	1903		medium	intext	Paul Fruictier	uncorroborated in-text year
-pg-47913.txt			none	no evidence	D. H. Lambert	
+pg-47913.txt	1908		medium	translator	D. H. Lambert	in-text year inside translator life (D. H. Lambert active 1887-1933)
 pg-48033.txt			none	no evidence		
 pg-48896.txt	1908		medium	intext	Roman Frenkel	uncorroborated in-text year
-pg-48900.txt			none	no evidence	Wouter F. Pilger	
+pg-48900.txt			none	translator-window	Wouter F. Pilger	Wouter F. Pilger active 1958-2009; no in-text year inside it
 pg-49232.txt			none	no evidence	The Esperantist	
 pg-49233.txt	1906		medium	intext	The Esperantist	uncorroborated in-text year
 pg-49234.txt	1905		medium	intext	The Esperantist	uncorroborated in-text year
@@ -112,36 +112,36 @@ pg-52064.txt	1922		medium	intext	Literatura Mondo	uncorroborated in-text year
 pg-52111.txt	1922		medium	intext	Nuno Baena	uncorroborated in-text year
 pg-52556.txt	1908		medium	intext	R. Anton	uncorroborated in-text year
 pg-52577.txt	1892		medium	intext	V. N. Devjatnin	uncorroborated in-text year
-pg-52876.txt			none	no evidence	Joseph Evrot	
-pg-55302.txt			none	no evidence	Maria Ŝidlovskaja	
+pg-52876.txt	1904		medium	translator	Joseph Evrot	in-text year inside translator life (Joseph Evrot active 1887-1923)
+pg-55302.txt	1912		medium	translator	Maria Ŝidlovskaja	in-text year inside translator life (Maria Ŝidlovskaja active 1887-1933)
 pg-55574.txt	1912		medium	intext	Ned Katryn	uncorroborated in-text year
 pg-55954.txt	1922		medium	intext	Heinrich August Luyken	uncorroborated in-text year
 pg-56351.txt			none	no evidence	Venancio Da Silva	
 pg-57184.txt	1921		medium	intext		uncorroborated in-text year
-pg-60429.txt			none	no evidence	Benno Küster	
-pg-61103.txt			none	no evidence	Ivy Kellerman Reed	
+pg-60429.txt			none	translator-window	Benno Küster	Benno Küster active 1887-1919; no in-text year inside it
+pg-61103.txt	1910		medium	translator	Ivy Kellerman Reed	in-text year inside translator life (Ivy Kellerman Reed active 1893-1971)
 pg-61190.txt			none	no evidence	Alexander Pride	
 pg-61579.txt			none	no evidence	A. Muller	
 pg-61581.txt	1907		medium	intext	Anonymous	uncorroborated in-text year
-pg-61860.txt			none	no evidence	L. L. Zamenhof	
-pg-62118.txt			none	no evidence	Bronisław Kuhl	
-pg-62394.txt			none	no evidence	René de Saussure	
-pg-62511.txt			none	no evidence	Albert Frank Milward	
-pg-63064.txt			none	no evidence	H. J. Bulthuis	
-pg-63105.txt			none	no evidence	Andreo Fiŝer	
-pg-63926.txt			none	no evidence	Eugen Wüster	
+pg-61860.txt	1910		medium	translator	L. L. Zamenhof	in-text year inside translator life (L. L. Zamenhof active 1887-1920)
+pg-62118.txt	1923		medium	translator	Bronisław Kuhl	in-text year inside translator life (Bronisław Kuhl active 1902-1958)
+pg-62394.txt	1918		medium	translator	René de Saussure	in-text year inside translator life (René de Saussure active 1887-1946)
+pg-62511.txt	1924		medium	translator	Albert Frank Milward	in-text year inside translator life (Albert Frank Milward active 1909-1948)
+pg-63064.txt	1910		medium	translator	H. J. Bulthuis	in-text year inside translator life (H. J. Bulthuis active 1887-1948)
+pg-63105.txt	1923		medium	translator	Andreo Fiŝer	in-text year inside translator life (Andreo Fiŝer active 1887-1933)
+pg-63926.txt	1922		medium	translator	Eugen Wüster	in-text year inside translator life (Eugen Wüster active 1914-1980)
 pg-64579.txt	1923		medium	intext	H. J. Bulthuis	uncorroborated in-text year
-pg-65835.txt			none	no evidence	Gaston Moch	
-pg-65958.txt			none	no evidence	L. L. Zamenhof	
+pg-65835.txt	1909		medium	translator	Gaston Moch	in-text year inside translator life (Gaston Moch active 1887-1938)
+pg-65958.txt	1908		medium	translator	L. L. Zamenhof	in-text year inside translator life (L. L. Zamenhof active 1887-1920)
 pg-66037.txt			none	no evidence	Alexandra Mexin	
-pg-68874.txt	1923		high	pg-header	Hendrik Coenraad Mees	
-pg-68878.txt	1924		high	pg-header	Tojosato Tooguu	
+pg-68874.txt	1923		high	pg-header	Hendrik Coenraad Mees	Hendrik Coenraad Mees active 1887-1942
+pg-68878.txt	1924		high	pg-header	Tojosato Tooguu	Tojosato Tooguu active 1910-1930
 pg-68879.txt	1924		high	pg-header	Paul Benoit	
 pg-69123.txt	1924		high	pg-header	Jean Forge	
-pg-71836.txt	1903		high	pg-header	Achille Motteau	
+pg-71836.txt	1903		high	pg-header	Achille Motteau	Achille Motteau active 1887-1909; no in-text year inside it
 pg-74344.txt	1904		high	pg-header	Emile Boirac	
-pg-74405.txt	1924		high	pg-header	Nikolao Hohlov	
-pg-75983.txt	1889		high	pg-header	Antoni Grabowski	
+pg-74405.txt	1924		high	pg-header	Nikolao Hohlov	Nikolao Hohlov active 1907-1956
+pg-75983.txt	1889		high	pg-header	Antoni Grabowski	Antoni Grabowski active 1887-1924
 pg-76273.txt	1906		high	pg-header	Henri Vallienne	
 pg-76310.txt	1910		high	pg-header	L. Milho	
 pg-7787.txt			none	no evidence	Ivy Kellerman Reed	
