@@ -402,7 +402,22 @@ counting. `en la domon` and `iri Parizon` mark motion toward; `la tutan tagon`
 and `okazis la okan de Majo` mark time. And in *li iris vidi la plimulton* the
 object belongs to *vidi*, not to *iri*.
 
-See `ANALYSIS/transitivity.md` for the method and the calibration.
+`DICT/entries.jsonl` now carries this as a measured field on 662 verb entries
+— *liberigi* transitive at 0.77 over 548 clauses, *liberiĝi* intransitive at
+0.02 over 153 — with the clause counts attached. *Efektiviĝi* records 0.000
+over 163 clauses.
+
+A third value, `uncertain`, is written where the corpus was asked and did not
+settle it, and it turns out to mark something real rather than a failure: the
+band is full of verbs whose usual complement is **an infinitive, not a noun**.
+*Komenci* measures 18%, because 46% of its occurrences are followed straight by
+an infinitive — *li komencis demandi*, *komencis verŝi la akvon*, where the
+object belongs to the second verb. *Povi* 15%, *devi* 13%, *voli* 19%,
+*kuraĝi* 17% are the same shape. None of these is intransitive; they simply do
+not take **noun** objects, which is what this measure counts.
+
+See `ANALYSIS/transitivity.md` for the method and the calibration, and
+`DICT/README.md` for the field.
 
 ### 6.7 Note on evidence
 

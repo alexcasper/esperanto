@@ -36,6 +36,35 @@ By part of speech: noun 18101 · verb 4169 · adj 4072 · adv 854 · suffix 31 �
 prep 31 · num 29 · pron 26 · interj 16 · particle 12 · ending 9 · prefix 8 ·
 conj 7 · art 1.
 
+**662 verb entries carry measured `transitivity`** — 366 transitive, 155
+intransitive, 141 uncertain — out of 4169 verbs. The other 84% appear in fewer
+than 100 corpus clauses, which is too little to measure, and carry no field
+rather than a guess.
+
+This is the first field in the dictionary derived from measured syntax instead
+of a source's assertion. `tools/transitivity.py` finds each verb's clause and
+looks for an accusative object in it; the thresholds are deliberately set
+*inside* the gap observed on verbs whose transitivity is not in dispute
+(6.3% for `iri`, the highest undisputed intransitive; 34.0% for `skribi`, the
+lowest undisputed transitive), so that transitive means ≥40% and intransitive
+means ≤5% and **nothing as hard as the hardest known case is decided
+automatically**. `skribi`, `kompreni`, `iri` and `fali` all come out
+`uncertain`. That band is where the genuinely ambitransitive verbs live and
+where a reviewer is actually needed.
+
+Two limits, both recorded rather than hidden. The measure has a floor near 6%
+from the bare directional accusative (*iri Parizon* is motion, not an object),
+so `intransitive` means "no more objects than a verb of motion picks up by
+accident". And a transitive verb need not take an object in every clause —
+*li skribis al mi* — so `object_share` is a propensity, not a category.
+
+An independent check the thresholds were not tuned against: of 58 `-ig-` verbs
+53 come out transitive and 5 uncertain; of 49 `-iĝ-` verbs 47 come out
+intransitive and 2 uncertain. **No contradictions in either direction.**
+
+The field is derived, so `promote_lemmas.py --rebuild` drops it from
+corpus-mined entries; re-run the annotator afterwards. It is idempotent.
+
 4107 entries carry `derived: true`, marking a word built by regular affixation
 on a root already held — *abonanto*, *agado*, *reĝino*. Settled policy is that
 these earn entries, because a reader looking up *reĝino* should find it; the
@@ -145,6 +174,12 @@ its `source` file and `text`).
   affix remainder is itself a UV root (self-validating), otherwise just
   `stem` + `ending`.
 - `source` — provenance tag (`Fundamento/UV-1905` for all current lines).
+- `transitivity` — on verbs only, and **measured rather than asserted**:
+  `verdict` (`transitive` / `intransitive` / `uncertain`), `object_share`
+  (fraction of this verb's clauses carrying a direct object), `clauses` (how
+  many were seen) and `basis`. Written by
+  `tools/annotate_transitivity.py`; see *Coverage* above for the thresholds
+  and what they rest on.
 
 ### POS inference (documented heuristic)
 

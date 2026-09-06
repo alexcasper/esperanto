@@ -164,10 +164,59 @@ Three further limits worth stating:
    argument structure follows the source language more closely than an original
    author's would.
 
-## Worth doing next
+## Written into the dictionary
 
-`DICT/entries.jsonl` still records no transitivity. The `-ig-`/`-iĝ-` result
-says the corpus can supply it for at least the clear cases: a verb above 60%
-over 400+ clauses is transitive, one below 5% is not, and the band between is
-where a reviewer is actually needed. That would be the first field in the
-dictionary derived from measured syntax rather than from a source's assertion.
+`DICT/entries.jsonl` now carries the measurement on **662 of its 4,169 verb
+entries** — 366 transitive, 155 intransitive, 141 uncertain — with the evidence
+attached:
+
+```json
+"transitivity": {"verdict": "intransitive", "object_share": 0.003,
+                 "clauses": 383, "basis": "corpus"}
+```
+
+Twelve `-ig-`/`-iĝ-` pairs have both halves annotated and both decided —
+`liberigi` 0.77 against `liberiĝi` 0.02, `efektivigi` 0.74 against
+`efektiviĝi` 0.000. Fewer than the 17 measurable pairs, because several
+`-ig-` forms are not dictionary entries at all: `plenigi` is absent, which is
+the root-listed gap of `ANALYSIS/verbs.md` showing up from another direction.
+
+That is `komenciĝi`. Its partner `komenci` does **not** come out transitive —
+it measures 18.4% over 3,344 clauses and lands in `uncertain`, for a reason
+worth knowing: **46% of `komenci`'s occurrences are followed immediately by an
+infinitive** — *li komencis demandi*, *komencis verŝi la akvon* — where the
+object belongs to the second verb. `komenci` mostly takes a verb complement,
+not a noun object.
+
+That is the fourth limit of the measure, and the one that shapes the
+`uncertain` band: **it counts nominal objects only.** `povi` 14.6%, `devi`
+12.6%, `voli` 18.5%, `kuraĝi` 16.7%, `provi` 26.9%, `deziri` 25.0% are all the
+same shape. None of them is intransitive, and the 5% floor is low enough that
+none is called intransitive — but none is called transitive either, correctly,
+because the thing they take is not a noun. `uncertain` is doing real work here:
+it is picking out a third class rather than confessing ignorance.
+
+The thresholds are set **inside** the gap the calibration set shows, not at its
+edges: transitive at ≥40% and intransitive at ≤5%, against an observed gap of
+6.3% to 34.0%. So `skribi` (34.0%), `kompreni` (39.6%), `iri` (6.3%) and `fali`
+(5.0%) all come out `uncertain` and go to a human. Putting the cut-offs at the
+edges of the gap would classify the entire calibration set correctly and would
+be fitting the thresholds to the answer. Nothing is misclassified under these;
+four of twenty-four are declined, which is the point.
+
+`uncertain` is written rather than left blank, because a verb the corpus was
+asked about and did not settle is a different thing from a verb nobody
+measured. The remaining 84% of verb entries appear in fewer than 100 clauses
+and carry no field at all rather than a guess.
+
+One check the thresholds were not tuned against, since the `-ig-`/`-iĝ-` verbs
+were never in the calibration set: of 58 `-ig-` verbs, 53 come out transitive
+and 5 uncertain; of 49 `-iĝ-` verbs, 47 intransitive and 2 uncertain. **No
+contradictions in either direction** across 107 verbs. The two uncertain
+`-iĝ-` forms are `sciiĝi` (9.0%, governs *pri*) and `foriĝi` (11.0%, picks up
+directional accusatives), both of which are the known limits doing what they
+do rather than surprises.
+
+The field is derived data. `promote_lemmas.py --rebuild` re-promotes
+corpus-mined entries and drops it from them, so `tools/annotate_transitivity.py
+--apply` belongs after every rebuild; it is idempotent.

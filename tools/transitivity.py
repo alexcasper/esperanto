@@ -34,6 +34,13 @@ commonest intransitive verbs in the language:
                 correlatives count, and the stripped form has to be a word the
                 dictionary knows.
 
+A verb whose complement is an INFINITIVE reads low, and correctly so: this
+counts nominal objects. 46% of `komenci`'s occurrences are followed straight by
+an infinitive (`li komencis demandi`), so it measures 18% and is not
+transitive in the sense measured here. `povi`, `devi`, `voli` and `kuraĝi` are
+the same. They are not intransitive either — see --calibrate, and the
+`uncertain` band in tools/annotate_transitivity.py.
+
 And one thing that IS an object, of a different verb. `li iris vidi la
 plimulton`, `ŝi sidis aŭskultante la horloĝojn`, `ĝi estos ĉirkaŭinta la
 terglobon`: an infinitive or participle standing between a verb and an

@@ -84,7 +84,13 @@ python3 tools/review_shard.py --shard 1/8 --list          # a reviewer judges
 python3 tools/review_shard.py --shard 1/8 --apply F.json
 python3 tools/reconcile_lemmas.py --shards 8 --write-ledger   # reduce
 python3 tools/promote_lemmas.py --rebuild                 # -> DICT/entries.jsonl
+python3 tools/annotate_transitivity.py --apply            # re-measure transitivity
 ```
+
+`--rebuild` re-promotes corpus-mined entries from the reviewed candidates, so
+it drops any field added to them afterwards. `transitivity` is one such field:
+re-run the annotator after every rebuild. It is idempotent, and a scan takes a
+few minutes — pass `--save-counts` once and `--counts` thereafter.
 
 Checks worth running before committing a data change:
 
