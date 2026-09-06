@@ -7,6 +7,7 @@ diachronic study found the opposite for every rate it tried — each was carried
 by whoever wrote most — so the contrast is the point. This ranking is a fact
 about Esperanto as the corpus uses it, not about Vallienne or Luyken.
 
+
 Reproduce with:
 
 ```bash
@@ -18,7 +19,8 @@ python3 tools/verb_frequency.py --by-author        # is it the language or the w
 
 ## The list
 
-809,160 verb tokens over 240 files, 11,448 distinct verbs.
+809,160 verb tokens over 240 <!--= sources() --> files, 11,448 distinct
+verbs.
 
 | rank | verb | tokens | share | cumulative | commonest forms |
 |---|---|---|---|---|---|
@@ -210,3 +212,11 @@ settles them; filed as a bead.
    for verbs either.
 4. The 30,941 rejected tokens are dominated by proper names (`vinicius` 910,
    `petronius` 574) and English (`this` 420), which is the gate working.
+
+---
+
+*The figures in this document are a snapshot of the analysis run it describes,
+dated 2026-09-06, and are not live counts — updating them silently would
+rewrite a finding rather than maintain a total. Figures elsewhere that are
+meant to track the data carry an inline check marker and are verified by
+`python3 tools/check_figures.py`; see `DICT/README.md` for the mechanism.*

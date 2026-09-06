@@ -6,6 +6,7 @@ pairs where both forms are common enough to measure, the `-ig-` form takes a
 direct object in 55–83% of its clauses and the `-iĝ-` form in 0–9%. Mean gap
 **72.1 points, every pair in the predicted direction, none reversed**.
 
+
 Transitivity is the hardest thing about Esperanto verbs for a learner, and
 `DICT/entries.jsonl` records none of it. PIV marks verbs `tr.` or `ntr.` by
 lexicographic assertion. This measures it.
@@ -17,7 +18,8 @@ python3 tools/transitivity.py --top 40       # the ranking
 python3 tools/transitivity.py --audit        # what got counted as an object
 ```
 
-698,315 verb clauses over 240 sources; 210,387 carried an object.
+698,315 verb clauses over 240 <!--= sources() --> sources; 210,387
+carried an object.
 
 ## The calibration is the whole argument
 
@@ -220,3 +222,11 @@ do rather than surprises.
 The field is derived data. `promote_lemmas.py --rebuild` re-promotes
 corpus-mined entries and drops it from them, so `tools/annotate_transitivity.py
 --apply` belongs after every rebuild; it is idempotent.
+
+---
+
+*The figures in this document are a snapshot of the analysis run it describes,
+dated 2026-09-06, and are not live counts — updating them silently would
+rewrite a finding rather than maintain a total. Figures elsewhere that are
+meant to track the data carry an inline check marker and are verified by
+`python3 tools/check_figures.py`; see `DICT/README.md` for the mechanism.*

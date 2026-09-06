@@ -11,7 +11,8 @@
      (country names, negation, compound tenses, mood, verb frequency,
      -ig-/-iĝ- transitivity)
 
-Claims are cited against `CORPUS/` (240 Esperanto-language sources; the 80
+Claims are cited against `CORPUS/` (240 <!--= sources() -->
+Esperanto-language sources; the 80
 that can be dated run 1888–2023 and cluster in 1900–1935) in the form
 *quoted text* — `source:line`, or by frequency counts from
 `tools/find_examples.py`, which excludes non-Esperanto sources using the same

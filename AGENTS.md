@@ -168,6 +168,7 @@ python3 tools/score_esperanto_text.py CORPUS/some-file.txt   # is it Esperanto?
 python3 tools/promote_lemmas.py --rebuild --dry-run          # what would change
 python3 -c "import json;[json.loads(l) for l in open('DICT/entries.jsonl')]"
 python3 tools/check_grammar_citations.py                     # do the quotes hold
+python3 tools/check_figures.py                               # do the counts hold
 ```
 
 Run the citation check after anything that rewrites `CORPUS/`. The guide's
@@ -177,6 +178,14 @@ shifts line numbers, and every citation into a touched file goes stale while
 still pointing at a real line. The check compares the quoted words, not just
 the line number, so it catches that and a quotation edited away from its
 source. It exits non-zero on failure.
+
+`check_figures.py` is the same idea for numbers. A figure derived from the
+data carries an inline marker naming the expression behind it, and the check
+re-evaluates it — `--fix` rewrites any that have drifted. Run it after
+anything that changes `DICT/entries.jsonl` or `CORPUS/`. Counts in this
+project have gone stale repeatedly and silently: the dictionary's own verb
+count, and three separate frequency claims in `GRAMMAR/`, one of them out by a
+factor of 85.
 
 Every tool takes `--dry-run` or prints a report before writing where the
 operation is destructive. Use it: a bad `--apply` has cost this project real

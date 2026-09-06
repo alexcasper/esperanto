@@ -239,10 +239,10 @@ lopsided in their favour, across all 240 Esperanto-language sources:
 
 | | `-ujo` | `-io` |
 |---|---|---|
-| *Franc-* | 299 | 85 |
-| *Rus-* | 265 | 44 |
-| *Angl-* | 240 | 26 |
-| *German-* | 185 | 59 |
+| *Franc-* | 299 <!--= occurrences(r'(?i)\bFrancujo\b') --> | 85 <!--= occurrences(r'(?i)\bFrancio\b') --> |
+| *Rus-* | 265 <!--= occurrences(r'(?i)\bRusujo\b') --> | 44 <!--= occurrences(r'(?i)\bRusio\b') --> |
+| *Angl-* | 240 <!--= occurrences(r'(?i)\bAnglujo\b') --> | 26 <!--= occurrences(r'(?i)\bAnglio\b') --> |
+| *German-* | 185 <!--= occurrences(r'(?i)\bGermanujo\b') --> | 59 <!--= occurrences(r'(?i)\bGermanio\b') --> |
 
 Modern Esperanto has largely moved to `-io`. A reader of these texts should
 expect `-ujo`; a writer of new Esperanto should not conclude from the corpus
@@ -285,9 +285,11 @@ the author hold-out.
 One negative word suffices and is not reinforced by *ne*. *Mi nenion vidis*
 (I saw nothing), not *mi ne vidis nenion*.
 
-Negative correlatives appear on **13761 lines**. Lines where *ne* plus a
+Negative correlatives appear on **13761 lines**.
+<!--= corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b') --> Lines where *ne* plus a
 finite verb stands within 25 characters of a `neni-` word, either order and
-without crossing a clause boundary, number **58** — and reading them, that is
+without crossing a clause boundary, number **58**
+<!--= corpus(r'(?i)\bne\s+\w+(as|is|os|us)\b[^.,;:!?]{0,25}\bneni(u|o|a|e|am|al|el|om|es)') + corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b[^.,;:!?]{0,25}\bne\s+\w+(as|is|os|us)\b') --> — and reading them, that is
 still an overcount rather than a count. Most are two negations in coordinated
 clauses (*ne invadis lin kaj nenio ŝajnis*), and the nearest thing to a real
 double negative is contrastive:
@@ -296,7 +298,8 @@ double negative is contrastive:
 
 which means the opposite of a reinforced negative: you will not do it for
 nothing, so you will be paid. A looser search — any *ne* within 30 characters
-of any `neni-` — returns 449 lines and is worth ignoring: it catches *Ne,* as
+of any `neni-` — returns 449 lines
+<!--= corpus(r'(?i)\bne\b[^.]{0,30}\bneni') --> and is worth ignoring: it catches *Ne,* as
 the answer particle beginning a sentence (*"Ne, nenion strangan," mi diris*,
 pg-18326:677) and the verb *neniigi*, to annihilate (*ne estis neniigitaj*,
 pg-18178:660), neither of which is negation doubled.
@@ -423,6 +426,7 @@ See `ANALYSIS/transitivity.md` for the method and the calibration, and
 
 
 Frequencies above come from `tools/find_examples.py` over the **240**
+<!--= sources() -->
 Esperanto-language sources in `CORPUS/`. Excluded are the English- and
 French-language grammars and textbooks — `pg-7787`, `pg-8177`, `pg-16967`,
 the Downes textbook, `key_to_the_ekzercaro`, `traduction_de_lekzercaro` — and

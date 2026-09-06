@@ -6,6 +6,7 @@ Thirty texts, thirteen hands, 543 country names, not one `-io`. From 1911 the
 form appears and never disappears. The other two candidate features are null,
 and one of them looked significant until the unit of analysis was fixed.
 
+
 The earlier version of this document reported three null results. Two of those
 still stand; the third was wrong, and so was one of the dates it rested on.
 What changed was not the statistics but the unit: decades let a single book be
@@ -329,3 +330,11 @@ to a rate, because that is the kind of claim in this study that survived
 scrutiny best. And check what a control is actually counting before letting it
 license anything: this one was 25% function words and said so to nobody for
 two rounds.
+
+---
+
+*The figures in this document are a snapshot of the analysis run it describes,
+dated 2026-09-06, and are not live counts — updating them silently would
+rewrite a finding rather than maintain a total. Figures elsewhere that are
+meant to track the data carry an inline check marker and are verified by
+`python3 tools/check_figures.py`; see `DICT/README.md` for the mechanism.*
