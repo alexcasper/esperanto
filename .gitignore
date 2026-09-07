@@ -21,3 +21,6 @@ RAW/.cache-wikidata/
 
 # archive.org item listing, regenerable from the scrape API
 RAW/.bitarkivo-items.json
+
+# transient scoring probes
+RAW/.probe-*

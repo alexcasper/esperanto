@@ -53,6 +53,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -146,11 +147,16 @@ def consider(identifier, include_marginal):
         return 'error', 'download failed', None, None
     if body.lstrip()[:200].lower().startswith('<!doctype html'):
         return 'error', 'served an HTML page instead of text', None, None
-    scratch = os.path.join(RAW, '.probe-%s.txt' % identifier[:60])
-    with open(scratch, 'w', encoding='utf-8') as fh:
-        fh.write(body)
-    figures = triage.score(scratch)
-    os.unlink(scratch)
+    # Score from a temp file, not from RAW/. Writing the probe into RAW meant
+    # a crash or an interrupt left .probe-* files sitting in the corpus source
+    # directory, where the next `git add -A` would have committed them.
+    handle, scratch = tempfile.mkstemp(prefix='probe-', suffix='.txt')
+    try:
+        with os.fdopen(handle, 'w', encoding='utf-8') as fh:
+            fh.write(body)
+        figures = triage.score(scratch)
+    finally:
+        os.unlink(scratch)
     if not figures:
         return 'error', 'unscorable', None, None
     tokens, known, singles = figures
@@ -195,8 +201,16 @@ def main():
 
     accepted, tally, rows = [], {}, []
     for index, identifier in enumerate(todo, 1):
-        verdict, reason, body, figures = consider(identifier,
-                                                  args.include_marginal)
+        # One bad issue must not take out the run. A parse bug in the score
+        # reader killed a 346-issue Penseo fetch after two other series had
+        # already succeeded, and nothing was written for it at all.
+        try:
+            verdict, reason, body, figures = consider(identifier,
+                                                      args.include_marginal)
+        except Exception as error:                        # noqa: BLE001
+            verdict, reason, body, figures = (
+                'error', '%s: %s' % (type(error).__name__, str(error)[:60]),
+                None, None)
         tally[verdict] = tally.get(verdict, 0) + 1
         note = '' if not figures else '%d tok %.1f%% known %.1f%% singles' % figures
         print('  %3d/%-3d %-46s %-16s %s %s'
@@ -208,6 +222,9 @@ def main():
 
     print('\n%s' % '  '.join('%s=%d' % kv for kv in sorted(tally.items())))
     print('%d of %d issues accepted' % (len(accepted), len(todo)))
+    if tally.get('error'):
+        print('%d issues errored and were skipped; the run continued'
+              % tally['error'])
     if not args.apply:
         print('\n--dry-run by default. Re-run with --apply to write.')
         return 0

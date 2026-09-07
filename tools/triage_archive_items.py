@@ -79,15 +79,30 @@ def text_file(identifier):
 
 
 def score(path):
-    """(tokens, known%, singles%) via the project's own scorer."""
+    """(tokens, known%, singles%) via the project's own scorer.
+
+    Parsed by COLUMN, not by pulling digits out of the line. The first version
+    used re.findall(r'[\d.]+') and took the fourth-from-last match, which also
+    matched the dots and digits inside the filename the scorer echoes back —
+    `.probe-Penseo_1990_n001_jan.txt` contributes '.', '1990', '001', '.'. It
+    worked for most names and crashed on some, which is the worst way for a
+    parser to be wrong: it took out a 346-issue fetch after two other series
+    had already succeeded.
+    """
     out = subprocess.run(
         [sys.executable, os.path.join(ROOT, 'tools',
                                       'score_esperanto_text.py'), path],
         capture_output=True, text=True)
     for line in out.stdout.splitlines()[1:]:
-        numbers = re.findall(r'([\d.]+)%?', line)
-        if len(numbers) >= 3:
-            return int(numbers[-4]), float(numbers[-3]), float(numbers[-2])
+        fields = line.split()
+        if len(fields) < 4:
+            continue
+        try:
+            # …name tokens known% singles% dbl-spaced%
+            return (int(fields[-4]), float(fields[-3].rstrip('%')),
+                    float(fields[-2].rstrip('%')))
+        except ValueError:
+            continue
     return None
 
 
