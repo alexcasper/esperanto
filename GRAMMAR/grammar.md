@@ -232,27 +232,45 @@ usage should not be mistaken for present-day Esperanto, where the guide was
 wrong before the evidence was checked, and one place where the stated rule
 turns out to hold exactly.
 
-### 6.1 Country names: `-ujo` dominates, not `-io`
+### 6.1 Country names: `-ujo` or `-io`, and it depends on the date
 
-Rule 15 and the `-uj-` suffix give *Francujo*, *Anglujo*. The corpus is
-lopsided in their favour, across all 240 Esperanto-language sources:
+Rule 15 and the `-uj-` suffix give *Francujo*, *Anglujo*. Modern Esperanto
+mostly writes *Francio*, *Anglio*. The corpus now holds enough of both eras to
+show the change directly rather than argue about it, and the split is close to
+total.
+
+The older material — Gutenberg and Vikifontaro books, mostly before 1940:
 
 | | `-ujo` | `-io` |
 |---|---|---|
-| *Franc-* | 299 <!--= occurrences(r'(?i)\bFrancujo\b') --> | 85 <!--= occurrences(r'(?i)\bFrancio\b') --> |
-| *Rus-* | 265 <!--= occurrences(r'(?i)\bRusujo\b') --> | 44 <!--= occurrences(r'(?i)\bRusio\b') --> |
-| *Angl-* | 240 <!--= occurrences(r'(?i)\bAnglujo\b') --> | 26 <!--= occurrences(r'(?i)\bAnglio\b') --> |
-| *German-* | 185 <!--= occurrences(r'(?i)\bGermanujo\b') --> | 59 <!--= occurrences(r'(?i)\bGermanio\b') --> |
+| *Franc-* | 299 <!--= occurrences(r'(?i)\bFrancujo\b') - within(r'(?i)\bFrancujo\b', 'ia-kontakto') --> | 85 <!--= occurrences(r'(?i)\bFrancio\b') - within(r'(?i)\bFrancio\b', 'ia-kontakto') --> |
+| *Rus-* | 265 <!--= occurrences(r'(?i)\bRusujo\b') - within(r'(?i)\bRusujo\b', 'ia-kontakto') --> | 44 <!--= occurrences(r'(?i)\bRusio\b') - within(r'(?i)\bRusio\b', 'ia-kontakto') --> |
+| *Angl-* | 240 <!--= occurrences(r'(?i)\bAnglujo\b') - within(r'(?i)\bAnglujo\b', 'ia-kontakto') --> | 26 <!--= occurrences(r'(?i)\bAnglio\b') - within(r'(?i)\bAnglio\b', 'ia-kontakto') --> |
+| *German-* | 185 <!--= occurrences(r'(?i)\bGermanujo\b') - within(r'(?i)\bGermanujo\b', 'ia-kontakto') --> | 59 <!--= occurrences(r'(?i)\bGermanio\b') - within(r'(?i)\bGermanio\b', 'ia-kontakto') --> |
 
-Modern Esperanto has largely moved to `-io`. A reader of these texts should
-expect `-ujo`; a writer of new Esperanto should not conclude from the corpus
-that `-io` is rare today.
+The same four stems in *Kontakto*, the TEJO magazine, 45 issues from 2004 to
+2011:
 
-**Almost every `-io` in that column is one author.** Of the 85 *Francio*, 79
-are in Lanti's collected works or his Voltaire translation; of 59 *Germanio*,
-48; of 44 *Rusio*, 43. Lanti founded the anationalist movement, and the
-international form is the one a reformist reaches for. So the second column is
-not a cross-section of usage drifting — it is one writer, quoted at length.
+| | `-ujo` | `-io` |
+|---|---|---|
+| *Franc-* | 1 <!--= within(r'(?i)\bFrancujo\b', 'ia-kontakto') --> | 256 <!--= within(r'(?i)\bFrancio\b', 'ia-kontakto') --> |
+| *Rus-* | 0 <!--= within(r'(?i)\bRusujo\b', 'ia-kontakto') --> | 369 <!--= within(r'(?i)\bRusio\b', 'ia-kontakto') --> |
+| *Angl-* | 1 <!--= within(r'(?i)\bAnglujo\b', 'ia-kontakto') --> | 34 <!--= within(r'(?i)\bAnglio\b', 'ia-kontakto') --> |
+| *German-* | 0 <!--= within(r'(?i)\bGermanujo\b', 'ia-kontakto') --> | 326 <!--= within(r'(?i)\bGermanio\b', 'ia-kontakto') --> |
+
+**Two occurrences of `-ujo` across 45 issues of a modern magazine, against 985
+of `-io`.** The change is finished in contemporary usage, and it is finished
+thoroughly enough that a learner reading only period texts would acquire a
+form that no longer occurs. So: expect `-ujo` in anything published before the
+war, `-io` in anything recent, and do not take either table for the language
+as a whole.
+
+In the older material the `-io` column is also not what it looks like. Of its
+85 *Francio*, 79 are in Lanti's collected works or his Voltaire translation;
+of 59 *Germanio*, 48; of 44 *Rusio*, 43. Lanti founded the anationalist
+movement, and the international form is the one a reformist reaches for. Before
+the modern periodicals arrived, that one writer was most of the evidence that
+`-io` existed at all.
 
 The corpus can say when `-io` enters. Across 44 dated texts written before
 1911 — 24 hands, 832 country names — it occurs **once**, and that once is a
@@ -291,10 +309,10 @@ the author hold-out.
 One negative word suffices and is not reinforced by *ne*. *Mi nenion vidis*
 (I saw nothing), not *mi ne vidis nenion*.
 
-Negative correlatives appear on **13761 lines**.
+Negative correlatives appear on **14683 lines**.
 <!--= corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b') --> Lines where *ne* plus a
 finite verb stands within 25 characters of a `neni-` word, either order and
-without crossing a clause boundary, number **58**
+without crossing a clause boundary, number **68**
 <!--= corpus(r'(?i)\bne\s+\w+(as|is|os|us)\b[^.,;:!?]{0,25}\bneni(u|o|a|e|am|al|el|om|es)') + corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b[^.,;:!?]{0,25}\bne\s+\w+(as|is|os|us)\b') --> — and reading them, that is
 still an overcount rather than a count. Most are two negations in coordinated
 clauses (*ne invadis lin kaj nenio ŝajnis*), and the nearest thing to a real
@@ -304,7 +322,7 @@ double negative is contrastive:
 
 which means the opposite of a reinforced negative: you will not do it for
 nothing, so you will be paid. A looser search — any *ne* within 30 characters
-of any `neni-` — returns 449 lines
+of any `neni-` — returns 463 lines
 <!--= corpus(r'(?i)\bne\b[^.]{0,30}\bneni') --> and is worth ignoring: it catches *Ne,* as
 the answer particle beginning a sentence (*"Ne, nenion strangan," mi diris*,
 pg-18326:677) and the verb *neniigi*, to annihilate (*ne estis neniigitaj*,
@@ -431,7 +449,7 @@ See `ANALYSIS/transitivity.md` for the method and the calibration, and
 ### 6.7 Note on evidence
 
 
-Frequencies above come from `tools/find_examples.py` over the **240**
+Frequencies above come from `tools/find_examples.py` over the **285**
 <!--= sources() -->
 Esperanto-language sources in `CORPUS/`. Excluded are the English- and
 French-language grammars and textbooks — `pg-7787`, `pg-8177`, `pg-16967`,

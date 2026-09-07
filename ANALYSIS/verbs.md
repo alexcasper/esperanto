@@ -19,8 +19,8 @@ python3 tools/verb_frequency.py --by-author        # is it the language or the w
 
 ## The list
 
-809,160 verb tokens over 240 <!--= sources() --> files, 11,448 distinct
-verbs.
+809,160 verb tokens over the 240 files the corpus held on 2026-09-06,
+11,448 distinct verbs.
 
 | rank | verb | tokens | share | cumulative | commonest forms |
 |---|---|---|---|---|---|

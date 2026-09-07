@@ -45,6 +45,13 @@ Available in an expression:
                                sources, using the same exclusion list as
                                find_examples, which is mine_lemmas' plus the
                                Fundamento's multilingual tables
+    within(regex, substring)   occurrences, but only in sources whose filename
+                               contains the substring. For a claim about one
+                               part of the corpus rather than all of it — the
+                               -ujo/-io alternation is the case that needs it,
+                               since the answer depends entirely on when the
+                               text was written and the corpus now holds both
+                               eras
     occurrences(regex)         matches rather than lines. Not the same number:
                                a list of country names puts several on one
                                line, and `Francujo` is 296 lines and 299
@@ -139,6 +146,18 @@ class Data(object):
                                         if compiled.search(line))
             return self._corpus[key]
 
+        def within(pattern, part):
+            key = ('within', pattern, part)
+            if key not in self._corpus:
+                total = 0
+                for path in self.files:
+                    if part not in os.path.basename(path):
+                        continue
+                    total += len(re.findall(
+                        pattern, open(path, encoding='utf-8').read()))
+                self._corpus[key] = total
+            return self._corpus[key]
+
         def occurrences(pattern):
             key = ('all', pattern)
             if key not in self._corpus:
@@ -157,6 +176,7 @@ class Data(object):
             'count': count,
             'corpus': corpus,
             'occurrences': occurrences,
+            'within': within,
             'sources': lambda: len(self.files),
             'dated': dated,
             'pct': lambda a, b: 100.0 * a / b if b else 0.0,

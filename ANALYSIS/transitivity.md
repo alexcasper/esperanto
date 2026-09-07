@@ -18,8 +18,8 @@ python3 tools/transitivity.py --top 40       # the ranking
 python3 tools/transitivity.py --audit        # what got counted as an object
 ```
 
-698,315 verb clauses over 240 <!--= sources() --> sources; 210,387
-carried an object.
+698,315 verb clauses over the 240 sources the corpus held on 2026-09-06;
+210,387 carried an object.
 
 ## The calibration is the whole argument
 
