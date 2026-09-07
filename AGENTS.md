@@ -131,7 +131,14 @@ bd prime                # Refresh Beads context
 
 There is no application to build. The repository is a data pipeline: sources in
 `RAW/` become clean text in `CORPUS/`, which becomes vocabulary in `DICT/` and
-prose in `GRAMMAR/`. Everything is Python 3 with no third-party dependencies.
+prose in `GRAMMAR/`. Everything is Python 3.
+
+**On dependencies.** The pipeline happened to need none for a long time and an
+earlier version of this file recorded that as though it were a rule. It is
+not. Take a dependency where it earns its place — `docling` for PDF text
+extraction is approved — and note it here with what it is for, so the next
+reader knows why it is present. Prefer the standard library for anything the
+standard library does well, which is most of what these tools do.
 
 `CORPUS/*.txt` and `DICT/shards/` are derived and gitignored. Rebuilding the
 corpus is two commands, in this order — the second must follow the first,
@@ -250,6 +257,21 @@ can be regenerated at will. `DICT/verdicts.jsonl` cannot — it is human
 judgement, and re-mining must restore it rather than discard it. Keying shard
 records on anything that a morphology change can move has silently cost 917
 approved lemmas once already.
+
+**archive.org material is usable by default.** Project policy, set 2026-09-07:
+take an item unless it states a specific restriction. Check `licenseurl`,
+`rights`, `possible-copyright-status` and `access-restricted-item` in
+`https://archive.org/metadata/ID` and skip anything flagged; otherwise proceed.
+Much of this material is uploaded by archivists — `kontakto@bitarkivo.org` is a
+curated Esperanto archive — and waiting for an explicit licence field would
+exclude nearly all of it.
+
+Record in `RAW/PROVENANCE.md` what was actually observed, not a licence we have
+inferred: "no restriction stated; uploaded by X; retrieved DATE" is honest,
+"public domain" is a claim we are usually not in a position to make. Where an
+item does declare one — the Oz translations carry a public-domain dedication
+from the translator — say so and name it. The distinction costs nothing and
+keeps the provenance record true, which is the point of having one.
 
 **Quarantine with `git mv`, never `rm`.** And strike the line in
 `RAW/PROVENANCE.md` with the reason.
