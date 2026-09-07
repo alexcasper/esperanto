@@ -243,10 +243,10 @@ The older material — Gutenberg and Vikifontaro books, mostly before 1940:
 
 | | `-ujo` | `-io` |
 |---|---|---|
-| *Franc-* | 299 <!--= occurrences(r'(?i)\bFrancujo\b') - within(r'(?i)\bFrancujo\b', 'ia-kontakto') --> | 85 <!--= occurrences(r'(?i)\bFrancio\b') - within(r'(?i)\bFrancio\b', 'ia-kontakto') --> |
-| *Rus-* | 265 <!--= occurrences(r'(?i)\bRusujo\b') - within(r'(?i)\bRusujo\b', 'ia-kontakto') --> | 44 <!--= occurrences(r'(?i)\bRusio\b') - within(r'(?i)\bRusio\b', 'ia-kontakto') --> |
-| *Angl-* | 240 <!--= occurrences(r'(?i)\bAnglujo\b') - within(r'(?i)\bAnglujo\b', 'ia-kontakto') --> | 26 <!--= occurrences(r'(?i)\bAnglio\b') - within(r'(?i)\bAnglio\b', 'ia-kontakto') --> |
-| *German-* | 185 <!--= occurrences(r'(?i)\bGermanujo\b') - within(r'(?i)\bGermanujo\b', 'ia-kontakto') --> | 59 <!--= occurrences(r'(?i)\bGermanio\b') - within(r'(?i)\bGermanio\b', 'ia-kontakto') --> |
+| *Franc-* | 293 <!--= within(r'(?i)\bFrancujo\b', 'pg-') + within(r'(?i)\bFrancujo\b', 'wsdump-') + within(r'(?i)\bFrancujo\b', 'wsrc-') --> | 85 <!--= within(r'(?i)\bFrancio\b', 'pg-') + within(r'(?i)\bFrancio\b', 'wsdump-') + within(r'(?i)\bFrancio\b', 'wsrc-') --> |
+| *Rus-* | 251 <!--= within(r'(?i)\bRusujo\b', 'pg-') + within(r'(?i)\bRusujo\b', 'wsdump-') + within(r'(?i)\bRusujo\b', 'wsrc-') --> | 44 <!--= within(r'(?i)\bRusio\b', 'pg-') + within(r'(?i)\bRusio\b', 'wsdump-') + within(r'(?i)\bRusio\b', 'wsrc-') --> |
+| *Angl-* | 232 <!--= within(r'(?i)\bAnglujo\b', 'pg-') + within(r'(?i)\bAnglujo\b', 'wsdump-') + within(r'(?i)\bAnglujo\b', 'wsrc-') --> | 26 <!--= within(r'(?i)\bAnglio\b', 'pg-') + within(r'(?i)\bAnglio\b', 'wsdump-') + within(r'(?i)\bAnglio\b', 'wsrc-') --> |
+| *German-* | 172 <!--= within(r'(?i)\bGermanujo\b', 'pg-') + within(r'(?i)\bGermanujo\b', 'wsdump-') + within(r'(?i)\bGermanujo\b', 'wsrc-') --> | 59 <!--= within(r'(?i)\bGermanio\b', 'pg-') + within(r'(?i)\bGermanio\b', 'wsdump-') + within(r'(?i)\bGermanio\b', 'wsrc-') --> |
 
 The same four stems in *Kontakto*, the TEJO magazine, 45 issues from 2004 to
 2011:
