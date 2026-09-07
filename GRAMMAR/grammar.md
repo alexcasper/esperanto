@@ -259,11 +259,31 @@ The same four stems in *Kontakto*, the TEJO magazine, 45 issues from 2004 to
 | *German-* | 0 <!--= within(r'(?i)\bGermanujo\b', 'ia-kontakto') --> | 326 <!--= within(r'(?i)\bGermanio\b', 'ia-kontakto') --> |
 
 **Two occurrences of `-ujo` across 45 issues of a modern magazine, against 985
-of `-io`.** The change is finished in contemporary usage, and it is finished
+of `-io`.** Three more modern periodicals say the same: *Junaamiko* 1972–2011
+writes 24 <!--= within(r'(?i)\bFrancujo\b', 'ia-junaamiko') + within(r'(?i)\bRusujo\b', 'ia-junaamiko') + within(r'(?i)\bAnglujo\b', 'ia-junaamiko') + within(r'(?i)\bGermanujo\b', 'ia-junaamiko') -->
+against 1251 <!--= within(r'(?i)\bFrancio\b', 'ia-junaamiko') + within(r'(?i)\bRusio\b', 'ia-junaamiko') + within(r'(?i)\bAnglio\b', 'ia-junaamiko') + within(r'(?i)\bGermanio\b', 'ia-junaamiko') -->,
+and *Esperantista Vegetarano* 76 <!--= within(r'(?i)\bFrancujo\b', 'ia-EsperantistaVeg') + within(r'(?i)\bRusujo\b', 'ia-EsperantistaVeg') + within(r'(?i)\bAnglujo\b', 'ia-EsperantistaVeg') + within(r'(?i)\bGermanujo\b', 'ia-EsperantistaVeg') -->
+against 715 <!--= within(r'(?i)\bFrancio\b', 'ia-EsperantistaVeg') + within(r'(?i)\bRusio\b', 'ia-EsperantistaVeg') + within(r'(?i)\bAnglio\b', 'ia-EsperantistaVeg') + within(r'(?i)\bGermanio\b', 'ia-EsperantistaVeg') -->. The change is finished in contemporary usage, and it is finished
 thoroughly enough that a learner reading only period texts would acquire a
 form that no longer occurs. So: expect `-ujo` in anything published before the
 war, `-io` in anything recent, and do not take either table for the language
 as a whole.
+
+**One apparent exception is a counting mistake, and it is worth knowing about
+before trusting any count taken over a periodical.** *Penseo* 1990–2021 comes
+out nearly even — 196 `-ujo` against 241 `-io` — which would make it the only
+modern source still using the old form freely. It is not. **96% of its `-ujo`
+occurrences stand inside parentheses**, against 44% of its `-io`, because
+Penseo is a poetry magazine that credits every contributor with their country:
+
+> *Mikaelo Bronsxtejn (Rusujo)* — ia-Penseo_2012_n253_nov:31
+
+That is one editor's byline template, repeated across a hundred issues, not a
+hundred writers' usage. In Penseo's running prose the split is 8 `-ujo` to 136
+`-io`, which is where the other modern periodicals sit. A frequency counted
+over a periodical mixes its prose with its editorial furniture — mastheads,
+bylines, contributor lists, addresses — and the furniture is written once and
+reprinted, so it can outweigh the prose without anyone having written it twice.
 
 In the older material the `-io` column is also not what it looks like. Of its
 85 *Francio*, 79 are in Lanti's collected works or his Voltaire translation;
@@ -309,10 +329,10 @@ the author hold-out.
 One negative word suffices and is not reinforced by *ne*. *Mi nenion vidis*
 (I saw nothing), not *mi ne vidis nenion*.
 
-Negative correlatives appear on **14683 lines**.
+Negative correlatives appear on **19862 lines**.
 <!--= corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b') --> Lines where *ne* plus a
 finite verb stands within 25 characters of a `neni-` word, either order and
-without crossing a clause boundary, number **68**
+without crossing a clause boundary, number **92**
 <!--= corpus(r'(?i)\bne\s+\w+(as|is|os|us)\b[^.,;:!?]{0,25}\bneni(u|o|a|e|am|al|el|om|es)') + corpus(r'(?i)\bneni(u|o|a|e|am|al|el|om|es)j?n?\b[^.,;:!?]{0,25}\bne\s+\w+(as|is|os|us)\b') --> — and reading them, that is
 still an overcount rather than a count. Most are two negations in coordinated
 clauses (*ne invadis lin kaj nenio ŝajnis*), and the nearest thing to a real
@@ -322,7 +342,7 @@ double negative is contrastive:
 
 which means the opposite of a reinforced negative: you will not do it for
 nothing, so you will be paid. A looser search — any *ne* within 30 characters
-of any `neni-` — returns 463 lines
+of any `neni-` — returns 573 lines
 <!--= corpus(r'(?i)\bne\b[^.]{0,30}\bneni') --> and is worth ignoring: it catches *Ne,* as
 the answer particle beginning a sentence (*"Ne, nenion strangan," mi diris*,
 pg-18326:677) and the verb *neniigi*, to annihilate (*ne estis neniigitaj*,
@@ -449,7 +469,7 @@ See `ANALYSIS/transitivity.md` for the method and the calibration, and
 ### 6.7 Note on evidence
 
 
-Frequencies above come from `tools/find_examples.py` over the **285**
+Frequencies above come from `tools/find_examples.py` over the **855**
 <!--= sources() -->
 Esperanto-language sources in `CORPUS/`. Excluded are the English- and
 French-language grammars and textbooks — `pg-7787`, `pg-8177`, `pg-16967`,
