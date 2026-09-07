@@ -18,3 +18,6 @@ __pycache__/
 
 # Wikidata API responses cached by tools/date_by_translator.py (re-fetchable)
 RAW/.cache-wikidata/
+
+# archive.org item listing, regenerable from the scrape API
+RAW/.bitarkivo-items.json

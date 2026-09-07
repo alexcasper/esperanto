@@ -380,3 +380,53 @@ ignore line breaking: 98.4% and 96.0% containment of the smaller copy, against
 0.0% for two unrelated books and 0.0% for the two volumes of Quo vadis. In
 both pairs the Gutenberg copy is the more complete one, so the Wikisource copy
 is the one held out. See QUARANTINE/README.md.
+
+### Kontakto — kontakto, 45 issues, retrieved 2026-09-07
+
+Fetched by `tools/fetch_archive_periodical.py`, one file per issue, each scored and kept on its own numbers. No item stated a restriction; see CLAUDE.md for the sourcing policy.
+
+- `ia-kontakto_2004_n199.txt` — Kontakto, 2004 — sha256:0b8b92a86904 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n199
+- `ia-kontakto_2004_n200.txt` — Kontakto, 2004 — sha256:8833ca3ce66d — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n200
+- `ia-kontakto_2004_n201.txt` — Kontakto, 2004 — sha256:c39454d28af2 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n201
+- `ia-kontakto_2004_n202.txt` — Kontakto, 2004 — sha256:52cc92e20ad0 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n202
+- `ia-kontakto_2004_n203.txt` — Kontakto, 2004 — sha256:9273a831c043 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n203
+- `ia-kontakto_2004_n204.txt` — Kontakto, 2004 — sha256:367e02528df9 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2004_n204
+- `ia-kontakto_2005_n205.txt` — Kontakto, 2005 — sha256:ab0b6e17e4b0 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n205
+- `ia-kontakto_2005_n206.txt` — Kontakto, 2005 — sha256:dc34900d7129 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n206
+- `ia-kontakto_2005_n207.txt` — Kontakto, 2005 — sha256:ecea3a0a213e — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n207
+- `ia-kontakto_2005_n208.txt` — Kontakto, 2005 — sha256:163890dfeddb — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n208
+- `ia-kontakto_2005_n209.txt` — Kontakto, 2005 — sha256:21539d86d096 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n209
+- `ia-kontakto_2005_n210.txt` — Kontakto, 2005 — sha256:cc9e0ccc8c81 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2005_n210
+- `ia-kontakto_2006_n211.txt` — Kontakto, 2006 — sha256:0db7a1d4afab — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2006_n211
+- `ia-kontakto_2006_n212.txt` — Kontakto, 2006 — sha256:82d3b66a248a — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2006_n212
+- `ia-kontakto_2006_n213.txt` — Kontakto, 2006 — sha256:516ccaaf978e — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2006_n213
+- `ia-kontakto_2006_n214.txt` — Kontakto, 2006 — sha256:526b73475fde — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2006_n214
+- `ia-kontakto_2006_n215-216.txt` — Kontakto, 2006 — sha256:f7d2258ff9b3 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2006_n215-216
+- `ia-kontakto_2007_n217.txt` — Kontakto, 2007 — sha256:72353ca30dc8 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n217
+- `ia-kontakto_2007_n218.txt` — Kontakto, 2007 — sha256:9863be924a43 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n218
+- `ia-kontakto_2007_n219.txt` — Kontakto, 2007 — sha256:d9924d673ed8 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n219
+- `ia-kontakto_2007_n220.txt` — Kontakto, 2007 — sha256:830261b811db — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n220
+- `ia-kontakto_2007_n221.txt` — Kontakto, 2007 — sha256:2ab372315e89 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n221
+- `ia-kontakto_2007_n222.txt` — Kontakto, 2007 — sha256:0ede64f8dd39 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2007_n222
+- `ia-kontakto_2008_n223.txt` — Kontakto, 2008 — sha256:4a3a27aed2f5 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2008_n223
+- `ia-kontakto_2008_n224.txt` — Kontakto, 2008 — sha256:76eca2fe4373 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2008_n224
+- `ia-kontakto_2008_n225.txt` — Kontakto, 2008 — sha256:f1dc6782c347 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2008_n225
+- `ia-kontakto_2008_n226-227.txt` — Kontakto, 2008 — sha256:e940b51b4fa2 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2008_n226-227
+- `ia-kontakto_2008_n228.txt` — Kontakto, 2008 — sha256:563cac4ff71f — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2008_n228
+- `ia-kontakto_2009_n229.txt` — Kontakto, 2009 — sha256:129a5b9ab9b1 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n229
+- `ia-kontakto_2009_n230.txt` — Kontakto, 2009 — sha256:4a61205dfb24 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n230
+- `ia-kontakto_2009_n231.txt` — Kontakto, 2009 — sha256:676de11cccdb — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n231
+- `ia-kontakto_2009_n232.txt` — Kontakto, 2009 — sha256:b9506f410126 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n232
+- `ia-kontakto_2009_n233.txt` — Kontakto, 2009 — sha256:601c39b9c412 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n233
+- `ia-kontakto_2009_n234.txt` — Kontakto, 2009 — sha256:c5880cf28a3b — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2009_n234
+- `ia-kontakto_2010_n235.txt` — Kontakto, 2010 — sha256:99fb93a4da30 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2010_n235
+- `ia-kontakto_2010_n236.txt` — Kontakto, 2010 — sha256:2fcf53d47598 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2010_n236
+- `ia-kontakto_2010_n237.txt` — Kontakto, 2010 — sha256:c39ba257936f — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2010_n237
+- `ia-kontakto_2010_n238.txt` — Kontakto, 2010 — sha256:034cb79a73cb — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2010_n238
+- `ia-kontakto_2010_n239-240.txt` — Kontakto, 2010 — sha256:011c02add546 — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2010_n239-240
+- `ia-kontakto_2011_n241.txt` — Kontakto, 2011 — sha256:eca48750cafb — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n241
+- `ia-kontakto_2011_n242.txt` — Kontakto, 2011 — sha256:7b731094399b — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n242
+- `ia-kontakto_2011_n243.txt` — Kontakto, 2011 — sha256:958bf974464e — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n243
+- `ia-kontakto_2011_n244.txt` — Kontakto, 2011 — sha256:de88a09df61a — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n244
+- `ia-kontakto_2011_n245.txt` — Kontakto, 2011 — sha256:0cda77ef2dae — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n245
+- `ia-kontakto_2011_n246.txt` — Kontakto, 2011 — sha256:a88b2aa4a9dc — Internet Archive, uploaded by kontakto@bitarkivo.org (no restriction stated; retrieved 2026-09-07) — https://archive.org/details/kontakto_2011_n246
