@@ -1,0 +1,9 @@
+file	sha256	rows	note
+epo_sentences.tsv.bz2	096d7b07d995	820825	Tatoeba Esperanto sentences, all licences (CC-BY 2.0 FR mix)
+eng_sentences.tsv.bz2	d1a7d45ad531	2035404	Tatoeba English sentences, all licences (CC-BY 2.0 FR mix)
+epo_sentences_CC0.tsv.bz2	cb887bb4f0b2	370	CC0-only Esperanto subset (licence filter)
+eng_sentences_CC0.tsv.bz2	489556f5ed66	41503	CC0-only English subset (licence filter)
+links.tar.bz2	a06047f98adc	28417908	all-language translation links, both directions (CC0)
+sentences_base.tar.bz2	0b1b69ee9100	763270	base-id provenance kept for pair members
+pairs.tsv	7283748e8520	434533	en-epo pairs via links; sorted by (epo_id, eng_id)
+pairs_cc0.tsv	21a0f952102c	23	subset with both sides in the CC0 exports
