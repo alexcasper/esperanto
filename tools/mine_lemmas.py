@@ -53,6 +53,40 @@ ENGLISH_HEAVY = {'pg-7787.txt', 'pg-8177.txt', 'pg-16967.txt',
                  'ia-esperanto-the-international-language-a-complete-'
                  'textbook-w-j-downes-1982.txt'}
 
+# esp-1l1 triage: archive.org OCR that scored poor by tools/score_esperanto_
+# text.py (<65% known tokens or >=10% single-char tokens; real Esperanto
+# scores 90%+). Kept in RAW/ for provenance, but never mined: the
+# low-frequency band is exactly where OCR noise becomes fake lemmas.
+# The three English/French sources above stay in ENGLISH_HEAVY, not here.
+OCR_POOR = {
+    # not OCR damage: machine-mangled hybrid English/Esperanto (Rashad Khalifa
+    # style reformulated translation, 'DI SIGEL their MENS'); 105k tokens of it
+    'ia-TranslationOfTheMeaningsOfTheNobleQuranInTheEsperantopdf.txt',
+    # 73 tokens of pure scan noise (a sound-poetry booklet)
+    'ia-Pichismo----.....1992-2014.txt',
+    # 36.9% single-char tokens: lyrics broken into syllables by the scan
+    'ia-KvarvoajKantojPorEsperantistoj.txt',
+    # eowiki encyclopaedia stubs: genuine Esperanto prose but very short, and
+    # the foreign-terms ratio of a 'La X lingvo' article drags known% down
+    'ia-eowiki-Agula_lingvo-20200728.pdf.txt',
+    'ia-eowiki-Arumana_lingvo-20200726.pdf.txt',  # 46.2% singles
+    'ia-eowiki-Hindustana_lingvo-20200725.pdf.txt',
+    'ia-eowiki-Jakuta_lingvo-20200725.pdf.txt',
+    'ia-eowiki-Jida_lingvo-20200724.pdf.txt',
+    'ia-eowiki-Kefa_lingvo-20200725.pdf.txt',
+    'ia-eowiki-Kopta_lingvo-20200726.pdf.txt',
+    'ia-eowiki-Lingvo-20200721.pdf.txt',
+    'ia-eowiki-Luba_lingvo-20200728.pdf.txt',
+    'ia-eowiki-Naura_lingvo-20200727.pdf.txt',
+    'ia-eowiki-Nejoj-20200726.pdf.txt',
+    'ia-eowiki-Oroma_lingvo-20200727.pdf.txt',
+    'ia-eowiki-Slovaka_lingvo-20200724.pdf.txt',
+    'ia-eowiki-Srana_lingvo-20200728.pdf.txt',
+    'ia-eowiki-Tibeta_lingvo-20200725.pdf.txt',
+    'ia-eowiki-Turka_lingvo-20200723.pdf.txt',
+    'ia-eowiki-Vilamovica_lingvo-20200728.pdf.txt',
+}
+
 # The Fundamento's multilingual tables put French, German, Russian and Polish
 # gloss columns beside the Esperanto, so mining them yields those languages.
 MULTILINGUAL = {'wsrc-Fundamento_de_Esperanto_Universala_vortaro.txt',
@@ -91,7 +125,7 @@ def is_fragment(line, match):
 
 
 def corpus_files():
-    skip = ENGLISH_HEAVY | MULTILINGUAL
+    skip = ENGLISH_HEAVY | MULTILINGUAL | OCR_POOR
     return sorted(f for f in os.listdir(CORPUS)
                   if f.endswith('.txt') and f not in skip)
 
