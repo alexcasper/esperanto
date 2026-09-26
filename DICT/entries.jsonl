@@ -4095,7 +4095,6 @@
 {"word": "dinosaŭroj", "pos": "noun", "gloss_en": "non-avian dinosaurs", "root": "dinosaŭr", "source": "ReVo", "gloss_fr": "dinosaures non aviaires"}
 {"word": "dinoterio", "pos": "noun", "gloss_en": "deinotherium", "root": "dinoteri", "source": "ReVo", "gloss_fr": "dinothérium"}
 {"word": "Dio", "pos": "noun", "root": "di", "gloss_en": "God", "gloss_fr": "Dieu", "source": "Fundamento/UV-1905", "morphology": {"stem": "di", "ending": "o"}}
-{"word": "dio", "pos": "noun", "gloss_en": "god", "root": "di", "source": "ReVo/UV-*", "gloss_fr": "dieu"}
 {"word": "diocezo", "pos": "noun", "gloss_en": "diocese", "root": "diocez", "source": "ReVo", "gloss_fr": "diocèse (circonscription\n    ecclésiastique)"}
 {"word": "diodo", "pos": "noun", "gloss_en": "diode", "root": "diod", "source": "ReVo", "gloss_fr": "diode"}
 {"word": "diogeno", "pos": "noun", "gloss_en": "Diogenes", "root": "Diogen", "source": "ReVo", "gloss_fr": "Diogène"}
@@ -9442,7 +9441,6 @@
 {"word": "juko", "pos": "noun", "gloss_en": "itch", "root": "juk", "source": "ReVo/UV-*"}
 {"word": "jukono", "pos": "noun", "gloss_en": "Kuskokwim River", "root": "Jukon", "source": "ReVo", "gloss_fr": "Kuskokwim (fleuve)"}
 {"word": "Julia", "pos": "adj", "root": "juli", "gloss_en": "July", "gloss_fr": "Juillet", "source": "Fundamento/UV-1905", "morphology": {"stem": "juli", "ending": "a"}}
-{"word": "julia", "pos": "adj", "gloss_en": "July", "root": "Juli", "source": "ReVo/UV-*"}
 {"word": "juliajalpoj", "pos": "noun", "gloss_en": "Julian Alps", "root": "alp", "source": "ReVo", "gloss_fr": "Alpes juliennes"}
 {"word": "juliino", "pos": "noun", "gloss_en": "Julia", "root": "Juli", "source": "ReVo/OA-10"}
 {"word": "julio,o", "pos": "noun", "gloss_en": "July", "root": "Juli", "source": "ReVo/UV-*", "gloss_fr": "juillet"}
@@ -11540,7 +11538,6 @@
 {"word": "kristnaskarbo", "pos": "noun", "gloss_en": "Christmas tree", "root": "arb", "source": "ReVo/UV-*", "gloss_fr": "sapin de noël"}
 {"word": "kristnasko", "pos": "noun", "root": "kristnask", "gloss_en": "Christmas", "gloss_fr": "Noël", "source": "Fundamento/UV-1905", "morphology": {"stem": "kristnask", "ending": "o"}}
 {"word": "Kristo", "pos": "noun", "root": "krist", "gloss_en": "Christ", "gloss_fr": "Christ", "source": "Fundamento/UV-1905", "morphology": {"stem": "krist", "ending": "o"}}
-{"word": "kristo", "pos": "noun", "gloss_en": "Christ", "root": "Krist", "source": "ReVo/UV-*", "gloss_fr": "christ"}
 {"word": "kristofiguro", "pos": "noun", "gloss_en": "figure of Christ, crucifix statue", "root": "kristofigur", "morphology": {"stem": "kristofigur", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 14, "sources": 1}, "citations": [{"source": "pg-32035.txt", "text": "LA KRISTOFIGURO DE LA LUMO"}, {"source": "pg-32035.txt", "text": "senarte skulptita Kristofiguro el ŝtono, kiun dum nokto lumigis"}, {"source": "pg-32035.txt", "text": "_La Kristofiguro de la Lumo_, kaj antaŭ ĝi, en vesperoj, fervore"}]}
 {"word": "kristoforo", "pos": "noun", "gloss_en": "Christopher", "root": "Kristofor", "source": "ReVo/OA-10", "gloss_fr": "Christophe"}
 {"word": "kristoforokajneviso", "pos": "noun", "gloss_en": "Saint Kitts and Nevis", "root": "Kristofor", "source": "ReVo/OA-10"}
@@ -13873,7 +13870,6 @@
 {"word": "marilando", "pos": "noun", "gloss_en": "Maryland", "root": "Mariland", "source": "ReVo", "gloss_fr": "Maryland"}
 {"word": "marimbo", "pos": "noun", "gloss_en": "marimba", "root": "marimb", "source": "ReVo", "gloss_fr": "marimba"}
 {"word": "marini", "pos": "verb", "gloss_en": "marinate", "root": "marin", "source": "ReVo/OA-2", "gloss_fr": "mariner"}
-{"word": "Mario", "pos": "noun", "root": "mari", "gloss_en": "nobleman", "gloss_fr": "― Ma'nj' ; Emili' ― Emi'nj' . nobel' noble (subst.), gentilhomme", "source": "Fundamento/UV-1905", "morphology": {"stem": "mari", "ending": "o"}}
 {"word": "mario", "pos": "noun", "gloss_en": "Mario", "root": "Mari", "source": "ReVo/UV-*", "gloss_fr": "Marie"}
 {"word": "marioneto", "pos": "noun", "gloss_en": "marionette", "root": "marionet", "source": "ReVo/OA-1"}
 {"word": "marirebla", "pos": "adj", "gloss_en": "seaworthy", "root": "marirebl", "morphology": {"stem": "marirebl", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Seaworthy"]}
@@ -13949,7 +13945,6 @@
 {"word": "martiniko", "pos": "noun", "gloss_en": "Martinique", "root": "Martinik", "source": "ReVo/OA-10", "gloss_fr": "Martinique"}
 {"word": "martiro", "pos": "noun", "gloss_en": "martyr", "root": "martir", "morphology": {"stem": "martir", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 8, "sources": 5}, "citations": [{"source": "pg-64579.txt", "text": "vera mizerulo kaj martiro, sed ĉar la rigardantoj kredas, ke lia"}, {"source": "pg-52064.txt", "text": "-- Ĉu vi estas martiro? Ĉu la sorto frapis vin senmerite aŭ vi pekis"}, {"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Martiro. - 1. Homo, kiu suferis terurajn turmentojn pro sia religia kredo : kristanaj martiroj. - 2. Homo, suferanta turmentojn : malsanulo martiro."}]}
 {"word": "Marto", "pos": "noun", "root": "mart", "gloss_en": "March", "gloss_fr": "Mars", "source": "Fundamento/UV-1905", "morphology": {"stem": "mart", "ending": "o"}}
-{"word": "marto", "pos": "noun", "gloss_en": "Martha", "root": "Mart", "source": "ReVo"}
 {"word": "martofloro", "pos": "noun", "gloss_en": "spring snowflake", "root": "flor", "source": "ReVo/UV-*", "gloss_fr": "nivéole"}
 {"word": "marto,o", "pos": "noun", "gloss_en": "March", "root": "Mart", "source": "ReVo/UV-*", "gloss_fr": "mars"}
 {"word": "marubio", "pos": "noun", "gloss_en": "horehound", "root": "marubi", "source": "ReVo", "gloss_fr": "Marrubium"}
@@ -14278,7 +14273,6 @@
 {"word": "mesaĝo", "pos": "noun", "gloss_en": "message", "root": "mesaĝ", "source": "ReVo/OA-9", "gloss_fr": "message"}
 {"word": "mesiismo,anismopiv2", "pos": "noun", "gloss_en": "messianism", "root": "Mesi", "source": "ReVo/UV-*"}
 {"word": "Mesio", "pos": "noun", "root": "mesi", "gloss_en": "Messiah", "gloss_fr": "Messie", "source": "Fundamento/UV-1905", "morphology": {"stem": "mesi", "ending": "o"}}
-{"word": "mesio", "pos": "noun", "gloss_en": "*Messiah", "root": "Mesi", "source": "ReVo/UV-*", "gloss_fr": "*Messie"}
 {"word": "meskalino", "pos": "noun", "gloss_en": "mescaline", "root": "meskalin", "source": "ReVo", "gloss_fr": "mescaline"}
 {"word": "meslibro", "pos": "noun", "gloss_en": "missal", "root": "libr", "source": "ReVo/UV-*", "gloss_fr": "missel"}
 {"word": "meso", "pos": "noun", "root": "mes", "gloss_en": "mass", "gloss_fr": "messe", "source": "Fundamento/UV-1905", "morphology": {"stem": "mes", "ending": "o"}}
@@ -15662,6 +15656,7 @@
 {"word": "nivelo", "pos": "noun", "root": "nivel", "gloss_en": "water-level, plumb", "gloss_fr": "niveau", "source": "Fundamento/UV-1905", "morphology": {"stem": "nivel", "ending": "o"}}
 {"word": "nizaglo", "pos": "noun", "gloss_en": "Bonelli’s eagle", "root": "agl", "source": "ReVo/UV-*"}
 {"word": "nizo", "pos": "noun", "gloss_en": "sparrow-hawk", "root": "niz", "source": "ReVo/OA-2", "gloss_fr": "épervier (oiseau)"}
+{"word": "nj", "pos": "suffix", "root": "nj", "gloss_en": "diminutive of female names; e. g. Mari' Mary ― Ma'nj', Emili' ― Emi'nj'", "gloss_fr": "après les 1-5 premières lettres d'un prénom féminin lui donne un caractère diminutif et caressant; ex. Mari' — Ma'nj'; Emili' — Emi'nj'", "source": "Fundamento/UV-1905"}
 {"word": "noaĥo", "pos": "noun", "gloss_en": "Noah", "root": "Noaĥ", "source": "ReVo", "gloss_fr": "Noé"}
 {"word": "nobela", "pos": "adj", "gloss_en": "noble", "root": "nobel", "source": "ReVo/UV-*"}
 {"word": "nobelaro", "pos": "noun", "gloss_en": "nobility", "root": "nobel", "source": "ReVo/UV-*"}
@@ -16785,7 +16780,6 @@
 {"word": "paskalo", "pos": "noun", "gloss_en": "Pascal", "root": "Paskal", "source": "ReVo", "gloss_fr": "Pascal"}
 {"word": "paskinsulo", "pos": "noun", "gloss_en": "Easter Island", "root": "insul", "source": "ReVo/UV-*", "gloss_fr": "Ile de Pâques"}
 {"word": "Pasko", "pos": "noun", "root": "pask", "gloss_en": "Easter", "gloss_fr": "Pâques, Pâque", "source": "Fundamento/UV-1905", "morphology": {"stem": "pask", "ending": "o"}}
-{"word": "pasko", "pos": "noun", "gloss_en": "Passover", "root": "Pask", "source": "ReVo/UV-*"}
 {"word": "paso", "pos": "noun", "gloss_en": "passage", "root": "pas", "source": "ReVo/UV-*", "gloss_fr": "passage"}
 {"word": "pasponto", "pos": "noun", "gloss_en": "gangway", "root": "pont", "source": "ReVo/UV-*"}
 {"word": "pasporto", "pos": "noun", "root": "pasport", "gloss_en": "pass-port", "gloss_fr": "passe-port", "source": "Fundamento/UV-1905", "morphology": {"stem": "pasport", "ending": "o"}}
@@ -16993,7 +16987,6 @@
 {"word": "pentagono", "pos": "noun", "gloss_en": "pentagon", "root": "pentagon", "source": "ReVo", "gloss_fr": "pentagone"}
 {"word": "pentametro", "pos": "noun", "gloss_en": "pentameter", "root": "pentametr", "source": "ReVo/OA-2", "gloss_fr": "pentamètre"}
 {"word": "Pentekosto", "pos": "noun", "root": "pentekost", "gloss_en": "Pentecost, Whitsuntide", "gloss_fr": "Pentecôte", "source": "Fundamento/UV-1905", "morphology": {"stem": "pentekost", "ending": "o"}}
-{"word": "pentekosto", "pos": "noun", "gloss_en": "Pentecost", "root": "Pentekost", "source": "ReVo/UV-*", "gloss_fr": "Pentecôte"}
 {"word": "pentfarejo", "pos": "noun", "gloss_en": "penitentiary", "root": "pentfarej", "morphology": {"stem": "pentfarej", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Penitentiary"]}
 {"word": "penti", "pos": "verb", "gloss_en": "repent", "root": "pent", "source": "ReVo/UV-*", "gloss_fr": "se repentir"}
 {"word": "pento", "pos": "noun", "gloss_en": "penitence", "root": "pent", "morphology": {"stem": "pent", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Penitence"]}

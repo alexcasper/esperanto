@@ -101,6 +101,12 @@ def parse_article(path: Path):
                     "gloss_en": en, "gloss_fr": fr})
     return out
 
+def canonical(word: str) -> str:
+    """Case-fold for dedup: v1 keeps UV capitalisation of the religious and
+    calendar terms (Dio, Pasko, Julia...), ReVo words arrive lowercased, so
+    equality has to be case-insensitive (esp-lyp)."""
+    return word.lower()
+
 def sortkey(w):
     return [RANK.get(c, 99) for c in w.lower()]
 
@@ -109,7 +115,7 @@ def main():
     dry = "--dry" in sys.argv
     out_path = Path(__file__).resolve().parent.parent / "entries.jsonl"
     entries = [json.loads(l) for l in out_path.read_text(encoding="utf-8").splitlines() if l.strip()]
-    have = {e["word"] for e in entries}
+    have = {canonical(e["word"]) for e in entries}
     seen = set()
     stats = {"articles": 0, "parsed": 0, "skip_dup": 0, "skip_noen": 0,
              "added": 0, "oa": {}}
@@ -117,10 +123,11 @@ def main():
         stats["articles"] += 1
         for a in parse_article(f):
             stats["parsed"] += 1
-            if a["word"] in have or a["word"] in seen:
+            key = canonical(a["word"])
+            if key in have or key in seen:
                 stats["skip_dup"] += 1
                 continue
-            seen.add(a["word"])
+            seen.add(key)
             if not a["gloss_en"]:
                 stats["skip_noen"] += 1
                 continue
@@ -138,7 +145,8 @@ def main():
             stats["added"] += 1
     entries.sort(key=lambda e: sortkey(e["word"]))
     words = [e["word"] for e in entries]
-    assert len(words) == len(set(words)), "duplicate words after merge"
+    canon = [canonical(w) for w in words]
+    assert len(canon) == len(set(canon)), "duplicate words after merge"
     if not dry:
         with out_path.open("w", encoding="utf-8") as fh:
             for e in entries:

@@ -130,7 +130,9 @@ tracked for v2 (see roadmap).
 ## Validation
 
 - Every line parses as JSON (`python3 -m json.tool` per line / jq).
-- No duplicate `word` values; Esperanto-alphabetical sort order
+- No duplicate `word` values — **case-insensitively** (see the
+  duplicate-headword rule at the end of this file); Esperanto-alphabetical
+  sort order
   (a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z).
 
 ## Roadmap (v2+)
@@ -165,5 +167,19 @@ OA breakdown: OA-1 1360 · OA-2 724 · OA-10 595 · OA-8 393 · OA-9 339 ·
 OA-3 285 · OA-4 240 · OA-7 23 · OA-6 21 · OA-5 15. (The broken Akademio
 `ajakso` endpoint was bypassed entirely — ReVo's `<ofc>` tags carry the same
 officialness data.) Rebuild: `python3 tools/merge_revo.py <revo-fonto>/revo`.
+
+### Duplicate-headword rule (esp-lyp)
+
+`word` keys are unique **case-insensitively**. Where the Fundamento UV cites
+a word capitalised (the religious and calendar terms `Dio`, `Kristo`,
+`Pasko`, `Julia`, `Marto`, `Mesio`, `Pentekosto`) and ReVo supplies the same
+word lowercase, **the Fundamento entry wins** — it is the authoritative 1905
+core — and the ReVo twin is dropped. `tools/merge_revo.py` now dedupes on
+`word.lower()`, so a re-run cannot reintroduce this. One case went the other
+way: the v1 `Mario` "nobleman" entry was a misparse of the UV's `nj'`
+feminine-diminutive article (no `Mario` exists in the UV); it was replaced by
+the restored `nj` suffix entry, and ReVo's real `mario` (the name) stands.
+Applied 2026-09-26 as a data fix on `entries.jsonl` (8 duplicate keys
+removed, 24673 → 24666 lines).
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28
