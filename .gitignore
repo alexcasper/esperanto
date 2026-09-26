@@ -34,3 +34,6 @@ RAW/lf-arkivo/*
 
 # nix build artifacts (playwright/chromium install leaves one)
 /result
+
+# local virtualenv (NixOS libstdc++ shim lives in git history: b1ea887)
+.venv/
