@@ -8634,13 +8634,13 @@
 {"word": "idioteco", "pos": "noun", "gloss_en": "idiocy", "root": "idiot", "source": "ReVo/OA-1", "gloss_fr": "idiotie (état, maladie)"}
 {"word": "idiotismo", "pos": "noun", "gloss_en": "idiom (a peculiar expression)", "root": "idiotism", "morphology": {"stem": "idiotism", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Idiom"], "derived": true}
 {"word": "idioto", "pos": "noun", "gloss_en": "idiot", "root": "idiot", "morphology": {"stem": "idiot", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 17, "sources": 5}, "citations": [{"source": "wsdump-Verkoj_de_FeZ_1935.txt", "text": "Valisano. Kaj vi, Piroto, estas idioto! — Pardonu, ke mi tiel senceremonie titolas vin; sed, anstataŭ tremi la tutan tagon kaj timi, ĉu la Majstro hav…"}, {"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "…el la magazeno, penso trafis min. „Piedbatinda stultulo! Plej dikkapa idioto en ĉi tiu mondo!” mi insultis min. „Blinda bovo mi, kiu ne rimarkis ion p…"}, {"source": "pg-17482.txt", "text": "\"Vi idioto!\" diris la Damo, kaj skuis malpacience la kapon. Poste ŝi"}]}
-{"word": "idiotulo", "pos": "noun", "gloss_en": "idiot; oaf", "root": "idiotul", "morphology": {"stem": "idiotul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Idiot", "Oaf"], "derived": true}
+{"word": "idiotulo", "pos": "noun", "gloss_en": "person with intellectual disability; fool, simpleton", "dated_gloss": "idiot; oaf", "root": "idiotul", "morphology": {"stem": "idiotul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Idiot", "Oaf"], "derived": true}
 {"word": "idisto", "pos": "noun", "gloss_en": "Idist", "root": "Id", "source": "ReVo", "gloss_fr": "idiste (subst.)"}
 {"word": "ido", "pos": "noun", "gloss_en": "Ido", "root": "Id", "source": "ReVo", "gloss_fr": "Ido"}
 {"word": "idolano", "pos": "noun", "gloss_en": "idolater", "root": "idol", "source": "ReVo/UV-*", "gloss_fr": "idolâtre (subst.)"}
 {"word": "idolo", "pos": "noun", "root": "idol", "gloss_en": "idol", "gloss_fr": "idole", "source": "Fundamento/UV-1905", "morphology": {"stem": "idol", "ending": "o"}}
 {"word": "idolservado", "pos": "noun", "gloss_en": "idolatry", "root": "idolservad", "morphology": {"stem": "idolservad", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Idolatry"]}
-{"word": "idolservo", "pos": "noun", "gloss_en": "heathenism", "root": "idolserv", "morphology": {"stem": "idolserv", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Heathenism"]}
+{"word": "idolservo", "pos": "noun", "gloss_en": "paganism, idol worship", "dated_gloss": "heathenism", "root": "idolserv", "morphology": {"stem": "idolserv", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Heathenism"]}
 {"word": "iduo", "pos": "noun", "gloss_en": "ides", "root": "idu", "source": "ReVo", "gloss_fr": "ides (calendrier romain)"}
 {"word": "ie", "pos": "adv", "gloss_en": "anywhere", "gloss_fr": "quelque part", "source": "Fundamento/UV-1905"}
 {"word": "iel", "pos": "adv", "gloss_en": "anyhow", "gloss_fr": "d’une manière quelconque", "source": "Fundamento/UV-1905"}
@@ -11509,11 +11509,11 @@
 {"word": "kringo", "pos": "noun", "root": "kring", "gloss_en": "cracknel", "gloss_fr": "craquelin", "source": "Fundamento/UV-1905", "morphology": {"stem": "kring", "ending": "o"}}
 {"word": "krino", "pos": "noun", "gloss_en": "mane", "root": "krin", "source": "ReVo", "gloss_fr": "crin"}
 {"word": "krinolino", "pos": "noun", "gloss_en": "crinoline", "root": "krinolin", "source": "ReVo", "gloss_fr": "crinoline"}
-{"word": "kripla", "pos": "adj", "gloss_en": "crippled", "root": "kripl", "morphology": {"stem": "kripl", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Crippled"]}
+{"word": "kripla", "pos": "adj", "gloss_en": "disabled", "dated_gloss": "crippled", "root": "kripl", "morphology": {"stem": "kripl", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Crippled"]}
 {"word": "kripli", "pos": "verb", "gloss_en": "disable", "root": "kripl", "morphology": {"stem": "kripl", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Disable"]}
-{"word": "kripligi", "pos": "verb", "gloss_en": "cripple", "root": "kriplig", "morphology": {"stem": "kriplig", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Cripple"], "derived": true}
+{"word": "kripligi", "pos": "verb", "gloss_en": "disable", "dated_gloss": "cripple", "root": "kriplig", "morphology": {"stem": "kriplig", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Cripple"], "derived": true}
 {"word": "kriplo", "pos": "noun", "root": "kripl", "gloss_en": "crippled", "gloss_fr": "estropié", "source": "Fundamento/UV-1905", "morphology": {"stem": "kripl", "ending": "o"}}
-{"word": "kriplulo", "pos": "noun", "gloss_en": "cripple", "root": "kriplul", "morphology": {"stem": "kriplul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Cripple"], "derived": true}
+{"word": "kriplulo", "pos": "noun", "gloss_en": "person with physical disability", "dated_gloss": "cripple", "root": "kriplul", "morphology": {"stem": "kriplul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Cripple"], "derived": true}
 {"word": "kriptogamo", "pos": "noun", "gloss_en": "cryptogam", "root": "kriptogam", "source": "ReVo", "gloss_fr": "cryptogame"}
 {"word": "kriptologio", "pos": "noun", "gloss_en": "cryptology", "root": "kriptologi", "source": "ReVo", "gloss_fr": "cryptologie"}
 {"word": "kriptono", "pos": "noun", "gloss_en": "krypton", "root": "kripton", "source": "ReVo", "gloss_fr": "krypton"}
@@ -12867,7 +12867,7 @@
 {"word": "lunatika", "pos": "adj", "root": "lunatik", "gloss_en": "lunatic", "gloss_fr": "lunatique", "source": "Fundamento/UV-1905", "morphology": {"stem": "lunatik", "ending": "a"}}
 {"word": "lunatikeco", "pos": "noun", "gloss_en": "lunacy", "root": "lunatikec", "morphology": {"stem": "lunatikec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Lunacy"], "derived": true}
 {"word": "lunatiko", "pos": "noun", "gloss_en": "sleepwalker", "root": "lunatik", "source": "ReVo/UV-*", "gloss_fr": "somnanbule"}
-{"word": "lunatikulo", "pos": "noun", "gloss_en": "lunatic", "root": "lunatikul", "morphology": {"stem": "lunatikul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Lunatic"], "derived": true}
+{"word": "lunatikulo", "pos": "noun", "gloss_en": "person with mental illness", "dated_gloss": "lunatic", "root": "lunatikul", "morphology": {"stem": "lunatikul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Lunatic"], "derived": true}
 {"word": "lunbrilo", "pos": "noun", "gloss_en": "moonlight", "root": "lunbril", "morphology": {"stem": "lunbril", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Moonlight"]}
 {"word": "lunĉskatolo", "pos": "noun", "gloss_en": "lunch box", "root": "skatol", "source": "ReVo/UV-*", "gloss_fr": "boîte à déjeuner"}
 {"word": "lunda", "pos": "adj", "root": "lund", "gloss_en": "Monday", "gloss_fr": "lundi", "source": "Fundamento/UV-1905", "morphology": {"stem": "lund", "ending": "a"}}
@@ -13612,7 +13612,7 @@
 {"word": "malsprita", "pos": "adj", "gloss_en": "stupid", "root": "malsprit", "morphology": {"stem": "malsprit", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Stupid"], "derived": true}
 {"word": "malspriteco", "pos": "noun", "gloss_en": "folly; stupidity", "root": "malspritec", "morphology": {"stem": "malspritec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Folly", "Stupidity"], "derived": true}
 {"word": "malspritigi", "pos": "verb", "gloss_en": "stupefy", "root": "malspritig", "morphology": {"stem": "malspritig", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Stupefy"], "derived": true}
-{"word": "malspritulo", "pos": "noun", "gloss_en": "imbecile", "root": "malspritul", "morphology": {"stem": "malspritul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Imbecile"], "derived": true}
+{"word": "malspritulo", "pos": "noun", "gloss_en": "person with intellectual disability", "dated_gloss": "imbecile", "root": "malspritul", "morphology": {"stem": "malspritul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Imbecile"], "derived": true}
 {"word": "malstabila", "pos": "adj", "gloss_en": "unstable", "root": "stabil", "source": "ReVo/OA-9"}
 {"word": "malstabileco", "pos": "noun", "gloss_en": "instability", "root": "stabil", "source": "ReVo/OA-9"}
 {"word": "malstreĉa", "pos": "adj", "gloss_en": "slack", "root": "malstreĉ", "morphology": {"stem": "malstreĉ", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Slack"], "derived": true}
@@ -15017,7 +15017,7 @@
 {"word": "muta", "pos": "adj", "gloss_en": "mute", "root": "mut", "source": "ReVo/UV-*", "gloss_fr": "muet (adj.)"}
 {"word": "mutacii", "pos": "verb", "gloss_en": "mutate", "root": "mutaci", "source": "ReVo"}
 {"word": "mutacio", "pos": "noun", "gloss_en": "mutation", "root": "mutaci", "source": "ReVo"}
-{"word": "muteco", "pos": "noun", "gloss_en": "dumbness", "root": "mutec", "morphology": {"stem": "mutec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Dumbness"], "derived": true}
+{"word": "muteco", "pos": "noun", "gloss_en": "inability to speak", "dated_gloss": "dumbness", "root": "mutec", "morphology": {"stem": "mutec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Dumbness"], "derived": true}
 {"word": "mutigi", "pos": "verb", "gloss_en": "mute", "root": "mut", "source": "ReVo/UV-*", "gloss_fr": "rendre muet"}
 {"word": "mutiĝi", "pos": "verb", "gloss_en": "be struck dumb", "root": "mut", "source": "ReVo/UV-*", "gloss_fr": "devenir muet"}
 {"word": "mutili", "pos": "verb", "gloss_en": "mutilate", "root": "mutil", "source": "ReVo", "gloss_fr": "mutiler"}
@@ -15607,7 +15607,7 @@
 {"word": "nigrevidulo", "pos": "noun", "gloss_en": "pessimist", "root": "vid", "source": "ReVo/UV-*", "gloss_fr": "pessimiste (subst.)"}
 {"word": "nigrigi", "pos": "verb", "gloss_en": "blacken", "root": "nigr", "source": "ReVo/UV-*"}
 {"word": "nigro", "pos": "noun", "gloss_en": "black", "root": "nigr", "source": "ReVo/UV-*", "gloss_fr": "noir (subst. couleur)"}
-{"word": "nigrulo", "pos": "noun", "gloss_en": "negro", "root": "nigrul", "morphology": {"stem": "nigrul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Negro"], "derived": true}
+{"word": "nigrulo", "pos": "noun", "gloss_en": "Black person", "dated_gloss": "negro", "root": "nigrul", "morphology": {"stem": "nigrul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Negro"], "derived": true}
 {"word": "nigrumo", "pos": "noun", "gloss_en": "blackout", "root": "nigr", "source": "ReVo/UV-*"}
 {"word": "niĝerio", "pos": "noun", "gloss_en": "Nigeria", "root": "Niĝeri", "source": "ReVo/OA-10"}
 {"word": "niĝero", "pos": "noun", "gloss_en": "Niger", "root": "Niĝer", "source": "ReVo/OA-10"}
@@ -16577,7 +16577,7 @@
 {"word": "pantofleto", "pos": "noun", "gloss_en": "sandal", "root": "pantoflet", "morphology": {"stem": "pantoflet", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Sandal"], "derived": true}
 {"word": "pantofli", "pos": "verb", "gloss_en": "shuffle (in slippers)", "root": "pantofl", "source": "ReVo/UV-*"}
 {"word": "pantoflo", "pos": "noun", "root": "pantofl", "gloss_en": "pantofle", "gloss_fr": "pantoufle", "source": "Fundamento/UV-1905", "morphology": {"stem": "pantofl", "ending": "o"}}
-{"word": "pantomimo", "pos": "noun", "gloss_en": "dumb show; pantomime", "root": "pantomim", "morphology": {"stem": "pantomim", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Dumb show", "Pantomime"]}
+{"word": "pantomimo", "pos": "noun", "gloss_en": "pantomime (performance without speech)", "dated_gloss": "dumb show; pantomime", "root": "pantomim", "morphology": {"stem": "pantomim", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Dumb show", "Pantomime"]}
 {"word": "papa", "pos": "adj", "gloss_en": "papal", "root": "pap", "morphology": {"stem": "pap", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Papal"]}
 {"word": "papageto", "pos": "noun", "gloss_en": "parroquet", "root": "papaget", "morphology": {"stem": "papaget", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Parroquet"], "derived": true}
 {"word": "papago", "pos": "noun", "root": "papag", "gloss_en": "parrot", "gloss_fr": "perroquet", "source": "Fundamento/UV-1905", "morphology": {"stem": "papag", "ending": "o"}}
@@ -21149,7 +21149,7 @@
 {"word": "sortobato", "pos": "noun", "gloss_en": "blow of fate", "root": "sortobat", "morphology": {"stem": "sortobat", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 11, "sources": 3}, "citations": [{"source": "pg-55954.txt", "text": "datiĝas de terura sortobato, kiu ŝin trafis. Nu, kelkafoje, kiam vi"}, {"source": "wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt", "text": "mian ŝafaron en la tago de !' sortobato? Kiam estis fulmotondro"}, {"source": "wsdump-Luyken_Mirinda_amo_1913.txt", "text": "Ankoraŭ kruela sortobato! Lia kara, bonkora onklo Silaso ne plu kun li! Li forlasis lin en la momento, kiam li pleje bezonis liajn kunsenton kaj helpo…"}]}
 {"word": "sortobato,odel'sorto", "pos": "noun", "gloss_en": "disaster", "root": "bat", "source": "ReVo/UV-*"}
 {"word": "sortovico", "pos": "noun", "gloss_en": "vicissitude", "root": "sortovic", "morphology": {"stem": "sortovic", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Vicissitude"]}
-{"word": "sovaĝa", "pos": "adj", "gloss_en": "haggard; savage; untamed; wild", "root": "sovaĝ", "morphology": {"stem": "sovaĝ", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Haggard", "Savage", "Untamed", "Wild"]}
+{"word": "sovaĝa", "pos": "adj", "gloss_en": "haggard; wild, untamed", "dated_gloss": "haggard; savage; untamed; wild", "root": "sovaĝ", "morphology": {"stem": "sovaĝ", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Haggard", "Savage", "Untamed", "Wild"]}
 {"word": "sovaĝejo", "pos": "noun", "gloss_en": "wilderness", "root": "sovaĝ", "source": "ReVo/UV-*"}
 {"word": "sovaĝo", "pos": "noun", "root": "sovaĝ", "gloss_en": "wild, savage", "gloss_fr": "sauvage", "source": "Fundamento/UV-1905", "morphology": {"stem": "sovaĝ", "ending": "o"}}
 {"word": "soveta", "pos": "adj", "gloss_en": "Soviet", "root": "sovet", "morphology": {"stem": "sovet", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 19, "sources": 2}, "citations": [{"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt", "text": "Jam multe da raportoj, eĉ da dikaj libroj estas verkitaj pri la Soveta Respubliko. Kaj mi supozas tamen, ke neniu el la verkintoj estas tiel pretendem…"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt", "text": "Ni ne povas ne aludi aspekton de la agado de kamarado Lanti per siaj eldonaĵoj. Tiun, kiu koncernas lian sintenon antaŭ la Soveta Registaro."}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt", "text": "…e pro tio mi volas paroli pri ĝi malkaŝe, ne fipolitikiste. Cetere la Soveta Respubliko estas jam sufiĉe potenca por ke, sen ia skrupulo, oni diru pri…"}]}

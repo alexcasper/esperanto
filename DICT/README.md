@@ -71,10 +71,14 @@ which claim rests on citations and which on a lexicographer's authority.
 Nothing here overwrites a Fundamento or corpus-mined entry; only words absent
 from both are added, and each keeps its `english_headwords`.
 
-Caveat: the English glosses are the source's own, and eleven of them use
-period terms (*negro*, *heathen*, *lunatic*, *cripple*). They are shipped as
-the source has them, with the tag marking provenance; deciding whether to
-modernise them is tracked as a bead, not settled here.
+Caveat: the English glosses are the source's own. Eleven of them use period
+terms (*negro*, *heathen*, *lunatic*, *cripple*, …). Settled policy
+(esp-54v, option b): `gloss_en` carries a neutral present-day wording, and
+the source's original wording is preserved verbatim in a `dated_gloss` field
+on exactly those entries. `english_headwords` and `english-index.jsonl` keep
+the source's own terms — they are the lookup direction into the 1906 source,
+and their provenance is already tagged by `source: oconnor-1906`. The
+mapping lives in `DATED_GLOSSES` in `tools/parse_oconnor.py`.
 
 Two further artefacts come from the same source:
 
@@ -92,10 +96,11 @@ POS distribution: 6555 noun · 2047 adj · 1907 verb · 399 adv · 31 suffix · 
 ## Schema
 
 Every line is one JSON object. Required keys: `word`, `pos`, `gloss_en`.
-Optional keys: `gloss_fr`, `root`, `morphology`, `source`, and on
-corpus-mined entries `attestation` (`count` of occurrences and number of
-independent `sources`) and `citations` (up to three real passages, each with
-its `source` file and `text`).
+Optional keys: `gloss_fr`, `root`, `morphology`, `source`, `dated_gloss`
+(the source's original period wording where `gloss_en` was modernised —
+oconnor-1906 only), and on corpus-mined entries `attestation` (`count` of
+occurrences and number of independent `sources`) and `citations` (up to
+three real passages, each with its `source` file and `text`).
 
 ```json
 {"word":"abelo","pos":"noun","gloss_en":"bee","gloss_fr":"abeille","root":"abel","morphology":{"stem":"abel","ending":"o"},"source":"Fundamento/UV-1905"}
