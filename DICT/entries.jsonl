@@ -105,7 +105,7 @@
 {"word": "aĉetkonkurso", "pos": "noun", "gloss_en": "call for bids", "root": "konkurs", "source": "ReVo/UV-*", "gloss_fr": "appel d'offre"}
 {"word": "aĉeto", "pos": "noun", "gloss_en": "purchase (the act)", "root": "aĉet", "source": "ReVo/UV-*", "gloss_fr": "achat"}
 {"word": "aĉettaŝo", "pos": "noun", "gloss_en": "shopping bag", "root": "taŝ", "source": "ReVo", "gloss_fr": "cabat"}
-{"word": "ad", "pos": "suffix", "root": "ad", "gloss_en": "denotes duration of action; e. g. danc' dance ― danc'ad' dancing", "gloss_fr": "marque durée dans l’action; ex. paf' coup de fusil ― paf'ad' fusillade", "source": "Fundamento/UV-1905"}
+{"word": "ad", "pos": "suffix", "root": "ad", "gloss_en": "denotes duration of action; e. g. danc' dance ― danc'ad' dancing", "gloss_fr": "marque durée dans l’action; ex. paf' coup de fusil ― paf'ad' fusillade", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "adaĝe", "pos": "adv", "gloss_en": "adagio", "root": "adaĝ", "source": "ReVo", "gloss_fr": "adagio (adv.)"}
 {"word": "adamo", "pos": "noun", "gloss_en": "Adam", "root": "Adam", "source": "ReVo", "gloss_fr": "Adam"}
 {"word": "adano", "pos": "noun", "gloss_en": "Adana", "root": "Adan", "source": "ReVo", "gloss_fr": "Adana"}
@@ -312,7 +312,7 @@
 {"word": "ajn", "pos": "particle", "gloss_en": "ever; e.g. kiu who ― kiu ajn whoever", "gloss_fr": "que ce soit; ex. kiu qui ― kiu ajn qui que ce soit", "source": "Fundamento/UV-1905"}
 {"word": "ajnua,a", "pos": "adj", "gloss_en": "Ainu (language)", "root": "ajnu", "source": "ReVo", "gloss_fr": "aïnou (adj.)"}
 {"word": "ajnuo,o", "pos": "noun", "gloss_en": "Ainu", "root": "ajnu", "source": "ReVo", "gloss_fr": "Aïnou (subst.)"}
-{"word": "aĵ", "pos": "suffix", "root": "aĵ", "gloss_en": "made from or possessing the quality of; e. g. sek' dry ― sek'aĵ' dry goods", "gloss_fr": "quelque chose possédant une certaine qualité ou fait d’une certaine matière: ex. mol' mou ― mol'aĵ' partie molle d’une chose", "source": "Fundamento/UV-1905"}
+{"word": "aĵ", "pos": "suffix", "root": "aĵ", "gloss_en": "made from or possessing the quality of; e. g. sek' dry ― sek'aĵ' dry goods", "gloss_fr": "quelque chose possédant une certaine qualité ou fait d’une certaine matière: ex. mol' mou ― mol'aĵ' partie molle d’une chose", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "aĵgenro,neŭtrao", "pos": "noun", "gloss_en": "inanimate gender", "root": "genr", "source": "ReVo/OA-9"}
 {"word": "aĵpentraĵo", "pos": "noun", "gloss_en": "still life", "root": "pentr", "source": "ReVo/UV-*", "gloss_fr": "nature morte"}
 {"word": "akacio", "pos": "noun", "gloss_en": "acacia", "root": "akaci", "source": "ReVo/OA-1", "gloss_fr": "acacia"}
@@ -900,7 +900,7 @@
 {"word": "amuzi", "pos": "verb", "root": "amuz", "gloss_en": "amuse", "gloss_fr": "amuser", "source": "Fundamento/UV-1905", "morphology": {"stem": "amuz", "ending": "i"}}
 {"word": "amuzisto", "pos": "noun", "gloss_en": "entertainer", "root": "amuz", "source": "ReVo/UV-*"}
 {"word": "amuzparko", "pos": "noun", "gloss_en": "fun fair", "root": "park", "source": "ReVo/UV-*", "gloss_fr": "parc de loisir"}
-{"word": "an", "pos": "suffix", "root": "an", "gloss_en": "inhabitant, member; e. g. Nov- Jork New York ― Nov-Jork'an' New Yorker", "gloss_fr": "membre, habitant, partisan; ex. regn' l’état ― regn'an' citoyen", "source": "Fundamento/UV-1905"}
+{"word": "an", "pos": "suffix", "root": "an", "gloss_en": "inhabitant, member; e. g. Nov- Jork New York ― Nov-Jork'an' New Yorker", "gloss_fr": "membre, habitant, partisan; ex. regn' l’état ― regn'an' citoyen", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "anabaptismo", "pos": "noun", "gloss_en": "anabaptism", "root": "anabaptism", "source": "ReVo", "gloss_fr": "anabaptisme"}
 {"word": "anabaptisto", "pos": "noun", "gloss_en": "Anabaptist", "root": "anabaptist", "morphology": {"stem": "anabaptist", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 10, "sources": 1}, "citations": [{"source": "wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt", "text": "Iu viro, kiu ne estis baptita, iu bona anabaptisto,"}, {"source": "wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt", "text": "florenojn, kiujn li estis ricevinta de la honesta anabaptisto"}, {"source": "wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt", "text": "Tuj Kandid kondukis lin en la stalon de la anabaptisto,"}]}
 {"word": "anaforo", "pos": "noun", "gloss_en": "anaphor", "root": "anafor", "source": "ReVo", "gloss_fr": "anaphore"}
@@ -1063,7 +1063,7 @@
 {"word": "anstataŭii", "pos": "verb", "root": "anstataŭi", "gloss_en": "replace", "gloss_fr": "remplacer", "source": "Fundamento/UV-1905", "morphology": {"stem": "anstataŭi", "ending": "i"}}
 {"word": "anstataŭulo", "pos": "noun", "gloss_en": "proxy", "root": "anstataŭul", "morphology": {"stem": "anstataŭul", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Proxy"]}
 {"word": "anstromo,o", "pos": "noun", "gloss_en": "angstrom", "root": "anstrom", "source": "ReVo", "gloss_fr": "ångström"}
-{"word": "ant", "pos": "suffix", "root": "ant", "gloss_en": "ending of pres. part. act. in verbs", "gloss_fr": "marque le participe présent actif", "source": "Fundamento/UV-1905"}
+{"word": "ant", "pos": "suffix", "root": "ant", "gloss_en": "ending of pres. part. act. in verbs", "gloss_fr": "marque le participe présent actif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "antagonismo", "pos": "noun", "gloss_en": "antagonism", "root": "antagonism", "source": "ReVo", "gloss_fr": "antagonisme"}
 {"word": "antagonisto", "pos": "noun", "gloss_en": "antagonist", "root": "antagonist", "source": "ReVo", "gloss_fr": "antagoniste"}
 {"word": "antananarivo", "pos": "noun", "gloss_en": "Antananarivo", "root": "Antananariv", "source": "ReVo", "gloss_fr": "Antananarivo"}
@@ -1304,7 +1304,7 @@
 {"word": "apudmeti", "pos": "verb", "gloss_en": "put side by side", "root": "met", "source": "ReVo/UV-*"}
 {"word": "apudmetita", "pos": "adj", "gloss_en": "juxtaposed, attributive (grammar)", "root": "apudmetit", "morphology": {"stem": "apudmetit", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 8, "sources": 1}, "citations": [{"source": "pg-47855.txt", "text": "apudmetita por ĝin distingi de tiu, kiu estas aldonita per pero de verbo"}, {"source": "pg-47855.txt", "text": "esti. E.: _homo bona_ (adj. apudmetita), _homo estas bona_ (adj."}, {"source": "pg-47855.txt", "text": "I. APUDMETITA ADJEKTIVO."}]}
 {"word": "apudmeto", "pos": "noun", "gloss_en": "juxtaposition", "root": "apudmet", "morphology": {"stem": "apudmet", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Juxtaposition"]}
-{"word": "ar", "pos": "suffix", "root": "ar", "gloss_en": "a collection of objects; e. g. vort' word ― vort'ar' dictionary", "gloss_fr": "une réunion de certains objets; ex. arb' arbre ― arb'ar' forêt", "source": "Fundamento/UV-1905"}
+{"word": "ar", "pos": "suffix", "root": "ar", "gloss_en": "a collection of objects; e. g. vort' word ― vort'ar' dictionary", "gloss_fr": "une réunion de certains objets; ex. arb' arbre ― arb'ar' forêt", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "araba", "pos": "adj", "gloss_en": "Arab, Arabic", "root": "arab", "morphology": {"stem": "arab", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 16, "sources": 5}, "citations": [{"source": "pg-64579.txt", "text": "figuroj, jen al literoj de la greka, araba aŭ la hebrea alfabetoj."}, {"source": "pg-8224.txt", "text": "ARABA LEGENDO."}, {"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "fantaziaj linioj, laŭ la araba gusto."}]}
 {"word": "arabeca", "pos": "adj", "gloss_en": "Arabian", "root": "arab", "source": "ReVo/OA-8", "gloss_fr": "arabesque"}
 {"word": "arabesko", "pos": "noun", "gloss_en": "arabesque", "root": "arabesk", "source": "ReVo/OA-2", "gloss_fr": "arabesque"}
@@ -1605,7 +1605,7 @@
 {"word": "asunciono", "pos": "noun", "gloss_en": "Asunción", "root": "Asuncion", "source": "ReVo", "gloss_fr": "Asuncion"}
 {"word": "aŝgabato", "pos": "noun", "gloss_en": "Ashgabat", "root": "Aŝgabat", "source": "ReVo", "gloss_fr": "Achgabat"}
 {"word": "aŝramo", "pos": "noun", "gloss_en": "ashram", "root": "aŝram", "source": "ReVo", "gloss_fr": "âshram"}
-{"word": "at", "pos": "suffix", "root": "at", "gloss_en": "ending of pres. part. pass. in verbs", "gloss_fr": "marque le participe présent passif", "source": "Fundamento/UV-1905"}
+{"word": "at", "pos": "suffix", "root": "at", "gloss_en": "ending of pres. part. pass. in verbs", "gloss_fr": "marque le participe présent passif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "atakadi", "pos": "verb", "gloss_en": "harass (milit.)", "root": "atakad", "morphology": {"stem": "atakad", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Harass"], "derived": true}
 {"word": "atakanto", "pos": "noun", "gloss_en": "aggressor; assailant", "root": "atakant", "morphology": {"stem": "atakant", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Aggressor", "Assailant"], "derived": true}
 {"word": "atakegi", "pos": "verb", "gloss_en": "charge (attack)", "root": "atakeg", "morphology": {"stem": "atakeg", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Charge"], "derived": true}
@@ -2458,7 +2458,7 @@
 {"word": "bluo", "pos": "noun", "gloss_en": "blue", "root": "blu", "source": "ReVo/UV-*", "gloss_fr": "bleu (couleur)"}
 {"word": "bluokula", "pos": "adj", "gloss_en": "blue-eyed, bright-eyed (Homeric epithet of Athena)", "root": "bluokul", "morphology": {"stem": "bluokul", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 6, "sources": 1}, "citations": [{"source": "wsdump-Homero_Iliado_1896_Kofman.txt", "text": "Al li respondis Ateno, la bluokula diino:"}, {"source": "wsdump-Homero_Iliado_1896_Kofman.txt", "text": "Ĝemis malĝoje en koro. Sed la bluokula Ateno"}, {"source": "wsdump-Homero_Iliado_1896_Kofman.txt", "text": "La bluokula Ateno lin kontraŭ vi tiel ekscitis."}]}
 {"word": "bluso", "pos": "noun", "gloss_en": "blues", "root": "blus", "source": "ReVo", "gloss_fr": "blues"}
-{"word": "bo", "pos": "prefix", "root": "bo", "gloss_en": "relation by marriage; e. g. patr'in' mother ― bo'patr'in' mother-in-law", "gloss_fr": "marque la parenté resultant du mariage; ex. patr' père ― bo'patr' beau-père", "source": "Fundamento/UV-1905"}
+{"word": "bo", "pos": "prefix", "root": "bo", "gloss_en": "relation by marriage; e. g. patr'in' mother ― bo'patr'in' mother-in-law", "gloss_fr": "marque la parenté resultant du mariage; ex. patr' père ― bo'patr' beau-père", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "boao", "pos": "noun", "root": "boa", "gloss_en": "boa", "gloss_fr": "boa", "source": "Fundamento/UV-1905", "morphology": {"stem": "boa", "ending": "o"}}
 {"word": "boateto", "pos": "noun", "gloss_en": "skiff", "root": "boatet", "morphology": {"stem": "boatet", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Skiff"], "derived": true}
 {"word": "boatisto", "pos": "noun", "gloss_en": "boatman", "root": "boatist", "morphology": {"stem": "boatist", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Boatman"], "derived": true}
@@ -3362,19 +3362,19 @@
 {"word": "ĉevalŝanĝo", "pos": "noun", "gloss_en": "relay (horses)", "root": "ĉevalŝanĝ", "morphology": {"stem": "ĉevalŝanĝ", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Relay"]}
 {"word": "ĉevalviro", "pos": "noun", "gloss_en": "stallion", "root": "ĉevalvir", "morphology": {"stem": "ĉevalvir", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Stallion"]}
 {"word": "ĉi", "pos": "particle", "gloss_en": "denotes proximity; e. g. tiu that ― tiu ĉi this; tie there ― tie ĉi here", "gloss_fr": "ce qui est le plus près; ex. tiu celui-là ― tiu ĉi celui-ci", "source": "Fundamento/UV-1905"}
-{"word": "ĉia", "pos": "adj", "gloss_en": "every", "gloss_fr": "chaque", "source": "Fundamento/UV-1905"}
-{"word": "ĉiam", "pos": "adv", "gloss_en": "always", "gloss_fr": "toujours", "source": "Fundamento/UV-1905"}
+{"word": "ĉia", "pos": "adj", "gloss_en": "every", "gloss_fr": "chaque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "ĉiam", "pos": "adv", "gloss_en": "always", "gloss_fr": "toujours", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiamfrostagrundo", "pos": "noun", "gloss_en": "permafrost", "root": "grund", "source": "ReVo/OA-4", "gloss_fr": "pergélisol"}
 {"word": "ĉiamfrosto,ĉiamao", "pos": "noun", "gloss_en": "permafrost", "root": "frost", "source": "ReVo/UV-*", "gloss_fr": "pergélisol"}
 {"word": "ĉiamverda", "pos": "adj", "gloss_en": "evergreen", "root": "verd", "source": "ReVo/UV-*", "gloss_fr": "à feuilles persistantes"}
 {"word": "ĉiaspeca", "pos": "adj", "gloss_en": "all kinds of", "root": "spec", "source": "ReVo/UV-*", "gloss_fr": "de toutes sortes"}
 {"word": "ĉibuko", "pos": "noun", "gloss_en": "chibouk", "root": "ĉibuk", "source": "ReVo", "gloss_fr": "chibouque"}
-{"word": "ĉie", "pos": "adv", "gloss_en": "everywhere", "gloss_fr": "partout", "source": "Fundamento/UV-1905"}
+{"word": "ĉie", "pos": "adv", "gloss_en": "everywhere", "gloss_fr": "partout", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiea", "pos": "adj", "gloss_en": "ubiquitous", "root": "ĉie", "source": "ReVo/UV-*"}
 {"word": "ĉieafunkcio", "pos": "noun", "gloss_en": "total function", "root": "ĉie", "source": "ReVo/UV-*"}
 {"word": "ĉiearekursiafunkcio,ĉrf", "pos": "noun", "gloss_en": "total recursive function", "root": "rekursi", "source": "ReVo"}
 {"word": "ĉieesto", "pos": "noun", "gloss_en": "ubiquity", "root": "est", "source": "ReVo/UV-*", "gloss_fr": "ubiquité"}
-{"word": "ĉiel", "pos": "adv", "gloss_en": "in every manner", "gloss_fr": "de chaque (toute) manière", "source": "Fundamento/UV-1905"}
+{"word": "ĉiel", "pos": "adv", "gloss_en": "in every manner", "gloss_fr": "de chaque (toute) manière", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiela", "pos": "adj", "gloss_en": "celestial", "root": "ĉiel", "morphology": {"stem": "ĉiel", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Celestial"]}
 {"word": "ĉielarivero", "pos": "noun", "gloss_en": "Milky Way", "root": "river", "source": "ReVo/UV-*", "gloss_fr": "Rivière céleste (voie lactée)"}
 {"word": "ĉielarko", "pos": "noun", "root": "ĉielark", "gloss_en": "rain-bow", "gloss_fr": "arc-en-ciel", "source": "Fundamento/UV-1905", "morphology": {"stem": "ĉielark", "ending": "o"}}
@@ -3404,7 +3404,7 @@
 {"word": "ĉino", "pos": "noun", "gloss_en": "Chinese (citizen)", "root": "ĉin", "source": "ReVo/OA-9", "gloss_fr": "Chinois (subst.)"}
 {"word": "ĉinologio,o", "pos": "noun", "gloss_en": "sinology", "root": "ĉinologi", "source": "ReVo", "gloss_fr": "sinologie"}
 {"word": "ĉinujo", "pos": "noun", "gloss_en": "China", "root": "ĉin", "source": "ReVo/OA-9"}
-{"word": "ĉio", "pos": "noun", "gloss_en": "everything", "root": "ĉi", "morphology": {"stem": "ĉi", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Everything"]}
+{"word": "ĉio", "pos": "noun", "gloss_en": "everything", "root": "ĉi", "morphology": {"stem": "ĉi", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Everything"], "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiokomprena", "pos": "adj", "gloss_en": "omniscient", "root": "kompren", "source": "ReVo/UV-*"}
 {"word": "ĉiopova", "pos": "adj", "gloss_en": "almighty, omnipotent", "root": "ĉiopov", "morphology": {"stem": "ĉiopov", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 35, "sources": 5}, "citations": [{"source": "pg-8224.txt", "text": "Kiam la ĉiopova Mahadeva kreis la belegan Hindujon, li deflugis sur"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt", "text": "…entas kun Alfesto. Sed tiu tro memfida SAT-ano forgesis, ke Dio estas ĉiopova. Plie, Liaj intencoj estas nediveneblaj. Sekve, ĉiu kristano devas konse…"}, {"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Ĉiopova. Kiu povas ĉion : Dio ĉiopova."}]}
 {"word": "ĉioscia", "pos": "adj", "gloss_en": "omniscient", "root": "sci", "source": "ReVo/UV-*", "gloss_fr": "omniscient"}
@@ -3465,7 +3465,7 @@
 {"word": "ĉirpi", "pos": "verb", "gloss_en": "chirp", "root": "ĉirp", "source": "ReVo"}
 {"word": "ĉitagongo", "pos": "noun", "gloss_en": "Chittagong", "root": "Ĉitagong", "source": "ReVo", "gloss_fr": "Chittagong"}
 {"word": "ĉitiu,*ĉi", "pos": "verb", "gloss_en": "this", "root": "tiu", "source": "ReVo/UV-*"}
-{"word": "ĉiu", "pos": "pron", "gloss_en": "each, every one", "gloss_fr": "chacun", "source": "Fundamento/UV-1905"}
+{"word": "ĉiu", "pos": "pron", "gloss_en": "each, every one", "gloss_fr": "chacun", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiudutage", "pos": "adv", "gloss_en": "every other day", "root": "ĉiudutag", "morphology": {"stem": "ĉiudutag", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 6, "sources": 1}, "citations": [{"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…riĝos via edzo: tiam mi vin apudestos senĉese kaj ne dum kelkaj horoj ĉiudutage.…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "Ĉiudutage, fraŭlino de Prelongo refaris la saman vojiron, akompanata de Josefo, kiun ŝi lasis en Blazurbo: kaj la servisto trovis tiel grandan profito…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…aĥino: tion mi tre malfacile kredas. Ĵus de ŝia eliro la bela Matildo ĉiudutage faras rajde longan promenadon kaj revenas nur nokte. Kien ŝi iras? Mi …"}]}
 {"word": "ĉiuflanke", "pos": "adv", "gloss_en": "on all sides", "root": "ĉiuflank", "morphology": {"stem": "ĉiuflank", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 54, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…on en la lingvo internacia, ke la publiko povu koniĝi tiun ĉi lingvon ĉiuflanke, ĝin ellerni pli rapide kaj uzi ĝin. La nombro de tiuj ĉi postuloj est…"}, {"source": "pg-42028.txt", "text": "ĉiuflanke, kiam el malantaŭe, du brakoj ĉirkaŭprenas min, iu"}, {"source": "wsrc-Fabeloj_de_Andersen_(Zamenhof)_Vojkamarado.txt", "text": "Ĉirkaŭe ĉiuflanke, kien ajn la luno povis lumi tra inter la arboj, li vidis plej ĉarmajn malgrandajn elfojn, kiuj gaje ludis unuj kun la aliaj. Ili ne…"}]}
 {"word": "ĉiufoje", "pos": "adv", "gloss_en": "each time, every time", "root": "ĉiufoj", "morphology": {"stem": "ĉiufoj", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 123, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…o kutimu je la nomo, ekmemoru kaj ekrespektu ĝin kaj ne pensu, ke oni ĉiufoje parolas pri aliaj lingvoj. Tiel ekzemple ni havis jam mem la okazon vidi…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "… aliro naskis senĉesan frotadon, kiu ĝin rapide eluzis. Ĝi tranĉiĝis. Ĉiufoje kiam rompiĝis ŝnurero, la ŝnurego maltordiĝis, kaj estis tiu…"}, {"source": "pg-64579.txt", "text": "Mi direktis la rigardon al la pordeto, kiu ĉiufoje estis malfermata,"}]}
@@ -3497,7 +3497,7 @@
 {"word": "ĉizilo", "pos": "noun", "gloss_en": "chisel", "root": "ĉizil", "morphology": {"stem": "ĉizil", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Chisel"]}
 {"word": "ĉizo", "pos": "noun", "root": "ĉiz", "gloss_en": "chisel", "gloss_fr": "creuser avec le ciseau", "source": "Fundamento/UV-1905", "morphology": {"stem": "ĉiz", "ending": "o"}}
 {"word": "ĉi-foje", "pos": "adv", "gloss_en": "this time", "root": "foj", "source": "ReVo/UV-*"}
-{"word": "ĉj", "pos": "suffix", "root": "ĉj", "gloss_en": "affectionate diminutive of masculine names; e.g. Johan' John ― Jo'ĉj' Johnnie", "gloss_fr": "après les 1-5 premières lettres d’un prénom masculin lui donne un caractère diminutif et caressant; ex. Miĥael' ― Mi'ĉj'", "source": "Fundamento/UV-1905"}
+{"word": "ĉj", "pos": "suffix", "root": "ĉj", "gloss_en": "affectionate diminutive of masculine names; e.g. Johan' John ― Jo'ĉj' Johnnie", "gloss_fr": "après les 1-5 premières lettres d’un prénom masculin lui donne un caractère diminutif et caressant; ex. Miĥael' ― Mi'ĉj'", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ĉokolado", "pos": "noun", "root": "ĉokolad", "gloss_en": "chocolate", "gloss_fr": "chocolat", "source": "Fundamento/UV-1905", "morphology": {"stem": "ĉokolad", "ending": "o"}}
 {"word": "ĉongĉingo", "pos": "noun", "gloss_en": "Chongqing", "root": "Ĉongĉing", "source": "ReVo", "gloss_fr": "Chongqing"}
 {"word": "ĉonmago", "pos": "noun", "gloss_en": "chonmage", "root": "ĉonmag", "source": "ReVo", "gloss_fr": "chonmage"}
@@ -4144,7 +4144,7 @@
 {"word": "dirita", "pos": "adj", "gloss_en": "said, aforementioned", "root": "dirit", "morphology": {"stem": "dirit", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 125, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "Sur la fondo de ĉio supre dirita, la „Amerika Filozofia Societo“ decidis dissendi al ĉiuj instruitaj societoj la proponon fari internacian kongreson d…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "Tio estis dirita per tono tiel humila, tiel submetita, ke ĝi kortuŝis fraŭlinon de Prelongo. Levante la kapon, ŝi rigardis rekte sian interparolanton …"}, {"source": "pg-64579.txt", "text": "-- Tio estas dirita logike kaj filozofie, mia amiko, sed diru al mi:"}], "derived": true}
 {"word": "dirko", "pos": "noun", "gloss_en": "picklock", "root": "dirk", "source": "ReVo", "gloss_fr": "crochet (de serrurier)"}
 {"word": "diro", "pos": "noun", "gloss_en": "statement", "root": "dir", "source": "ReVo/UV-*"}
-{"word": "dis", "pos": "prefix", "root": "dis", "gloss_en": "has the same force as the English prefix dis ; e. g. sem' sow ― dis'sem' disseminate; ŝir' tear ― dis'ŝir' tear to pieces", "gloss_fr": "marque division, dissémination; ex. ir' aller ― dis'ir' se séparer, aller chacun de son côté", "source": "Fundamento/UV-1905"}
+{"word": "dis", "pos": "prefix", "root": "dis", "gloss_en": "has the same force as the English prefix dis ; e. g. sem' sow ― dis'sem' disseminate; ŝir' tear ― dis'ŝir' tear to pieces", "gloss_fr": "marque division, dissémination; ex. ir' aller ― dis'ir' se séparer, aller chacun de son côté", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "disbati", "pos": "verb", "gloss_en": "smash", "root": "bat", "source": "ReVo/UV-*"}
 {"word": "disblovi", "pos": "verb", "gloss_en": "blow apart (by wind)", "root": "blov", "source": "ReVo/UV-*"}
 {"word": "disbloviĝi", "pos": "verb", "gloss_en": "be blown apart (by wind)", "root": "blov", "source": "ReVo/UV-*"}
@@ -4642,7 +4642,7 @@
 {"word": "ebenaangulo", "pos": "noun", "gloss_en": "plane angle", "root": "angul", "source": "ReVo/UV-*", "gloss_fr": "angle plan"}
 {"word": "ebenaĵo,ejo", "pos": "noun", "gloss_en": "plain", "root": "eben", "source": "ReVo/UV-*", "gloss_fr": "plaine"}
 {"word": "ebeno", "pos": "noun", "root": "eben", "gloss_en": "even, smooth", "gloss_fr": "égal (de même plan)", "source": "Fundamento/UV-1905", "morphology": {"stem": "eben", "ending": "o"}}
-{"word": "ebl", "pos": "suffix", "root": "ebl", "gloss_en": "able, possible", "gloss_fr": "possible; ex. kompren' comprendre ― kompren'ebl' compréhensible", "source": "Fundamento/UV-1905"}
+{"word": "ebl", "pos": "suffix", "root": "ebl", "gloss_en": "able, possible", "gloss_fr": "possible; ex. kompren' comprendre ― kompren'ebl' compréhensible", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ebla", "pos": "adj", "gloss_en": "likely (adj.); possible", "root": "ebl", "morphology": {"stem": "ebl", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Likely", "Possible"]}
 {"word": "eble", "pos": "adv", "gloss_en": "haply; likely (adv.); mayhap; peradventure; perhaps; possibly", "root": "ebl", "morphology": {"stem": "ebl", "ending": "e"}, "source": "oconnor-1906", "english_headwords": ["Haply", "Likely", "Mayhap", "Peradventure", "Perhaps", "Possibly"]}
 {"word": "ebleco", "pos": "noun", "gloss_en": "possibility", "root": "eblec", "morphology": {"stem": "eblec", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 82, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…i la unuan vorton, kiun ili tralegis, kaj kontraŭparolante kontraŭ la ebleco de tia afero, kiel lingvo tutmonda, ili deprenas per siaj ŝercoj la kuraĝ…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…j ol da partoprenantoj de la Versailles’a kortego. Pro tio ĝis nun la ebleco de edziĝo kun la ĉarma Suzano estis por Raŭlo nur revo ŝajne ne efektivig…"}, {"source": "pg-64579.txt", "text": "nur la ebleco, ke mi naskiĝis sur unu el la insuloj kuŝantaj"}], "derived": true}
@@ -4662,7 +4662,7 @@
 {"word": "eburaturo", "pos": "noun", "gloss_en": "ivory tower", "root": "tur", "source": "ReVo/UV-*", "gloss_fr": "tour d'ivoire"}
 {"word": "eburmevo", "pos": "noun", "gloss_en": "ivory gull", "root": "mev", "source": "ReVo/UV-*"}
 {"word": "eburo", "pos": "noun", "gloss_en": "ivory", "root": "ebur", "morphology": {"stem": "ebur", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 12, "sources": 3}, "citations": [{"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Eburo. Osto de la okuldento de elefanto."}, {"source": "wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt", "text": "fine, preninte la inkrustitan per sukceno kaj eburo"}, {"source": "wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_II.txt", "text": "grandaj, inkrustitaj per eburo, perloj, aŭ riĉaj je brilo de"}]}
-{"word": "ec", "pos": "suffix", "root": "ec", "gloss_en": "denotes qualites; e. g. bon' good ― bon'ec' goodness", "gloss_fr": "marque la qualité (abstraitement); ex. bon' bon ― bon'ec' bonté; vir' homme ― vir'ec' virilité", "source": "Fundamento/UV-1905"}
+{"word": "ec", "pos": "suffix", "root": "ec", "gloss_en": "denotes qualites; e. g. bon' good ― bon'ec' goodness", "gloss_fr": "marque la qualité (abstraitement); ex. bon' bon ― bon'ec' bonté; vir' homme ― vir'ec' virilité", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ecaa", "pos": "adj", "root": "eca", "gloss_en": "qualitative", "gloss_fr": "qualitatif", "source": "Fundamento/UV-1905", "morphology": {"stem": "eca", "ending": "a"}}
 {"word": "ecigi", "pos": "verb", "gloss_en": "qualify", "root": "ecig", "morphology": {"stem": "ecig", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Qualify"], "derived": true}
 {"word": "eco", "pos": "noun", "gloss_en": "attribute (quality); qualification; quality", "root": "ec", "morphology": {"stem": "ec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Attribute", "Qualification", "Quality"]}
@@ -4730,7 +4730,7 @@
 {"word": "efloresko", "pos": "noun", "gloss_en": "efflorescence", "root": "efloresk", "source": "ReVo", "gloss_fr": "efflorescence"}
 {"word": "efluvo", "pos": "noun", "gloss_en": "glow discharge", "root": "efluv", "source": "ReVo", "gloss_fr": "décharge luminescente"}
 {"word": "efodo", "pos": "noun", "gloss_en": "ephod", "root": "efod", "source": "ReVo", "gloss_fr": "éphod"}
-{"word": "eg", "pos": "suffix", "root": "eg", "gloss_en": "denotes increase of degree; e. g, varm' warm ― varm'eg' hot", "gloss_fr": "marque augmentation, plus haut degré; ex. pord' porte ― pord'eg' grande porte; pet' prier ― pet'eg' supplier", "source": "Fundamento/UV-1905"}
+{"word": "eg", "pos": "suffix", "root": "eg", "gloss_en": "denotes increase of degree; e. g, varm' warm ― varm'eg' hot", "gloss_fr": "marque augmentation, plus haut degré; ex. pord' porte ― pord'eg' grande porte; pet' prier ― pet'eg' supplier", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ega", "pos": "adj", "gloss_en": "intense", "root": "eg", "morphology": {"stem": "eg", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Intense"]}
 {"word": "egala", "pos": "adj", "root": "egal", "gloss_en": "equal", "gloss_fr": "égal, qui ne diffère pas", "source": "Fundamento/UV-1905", "morphology": {"stem": "egal", "ending": "a"}}
 {"word": "egalanima", "pos": "adj", "gloss_en": "equanimous", "root": "anim", "source": "ReVo/UV-*"}
@@ -4775,14 +4775,14 @@
 {"word": "eĥo", "pos": "noun", "root": "eĥ", "gloss_en": "echo", "gloss_fr": "écho", "source": "Fundamento/UV-1905", "morphology": {"stem": "eĥ", "ending": "o"}}
 {"word": "eĥografio", "pos": "noun", "gloss_en": "echography", "root": "eĥografi", "source": "ReVo", "gloss_fr": "échographie"}
 {"word": "eĥoŝanĝoĉiuĵaŭde", "pos": "adv", "gloss_en": "The quick brown fox jumps over the lazy dog.", "root": "eĥ", "source": "ReVo/UV-*"}
-{"word": "ej", "pos": "suffix", "root": "ej", "gloss_en": "place where an action occurs; e. g. kuir' cook ― kuir'ej' kitchen", "gloss_fr": "marque le lieu spécialement affecté à...; ex. preĝ' prier ― preĝ'ej' église; kuir' faire cuire ― kuir'ej' cuisine", "source": "Fundamento/UV-1905"}
+{"word": "ej", "pos": "suffix", "root": "ej", "gloss_en": "place where an action occurs; e. g. kuir' cook ― kuir'ej' kitchen", "gloss_fr": "marque le lieu spécialement affecté à...; ex. preĝ' prier ― preĝ'ej' église; kuir' faire cuire ― kuir'ej' cuisine", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ejakuli", "pos": "verb", "gloss_en": "ejaculate", "root": "ejakul", "source": "ReVo", "gloss_fr": "éjaculer"}
 {"word": "ejakulo", "pos": "noun", "gloss_en": "ejaculation", "root": "ejakul", "source": "ReVo", "gloss_fr": "éjaculation"}
 {"word": "ejfelo", "pos": "noun", "gloss_en": "Eiffel", "root": "Ejfel", "source": "ReVo", "gloss_fr": "Gustave Eiffel"}
 {"word": "ejfelturoaturo", "pos": "noun", "gloss_en": "Eiffel Tower", "root": "Ejfel", "source": "ReVo", "gloss_fr": "tour Eiffel"}
 {"word": "ejnŝtejnio,ejnstejnio", "pos": "noun", "gloss_en": "einsteinium", "root": "ejnŝtejni", "source": "ReVo", "gloss_fr": "einsteinium"}
 {"word": "ejnŝtejno,ejnstejno", "pos": "noun", "gloss_en": "Einstein", "root": "Ejnŝtejn", "source": "ReVo", "gloss_fr": "Einstein (Albert)"}
-{"word": "ek", "pos": "prefix", "root": "ek", "gloss_en": "denotes sudden or momentary action; e. g. kri' cry ― ek'kri' cry out", "gloss_fr": "indique une action qui commence ou qui est momentanée; ex. kant' chanter ― ek'kant' commencer à chanter; kri' crier ― ek'kri' s’écrier", "source": "Fundamento/UV-1905"}
+{"word": "ek", "pos": "prefix", "root": "ek", "gloss_en": "denotes sudden or momentary action; e. g. kri' cry ― ek'kri' cry out", "gloss_fr": "indique une action qui commence ou qui est momentanée; ex. kant' chanter ― ek'kant' commencer à chanter; kri' crier ― ek'kri' s’écrier", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ekarteo", "pos": "noun", "gloss_en": "écarté", "root": "ekarte", "source": "ReVo", "gloss_fr": "écarté (jeu de cartes)"}
 {"word": "ekarto", "pos": "noun", "gloss_en": "approximation error", "root": "ekart", "source": "ReVo", "gloss_fr": "erreur d'approximation"}
 {"word": "ekbatalo", "pos": "noun", "gloss_en": "engagement (milit.)", "root": "ekbatal", "morphology": {"stem": "ekbatal", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Engagement"], "derived": true}
@@ -4839,7 +4839,7 @@
 {"word": "ekrideti", "pos": "verb", "gloss_en": "titter", "root": "ekridet", "morphology": {"stem": "ekridet", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Titter"], "derived": true}
 {"word": "ekrigardi", "pos": "verb", "gloss_en": "glance", "root": "ekrigard", "morphology": {"stem": "ekrigard", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Glance"], "derived": true}
 {"word": "ekronki", "pos": "verb", "gloss_en": "snort", "root": "ekronk", "morphology": {"stem": "ekronk", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Snort"], "derived": true}
-{"word": "eks", "pos": "prefix", "root": "eks", "gloss_en": "ex-, late", "gloss_fr": "qui fut, ex-", "source": "Fundamento/UV-1905"}
+{"word": "eks", "pos": "prefix", "root": "eks", "gloss_en": "ex-, late", "gloss_fr": "qui fut, ex-", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "eksalti", "pos": "verb", "gloss_en": "to give a start, leap up (eksalti)", "root": "eksalt", "morphology": {"stem": "eksalt", "ending": "i"}, "source": "corpus-mined", "attestation": {"count": 2, "sources": 2}, "citations": [{"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Ek-. Prefikso, esprimanta komencon de ago, momentan agon : eksalti, ekkrii."}, {"source": "pg-69123.txt", "text": "eklevetas min. Motoro zumas ie. Mi volas eksalti, sed miaj fortoj"}], "derived": true}
 {"word": "eksa-", "pos": "noun", "gloss_en": "exa-", "root": "eksa", "source": "ReVo", "gloss_fr": "exa-"}
 {"word": "ekscelenco", "pos": "noun", "root": "ekscelenc", "gloss_en": "excellence", "gloss_fr": "excellence", "source": "Fundamento/UV-1905", "morphology": {"stem": "ekscelenc", "ending": "o"}}
@@ -5279,7 +5279,7 @@
 {"word": "elvolvato", "pos": "noun", "gloss_en": "evolute", "root": "volv", "source": "ReVo/UV-*", "gloss_fr": "développée (d'une\n  courbe)"}
 {"word": "elvolvi", "pos": "verb", "gloss_en": "expansion", "root": "volv", "source": "ReVo/UV-*", "gloss_fr": "développement\n        (math.)"}
 {"word": "elvringi", "pos": "verb", "gloss_en": "wring out", "root": "vring", "source": "ReVo"}
-{"word": "em", "pos": "suffix", "root": "em", "gloss_en": "inclined to; e. g. babil' chatter ― babil'em' talkative", "gloss_fr": "qui a le penchant, l’habitude; ex. babil' babiller ― babil'em' babillard", "source": "Fundamento/UV-1905"}
+{"word": "em", "pos": "suffix", "root": "em", "gloss_en": "inclined to; e. g. babil' chatter ― babil'em' talkative", "gloss_fr": "qui a le penchant, l’habitude; ex. babil' babiller ― babil'em' babillard", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ema", "pos": "adj", "gloss_en": "prone (inclined to)", "root": "em", "morphology": {"stem": "em", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Prone"]}
 {"word": "emajli", "pos": "verb", "gloss_en": "enamel", "root": "emajl", "source": "ReVo/UV-*", "gloss_fr": "émailler (sens\n      propre)"}
 {"word": "emajlo", "pos": "noun", "root": "emajl", "gloss_en": "enamel", "gloss_fr": "email", "source": "Fundamento/UV-1905", "morphology": {"stem": "emajl", "ending": "o"}}
@@ -5708,7 +5708,7 @@
 {"word": "estonta", "pos": "adj", "gloss_en": "future, forthcoming", "root": "estont", "morphology": {"stem": "estont", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 168, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "Sed kunligi jam antaŭe la sorton de l’ lingvo internacia kun la estonta kongreso — estus tre malprudente, kaj tiuj amikoj de l’ lingvo, kiuj malfortig…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…ita, la geedzoj konstruis senfinajn projektojn pri la ekzistado de l’ estonta infano. Certe ambaŭ deziris knabon, kiu daŭrigos la Prelongan rason: sed…"}, {"source": "pg-64579.txt", "text": "el miaj lernantoj, estonta instruisto, daŭrigos kun vi la de mi"}], "derived": true}
 {"word": "estonteco", "pos": "noun", "gloss_en": "the future", "root": "estontec", "morphology": {"stem": "estontec", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 240, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…damento, sur kiu estos ellaborata la efektiva lingvo internacia de l’ estonteco.…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…lo, kiu jam vin direktis, kaj kiu vin poste kondukos al la plej brila estonteco.…"}, {"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "bildon pri la estonteco. Eĉ se la laborpetanto ne estas naiva, li pensas ke li gajnos almenaŭ bonan porvivaĵon."}], "derived": true}
 {"word": "estonujo", "pos": "noun", "gloss_en": "Estonia", "root": "eston", "source": "ReVo/OA-8"}
-{"word": "estr", "pos": "suffix", "root": "estr", "gloss_en": "chief, boss; e.g. ŝip' ship ― ŝip'estr' captain", "gloss_fr": "chef; ex. ŝip' navire ― ŝip'estr' capitaine", "source": "Fundamento/UV-1905"}
+{"word": "estr", "pos": "suffix", "root": "estr", "gloss_en": "chief, boss; e.g. ŝip' ship ― ŝip'estr' captain", "gloss_fr": "chef; ex. ŝip' navire ― ŝip'estr' capitaine", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "estrado", "pos": "noun", "gloss_en": "platform; stage", "root": "estrad", "morphology": {"stem": "estrad", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Platform", "Stage"], "derived": true}
 {"word": "estrara", "pos": "adj", "root": "estrar", "gloss_en": "government", "gloss_fr": "gouvernement", "source": "Fundamento/UV-1905", "morphology": {"stem": "estr", "suffixes": [{"m": "ar", "gloss": "collective"}], "ending": "a"}}
 {"word": "estraro", "pos": "noun", "gloss_en": "authorities (of town, etc.); staff (managers)", "root": "estrar", "morphology": {"stem": "estrar", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Authorities", "Staff"]}
@@ -5716,7 +5716,7 @@
 {"word": "estuario", "pos": "noun", "gloss_en": "estuary", "root": "estuari", "morphology": {"stem": "estuari", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Estuary"]}
 {"word": "estuaro", "pos": "noun", "gloss_en": "estuary", "root": "estuar", "source": "ReVo", "gloss_fr": "estuaire"}
 {"word": "eŝafodo", "pos": "noun", "root": "eŝafod", "gloss_en": "scaffold", "gloss_fr": "échafaud", "source": "Fundamento/UV-1905", "morphology": {"stem": "eŝafod", "ending": "o"}}
-{"word": "et", "pos": "suffix", "root": "et", "gloss_en": "denotes diminution of degree; e. g. rid' laugh ― rid'et' smile", "gloss_fr": "marque diminution, décroissance; ex. mur' mur ― mur'et' petitmur; rid' rire ― rid'et' sourire", "source": "Fundamento/UV-1905"}
+{"word": "et", "pos": "suffix", "root": "et", "gloss_en": "denotes diminution of degree; e. g. rid' laugh ― rid'et' smile", "gloss_fr": "marque diminution, décroissance; ex. mur' mur ― mur'et' petitmur; rid' rire ― rid'et' sourire", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "etaĝo", "pos": "noun", "root": "etaĝ", "gloss_en": "stage, story (of a house)", "gloss_fr": "étage", "source": "Fundamento/UV-1905", "morphology": {"stem": "etaĝ", "ending": "o"}}
 {"word": "etakriaglo", "pos": "noun", "gloss_en": "lesser spotted eagle", "root": "agl", "source": "ReVo/UV-*"}
 {"word": "etalono", "pos": "noun", "gloss_en": "gold standard", "root": "etalon", "source": "ReVo", "gloss_fr": "étalon"}
@@ -7222,7 +7222,7 @@
 {"word": "gazono", "pos": "noun", "gloss_en": "lawn", "root": "gazon", "source": "ReVo"}
 {"word": "gdansko", "pos": "noun", "gloss_en": "Gdansk", "root": "Gdansk", "source": "ReVo/OA-10"}
 {"word": "gdinjo", "pos": "noun", "gloss_en": "Gdynia", "root": "Gdinj", "source": "ReVo", "gloss_fr": "Gdynia"}
-{"word": "ge", "pos": "prefix", "root": "ge", "gloss_en": "of both sexes; e. g. patr' father ― ge'patr'o'j parents", "gloss_fr": "les deux sexes réunis; ex. patr' père ― ge'patr'o'j les parents (père et mère)", "source": "Fundamento/UV-1905"}
+{"word": "ge", "pos": "prefix", "root": "ge", "gloss_en": "of both sexes; e. g. patr' father ― ge'patr'o'j parents", "gloss_fr": "les deux sexes réunis; ex. patr' père ― ge'patr'o'j les parents (père et mère)", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "geavoj", "pos": "noun", "gloss_en": "grandparents", "root": "av", "source": "ReVo/UV-*", "gloss_fr": "grands-parents"}
 {"word": "geedza", "pos": "adj", "gloss_en": "conjugal, marital", "root": "geedz", "morphology": {"stem": "geedz", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 18, "sources": 4}, "citations": [{"source": "wsdump-Vallienne_Ĉu_li_1908.txt", "text": "… la junulo, kiun ŝi ĉiam daŭrigis amegi sekrete. Tial ke, krom en sia geedza vivado, Herbeno povis havi neniun motivon por malĝoji, necese estis, ke l…"}, {"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Geedziĝi. Fariĝi geedza paro."}, {"source": "wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt", "text": "estas, kiel sciate, la miela tempo de la geedza vivo, ne"}], "derived": true}
 {"word": "geedzeco", "pos": "noun", "gloss_en": "matrimony", "root": "geedzec", "morphology": {"stem": "geedzec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Matrimony"], "derived": true}
@@ -8588,10 +8588,10 @@
 {"word": "ĥorjambo", "pos": "noun", "gloss_en": "choriamb", "root": "jamb", "source": "ReVo", "gloss_fr": "chorïambe"}
 {"word": "ĥoro", "pos": "noun", "root": "ĥor", "gloss_en": "chorus, choir", "gloss_fr": "chœur", "source": "Fundamento/UV-1905", "morphology": {"stem": "ĥor", "ending": "o"}}
 {"word": "i", "pos": "ending", "gloss_en": "termination of the intinitive in verbs; e. g. laŭd'i to praise", "gloss_fr": "marque l’infinitif; ex. laŭd'i louer", "source": "Fundamento/UV-1905"}
-{"word": "ia", "pos": "adj", "gloss_en": "of any kind", "gloss_fr": "quelconque, quelque", "source": "Fundamento/UV-1905"}
+{"word": "ia", "pos": "adj", "gloss_en": "of any kind", "gloss_fr": "quelconque, quelque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "iafoje", "pos": "adv", "gloss_en": "sometimes, occasionally", "root": "iafoj", "morphology": {"stem": "iafoj", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 314, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…fero estos klarigita kaj rebonigita en la venontaj numeroj. — Legante iafoje en la „Esperantisto“ artikolojn kun proponoj de diversaj ŝanĝoj en nia li…"}, {"source": "pg-42028.txt", "text": "nur kun francoj kaj, iafoje, kun unu anglo; s-ro Speranskij estis"}, {"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "…uŝa radieto, kiu sukcesis penetri la nigran medion de tiu kvartalaĉo. Iafoje okazas justeco en la vera vivo, same kiel en la imaga vivo de popularaj r…"}]}
-{"word": "ial", "pos": "adv", "gloss_en": "for any cause", "gloss_fr": "pour une raison quelconque", "source": "Fundamento/UV-1905"}
-{"word": "iam", "pos": "adv", "gloss_en": "at any time, ever", "gloss_fr": "jamais, un jour", "source": "Fundamento/UV-1905"}
+{"word": "ial", "pos": "adv", "gloss_en": "for any cause", "gloss_fr": "pour une raison quelconque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "iam", "pos": "adv", "gloss_en": "at any time, ever", "gloss_fr": "jamais, un jour", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "iama", "pos": "adj", "gloss_en": "one-time", "root": "iam", "source": "ReVo/UV-*"}
 {"word": "iarilate", "pos": "adv", "gloss_en": "in some way", "root": "rilat", "source": "ReVo/UV-*", "gloss_fr": "en quelque sorte"}
 {"word": "ibadano", "pos": "noun", "gloss_en": "Ibadan", "root": "Ibadan", "source": "ReVo", "gloss_fr": "Ibadan"}
@@ -8602,7 +8602,7 @@
 {"word": "ibisedoj", "pos": "noun", "gloss_en": "ibises", "root": "ibised", "source": "ReVo", "gloss_fr": "threskiornithidés"}
 {"word": "ibiso", "pos": "noun", "root": "ibis", "gloss_en": "ibis", "gloss_fr": "ibis", "source": "Fundamento/UV-1905", "morphology": {"stem": "ibis", "ending": "o"}}
 {"word": "ico", "pos": "noun", "gloss_en": "IC", "root": "ic", "source": "ReVo", "gloss_fr": "CI"}
-{"word": "id", "pos": "suffix", "root": "id", "gloss_en": "descendant, young one; e. g. bov' ox ― bov'id' calf", "gloss_fr": "enfant, descendant; ex. bov' bœuf ― bov'id' veau; Izrael' Israël ― Izrael'id' Israëlite", "source": "Fundamento/UV-1905"}
+{"word": "id", "pos": "suffix", "root": "id", "gloss_en": "descendant, young one; e. g. bov' ox ― bov'id' calf", "gloss_fr": "enfant, descendant; ex. bov' bœuf ― bov'id' veau; Izrael' Israël ― Izrael'id' Israëlite", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "idaho", "pos": "noun", "gloss_en": "Idaho", "root": "Idah", "source": "ReVo", "gloss_fr": "Idaho"}
 {"word": "idaro", "pos": "noun", "gloss_en": "issue (offspring); offspring; posterity; progeny; young (offspring)", "root": "idar", "morphology": {"stem": "idar", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Issue", "Offspring", "Posterity", "Progeny", "Young"], "derived": true}
 {"word": "ideala", "pos": "adj", "gloss_en": "ideal", "root": "ideal", "morphology": {"stem": "ideal", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 51, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…ia afero grandan forton kaj proksimigos ĝin per paŝoj grandegaj al la ideala celo. Se ni ekmemoros, en kia malfavora tempo naskiĝis nia afero kaj kun …"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…facile antaŭvideblajn. Ĝis nun nia reciproka amo estis tiel pura tiel ideala kiel la amo de Paŭlo kaj de Virginio. Sed ian vesperon la pasio venkis la…"}, {"source": "pg-23670.txt", "text": "ĉiam murmuretis al vi pri ideala amo ... pri parenceco de l'animoj"}]}
@@ -8642,11 +8642,11 @@
 {"word": "idolservado", "pos": "noun", "gloss_en": "idolatry", "root": "idolservad", "morphology": {"stem": "idolservad", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Idolatry"]}
 {"word": "idolservo", "pos": "noun", "gloss_en": "paganism, idol worship", "dated_gloss": "heathenism", "root": "idolserv", "morphology": {"stem": "idolserv", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Heathenism"]}
 {"word": "iduo", "pos": "noun", "gloss_en": "ides", "root": "idu", "source": "ReVo", "gloss_fr": "ides (calendrier romain)"}
-{"word": "ie", "pos": "adv", "gloss_en": "anywhere", "gloss_fr": "quelque part", "source": "Fundamento/UV-1905"}
-{"word": "iel", "pos": "adv", "gloss_en": "anyhow", "gloss_fr": "d’une manière quelconque", "source": "Fundamento/UV-1905"}
-{"word": "ies", "pos": "pron", "gloss_en": "anyone’s", "gloss_fr": "de quelqu’un", "source": "Fundamento/UV-1905"}
+{"word": "ie", "pos": "adv", "gloss_en": "anywhere", "gloss_fr": "quelque part", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "iel", "pos": "adv", "gloss_en": "anyhow", "gloss_fr": "d’une manière quelconque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "ies", "pos": "pron", "gloss_en": "anyone’s", "gloss_fr": "de quelqu’un", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ifono", "pos": "noun", "gloss_en": "iPhone", "root": "iFon", "source": "ReVo", "gloss_fr": "iPhone"}
-{"word": "ig", "pos": "suffix", "root": "ig", "gloss_en": "to cause to be; e. g. pur' pure ― pur'ig' purify", "gloss_fr": "faire...; ex. pur' pur, propre ― pur'ig' nettoyer; mort' mourir ― mort'ig' tuer (faire mourir)", "source": "Fundamento/UV-1905"}
+{"word": "ig", "pos": "suffix", "root": "ig", "gloss_en": "to cause to be; e. g. pur' pure ― pur'ig' purify", "gloss_fr": "faire...; ex. pur' pur, propre ― pur'ig' nettoyer; mort' mourir ― mort'ig' tuer (faire mourir)", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "igbo", "pos": "noun", "gloss_en": "igbo", "root": "igb", "source": "ReVo", "gloss_fr": "igbo"}
 {"word": "igi", "pos": "verb", "gloss_en": "cause; get (with infinitive)", "root": "ig", "morphology": {"stem": "ig", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Cause", "Get"]}
 {"word": "iglo,o", "pos": "noun", "gloss_en": "Igloo", "root": "igl", "source": "ReVo", "gloss_fr": "iglou"}
@@ -8654,7 +8654,7 @@
 {"word": "ignori", "pos": "verb", "gloss_en": "to ignore", "root": "ignor", "morphology": {"stem": "ignor", "ending": "i"}, "source": "corpus-mined", "attestation": {"count": 11, "sources": 4}, "citations": [{"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "…flankon de la problemo; sed estis aliaj konsideroj, kiujn mi ne povis ignori sen senti koran maltrankviliĝon. Denove mi pripensis la aferon dekomence.…"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt", "text": "…e SAT dum multaj jaroj kaj nur kiam fanatikuloj kaj \"realistoj\" volis ignori ilin, venis la disiĝo kaj malprospero.…"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1991_I.txt", "text": "…de la pli kaj pli malvolviĝantaj produktofortoj, kiuj tendencas nepre ignori la landlimojn. La internaciismo volas gardi la sendependecon de ĉiuj naci…"}]}
 {"word": "igvano", "pos": "noun", "gloss_en": "iguana", "root": "igvan", "source": "ReVo", "gloss_fr": "iguane"}
 {"word": "igvanodonto", "pos": "noun", "gloss_en": "iguanodon", "root": "igvanodont", "source": "ReVo", "gloss_fr": "iguanodon"}
-{"word": "iĝ", "pos": "suffix", "root": "iĝ", "gloss_en": "to become; e. g. ruĝ' red ― ruĝ'iĝ' blush", "gloss_fr": "se faire, devenir...; ex. pal' pâle ― pal'iĝ' pâlir; sid' être assis ― sid'iĝ' s’asseoir", "source": "Fundamento/UV-1905"}
+{"word": "iĝ", "pos": "suffix", "root": "iĝ", "gloss_en": "to become; e. g. ruĝ' red ― ruĝ'iĝ' blush", "gloss_fr": "se faire, devenir...; ex. pal' pâle ― pal'iĝ' pâlir; sid' être assis ― sid'iĝ' s’asseoir", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "iĝebleco", "pos": "noun", "gloss_en": "probability", "root": "iĝeblec", "morphology": {"stem": "iĝeblec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Probability"], "derived": true}
 {"word": "iĝi", "pos": "verb", "gloss_en": "become; get (with infinitive); sink; veer", "root": "iĝ", "morphology": {"stem": "iĝ", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Become", "Get", "Sink", "Veer"]}
 {"word": "iĥtiokolo", "pos": "noun", "root": "iĥtiokol", "gloss_en": "isinglas", "gloss_fr": "colle de poisson", "source": "Fundamento/UV-1905", "morphology": {"stem": "iĥtiokol", "ending": "o"}}
@@ -8670,7 +8670,7 @@
 {"word": "ikonrompisto", "pos": "noun", "gloss_en": "iconoclast", "root": "ikon", "source": "ReVo", "gloss_fr": "iconoclaste (subst.)"}
 {"word": "iksodo", "pos": "noun", "gloss_en": "tick", "root": "iksod", "source": "ReVo", "gloss_fr": "tique"}
 {"word": "iktero", "pos": "noun", "gloss_en": "jaundice", "root": "ikter", "source": "ReVo"}
-{"word": "il", "pos": "suffix", "root": "il", "gloss_en": "instrument; e. g. tond' shear ― tond'il' scissors", "gloss_fr": "instrument; ex. tond' tondre ― tond'il' ciseaux; paf' tirer (coup de feu) ― paf'il' fusil", "source": "Fundamento/UV-1905"}
+{"word": "il", "pos": "suffix", "root": "il", "gloss_en": "instrument; e. g. tond' shear ― tond'il' scissors", "gloss_fr": "instrument; ex. tond' tondre ― tond'il' ciseaux; paf' tirer (coup de feu) ― paf'il' fusil", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ilaro", "pos": "noun", "gloss_en": "gear (machinery); tackle (apparatus); truss (a pack)", "root": "ilar", "morphology": {"stem": "ilar", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Gear", "Tackle", "Truss"], "derived": true}
 {"word": "ilekso", "pos": "noun", "gloss_en": "holly", "root": "ileks", "source": "ReVo/OA-2", "gloss_fr": "ilex"}
 {"word": "ileo", "pos": "noun", "gloss_en": "ileum", "root": "ile", "source": "ReVo", "gloss_fr": "iléon"}
@@ -8781,7 +8781,7 @@
 {"word": "imunologio", "pos": "noun", "gloss_en": "immunology", "root": "imunologi", "source": "ReVo", "gloss_fr": "immunologie"}
 {"word": "imunologo", "pos": "noun", "gloss_en": "immunologist", "root": "imunolog", "source": "ReVo", "gloss_fr": "immunologiste"}
 {"word": "imunsistemo,imunao", "pos": "noun", "gloss_en": "immune system", "root": "sistem", "source": "ReVo/UV-*", "gloss_fr": "système immunitaire"}
-{"word": "in", "pos": "suffix", "root": "in", "gloss_en": "ending of feminine words; e. g. bov' ox ― bov'in' cow", "gloss_fr": "marque le féminin; ex. patr' père ― patr'in' mère", "source": "Fundamento/UV-1905"}
+{"word": "in", "pos": "suffix", "root": "in", "gloss_en": "ending of feminine words; e. g. bov' ox ― bov'in' cow", "gloss_fr": "marque le féminin; ex. patr' père ― patr'in' mère", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ina", "pos": "adj", "gloss_en": "feminine", "root": "in", "morphology": {"stem": "in", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Feminine"]}
 {"word": "inaŭguri", "pos": "verb", "gloss_en": "to inaugurate", "root": "inaŭgur", "source": "ReVo/OA-4", "gloss_fr": "inaugurer"}
 {"word": "inaŭguro,o", "pos": "noun", "gloss_en": "inauguration", "root": "inaŭgur", "source": "ReVo/OA-4", "gloss_fr": "inauguration"}
@@ -8804,7 +8804,7 @@
 {"word": "incizi", "pos": "verb", "gloss_en": "incise", "root": "inciz", "source": "ReVo", "gloss_fr": "inciser"}
 {"word": "incizivo", "pos": "noun", "gloss_en": "incisor", "root": "inciziv", "source": "ReVo", "gloss_fr": "incisive"}
 {"word": "inĉono", "pos": "noun", "gloss_en": "Incheon", "root": "Inĉon", "source": "ReVo", "gloss_fr": "Incheon"}
-{"word": "ind", "pos": "suffix", "root": "ind", "gloss_en": "worth", "gloss_fr": "mérite, qui mérite..., qui est digne de...; ex. laŭd' louange laŭd'ind' digne de louange", "source": "Fundamento/UV-1905"}
+{"word": "ind", "pos": "suffix", "root": "ind", "gloss_en": "worth", "gloss_fr": "mérite, qui mérite..., qui est digne de...; ex. laŭd' louange laŭd'ind' digne de louange", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "indeco", "pos": "noun", "gloss_en": "dignity", "root": "indec", "morphology": {"stem": "indec", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Dignity"], "derived": true}
 {"word": "indekso", "pos": "noun", "gloss_en": "Index Librorum Prohibitorum", "root": "indeks", "source": "ReVo/OA-4", "gloss_fr": "index"}
 {"word": "indiana", "pos": "adj", "gloss_en": "Indian", "root": "indian", "source": "ReVo"}
@@ -9003,7 +9003,7 @@
 {"word": "insultema", "pos": "adj", "gloss_en": "insolent; saucy", "root": "insultem", "morphology": {"stem": "insultem", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Insolent", "Saucy"], "derived": true}
 {"word": "insulti", "pos": "verb", "root": "insult", "gloss_en": "insult", "gloss_fr": "injurier", "source": "Fundamento/UV-1905", "morphology": {"stem": "insult", "ending": "i"}}
 {"word": "insulto", "pos": "noun", "gloss_en": "affront", "root": "insult", "morphology": {"stem": "insult", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Affront"]}
-{"word": "int", "pos": "suffix", "root": "int", "gloss_en": "ending of past part. act. in verbs; e. g. am'int' having loved", "gloss_fr": "marque le participe passé du verbe actif; ex. far' faire ― far'int' ayant fait", "source": "Fundamento/UV-1905"}
+{"word": "int", "pos": "suffix", "root": "int", "gloss_en": "ending of past part. act. in verbs; e. g. am'int' having loved", "gloss_fr": "marque le participe passé du verbe actif; ex. far' faire ― far'int' ayant fait", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "inta", "pos": "adj", "gloss_en": "past", "root": "int", "source": "ReVo/UV-*", "gloss_fr": "passé (adj.)"}
 {"word": "intajlo", "pos": "noun", "gloss_en": "intaglio", "root": "intajl", "source": "ReVo", "gloss_fr": "intaille"}
 {"word": "intakta", "pos": "adj", "gloss_en": "intact", "root": "intakt", "source": "ReVo", "gloss_fr": "inaltéré"}
@@ -9213,8 +9213,8 @@
 {"word": "invoki", "pos": "verb", "gloss_en": "invoke", "root": "invok", "source": "ReVo", "gloss_fr": "invoquer"}
 {"word": "involucio", "pos": "noun", "gloss_en": "involution", "root": "involuci", "source": "ReVo", "gloss_fr": "involution"}
 {"word": "involukro", "pos": "noun", "gloss_en": "involucre", "root": "involukr", "source": "ReVo", "gloss_fr": "involucre"}
-{"word": "io", "pos": "pron", "gloss_en": "anything", "gloss_fr": "quelque chose", "source": "Fundamento/UV-1905"}
-{"word": "iom", "pos": "pron", "gloss_en": "any quantity", "gloss_fr": "un peu, quelque peu de", "source": "Fundamento/UV-1905"}
+{"word": "io", "pos": "pron", "gloss_en": "anything", "gloss_fr": "quelque chose", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "iom", "pos": "pron", "gloss_en": "any quantity", "gloss_fr": "un peu, quelque peu de", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "iome", "pos": "adv", "gloss_en": "somewhat", "root": "iom", "source": "ReVo/UV-*"}
 {"word": "iomete", "pos": "adv", "gloss_en": "a little, slightly", "root": "iomet", "morphology": {"stem": "iomet", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 166, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…Kaj neniu ĝis nun kolektis la Zamenhofajn leterojn. Pro tio estis jam iomete komplika afero por mi, kunporti la materialon, kiun enhavas ĉi tiu libro.…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…o, ĉiu intence evitis, en sia interparolado, ĉiun aludon kapablan ŝin iomete ĉagreni, tamen ŝi sentis, per tiuj mil negravaĵoj de la ĉiutaga vivado, k…"}, {"source": "pg-64579.txt", "text": "Post kiam mi kapablis iomete esprimi miajn pensojn en la rusa lingvo,"}]}
 {"word": "iom-post-ioma,posta", "pos": "adj", "gloss_en": "gradual", "root": "iom", "source": "ReVo/UV-*"}
@@ -9258,11 +9258,11 @@
 {"word": "israela", "pos": "adj", "gloss_en": "Israeli", "root": "Israel", "source": "ReVo/OA-9", "gloss_fr": "israëlien (adj.)"}
 {"word": "israelano", "pos": "noun", "gloss_en": "Israeli", "root": "Israel", "source": "ReVo/OA-9", "gloss_fr": "Israëlien (subst.)"}
 {"word": "israelo", "pos": "noun", "gloss_en": "Israel", "root": "Israel", "source": "ReVo/OA-9"}
-{"word": "ist", "pos": "suffix", "root": "ist", "gloss_en": "person occupied with; e. g. mar' sea ― mar'ist' sailor", "gloss_fr": "marque la profession; ex. bot' botte ― bot'ist' bottier; mar' mer ― mar'ist' marin", "source": "Fundamento/UV-1905"}
+{"word": "ist", "pos": "suffix", "root": "ist", "gloss_en": "person occupied with; e. g. mar' sea ― mar'ist' sailor", "gloss_fr": "marque la profession; ex. bot' botte ― bot'ist' bottier; mar' mer ― mar'ist' marin", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "istanbulo,oark", "pos": "noun", "gloss_en": "Istanbul", "root": "Istanbul", "source": "ReVo/OA-10"}
 {"word": "istmo", "pos": "noun", "gloss_en": "isthmus", "root": "istm", "source": "ReVo/OA-1", "gloss_fr": "isthme"}
 {"word": "istrio", "pos": "noun", "gloss_en": "Istria", "root": "Istri", "source": "ReVo", "gloss_fr": "Istrie"}
-{"word": "it", "pos": "suffix", "root": "it", "gloss_en": "ending of past part. pass. in verbs; e. g. am'it' having been loved", "gloss_fr": "marque le participe passé passif; ex. far' faire ― far'it' fait (qu’on a fait), ayant été fait", "source": "Fundamento/UV-1905"}
+{"word": "it", "pos": "suffix", "root": "it", "gloss_en": "ending of past part. pass. in verbs; e. g. am'it' having been loved", "gloss_fr": "marque le participe passé passif; ex. far' faire ― far'it' fait (qu’on a fait), ayant été fait", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "itala", "pos": "adj", "gloss_en": "Italian (adj.)", "root": "ital", "source": "ReVo/OA-8", "gloss_fr": "italien (langue)"}
 {"word": "italio", "pos": "noun", "gloss_en": "Italy", "root": "Itali", "source": "ReVo"}
 {"word": "italo", "pos": "noun", "gloss_en": "Italian", "root": "ital", "source": "ReVo/OA-8"}
@@ -9276,7 +9276,7 @@
 {"word": "iterbio", "pos": "noun", "gloss_en": "ytterbium", "root": "iterbi", "source": "ReVo", "gloss_fr": "ytterbium"}
 {"word": "itinero", "pos": "noun", "gloss_en": "itinerary", "root": "itiner", "source": "ReVo", "gloss_fr": "itinéraire (subst.)"}
 {"word": "itrio", "pos": "noun", "gloss_en": "yttrium", "root": "itri", "source": "ReVo", "gloss_fr": "yttrium"}
-{"word": "iu", "pos": "pron", "gloss_en": "any one", "gloss_fr": "quelqu’un", "source": "Fundamento/UV-1905"}
+{"word": "iu", "pos": "pron", "gloss_en": "any one", "gloss_fr": "quelqu’un", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "iufoje", "pos": "adv", "gloss_en": "sometimes, on occasion", "root": "iufoj", "morphology": {"stem": "iufoj", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 24, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "Vi skribas, ke en miaj lastaj tradukitaj verkoj iufoje troviĝas"}, {"source": "pg-23670.txt", "text": "--Mi ne scias ... povas esti ... sed mi iufoje malbenas mian belecon."}, {"source": "pg-22592.txt", "text": "Kaj malutilas, aŭ ĝi iufoje"}]}
 {"word": "iumomente,certae", "pos": "adv", "gloss_en": "at some point (in time)", "root": "moment", "source": "ReVo/UV-*"}
 {"word": "iusence,certae", "pos": "adv", "gloss_en": "in some sense", "root": "senc", "source": "ReVo/UV-*"}
@@ -10253,22 +10253,22 @@
 {"word": "ketamino", "pos": "noun", "gloss_en": "ketamine", "root": "ketamin", "source": "ReVo", "gloss_fr": "kétamine"}
 {"word": "ketono", "pos": "noun", "gloss_en": "keton", "root": "keton", "source": "ReVo", "gloss_fr": "céton"}
 {"word": "kevlaro", "pos": "noun", "gloss_en": "kevlar", "root": "kevlar", "source": "ReVo", "gloss_fr": "kevlar"}
-{"word": "kia", "pos": "particle", "gloss_en": "of what kind", "gloss_fr": "quel", "source": "Fundamento/UV-1905"}
-{"word": "kial", "pos": "adv", "gloss_en": "why, wherefore", "gloss_fr": "pourquoi", "source": "Fundamento/UV-1905"}
-{"word": "kiam", "pos": "adv", "gloss_en": "when", "gloss_fr": "quand, lorsque", "source": "Fundamento/UV-1905"}
+{"word": "kia", "pos": "particle", "gloss_en": "of what kind", "gloss_fr": "quel", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "kial", "pos": "adv", "gloss_en": "why, wherefore", "gloss_fr": "pourquoi", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "kiam", "pos": "adv", "gloss_en": "when", "gloss_fr": "quand, lorsque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "kiamaniere", "pos": "adv", "gloss_en": "in what way, how", "root": "kiamanier", "morphology": {"stem": "kiamanier", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 214, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…a granda amaso de la unuaperiodaj broŝuroj kaj literaturaĵoj, kie kaj kiamaniere perdiĝis multaj gravaj, eĉ la plej gravaj, leteroj de d-ro Zamenhof. …"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "… mi vin tre grave ofendis, fraŭlino, li murmuris: sen tio mi ne scius kiamaniere klarigi vian sintenadon pri mi. Mi vin petegas, diru al mi pro kio mi…"}, {"source": "pg-64579.txt", "text": "-- Kiamaniere vi ordonis?"}]}
 {"word": "kibici", "pos": "verb", "gloss_en": "kibitz", "root": "kibic", "source": "ReVo"}
 {"word": "kibico", "pos": "noun", "gloss_en": "kibitzer", "root": "kibic", "source": "ReVo"}
 {"word": "kiborgo", "pos": "noun", "gloss_en": "cyborg", "root": "kiborg", "source": "ReVo"}
 {"word": "kibucano", "pos": "noun", "gloss_en": "kibbutznik", "root": "kibuc", "source": "ReVo/OA-9"}
 {"word": "kibuco", "pos": "noun", "gloss_en": "kibbutz", "root": "kibuc", "source": "ReVo/OA-9", "gloss_fr": "kibboutz"}
-{"word": "kie", "pos": "adv", "gloss_en": "where", "gloss_fr": "où", "source": "Fundamento/UV-1905"}
-{"word": "kiel", "pos": "adv", "gloss_en": "how", "gloss_fr": "comment", "source": "Fundamento/UV-1905"}
+{"word": "kie", "pos": "adv", "gloss_en": "where", "gloss_fr": "où", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "kiel", "pos": "adv", "gloss_en": "how", "gloss_fr": "comment", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "kiela", "pos": "adj", "gloss_en": "what sort of", "root": "kiel", "source": "ReVo/UV-*"}
 {"word": "kiele", "pos": "adv", "gloss_en": "(indeed, just) how", "root": "kiel", "source": "ReVo/UV-*"}
 {"word": "kielo", "pos": "noun", "gloss_en": "manner, way", "root": "kiel", "source": "ReVo/UV-*"}
 {"word": "kielse", "pos": "adv", "gloss_en": "as if", "root": "kiel", "source": "ReVo/UV-*", "gloss_fr": "comme si"}
-{"word": "kies", "pos": "pron", "gloss_en": "whose", "gloss_fr": "à qui? dont, duquel", "source": "Fundamento/UV-1905"}
+{"word": "kies", "pos": "pron", "gloss_en": "whose", "gloss_fr": "à qui? dont, duquel", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "kifozo,o", "pos": "noun", "gloss_en": "kyphosis", "root": "kifoz", "source": "ReVo", "gloss_fr": "cyphose"}
 {"word": "kigalio", "pos": "noun", "gloss_en": "Kigali", "root": "Kigali", "source": "ReVo", "gloss_fr": "Kigali"}
 {"word": "kikerkaĉo", "pos": "noun", "gloss_en": "hummus", "root": "kiker", "source": "ReVo", "gloss_fr": "houmous"}
@@ -10303,8 +10303,8 @@
 {"word": "kino", "pos": "noun", "gloss_en": "cinema, the movies", "root": "kin", "morphology": {"stem": "kin", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 10, "sources": 2}, "citations": [{"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "Mi emis iri al kino por forgesi kuirilojn, vendon kaj dommastrinojn, sed la manko de mono malpermesis tion. Dum mi tiel pensis, mi ekmemoris pri famil…"}, {"source": "wsdump-Bulthuis_Inferio_1938.txt", "text": "Mi demandis, ĉu ĝi estas tia kino, kian mi jam vidis en kinoteatroj."}, {"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "…Mi uzis la vorton figure. Mia opio estas tre milda speco. Ĝi estas la kino, kie mi povas vivi provizore en aliaj medioj kaj forgesi la panakiran lukto…"}]}
 {"word": "kinoteatro", "pos": "noun", "gloss_en": "cinema, movie theatre", "root": "kinoteatr", "morphology": {"stem": "kinoteatr", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 6, "sources": 1}, "citations": [{"source": "wsdump-Bulthuis_Inferio_1938.txt", "text": "rigardantoj, kiuj sidis antaŭ ni, kiel vizitantoj en kinoteatro,"}, {"source": "wsdump-Bulthuis_Inferio_1938.txt", "text": "ree mi devis subskribi. Kiel en la kinoteatro, mi desegnis mian"}, {"source": "wsdump-Bulthuis_Inferio_1938.txt", "text": "en iu strato, apud kinoteatro. Kontraŭ tiu teatro ĉe la transa"}]}
 {"word": "kinŝaso", "pos": "noun", "gloss_en": "Kinshasa", "root": "Kinŝas", "source": "ReVo/OA-10", "gloss_fr": "Kinshasa"}
-{"word": "kio", "pos": "pron", "gloss_en": "what", "gloss_fr": "quoi", "source": "Fundamento/UV-1905"}
-{"word": "kiom", "pos": "pron", "gloss_en": "how much", "gloss_fr": "combien", "source": "Fundamento/UV-1905"}
+{"word": "kio", "pos": "pron", "gloss_en": "what", "gloss_fr": "quoi", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "kiom", "pos": "pron", "gloss_en": "how much", "gloss_fr": "combien", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "kioma", "pos": "adj", "gloss_en": "which (numbered thing, \"whichth\")", "root": "kiom", "source": "ReVo/UV-*"}
 {"word": "kiomfoje", "pos": "adv", "gloss_en": "however many times, every time that", "root": "kiomfoj", "morphology": {"stem": "kiomfoj", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 14, "sources": 4}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "Kongreso. Ĉiu delegito havas tiom da voĉoj, kiomfoje po"}, {"source": "pg-63105.txt", "text": "Kiomfoje, forlasinte nerimarkite la enuigan kaj luksan salonon, ŝi"}, {"source": "wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt", "text": "Jes! Ŝi estos lia konkubino. Li ordonos ŝin vipi, kiomfoje"}]}
 {"word": "kiomo", "pos": "noun", "gloss_en": "quantity", "root": "kiom", "source": "ReVo/UV-*"}
@@ -10334,7 +10334,7 @@
 {"word": "kitelo", "pos": "noun", "root": "kitel", "gloss_en": "frock", "gloss_fr": "souquenille", "source": "Fundamento/UV-1905", "morphology": {"stem": "kitel", "ending": "o"}}
 {"word": "kitio,o", "pos": "noun", "gloss_en": "kittywake", "root": "kiti", "source": "ReVo"}
 {"word": "kito", "pos": "noun", "gloss_en": "Quito", "root": "Kit", "source": "ReVo", "gloss_fr": "Quito"}
-{"word": "kiu", "pos": "pron", "gloss_en": "who, which", "gloss_fr": "qui lequel, laquelle", "source": "Fundamento/UV-1905"}
+{"word": "kiu", "pos": "pron", "gloss_en": "who, which", "gloss_fr": "qui lequel, laquelle", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "kivio,o,o", "pos": "noun", "gloss_en": "kiwi", "root": "kivi", "source": "ReVo", "gloss_fr": "kiwi (oiseau)"}
 {"word": "kivo", "pos": "noun", "gloss_en": "kiwi", "root": "kiv", "source": "ReVo", "gloss_fr": "kiwi (fruit)"}
 {"word": "klabfungoj", "pos": "noun", "gloss_en": "club fungi", "root": "fung", "source": "ReVo/UV-*", "gloss_fr": "basidiomycètes"}
@@ -13004,7 +13004,7 @@
 {"word": "makzela", "pos": "adj", "gloss_en": "maxillary", "root": "makzel", "morphology": {"stem": "makzel", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Maxillary"]}
 {"word": "makzelo", "pos": "noun", "root": "makzel", "gloss_en": "jaw-bone, cheek-bone", "gloss_fr": "mâchoire", "source": "Fundamento/UV-1905", "morphology": {"stem": "makzel", "ending": "o"}}
 {"word": "makzelosto", "pos": "noun", "gloss_en": "jawbone", "root": "makzelost", "morphology": {"stem": "makzelost", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Jawbone"]}
-{"word": "mal", "pos": "prefix", "root": "mal", "gloss_en": "denotes opposites; e. g. alt' high ― mal'alt' low", "gloss_fr": "marque les contraires: ex. bon' bon ― mal'bon' mauvais; estim' estimer ― mal'estim' mépriser", "source": "Fundamento/UV-1905"}
+{"word": "mal", "pos": "prefix", "root": "mal", "gloss_en": "denotes opposites; e. g. alt' high ― mal'alt' low", "gloss_fr": "marque les contraires: ex. bon' bon ― mal'bon' mauvais; estim' estimer ― mal'estim' mépriser", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "mala", "pos": "adj", "gloss_en": "converse", "root": "mal", "morphology": {"stem": "mal", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Converse"]}
 {"word": "malaboni", "pos": "verb", "gloss_en": "unsubscribe", "root": "abon", "source": "ReVo/UV-*", "gloss_fr": "se désabonner"}
 {"word": "malabunda", "pos": "adj", "gloss_en": "scarcity", "root": "abund", "source": "ReVo/OA-3"}
@@ -15413,22 +15413,22 @@
 {"word": "nenecesa", "pos": "adj", "gloss_en": "inexpedient", "root": "neneces", "morphology": {"stem": "neneces", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Inexpedient"], "derived": true}
 {"word": "nenecesa,sena", "pos": "adj", "gloss_en": "unnecessary", "root": "neces", "source": "ReVo/UV-*", "gloss_fr": "inutile"}
 {"word": "nenegativa", "pos": "adj", "gloss_en": "non-negative", "root": "negativ", "source": "ReVo/OA-2", "gloss_fr": "non négatif"}
-{"word": "nenia", "pos": "adj", "gloss_en": "no kind of", "gloss_fr": "aucun", "source": "Fundamento/UV-1905"}
-{"word": "neniam", "pos": "adv", "gloss_en": "never", "gloss_fr": "ne... jamais", "source": "Fundamento/UV-1905"}
+{"word": "nenia", "pos": "adj", "gloss_en": "no kind of", "gloss_fr": "aucun", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
+{"word": "neniam", "pos": "adv", "gloss_en": "never", "gloss_fr": "ne... jamais", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
 {"word": "neniamaniere", "pos": "adv", "gloss_en": "in no way, not at all", "root": "neniamanier", "morphology": {"stem": "neniamanier", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 9, "sources": 3}, "citations": [{"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…j galopadoj, la duko ĝojis, kiam preteksto tre akceptinda kaj povanta neniamaniere malutili lian famon de ĝentilhomo ebligis, ke li ne ŝin sekvu.…"}, {"source": "pg-23670.txt", "text": "--Ho! ne ... Neniamaniere ... tio ne helpos al mi. Kontraŭe, mi tiam"}, {"source": "wsdump-Vallienne_Ĉu_li_1908.txt", "text": "— Sed, baptopatro, diris Fernando, vi tre scias, ke vi ĝenas nin neniamaniere. Se nenio urĝa postulas vian ĉeeston en alia loko, kial vi ne restus kun ni?"}]}
-{"word": "nenie", "pos": "adv", "gloss_en": "nowhere", "gloss_fr": "nulle part", "source": "Fundamento/UV-1905"}
-{"word": "neniel", "pos": "adv", "gloss_en": "nohow", "gloss_fr": "nullement, en aucune façon", "source": "Fundamento/UV-1905"}
-{"word": "nenies", "pos": "pron", "gloss_en": "no one’s", "gloss_fr": "de personne, à personne", "source": "Fundamento/UV-1905"}
+{"word": "nenie", "pos": "adv", "gloss_en": "nowhere", "gloss_fr": "nulle part", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
+{"word": "neniel", "pos": "adv", "gloss_en": "nohow", "gloss_fr": "nullement, en aucune façon", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
+{"word": "nenies", "pos": "pron", "gloss_en": "no one’s", "gloss_fr": "de personne, à personne", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
 {"word": "nenieslando", "pos": "noun", "gloss_en": "no man's land", "root": "land", "source": "ReVo/UV-*", "gloss_fr": "no man's land"}
 {"word": "nenifaro,nenioo,seno", "pos": "noun", "gloss_en": "inactivity", "root": "far", "source": "ReVo/UV-*"}
 {"word": "neniigi", "pos": "verb", "gloss_en": "annihilate", "root": "neni", "source": "ReVo/UV-*"}
 {"word": "neniiĝi", "pos": "verb", "gloss_en": "vanish", "root": "neniiĝ", "morphology": {"stem": "neniiĝ", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Vanish"], "derived": true}
-{"word": "nenio", "pos": "pron", "gloss_en": "nothing", "gloss_fr": "rien", "source": "Fundamento/UV-1905"}
+{"word": "nenio", "pos": "pron", "gloss_en": "nothing", "gloss_fr": "rien", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
 {"word": "neniokaze,neniue,neniae", "pos": "adv", "gloss_en": "in no case", "root": "kaz", "source": "ReVo/UV-*"}
 {"word": "nenioma", "pos": "adj", "gloss_en": "nonexistent (quantity)", "root": "neniom", "source": "ReVo/UV-*"}
 {"word": "nenionfaristo", "pos": "noun", "gloss_en": "idler, do-nothing", "root": "nenionfarist", "morphology": {"stem": "nenionfarist", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 8, "sources": 1}, "citations": [{"source": "pg-69123.txt", "text": "Tabakaĉ, nenionfaristo"}, {"source": "pg-69123.txt", "text": "ĝuste nenionfaristo, haha!“"}, {"source": "pg-69123.txt", "text": "„nenionfaristo“ malaperis."}]}
 {"word": "nenio,aĵo", "pos": "noun", "gloss_en": "nothing", "root": "neni", "source": "ReVo/UV-*", "gloss_fr": "néant"}
-{"word": "neniu", "pos": "pron", "gloss_en": "nobody", "gloss_fr": "personne", "source": "Fundamento/UV-1905"}
+{"word": "neniu", "pos": "pron", "gloss_en": "nobody", "gloss_fr": "personne", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}, {"section": "6.2", "topic": "Negation is single, not doubled"}]}
 {"word": "nenormala,mala", "pos": "adj", "gloss_en": "abnormal", "root": "normal", "source": "ReVo/OA-1", "gloss_fr": "anormal"}
 {"word": "neo", "pos": "noun", "gloss_en": "denial", "root": "ne", "morphology": {"stem": "ne", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Denial"]}
 {"word": "neobservi", "pos": "verb", "gloss_en": "ignore", "root": "neobserv", "morphology": {"stem": "neobserv", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Ignore"], "derived": true}
@@ -15656,7 +15656,7 @@
 {"word": "nivelo", "pos": "noun", "root": "nivel", "gloss_en": "water-level, plumb", "gloss_fr": "niveau", "source": "Fundamento/UV-1905", "morphology": {"stem": "nivel", "ending": "o"}}
 {"word": "nizaglo", "pos": "noun", "gloss_en": "Bonelli’s eagle", "root": "agl", "source": "ReVo/UV-*"}
 {"word": "nizo", "pos": "noun", "gloss_en": "sparrow-hawk", "root": "niz", "source": "ReVo/OA-2", "gloss_fr": "épervier (oiseau)"}
-{"word": "nj", "pos": "suffix", "root": "nj", "gloss_en": "diminutive of female names; e. g. Mari' Mary ― Ma'nj', Emili' ― Emi'nj'", "gloss_fr": "après les 1-5 premières lettres d'un prénom féminin lui donne un caractère diminutif et caressant; ex. Mari' — Ma'nj'; Emili' — Emi'nj'", "source": "Fundamento/UV-1905"}
+{"word": "nj", "pos": "suffix", "root": "nj", "gloss_en": "diminutive of female names; e. g. Mari' Mary ― Ma'nj', Emili' ― Emi'nj'", "gloss_fr": "après les 1-5 premières lettres d'un prénom féminin lui donne un caractère diminutif et caressant; ex. Mari' — Ma'nj'; Emili' — Emi'nj'", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "noaĥo", "pos": "noun", "gloss_en": "Noah", "root": "Noaĥ", "source": "ReVo", "gloss_fr": "Noé"}
 {"word": "nobela", "pos": "adj", "gloss_en": "noble", "root": "nobel", "source": "ReVo/UV-*"}
 {"word": "nobelaro", "pos": "noun", "gloss_en": "nobility", "root": "nobel", "source": "ReVo/UV-*"}
@@ -15902,7 +15902,7 @@
 {"word": "objekto", "pos": "noun", "root": "objekt", "gloss_en": "object", "gloss_fr": "objet", "source": "Fundamento/UV-1905", "morphology": {"stem": "objekt", "ending": "o"}}
 {"word": "obĵeti", "pos": "verb", "gloss_en": "object (oppose)", "root": "obĵet", "source": "ReVo", "gloss_fr": "objecter"}
 {"word": "obĵeto", "pos": "noun", "gloss_en": "objection", "root": "obĵet", "source": "ReVo", "gloss_fr": "objection"}
-{"word": "obl", "pos": "suffix", "root": "obl", "gloss_en": "...fold; e. g. du two ― du'obl' twofold, duplex", "gloss_fr": "marque l’adjectif numéral multiplicatif; ex. du deux ― du'obl' double", "source": "Fundamento/UV-1905"}
+{"word": "obl", "pos": "suffix", "root": "obl", "gloss_en": "...fold; e. g. du two ― du'obl' twofold, duplex", "gloss_fr": "marque l’adjectif numéral multiplicatif; ex. du deux ― du'obl' double", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "oblato", "pos": "noun", "root": "oblat", "gloss_en": "wafer", "gloss_fr": "pain à cacheter", "source": "Fundamento/UV-1905", "morphology": {"stem": "obl", "suffixes": [{"m": "at", "gloss": "passive participle (being done)"}], "ending": "o"}}
 {"word": "obligacio", "pos": "noun", "gloss_en": "bond (finance)", "root": "obligaci", "morphology": {"stem": "obligaci", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Bond"]}
 {"word": "oblikva", "pos": "adj", "gloss_en": "oblique (deviating from vertical)", "root": "oblikv", "source": "ReVo/OA-1", "gloss_fr": "oblique (adj.)"}
@@ -16121,7 +16121,7 @@
 {"word": "omo", "pos": "noun", "gloss_en": "Ohm (Georg Simon)", "root": "Om", "source": "ReVo", "gloss_fr": "Ohm"}
 {"word": "omometro,metro", "pos": "noun", "gloss_en": "ohm-meter (unit of measure)", "root": "Om", "source": "ReVo", "gloss_fr": "ohm-mètre\n    (unité de mesure)"}
 {"word": "omsko", "pos": "noun", "gloss_en": "Omsk", "root": "Omsk", "source": "ReVo", "gloss_fr": "Omsk"}
-{"word": "on", "pos": "suffix", "root": "on", "gloss_en": "marks fractions; e. g. kvar four ― kvar'on' a fourth, quarter", "gloss_fr": "marque les nombres fractionnaires; ex. kvar quatre ― kvar'on' le quart", "source": "Fundamento/UV-1905"}
+{"word": "on", "pos": "suffix", "root": "on", "gloss_en": "marks fractions; e. g. kvar four ― kvar'on' a fourth, quarter", "gloss_fr": "marque les nombres fractionnaires; ex. kvar quatre ― kvar'on' le quart", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ondatro", "pos": "noun", "gloss_en": "muscrat", "root": "ondatr", "source": "ReVo", "gloss_fr": "rat musqué"}
 {"word": "ondego", "pos": "noun", "gloss_en": "billow; surge", "root": "ondeg", "morphology": {"stem": "ondeg", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Billow", "Surge"], "derived": true}
 {"word": "ondeto", "pos": "noun", "gloss_en": "ripple; wavelet", "root": "ondet", "morphology": {"stem": "ondet", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Ripple", "Wavelet"], "derived": true}
@@ -16141,12 +16141,12 @@
 {"word": "onkologio", "pos": "noun", "gloss_en": "oncology", "root": "onkologi", "source": "ReVo", "gloss_fr": "oncologie"}
 {"word": "onkologo", "pos": "noun", "gloss_en": "oncology", "root": "onkolog", "source": "ReVo", "gloss_fr": "oncologue"}
 {"word": "ononido,o", "pos": "noun", "gloss_en": "Ononis", "root": "ononid", "source": "ReVo", "gloss_fr": "Ononis"}
-{"word": "ont", "pos": "suffix", "root": "ont", "gloss_en": "ending of fut. part. act. in verbs", "gloss_fr": "marque le participe futur d’un verbe actif", "source": "Fundamento/UV-1905"}
+{"word": "ont", "pos": "suffix", "root": "ont", "gloss_en": "ending of fut. part. act. in verbs", "gloss_fr": "marque le participe futur d’un verbe actif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "onta", "pos": "adj", "gloss_en": "future", "root": "ont", "source": "ReVo/UV-*", "gloss_fr": "futur (adj.)"}
 {"word": "ontario", "pos": "noun", "gloss_en": "Ontario", "root": "Ontari", "source": "ReVo", "gloss_fr": "Ontario"}
 {"word": "ontologio", "pos": "noun", "gloss_en": "ontology", "root": "ontologi", "source": "ReVo", "gloss_fr": "ontologie"}
 {"word": "onufrio", "pos": "noun", "gloss_en": "Humphrey", "root": "Onufri", "source": "ReVo", "gloss_fr": "Onuphre"}
-{"word": "op", "pos": "suffix", "root": "op", "gloss_en": "marks collective numerals; e. g. tri three ― tri'op' three together", "gloss_fr": "marque l’adjectif numéral collectif; ex. du deux ― du'op' à deux", "source": "Fundamento/UV-1905"}
+{"word": "op", "pos": "suffix", "root": "op", "gloss_en": "marks collective numerals; e. g. tri three ― tri'op' three together", "gloss_fr": "marque l’adjectif numéral collectif; ex. du deux ― du'op' à deux", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "opa", "pos": "adj", "gloss_en": "collective", "root": "op", "morphology": {"stem": "op", "ending": "a"}, "source": "oconnor-1906", "english_headwords": ["Collective"]}
 {"word": "opaka", "pos": "adj", "gloss_en": "opaque", "root": "opak", "source": "ReVo"}
 {"word": "opala", "pos": "adj", "root": "opal", "gloss_en": "opal", "gloss_fr": "opale", "source": "Fundamento/UV-1905", "morphology": {"stem": "opal", "ending": "a"}}
@@ -16361,7 +16361,7 @@
 {"word": "ostracismo", "pos": "noun", "gloss_en": "ostracism", "root": "ostracism", "source": "ReVo/OA-2"}
 {"word": "ostro", "pos": "noun", "root": "ostr", "gloss_en": "oyster", "gloss_fr": "huître", "source": "Fundamento/UV-1905", "morphology": {"stem": "ostr", "ending": "o"}}
 {"word": "ostrogoto", "pos": "noun", "gloss_en": "ostrogoth", "root": "ostrogot", "source": "ReVo", "gloss_fr": "Ostrogoth (subst.)"}
-{"word": "ot", "pos": "suffix", "root": "ot", "gloss_en": "ending of fut. part. pass. in verbs", "gloss_fr": "marque le participe futur d’un verbe passif", "source": "Fundamento/UV-1905"}
+{"word": "ot", "pos": "suffix", "root": "ot", "gloss_en": "ending of fut. part. pass. in verbs", "gloss_fr": "marque le participe futur d’un verbe passif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
 {"word": "otavo", "pos": "noun", "gloss_en": "Ottawa", "root": "Otav", "source": "ReVo", "gloss_fr": "Ottawa"}
 {"word": "otido", "pos": "noun", "gloss_en": "bustard", "root": "otid", "source": "ReVo", "gloss_fr": "outarde"}
 {"word": "otito", "pos": "noun", "gloss_en": "otitis", "root": "otit", "source": "ReVo", "gloss_fr": "otite"}
@@ -17941,7 +17941,7 @@
 {"word": "pozitivo", "pos": "noun", "gloss_en": "positive", "root": "pozitiv", "source": "ReVo/OA-1"}
 {"word": "pozitrono,pozitono", "pos": "noun", "gloss_en": "positron", "root": "pozitron", "source": "ReVo"}
 {"word": "pozo", "pos": "noun", "gloss_en": "pose, posture", "root": "poz", "morphology": {"stem": "poz", "ending": "o"}, "source": "corpus-mined", "attestation": {"count": 12, "sources": 4}, "citations": [{"source": "wsdump-Orzeszko_Marta_1928_Zamenhof.txt", "text": "En la momento, kiam Mario Rudzinska eniris en la salonon, la pozo de tiu juna homo estis iom stranga. Li staris kun vizaĝo turnita al la kabineta pord…"}, {"source": "wsdump-Kabe_Vortaro_de_Esperanto_1922.txt", "text": "Pozo. Teniĝo kaj mieno de tiu, kiu pozas."}, {"source": "pg-69123.txt", "text": "sidas sur la kuŝejo en rigida hieratika pozo. Ŝiaj lipoj premiĝas"}]}
-{"word": "pra", "pos": "prefix", "root": "pra", "gloss_en": "primordial, great-", "gloss_fr": "primitiv, bis-", "source": "Fundamento/UV-1905"}
+{"word": "pra", "pos": "prefix", "root": "pra", "gloss_en": "primordial, great-", "gloss_fr": "primitiv, bis-", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "praangla", "pos": "adj", "gloss_en": "Anglian", "root": "angl", "source": "ReVo/UV-*"}
 {"word": "praarbaro", "pos": "noun", "gloss_en": "old-growth forest", "root": "arb", "source": "ReVo/UV-*", "gloss_fr": "forêt primaire"}
 {"word": "praavino", "pos": "noun", "gloss_en": "great-grandmother", "root": "av", "source": "ReVo/UV-*", "gloss_fr": "arrière-grand-mère"}
@@ -18836,7 +18836,7 @@
 {"word": "razilo", "pos": "noun", "gloss_en": "razor", "root": "razil", "morphology": {"stem": "razil", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Razor"]}
 {"word": "razisto", "pos": "noun", "gloss_en": "barber", "root": "raz", "source": "ReVo/UV-*", "gloss_fr": "barbier"}
 {"word": "razo", "pos": "noun", "root": "raz", "gloss_en": "shave", "gloss_fr": "raser, faire la barbe", "source": "Fundamento/UV-1905", "morphology": {"stem": "raz", "ending": "o"}}
-{"word": "re", "pos": "prefix", "root": "re", "gloss_en": "again, back", "gloss_fr": "de nouveau, de retour; re-, ré-", "source": "Fundamento/UV-1905"}
+{"word": "re", "pos": "prefix", "root": "re", "gloss_en": "again, back", "gloss_fr": "de nouveau, de retour; re-, ré-", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "reaĉeti", "pos": "verb", "gloss_en": "ransom; redeem", "root": "reaĉet", "morphology": {"stem": "reaĉet", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Ransom", "Redeem"], "derived": true}
 {"word": "reaĉeto", "pos": "noun", "gloss_en": "ransom", "root": "reaĉet", "morphology": {"stem": "reaĉet", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Ransom"], "derived": true}
 {"word": "readmono", "pos": "noun", "gloss_en": "Deuteronomy", "root": "admon", "source": "ReVo/UV-*", "gloss_fr": "Deutéronome"}
@@ -22776,11 +22776,11 @@
 {"word": "teujo", "pos": "noun", "gloss_en": "tea canister; tea caddy", "root": "teuj", "morphology": {"stem": "teuj", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Tea canister", "Tea caddy"], "derived": true}
 {"word": "teŭgo", "pos": "noun", "gloss_en": "forecastle", "root": "teŭg", "source": "ReVo", "gloss_fr": "gaillard d'avant"}
 {"word": "tezo", "pos": "noun", "root": "tez", "gloss_en": "thesis", "gloss_fr": "thèse", "source": "Fundamento/UV-1905", "morphology": {"stem": "tez", "ending": "o"}}
-{"word": "tia", "pos": "adj", "gloss_en": "such", "gloss_fr": "tel", "source": "Fundamento/UV-1905"}
+{"word": "tia", "pos": "adj", "gloss_en": "such", "gloss_fr": "tel", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tiaaĵo,tiaĵo", "pos": "noun", "gloss_en": "such a thing", "root": "tia", "source": "ReVo/UV-*", "gloss_fr": "telle chose"}
 {"word": "tiagrade", "pos": "adv", "gloss_en": "to such a degree", "root": "tiagrad", "morphology": {"stem": "tiagrad", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 32, "sources": 5}, "citations": [{"source": "pg-64579.txt", "text": "tiagrade, ke li jam vidis kaj aŭdis nenion. Li rigardis min per siaj"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1985_III.txt", "text": "…mprenos, ke la artefarita lingvo povis kvazaŭ penetri en mian karnon, tiagrade, ke mi fariĝis ĝismedola esperantisto; kio rajtigas min aserti, ke espe…"}, {"source": "wsdump-Voltaire_Tri_Verkoj_de_Volter_1956_Lanti.txt", "text": "plaĉis al Moabdar. Ŝi subigis lin al si tiagrade, ke li"}]}
-{"word": "tial", "pos": "adv", "gloss_en": "therefore", "gloss_fr": "c’est pourquoi", "source": "Fundamento/UV-1905"}
-{"word": "tiam", "pos": "adv", "gloss_en": "then", "gloss_fr": "alors", "source": "Fundamento/UV-1905"}
+{"word": "tial", "pos": "adv", "gloss_en": "therefore", "gloss_fr": "c’est pourquoi", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "tiam", "pos": "adv", "gloss_en": "then", "gloss_fr": "alors", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tiamaniere", "pos": "adv", "gloss_en": "in that way, thus", "root": "tiamanier", "morphology": {"stem": "tiamanier", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 314, "sources": 5}, "citations": [{"source": "wsdump-Zamenhof_Dietterle_Originala_Verkaro_1929.txt", "text": "…aj en ĉiuj lernolibroj kaj vortaroj samtempe kun la formoj novaj, kaj tiamaniere ni havos la certecon, ke eĉ ĉe la plej granda perfektiĝado la unueco …"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "…ateto, ekkriis la vojaĝanto, tremetante pro kortuŝeco kaj plezuro; vi tiamaniere min perfide ekkaptas! Sed, atentu: mi bone scios redoni moneretojn in…"}, {"source": "pg-64579.txt", "text": "mi estas devigata agi tiamaniere, ĉar la knabo forkuris de mi, tiel"}]}
 {"word": "tiaspeca", "pos": "adj", "gloss_en": "of that kind", "root": "tiaspec", "morphology": {"stem": "tiaspec", "ending": "a"}, "source": "corpus-mined", "attestation": {"count": 2, "sources": 2}, "citations": [{"source": "pg-69123.txt", "text": "tiaspeca sorĉludilo..."}, {"source": "pg-55574.txt", "text": "Komitato ne estis tre bona loko por tiaspeca prospekto."}]}
 {"word": "tiberio", "pos": "noun", "gloss_en": "Tiberius", "root": "Tiberi", "source": "ReVo", "gloss_fr": "Tibère"}
@@ -22790,8 +22790,8 @@
 {"word": "tibio", "pos": "noun", "root": "tibi", "gloss_en": "shin bone", "gloss_fr": "os de la jambe, tibia", "source": "Fundamento/UV-1905", "morphology": {"stem": "tibi", "ending": "o"}}
 {"word": "tibiviando", "pos": "noun", "gloss_en": "calf (of leg)", "root": "tibiviand", "morphology": {"stem": "tibiviand", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Calf"]}
 {"word": "ticiano", "pos": "noun", "gloss_en": "Titian", "root": "Tician", "source": "ReVo"}
-{"word": "tie", "pos": "adv", "gloss_en": "there", "gloss_fr": "là-bas, là, y", "source": "Fundamento/UV-1905"}
-{"word": "tiel", "pos": "adv", "gloss_en": "thus, so", "gloss_fr": "ainsi, de cette manière", "source": "Fundamento/UV-1905"}
+{"word": "tie", "pos": "adv", "gloss_en": "there", "gloss_fr": "là-bas, là, y", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
+{"word": "tiel", "pos": "adv", "gloss_en": "thus, so", "gloss_fr": "ainsi, de cette manière", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tiela", "pos": "adj", "gloss_en": "such a (adj)", "root": "tiel", "source": "ReVo/UV-*"}
 {"word": "tiele", "pos": "adv", "gloss_en": "thus (in such a manner)", "root": "tiel", "source": "ReVo/UV-*", "gloss_fr": "de telle manière (que)"}
 {"word": "tielke,...ke", "pos": "adv", "gloss_en": "so that", "root": "tiel", "source": "ReVo/UV-*"}
@@ -22851,9 +22851,9 @@
 {"word": "tinti", "pos": "verb", "root": "tint", "gloss_en": "chink, clank, jingle", "gloss_fr": "tinter", "source": "Fundamento/UV-1905", "morphology": {"stem": "tint", "ending": "i"}}
 {"word": "tintilo", "pos": "noun", "gloss_en": "jingle bell", "root": "tint", "source": "ReVo/UV-*"}
 {"word": "tinuso,tino", "pos": "noun", "gloss_en": "tuna", "root": "tinus", "source": "ReVo", "gloss_fr": "thon"}
-{"word": "tio", "pos": "pron", "gloss_en": "that one", "gloss_fr": "cela", "source": "Fundamento/UV-1905"}
+{"word": "tio", "pos": "pron", "gloss_en": "that one", "gloss_fr": "cela", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tioestero", "pos": "noun", "gloss_en": "thioester", "root": "tioester", "source": "ReVo", "gloss_fr": "thioester"}
-{"word": "tiom", "pos": "pron", "gloss_en": "so much", "gloss_fr": "autant, tant", "source": "Fundamento/UV-1905"}
+{"word": "tiom", "pos": "pron", "gloss_en": "so much", "gloss_fr": "autant, tant", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tioma", "pos": "adj", "gloss_en": "such a (adj, for number, quantity or degree)", "root": "tiom", "source": "ReVo/UV-*", "gloss_fr": "tel"}
 {"word": "tiosignifas", "pos": "noun", "gloss_en": "this means", "root": "signif", "source": "ReVo/UV-*"}
 {"word": "tipa", "pos": "adj", "gloss_en": "typical", "root": "tip", "source": "ReVo/OA-1", "gloss_fr": "typique"}
@@ -22894,7 +22894,7 @@
 {"word": "titolpaĝo", "pos": "noun", "gloss_en": "title page", "root": "paĝ", "source": "ReVo/UV-*", "gloss_fr": "page de titre"}
 {"word": "titri", "pos": "verb", "gloss_en": "titration", "root": "titr", "source": "ReVo"}
 {"word": "titro", "pos": "noun", "gloss_en": "titer", "root": "titr", "source": "ReVo"}
-{"word": "tiu", "pos": "pron", "gloss_en": "that", "gloss_fr": "celui-là", "source": "Fundamento/UV-1905"}
+{"word": "tiu", "pos": "pron", "gloss_en": "that", "gloss_fr": "celui-là", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "tiucele", "pos": "adv", "gloss_en": "for that purpose, to that end", "root": "tiucel", "morphology": {"stem": "tiucel", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 47, "sources": 5}, "citations": [{"source": "wsdump-Verkoj_de_FeZ_1935.txt", "text": "…speciala kaj detala pristudo de ĉiuj verkoj de F. Z. Valorus speciale tiucele sin dediĉi. Indus iniciati »Feliksologion« (aŭ: FeZologion). Materialo n…"}, {"source": "wsdump-Rossetti_Cezaro_Kredu_min_Sinjorino_1950.txt", "text": "tiel gajni ekstran kurtaĝeton de la kuna vendado. Tiucele mi intervjuis kolportistojn ĉe la oficejo kaj instruis ilin, sed unu post la alia fiaskis. M…"}, {"source": "wsdump-Lanti_El_verkoj_de_E_Lanti_1982_II.txt", "text": "Tiucele mi iris kun K-do Nekrasov, mia helpema kaj lerta interpretisto, ĉe la sidejon de l’ Centra Komitato de l’ Proletkult, kiu staras Vozdviĵenka, 16."}]}
 {"word": "tiufoje", "pos": "adv", "gloss_en": "that time, on that occasion", "root": "tiufoj", "morphology": {"stem": "tiufoj", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 33, "sources": 5}, "citations": [{"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "La antaŭan jaron, li ŝajne ĝin reaĉetis, tiufoje tre malkaŝe, grande mirigante siajn najbarojn, kiuj diris inter si:"}, {"source": "pg-62118.txt", "text": "-- Por ke ci ekkonu mian eksterordinaran bonecon, mi eĉ tiufoje"}, {"source": "pg-52111.txt", "text": "Mi klarigis al mia kunulino tion, kio estas nuboj, kaj tiufoje mia"}]}
 {"word": "tiumatene", "pos": "adv", "gloss_en": "that morning", "root": "tiumaten", "morphology": {"stem": "tiumaten", "ending": "e"}, "source": "corpus-mined", "attestation": {"count": 21, "sources": 2}, "citations": [{"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "— Ĉu vi vidis Josefinon, tiumatene?"}, {"source": "wsdump-Vallienne_Ĉu_li_1908.txt", "text": "…mon de mia kuzino: ŝi anoncas, ke nia malfeliĉa onklino havis ankoraŭ tiumatene krizon de sufoko, kiu cetere ne havis sekvojn. Sed kvankam de…"}, {"source": "wsdump-Vallienne_Kastelo_de_Prelongo_1907.txt", "text": "— Tio ne estas miriga, respondis la paroĥestro. Tiumatene, portante la bonan Dion al la patrino Triŝardo, kiu mortas pro maljuneco, mi vidis Grosklaŭd…"}]}
@@ -23552,9 +23552,9 @@
 {"word": "ueno", "pos": "noun", "gloss_en": "Ueno", "root": "Uen", "source": "ReVo", "gloss_fr": "Ueno"}
 {"word": "ugando", "pos": "noun", "gloss_en": "Uganda", "root": "Ugand", "source": "ReVo/OA-10", "gloss_fr": "Uganda"}
 {"word": "ugviso", "pos": "noun", "gloss_en": "manchurian bush-warbler", "root": "ugvis", "source": "ReVo"}
-{"word": "uj", "pos": "suffix", "root": "uj", "gloss_en": "filled with; e. g. ink' ink ― ink'uj' ink-pot; pom' apple ― pom'uj' apple-tree; Turk'uj' Turkey", "gloss_fr": "qui porte, qui contient, qui est peuplé de; ex. pom' pomme ― pom'uj' pommier; cigar' cigare ― cigar'uj' porte-cigares; Turk' Turc ― Turk'uj' Turquie", "source": "Fundamento/UV-1905"}
+{"word": "uj", "pos": "suffix", "root": "uj", "gloss_en": "filled with; e. g. ink' ink ― ink'uj' ink-pot; pom' apple ― pom'uj' apple-tree; Turk'uj' Turkey", "gloss_fr": "qui porte, qui contient, qui est peuplé de; ex. pom' pomme ― pom'uj' pommier; cigar' cigare ― cigar'uj' porte-cigares; Turk' Turc ― Turk'uj' Turquie", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "6.1", "topic": "Country names: -ujo dominates, not -io"}]}
 {"word": "ujguro", "pos": "noun", "gloss_en": "Uyghur", "root": "ujgur", "source": "ReVo/OA-10", "gloss_fr": "Ouïghour"}
-{"word": "ujo", "pos": "noun", "gloss_en": "utensil; vessel", "root": "uj", "morphology": {"stem": "uj", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Utensil", "Vessel"]}
+{"word": "ujo", "pos": "noun", "gloss_en": "utensil; vessel", "root": "uj", "morphology": {"stem": "uj", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Utensil", "Vessel"], "grammar_refs": [{"section": "6.1", "topic": "Country names: -ujo dominates, not -io"}]}
 {"word": "ukazo", "pos": "noun", "gloss_en": "ukase", "root": "ukaz", "source": "ReVo/OA-2"}
 {"word": "ukraina,a", "pos": "adj", "gloss_en": "Ukrainian", "root": "ukrain", "source": "ReVo/OA-10", "gloss_fr": "ukrainien (adjectif)"}
 {"word": "ukrainino,ino", "pos": "noun", "gloss_en": "Ukrainian woman", "root": "ukrain", "source": "ReVo/OA-10", "gloss_fr": "Ukrainienne (habitante)"}
@@ -23562,7 +23562,7 @@
 {"word": "ukraino,o", "pos": "noun", "gloss_en": "Ukrainian", "root": "ukrain", "source": "ReVo/OA-10", "gloss_fr": "Ukrainien (habitant)"}
 {"word": "ukrainujo,ujo", "pos": "noun", "gloss_en": "Ukraine", "root": "ukrain", "source": "ReVo/OA-10", "gloss_fr": "Ukraine"}
 {"word": "ukulelo", "pos": "noun", "gloss_en": "ukulele", "root": "ukulel", "source": "ReVo", "gloss_fr": "ukulélé"}
-{"word": "ul", "pos": "suffix", "root": "ul", "gloss_en": "person noted for...; e. g. avar' covetous ― avar'ul' miser, covetous person", "gloss_fr": "qui est caractérisé par telle ou telle qualité, telle façon d’être; ex. bel' beau ― bel'ul' bel homme; mal'jun' vieux ― mal'jun'ul' vieillard", "source": "Fundamento/UV-1905"}
+{"word": "ul", "pos": "suffix", "root": "ul", "gloss_en": "person noted for...; e. g. avar' covetous ― avar'ul' miser, covetous person", "gloss_fr": "qui est caractérisé par telle ou telle qualité, telle façon d’être; ex. bel' beau ― bel'ul' bel homme; mal'jun' vieux ― mal'jun'ul' vieillard", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "ulanbatoro", "pos": "noun", "gloss_en": "Ulaanbaatar", "root": "Ulanbator", "source": "ReVo/OA-10", "gloss_fr": "Oulan-Bator"}
 {"word": "ulcereto", "pos": "noun", "gloss_en": "sore", "root": "ulceret", "morphology": {"stem": "ulceret", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Sore"], "derived": true}
 {"word": "ulceriĝi", "pos": "verb", "gloss_en": "fester", "root": "ulceriĝ", "morphology": {"stem": "ulceriĝ", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Fester"], "derived": true}
@@ -23583,7 +23583,7 @@
 {"word": "ultrasono", "pos": "noun", "gloss_en": "ultrasound", "root": "ultrason", "source": "ReVo", "gloss_fr": "ultrason"}
 {"word": "ululi", "pos": "verb", "gloss_en": "hoot", "root": "ulul", "source": "ReVo", "gloss_fr": "hululer"}
 {"word": "ululo", "pos": "noun", "gloss_en": "ululation", "root": "ulul", "source": "ReVo", "gloss_fr": "ululement"}
-{"word": "um", "pos": "suffix", "root": "um", "gloss_en": "this syllable has no fixed meaning", "gloss_fr": "suffixe peu employé, et qui reçoit différents sens aisément suggérés par le contexte et la signification de la racine à laquelle il est joint", "source": "Fundamento/UV-1905"}
+{"word": "um", "pos": "suffix", "root": "um", "gloss_en": "this syllable has no fixed meaning", "gloss_fr": "suffixe peu employé, et qui reçoit différents sens aisément suggérés par le contexte et la signification de la racine à laquelle il est joint", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}]}
 {"word": "umama", "pos": "adj", "gloss_en": "umami", "root": "umam", "source": "ReVo", "gloss_fr": "umami"}
 {"word": "umbelo", "pos": "noun", "gloss_en": "umbel", "root": "umbel", "source": "ReVo", "gloss_fr": "ombelle"}
 {"word": "umbilikaŝnuro", "pos": "noun", "gloss_en": "umbilical cord", "root": "umbilik", "source": "ReVo/UV-*", "gloss_fr": "cordon ombilical"}
