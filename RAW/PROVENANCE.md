@@ -377,3 +377,35 @@ Sources: (1) Project Gutenberg complete `languages=eo` shelf via Gutendex — 14
 - `ia-eowiki-Okinava_lingvo-20200728.pdf.txt` — eowiki-Okinava_lingvo-20200728.pdf — sha256:ed5c0370a0c0 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Okinava_lingvo-20200728.pdf
 - `ia-eowiki-Vilamovica_lingvo-20200728.pdf.txt` — eowiki-Vilamovica_lingvo-20200728.pdf — sha256:7b4c3d4fa94b — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Vilamovica_lingvo-20200728.pdf
 - `ia-eowiki-Parta_lingvo-20200728.pdf.txt` — eowiki-Parta_lingvo-20200728.pdf — sha256:177fd5cf1b89 — Internet Archive (language:esperanto texts; license per item) — https://archive.org/details/eowiki-Parta_lingvo-20200728.pdf
+
+
+## ia-* text-quality triage (esp-1l1, 2026-09-26)
+
+The 57 archive.org sources were scored with `tools/score_esperanto_text.py`
+(recognisable-token rate against `DICT/entries.jsonl`, plus single-character-
+token rate as an OCR tell; real Esperanto scores 90%+). Buckets: **usable**
+14 (>=80% known, <5% singles), **marginal** 20 (65-80%), **poor** 23 (<65%
+or >=10% singles). All 57 stay in RAW/ — held out of *mining*, not removed,
+so this provenance record stays honest (QUARANTINE/ is for licensing holds
+only).
+
+- **Poor — excluded from mining** via `OCR_POOR` in `tools/mine_lemmas.py`:
+  `ia-Pichismo----.....1992-2014.txt` (73 tokens of scan noise),
+  `ia-KvarvoajKantojPorEsperantistoj.txt` (36.9% singles, lyrics broken
+  into syllables), `ia-TranslationOfTheMeaningsOfTheNobleQuranInTheEsperantopdf.txt`
+  (105k tokens of machine-mangled hybrid English/Esperanto, not OCR damage),
+  and 20 `ia-eowiki-*-lingvo` stubs (genuine but very short encyclopaedia
+  articles whose foreign-term ratio drags the score down: Agula, Arumana
+  46.2% singles, Hindustana, Jakuta, Jida, Kefa, Kopta, Lingvo, Luba, Naura,
+  Nejoj, Oroma, Slovaka, Srana, Tibeta, Turka, Vilamovica).
+- **Not Esperanto, separately excluded** (`ENGLISH_HEAVY`, already in place):
+  `ia-key_to_the_ekzercaro.txt` (English), `ia-traduction_de_lekzercaro.txt`
+  (French), the Downes 1982 textbook (English).
+- **Marginal — decision: keep in the mining pool.** The 65-80% band is
+  mostly the same eowiki stub class at slightly better scores; the miner's
+  candidate thresholds plus the shard review verdicts already filter what
+  they contribute, and their genuine Esperanto sentences are real evidence.
+  Revisit only if a review round shows fake lemmas traced to them.
+- **Usable**: `ia-LaHeroojDeLaNovaTagiolaKronikoDeNabil.txt` (240k tokens,
+  90.6%), `ia-poemo-de-utnoa-eo-1jun-2023.txt` (55k, 89.5%), 12 eowiki
+  articles at 80-85%.

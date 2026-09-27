@@ -150,6 +150,30 @@ def repair_homoglyphs(text):
     return MIXED_TOKEN.sub(fix, text)
 
 
+# ------------------------------------------------------- per-source fixes
+# OCR scan-corrections applied after the generic passes. Precedent: the
+# homoglyph repair above. Keyed by source basename; regex -> replacement.
+# wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt drops the leading 'c' of
+# 'cezaro' (Caesar) in 112 places — always 'la ezaro' / 'de la ezaro', never
+# a real word 'ezaro' (esp-7af). The same scan's dropped-noun 'la la'
+# sequences are NOT corrected: the missing words are italicised Latin
+# bath/architecture terms (laconicum, tepidarium...) that cannot be
+# reconstructed mechanically without corrupting legitimate reduplications.
+SOURCE_FIXES = {
+    'wsdump-Sienkiewikz_Quo_vadis_1934_Zamenhof_I.txt': [
+        (re.compile(r'\bezaro\b'), 'cezaro'),
+    ],
+}
+
+
+def apply_source_fixes(name, text):
+    count = 0
+    for pattern, repl in SOURCE_FIXES.get(name, []):
+        text, n = pattern.subn(repl, text)
+        count += n
+    return text, count
+
+
 # ---------------------------------------------------------------- slicing
 def strip_pg_frontmatter(lines):
     """Drop the proofreader credit and transcriber's note the body opens with."""
@@ -269,6 +293,7 @@ def normalize(path):
     homoglyphs = len(MIXED_TOKEN.findall(text))
     if homoglyphs:
         text = repair_homoglyphs(text)
+    text, fixed = apply_source_fixes(name, text)
     text = unicodedata.normalize('NFC', text)
 
     return {
@@ -282,6 +307,7 @@ def normalize(path):
                    ('left:%d' % hits if hits else '-'),
         'hsystem': 'converted' if hsystem else '-',
         'homoglyphs': homoglyphs or '-',
+        'fixes': fixed or '-',
         'sha256': hashlib.sha256(text.encode('utf-8')).hexdigest()[:12],
         'text': text,
     }
@@ -305,7 +331,7 @@ def main():
         records.append(record)
 
     columns = ['source', 'method', 'in_lines', 'out_lines', 'head_stripped',
-               'tail_stripped', 'xsystem', 'hsystem', 'homoglyphs',
+               'tail_stripped', 'xsystem', 'hsystem', 'homoglyphs', 'fixes',
                'sha256']
     with open(os.path.join(OUT, 'MANIFEST.tsv'), 'w', encoding='utf-8') as fh:
         fh.write('\t'.join(columns) + '\n')

@@ -115,6 +115,64 @@ def parse(path):
     return pairs, affixes, phrases, skipped
 
 
+# Period-dated English terms in O'Connor's 1906 glosses, mapped to neutral
+# present-day wording (esp-54v, option b). The source's own wording is kept
+# verbatim in a `dated_gloss` field on the affected entries, and the English
+# headwords / english-index keep the source's terms — they are the lookup
+# direction into the 1906 source and their provenance is already tagged by
+# `source: oconnor-1906`. Replacement is gloss-only, whole-term.
+DATED_GLOSSES = {
+    'negro': 'Black person',
+    'heathenism': 'paganism, idol worship',
+    'heathen': 'pagan',
+    'lunatic': 'person with mental illness',
+    'imbecile': 'person with intellectual disability',
+    'crippled': 'disabled',
+    'idiot': 'person with intellectual disability',
+    'oaf': 'fool, simpleton',
+    'dumbness': 'inability to speak',
+    'dumb show': 'pantomime (performance without speech)',
+    'dumb': 'unable to speak',
+    'savage': 'wild, untamed',
+    'oriental': 'eastern, of the East',
+}
+
+
+def modernise_gloss(gloss, pos):
+    """Replace dated terms whole-term (case-insensitive), preserving the rest.
+
+    Returns (new_gloss, changed). Word-boundary regex, longest term first so
+    'dumb show' wins over 'dumb'. 'cripple' is POS-dependent: the verb sense
+    is 'disable', the noun a person. Senses are deduplicated after
+    replacement ('savage; untamed' and 'wild, untamed' collapse)."""
+    def repl_for(term):
+        if term == 'cripple':
+            return 'disable' if pos == 'verb' else 'person with physical disability'
+        return DATED_GLOSSES[term]
+    changed = False
+    for term in sorted(DATED_GLOSSES, key=len, reverse=True) + ['cripple']:
+        pattern = re.compile(r'\b%s\b' % re.escape(term), re.IGNORECASE)
+        if pattern.search(gloss):
+            gloss = pattern.sub(repl_for(term), gloss)
+            changed = True
+    if changed:
+        seen, parts = set(), []
+        for part in gloss.split('; '):
+            if part not in seen:
+                seen.add(part)
+                parts.append(part)
+        # A replacement can subsume other senses ('savage' -> 'wild, untamed'
+        # next to headwords Untamed and Wild): drop parts whose words are all
+        # contained in a longer part.
+        def subsumed(p):
+            words = set(re.findall(r'\w+', p))
+            return any(p != q and words <= set(re.findall(r'\w+', q))
+                       for q in parts)
+        parts = [p for p in parts if not subsumed(p)]
+        gloss = '; '.join(parts)
+    return gloss, changed
+
+
 def build_entry(word, senses, roots, words):
     """One dictionary entry from every English headword pointing at a word."""
     glosses = []
@@ -129,6 +187,10 @@ def build_entry(word, senses, roots, words):
         'pos': ENDING_POS.get(word[-1:], 'unknown'),
         'gloss_en': '; '.join(glosses[:6]),
     }
+    modern, changed = modernise_gloss(entry['gloss_en'], entry['pos'])
+    if changed:
+        entry['dated_gloss'] = entry['gloss_en']  # O'Connor's own wording
+        entry['gloss_en'] = modern
     if entry['pos'] in ENDING_POS.values() and word[-1:] in ENDING_POS:
         entry['root'] = word[:-1]
         entry['morphology'] = {'stem': word[:-1], 'ending': word[-1:]}
