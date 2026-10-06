@@ -277,6 +277,11 @@ def normalize(path):
         # Extracted from the Wikisource dump, which has no page furniture to
         # strip — only the shared cleanup below applies.
         body, method, head, tail = lines, 'wsdump-clean', 0, 0
+    elif name.startswith('wp-'):
+        # Vikipedio articles (esp-4g8), pre-cleaned at extraction time by
+        # scripts/extract_eowiki.py: no wikitext, templates, refs, tables or
+        # section headings survive — only shared cleanup applies.
+        body, method, head, tail = lines, 'wp-clean', 0, 0
     else:
         body, method, head, tail = slice_vikifontaro(lines)
 
