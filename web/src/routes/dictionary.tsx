@@ -127,6 +127,7 @@ function EntryCard({ e }: { e: DictEntry }) {
                 <div key={i} className="text-xs">
                   <Link
                     to="/grammar"
+                    hash={`section-${r.section}`}
                     className="text-emerald-700 underline decoration-dotted dark:text-emerald-400"
                   >
                     GRAMMAR §{r.section}
