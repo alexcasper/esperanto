@@ -25,9 +25,11 @@ ENDINGS = ['ajn', 'ojn', 'aj', 'oj', 'an', 'on', 'en', 'as', 'is', 'os', 'us',
 PARTICIPLE = ['ant', 'int', 'ont', 'at', 'it', 'ot']
 PREFIX = ['mal', 'ne', 'ge', 'bo', 'ek', 'el', 're', 'dis', 'for', 'pra',
           'eks', 'mis', 'fi', 'retro']
+# 'il' (instrument: tranĉilo, apogilo) was missing, so every -ilo word on a
+# known root fell through to 'unknown' and inflated the gap queue.
 SUFFIX = ['estr', 'ebl', 'ind', 'em', 'ec', 'aĵ', 'ist', 'an', 'ul', 'in',
           'id', 'ig', 'iĝ', 'uj', 'op', 'obl', 'on', 'eg', 'et', 'ar', 'er',
-          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism']
+          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism', 'il']
 
 # Closed classes that carry no root: they are words in their own right.
 GRAMMATICAL = {
@@ -98,6 +100,86 @@ def peel_affixes(stem, roots, max_depth=4):
             break
         frontier = nxt
     return stem
+
+
+def root_stock(path=ENTRIES):
+    """Base roots with an authority rank (lower is better), for segment().
+
+    load_vocabulary's roots are too loose for segmentation: corpus-mined and
+    O'Connor entries record the whole word stem as `root` (ebligi -> eblig),
+    so any word would 'segment' onto itself. Only layers that cite a real
+    radiko are used: the Fundamento's morphology stem, then ReVo's root,
+    ranked UV-official, Oficialaj Aldonoj, other ReVo.
+    """
+    stock = {}
+    with open(path, encoding='utf-8') as fh:
+        for line in fh:
+            if not line.strip():
+                continue
+            entry = json.loads(line)
+            source = entry.get('source') or ''
+            if source.startswith('Fundamento'):
+                # Both: `root` is the radiko as the UV cites it (ripet',
+                # lern'ej'), while morphology.stem is the UV build's own
+                # segmentation, which over-splits some roots (ripet -> rip+et).
+                found = [entry.get('root'),
+                         (entry.get('morphology') or {}).get('stem')]
+                rank = 0
+            elif source.startswith('ReVo'):
+                found = [entry.get('root')]
+                rank = 1 if source == 'ReVo/UV-*' else \
+                    2 if source.startswith('ReVo/OA') else 3
+            else:
+                continue
+            for root in found:
+                if root and len(root) >= 2:
+                    root = root.lower()
+                    stock[root] = min(rank, stock.get(root, 9))
+    # Prepositions and particles derive too (superulo, treege, malantaŭa).
+    # Without them, 'super' could only split as sup ('soup') + er + ul.
+    # Two-letter pronouns are left out: they turned geniulo into ge+ni+ul.
+    # The UV layer files them with a `root` too, so remove rather than skip.
+    for word in GRAMMATICAL:
+        if len(word) >= 3:
+            stock[word] = 0
+        else:
+            stock.pop(word, None)
+    return stock
+
+
+def segment(stem, stock, max_affixes=3):
+    """Split a stem into (prefixes, root, suffixes), or None.
+
+    Unlike peel_affixes, which only answers whether a known root is inside,
+    this returns the path, so an entry can carry the UV-style morphology
+    (`prefixes` / `stem` / `suffixes`). Self-validating like the UV layer:
+    every peeled morpheme is in the affix inventory and the remainder is a
+    root in `stock` (see root_stock). Among valid splits: fewest affixes,
+    then fewest prefixes, then the most authoritative root — so reĝino is reĝ+in (Fundamento), not
+    re+ĝin ('gin', Oficialaj Aldonoj 2).
+    """
+    prefixes = sorted(PREFIX, key=len, reverse=True)
+    suffixes = sorted(set(SUFFIX + PARTICIPLE), key=len, reverse=True)
+    best, best_key = None, None
+
+    def walk(rest, pre, suf):
+        nonlocal best, best_key
+        if len(pre) + len(suf) > max_affixes or len(rest) < 2:
+            return
+        if (pre or suf) and rest in stock:
+            # Ties prefer suffixes over prefixes: fil+in+et, not fi+lin+et.
+            key = (len(pre) + len(suf), len(pre), stock[rest], -len(rest))
+            if best_key is None or key < best_key:
+                best, best_key = (list(pre), rest, list(reversed(suf))), key
+        for p in prefixes:
+            if rest.startswith(p) and not suf:
+                walk(rest[len(p):], pre + [p], suf)
+        for x in suffixes:
+            if rest.endswith(x):
+                walk(rest[:-len(x)], pre, suf + [x])
+
+    walk(stem, [], [])
+    return best
 
 
 def analyse(token, roots, words):

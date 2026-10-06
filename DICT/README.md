@@ -50,6 +50,14 @@ Candidates judged proper nouns, foreign words, fragments or OCR artefacts are
 excluded by construction; the full verdict record, including disagreements
 between reviewers, is `DICT/verdicts.jsonl`.
 
+**v2 batch 1 (esp-rac, 2026-10-06)** added 487 more entries from the 302-source
+corpus, each attested in 18+ independent sources with the true source count
+(earlier entries' `attestation.sources` is capped at 5 — see
+`DICT/NOTES-v2.md`). 416 of them carry affix segmentation and `grammar_refs`
+to GRAMMAR §2. Gap analysis: `python3 tools/gap_report.py`; review batches:
+`DICT/review/*.tsv`, applied by `tools/apply_review.py`. Corpus-mined total:
+**2703**.
+
 | Kind | Count |
 |---|---|
 | noun | 1315 |
@@ -197,7 +205,8 @@ explains: word-building affixes → §2 (Morfologio), the correlative grid →
 §3 (tabelvortoj), negative correlatives → also §6.2 (single negation),
 `ujo` → §6.1 (country names). 80 entries linked (39 of the 45 correlatives
 — `nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` have no entry in any
-layer yet, a data gap to fill in a future vocabulary pass). Idempotent;
+layer yet, a data gap to fill in a future vocabulary pass). Since esp-rac,
+segmented corpus-mined derivations also link to §2 (414 more; 494 total). Idempotent;
 re-run after any entries.jsonl rebuild.
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28

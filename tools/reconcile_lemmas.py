@@ -67,7 +67,7 @@ def merge(records):
             'lemma': lemma, 'kind': record['kind'], 'count': 0,
             'pos_guess': record.get('pos_guess'), 'forms': {},
             'citations': [], 'shards': [], 'verdict': None, 'gloss': None,
-            'notes': [], 'conflicts': [],
+            'notes': [], 'conflicts': [], 'files': set(),
         })
         entry['count'] += record.get('count', 0)
         if KIND_RANK.get(record['kind'], 9) < KIND_RANK.get(entry['kind'], 9):
@@ -75,6 +75,7 @@ def merge(records):
         for form, n in (record.get('forms') or {}).items():
             entry['forms'][form] = entry['forms'].get(form, 0) + n
         entry['citations'].extend(record.get('citations') or [])
+        entry['files'].update(record.get('files') or [])
         entry['shards'].append(shard)
 
         for field in ('verdict', 'gloss'):
@@ -89,11 +90,21 @@ def merge(records):
                      'kept': entry[field]})
         note = record.get('note')
         if note:
-            entry['notes'].append(note)
+            # mine_lemmas --ledger restores the same ledger note into every
+            # shard holding the lemma, so appending blindly multiplied each
+            # note by the shard count on every re-mine (the 'lo' note had
+            # grown to ~200 copies). Split joined notes and keep each once.
+            for part in note.split('; '):
+                if part and part not in entry['notes']:
+                    entry['notes'].append(part)
 
     for entry in merged.values():
         entry['citations'] = pick_citations(entry['citations'])
-        entry['sources'] = sorted({c['source'] for c in entry['citations']})
+        # Every source the lemma occurs in, not just those cited: citations
+        # are capped at five, which capped attestation.sources at five too.
+        files = entry.pop('files')
+        entry['sources'] = sorted(files or {c['source']
+                                            for c in entry['citations']})
     return merged
 
 

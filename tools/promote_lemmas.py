@@ -35,6 +35,20 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import esperanto  # noqa: E402  (path set above)
 
+# Morpheme glosses come from the UV build, so segmented corpus-mined entries
+# gloss affixes exactly as the Fundamento layer does.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), 'DICT', 'tools'))
+from build_dict import PREFIXES as AFFIX_PREFIX  # noqa: E402
+from build_dict import SUFFIXES as AFFIX_SUFFIX  # noqa: E402
+
+# esperanto.PREFIX also peels el-, for- and ne-, which the UV build glosses
+# nowhere (they are words, not UV affix entries); gloss them here.
+AFFIX_PREFIX = dict(AFFIX_PREFIX, el='out (of)', **{'for': 'away'},
+                    ne='not, un-', retro='backwards')
+AFFIX_SUFFIX = dict(AFFIX_SUFFIX, er='single unit, particle',
+                    ism='doctrine, -ism')
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENTRIES = os.path.join(ROOT, 'DICT', 'entries.jsonl')
 CANDIDATES = os.path.join(ROOT, 'DICT', 'candidates.jsonl')
@@ -112,11 +126,38 @@ def part_of_speech(word, gloss):
     return 'unknown'
 
 
-def morphology(word, pos):
-    """Stem plus ending, the shape UV entries use when affixes do not resolve."""
-    if pos in ENDING_POS.values() and word[-1:] in ENDING_POS:
-        return {'stem': word[:-1], 'ending': word[-1:]}
-    return None
+# Reviewer corrections where the root stock lacks the true root and a
+# plausible-looking wrong split wins: ekspiri is the root ekspir- ('exhale',
+# 'expire'), not ek- + spiri ('start breathing').
+NO_SPLIT = {'ekspiri'}
+
+
+def morphology(word, pos, stock=None):
+    """UV-shaped morphology: affix segmentation where it self-validates.
+
+    With a root stock (esperanto.root_stock) the stem is segmented into
+    prefixes / root / suffixes, glossed like the Fundamento layer; when no
+    split leaves an authoritative root (compounds such as batalkampo), the
+    entry keeps plain stem + ending, the shape UV uses in the same case.
+    """
+    if pos not in ENDING_POS.values() or word[-1:] not in ENDING_POS:
+        return None
+    stem, ending = word[:-1], word[-1:]
+    split = esperanto.segment(stem, stock) \
+        if stock and word not in NO_SPLIT else None
+    if not split:
+        return {'stem': stem, 'ending': ending}
+    prefixes, root, suffixes = split
+    shape = {}
+    if prefixes:
+        shape['prefixes'] = [{'m': m, 'gloss': AFFIX_PREFIX.get(m, '')}
+                             for m in prefixes]
+    shape['stem'] = root
+    if suffixes:
+        shape['suffixes'] = [{'m': m, 'gloss': AFFIX_SUFFIX.get(m, '')}
+                             for m in suffixes]
+    shape['ending'] = ending
+    return shape
 
 
 def is_derived(word, roots, words):
@@ -135,14 +176,16 @@ def is_derived(word, roots, words):
     return esperanto.peel_affixes(bare, roots) in roots
 
 
-def build_entry(record, roots, words):
+def build_entry(record, roots, words, stock=None):
     gloss = (record.get('gloss') or '').strip()
     word = citation_form(record['lemma'], gloss)
     pos = part_of_speech(word, gloss)
     entry = {'word': word, 'pos': pos, 'gloss_en': gloss}
-    shape = morphology(word, pos)
+    shape = morphology(word, pos, stock)
     if shape:
-        entry['root'] = shape['stem']
+        # `root` stays the whole word stem, as on every earlier corpus-mined
+        # entry; the segmented base root is morphology.stem, as in the UV.
+        entry['root'] = word[:-1]
         entry['morphology'] = shape
     entry['source'] = SOURCE_TAG
     entry['attestation'] = {
@@ -190,6 +233,7 @@ def main():
         if stem:
             roots.add(stem.lower())
 
+    stock = esperanto.root_stock(ENTRIES)
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
     with open(args.candidates, encoding='utf-8') as fh:
@@ -203,7 +247,7 @@ def main():
             if not (record.get('gloss') or '').strip():
                 ungloss.append(record['lemma'])
                 continue
-            entry = build_entry(record, roots, words)
+            entry = build_entry(record, roots, words, stock)
             key = entry['word'].lower()
             if key in known:
                 skipped.append((entry['word'], 'already in the dictionary'))
