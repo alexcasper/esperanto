@@ -231,6 +231,19 @@ affix. Batch 5+ reviewers should read the split list as carefully as the
 glosses; a structural fix would add promoted unsplit nouns as roots of
 last resort.
 
+## esp-2sh — roots of last resort from reviewed entries
+
+`esperanto.root_stock(mined_roots=True, no_split=NO_SPLIT)` (used by
+`promote_lemmas`) adds, at rank 4, the stem of every corpus-mined entry that
+is stored unsplit **and** either has no affix reading at all or is a reviewer
+`NO_SPLIT`. 988 stems join: loanwords (*fjord-*, *monark-*, *socialism-*,
+*barier-*, *pirat-*, *rutin-*) and opaque compounds (*grenkamp-*,
+*skribtabl-*). Transparent derivations stored unsplit by the earliest layer
+are deliberately excluded — *virin-* would otherwise turn *virineto* into
+*virin+et*. Effect: 0 existing v2 entries change; future derivations split
+on the loanword (*barierego* = *barier+eg*, *forumano* = *forum+an*,
+*monarkino* = *monark+in*), where before they would have needed overrides.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in

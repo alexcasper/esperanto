@@ -276,7 +276,10 @@ def main():
         if stem:
             roots.add(stem.lower())
 
-    stock = esperanto.root_stock(ENTRIES)
+    # Reviewed unsplittable stems join as roots of last resort (esp-2sh),
+    # so later derivations of corpus loanwords split on the loanword root.
+    stock = esperanto.root_stock(ENTRIES, mined_roots=True,
+                                 no_split=NO_SPLIT)
     resegmented = 0
     if args.resegment:
         batches = {}
