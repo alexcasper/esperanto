@@ -35,9 +35,36 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import esperanto  # noqa: E402  (path set above)
 
+# Morpheme glosses come from the UV build, so segmented corpus-mined entries
+# gloss affixes exactly as the Fundamento layer does.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), 'DICT', 'tools'))
+from build_dict import PREFIXES as AFFIX_PREFIX  # noqa: E402
+from build_dict import SUFFIXES as AFFIX_SUFFIX  # noqa: E402
+
+# esperanto.PREFIX also peels el-, for- and ne-, which the UV build glosses
+# nowhere (they are words, not UV affix entries); gloss them here.
+AFFIX_PREFIX = dict(AFFIX_PREFIX, el='out (of)', **{'for': 'away'},
+                    ne='not, un-', retro='backwards')
+# Prepositions/adverbs used as prefixes (esp-4qi): glossed by their meaning
+# as a prefix, the way the UV glosses mal- or re-.
+AFFIX_PREFIX.update({
+    'al': 'to, towards', 'antaŭ': 'before, fore-', 'apud': 'beside',
+    'ĉe': 'at', 'ĉirkaŭ': 'around', 'de': 'off, away from',
+    'ekster': 'outside, extra-', 'en': 'in, into', 'inter': 'between, mutual',
+    'kontraŭ': 'against, counter-', 'kun': 'with, together',
+    'post': 'after, behind', 'preter': 'past, beyond', 'pri': 'about; '
+    'transitivising', 'sen': 'without, -less', 'sub': 'under, sub-',
+    'super': 'over, above', 'sur': 'on, upon', 'tra': 'through',
+    'trans': 'across, trans-', 'pli': 'more', 'supren': 'upwards',
+    'malsupren': 'downwards'})
+AFFIX_SUFFIX = dict(AFFIX_SUFFIX, er='single unit, particle',
+                    ism='doctrine, -ism')
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENTRIES = os.path.join(ROOT, 'DICT', 'entries.jsonl')
 CANDIDATES = os.path.join(ROOT, 'DICT', 'candidates.jsonl')
+LEDGER = os.path.join(ROOT, 'DICT', 'verdicts.jsonl')
 
 ALPHA = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
 RANK = {c: i for i, c in enumerate(ALPHA)}
@@ -112,11 +139,63 @@ def part_of_speech(word, gloss):
     return 'unknown'
 
 
-def morphology(word, pos):
-    """Stem plus ending, the shape UV entries use when affixes do not resolve."""
-    if pos in ENDING_POS.values() and word[-1:] in ENDING_POS:
-        return {'stem': word[:-1], 'ending': word[-1:]}
-    return None
+# Reviewer corrections where the root stock lacks the true root and a
+# plausible-looking wrong split wins: ekspiri is the root ekspir- ('exhale',
+# 'expire'), not ek- + spiri ('start breathing').
+NO_SPLIT = {'ekspiri', 'ŝovinismo',
+            # familiar- and vizaĵ- are roots absent from the stock
+            'familiara', 'familiare', 'vizaĵo',
+            # loanword roots whose tails look like affixes (barier-, demonstr-,
+            # diletant-, pirat-, rutin-), and laŭ+regul (laŭ- not modelled)
+            'bariero', 'demonstri', 'diletanto', 'pirato', 'rutina', 'rutino',
+            'laŭregula'}
+# Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
+# restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
+SPLIT_OVERRIDE = {
+    'restarigi': (['re'], 'star', ['ig']),
+    'restariĝi': (['re'], 'star', ['iĝ']),
+    'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
+    'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
+}
+
+
+def morphology(word, pos, stock=None):
+    """UV-shaped morphology: affix segmentation where it self-validates.
+
+    With a root stock (esperanto.root_stock) the stem is segmented into
+    prefixes / root / suffixes, glossed like the Fundamento layer; when no
+    split leaves an authoritative root (compounds such as batalkampo), the
+    entry keeps plain stem + ending, the shape UV uses in the same case.
+    """
+    if pos not in ENDING_POS.values() or word[-1:] not in ENDING_POS:
+        return None
+    stem, ending = word[:-1], word[-1:]
+    split = SPLIT_OVERRIDE.get(word) or (
+        esperanto.segment(stem, stock)
+        if stock and word not in NO_SPLIT and not is_numeral(stem) else None)
+    if split and split is not SPLIT_OVERRIDE.get(word):
+        # A two-radiko compound beats a split that needs a rare prefix or
+        # the rare -op-: bon+ord (bonorde), not bo+nord; mont+o+pint, not
+        # mont+op+int. Not participles — they are too common, and short
+        # roots make false compounds of them (verk+ant is not ver+kant).
+        prefixes, _, suffixes = split
+        odd = any(p in esperanto.RARE_PREFIX for p in prefixes) or \
+            'op' in suffixes
+        if odd and esperanto.compound(stem, stock):
+            split = None
+    if not split:
+        return {'stem': stem, 'ending': ending}
+    prefixes, root, suffixes = split
+    shape = {}
+    if prefixes:
+        shape['prefixes'] = [{'m': m, 'gloss': AFFIX_PREFIX.get(m, '')}
+                             for m in prefixes]
+    shape['stem'] = root
+    if suffixes:
+        shape['suffixes'] = [{'m': m, 'gloss': AFFIX_SUFFIX.get(m, '')}
+                             for m in suffixes]
+    shape['ending'] = ending
+    return shape
 
 
 def is_derived(word, roots, words):
@@ -135,14 +214,16 @@ def is_derived(word, roots, words):
     return esperanto.peel_affixes(bare, roots) in roots
 
 
-def build_entry(record, roots, words):
+def build_entry(record, roots, words, stock=None):
     gloss = (record.get('gloss') or '').strip()
     word = citation_form(record['lemma'], gloss)
     pos = part_of_speech(word, gloss)
     entry = {'word': word, 'pos': pos, 'gloss_en': gloss}
-    shape = morphology(word, pos)
+    shape = morphology(word, pos, stock)
     if shape:
-        entry['root'] = shape['stem']
+        # `root` stays the whole word stem, as on every earlier corpus-mined
+        # entry; the segmented base root is morphology.stem, as in the UV.
+        entry['root'] = word[:-1]
         entry['morphology'] = shape
     entry['source'] = SOURCE_TAG
     entry['attestation'] = {
@@ -163,6 +244,11 @@ def main():
     parser.add_argument('--rebuild', action='store_true',
                         help='drop existing corpus-mined entries first, so the '
                              'promotion can be re-run after a review round')
+    parser.add_argument('--resegment', metavar='BATCH_PREFIX', default=None,
+                        help='recompute morphology of existing corpus-mined '
+                             'entries reviewed in a ledger batch whose name '
+                             'starts with BATCH_PREFIX (e.g. v2-), after the '
+                             'segmenter improves; nothing else is touched')
     args = parser.parse_args()
 
     if not os.path.exists(args.candidates):
@@ -190,6 +276,24 @@ def main():
         if stem:
             roots.add(stem.lower())
 
+    stock = esperanto.root_stock(ENTRIES)
+    resegmented = 0
+    if args.resegment:
+        batches = {}
+        with open(LEDGER, encoding='utf-8') as fh:
+            for line in fh:
+                if line.strip():
+                    rec = json.loads(line)
+                    batches[rec['lemma']] = rec.get('reviewed_in') or []
+        for entry in existing:
+            if entry.get('source') != SOURCE_TAG or not any(
+                    b.startswith(args.resegment)
+                    for b in batches.get(entry['word'], [])):
+                continue
+            shape = morphology(entry['word'], entry['pos'], stock)
+            if shape and shape != entry.get('morphology'):
+                entry['morphology'] = shape
+                resegmented += 1
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
     with open(args.candidates, encoding='utf-8') as fh:
@@ -203,7 +307,7 @@ def main():
             if not (record.get('gloss') or '').strip():
                 ungloss.append(record['lemma'])
                 continue
-            entry = build_entry(record, roots, words)
+            entry = build_entry(record, roots, words, stock)
             key = entry['word'].lower()
             if key in known:
                 skipped.append((entry['word'], 'already in the dictionary'))
@@ -236,6 +340,8 @@ def main():
     derived = sum(1 for e in promoted if e.get('derived'))
     if dropped:
         print('  rebuild: dropped %d existing corpus-mined entries' % dropped)
+    if args.resegment:
+        print('  resegment: %d entries got new morphology' % resegmented)
     print('  dictionary: %d → %d entries (%d flagged derived)'
           % (len(existing), len(merged), derived))
     print('  by pos: %s' % ', '.join('%s=%d' % kv for kv in

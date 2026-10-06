@@ -34,6 +34,8 @@ CORRELATIVE_INITS = ('i', 'ki', 'ti', 'ĉi', 'neni')
 
 NEGATIVE = re.compile(r'^neni')
 
+PARTICIPLE_MORPHEMES = {'ant', 'int', 'ont', 'at', 'it', 'ot'}
+
 
 def refs_for(entry):
     word = entry['word']
@@ -78,6 +80,18 @@ def refs_for(entry):
     # 7. Indefinite preposition je -> 6.13
     if word == 'je' and pos == 'prep':
         refs.append(('6.13', 'Indefinite preposition je'))
+    # 5. Corpus-mined derivations whose morphology is segmented into affixes
+    #    (tools/promote_lemmas.py) -> section 2, so a reader of ekridi or
+    #    kompatindulo can reach the affix table that explains the word.
+    #    Scoped to corpus-mined: other layers' segmentation predates the
+    #    root-stock check and is not reliable enough to link from.
+    morph = entry.get('morphology') or {}
+    if entry.get('source') == 'corpus-mined' and \
+            (morph.get('prefixes') or morph.get('suffixes')):
+        refs.append(('2', 'Morfologio — affix inventory'))
+        if any(s.get('m') in PARTICIPLE_MORPHEMES
+               for s in morph.get('suffixes') or []):
+            refs.append(('2', 'Morfologio — participles'))
 
     return refs
 

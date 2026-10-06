@@ -25,9 +25,19 @@ ENDINGS = ['ajn', 'ojn', 'aj', 'oj', 'an', 'on', 'en', 'as', 'is', 'os', 'us',
 PARTICIPLE = ['ant', 'int', 'ont', 'at', 'it', 'ot']
 PREFIX = ['mal', 'ne', 'ge', 'bo', 'ek', 'el', 're', 'dis', 'for', 'pra',
           'eks', 'mis', 'fi', 'retro']
+# Prepositions and adverbs used as prefixes (esp-4qi): enpaŝi, kuniri,
+# transsalti, surgenue, sencela, pliboniĝi, suprenrigardi. Not affixes in the
+# UV's sense, but Esperanto word-building treats them the same way, and
+# without them those words were filed as unknown roots.
+PREP_PREFIX = ['al', 'antaŭ', 'apud', 'ĉe', 'ĉirkaŭ', 'de', 'ekster', 'en',
+               'inter', 'kontraŭ', 'kun', 'post', 'preter', 'pri', 'sen',
+               'sub', 'super', 'sur', 'tra', 'trans', 'pli', 'supren',
+               'malsupren']
+# 'il' (instrument: tranĉilo, apogilo) was missing, so every -ilo word on a
+# known root fell through to 'unknown' and inflated the gap queue.
 SUFFIX = ['estr', 'ebl', 'ind', 'em', 'ec', 'aĵ', 'ist', 'an', 'ul', 'in',
           'id', 'ig', 'iĝ', 'uj', 'op', 'obl', 'on', 'eg', 'et', 'ar', 'er',
-          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism']
+          'ej', 'ad', 'aĉ', 'ĉj', 'nj', 'um', 'end', 'ism', 'il']
 
 # Closed classes that carry no root: they are words in their own right.
 GRAMMATICAL = {
@@ -78,7 +88,8 @@ def peel_affixes(stem, roots, max_depth=4):
     """
     if stem in roots:
         return stem
-    affixes = sorted(set(PREFIX + PARTICIPLE + SUFFIX), key=len, reverse=True)
+    affixes = sorted(set(PREFIX + PREP_PREFIX + PARTICIPLE + SUFFIX),
+                     key=len, reverse=True)
     seen = {stem}
     frontier = [stem]
     for _ in range(max_depth):
@@ -98,6 +109,141 @@ def peel_affixes(stem, roots, max_depth=4):
             break
         frontier = nxt
     return stem
+
+
+AFFIX_MORPHEMES = set(PREFIX + SUFFIX + PARTICIPLE)
+NON_DERIVING = {'kaj', 'aŭ', 'ke', 'ĉu', 'se', 'ĉar', 'ol', 'nek', 'do', 'sed',
+                'jes', 'ja', 'ankaŭ', 'eĉ', 'nur'}
+# Rare prefixes: a split that needs one is the less likely reading when an
+# equally short split exists without it (fil+in+et, not fi+lin+et).
+RARE_PREFIX = {'fi', 'bo', 'eks', 'mis', 'pra', 'retro'}
+
+
+def root_stock(path=ENTRIES):
+    """Base roots with an authority rank (lower is better), for segment().
+
+    load_vocabulary's roots are too loose for segmentation: corpus-mined and
+    O'Connor entries record the whole word stem as `root` (ebligi -> eblig),
+    so any word would 'segment' onto itself. Only layers that cite a real
+    radiko are used: the Fundamento's morphology stem, then ReVo's root,
+    ranked UV-official, Oficialaj Aldonoj, other ReVo.
+    """
+    stock, productivity = {}, {}
+    with open(path, encoding='utf-8') as fh:
+        for line in fh:
+            if not line.strip():
+                continue
+            entry = json.loads(line)
+            source = entry.get('source') or ''
+            if source.startswith('Fundamento'):
+                # Both: `root` is the radiko as the UV cites it (ripet',
+                # lern'ej'), while morphology.stem is the UV build's own
+                # segmentation, which over-splits some roots (ripet -> rip+et).
+                found = [entry.get('root'),
+                         (entry.get('morphology') or {}).get('stem')]
+                rank = 0
+            elif source.startswith('ReVo'):
+                found = [entry.get('root')]
+                rank = 1 if source == 'ReVo/UV-*' else \
+                    2 if source.startswith('ReVo/OA') else 3
+            else:
+                continue
+            for root in found:
+                if root and len(root) >= 2:
+                    root = root.lower()
+                    stock[root] = min(rank, stock.get(root, 9))
+            # Productivity: how many entries (any layer) build on the root.
+            for r in {entry.get('root'),
+                      (entry.get('morphology') or {}).get('stem')}:
+                if r:
+                    productivity[r.lower()] = productivity.get(r.lower(), 0) + 1
+    # Prepositions and particles derive too (superulo, treege, malantaŭa).
+    # Without them, 'super' could only split as sup ('soup') + er + ul.
+    # Two-letter pronouns are left out: they turned geniulo into ge+ni+ul.
+    # The UV layer files them with a `root` too, so remove rather than skip.
+    # Conjunctions and particles never carry derivation: nek as a root
+    # turned nekonatulo into nek+on+at+ul.
+    for word in GRAMMATICAL - NON_DERIVING:
+        if len(word) >= 3:
+            stock[word] = 0
+        else:
+            stock.pop(word, None)
+    for word in NON_DERIVING:
+        stock.pop(word, None)
+    # segment() compares (rank, -productivity): authority first, then the
+    # root with more derivatives (fort- over teg- 'cover' in fortege).
+    return {root: (rank, -productivity.get(root, 0))
+            for root, rank in stock.items()}
+
+
+def segment(stem, stock, max_affixes=3):
+    """Split a stem into (prefixes, root, suffixes), or None.
+
+    Unlike peel_affixes, which only answers whether a known root is inside,
+    this returns the path, so an entry can carry the UV-style morphology
+    (`prefixes` / `stem` / `suffixes`). Self-validating like the UV layer:
+    every peeled morpheme is in the affix inventory and the remainder is a
+    root in `stock` (see root_stock). Among valid splits: fewest affixes,
+    then fewest rare prefixes, then the most authoritative and productive
+    root — so reĝino is reĝ+in (Fundamento), not
+    re+ĝin ('gin', Oficialaj Aldonoj 2).
+    """
+    if stem in stock:
+        # The stem is itself a radiko (demand-, not de+mand-): nothing to
+        # segment, however plausible a split looks.
+        return None
+    prefixes = sorted(set(PREFIX + PREP_PREFIX), key=len, reverse=True)
+    suffixes = sorted(set(SUFFIX + PARTICIPLE), key=len, reverse=True)
+    best, best_key = None, None
+
+    def walk(rest, pre, suf):
+        nonlocal best, best_key
+        if len(pre) + len(suf) > max_affixes or len(rest) < 2:
+            return
+        # An affix morpheme is a root in its own right only after a true
+        # affix (mal+ebl, ar+eg): after any other prefix it is a misreading
+        # (forumo is a root, not for + um-); after a preposition,
+        # e.g. eniĝi read as en + iĝ- with iĝ as the stem; ig/iĝ never are
+        # (neforigebla is ne+for+ig+ebl, not a root 'ig').
+        affix_root = rest in AFFIX_MORPHEMES and (
+            any(p not in ('mal', 'ne') for p in pre) or rest in ('ig', 'iĝ'))
+        if (pre or suf) and rest in stock and not affix_root:
+            # Ties: avoid rare prefixes (fil+in+et, not fi+lin+et); then the
+            # better-ranked, then the more productive root (re+leg, not
+            # rel 'rail' + eg; fort+eg, not for+teg 'cover').
+            rare = sum(1 for p in pre if p in RARE_PREFIX)
+            key = (len(pre) + len(suf), rare, stock[rest], -len(rest))
+            if best_key is None or key < best_key:
+                best, best_key = (list(pre), rest, list(reversed(suf))), key
+        for p in prefixes:
+            if rest.startswith(p) and not suf:
+                walk(rest[len(p):], pre + [p], suf)
+        for x in suffixes:
+            if rest.endswith(x):
+                walk(rest[:-len(x)], pre, suf + [x])
+
+    walk(stem, [], [])
+    return best
+
+
+def compound(stem, stock, min_part=3):
+    """True if the stem is two radikoj joined directly or by a linking -o-
+    (bon+ord, mont+o+pint, batal+kamp). Such words are compounds: affix
+    segmentation of them (bo+nord, mont+op+int) is a coincidence."""
+    def radiko(part):
+        # Affix morphemes and closed-class words are not compound members:
+        # traduk+int is a participle, pra+nep a prefixed word.
+        return part in stock and part not in AFFIX_MORPHEMES \
+            and part not in GRAMMATICAL and part not in PREP_PREFIX
+
+    for cut in range(min_part, len(stem) - min_part + 1):
+        head, tail = stem[:cut], stem[cut:]
+        if radiko(head) and radiko(tail):
+            return True
+        if tail.startswith('o') and len(tail) > min_part and \
+                radiko(head) and radiko(tail[1:]):
+            return True
+    return False
 
 
 def analyse(token, roots, words):
