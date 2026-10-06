@@ -144,13 +144,18 @@ def part_of_speech(word, gloss):
 # 'expire'), not ek- + spiri ('start breathing').
 NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # familiar- and vizaĵ- are roots absent from the stock
-            'familiara', 'familiare', 'vizaĵo'}
+            'familiara', 'familiare', 'vizaĵo',
+            # loanword roots whose tails look like affixes (barier-, demonstr-,
+            # diletant-, pirat-, rutin-), and laŭ+regul (laŭ- not modelled)
+            'bariero', 'demonstri', 'diletanto', 'pirato', 'rutina', 'rutino',
+            'laŭregula'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
     'restarigi': (['re'], 'star', ['ig']),
     'restariĝi': (['re'], 'star', ['iĝ']),
     'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
+    'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
 }
 
 

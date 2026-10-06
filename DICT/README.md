@@ -57,8 +57,8 @@ corpus, each attested in 18+ independent sources with the true source count
 to GRAMMAR §2. Gap analysis: `python3 tools/gap_report.py`; review batches:
 `DICT/review/*.tsv`, applied by `tools/apply_review.py`. **Batch 2
 (esp-xge)** added 489 more (11–36 sources each), **batch 3 (esp-ytn)** 484
-(8–11). Corpus-mined total: **3676** (1460 from v2 batches, 1289 of them
-segmented and linked to §2).
+(8–11), **batch 4 (esp-e26)** 485 (6–8). Corpus-mined total: **4161** (1945
+from v2 batches, 1665 of them segmented and linked to §2).
 
 | Kind | Count |
 |---|---|
@@ -208,7 +208,7 @@ explains: word-building affixes → §2 (Morfologio), the correlative grid →
 `ujo` → §6.1 (country names). 80 entries linked (39 of the 45 correlatives
 — `nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` have no entry in any
 layer yet, a data gap to fill in a future vocabulary pass). Since esp-rac,
-segmented corpus-mined derivations also link to §2 (1289 more; 1369 total). Idempotent;
+segmented corpus-mined derivations also link to §2 (1665 more; 1745 total). Idempotent;
 re-run after any entries.jsonl rebuild.
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28

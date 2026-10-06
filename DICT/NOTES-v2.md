@@ -203,6 +203,34 @@ Totals after batch 3: **1460** v2 entries, **1289** segmented and linked to
 GRAMMAR §2; dictionary **26126**; queue **2129** (415 new stems/compounds,
 1714 derivations).
 
+## Batch 4 (esp-e26) — 500 reviewed, 485 promoted
+
+`DICT/review/v2-batch4-{a,b}.tsv`, sources 8–6.
+
+- **485 lemma** (216 noun, 163 verb, 83 adj, 22 adv, 1 interj — *haha*).
+- **15 rejected**: names (*pierre*, *genova*, *evo*, *victoria*, *aba*),
+  English/German/French (*came*, *seine*, *ohne*, *auxiliaire*, *kai*), OCR
+  (*uzkondjĉo*, *ga* mojibake, *ei* fragment), and two `uncertain`
+  (*opulo*; *leto*, whose only citation is truncated).
+- **Segmentation**: of 485 splits, ~470 read correctly. The misses were all
+  loanword roots absent from the stock whose tails look like affixes
+  (*bari+er*, *de+monstr*, *dil+et+ant*, *pir+at*, *rut+in*,
+  *kam+ar+ad+ec*), plus *for+um* for *forumo*. Rule tightened: an affix
+  morpheme may serve as root only after *mal-*/*ne-* (*malebla*) or bare
+  (*arego*); the rest are `NO_SPLIT` / `SPLIT_OVERRIDE` entries.
+  `--resegment v2-` changed exactly those 9.
+
+Totals after batch 4: **1945** v2 entries, **1665** segmented and linked;
+dictionary **26611**; queue **1595**, all at 3–6 sources (109 at 6, 403 at
+5, 524 at 4, 559 at 3).
+
+**The loanword-root gap** is the remaining systematic weakness: the stock
+holds only UV and ReVo radikoj, so a corpus loanword missing from both
+(*bariero*, *pirato*, *rutino*) can be mis-split if its ending resembles an
+affix. Batch 5+ reviewers should read the split list as carefully as the
+glosses; a structural fix would add promoted unsplit nouns as roots of
+last resort.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -227,7 +255,8 @@ them. esp-58p must resolve this before any rebuild.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 2129 lemmas remain queued after batch 3, all at ≤ 8
-  sources; batch 4 takes the 8–6 band. The *thin* bucket (11055) needs a different bar than
+- **Next batches**: 1595 remain after batch 4, all at 3–6 sources. Evidence
+  is thinner here — expect a higher rejection rate and read citations for
+  every unknown-kind lemma. The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.

@@ -201,11 +201,12 @@ def segment(stem, stock, max_affixes=3):
         if len(pre) + len(suf) > max_affixes or len(rest) < 2:
             return
         # An affix morpheme is a root in its own right only after a true
-        # affix (mal+ebl, ar+eg): after a preposition it is a misreading,
+        # affix (mal+ebl, ar+eg): after any other prefix it is a misreading
+        # (forumo is a root, not for + um-); after a preposition,
         # e.g. eniĝi read as en + iĝ- with iĝ as the stem; ig/iĝ never are
         # (neforigebla is ne+for+ig+ebl, not a root 'ig').
         affix_root = rest in AFFIX_MORPHEMES and (
-            any(p in PREP_PREFIX for p in pre) or rest in ('ig', 'iĝ'))
+            any(p not in ('mal', 'ne') for p in pre) or rest in ('ig', 'iĝ'))
         if (pre or suf) and rest in stock and not affix_root:
             # Ties: avoid rare prefixes (fil+in+et, not fi+lin+et); then the
             # better-ranked, then the more productive root (re+leg, not
