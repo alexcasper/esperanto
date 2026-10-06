@@ -36,13 +36,22 @@ unchangeable core vocabulary of the language.
 `CORPUS/` and reviewed by hand across two rounds: the internationalisms
 Esperanto took on after the Fundamento (*kongreso*, *telefono*, *aeroplano*,
 *sennaciismo*), lexicalised compounds (*lernolibro*, *samideano*) and
-productive derivations (*virino*, *malgranda*, *esperantisto*). 1592 are
-attested in three or more independent sources.
+productive derivations (*virino*, *malgranda*, *esperantisto*). 2034 are
+attested in three or more independent sources (recounted in esp-58p, below).
 
-555 entries carry `derived: true`, marking a word built by regular affixation
-on a root already held — *abonanto*, *agado*, *aliulo*. Settled policy is that
-these earn entries, because a reader looking up *reĝino* should find it; the
-flag lets a consumer wanting only roots and opaque compounds filter them out.
+`derived: true` marks a word built by regular affixation on a root already
+held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
+that the entry's `morphology` carries a self-validating affix segmentation
+(`prefixes`/`suffixes`); 2977 of the 4644 corpus-mined entries. Settled
+policy is that these earn entries, because a reader looking up *reĝino*
+should find it; the flag lets a consumer wanting only roots and opaque
+compounds filter them out.
+
+**Attestation** (`count`, `sources`) on every corpus-mined entry is a direct
+corpus scan of the word's regular inflected forms (`tools/attest_scan.py`,
+esp-58p), over the same files the miner reads. It replaced two undercounts:
+the pre-v2 layer's `sources` was capped at 5, and the miner drops a form seen
+only once in a shard.
 
 Mined by `tools/mine_lemmas.py`, reviewed via `tools/review_shard.py`, merged
 by `tools/reconcile_lemmas.py` and written here by `tools/promote_lemmas.py`.
@@ -51,15 +60,15 @@ excluded by construction; the full verdict record, including disagreements
 between reviewers, is `DICT/verdicts.jsonl`.
 
 **v2 batch 1 (esp-rac, 2026-10-06)** added 487 more entries from the 302-source
-corpus, each attested in 18+ independent sources with the true source count
-(earlier entries' `attestation.sources` is capped at 5 — see
-`DICT/NOTES-v2.md`). 416 of them carry affix segmentation and `grammar_refs`
+corpus, each attested in 18+ independent sources (see `DICT/NOTES-v2.md`).
+416 of them carry affix segmentation and `grammar_refs`
 to GRAMMAR §2. Gap analysis: `python3 tools/gap_report.py`; review batches:
 `DICT/review/*.tsv`, applied by `tools/apply_review.py`. **Batch 2
 (esp-xge)** added 489 more (11–36 sources each), **batch 3 (esp-ytn)** 484
 (8–11), **batch 4 (esp-e26)** 485 (6–8), **batch 5 (esp-eb7)** 483 (5–6).
-Corpus-mined total: **4644** (2428 from v2 batches, 2061 of them segmented
-and linked to §2).
+Corpus-mined total: **4644** (2428 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **2977** corpus-mined entries now carry affix
+segmentation and `grammar_refs` to §2.
 
 | Kind | Count |
 |---|---|
@@ -209,7 +218,7 @@ explains: word-building affixes → §2 (Morfologio), the correlative grid →
 `ujo` → §6.1 (country names). 80 entries linked (39 of the 45 correlatives
 — `nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` have no entry in any
 layer yet, a data gap to fill in a future vocabulary pass). Since esp-rac,
-segmented corpus-mined derivations also link to §2 (2061 more; 2141 total). Idempotent;
+segmented corpus-mined derivations also link to §2 (2977 more; 3057 total). Idempotent;
 re-run after any entries.jsonl rebuild.
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28

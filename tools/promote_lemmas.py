@@ -34,6 +34,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import esperanto  # noqa: E402  (path set above)
+import attest_scan  # noqa: E402
 
 # Morpheme glosses come from the UV build, so segmented corpus-mined entries
 # gloss affixes exactly as the Fundamento layer does.
@@ -169,7 +170,16 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # loanword roots whose tails look like affixes (barier-, demonstr-,
             # diletant-, pirat-, rutin-), and laŭ+regul (laŭ- not modelled)
             'bariero', 'demonstri', 'diletanto', 'pirato', 'rutina', 'rutino',
-            'laŭregula', 'platano', 'ŝovinista'}
+            'laŭregula', 'platano', 'ŝovinista',
+            # esp-58p, legacy layer: Latinate loanwords whose edges look
+            # like al-/de-/for-/pri-/re-/sen- or -at/-on/-an (al+bum, for+tun,
+            # pri+or, re+vu, sen+at, pi+an), and ĉiujare (ĉiu+jar)
+            'albumo', 'alkalia', 'aparato', 'barono', 'blazono', 'deficito',
+            'definitiva', 'definitive', 'deklaro', 'depreso', 'diplomato',
+            'durada', 'ekskremento', 'elipso', 'fortuno', 'kamarado',
+            'komisiono', 'magistrato', 'maĵorato', 'piano',
+            'prioro', 'revuo', 'senato', 'sindikato', 'trapezo',
+            'ĉiujare'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -177,6 +187,7 @@ SPLIT_OVERRIDE = {
     'restariĝi': (['re'], 'star', ['iĝ']),
     'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
     'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
+    'nevino': ([], 'nev', ['in']),             # not ne+vin
 }
 
 
@@ -226,22 +237,6 @@ def morphology(word, pos, stock=None):
     return shape
 
 
-def is_derived(word, roots, words):
-    """True if the word is built by regular affixation on a root we hold.
-
-    Settled policy: a productive derivation (reĝino, duono, treege) earns an
-    entry, but is flagged, so a consumer wanting only roots and opaque
-    compounds can filter on it. Reviewers disagreed 37 times about whether
-    such words were headwords or inflections; both readings were defensible,
-    so the dictionary records the fact rather than picking a side and
-    discarding the other reading's view.
-    """
-    bare = word[:-1] if word[-1:] in ENDING_POS else word
-    if bare in roots or bare in words:
-        return False
-    return esperanto.peel_affixes(bare, roots) in roots
-
-
 def build_entry(record, roots, words, stock=None):
     gloss = (record.get('gloss') or '').strip()
     word = citation_form(record['lemma'], gloss)
@@ -260,9 +255,21 @@ def build_entry(record, roots, words, stock=None):
     }
     entry['citations'] = [{'source': c['source'], 'text': c['text']}
                           for c in (record.get('citations') or [])[:3]]
-    if is_derived(word, roots, words):
+    if is_segmented(shape):
         entry['derived'] = True
     return entry
+
+
+def is_segmented(shape):
+    """`derived` means: the word has a self-validating affix segmentation.
+
+    Settled in esp-58p. The older test (is_derived: peel affixes against every
+    root and word in the file) flagged loanwords like bariero and pirato as
+    derived once ReVo's roots were in the vocabulary, and missed derivations
+    on roots it lacked. Tying the flag to the segmentation shown in
+    `morphology` makes the two agree by construction.
+    """
+    return bool(shape and (shape.get('prefixes') or shape.get('suffixes')))
 
 
 def main():
@@ -277,6 +284,12 @@ def main():
                              'entries reviewed in a ledger batch whose name '
                              'starts with BATCH_PREFIX (e.g. v2-), after the '
                              'segmenter improves; nothing else is touched')
+    parser.add_argument('--refresh-attestation', action='store_true',
+                        help='recount attestation of every corpus-mined entry '
+                             'by direct corpus scan (tools/attest_scan.py)')
+    parser.add_argument('--rederive', action='store_true',
+                        help='set `derived` on every corpus-mined entry from '
+                             'its morphology (see is_segmented)')
     args = parser.parse_args()
 
     if not os.path.exists(args.candidates):
@@ -285,9 +298,10 @@ def main():
 
     with open(ENTRIES, encoding='utf-8') as fh:
         existing = [json.loads(line) for line in fh if line.strip()]
-    dropped = 0
+    dropped, set_aside = 0, []
     if args.rebuild:
         before = len(existing)
+        set_aside = [e for e in existing if e.get('source') == SOURCE_TAG]
         existing = [e for e in existing if e.get('source') != SOURCE_TAG]
         dropped = before - len(existing)
     known = {e['word'].lower() for e in existing}
@@ -354,6 +368,43 @@ def main():
             seen.add(key)
             promoted.append(entry)
 
+    # Lossless rebuild (esp-58p): a promoted entry whose ledger verdict no
+    # longer attaches to a mined key (its inflections now fold under its own
+    # stem) is kept as it was rather than silently dropped.
+    kept = []
+    if set_aside:
+        rebuilt = {e['word'].lower() for e in promoted}
+        kept = [e for e in set_aside if e['word'].lower() not in rebuilt]
+        existing = existing + kept
+
+    rederived = 0
+    if args.rederive:
+        for entry in existing:
+            if entry.get('source') != SOURCE_TAG:
+                continue
+            flag = is_segmented(entry.get('morphology'))
+            if flag != bool(entry.get('derived')):
+                rederived += 1
+                if flag:
+                    entry['derived'] = True
+                else:
+                    entry.pop('derived', None)
+
+    # Attestation by direct scan for new entries, and for every corpus-mined
+    # entry on request; the miner's counts are per-shard filtered (a form
+    # seen once in a shard is dropped) and so understate breadth.
+    reattested = 0
+    targets = list(promoted)
+    if args.refresh_attestation:
+        targets += [e for e in existing if e.get('source') == SOURCE_TAG]
+    if targets:
+        counts = attest_scan.attest([(e['word'], e['pos']) for e in targets])
+        for entry in targets:
+            att = counts[entry['word']]
+            if att['count'] and att != entry.get('attestation'):
+                entry['attestation'] = att
+                reattested += 1
+
     merged = sorted(existing + promoted, key=lambda e: sortkey(e['word']))
     if not args.dry_run:
         tmp = ENTRIES + '.tmp'
@@ -370,7 +421,12 @@ def main():
              len(skipped), len(ungloss)))
     derived = sum(1 for e in promoted if e.get('derived'))
     if dropped:
-        print('  rebuild: dropped %d existing corpus-mined entries' % dropped)
+        print('  rebuild: set aside %d corpus-mined entries, kept %d whose '
+              'verdict no longer attaches' % (dropped, len(kept)))
+    if args.rederive:
+        print('  rederive: %d derived flags changed' % rederived)
+    if reattested:
+        print('  attestation: %d entries recounted by corpus scan' % reattested)
     if args.resegment:
         print('  resegment: %d entries got new morphology' % resegmented)
     print('  dictionary: %d → %d entries (%d flagged derived)'
