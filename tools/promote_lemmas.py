@@ -64,6 +64,7 @@ AFFIX_SUFFIX = dict(AFFIX_SUFFIX, er='single unit, particle',
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENTRIES = os.path.join(ROOT, 'DICT', 'entries.jsonl')
 CANDIDATES = os.path.join(ROOT, 'DICT', 'candidates.jsonl')
+LEDGER = os.path.join(ROOT, 'DICT', 'verdicts.jsonl')
 
 ALPHA = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
 RANK = {c: i for i, c in enumerate(ALPHA)}
@@ -141,7 +142,13 @@ def part_of_speech(word, gloss):
 # Reviewer corrections where the root stock lacks the true root and a
 # plausible-looking wrong split wins: ekspiri is the root ekspir- ('exhale',
 # 'expire'), not ek- + spiri ('start breathing').
-NO_SPLIT = {'ekspiri'}
+NO_SPLIT = {'ekspiri', 'ŝovinismo'}
+# Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
+# restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
+SPLIT_OVERRIDE = {
+    'restarigi': (['re'], 'star', ['ig']),
+    'restariĝi': (['re'], 'star', ['iĝ']),
+}
 
 
 def morphology(word, pos, stock=None):
@@ -155,8 +162,9 @@ def morphology(word, pos, stock=None):
     if pos not in ENDING_POS.values() or word[-1:] not in ENDING_POS:
         return None
     stem, ending = word[:-1], word[-1:]
-    split = esperanto.segment(stem, stock) \
-        if stock and word not in NO_SPLIT else None
+    split = SPLIT_OVERRIDE.get(word) or (
+        esperanto.segment(stem, stock)
+        if stock and word not in NO_SPLIT else None)
     if not split:
         return {'stem': stem, 'ending': ending}
     prefixes, root, suffixes = split
@@ -218,6 +226,11 @@ def main():
     parser.add_argument('--rebuild', action='store_true',
                         help='drop existing corpus-mined entries first, so the '
                              'promotion can be re-run after a review round')
+    parser.add_argument('--resegment', metavar='BATCH_PREFIX', default=None,
+                        help='recompute morphology of existing corpus-mined '
+                             'entries reviewed in a ledger batch whose name '
+                             'starts with BATCH_PREFIX (e.g. v2-), after the '
+                             'segmenter improves; nothing else is touched')
     args = parser.parse_args()
 
     if not os.path.exists(args.candidates):
@@ -246,6 +259,23 @@ def main():
             roots.add(stem.lower())
 
     stock = esperanto.root_stock(ENTRIES)
+    resegmented = 0
+    if args.resegment:
+        batches = {}
+        with open(LEDGER, encoding='utf-8') as fh:
+            for line in fh:
+                if line.strip():
+                    rec = json.loads(line)
+                    batches[rec['lemma']] = rec.get('reviewed_in') or []
+        for entry in existing:
+            if entry.get('source') != SOURCE_TAG or not any(
+                    b.startswith(args.resegment)
+                    for b in batches.get(entry['word'], [])):
+                continue
+            shape = morphology(entry['word'], entry['pos'], stock)
+            if shape and shape != entry.get('morphology'):
+                entry['morphology'] = shape
+                resegmented += 1
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
     with open(args.candidates, encoding='utf-8') as fh:
@@ -292,6 +322,8 @@ def main():
     derived = sum(1 for e in promoted if e.get('derived'))
     if dropped:
         print('  rebuild: dropped %d existing corpus-mined entries' % dropped)
+    if args.resegment:
+        print('  resegment: %d entries got new morphology' % resegmented)
     print('  dictionary: %d → %d entries (%d flagged derived)'
           % (len(existing), len(merged), derived))
     print('  by pos: %s' % ', '.join('%s=%d' % kv for kv in

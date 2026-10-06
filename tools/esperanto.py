@@ -112,6 +112,11 @@ def peel_affixes(stem, roots, max_depth=4):
 
 
 AFFIX_MORPHEMES = set(PREFIX + SUFFIX + PARTICIPLE)
+NON_DERIVING = {'kaj', 'aŭ', 'ke', 'ĉu', 'se', 'ĉar', 'ol', 'nek', 'do', 'sed',
+                'jes', 'ja', 'ankaŭ', 'eĉ', 'nur'}
+# Rare prefixes: a split that needs one is the less likely reading when an
+# equally short split exists without it (fil+in+et, not fi+lin+et).
+RARE_PREFIX = {'fi', 'bo', 'eks', 'mis', 'pra', 'retro'}
 
 
 def root_stock(path=ENTRIES):
@@ -123,7 +128,7 @@ def root_stock(path=ENTRIES):
     radiko are used: the Fundamento's morphology stem, then ReVo's root,
     ranked UV-official, Oficialaj Aldonoj, other ReVo.
     """
-    stock = {}
+    stock, productivity = {}, {}
     with open(path, encoding='utf-8') as fh:
         for line in fh:
             if not line.strip():
@@ -147,16 +152,28 @@ def root_stock(path=ENTRIES):
                 if root and len(root) >= 2:
                     root = root.lower()
                     stock[root] = min(rank, stock.get(root, 9))
+            # Productivity: how many entries (any layer) build on the root.
+            for r in {entry.get('root'),
+                      (entry.get('morphology') or {}).get('stem')}:
+                if r:
+                    productivity[r.lower()] = productivity.get(r.lower(), 0) + 1
     # Prepositions and particles derive too (superulo, treege, malantaŭa).
     # Without them, 'super' could only split as sup ('soup') + er + ul.
     # Two-letter pronouns are left out: they turned geniulo into ge+ni+ul.
     # The UV layer files them with a `root` too, so remove rather than skip.
-    for word in GRAMMATICAL:
+    # Conjunctions and particles never carry derivation: nek as a root
+    # turned nekonatulo into nek+on+at+ul.
+    for word in GRAMMATICAL - NON_DERIVING:
         if len(word) >= 3:
             stock[word] = 0
         else:
             stock.pop(word, None)
-    return stock
+    for word in NON_DERIVING:
+        stock.pop(word, None)
+    # segment() compares (rank, -productivity): authority first, then the
+    # root with more derivatives (fort- over teg- 'cover' in fortege).
+    return {root: (rank, -productivity.get(root, 0))
+            for root, rank in stock.items()}
 
 
 def segment(stem, stock, max_affixes=3):
@@ -167,7 +184,8 @@ def segment(stem, stock, max_affixes=3):
     (`prefixes` / `stem` / `suffixes`). Self-validating like the UV layer:
     every peeled morpheme is in the affix inventory and the remainder is a
     root in `stock` (see root_stock). Among valid splits: fewest affixes,
-    then fewest prefixes, then the most authoritative root — so reĝino is reĝ+in (Fundamento), not
+    then fewest rare prefixes, then the most authoritative and productive
+    root — so reĝino is reĝ+in (Fundamento), not
     re+ĝin ('gin', Oficialaj Aldonoj 2).
     """
     if stem in stock:
@@ -188,8 +206,11 @@ def segment(stem, stock, max_affixes=3):
         affix_root = rest in AFFIX_MORPHEMES and \
             any(p in PREP_PREFIX for p in pre)
         if (pre or suf) and rest in stock and not affix_root:
-            # Ties prefer suffixes over prefixes: fil+in+et, not fi+lin+et.
-            key = (len(pre) + len(suf), len(pre), stock[rest], -len(rest))
+            # Ties: avoid rare prefixes (fil+in+et, not fi+lin+et); then the
+            # better-ranked, then the more productive root (re+leg, not
+            # rel 'rail' + eg; fort+eg, not for+teg 'cover').
+            rare = sum(1 for p in pre if p in RARE_PREFIX)
+            key = (len(pre) + len(suf), rare, stock[rest], -len(rest))
             if best_key is None or key < best_key:
                 best, best_key = (list(pre), rest, list(reversed(suf))), key
         for p in prefixes:

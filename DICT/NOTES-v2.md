@@ -137,12 +137,46 @@ Measured on the same dictionary, old vs new model:
   preposition (*eniĝi* is not *en + iĝ-*). Existing entries are not
   rewritten here — that is the esp-58p re-promotion.
 
+## Batch 2 (esp-xge) — 500 reviewed, 489 promoted
+
+Next 500 of the post-esp-4qi queue (36–11 sources) in
+`DICT/review/v2-batch2-{a,b}.tsv`.
+
+- **489 lemma** → new entries (209 noun, 197 verb, 60 adj, 23 adv; 454
+  `derived`), attested in 11–36 sources (median 14).
+- **11 rejected**: English (*name*, *knowledge*, *accessible*), French book
+  titles (*vocabulaire*, *commentaire*, *grammaire*, *internationale*),
+  *alle*, Maltese *strada* in an address, *povinti* (participle misfiled as a
+  verb), and *treti* left `uncertain` (*tretis subpiede* — not in any
+  reference layer).
+- **888 of the 976** v2 entries (batches 1+2) now carry affix segmentation
+  and `grammar_refs` to GRAMMAR §2.
+
+**Segmentation tie-break revised.** Batch 2 exposed that "fewest prefixes"
+was as arbitrary as its opposite: it produced *rel* ('rail') + *eg* for
+*relegi*, *rest+ar+iĝ* for *restariĝi*, and *nek+on+at+ul* for
+*nekonatulo*; flipping it produced *for+teg* ('cover') for *fortege*.
+`segment()` now breaks ties by: fewest affixes → fewest *rare* prefixes
+(fi-, bo-, eks-, mis-, pra-) → root authority → **root productivity**
+(entries built on the root, any layer). Conjunctions and particles are out
+of the root stock. Two explicit reviewer overrides remain
+(`SPLIT_OVERRIDE`: *restarigi/restariĝi* = *re+star+…*; `NO_SPLIT`:
+*ekspiri*, *ŝovinismo*). `promote_lemmas --resegment v2-` re-applied the
+segmenter to the v2 entries only: 48 changed, morphology and grammar_refs
+only — 43 newly segmented by esp-4qi's prepositional prefixes (*en+paŝ*,
+*sen+cel*, *ne+pri+skrib+ebl*), 5 corrected (*diskonigi* = *dis+kon+ig*, not
+*disk+on+ig*; *relegi*; *restarigi/restariĝi*; *nekonatulo*; *malebligi*),
+*ŝovinismo* unsplit.
+
+Queue after batch 2: **2677** (494 new stems/compounds, 2183 derivations);
+only 178 remain in 10+ sources, so batch 3 reaches into the 5–9-source band.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
 the vocabulary, so its inflected forms fold under the stem (*rompiĝis* →
 *rompiĝ*) and the ledger verdict keyed *rompiĝi* no longer attaches: 78 of
-2708 lemma verdicts are unmatched after batch 1. All but *eliru* (now filed
+2708 lemma verdicts were unmatched after batch 1, 192 of 3197 after batch 2. All but *eliru* (now filed
 as *eliri*) and the stopword *ks* are already in the dictionary, so nothing
 is lost today — but `promote_lemmas --rebuild` would silently drop all of
 them. esp-58p must resolve this before any rebuild.
@@ -161,7 +195,7 @@ them. esp-58p must resolve this before any rebuild.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 3395 lemmas remain queued; batch 2 should take the next
-  ~500 (17–10 sources). The *thin* bucket (11055) needs a different bar than
+- **Next batches**: 2677 lemmas remain queued after batch 2; batch 3 takes
+  the 10–6-source band. The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.
