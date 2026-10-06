@@ -54,9 +54,9 @@ function renderMarkdown(md: string): string {
     const h = line.match(/^(#{1,4})\s+(.*)$/)
     if (h) {
       const level = h[1].length
-      // anchor top-level numbered sections (## 2. Morfologio — ...) as section-N
-      const num = h[2].match(/^(\d+(?:\.\d+)?)\./)
-      const anchor = num && level === 2 ? ` id="section-${num[1]}"` : ''
+      // anchor numbered sections (## 2. Morfologio, ### 6.1 Landoj) as section-N
+      const num = h[2].match(/^(\d+(?:\.\d+)*)/)
+      const anchor = num ? ` id="section-${num[1]}"` : ''
       out.push(`<h${level}${anchor}>${inline(h[2])}</h${level}>`)
       i++
       continue

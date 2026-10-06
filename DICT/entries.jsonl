@@ -1605,7 +1605,7 @@
 {"word": "asunciono", "pos": "noun", "gloss_en": "Asunción", "root": "Asuncion", "source": "ReVo", "gloss_fr": "Asuncion"}
 {"word": "aŝgabato", "pos": "noun", "gloss_en": "Ashgabat", "root": "Aŝgabat", "source": "ReVo", "gloss_fr": "Achgabat"}
 {"word": "aŝramo", "pos": "noun", "gloss_en": "ashram", "root": "aŝram", "source": "ReVo", "gloss_fr": "âshram"}
-{"word": "at", "pos": "suffix", "root": "at", "gloss_en": "ending of pres. part. pass. in verbs", "gloss_fr": "marque le participe présent passif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
+{"word": "at", "pos": "suffix", "root": "at", "gloss_en": "ending of pres. part. pass. in verbs", "gloss_fr": "marque le participe présent passif", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}, {"section": "6.6", "topic": "Passive participles: ongoing action (-ata) vs resulting state (-ita)"}]}
 {"word": "atakadi", "pos": "verb", "gloss_en": "harass (milit.)", "root": "atakad", "morphology": {"stem": "atakad", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Harass"], "derived": true}
 {"word": "atakanto", "pos": "noun", "gloss_en": "aggressor; assailant", "root": "atakant", "morphology": {"stem": "atakant", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Aggressor", "Assailant"], "derived": true}
 {"word": "atakegi", "pos": "verb", "gloss_en": "charge (attack)", "root": "atakeg", "morphology": {"stem": "atakeg", "ending": "i"}, "source": "oconnor-1906", "english_headwords": ["Charge"], "derived": true}
@@ -3361,7 +3361,7 @@
 {"word": "ĉevalpovo", "pos": "noun", "gloss_en": "horsepower", "root": "ĉeval", "source": "ReVo/UV-*", "gloss_fr": "cheval-vapeur"}
 {"word": "ĉevalŝanĝo", "pos": "noun", "gloss_en": "relay (horses)", "root": "ĉevalŝanĝ", "morphology": {"stem": "ĉevalŝanĝ", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Relay"]}
 {"word": "ĉevalviro", "pos": "noun", "gloss_en": "stallion", "root": "ĉevalvir", "morphology": {"stem": "ĉevalvir", "ending": "o"}, "source": "oconnor-1906", "english_headwords": ["Stallion"]}
-{"word": "ĉi", "pos": "particle", "gloss_en": "denotes proximity; e. g. tiu that ― tiu ĉi this; tie there ― tie ĉi here", "gloss_fr": "ce qui est le plus près; ex. tiu celui-là ― tiu ĉi celui-ci", "source": "Fundamento/UV-1905"}
+{"word": "ĉi", "pos": "particle", "gloss_en": "denotes proximity; e. g. tiu that ― tiu ĉi this; tie there ― tie ĉi here", "gloss_fr": "ce qui est le plus près; ex. tiu celui-là ― tiu ĉi celui-ci", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "6.4", "topic": "Demonstrative particle ĉi: preposed vs postposed"}]}
 {"word": "ĉia", "pos": "adj", "gloss_en": "every", "gloss_fr": "chaque", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiam", "pos": "adv", "gloss_en": "always", "gloss_fr": "toujours", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "3", "topic": "Sintakso — La tabelvortoj (correlatives)"}]}
 {"word": "ĉiamfrostagrundo", "pos": "noun", "gloss_en": "permafrost", "root": "grund", "source": "ReVo/OA-4", "gloss_fr": "pergélisol"}
@@ -9262,7 +9262,7 @@
 {"word": "istanbulo,oark", "pos": "noun", "gloss_en": "Istanbul", "root": "Istanbul", "source": "ReVo/OA-10"}
 {"word": "istmo", "pos": "noun", "gloss_en": "isthmus", "root": "istm", "source": "ReVo/OA-1", "gloss_fr": "isthme"}
 {"word": "istrio", "pos": "noun", "gloss_en": "Istria", "root": "Istri", "source": "ReVo", "gloss_fr": "Istrie"}
-{"word": "it", "pos": "suffix", "root": "it", "gloss_en": "ending of past part. pass. in verbs; e. g. am'it' having been loved", "gloss_fr": "marque le participe passé passif; ex. far' faire ― far'it' fait (qu’on a fait), ayant été fait", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}]}
+{"word": "it", "pos": "suffix", "root": "it", "gloss_en": "ending of past part. pass. in verbs; e. g. am'it' having been loved", "gloss_fr": "marque le participe passé passif; ex. far' faire ― far'it' fait (qu’on a fait), ayant été fait", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "2", "topic": "Morfologio — affix inventory"}, {"section": "2", "topic": "Morfologio — participles"}, {"section": "6.6", "topic": "Passive participles: ongoing action (-ata) vs resulting state (-ita)"}]}
 {"word": "itala", "pos": "adj", "gloss_en": "Italian (adj.)", "root": "ital", "source": "ReVo/OA-8", "gloss_fr": "italien (langue)"}
 {"word": "italio", "pos": "noun", "gloss_en": "Italy", "root": "Itali", "source": "ReVo"}
 {"word": "italo", "pos": "noun", "gloss_en": "Italian", "root": "ital", "source": "ReVo/OA-8"}
@@ -9352,7 +9352,7 @@
 {"word": "jaundo", "pos": "noun", "gloss_en": "Yaoundé", "root": "Jaund", "source": "ReVo", "gloss_fr": "Yaoundé"}
 {"word": "javo,o", "pos": "noun", "gloss_en": "Java", "root": "Jav", "source": "ReVo/OA-10", "gloss_fr": "Java"}
 {"word": "jazono", "pos": "noun", "gloss_en": "Jason", "root": "Jazon", "source": "ReVo", "gloss_fr": "Jason"}
-{"word": "je", "pos": "prep", "gloss_en": "can be rendered by various English prepositions", "gloss_fr": "se traduit par différentes prépositions; sa signification est toujours aisément suggérée par le sens de la phrase", "source": "Fundamento/UV-1905"}
+{"word": "je", "pos": "prep", "gloss_en": "can be rendered by various English prepositions", "gloss_fr": "se traduit par différentes prépositions; sa signification est toujours aisément suggérée par le sens de la phrase", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "6.13", "topic": "Indefinite preposition je"}]}
 {"word": "jekaterinburgo", "pos": "noun", "gloss_en": "Yekaterinburg", "root": "Jekaterinburg", "source": "ReVo", "gloss_fr": "Iekaterinbourg"}
 {"word": "jelpi", "pos": "verb", "gloss_en": "yelp", "root": "jelp", "source": "ReVo", "gloss_fr": "japper"}
 {"word": "jemeno", "pos": "noun", "gloss_en": "Yemen", "root": "Jemen", "source": "ReVo/OA-10"}
@@ -17611,7 +17611,7 @@
 {"word": "pneŭmonologo,o", "pos": "noun", "gloss_en": "pulmonologist", "root": "pneŭmonolog", "source": "ReVo", "gloss_fr": "pneumologue"}
 {"word": "pneŭo", "pos": "noun", "gloss_en": "tire", "root": "pneŭ", "source": "ReVo", "gloss_fr": "pneu"}
 {"word": "pnompeno", "pos": "noun", "gloss_en": "Phnom Penh", "root": "Pnompen", "source": "ReVo", "gloss_fr": "Phnom Penh"}
-{"word": "po", "pos": "prep", "gloss_en": "by (with numbers)", "gloss_fr": "numéral distributif qui a le sens de: par, au taux de, sur le pied de", "source": "Fundamento/UV-1905"}
+{"word": "po", "pos": "prep", "gloss_en": "by (with numbers)", "gloss_fr": "numéral distributif qui a le sens de: par, au taux de, sur le pied de", "source": "Fundamento/UV-1905", "grammar_refs": [{"section": "6.11", "topic": "Distributive preposition po"}]}
 {"word": "pocdamo,potsdamo", "pos": "noun", "gloss_en": "Potsdam", "root": "Pocdam", "source": "ReVo", "gloss_fr": "Potsdam"}
 {"word": "pocio", "pos": "noun", "gloss_en": "potion", "root": "poci", "source": "ReVo", "gloss_fr": "potion"}
 {"word": "poĉi", "pos": "verb", "gloss_en": "poach", "root": "poĉ", "source": "ReVo", "gloss_fr": "pocher"}
