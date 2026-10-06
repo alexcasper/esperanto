@@ -37,3 +37,6 @@ RAW/lf-arkivo/*
 
 # local virtualenv (NixOS libstdc++ shim lives in git history: b1ea887)
 .venv/
+
+# Vikipedio batch blobs (esp-4g8; per-article digests+URLs in RAW/PROVENANCE-eowiki-20261001.tsv)
+RAW/wp-*.txt

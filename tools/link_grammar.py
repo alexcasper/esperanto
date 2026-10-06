@@ -34,6 +34,8 @@ CORRELATIVE_INITS = ('i', 'ki', 'ti', 'ĉi', 'neni')
 
 NEGATIVE = re.compile(r'^neni')
 
+PARTICIPLE_MORPHEMES = {'ant', 'int', 'ont', 'at', 'it', 'ot'}
+
 
 def refs_for(entry):
     word = entry['word']
@@ -57,13 +59,39 @@ def refs_for(entry):
                 if NEGATIVE.search(word):
                     refs.append(('6.2', 'Negation is single, not doubled'))
 
-    # 3. Participle morphemes -> section 2
+    # 3. Participle morphemes -> section 2 and 6.6
     if pos == 'suffix' and word in ('ant', 'int', 'ont', 'at', 'it', 'ot'):
         refs.append(('2', 'Morfologio — participles'))
+        if word in ('at', 'it'):
+            refs.append(('6.6', 'Passive participles: ongoing action (-ata) vs resulting state (-ita)'))
 
     # 4. -uj- country/container and country nouns -> 6.1
     if word == 'ujo' or (pos == 'suffix' and word == 'uj'):
         refs.append(('6.1', 'Country names: -ujo dominates, not -io'))
+
+    # 5. Demonstrative particle ĉi -> 6.4
+    if word == 'ĉi' and pos in ('particle', 'adv'):
+        refs.append(('6.4', 'Demonstrative particle ĉi: preposed vs postposed'))
+
+    # 6. Distributive preposition po -> 6.11
+    if word == 'po' and pos == 'prep':
+        refs.append(('6.11', 'Distributive preposition po'))
+
+    # 7. Indefinite preposition je -> 6.13
+    if word == 'je' and pos == 'prep':
+        refs.append(('6.13', 'Indefinite preposition je'))
+    # 5. Corpus-mined derivations whose morphology is segmented into affixes
+    #    (tools/promote_lemmas.py) -> section 2, so a reader of ekridi or
+    #    kompatindulo can reach the affix table that explains the word.
+    #    Scoped to corpus-mined: other layers' segmentation predates the
+    #    root-stock check and is not reliable enough to link from.
+    morph = entry.get('morphology') or {}
+    if entry.get('source') == 'corpus-mined' and \
+            (morph.get('prefixes') or morph.get('suffixes')):
+        refs.append(('2', 'Morfologio — affix inventory'))
+        if any(s.get('m') in PARTICIPLE_MORPHEMES
+               for s in morph.get('suffixes') or []):
+            refs.append(('2', 'Morfologio — participles'))
 
     return refs
 

@@ -188,10 +188,16 @@ def mine(files, roots, words, min_count, max_citations):
                         'lemma': lemma, 'kind': kind, 'count': 0,
                         'pos_guess': esperanto.guess_pos(token),
                         'forms': {}, 'citations': [],
-                        'caps': 0, 'lower': 0,
+                        'caps': 0, 'lower': 0, 'files': [],
                         'verdict': None, 'gloss': None, 'note': None,
                     })
                     record['count'] += 1
+                    if not record['files'] or record['files'][-1] != name:
+                        # files are mined one at a time, so a new source is
+                        # always a change from the last one recorded. This
+                        # is the real attestation breadth; citations are
+                        # capped at a handful and undercount it.
+                        record['files'].append(name)
                     record['forms'][low] = record['forms'].get(low, 0) + 1
                     if token[:1].isupper():
                         record['caps'] += 1
@@ -210,7 +216,10 @@ def mine(files, roots, words, min_count, max_citations):
     for lemma, record in lemmas.items():
         if record['count'] < min_count:
             continue
-        if record['kind'] == 'unknown' and record['lower'] == 0:
+        if record['kind'] in ('unknown', 'derived') and record['lower'] == 0:
+            # Never seen in lower case: a name, whichever way the morphology
+            # happened to parse it. With prepositional prefixes in the affix
+            # model, Alonzo, Demosteno and Algeria parse as al-/de- words.
             record['kind'] = 'name'
         kept[lemma] = record
     return kept
