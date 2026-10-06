@@ -244,6 +244,29 @@ are deliberately excluded — *virin-* would otherwise turn *virineto* into
 on the loanword (*barierego* = *barier+eg*, *forumano* = *forum+an*,
 *monarkino* = *monark+in*), where before they would have needed overrides.
 
+## Batch 5 (esp-eb7) — 500 reviewed, 483 promoted
+
+`DICT/review/v2-batch5-{a,b}.tsv`, sources 6–5 — the first batch promoted
+with esp-2sh's roots of last resort.
+
+- **483 lemma** (217 noun, 142 verb, 89 adj, 34 adv, 1 interj — *hola*).
+- **17 rejected**: bilingual front matter and English/French/German
+  (*texte*, *wrote*, *directio*, *active*, *desiroi*, *ihre*, *notre*,
+  *neue*, *allgemeine*, *histoire*, *mise*, *ethnologue*), fragments (*sti*,
+  *fo*), names (*algeria*, *ŝo* for Shaw), and *tino* `uncertain`.
+  Rejection rate 3.4% vs 2.2–3.2% in batches 1–4, as expected at thinner
+  evidence.
+- **Segmentation**: 4 misreadings out of 483. Two were numeral compounds read
+  through the fractional *-on-* (*dumonata* as *dum+on+at* for *du+monat*;
+  *unutoneco* as *unut+on+ec*). New rule: a split that uses *-on-* on a stem
+  that is numeral + radiko (+ suffixes) is left unsplit. It is scoped to
+  *-on-* because short numerals otherwise eat real roots (*dub+ind* is not
+  *du+bind*, *mild+ec* not *mil+dec*). *platano* and *ŝovinista* are
+  `NO_SPLIT`. `--resegment v2-` changed exactly those 4.
+
+Totals after batch 5: **2428** v2 entries, **2061** segmented and linked;
+dictionary **27094**; queue **1088** (13 at 5 sources, 518 at 4, 557 at 3).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -268,8 +291,8 @@ them. esp-58p must resolve this before any rebuild.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 1595 remain after batch 4, all at 3–6 sources. Evidence
-  is thinner here — expect a higher rejection rate and read citations for
-  every unknown-kind lemma. The *thin* bucket (11055) needs a different bar than
+- **Next batches**: 1088 remain after batch 5, almost all at 3–4 sources —
+  roughly two more batches empty the queue at the current bar. Entries at
+  exactly 3 sources deserve the closest reading of citations. The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.

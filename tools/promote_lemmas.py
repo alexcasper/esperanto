@@ -139,6 +139,27 @@ def part_of_speech(word, gloss):
     return 'unknown'
 
 
+def numeral_compound(stem, stock):
+    """True if the stem is numeral + radiko (dumonata, unutoneco, kvinjara).
+
+    Numerals head compounds freely, and the affix reading of the remainder is
+    then a coincidence: du+monat read as dum+on+at.
+    """
+    for part in sorted(NUMERAL_PARTS, key=len, reverse=True):
+        if stem.startswith(part):
+            rest = stem[len(part):]
+            if rest in stock and rest not in esperanto.AFFIX_MORPHEMES:
+                return True
+            # numeral + root + suffixes: unu + ton + ec (unutoneco)
+            split = esperanto.segment(rest, stock) if len(rest) > 2 else None
+            if split and not split[0] and \
+                    split[1] not in esperanto.AFFIX_MORPHEMES:
+                return True
+            if numeral_compound(rest, stock):
+                return True
+    return False
+
+
 # Reviewer corrections where the root stock lacks the true root and a
 # plausible-looking wrong split wins: ekspiri is the root ekspir- ('exhale',
 # 'expire'), not ek- + spiri ('start breathing').
@@ -148,7 +169,7 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # loanword roots whose tails look like affixes (barier-, demonstr-,
             # diletant-, pirat-, rutin-), and laŭ+regul (laŭ- not modelled)
             'bariero', 'demonstri', 'diletanto', 'pirato', 'rutina', 'rutino',
-            'laŭregula'}
+            'laŭregula', 'platano', 'ŝovinista'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -173,6 +194,13 @@ def morphology(word, pos, stock=None):
     split = SPLIT_OVERRIDE.get(word) or (
         esperanto.segment(stem, stock)
         if stock and word not in NO_SPLIT and not is_numeral(stem) else None)
+    if split and split is not SPLIT_OVERRIDE.get(word) and \
+            'on' in split[2] and numeral_compound(stem, stock):
+        # The fractional -on- is where numeral compounds get misread:
+        # du+monat as dum+on+at, unu+ton+ec as unut+on+ec. Limited to -on-
+        # because short numerals otherwise eat real roots (dub+ind is not
+        # du+bind, mild+ec is not mil+dec).
+        split = None
     if split and split is not SPLIT_OVERRIDE.get(word):
         # A two-radiko compound beats a split that needs a rare prefix or
         # the rare -op-: bon+ord (bonorde), not bo+nord; mont+o+pint, not
