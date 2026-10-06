@@ -202,9 +202,10 @@ def segment(stem, stock, max_affixes=3):
             return
         # An affix morpheme is a root in its own right only after a true
         # affix (mal+ebl, ar+eg): after a preposition it is a misreading,
-        # e.g. eniĝi read as en + iĝ- with iĝ as the stem.
-        affix_root = rest in AFFIX_MORPHEMES and \
-            any(p in PREP_PREFIX for p in pre)
+        # e.g. eniĝi read as en + iĝ- with iĝ as the stem; ig/iĝ never are
+        # (neforigebla is ne+for+ig+ebl, not a root 'ig').
+        affix_root = rest in AFFIX_MORPHEMES and (
+            any(p in PREP_PREFIX for p in pre) or rest in ('ig', 'iĝ'))
         if (pre or suf) and rest in stock and not affix_root:
             # Ties: avoid rare prefixes (fil+in+et, not fi+lin+et); then the
             # better-ranked, then the more productive root (re+leg, not
@@ -222,6 +223,26 @@ def segment(stem, stock, max_affixes=3):
 
     walk(stem, [], [])
     return best
+
+
+def compound(stem, stock, min_part=3):
+    """True if the stem is two radikoj joined directly or by a linking -o-
+    (bon+ord, mont+o+pint, batal+kamp). Such words are compounds: affix
+    segmentation of them (bo+nord, mont+op+int) is a coincidence."""
+    def radiko(part):
+        # Affix morphemes and closed-class words are not compound members:
+        # traduk+int is a participle, pra+nep a prefixed word.
+        return part in stock and part not in AFFIX_MORPHEMES \
+            and part not in GRAMMATICAL and part not in PREP_PREFIX
+
+    for cut in range(min_part, len(stem) - min_part + 1):
+        head, tail = stem[:cut], stem[cut:]
+        if radiko(head) and radiko(tail):
+            return True
+        if tail.startswith('o') and len(tail) > min_part and \
+                radiko(head) and radiko(tail[1:]):
+            return True
+    return False
 
 
 def analyse(token, roots, words):

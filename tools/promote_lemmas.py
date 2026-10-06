@@ -142,12 +142,15 @@ def part_of_speech(word, gloss):
 # Reviewer corrections where the root stock lacks the true root and a
 # plausible-looking wrong split wins: ekspiri is the root ekspir- ('exhale',
 # 'expire'), not ek- + spiri ('start breathing').
-NO_SPLIT = {'ekspiri', 'ŝovinismo'}
+NO_SPLIT = {'ekspiri', 'ŝovinismo',
+            # familiar- and vizaĵ- are roots absent from the stock
+            'familiara', 'familiare', 'vizaĵo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
     'restarigi': (['re'], 'star', ['ig']),
     'restariĝi': (['re'], 'star', ['iĝ']),
+    'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
 }
 
 
@@ -164,7 +167,17 @@ def morphology(word, pos, stock=None):
     stem, ending = word[:-1], word[-1:]
     split = SPLIT_OVERRIDE.get(word) or (
         esperanto.segment(stem, stock)
-        if stock and word not in NO_SPLIT else None)
+        if stock and word not in NO_SPLIT and not is_numeral(stem) else None)
+    if split and split is not SPLIT_OVERRIDE.get(word):
+        # A two-radiko compound beats a split that needs a rare prefix or
+        # the rare -op-: bon+ord (bonorde), not bo+nord; mont+o+pint, not
+        # mont+op+int. Not participles — they are too common, and short
+        # roots make false compounds of them (verk+ant is not ver+kant).
+        prefixes, _, suffixes = split
+        odd = any(p in esperanto.RARE_PREFIX for p in prefixes) or \
+            'op' in suffixes
+        if odd and esperanto.compound(stem, stock):
+            split = None
     if not split:
         return {'stem': stem, 'ending': ending}
     prefixes, root, suffixes = split

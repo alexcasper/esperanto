@@ -171,6 +171,38 @@ only — 43 newly segmented by esp-4qi's prepositional prefixes (*en+paŝ*,
 Queue after batch 2: **2677** (494 new stems/compounds, 2183 derivations);
 only 178 remain in 10+ sources, so batch 3 reaches into the 5–9-source band.
 
+## Batch 3 (esp-ytn) — 500 reviewed, 484 promoted
+
+`DICT/review/v2-batch3-{a,b}.tsv`, sources 11–8 (median 9).
+
+- **484 lemma** (201 noun, 176 verb, 82 adj, 24 adv, 1 interj — *oho*).
+- **16 rejected**: English/French/German (*online*, *google*, *gave*,
+  *hitherto*, *footnote*, *actio*, *dictionnaire*, *bei*, *wo*), OCR
+  (*iiia*, *oo*, *gia* for *ĝia*), *lanti* (author name), *absorbita*
+  (participle), and two `uncertain`: *rizervi* (variant spelling in one
+  repeated copyright line) and *realporti* (unclear compound).
+
+**Segmentation rules added** after reading all 484 splits:
+
+- numerals are never segmented (*dekoka* is *dek+ok*, not *de+kok*);
+- a stem that is a compound of two radikoj (directly or via linking *-o-*)
+  is left unsplit when the affix reading needs a rare prefix or *-op-*
+  (*bonorde* = *bon+ord*, not *bo+nord*; *montopinto*, not *mont+op+int*).
+  Participles do not trigger it — short roots make false compounds of
+  them (*verkanto* is *verk+ant*, not *ver+kant*);
+- *ig*/*iĝ* are never roots (*neforigebla*);
+- overrides: `SPLIT_OVERRIDE` *sentemeco* = *sent+em+ec*; `NO_SPLIT`
+  *familiara/familiare*, *vizaĵo* (roots missing from the stock).
+
+`--resegment v2-` changed exactly those 8 entries. Root productivity turned
+out to be a weak signal — ReVo records few derivatives per root (*sent-*: 2
+entries) — so the explicit rules above carry more weight than the
+tie-break.
+
+Totals after batch 3: **1460** v2 entries, **1289** segmented and linked to
+GRAMMAR §2; dictionary **26126**; queue **2129** (415 new stems/compounds,
+1714 derivations).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -195,7 +227,7 @@ them. esp-58p must resolve this before any rebuild.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 2677 lemmas remain queued after batch 2; batch 3 takes
-  the 10–6-source band. The *thin* bucket (11055) needs a different bar than
+- **Next batches**: 2129 lemmas remain queued after batch 3, all at ≤ 8
+  sources; batch 4 takes the 8–6 band. The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.
