@@ -46,6 +46,18 @@ from build_dict import SUFFIXES as AFFIX_SUFFIX  # noqa: E402
 # nowhere (they are words, not UV affix entries); gloss them here.
 AFFIX_PREFIX = dict(AFFIX_PREFIX, el='out (of)', **{'for': 'away'},
                     ne='not, un-', retro='backwards')
+# Prepositions/adverbs used as prefixes (esp-4qi): glossed by their meaning
+# as a prefix, the way the UV glosses mal- or re-.
+AFFIX_PREFIX.update({
+    'al': 'to, towards', 'antaŭ': 'before, fore-', 'apud': 'beside',
+    'ĉe': 'at', 'ĉirkaŭ': 'around', 'de': 'off, away from',
+    'ekster': 'outside, extra-', 'en': 'in, into', 'inter': 'between, mutual',
+    'kontraŭ': 'against, counter-', 'kun': 'with, together',
+    'post': 'after, behind', 'preter': 'past, beyond', 'pri': 'about; '
+    'transitivising', 'sen': 'without, -less', 'sub': 'under, sub-',
+    'super': 'over, above', 'sur': 'on, upon', 'tra': 'through',
+    'trans': 'across, trans-', 'pli': 'more', 'supren': 'upwards',
+    'malsupren': 'downwards'})
 AFFIX_SUFFIX = dict(AFFIX_SUFFIX, er='single unit, particle',
                     ism='doctrine, -ism')
 

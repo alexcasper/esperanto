@@ -216,7 +216,10 @@ def mine(files, roots, words, min_count, max_citations):
     for lemma, record in lemmas.items():
         if record['count'] < min_count:
             continue
-        if record['kind'] == 'unknown' and record['lower'] == 0:
+        if record['kind'] in ('unknown', 'derived') and record['lower'] == 0:
+            # Never seen in lower case: a name, whichever way the morphology
+            # happened to parse it. With prepositional prefixes in the affix
+            # model, Alonzo, Demosteno and Algeria parse as al-/de- words.
             record['kind'] = 'name'
         kept[lemma] = record
     return kept

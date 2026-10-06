@@ -68,7 +68,14 @@ def merge(records):
             'pos_guess': record.get('pos_guess'), 'forms': {},
             'citations': [], 'shards': [], 'verdict': None, 'gloss': None,
             'notes': [], 'conflicts': [], 'files': set(),
+            'lower': 0, 'other_kinds': set(),
         })
+        # 'name' is a per-shard judgement (never lower-case in that shard's
+        # files); whether it holds corpus-wide is decided below from the
+        # summed counts, not by whichever shard happened to be read first.
+        entry['lower'] += record.get('lower', 0)
+        if record['kind'] != 'name':
+            entry['other_kinds'].add(record['kind'])
         entry['count'] += record.get('count', 0)
         if KIND_RANK.get(record['kind'], 9) < KIND_RANK.get(entry['kind'], 9):
             entry['kind'] = record['kind']
@@ -99,6 +106,11 @@ def merge(records):
                     entry['notes'].append(part)
 
     for entry in merged.values():
+        others = entry.pop('other_kinds')
+        if entry.pop('lower') == 0 and others & {'unknown', 'derived'}:
+            entry['kind'] = 'name'
+        elif entry['kind'] == 'name' and others:
+            entry['kind'] = min(others, key=lambda k: KIND_RANK.get(k, 9))
         entry['citations'] = pick_citations(entry['citations'])
         # Every source the lemma occurs in, not just those cited: citations
         # are capped at five, which capped attestation.sources at five too.

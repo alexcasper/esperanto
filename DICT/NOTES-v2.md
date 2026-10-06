@@ -106,6 +106,47 @@ Nothing in the existing 24666 entries changed (verified line-by-line).
    *filineto* into *fil+in+et* rather than *fi+lin+et*. One reviewer
    override (`NO_SPLIT`: *ekspiri* is not *ek+spiri*).
 
+## esp-4qi — prepositional prefixes in the affix model
+
+`esperanto.PREP_PREFIX` (al, antaŭ, apud, ĉe, ĉirkaŭ, de, ekster, en, inter,
+kontraŭ, kun, post, preter, pri, sen, sub, super, sur, tra, trans, pli,
+supren, malsupren) now joins `PREFIX` in `peel_affixes` and `segment`.
+Measured on the same dictionary, old vs new model:
+
+| Bucket | before | after |
+|---|---:|---:|
+| queue | 3289 (843 unknown) | 3255 (548 unknown) |
+| participle | 4047 | 4192 |
+| thin | 10959 | 10419 |
+| closed-class (names) | 5587 | 6414 |
+
+- 1367 lemmas moved unknown → derived (*kunlabori*, *subiro*, *sencela*).
+- 34 queued participle forms (*kunportante*, *enŝlosita*, *surportanta*)
+  are now recognised as inflections and leave the queue; 42 real words join
+  it (*kunlaboro*, *antaŭtagmeze*, *suboficiro*, *kunteksto*).
+- Side effect caught: always-capitalised names parsed as *al-/de-* words
+  (*Alonzo*, *Demosteno*, *Priamo*). The name rule (never lower-case) now
+  applies to derived kinds too, and is decided in the reducer from summed
+  casing across shards rather than by whichever shard was read first. Cost:
+  a few always-capitalised derivations (*italiano*, *londonano*,
+  *urbestrejo*) now bucket as names — demonyms want a dedicated pass.
+- Segmentation of the batch-1 entries that were stem-only would now resolve
+  *en+paŝ*, *kun+ir*, *sen+cel*, *ne+pri+skrib+ebl*, *trans+skrib+int*;
+  `segment()` also refuses to split a stem that is itself a radiko
+  (*demand-* is not *de+mand-*) and refuses an affix as root after a
+  preposition (*eniĝi* is not *en + iĝ-*). Existing entries are not
+  rewritten here — that is the esp-58p re-promotion.
+
+## Ledger keys orphaned by promotion (input to esp-58p)
+
+Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
+the vocabulary, so its inflected forms fold under the stem (*rompiĝis* →
+*rompiĝ*) and the ledger verdict keyed *rompiĝi* no longer attaches: 78 of
+2708 lemma verdicts are unmatched after batch 1. All but *eliru* (now filed
+as *eliri*) and the stopword *ks* are already in the dictionary, so nothing
+is lost today — but `promote_lemmas --rebuild` would silently drop all of
+them. esp-58p must resolve this before any rebuild.
+
 ## Known limitations / follow-ups
 
 - **Earlier corpus-mined layer**: re-promoting it with `--rebuild` would fix
@@ -119,9 +160,7 @@ Nothing in the existing 24666 entries changed (verified line-by-line).
   *kompani* was rejected rather than promoted under a wrong headword.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
-- **Prepositional prefixes** (*en-*, *kun-*, *trans-*, *sur-*, *pli-*) are not
-  in the affix inventory, so *kunportante* still reaches the queue and
-  *enpaŝi* stays unsegmented.
+- **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: 3395 lemmas remain queued; batch 2 should take the next
   ~500 (17–10 sources). The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested

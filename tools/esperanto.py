@@ -25,6 +25,14 @@ ENDINGS = ['ajn', 'ojn', 'aj', 'oj', 'an', 'on', 'en', 'as', 'is', 'os', 'us',
 PARTICIPLE = ['ant', 'int', 'ont', 'at', 'it', 'ot']
 PREFIX = ['mal', 'ne', 'ge', 'bo', 'ek', 'el', 're', 'dis', 'for', 'pra',
           'eks', 'mis', 'fi', 'retro']
+# Prepositions and adverbs used as prefixes (esp-4qi): enpaŝi, kuniri,
+# transsalti, surgenue, sencela, pliboniĝi, suprenrigardi. Not affixes in the
+# UV's sense, but Esperanto word-building treats them the same way, and
+# without them those words were filed as unknown roots.
+PREP_PREFIX = ['al', 'antaŭ', 'apud', 'ĉe', 'ĉirkaŭ', 'de', 'ekster', 'en',
+               'inter', 'kontraŭ', 'kun', 'post', 'preter', 'pri', 'sen',
+               'sub', 'super', 'sur', 'tra', 'trans', 'pli', 'supren',
+               'malsupren']
 # 'il' (instrument: tranĉilo, apogilo) was missing, so every -ilo word on a
 # known root fell through to 'unknown' and inflated the gap queue.
 SUFFIX = ['estr', 'ebl', 'ind', 'em', 'ec', 'aĵ', 'ist', 'an', 'ul', 'in',
@@ -80,7 +88,8 @@ def peel_affixes(stem, roots, max_depth=4):
     """
     if stem in roots:
         return stem
-    affixes = sorted(set(PREFIX + PARTICIPLE + SUFFIX), key=len, reverse=True)
+    affixes = sorted(set(PREFIX + PREP_PREFIX + PARTICIPLE + SUFFIX),
+                     key=len, reverse=True)
     seen = {stem}
     frontier = [stem]
     for _ in range(max_depth):
@@ -100,6 +109,9 @@ def peel_affixes(stem, roots, max_depth=4):
             break
         frontier = nxt
     return stem
+
+
+AFFIX_MORPHEMES = set(PREFIX + SUFFIX + PARTICIPLE)
 
 
 def root_stock(path=ENTRIES):
@@ -158,7 +170,11 @@ def segment(stem, stock, max_affixes=3):
     then fewest prefixes, then the most authoritative root — so reĝino is reĝ+in (Fundamento), not
     re+ĝin ('gin', Oficialaj Aldonoj 2).
     """
-    prefixes = sorted(PREFIX, key=len, reverse=True)
+    if stem in stock:
+        # The stem is itself a radiko (demand-, not de+mand-): nothing to
+        # segment, however plausible a split looks.
+        return None
+    prefixes = sorted(set(PREFIX + PREP_PREFIX), key=len, reverse=True)
     suffixes = sorted(set(SUFFIX + PARTICIPLE), key=len, reverse=True)
     best, best_key = None, None
 
@@ -166,7 +182,12 @@ def segment(stem, stock, max_affixes=3):
         nonlocal best, best_key
         if len(pre) + len(suf) > max_affixes or len(rest) < 2:
             return
-        if (pre or suf) and rest in stock:
+        # An affix morpheme is a root in its own right only after a true
+        # affix (mal+ebl, ar+eg): after a preposition it is a misreading,
+        # e.g. eniĝi read as en + iĝ- with iĝ as the stem.
+        affix_root = rest in AFFIX_MORPHEMES and \
+            any(p in PREP_PREFIX for p in pre)
+        if (pre or suf) and rest in stock and not affix_root:
             # Ties prefer suffixes over prefixes: fil+in+et, not fi+lin+et.
             key = (len(pre) + len(suf), len(pre), stock[rest], -len(rest))
             if best_key is None or key < best_key:
