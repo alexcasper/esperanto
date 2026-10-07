@@ -6,6 +6,9 @@ import type { DictEntry, EnglishIndexEntry, SourceRecord } from './types'
 export const ENTRIES = entries as DictEntry[]
 export const ENGLISH_INDEX = englishIndex as EnglishIndexEntry[]
 export const SOURCES = sources as SourceRecord[]
+export const SOURCE_MAP = new Map<string, SourceRecord>(
+  SOURCES.map((s) => [s.file, s])
+)
 
 /** Esperanto alphabet ordering: a b c ĉ d e f g ĝ h ĥ i j ĵ k l m n o p r s ŝ t u ŭ v z */
 const ALPHA = 'abcĉdefgĝhĥijĵklmnoprsŝtuŭvz'
