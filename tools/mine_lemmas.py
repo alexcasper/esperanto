@@ -2,7 +2,7 @@
 """Map step of lemma mining: extract candidate lemmas from one shard of CORPUS/.
 
 Usage:
-  python3 tools/mine_lemmas.py --shard I/N [--min-count 2] [--max-citations 3]
+  python3 tools/mine_lemmas.py --shard I/N [--min-count 1] [--max-citations 3]
   python3 tools/mine_lemmas.py --plan N          # show the shard assignment
 
 Each shard writes exactly one file, DICT/shards/shard-<I>-of-<N>.jsonl, and
@@ -229,7 +229,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--shard', help='I/N, e.g. 3/8')
     parser.add_argument('--plan', type=int, help='print the shard assignment')
-    parser.add_argument('--min-count', type=int, default=2)
+    # Per-shard minimum. Keep at 1: a lemma seen once in each of several
+    # shards is evidence of breadth, and dropping it per shard undercounted
+    # attestation (esp-r14). The noise floor is applied to the corpus-wide
+    # total in reconcile_lemmas.py --min-count instead.
+    parser.add_argument('--min-count', type=int, default=1)
     parser.add_argument('--max-citations', type=int, default=3)
     parser.add_argument('--ledger', nargs='?', const=LEDGER, default=None,
                         help='re-apply verdicts from a ledger after mining, so '
