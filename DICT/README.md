@@ -215,10 +215,14 @@ removed, 24673 → 24666 lines).
 `tools/link_grammar.py` adds `grammar_refs` to the entries the grammar guide
 explains: word-building affixes → §2 (Morfologio), the correlative grid →
 §3 (tabelvortoj), negative correlatives → also §6.2 (single negation),
-`ujo` → §6.1 (country names). 80 entries linked (39 of the 45 correlatives
-— `nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` have no entry in any
-layer yet, a data gap to fill in a future vocabulary pass). Since esp-rac,
-segmented corpus-mined derivations also link to §2 (2977 more; 3057 total). Idempotent;
-re-run after any entries.jsonl rebuild.
+`ujo` → §6.1 (country names). All 45 correlatives are linked. Six cells —
+`nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` — existed in no layer
+until esp-f76 filled them with `tools/fill_correlatives.py` (`source:
+correlative-grid`): attestation by corpus scan (*ties* 86 sources down to
+*ĉial* 8), three hand-picked usage citations from distinct sources each,
+pinned by file and line and re-verified against `CORPUS/` on every run. The
+miner skips correlatives by design, so this is the only route for them.
+Since esp-rac, segmented corpus-mined derivations also link to §2. 3063
+entries linked in all. Idempotent; re-run after any entries.jsonl rebuild.
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28
