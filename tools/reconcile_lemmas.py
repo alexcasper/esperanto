@@ -125,6 +125,10 @@ def main():
     parser.add_argument('--shards', type=int, default=None,
                         help='expected shard count, for the completeness check')
     parser.add_argument('--out', default=DEFAULT_OUT)
+    parser.add_argument('--min-count', type=int, default=2,
+                        help='drop lemmas whose corpus-wide count is below '
+                             'this (the per-shard miner keeps singletons so '
+                             'that counts and sources sum correctly)')
     parser.add_argument('--write-ledger', metavar='FILE', nargs='?',
                         const=LEDGER, default=None,
                         help='also write the verdicts to a ledger keyed by '
@@ -140,6 +144,10 @@ def main():
               % (len(seen_shards), args.shards,
                  'reduce is running on an incomplete map'), file=sys.stderr)
 
+    # Reviewed lemmas are kept regardless, so no verdict is orphaned by the
+    # noise floor.
+    merged = {k: e for k, e in merged.items()
+              if e['count'] >= args.min_count or e.get('verdict')}
     ordered = sorted(merged.values(),
                      key=lambda e: (KIND_RANK.get(e['kind'], 9), -e['count']))
     with open(args.out, 'w', encoding='utf-8') as fh:
