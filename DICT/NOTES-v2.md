@@ -327,6 +327,38 @@ candidates 58 → 73 MB (both gitignored).
 bar change meaning, so the queue must be re-mined first; batch 6 on the
 302-source queue would rank on numbers about to be replaced.
 
+## Vikipedio scale rehearsal (read-only, 2026-10-07)
+
+Run in a scratch root against `esp_glm/CORPUS` (42,897 sources incl. 42,595
+`wp-*` articles) with this branch's tools and DICT files; nothing written to
+either worktree.
+
+| Step | Time | Peak RSS | Output |
+|---|---:|---:|---:|
+| mine, 8 shards (5.4k files each) | 67 s | 0.47 GB / worker | shards 1.2 GB |
+| reconcile | 34 s | **5.1 GB** | candidates 704 MB |
+
+354,260 candidate lemmas; **queue 47,279** (vs 3,083 on 302 sources) —
+1,482 at 100+ sources, 27,338 at 3–9. 81% (38,490) of queued lemmas are
+cited only from `wp-*` sources; only 8,789 have even one non-Wikipedia
+citation (a lower bound — citations are capped at 5).
+
+What this means for batch 6:
+
+- **The 3-source bar no longer means anything** once 42k single-article
+  sources exist; a word in three stub articles clears it. The bar needs a
+  register-aware rule (follow-up bead).
+- **The top of the queue is real modern vocabulary the dictionary lacks**:
+  *populacio*, *habitato*, *taksonomio*, *ekosistemo*, *retejo*,
+  *referendumo*, *flughaveno*, *subspecio*, *kunteksto*. High value.
+- **New noise classes**: names that do occur lower-case in Wikipedia
+  reference lists (*anna*, *otto*, *della*), so the never-lower-case name
+  rule misses them; participles of verbs not yet in the dictionary
+  (*establita* beside *establi*) pass the participle filter.
+- **Reconcile memory (5.1 GB)** is the scaling limit: it holds every merged
+  record in memory. Fine on dawn, but worth streaming before the corpus grows
+  again.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
