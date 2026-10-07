@@ -67,14 +67,22 @@ def merge(records):
             'lemma': lemma, 'kind': record['kind'], 'count': 0,
             'pos_guess': record.get('pos_guess'), 'forms': {},
             'citations': [], 'shards': [], 'verdict': None, 'gloss': None,
-            'notes': [], 'conflicts': [],
+            'notes': [], 'conflicts': [], 'files': set(),
+            'lower': 0, 'other_kinds': set(),
         })
+        # 'name' is a per-shard judgement (never lower-case in that shard's
+        # files); whether it holds corpus-wide is decided below from the
+        # summed counts, not by whichever shard happened to be read first.
+        entry['lower'] += record.get('lower', 0)
+        if record['kind'] != 'name':
+            entry['other_kinds'].add(record['kind'])
         entry['count'] += record.get('count', 0)
         if KIND_RANK.get(record['kind'], 9) < KIND_RANK.get(entry['kind'], 9):
             entry['kind'] = record['kind']
         for form, n in (record.get('forms') or {}).items():
             entry['forms'][form] = entry['forms'].get(form, 0) + n
         entry['citations'].extend(record.get('citations') or [])
+        entry['files'].update(record.get('files') or [])
         entry['shards'].append(shard)
 
         for field in ('verdict', 'gloss'):
@@ -89,11 +97,26 @@ def merge(records):
                      'kept': entry[field]})
         note = record.get('note')
         if note:
-            entry['notes'].append(note)
+            # mine_lemmas --ledger restores the same ledger note into every
+            # shard holding the lemma, so appending blindly multiplied each
+            # note by the shard count on every re-mine (the 'lo' note had
+            # grown to ~200 copies). Split joined notes and keep each once.
+            for part in note.split('; '):
+                if part and part not in entry['notes']:
+                    entry['notes'].append(part)
 
     for entry in merged.values():
+        others = entry.pop('other_kinds')
+        if entry.pop('lower') == 0 and others & {'unknown', 'derived'}:
+            entry['kind'] = 'name'
+        elif entry['kind'] == 'name' and others:
+            entry['kind'] = min(others, key=lambda k: KIND_RANK.get(k, 9))
         entry['citations'] = pick_citations(entry['citations'])
-        entry['sources'] = sorted({c['source'] for c in entry['citations']})
+        # Every source the lemma occurs in, not just those cited: citations
+        # are capped at five, which capped attestation.sources at five too.
+        files = entry.pop('files')
+        entry['sources'] = sorted(files or {c['source']
+                                            for c in entry['citations']})
     return merged
 
 
@@ -102,6 +125,10 @@ def main():
     parser.add_argument('--shards', type=int, default=None,
                         help='expected shard count, for the completeness check')
     parser.add_argument('--out', default=DEFAULT_OUT)
+    parser.add_argument('--min-count', type=int, default=2,
+                        help='drop lemmas whose corpus-wide count is below '
+                             'this (the per-shard miner keeps singletons so '
+                             'that counts and sources sum correctly)')
     parser.add_argument('--write-ledger', metavar='FILE', nargs='?',
                         const=LEDGER, default=None,
                         help='also write the verdicts to a ledger keyed by '
@@ -117,6 +144,10 @@ def main():
               % (len(seen_shards), args.shards,
                  'reduce is running on an incomplete map'), file=sys.stderr)
 
+    # Reviewed lemmas are kept regardless, so no verdict is orphaned by the
+    # noise floor.
+    merged = {k: e for k, e in merged.items()
+              if e['count'] >= args.min_count or e.get('verdict')}
     ordered = sorted(merged.values(),
                      key=lambda e: (KIND_RANK.get(e['kind'], 9), -e['count']))
     with open(args.out, 'w', encoding='utf-8') as fh:
