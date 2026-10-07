@@ -304,6 +304,29 @@ Only `attestation`, `morphology`, `derived` and `grammar_refs` changed, only
 on corpus-mined entries; glosses and citations untouched; nothing added or
 lost.
 
+## esp-r14 — the miner's per-shard noise floor
+
+`mine_lemmas.py` dropped any lemma seen once within a shard (`--min-count 2`
+per shard), so a word occurring once in each of several shards lost those
+sources, and the 3-source bar under-admitted. The per-shard default is now 1;
+the floor moved to the corpus-wide total (`reconcile_lemmas.py --min-count`,
+default 2; reviewed lemmas are always kept, so no verdict is orphaned by it).
+
+Validation against the independent scan (`tools/attest_scan.py`) on the
+queued lemmas: miner and scan agree exactly on sources for **2931 of 3083
+(95%)**, up from 228 (7%) before the fix. Effect on the 302-source corpus:
+queue **1088 → 3083** (1981 newly admitted, mostly derivations seen once
+per shard: *kunludanto*, *plumujo*, *bogepatro*, *fulmobato*); thin
+10079 → 13735 as more singletons are now visible at all. Some German/French
+tokens also clear the bar (*beide*, *chose*, *wisse*) — the `english` filter
+covers English only, so reviewers reject these by hand. Shards 102 → 154 MB,
+candidates 58 → 73 MB (both gitignored).
+
+**Batch 6 waits on the Vikipedio corpus** (glm `f44b4f5`, 42,595 per-article
+`wp-*` sources: 302 → 42,897). At that scale source counts and the 3-source
+bar change meaning, so the queue must be re-mined first; batch 6 on the
+302-source queue would rank on numbers about to be replaced.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -325,8 +348,7 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 1088 remain after batch 5, almost all at 3–4 sources —
-  roughly two more batches empty the queue at the current bar. Entries at
-  exactly 3 sources deserve the closest reading of citations. The *thin* bucket (11055) needs a different bar than
+- **Next batches**: after esp-r14 the 302-source queue holds 3083; it will be
+  re-mined once the Vikipedio corpus reaches this branch (see esp-r14 above). The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.
