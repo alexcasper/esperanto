@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-import { ENTRIES, POS_LIST, SOURCE_LIST, searchEntries } from '#/data/dict'
+import { ENTRIES, POS_LIST, SOURCE_LIST, SOURCE_MAP, searchEntries } from '#/data/dict'
 import type { DictEntry } from '#/data/types'
 
 export const Route = createFileRoute('/dictionary')({
@@ -17,13 +17,19 @@ function DictionaryPage() {
     [q, pos, source],
   )
 
+  const citedCount = useMemo(
+    () => ENTRIES.filter((e) => e.citations?.length).length,
+    [],
+  )
+
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">
       <h1 className="text-3xl font-bold">Dictionary</h1>
       <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
         {ENTRIES.length.toLocaleString()} entries from{' '}
         <code>DICT/entries.jsonl</code> — Fundamento UV-1905, corpus-mined,
-        Reta Vortaro, O'Connor 1906.
+        Reta Vortaro, O'Connor 1906. {citedCount.toLocaleString()} words backed by
+        corpus attestations & literary citations.
       </p>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -74,7 +80,7 @@ function DictionaryPage() {
 function EntryCard({ e }: { e: DictEntry }) {
   const [open, setOpen] = useState(false)
   const hasDetail = Boolean(
-    e.citations?.length || e.grammar_refs?.length || e.dated_gloss,
+    e.citations?.length || e.grammar_refs?.length || e.dated_gloss || e.attestation,
   )
   return (
     <div className="rounded-lg border border-neutral-200 p-3 dark:border-neutral-800">
@@ -86,6 +92,14 @@ function EntryCard({ e }: { e: DictEntry }) {
         <span className="text-sm">{e.gloss_en}</span>
         {e.gloss_fr && (
           <span className="text-xs italic text-neutral-500">{e.gloss_fr}</span>
+        )}
+        {e.attestation && (
+          <span
+            title={`${e.attestation.count.toLocaleString()} occurrences across ${e.attestation.sources} independent corpus sources`}
+            className="rounded bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
+          >
+            {e.attestation.count.toLocaleString()}× · {e.attestation.sources} src
+          </span>
         )}
         <span className="ml-auto rounded bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
           {e.source}
@@ -100,33 +114,48 @@ function EntryCard({ e }: { e: DictEntry }) {
         <>
           <button
             onClick={() => setOpen(!open)}
-            className="mt-1 text-xs text-neutral-500 underline decoration-dotted"
+            className="mt-1 text-xs text-neutral-500 underline decoration-dotted hover:text-neutral-800 dark:hover:text-neutral-200"
           >
-            {open ? 'hide' : 'details'}
+            {open ? 'hide details' : `details ${e.citations?.length ? `(${e.citations.length} quotes)` : ''}`}
           </button>
           {open && (
             <div className="mt-2 space-y-2 border-t border-neutral-100 pt-2 text-sm dark:border-neutral-800">
               {e.attestation && (
                 <div className="text-xs text-neutral-500">
-                  attested: {e.attestation.count}× in {e.attestation.sources}{' '}
-                  independent source(s)
+                  attested: <strong>{e.attestation.count.toLocaleString()}×</strong> in{' '}
+                  <strong>{e.attestation.sources}</strong> independent source(s)
                 </div>
               )}
-              {e.citations?.map((c, i) => (
-                <blockquote
-                  key={i}
-                  className="border-l-2 border-neutral-300 pl-3 text-sm italic dark:border-neutral-700"
-                >
-                  {c.text}
-                  <footer className="text-xs not-italic text-neutral-500">
-                    {c.source}
-                  </footer>
-                </blockquote>
-              ))}
+              {e.citations?.map((c, i) => {
+                const srcRec = SOURCE_MAP.get(c.source)
+                return (
+                  <blockquote
+                    key={i}
+                    className="border-l-2 border-neutral-300 pl-3 text-sm italic dark:border-neutral-700"
+                  >
+                    “{c.text}”
+                    <footer className="mt-0.5 text-xs not-italic text-neutral-500">
+                      {srcRec ? (
+                        <>
+                          <span className="font-medium text-neutral-700 dark:text-neutral-300">
+                            {srcRec.title}
+                          </span>{' '}
+                          <span className="font-mono text-[11px] text-neutral-400">
+                            ({c.source})
+                          </span>
+                        </>
+                      ) : (
+                        <span className="font-mono text-xs">{c.source}</span>
+                      )}
+                    </footer>
+                  </blockquote>
+                )
+              })}
               {e.grammar_refs?.map((r, i) => (
                 <div key={i} className="text-xs">
                   <Link
                     to="/grammar"
+                    hash={`section-${r.section}`}
                     className="text-emerald-700 underline decoration-dotted dark:text-emerald-400"
                   >
                     GRAMMAR §{r.section}

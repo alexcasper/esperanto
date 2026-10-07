@@ -1,187 +1,35 @@
-Welcome to your new TanStack Start app!
+# Esperanto Worksite — Web App
 
-# Getting Started
+A local-first TanStack Start application visualising the repository's artifacts:
+the corpus source catalog, the compiled dictionary (24.7k entries), and the
+corpus-grounded grammar guide.
 
-To run this application:
+## Features & Routes
+
+- `/` (`src/routes/index.tsx`) — Worksite overview and portal into the catalog, dictionary, and grammar guide.
+- `/sources` (`src/routes/sources.tsx`) — Source catalog joining `RAW/PROVENANCE.md`, `CORPUS/MANIFEST.tsv`, and mining exclusion sets from `tools/mine_lemmas.py`. Filters by pool status, excluded sources, and quarantined works.
+- `/dictionary` (`src/routes/dictionary.tsx`) — Fast client-side lexical search over `DICT/entries.jsonl` (24,666 entries), supporting part-of-speech filtering, source layer filtering, historical/dated gloss annotations (O'Connor 1906), literary citations, and deep-links into the grammar guide.
+- `/grammar` (`src/routes/grammar.tsx`) — Rendered grammar guide (`GRAMMAR/grammar.md`) featuring the 16 Fundamento rules, morphology tables, syntax, phonology, pragmatics, and corpus usage analysis (§6) with verified corpus citations and section anchors.
+
+## Development & Build
 
 ```bash
-pnpm install
+# 1. Build data bundles from repo artifacts (DICT, CORPUS, GRAMMAR)
+python3 tools/build_site_data.py
+
+# 2. Generate TanStack file routes (if routes are added or changed)
+cd web && pnpm generate-routes
+
+# 3. Start development server (http://localhost:3000)
 pnpm dev
-```
 
-# Building For Production
-
-To build this application for production:
-
-```bash
+# 4. Production build & preview (http://localhost:4173)
 pnpm build
+pnpm preview --port 4173
 ```
 
-## Styling
+## Architecture & Data Flow
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-### Removing Tailwind CSS
-
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Remove `@tailwindcss/vite` and `tailwindcss` from `package.json`
-
-
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+- `tools/build_site_data.py` reads repo artifacts (`DICT/entries.jsonl`, `RAW/PROVENANCE.md`, `CORPUS/MANIFEST.tsv`, `GRAMMAR/grammar.md`) and compiles compact JSON/Markdown bundles into `web/src/data/`.
+- `src/data/dict.ts` provides Esperanto-aware collation and client-side searching.
+- Styling uses Tailwind CSS v4 with support for light/dark themes.
