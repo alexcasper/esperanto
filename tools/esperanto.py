@@ -119,7 +119,7 @@ NON_DERIVING = {'kaj', 'aŭ', 'ke', 'ĉu', 'se', 'ĉar', 'ol', 'nek', 'do', 'sed
 RARE_PREFIX = {'fi', 'bo', 'eks', 'mis', 'pra', 'retro'}
 
 
-def root_stock(path=ENTRIES):
+def root_stock(path=ENTRIES, mined_roots=False, no_split=()):
     """Base roots with an authority rank (lower is better), for segment().
 
     load_vocabulary's roots are too loose for segmentation: corpus-mined and
@@ -172,8 +172,41 @@ def root_stock(path=ENTRIES):
         stock.pop(word, None)
     # segment() compares (rank, -productivity): authority first, then the
     # root with more derivatives (fort- over teg- 'cover' in fortege).
-    return {root: (rank, -productivity.get(root, 0))
-            for root, rank in stock.items()}
+    stock = {root: (rank, -productivity.get(root, 0))
+             for root, rank in stock.items()}
+    if mined_roots:
+        stock.update(_mined_roots(path, stock, set(no_split)))
+    return stock
+
+
+def _mined_roots(path, base, no_split):
+    """Roots of last resort (rank 4) from reviewed corpus-mined entries.
+
+    UV and ReVo lack many corpus loanwords (barier-, pirat-, rutin-), and a
+    loanword whose tail looks like an affix then gets split wrongly (bari+er).
+    A reviewed entry stored unsplit is evidence its stem is a root — but only
+    when the segmenter itself finds no affix reading, or a reviewer ruled the
+    reading wrong (`no_split`). Otherwise transparent derivations stored
+    unsplit by the earliest layer (virino) would become roots and hide their
+    structure from every later word (virineto as virin+et, not vir+in+et).
+    """
+    extra = {}
+    with open(path, encoding='utf-8') as fh:
+        for line in fh:
+            if not line.strip():
+                continue
+            entry = json.loads(line)
+            word = entry['word'].lower()
+            morph = entry.get('morphology') or {}
+            if entry.get('source') != 'corpus-mined' or morph.get('prefixes') \
+                    or morph.get('suffixes') or word[-1:] not in 'oaei':
+                continue
+            stem = word[:-1]
+            if len(stem) < 3 or stem in base:
+                continue
+            if word in no_split or segment(stem, base) is None:
+                extra[stem] = (4, 0)
+    return extra
 
 
 def segment(stem, stock, max_affixes=3):

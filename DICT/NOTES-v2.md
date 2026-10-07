@@ -231,6 +231,79 @@ affix. Batch 5+ reviewers should read the split list as carefully as the
 glosses; a structural fix would add promoted unsplit nouns as roots of
 last resort.
 
+## esp-2sh — roots of last resort from reviewed entries
+
+`esperanto.root_stock(mined_roots=True, no_split=NO_SPLIT)` (used by
+`promote_lemmas`) adds, at rank 4, the stem of every corpus-mined entry that
+is stored unsplit **and** either has no affix reading at all or is a reviewer
+`NO_SPLIT`. 988 stems join: loanwords (*fjord-*, *monark-*, *socialism-*,
+*barier-*, *pirat-*, *rutin-*) and opaque compounds (*grenkamp-*,
+*skribtabl-*). Transparent derivations stored unsplit by the earliest layer
+are deliberately excluded — *virin-* would otherwise turn *virineto* into
+*virin+et*. Effect: 0 existing v2 entries change; future derivations split
+on the loanword (*barierego* = *barier+eg*, *forumano* = *forum+an*,
+*monarkino* = *monark+in*), where before they would have needed overrides.
+
+## Batch 5 (esp-eb7) — 500 reviewed, 483 promoted
+
+`DICT/review/v2-batch5-{a,b}.tsv`, sources 6–5 — the first batch promoted
+with esp-2sh's roots of last resort.
+
+- **483 lemma** (217 noun, 142 verb, 89 adj, 34 adv, 1 interj — *hola*).
+- **17 rejected**: bilingual front matter and English/French/German
+  (*texte*, *wrote*, *directio*, *active*, *desiroi*, *ihre*, *notre*,
+  *neue*, *allgemeine*, *histoire*, *mise*, *ethnologue*), fragments (*sti*,
+  *fo*), names (*algeria*, *ŝo* for Shaw), and *tino* `uncertain`.
+  Rejection rate 3.4% vs 2.2–3.2% in batches 1–4, as expected at thinner
+  evidence.
+- **Segmentation**: 4 misreadings out of 483. Two were numeral compounds read
+  through the fractional *-on-* (*dumonata* as *dum+on+at* for *du+monat*;
+  *unutoneco* as *unut+on+ec*). New rule: a split that uses *-on-* on a stem
+  that is numeral + radiko (+ suffixes) is left unsplit. It is scoped to
+  *-on-* because short numerals otherwise eat real roots (*dub+ind* is not
+  *du+bind*, *mild+ec* not *mil+dec*). *platano* and *ŝovinista* are
+  `NO_SPLIT`. `--resegment v2-` changed exactly those 4.
+
+Totals after batch 5: **2428** v2 entries, **2061** segmented and linked;
+dictionary **27094**; queue **1088** (13 at 5 sources, 518 at 4, 557 at 3).
+
+## esp-58p — the earlier corpus-mined layer, refreshed losslessly
+
+The 2216 pre-v2 entries are refreshed in place, never rebuilt:
+
+- **Attestation by corpus scan** (`tools/attest_scan.py`, `promote_lemmas
+  --refresh-attestation`): occurrences and distinct sources of each word's
+  regular inflected forms, over the miner's own file list — independent of
+  miner keys, which is what orphaned the ledger verdicts (below). Applied to
+  **all** 4644 corpus-mined entries for one method: validated on the v2
+  entries first, where it agrees with the miner within ±1 source for 1308 of
+  2428 and otherwise runs *higher* — the miner drops a form seen once in a
+  shard (`--min-count 2` is per shard), so its counts understate breadth.
+  30 counts fell, each by one source: forms outside the regular paradigm
+  (elided *amaset'*) that the miner had credited. Entries attested in 3+
+  sources: 4020 → 4462; in 6+: 2051 → 4235. Top: *malgranda*, 219 sources.
+- **Segmentation** (`--resegment shard-`; legacy ledger batches are named
+  `shard-*-of-8`): 942 legacy entries split; all 942 read, 28 wrong (3%) —
+  almost all Latinate loanwords with affix-looking edges (*al+bum*,
+  *for+tun*, *pri+or*, *re+vu*, *sen+at*, *pi+an*, *de+fi+cit*), plus
+  *ĉiujare* and *nevino* (*nev+in*, not *ne+vin*). 26 joined `NO_SPLIT`
+  (where they also become roots of last resort, so *pianisto* = *pian+ist*,
+  *senatano* = *senat+an* now split correctly), one `SPLIT_OVERRIDE`.
+  916 entries got morphology and `grammar_refs`; no v2 split changed.
+- **`derived` redefined** (`--rederive`): true exactly when `morphology` has
+  a self-validating affix segmentation. The old test (peel affixes against
+  every root in the file) had drifted once ReVo's roots arrived: it flagged
+  *bariero*, *pirato* as derived and missed derivations on roots it lacked.
+  520 flags changed (393 legacy, 127 v2); derived = segmented = 2977.
+- **`--rebuild` is now lossless**: entries whose verdict no longer attaches
+  to a mined key are kept as they were (dry run: 4028 rebuilt + 616 kept =
+  4644, none dropped). It was not run — the refresh flags do the job without
+  re-drawing citations.
+
+Only `attestation`, `morphology`, `derived` and `grammar_refs` changed, only
+on corpus-mined entries; glosses and citations untouched; nothing added or
+lost.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -239,15 +312,12 @@ the vocabulary, so its inflected forms fold under the stem (*rompiĝis* →
 2708 lemma verdicts were unmatched after batch 1, 192 of 3197 after batch 2. All but *eliru* (now filed
 as *eliri*) and the stopword *ks* are already in the dictionary, so nothing
 is lost today — but `promote_lemmas --rebuild` would silently drop all of
-them. esp-58p must resolve this before any rebuild.
+them. Resolved in esp-58p: `--rebuild` now keeps such entries, and the
+refresh path avoids miner keys altogether.
 
 ## Known limitations / follow-ups
 
-- **Earlier corpus-mined layer**: re-promoting it with `--rebuild` would fix
-  its capped `attestation.sources` and give it segmentation, but is not
-  lossless today (3 entries — *ĉiuspeca*, *rekompenso*, *senpetala* — are no
-  longer mined under the same key, and 222 `derived` flags flip because the
-  vocabulary now includes ReVo). Needs a deliberate pass, not a side effect.
+- **Earlier corpus-mined layer**: done in esp-58p (above).
 - **Root/citation key collision** in the miner: a token analysed as a known
   root (*kompanioj* → root *kompani*) and an unknown token whose citation
   form is the same string (*kompanos* → *kompani*) share one record. Rare;
@@ -255,8 +325,8 @@ them. esp-58p must resolve this before any rebuild.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: 1595 remain after batch 4, all at 3–6 sources. Evidence
-  is thinner here — expect a higher rejection rate and read citations for
-  every unknown-kind lemma. The *thin* bucket (11055) needs a different bar than
+- **Next batches**: 1088 remain after batch 5, almost all at 3–4 sources —
+  roughly two more batches empty the queue at the current bar. Entries at
+  exactly 3 sources deserve the closest reading of citations. The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.
