@@ -352,3 +352,24 @@ refresh path avoids miner keys altogether.
   re-mined once the Vikipedio corpus reaches this branch (see esp-r14 above). The *thin* bucket (11055) needs a different bar than
   source count — single-author technical vocabulary is real but unattested
   elsewhere.
+
+## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
+
+Re-mined with the wp- (Vikipedio 20261001, 42,595 articles) sources included
+— the gap queue was previously built from the 302-source pre-wp corpus, so
+esp-4g8's corpus never reached the candidate miner.
+
+- Corpus now 42,868 normalised sources in CORPUS/ (302 literary + 42,566 wp).
+- Mined lemmas: 354,264 (candidates.jsonl).
+- Gap queue (>=3 sources, >=5 occurrences, all gap_report buckets applied):
+  **47,283 candidates** — 33,583 at >=6 sources, 6,877 at 5, 4,040 at 4,
+  2,783 at 3. Was 3,395 pre-wp: the Vikipedio corpus multiplies the
+  attestable modern vocabulary by ~14x.
+- Top of queue is exactly the expected profile (populacio, habitato,
+  taksonomio, arkitekturo, demokratio…) — encyclopedic modern Esperanto
+  missing from UV/ReVo/O'Connor layers.
+- esp-r14's singleton fix is included in this run (per-shard singletons
+  kept, corpus-wide noise floor instead).
+- esp-73s (batch 6, "~500 of gap queue (5-4 sources)") was scoped against
+  the old queue; recommend re-scoping batches by source bands off this
+  queue instead.
