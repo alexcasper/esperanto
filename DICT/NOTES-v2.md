@@ -553,6 +553,28 @@ Totals after batch 10: **4814** v2 entries; corpus-mined **7030**, 4842
 segmented and linked; dictionary **29486**; queue **7470** (broad 2207,
 mixed 3761, wp-only 1502).
 
+## Batch 11 (esp-n4i) — 500 reviewed, 484 promoted
+
+`DICT/review/v2-batch11-{a,b}.tsv`, re-mined first (after syncing glm's
+merge of batches 8–10): the tail of the 4-source band and the top of the
+3-source band, where Wikipedia breadth returns (*surbaze* 3+2364,
+*publikaĵo*, *vegetaĵaro*, *urbocentro*, *monarkio*, *hemisfero*,
+*rasismo*, *radiostacio*).
+
+- **484 lemma** (222 noun, 162 verb, 74 adj, 26 adv) — all promoted; 463
+  literary-only, *partikulare* Wikipedia-only.
+- **16 rejected** (3.2%): 9 foreign (*satisfactio*, *superbe*, *maitre*,
+  *nehme*, *describe*, *schaffe*, Latin *combinatoria*, *magna*, *facto*);
+  OCR/typo *ŝango*, *ŝangi* (ŝanĝ-), *riĉajo* (riĉaĵo); inflection
+  *taksinti* (taksintus); `uncertain` *kvartolo*, *ekvidigi*, *sektone*.
+- **Segmentation**: 7 of 383 wrong (1.8%) — loanwords *dispozicio*
+  (dis+pozici), *fonemo* (fon+em), *karitato*, *sanitara*, *violeto* and
+  *ĉef-* compounds *ĉefaltaro*, *ĉefloko* (read as ĉe+…) → `NO_SPLIT`.
+
+Totals after batch 11: **5298** v2 entries; corpus-mined **7514**, 5218
+segmented and linked; dictionary **29970**; queue **6937** (broad 1689,
+mixed 3747, wp-only 1501).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -574,8 +596,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 7470 after
-  batch 10 — broad 2207, then mixed 3761, then wp-only 1502. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 6937 after
+  batch 11 — broad 1689, then mixed 3747, then wp-only 1501. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

@@ -195,7 +195,12 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'solidara', 'dekunujara',
             # esp-htt (batch 10): compounds ali+foje, voj+erari read as
             # al+iafoj, voj+er+ar
-            'aliafoje', 'vojerari'}
+            'aliafoje', 'vojerari',
+            # esp-n4i (batch 11): loanwords read as dis+pozici, fon+em,
+            # kar+it+at, san+it+ar, viol+et; ĉef- compounds read as ĉe+falt+ar,
+            # ĉe+flok
+            'dispozicio', 'fonemo', 'karitato', 'sanitara', 'violeto',
+            'ĉefaltaro', 'ĉefloko'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
