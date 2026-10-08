@@ -42,7 +42,7 @@ attested in three or more independent sources (recounted in esp-58p, below).
 `derived: true` marks a word built by regular affixation on a root already
 held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
 that the entry's `morphology` carries a self-validating affix segmentation
-(`prefixes`/`suffixes`); 2977 of the 4644 corpus-mined entries. Settled
+(`prefixes`/`suffixes`); 3352 of the 5120 corpus-mined entries. Settled
 policy is that these earn entries, because a reader looking up *reĝino*
 should find it; the flag lets a consumer wanting only roots and opaque
 compounds filter them out.
@@ -66,8 +66,11 @@ to GRAMMAR §2. Gap analysis: `python3 tools/gap_report.py`; review batches:
 `DICT/review/*.tsv`, applied by `tools/apply_review.py`. **Batch 2
 (esp-xge)** added 489 more (11–36 sources each), **batch 3 (esp-ytn)** 484
 (8–11), **batch 4 (esp-e26)** 485 (6–8), **batch 5 (esp-eb7)** 483 (5–6).
-Corpus-mined total: **4644** (2428 from v2 batches). esp-58p segmented the
-2216 earlier entries too: **2977** corpus-mined entries now carry affix
+**Batch 6 (esp-73s)** added 476, the first from the Vikipedio-scale corpus
+under the register-aware bar (esp-nuk): every one attested in 6–8
+non-Wikipedia sources, plus up to 1,657 Wikipedia articles.
+Corpus-mined total: **5120** (2904 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **3352** corpus-mined entries now carry affix
 segmentation and `grammar_refs` to §2.
 
 | Kind | Count |
@@ -215,10 +218,14 @@ removed, 24673 → 24666 lines).
 `tools/link_grammar.py` adds `grammar_refs` to the entries the grammar guide
 explains: word-building affixes → §2 (Morfologio), the correlative grid →
 §3 (tabelvortoj), negative correlatives → also §6.2 (single negation),
-`ujo` → §6.1 (country names). 80 entries linked (39 of the 45 correlatives
-— `nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` have no entry in any
-layer yet, a data gap to fill in a future vocabulary pass). Since esp-rac,
-segmented corpus-mined derivations also link to §2 (2977 more; 3057 total). Idempotent;
-re-run after any entries.jsonl rebuild.
+`ujo` → §6.1 (country names). All 45 correlatives are linked. Six cells —
+`nenial`, `neniom`, `ties`, `ĉial`, `ĉies`, `ĉiom` — existed in no layer
+until esp-f76 filled them with `tools/fill_correlatives.py` (`source:
+correlative-grid`): attestation by corpus scan (*ties* 86 sources down to
+*ĉial* 8), three hand-picked usage citations from distinct sources each,
+pinned by file and line and re-verified against `CORPUS/` on every run. The
+miner skips correlatives by design, so this is the only route for them.
+Since esp-rac, segmented corpus-mined derivations also link to §2. 3063
+entries linked in all. Idempotent; re-run after any entries.jsonl rebuild.
 
 — t3/Galahad · SKL-8m1r.6 · 2026-08-28
