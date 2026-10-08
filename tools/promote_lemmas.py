@@ -221,7 +221,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # veter+in+ar
             'bromido', 'deformi', 'dividendo', 'harmoniumo', 'kabino',
             'metila', 'pietato', 'primadono', 'reportero', 'sternumo',
-            'veterinaro'}
+            'veterinaro',
+            # esp-13o (batch 17): alt+at+on (alt+a+ton), de+misi, eskadr+on,
+            # kel+ar, plat+in, pop+ar (po+par+e), refer+at, refer+end+um,
+            # sekund+ar, sem+id, sid+er, stadi+on, stat+ist, ul+em
+            'altatona', 'demisii', 'eskadrono', 'kelaro', 'platino',
+            'popare', 'referato', 'referendumo', 'sekundara', 'semida',
+            'sidera', 'stadiono', 'statisto', 'ulemo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -249,6 +255,9 @@ SPLIT_OVERRIDE = {
     'patroneco': ([], 'patron', ['ec']),       # not patr+on+ec
     'patronino': ([], 'patron', ['in']),       # not patr+on+in
     'sensema': ([], 'sens', ['em']),           # not sen+sem
+    'alpisto': ([], 'alp', ['ist']),           # not al+pist
+    'fanatismo': ([], 'fanat', ['ism']),       # not fan+at+ism
+    'senida': (['sen'], 'id', []),             # not stem 'sen' + -id
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
