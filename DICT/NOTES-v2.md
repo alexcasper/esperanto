@@ -598,6 +598,30 @@ Totals after batch 12: **5773** v2 entries; corpus-mined **7989**, 5573
 segmented and linked; dictionary **30445**; queue **6383** (broad 1173,
 mixed 3715, wp-only 1495).
 
+## Batch 13 (esp-598) — 500 reviewed, 473 promoted
+
+`DICT/review/v2-batch13-{a,b}.tsv`, re-mined first (after fast-forwarding
+to glm's batch-12 merge): the 3-source band with low Wikipedia backing
+(3+12 down to 3+4 wp).
+
+- **473 lemma** (247 noun, 106 verb, 86 adj, 34 adv) — all promoted; 456
+  literary-only, 0 Wikipedia-only.
+- **27 rejected** (5.4%): 22 foreign — French *raiso(n)*, *aura(it)*,
+  *heure*, *vierge*, *masse*, *vivre*, *ainsi*, *autre*, *commerciale*;
+  German *konnte*, *stehe(n)*, *gegang(en)*, *sollte*, *verschiedene*,
+  *derselbe*; English *became*, *communicatio(n)*, *available*,
+  *introductio(n)*, *chori*; Polish *jego*; Russian *vremja*. Names *Parla*,
+  *Tiberias*. Fragment *dela*. `uncertain` *patio*, *diotima*.
+- **Segmentation**: 5 of 370 wrong (1.4%) — roots *flakono*, *kanoto*,
+  *maltano*, *ulano* and compound *propradecide* (propr+a+decid+e) →
+  `NO_SPLIT`. Override *aliĝadi* (aliĝ+ad, not al+iĝad after *iĝadi* became
+  a root). `--recite` gave literary citations to earlier *aprobado*,
+  *misfortuno*, *varbiĝi*, *viktimiĝi*.
+
+Totals after batch 13: **6246** v2 entries; corpus-mined **8462**, 5938
+segmented and linked; dictionary **30918**; queue **5839** (broad 668,
+mixed 3683, wp-only 1488).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -619,8 +643,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 6383 after
-  batch 12 — broad 1173, then mixed 3715, then wp-only 1495. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 5839 after
+  batch 13 — broad 668, then mixed 3683, then wp-only 1488. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
