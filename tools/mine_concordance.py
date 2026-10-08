@@ -61,6 +61,10 @@ def score_source_priority(fname):
         return 0  # Project Gutenberg (highest proofread quality)
     if fname.startswith('wsdump-') or fname.startswith('wsrc-'):
         return 1  # Wikisource library
+    if fname.startswith('ia-'):
+        return 2  # Internet Archive / Usenet
+    if fname.startswith('wp-'):
+        return 3  # Vikipedio (encyclopedic, modern)
     return 2  # Other sources
 
 def mine(entries, min_sources=1):
@@ -72,7 +76,8 @@ def mine(entries, min_sources=1):
     corpus_files.sort(key=lambda f: (score_source_priority(os.path.basename(f)), f))
 
     entry_counts = defaultdict(int)
-    entry_sources = defaultdict(set)
+    entry_sources_lit = defaultdict(set)
+    entry_sources_wiki = defaultdict(set)
     # entry_citations: idx -> list of (priority, source, lineno, text)
     entry_citations = defaultdict(list)
 
@@ -81,6 +86,7 @@ def mine(entries, min_sources=1):
     for fpath in corpus_files:
         fname = os.path.basename(fpath)
         prio = score_source_priority(fname)
+        is_wiki = fname.startswith('wp-')
         with open(fpath, encoding='utf-8') as fh:
             for lineno, line in enumerate(fh, 1):
                 line_str = line.strip()
@@ -93,7 +99,10 @@ def mine(entries, min_sources=1):
                     if t in form_to_indices:
                         for idx in form_to_indices[t]:
                             entry_counts[idx] += 1
-                            entry_sources[idx].add(fname)
+                            if is_wiki:
+                                entry_sources_wiki[idx].add(fname)
+                            else:
+                                entry_sources_lit[idx].add(fname)
                             matched_indices.add(idx)
 
                 # Collect clean citation snippet
@@ -114,13 +123,19 @@ def mine(entries, min_sources=1):
 
     for idx, e in enumerate(entries):
         cnt = entry_counts[idx]
-        srcs = len(entry_sources[idx])
+        lit_srcs = len(entry_sources_lit[idx])
+        wiki_srcs = len(entry_sources_wiki[idx])
+        total_srcs = lit_srcs + wiki_srcs
 
-        # If entry has no attestation stats or existing stats are smaller, update
+        # Update attestation with register breakdown
         if cnt > 0:
-            if not e.get('attestation') or e['attestation'].get('sources', 0) < srcs:
-                e['attestation'] = {'count': cnt, 'sources': srcs}
-                enriched_count += 1
+            e['attestation'] = {
+                'count': cnt,
+                'sources': total_srcs,
+                'sources_lit': lit_srcs,
+                'sources_wiki': wiki_srcs,
+            }
+            enriched_count += 1
 
         # Add citations if none present
         if not e.get('citations') and entry_citations[idx]:
