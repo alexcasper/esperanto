@@ -2,7 +2,8 @@
 """Attestation by direct corpus scan: occurrences and distinct sources of a
 dictionary word's inflected forms.
 
-Usage (library): attest(words_with_pos) -> {word: {'count': n, 'sources': k}}
+Usage (library): attest(words_with_pos) -> {word: {'count': n, 'sources': k,
+                                         'sources_lit': l, 'sources_wiki': w}}
        python3 tools/attest_scan.py WORD[:POS] ...   # spot check
 
 Independent of the miner's lemma keys. That matters for entries promoted
@@ -39,7 +40,10 @@ def forms(word, pos):
 
 
 def attest(entries):
-    """entries: iterable of (word, pos). Returns {word: {count, sources}}."""
+    """entries: iterable of (word, pos). Returns {word: {count, sources,
+    sources_lit, sources_wiki}}: the register split matches the web lane's
+    tools/mine_concordance.py (wp-* articles are wiki, every other source
+    literary), so both writers of `attestation` produce the same shape."""
     owner = {}
     for word, pos in entries:
         for form in forms(word.lower(), pos):
@@ -55,8 +59,12 @@ def attest(entries):
                     for word in words:
                         result[word]['count'] += 1
                         result[word]['sources'].add(name)
-    return {w: {'count': r['count'], 'sources': len(r['sources'])}
-            for w, r in result.items()}
+    out = {}
+    for w, r in result.items():
+        wiki = sum(1 for s in r['sources'] if s.startswith('wp-'))
+        out[w] = {'count': r['count'], 'sources': len(r['sources']),
+                  'sources_lit': len(r['sources']) - wiki, 'sources_wiki': wiki}
+    return out
 
 
 if __name__ == '__main__':
