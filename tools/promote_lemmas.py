@@ -210,7 +210,12 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'flakono', 'kanoto', 'maltano', 'ulano', 'propradecide',
             # esp-31c (batch 14): roots brokat-, kvirit-, poplit-, rutul-
             # read as brok+at, kvir+it, popl+it, rut+ul
-            'brokato', 'kvirito', 'poplito', 'rutula'}
+            'brokato', 'kvirito', 'poplito', 'rutula',
+            # esp-l2q (batch 15, mixed tier opens - loan-heavy): artik+ul,
+            # de+port, frag+il, kapel+an, lazar+et, pri+mar, re+fer,
+            # silik+at, strat+eg (strategist), tromp+et (trumpet)
+            'artikulo', 'deporti', 'fragila', 'kapelano', 'lazareto',
+            'primara', 'referi', 'silikato', 'stratego', 'trompeto'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -233,6 +238,10 @@ SPLIT_OVERRIDE = {
     'malsuprengrimpi': (['malsupren'], 'grimp', []),  # not mal+suprengrimp
     'aliĝadi': ([], 'aliĝ', ['ad']),           # aliĝ+ad, not al+iĝad
     'pliiĝadi': ([], 'pliiĝ', ['ad']),         # pliiĝ+ad, not pli+iĝad
+    'ekestri': (['ek'], 'estr', []),           # not stem 'ek' + -estr
+    'finestiĝi': ([], 'finest', ['iĝ']),       # fin+est+iĝ, not fi+nest+iĝ
+    'patroneco': ([], 'patron', ['ec']),       # not patr+on+ec
+    'patronino': ([], 'patron', ['in']),       # not patr+on+in
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
