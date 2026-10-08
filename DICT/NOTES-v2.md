@@ -359,6 +359,37 @@ What this means for batch 6:
   record in memory. Fine on dawn, but worth streaming before the corpus grows
   again.
 
+## esp-nuk — register-aware evidence bar (Vikipedio scale)
+
+With 42,595 of 42,899 sources being single `wp-*` articles, `gap_report.py`
+now splits each candidate's sources by register and queues it in the first
+tier it meets (all tiers also need >= 5 occurrences):
+
+| Tier | Rule | Queued |
+|---|---|---:|
+| broad | >= 3 non-Wikipedia sources (the pre-Vikipedio bar, same meaning) | 4,839 |
+| mixed | 1–2 non-Wikipedia + >= 10 wp articles | 3,870 |
+| wp-only | no other source, >= 50 wp articles | 1,530 |
+
+Queue **47,279 → 10,239**, ordered by tier, then non-Wikipedia sources, then
+wp articles. Queue citations prefer non-Wikipedia lines. New buckets:
+
+- **foreign** (1,984): a letter outside the alphabet (q w x y) or a short
+  Romance/German function-word list (*della*, *beide*, *chose*).
+- **participle** now also catches participles of verbs that are themselves
+  candidates (*establita* beside *establi*): +862.
+- **capitalised** (3,254): under a quarter of occurrences lower-case
+  (`reconcile_lemmas.py` now keeps the summed `lower` count). Catches names
+  that wiki reference lists lower-case now and then (*anna* 0.7%, *otto*
+  0.2%) — but also country/place names (*afganio*, *arabio*), which ReVo
+  holds as headwords. They are held out of the queue, not rejected, pending
+  a names policy.
+
+Left to reviewers: Latin *-ctio* forms (*editio*, *translatio*) — a `-tio`
+rule would hit *demokratio*, *dinastio*, *patio*; English tokens with an
+Esperanto-looking inflection (*make*/*maken*). Reconcile's 5.1 GB peak is
+filed separately.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
