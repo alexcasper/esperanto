@@ -182,7 +182,10 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'ĉiujare',
             # esp-73s (batch 6): lu+doni and ĝis+atendi are compounds read as
             # -on-/-at-+-end- (ĝis- not modelled); favorit-, braman- loanwords
-            'ludoni', 'ĝisatendi', 'favorito', 'bramano'}
+            'ludoni', 'ĝisatendi', 'favorito', 'bramano',
+            # esp-weg (batch 7): loanwords read as am+ul+et, hum+id,
+            # mek+an+ism, de+klin; sal+minejo is a compound, not salm+in+ej
+            'amuleto', 'humida', 'mekanismo', 'deklini', 'salminejo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -192,6 +195,11 @@ SPLIT_OVERRIDE = {
     'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
     'nevino': ([], 'nev', ['in']),             # not ne+vin
     'reformisto': ([], 'reform', ['ist']),     # not re+form+ist
+    'reformemulo': ([], 'reform', ['em', 'ul']),  # not re+form+em+ul
+    'fiakristo': ([], 'fiakr', ['ist']),       # fiakro 'cab', not fi+akr+ist
+    'revanto': ([], 'rev', ['ant']),           # not re+vant
+    'trabaro': ([], 'trab', ['ar']),           # trabo 'beam', not tra+bar
+    'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
 }
 
 
