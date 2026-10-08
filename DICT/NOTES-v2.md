@@ -422,6 +422,58 @@ Totals after batch 6: **2904** v2 entries; corpus-mined **5120**, 3352
 segmented and linked to §2; dictionary **27576**; queue **9739** (broad
 4339, mixed 3870, wp-only 1530).
 
+## esp-0mu — literary citations first; one attestation shape
+
+- **Citations**: `reconcile_lemmas.pick_citations` now orders non-Wikipedia
+  sources first (round-robin alone filled its five slots with `wp-*` lines
+  once 42.6k article sources existed), and `promote_lemmas.choose_citations`
+  takes non-Wikipedia lines first, Wikipedia only for slots literature
+  cannot fill. New `--recite BATCH_PREFIX` re-draws citations, changing an
+  entry only when it gains literary lines. `--recite v2-batch6`: 386 of 476
+  entries changed (citations only); the 79 cited solely from Wikipedia are
+  now all literary — all 476 batch-6 entries carry three literary
+  citations. Batches 1–5 came from the pre-Vikipedio corpus: 0 changes.
+- **Attestation**: `tools/attest_scan.py` now returns `sources_lit` /
+  `sources_wiki` beside `count`/`sources`, the same split the web lane's
+  `mine_concordance.py` writes (a6f69ec). Spot check on 7 entries: identical
+  on 6, *malgranda* within 4 of 10,665 sources. Both writers of
+  `attestation` now produce the same shape and, to that margin, the same
+  numbers.
+
+## Batch 7 (esp-weg) — 500 reviewed, 478 promoted
+
+`DICT/review/v2-batch7-{a,b}.tsv`: queue positions 1–500 after batch 6,
+broad tier (5–6 non-Wikipedia sources). The first batch promoted with
+esp-0mu's literary-first citations.
+
+- **491 lemma**, **478 promoted** (254 noun, 136 verb, 66 adj, 22 adv):
+  derivations (*almozpetanto*, *kunloĝado*, *sinregado*, *devosento*) and
+  modern vocabulary (*kunteksto*, *arkitekturo*, *demokratio*, *aviadilo*,
+  *mekanismo*, *planlingvo*, *skribsistemo*, *kirurgo*). 475 of 478 cite
+  only literary sources; all carry `sources_lit`/`sources_wiki`.
+- **9 rejected** (1.8%): foreign *natio*, *schreibe*, *possessio*,
+  *apprendre*, *andere*; OCR *vizago* (vizaĝo), *ae*, *oe* (ĉe); *kambi*
+  `fragment` (key collision, *kambio* held).
+- **13 accepted but not promoted, by design**: *misuzo*, *oferto*,
+  *admiradi*, *sensone*, *surstrate*, *mekanike*, *reorganizo*, *plendado*,
+  *divenadi*, *insultadi*, *interŝanĝadi*, *malbonfarti*, *superforti* —
+  each another ending on a stem batch 6 promoted (*misuzi*, *oferti*,
+  *admirado*…). Re-mined, their forms fold into the held entry (one entry
+  per stem). They reached the queue because it was built from candidates
+  mined *before* batch 6 promoted (esp-0mu re-ran only reconcile). Lesson:
+  re-mine after every promotion before ranking the next batch.
+- **Segmentation**: 10 of 369 splits wrong (2.7%) — loanwords *amuleto*
+  (am+ul+et), *humida* (hum+id), *mekanismo* (mek+an+ism), *deklini*
+  (de+klin) and the compound *salminejo* → `NO_SPLIT`; overrides
+  *fiakristo* (fiakr+ist), *revanto* (rev+ant), *reformemulo*
+  (reform+em+ul), *trabaro* (trab+ar), *prizorganto* (pri+zorg+ant).
+  *deklin-* as root of last resort then also fixed batch-1's *dekliniĝi*
+  (de+klin+iĝ → deklin+iĝ), the one existing entry changed.
+
+Totals after batch 7: **3382** v2 entries; corpus-mined **5598**, 3716
+segmented and linked; dictionary **28054**; queue **9166** (broad 3799,
+mixed 3842, wp-only 1525).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -443,8 +495,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 9739 after
-  batch 6 — broad 4339, then mixed 3870, then wp-only 1530. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 9166 after
+  batch 7 — broad 3799, then mixed 3842, then wp-only 1525. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

@@ -182,7 +182,10 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'ĉiujare',
             # esp-73s (batch 6): lu+doni and ĝis+atendi are compounds read as
             # -on-/-at-+-end- (ĝis- not modelled); favorit-, braman- loanwords
-            'ludoni', 'ĝisatendi', 'favorito', 'bramano'}
+            'ludoni', 'ĝisatendi', 'favorito', 'bramano',
+            # esp-weg (batch 7): loanwords read as am+ul+et, hum+id,
+            # mek+an+ism, de+klin; sal+minejo is a compound, not salm+in+ej
+            'amuleto', 'humida', 'mekanismo', 'deklini', 'salminejo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -192,6 +195,11 @@ SPLIT_OVERRIDE = {
     'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
     'nevino': ([], 'nev', ['in']),             # not ne+vin
     'reformisto': ([], 'reform', ['ist']),     # not re+form+ist
+    'reformemulo': ([], 'reform', ['em', 'ul']),  # not re+form+em+ul
+    'fiakristo': ([], 'fiakr', ['ist']),       # fiakro 'cab', not fi+akr+ist
+    'revanto': ([], 'rev', ['ant']),           # not re+vant
+    'trabaro': ([], 'trab', ['ar']),           # trabo 'beam', not tra+bar
+    'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
 }
 
 
@@ -241,6 +249,19 @@ def morphology(word, pos, stock=None):
     return shape
 
 
+def choose_citations(citations, limit=3):
+    """Up to `limit` citations, non-Wikipedia lines first (esp-0mu).
+
+    wp-* lines are encyclopedia prose; a reader learns more from usage in
+    literature, letters and periodicals. Wikipedia fills only the slots the
+    other registers cannot. Stable sort keeps reconcile's source breadth.
+    """
+    ordered = sorted(citations or [],
+                     key=lambda c: c['source'].startswith('wp-'))
+    return [{'source': c['source'], 'text': c['text']}
+            for c in ordered[:limit]]
+
+
 def build_entry(record, roots, words, stock=None):
     gloss = (record.get('gloss') or '').strip()
     word = citation_form(record['lemma'], gloss)
@@ -257,8 +278,7 @@ def build_entry(record, roots, words, stock=None):
         'count': record.get('count', 0),
         'sources': len(record.get('sources') or []),
     }
-    entry['citations'] = [{'source': c['source'], 'text': c['text']}
-                          for c in (record.get('citations') or [])[:3]]
+    entry['citations'] = choose_citations(record.get('citations'))
     if is_segmented(shape):
         entry['derived'] = True
     return entry
@@ -291,6 +311,11 @@ def main():
     parser.add_argument('--refresh-attestation', action='store_true',
                         help='recount attestation of every corpus-mined entry '
                              'by direct corpus scan (tools/attest_scan.py)')
+    parser.add_argument('--recite', metavar='BATCH_PREFIX', default=None,
+                        help='re-draw citations (non-Wikipedia first) for '
+                             'corpus-mined entries whose ledger batch starts '
+                             'with BATCH_PREFIX; only entries that gain '
+                             'non-Wikipedia lines change')
     parser.add_argument('--rederive', action='store_true',
                         help='set `derived` on every corpus-mined entry from '
                              'its morphology (see is_segmented)')
@@ -343,6 +368,34 @@ def main():
             if shape and shape != entry.get('morphology'):
                 entry['morphology'] = shape
                 resegmented += 1
+    recited = 0
+    if args.recite:
+        batches = {}
+        with open(LEDGER, encoding='utf-8') as fh:
+            for line in fh:
+                if line.strip():
+                    rec = json.loads(line)
+                    batches[rec['lemma']] = rec.get('reviewed_in') or []
+        targets = {e['word']: e for e in existing
+                   if e.get('source') == SOURCE_TAG and any(
+                       b.startswith(args.recite)
+                       for b in batches.get(e['word'], []))}
+        lit = lambda cs: sum(1 for c in cs if not c['source'].startswith('wp-'))
+        with open(args.candidates, encoding='utf-8') as fh:
+            for line in fh:
+                if not line.strip():
+                    continue
+                record = json.loads(line)
+                entry = targets.get(record['lemma'])
+                if entry is None:
+                    continue
+                new = choose_citations(record.get('citations'))
+                # Only ever trade wp lines for literary ones: a re-mine must
+                # not churn citations that are already as good.
+                if lit(new) > lit(entry.get('citations') or []):
+                    entry['citations'] = new
+                    recited += 1
+
     accepted, promoted, skipped, ungloss = 0, [], [], []
     seen = set()
     with open(args.candidates, encoding='utf-8') as fh:
@@ -429,6 +482,8 @@ def main():
               'verdict no longer attaches' % (dropped, len(kept)))
     if args.rederive:
         print('  rederive: %d derived flags changed' % rederived)
+    if args.recite:
+        print('  recite: %d entries got non-Wikipedia citations' % recited)
     if reattested:
         print('  attestation: %d entries recounted by corpus scan' % reattested)
     if args.resegment:
