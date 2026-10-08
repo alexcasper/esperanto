@@ -9,7 +9,12 @@ export interface DictEntry {
   dated_gloss?: string
   grammar_refs?: { section: string; topic: string }[]
   english_headwords?: string[]
-  attestation?: { count: number; sources: number }
+  attestation?: {
+    count: number
+    sources: number
+    sources_lit?: number
+    sources_wiki?: number
+  }
   citations?: { source: string; text: string }[]
 }
 
