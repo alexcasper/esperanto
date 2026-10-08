@@ -95,10 +95,10 @@ function EntryCard({ e }: { e: DictEntry }) {
         )}
         {e.attestation && (
           <span
-            title={`${e.attestation.count.toLocaleString()} occurrences across ${e.attestation.sources} independent corpus sources`}
+            title={`${e.attestation.count.toLocaleString()} occurrences across ${e.attestation.sources.toLocaleString()} sources (${e.attestation.sources_lit ?? 0} lit / ${e.attestation.sources_wiki ?? 0} wiki)`}
             className="rounded bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
           >
-            {e.attestation.count.toLocaleString()}× · {e.attestation.sources} src
+            {e.attestation.count.toLocaleString()}× · {e.attestation.sources_lit ? `${e.attestation.sources_lit} lit` : `${e.attestation.sources} src`}
           </span>
         )}
         <span className="ml-auto rounded bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
@@ -122,8 +122,13 @@ function EntryCard({ e }: { e: DictEntry }) {
             <div className="mt-2 space-y-2 border-t border-neutral-100 pt-2 text-sm dark:border-neutral-800">
               {e.attestation && (
                 <div className="text-xs text-neutral-500">
-                  attested: <strong>{e.attestation.count.toLocaleString()}×</strong> in{' '}
-                  <strong>{e.attestation.sources}</strong> independent source(s)
+                  attested: <strong>{e.attestation.count.toLocaleString()}×</strong> across{' '}
+                  <strong>{e.attestation.sources.toLocaleString()}</strong> source(s)
+                  {typeof e.attestation.sources_lit === 'number' && (
+                    <span className="ml-1 text-neutral-400">
+                      ({e.attestation.sources_lit.toLocaleString()} literary · {e.attestation.sources_wiki?.toLocaleString() ?? 0} wiki)
+                    </span>
+                  )}
                 </div>
               )}
               {e.citations?.map((c, i) => {
