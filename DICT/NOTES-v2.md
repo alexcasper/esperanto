@@ -648,6 +648,34 @@ mixed 3673, wp-only 1487). The broad tier is nearly exhausted: batch 15
 finishes it and opens the mixed tier, where evidence is 1–2 literary
 sources backed by ≥10 Wikipedia articles.
 
+## Batch 15 (esp-l2q) — 500 reviewed, 487 promoted; broad tier exhausted
+
+`DICT/review/v2-batch15-{a,b}.tsv`, re-mined first. Items 1–165 closed the
+broad tier (3+1 down to 3+0 wp: *skvalo*, *laŭbeto*, *bastŝuo*,
+*gagatnigra*); items 166–500 opened the **mixed tier** (2 literary sources
++ ≥43 wp), a sharp register change to modern and encyclopaedic vocabulary
+(*distribuado* 2+1618, *teknologio*, *koncilio*, *komputila*, *arkeologio*,
+*semajnfino*, *antisemitismo*, *sciencfikcia*, *ŝtatsekretario*).
+
+- **487 lemma** (269 noun, 104 verb, 87 adj, 27 adv) — all promoted.
+  Citations follow the register: 158 literary-only, 326 mixed
+  literary+Wikipedia, 3 Wikipedia-only (*alinomi*, *sasanida*, *svahila* —
+  their literary lines are the bare headword in lists).
+- **13 rejected** (2.6%, lowest yet): 10 foreign (*mistake(n)*, *unable*,
+  *durchau(s)*, *empfehle(n)*, *gesproche(n)*, *letzte(n)*, *(in)
+  preparazione*, Spanish *como*, Latin *(nec plus) ultra*, French *gri(s)*);
+  name *Ideografiko*; fragment *(La)tina*; inflection *konsiderati*
+  (konsideratas).
+- **Segmentation**: 14 of 320 wrong (4.4%, highest yet — loanwords cluster
+  in the mixed tier): `NO_SPLIT` *artikulo*, *deporti*, *fragila*,
+  *kapelano*, *lazareto*, *primara*, *referi*, *silikato*, *stratego*,
+  *trompeto*; overrides *ekestri*, *finestiĝi* (fin+est+iĝ), *patroneco*,
+  *patronino* (patron-). Expect this rate to hold through the mixed tier.
+
+Totals after batch 15: **7210** v2 entries; corpus-mined **9426**, 6611
+segmented and linked; dictionary **31882**; queue **4816** (broad 0, mixed
+3329, wp-only 1487).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -669,8 +697,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 5325 after
-  batch 14 — broad 165, then mixed 3673, then wp-only 1487. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 4816 after
+  batch 15 — broad exhausted; mixed 3329, then wp-only 1487. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
