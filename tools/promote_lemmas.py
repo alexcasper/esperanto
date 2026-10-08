@@ -185,7 +185,29 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'ludoni', 'ĝisatendi', 'favorito', 'bramano',
             # esp-weg (batch 7): loanwords read as am+ul+et, hum+id,
             # mek+an+ism, de+klin; sal+minejo is a compound, not salm+in+ej
-            'amuleto', 'humida', 'mekanismo', 'deklini', 'salminejo'}
+            'amuleto', 'humida', 'mekanismo', 'deklini', 'salminejo',
+            # esp-gwn (batch 8): compounds ali+maniere, nun+jara, multe+jara
+            # read as al+iamanier, nu+nj+ar, mult+ej+ar
+            'aliamaniere', 'nunjara', 'multejara',
+            # esp-3ke (batch 9): loanwords read as ek+spert, filip+in,
+            # legi+on, sard+in, sib+il, solid+ar; dek+unu+jara as de+kun+uj+ar
+            'eksperto', 'filipina', 'legiono', 'sardino', 'sibilo',
+            'solidara', 'dekunujara',
+            # esp-htt (batch 10): compounds ali+foje, voj+erari read as
+            # al+iafoj, voj+er+ar
+            'aliafoje', 'vojerari',
+            # esp-n4i (batch 11): loanwords read as dis+pozici, fon+em,
+            # kar+it+at, san+it+ar, viol+et; ĉef- compounds read as ĉe+falt+ar,
+            # ĉe+flok
+            'dispozicio', 'fonemo', 'karitato', 'sanitara', 'violeto',
+            'ĉefaltaro', 'ĉefloko',
+            # esp-kw1 (batch 12): roots dekor-, kampad-, dissolv- read as
+            # de+kor, kamp+ad, dis+solv; compound tur+pint read as turp+int
+            'dekoro', 'kampadi', 'dissolviĝo', 'turpinto',
+            # esp-598 (batch 13): roots flakon-, kanot-, maltan-, ulan- read
+            # as flak+on, kan+ot, mal+tan, ul+an; compound propr+a+decid+e
+            # read as propr+ad+ec+id
+            'flakono', 'kanoto', 'maltano', 'ulano', 'propradecide'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -200,6 +222,15 @@ SPLIT_OVERRIDE = {
     'revanto': ([], 'rev', ['ant']),           # not re+vant
     'trabaro': ([], 'trab', ['ar']),           # trabo 'beam', not tra+bar
     'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
+    'nesentema': (['ne'], 'sent', ['em']),     # not ne+sen+tem
+    'ideto': ([], 'ide', ['et']),              # idea, not id+et
+    'reformado': ([], 'reform', ['ad']),       # not re+form+ad
+    'trabeto': ([], 'trab', ['et']),           # trabo 'beam', not tra+bet
+    'trafigi': ([], 'traf', ['ig']),           # not tra+fig
+    'malsuprengrimpi': (['malsupren'], 'grimp', []),  # not mal+suprengrimp
+    'aliĝadi': ([], 'aliĝ', ['ad']),           # aliĝ+ad, not al+iĝad
+    'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
+    'reformema': ([], 'reform', ['em']),       # not re+form+em
 }
 
 
