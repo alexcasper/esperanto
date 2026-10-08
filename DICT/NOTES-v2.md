@@ -474,6 +474,85 @@ Totals after batch 7: **3382** v2 entries; corpus-mined **5598**, 3716
 segmented and linked; dictionary **28054**; queue **9166** (broad 3799,
 mixed 3842, wp-only 1525).
 
+## Batch 8 (esp-gwn) — 500 reviewed, 485 promoted
+
+`DICT/review/v2-batch8-{a,b}.tsv`: queue positions 1–500 after a fresh
+re-mine (the batch-7 lesson): the re-mine alone dropped the queue 9166 →
+9087 as batch-7 stems absorbed their sibling endings before review, and
+this time every accepted lemma was promoted.
+
+- **485 lemma** (231 noun, 153 verb, 76 adj, 24 adv, 1 interj —
+  *hahaha*): mostly derivations (*kuncivitano*, *bogepatro*, *urbestrejo*,
+  *fingropinto*, *poŝtranĉilo*) plus a few loans (*fotelo*, *dogo*,
+  *melaso*, *rezedo*, *numido*, *oero*). All 485 cite literary sources only.
+- **15 rejected** (3.0%): 11 foreign (German *ganze*, *gesehe*; French
+  *toute*, *mauvai*; English *bega*, *eleve*, *recognise*, *postage*, and
+  grammar-lesson Latinisms *distributio*, *repetitio*, *augmentative*);
+  OCR *regardi* (rigardi); *propa* `fragment` (an invented form in a
+  metalinguistic list); *baptanino*, *tempofine* `uncertain`.
+- **Segmentation**: 5 of 401 splits wrong (1.2%) — compounds *aliamaniere*,
+  *nunjara*, *multejara* → `NO_SPLIT`; overrides *nesentema* (ne+sent+em,
+  not ne+sen+tem) and *ideto* (ide+et).
+- `--recite v2-` re-drew one batch-7 entry (*hindeŭropa*) that the re-mine
+  gave a literary line.
+
+Totals after batch 8: **3867** v2 entries; corpus-mined **6083**, 4114
+segmented and linked; dictionary **28539**; queue **8587** (broad 3264,
+mixed 3808, wp-only 1515).
+
+## Batch 9 (esp-3ke) — 500 reviewed, 473 promoted
+
+`DICT/review/v2-batch9-{a,b}.tsv`, re-mined first: the end of the 5-source
+band (5+0 wp) and the top of the 4-source band, where Wikipedia breadth
+returns (*arkitekto* 4+1136, *retejo* 4+973, *ĝenro*, *platformo*,
+*eksperto*, *licenco*, *spontana*).
+
+- **473 lemma** (256 noun, 109 verb, 85 adj, 23 adv) — all promoted.
+  463 cite literary sources only; *retejo* (website) only Wikipedia, its
+  four non-Wikipedia occurrences missing from the miner's citation sample.
+- **27 rejected** (5.4%): 20 foreign — German (*erste*, *esse*, *heute*,
+  *finde*, *mache*, *kleine*, *ende*), Italian/Spanish (*lezioni*, *bella*,
+  *lengua*, *italiano* from a dictionary title), French *nationale*,
+  English (*pleasurable*, *advisable*, *desirable*, *learnable*,
+  *circulatio*, *archive*) and a reformed-Esperanto poem (*familje*,
+  *homoze*); OCR *cielo*, *antai*; inflections *duonfermante* (-ante),
+  *devinti* (devintus); `fragment` *despli*, *plimalpli* (*des pli*,
+  *pli malpli* run together — promote's ending-based POS would have filed
+  them as verbs); name *dara*. Rejections rise again at 4–5 sources, where
+  bilingual grammar lessons supply most of the noise.
+- **Segmentation**: 8 of 361 wrong (2.2%) — loanwords *eksperto*
+  (ek+spert), *filipina*, *legiono*, *sardino*, *sibilo*, *solidara* and
+  the numeral compound *dekunujara* (de+kun+uj+ar) → `NO_SPLIT`;
+  *reformado* → reform+ad.
+
+Totals after batch 9: **4340** v2 entries; corpus-mined **6556**, 4468
+segmented and linked; dictionary **29012**; queue **8042** (broad 2733,
+mixed 3795, wp-only 1514).
+
+## Batch 10 (esp-htt) — 500 reviewed, 474 promoted
+
+`DICT/review/v2-batch10-{a,b}.tsv`, re-mined first; broad tier at 4
+non-Wikipedia sources (4+14 down to 4+2 wp).
+
+- **474 lemma** (225 noun, 144 verb, 76 adj, 29 adv) — all promoted; 472
+  cite literary sources only, none Wikipedia-only. Derivations dominate
+  (*staciestro*, *sakfajfilo*, *fenestrokadro*, *respondkupono*,
+  *luphundo*), with loans *menaĝerio*, *droŝko*, *skudo*, *ideografio*.
+- **26 rejected** (5.2%): 22 foreign — German (*komme*, *lasse*, *einige*,
+  *gebe*, *besondere*, *meiste*, *folge*, *sehe*), French (*foi*,
+  *langage*, *bourse*, *solutio*), English (*thee*, *comprehensive*,
+  *constructio*, *applicatio*, *documentatio*, *inclusive*, *guidance*),
+  Polish *jede*, *matka*, Ido *linguo*; name *genevo*; `uncertain`
+  *neanto*, *buno*, *neigi*.
+- **Segmentation**: 5 of 376 wrong (1.3%) — compounds *aliafoje*,
+  *vojerari* → `NO_SPLIT`; overrides *trabeto* (trab+et), *trafigi*
+  (traf+ig), *malsuprengrimpi* (malsupren+grimp).
+- `--recite v2-` gave batch-9's *pluvivi* a literary citation.
+
+Totals after batch 10: **4814** v2 entries; corpus-mined **7030**, 4842
+segmented and linked; dictionary **29486**; queue **7470** (broad 2207,
+mixed 3761, wp-only 1502).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -495,8 +574,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 9166 after
-  batch 7 — broad 3799, then mixed 3842, then wp-only 1525. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 7470 after
+  batch 10 — broad 2207, then mixed 3761, then wp-only 1502. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
