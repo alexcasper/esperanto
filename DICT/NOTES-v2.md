@@ -359,6 +359,69 @@ What this means for batch 6:
   record in memory. Fine on dawn, but worth streaming before the corpus grows
   again.
 
+## esp-nuk — register-aware evidence bar (Vikipedio scale)
+
+With 42,595 of 42,899 sources being single `wp-*` articles, `gap_report.py`
+now splits each candidate's sources by register and queues it in the first
+tier it meets (all tiers also need >= 5 occurrences):
+
+| Tier | Rule | Queued |
+|---|---|---:|
+| broad | >= 3 non-Wikipedia sources (the pre-Vikipedio bar, same meaning) | 4,839 |
+| mixed | 1–2 non-Wikipedia + >= 10 wp articles | 3,870 |
+| wp-only | no other source, >= 50 wp articles | 1,530 |
+
+Queue **47,279 → 10,239**, ordered by tier, then non-Wikipedia sources, then
+wp articles. Queue citations prefer non-Wikipedia lines. New buckets:
+
+- **foreign** (1,984): a letter outside the alphabet (q w x y) or a short
+  Romance/German function-word list (*della*, *beide*, *chose*).
+- **participle** now also catches participles of verbs that are themselves
+  candidates (*establita* beside *establi*): +862.
+- **capitalised** (3,254): under a quarter of occurrences lower-case
+  (`reconcile_lemmas.py` now keeps the summed `lower` count). Catches names
+  that wiki reference lists lower-case now and then (*anna* 0.7%, *otto*
+  0.2%) — but also country/place names (*afganio*, *arabio*), which ReVo
+  holds as headwords. They are held out of the queue, not rejected, pending
+  a names policy.
+
+Left to reviewers: Latin *-ctio* forms (*editio*, *translatio*) — a `-tio`
+rule would hit *demokratio*, *dinastio*, *patio*; English tokens with an
+Esperanto-looking inflection (*make*/*maken*). Reconcile's 5.1 GB peak is
+filed separately.
+
+## Batch 6 (esp-73s) — 500 reviewed, 476 promoted
+
+`DICT/review/v2-batch6-{a,b}.tsv`: the top 500 of the esp-nuk queue, all in
+the **broad** tier (6–8 non-Wikipedia sources, 0–1,657 wp articles; median
+attestation 30 sources by scan). The first batch ranked on the Vikipedio
+corpus.
+
+- **476 lemma** (227 noun, 151 verb, 78 adj, 20 adv). Mostly derivations of
+  held roots (*kunludanto*, *plumujo*, *senfenestra*, *fulmobato*) and
+  modern vocabulary the old layers lacked (*kriterio*, *ministerio*,
+  *lifto*, *docento*, *kaoso*, *komploto*, *nordorienta*).
+- **24 rejected** (4.8%): 19 foreign — English Latinate nouns split at a
+  line break or before *-n* (*translatio*, *editio*, *conclusio*, *sectio*,
+  *intentio*, *soo*←soon, *make*, *she*, *else*), French *traductio*, Ido
+  *esi*, Spanish *una*, *amigi*←amigos, *mea*; names *diĵona*, *dene* (Ivy
+  Dene); *eo* `ocr-artifact` (OCR of *ĉe*, and URL language codes); *orgi*
+  `fragment` (key collision, *orgio* held); *montrigi* `uncertain` (wp use
+  reads as a typo for *montriĝi*). Higher than batch 5's 3.4% because the
+  q/w/x/y filter cannot see English words spelt with Esperanto letters.
+- **Segmentation**: 5 of 379 splits wrong (1.3%) — *ludoni* read as
+  *lud+on* (compound *lu+doni*), *ĝisatendi* as *ĝis+at+end* (*ĝis-* not
+  modelled), *favorito*, *bramano* (loanwords) → `NO_SPLIT`; *reformisto*
+  → override *reform+ist* (not *re+form+ist*). `--resegment v2-` changed
+  exactly those 5.
+- **Citations**: 79 of the 476 are cited only from `wp-*` lines although
+  each has 6+ non-Wikipedia sources — promote picks citations from the
+  miner record without esp-nuk's register preference (follow-up bead).
+
+Totals after batch 6: **2904** v2 entries; corpus-mined **5120**, 3352
+segmented and linked to §2; dictionary **27576**; queue **9739** (broad
+4339, mixed 3870, wp-only 1530).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -380,10 +443,9 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: after esp-r14 the 302-source queue holds 3083; it will be
-  re-mined once the Vikipedio corpus reaches this branch (see esp-r14 above). The *thin* bucket (11055) needs a different bar than
-  source count — single-author technical vocabulary is real but unattested
-  elsewhere.
+- **Next batches**: the register-aware queue (esp-nuk) holds 9739 after
+  batch 6 — broad 4339, then mixed 3870, then wp-only 1530. The
+  *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
 

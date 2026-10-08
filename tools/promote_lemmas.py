@@ -179,7 +179,10 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'durada', 'ekskremento', 'elipso', 'fortuno', 'kamarado',
             'komisiono', 'magistrato', 'maĵorato', 'piano',
             'prioro', 'revuo', 'senato', 'sindikato', 'trapezo',
-            'ĉiujare'}
+            'ĉiujare',
+            # esp-73s (batch 6): lu+doni and ĝis+atendi are compounds read as
+            # -on-/-at-+-end- (ĝis- not modelled); favorit-, braman- loanwords
+            'ludoni', 'ĝisatendi', 'favorito', 'bramano'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -188,6 +191,7 @@ SPLIT_OVERRIDE = {
     'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
     'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
     'nevino': ([], 'nev', ['in']),             # not ne+vin
+    'reformisto': ([], 'reform', ['ist']),     # not re+form+ist
 }
 
 
