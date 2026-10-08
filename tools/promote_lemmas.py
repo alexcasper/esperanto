@@ -215,7 +215,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # de+port, frag+il, kapel+an, lazar+et, pri+mar, re+fer,
             # silik+at, strat+eg (strategist), tromp+et (trumpet)
             'artikulo', 'deporti', 'fragila', 'kapelano', 'lazareto',
-            'primara', 'referi', 'silikato', 'stratego', 'trompeto'}
+            'primara', 'referi', 'silikato', 'stratego', 'trompeto',
+            # esp-1du (batch 16): brom+id, de+form, divid+end, harmoni+um,
+            # kab+in, met+il, pi+et+at, pri+madon, re+porter, stern+um,
+            # veter+in+ar
+            'bromido', 'deformi', 'dividendo', 'harmoniumo', 'kabino',
+            'metila', 'pietato', 'primadono', 'reportero', 'sternumo',
+            'veterinaro'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -242,6 +248,7 @@ SPLIT_OVERRIDE = {
     'finestiĝi': ([], 'finest', ['iĝ']),       # fin+est+iĝ, not fi+nest+iĝ
     'patroneco': ([], 'patron', ['ec']),       # not patr+on+ec
     'patronino': ([], 'patron', ['in']),       # not patr+on+in
+    'sensema': ([], 'sens', ['em']),           # not sen+sem
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
