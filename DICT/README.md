@@ -42,7 +42,7 @@ attested in three or more independent sources (recounted in esp-58p, below).
 `derived: true` marks a word built by regular affixation on a root already
 held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
 that the entry's `morphology` carries a self-validating affix segmentation
-(`prefixes`/`suffixes`); 3716 of the 5598 corpus-mined entries. Settled
+(`prefixes`/`suffixes`); 4114 of the 6083 corpus-mined entries. Settled
 policy is that these earn entries, because a reader looking up *reĝino*
 should find it; the flag lets a consumer wanting only roots and opaque
 compounds filter them out.
@@ -70,9 +70,10 @@ to GRAMMAR §2. Gap analysis: `python3 tools/gap_report.py`; review batches:
 under the register-aware bar (esp-nuk): every one attested in 6–8
 non-Wikipedia sources, plus up to 1,657 Wikipedia articles. **Batch 7
 (esp-weg)** added 478 (5–6 non-Wikipedia sources), with literary citations
-first (esp-0mu).
-Corpus-mined total: **5598** (3382 from v2 batches). esp-58p segmented the
-2216 earlier entries too: **3716** corpus-mined entries now carry affix
+first (esp-0mu). **Batch 8 (esp-gwn)** added 485 (5 non-Wikipedia
+sources).
+Corpus-mined total: **6083** (3867 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **4114** corpus-mined entries now carry affix
 segmentation and `grammar_refs` to §2.
 
 | Kind | Count |

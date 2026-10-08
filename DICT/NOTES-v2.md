@@ -474,6 +474,32 @@ Totals after batch 7: **3382** v2 entries; corpus-mined **5598**, 3716
 segmented and linked; dictionary **28054**; queue **9166** (broad 3799,
 mixed 3842, wp-only 1525).
 
+## Batch 8 (esp-gwn) — 500 reviewed, 485 promoted
+
+`DICT/review/v2-batch8-{a,b}.tsv`: queue positions 1–500 after a fresh
+re-mine (the batch-7 lesson): the re-mine alone dropped the queue 9166 →
+9087 as batch-7 stems absorbed their sibling endings before review, and
+this time every accepted lemma was promoted.
+
+- **485 lemma** (231 noun, 153 verb, 76 adj, 24 adv, 1 interj —
+  *hahaha*): mostly derivations (*kuncivitano*, *bogepatro*, *urbestrejo*,
+  *fingropinto*, *poŝtranĉilo*) plus a few loans (*fotelo*, *dogo*,
+  *melaso*, *rezedo*, *numido*, *oero*). All 485 cite literary sources only.
+- **15 rejected** (3.0%): 11 foreign (German *ganze*, *gesehe*; French
+  *toute*, *mauvai*; English *bega*, *eleve*, *recognise*, *postage*, and
+  grammar-lesson Latinisms *distributio*, *repetitio*, *augmentative*);
+  OCR *regardi* (rigardi); *propa* `fragment` (an invented form in a
+  metalinguistic list); *baptanino*, *tempofine* `uncertain`.
+- **Segmentation**: 5 of 401 splits wrong (1.2%) — compounds *aliamaniere*,
+  *nunjara*, *multejara* → `NO_SPLIT`; overrides *nesentema* (ne+sent+em,
+  not ne+sen+tem) and *ideto* (ide+et).
+- `--recite v2-` re-drew one batch-7 entry (*hindeŭropa*) that the re-mine
+  gave a literary line.
+
+Totals after batch 8: **3867** v2 entries; corpus-mined **6083**, 4114
+segmented and linked; dictionary **28539**; queue **8587** (broad 3264,
+mixed 3808, wp-only 1515).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -495,8 +521,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 9166 after
-  batch 7 — broad 3799, then mixed 3842, then wp-only 1525. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 8587 after
+  batch 8 — broad 3264, then mixed 3808, then wp-only 1515. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
