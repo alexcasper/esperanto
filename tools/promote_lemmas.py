@@ -203,7 +203,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'ĉefaltaro', 'ĉefloko',
             # esp-kw1 (batch 12): roots dekor-, kampad-, dissolv- read as
             # de+kor, kamp+ad, dis+solv; compound tur+pint read as turp+int
-            'dekoro', 'kampadi', 'dissolviĝo', 'turpinto'}
+            'dekoro', 'kampadi', 'dissolviĝo', 'turpinto',
+            # esp-598 (batch 13): roots flakon-, kanot-, maltan-, ulan- read
+            # as flak+on, kan+ot, mal+tan, ul+an; compound propr+a+decid+e
+            # read as propr+ad+ec+id
+            'flakono', 'kanoto', 'maltano', 'ulano', 'propradecide'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -224,6 +228,7 @@ SPLIT_OVERRIDE = {
     'trabeto': ([], 'trab', ['et']),           # trabo 'beam', not tra+bet
     'trafigi': ([], 'traf', ['ig']),           # not tra+fig
     'malsuprengrimpi': (['malsupren'], 'grimp', []),  # not mal+suprengrimp
+    'aliĝadi': ([], 'aliĝ', ['ad']),           # aliĝ+ad, not al+iĝad
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
     'reformema': ([], 'reform', ['em']),       # not re+form+em
 }
