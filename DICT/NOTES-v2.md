@@ -575,6 +575,29 @@ Totals after batch 11: **5298** v2 entries; corpus-mined **7514**, 5218
 segmented and linked; dictionary **29970**; queue **6937** (broad 1689,
 mixed 3747, wp-only 1501).
 
+## Batch 12 (esp-kw1) — 500 reviewed, 475 promoted
+
+`DICT/review/v2-batch12-{a,b}.tsv`, re-mined first (after fast-forwarding
+to glm's batch-11 merge): the 3-source band, 3+85 down to 3+12 wp.
+
+- **475 lemma** (256 noun, 98 verb, 100 adj, 21 adv) — all promoted; 451
+  literary-only, *dialektaro* Wikipedia-only.
+- **25 rejected** (5.0%): 14 foreign — German *drei*, *gege(n)*,
+  *morge(n)*, *unsere*; French *terre*, *guerre*, *reine*; Italian *capo*,
+  *internazionale*; Latin *camera*, *omnia*; Polish *ulica*; Occidental
+  *lingue*; English *relatio*. Names *Demas*, *Magenta*, *Koso*. OCR *tui*
+  (tiu), *kontra* (kontraŭ), *larga* (larĝa), *loa*. `uncertain` *inici*,
+  *diva*, *alero*, *illa*.
+- **Segmentation**: 6 of 359 wrong (1.7%) — roots *dekoro*, *kampadi*,
+  *dissolviĝo* and compound *turpinto* (tur+pint) → `NO_SPLIT`; overrides
+  *patronado* (patron+ad), *reformema* (reform+em). The new `kampad` root
+  re-split the older *kampadejo* (kamp+ad+ej → kampad+ej); `--recite`
+  gave batch-11's *kompano* a literary citation.
+
+Totals after batch 12: **5773** v2 entries; corpus-mined **7989**, 5573
+segmented and linked; dictionary **30445**; queue **6383** (broad 1173,
+mixed 3715, wp-only 1495).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -596,8 +619,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 6937 after
-  batch 11 — broad 1689, then mixed 3747, then wp-only 1501. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 6383 after
+  batch 12 — broad 1173, then mixed 3715, then wp-only 1495. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
