@@ -188,7 +188,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'amuleto', 'humida', 'mekanismo', 'deklini', 'salminejo',
             # esp-gwn (batch 8): compounds ali+maniere, nun+jara, multe+jara
             # read as al+iamanier, nu+nj+ar, mult+ej+ar
-            'aliamaniere', 'nunjara', 'multejara'}
+            'aliamaniere', 'nunjara', 'multejara',
+            # esp-3ke (batch 9): loanwords read as ek+spert, filip+in,
+            # legi+on, sard+in, sib+il, solid+ar; dek+unu+jara as de+kun+uj+ar
+            'eksperto', 'filipina', 'legiono', 'sardino', 'sibilo',
+            'solidara', 'dekunujara'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -205,6 +209,7 @@ SPLIT_OVERRIDE = {
     'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
     'nesentema': (['ne'], 'sent', ['em']),     # not ne+sen+tem
     'ideto': ([], 'ide', ['et']),              # idea, not id+et
+    'reformado': ([], 'reform', ['ad']),       # not re+form+ad
 }
 
 
