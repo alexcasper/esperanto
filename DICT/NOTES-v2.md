@@ -422,6 +422,24 @@ Totals after batch 6: **2904** v2 entries; corpus-mined **5120**, 3352
 segmented and linked to §2; dictionary **27576**; queue **9739** (broad
 4339, mixed 3870, wp-only 1530).
 
+## esp-0mu — literary citations first; one attestation shape
+
+- **Citations**: `reconcile_lemmas.pick_citations` now orders non-Wikipedia
+  sources first (round-robin alone filled its five slots with `wp-*` lines
+  once 42.6k article sources existed), and `promote_lemmas.choose_citations`
+  takes non-Wikipedia lines first, Wikipedia only for slots literature
+  cannot fill. New `--recite BATCH_PREFIX` re-draws citations, changing an
+  entry only when it gains literary lines. `--recite v2-batch6`: 386 of 476
+  entries changed (citations only); the 79 cited solely from Wikipedia are
+  now all literary — all 476 batch-6 entries carry three literary
+  citations. Batches 1–5 came from the pre-Vikipedio corpus: 0 changes.
+- **Attestation**: `tools/attest_scan.py` now returns `sources_lit` /
+  `sources_wiki` beside `count`/`sources`, the same split the web lane's
+  `mine_concordance.py` writes (a6f69ec). Spot check on 7 entries: identical
+  on 6, *malgranda* within 4 of 10,665 sources. Both writers of
+  `attestation` now produce the same shape and, to that margin, the same
+  numbers.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
