@@ -47,9 +47,12 @@ def load_shards(pattern):
 
 
 def pick_citations(citations, limit=5):
-    """Prefer breadth of sources over repetition within one source."""
+    """Prefer breadth of sources over repetition within one source, and
+    non-Wikipedia sources over wp-* articles (esp-0mu): with ~42.6k single-
+    article sources, round-robin alone filled the five slots with wp lines."""
     by_source = collections.OrderedDict()
-    for citation in citations:
+    for citation in sorted(citations,
+                           key=lambda c: c['source'].startswith('wp-')):
         by_source.setdefault(citation['source'], []).append(citation)
     picked = []
     while len(picked) < limit and any(by_source.values()):
@@ -107,7 +110,10 @@ def merge(records):
 
     for entry in merged.values():
         others = entry.pop('other_kinds')
-        if entry.pop('lower') == 0 and others & {'unknown', 'derived'}:
+        # Kept in the output (esp-nuk): Vikipedio reference lists lower-case
+        # a few occurrences of names (anna, otto, della), so 'never lower-
+        # case' misses them; gap_report applies a lower-case-share test.
+        if entry['lower'] == 0 and others & {'unknown', 'derived'}:
             entry['kind'] = 'name'
         elif entry['kind'] == 'name' and others:
             entry['kind'] = min(others, key=lambda k: KIND_RANK.get(k, 9))
