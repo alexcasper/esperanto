@@ -1306,6 +1306,32 @@ Totals after batch 36: **17235** v2 entries; corpus-mined **19451**,
 12499 segmented and linked; dictionary **41907**; queue **1030** (all
 wp-only, >= 20 wp). Mixed tier exhausted at 1 lit + 3 wp.
 
+## Batch 37 (esp-6g2) — wp-only >= 20; 500 reviewed, 459 promoted
+
+`DICT/review/v2-batch37-{a,b}.tsv`, re-mined first: wp-only 44 down to
+22 wp (a few late arrivals above 25). *eŭkarioto*, *homeostazo*,
+*tabulkomputilo*, *tekokomputilo*, *nuboskrapulo*, *kibernetiko*,
+*ventogeneratoro*, *azilpetanto*, *kontinentbreto*, *orcino*.
+
+- **459 lemma** (320 noun, 100 adj, 31 verb, 8 adv) — all promoted.
+- **41 rejected** (8.2%): 28 foreign (Latin binomial epithets and titles
+  *arborea*, *virginianus*, *Summa Theologiae*, *sensu stricto*;
+  Spanish *caso*, *obra*, *loco*, *silencio*, *Patrimonio*), 5
+  `-itis`/`-atas` passives, 5 `uncertain` anglicisms or non-standard
+  forms (*klami* claim, *reserĉado* research, *eksterna*, *difera*,
+  *nomendas*), 2 fragments (LaTeX *theta*, *Żeromski*), *Metallica*.
+- **Segmentation**: 17 of 222 wrong (7.7%) — 13 `NO_SPLIT` (*arkonto*,
+  *bubona*, *halogenido*, *keratino*, *kvarcito*, *patriarkato*,
+  *perianto*, *piaristo*, *pilono*, *romanida*, *uropiga*, *vaskono*,
+  *vetono*); overrides *endemismo*, *erotismo*, *separatisto*,
+  *surrealismo*. Chemistry/biology *-id*, *-on*, *-at* endings are the
+  usual trap.
+- `--recite v2-` added literary passages to 9 batch-36 entries.
+
+Totals after batch 37: **17694** v2 entries; corpus-mined **19910**,
+12708 segmented and linked; dictionary **42366**; queue **528** (all
+wp-only, 22..20 wp).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
