@@ -989,6 +989,37 @@ segmented and linked; dictionary **36664**; queue **1175** (broad 1171).
 Totals after batch 26: **12460** v2 entries; corpus-mined **14676**, 9815
 segmented and linked; dictionary **37132**; queue **671** (broad 667).
 
+## Batch 27 (esp-a2u) — 667 reviewed, 617 promoted; 2-source tier exhausted
+
+`DICT/review/v2-batch27-{a,b,c}.tsv` (223/222/222), re-mined first: the
+whole remaining 2-source broad tier (2 literary + 3 down to 0 wp) plus 4
+late arrivals. The most literary batch of the run: **380 of 617 entries
+cite only literature** (0 wp). Homeric epithets (*bovookula*,
+*rapidapieda*, *kuproarmita*), domestic and period vocabulary
+(*dormoĉapo*, *naztuketo*, *portseĝo*, *fumpotĉapelo*, *etaĝero*,
+*diliĝenco*-era *kaleŝego*), prosody (*iambo*, *troĥeo*).
+
+- **617 lemma** (369 noun, 126 verb, 100 adj, 22 adv) — all promoted;
+  380 literary-only, 234 mixed, 3 Wikipedia-only.
+- **50 rejected** (7.5%): 31 foreign (German word-list and letter-model
+  verbs — *bauen*, *erschienen*, *fangen*, *gegeben*, *vergessen*,
+  *folgende*, *nennen*, *zeigen*, *herzlichen*…; French *traduire*,
+  *aucune*, *parce*, *suivre*; English *creation*, *innovation*,
+  *resolution*, *tense*, *of the*; Polish *gdzie*; Latin *nulli*; Italian
+  *si muove*; Arabic *marhaba*); 10 OCR (*autoro*, *efi*, *tumi*,
+  *lajaro*, *iingvo*, *lnternacia*, *rekonti*, *circonstanco*, *esli*,
+  *vovo*); 4 inflections (*preferintus*, three Homeric participle
+  epithets); names *Donja*, *Havra*; fragments *ulo*, *ineto*;
+  `uncertain` *neno*.
+- **Segmentation**: 8 of 425 wrong (1.9%) — `NO_SPLIT` *amontilado*,
+  *etaĝero*, *folianto*, *limeto*, *rubino*, *samumo*; overrides
+  *seninda* (sen+ind), *ĉekano* (ĉek+an). `--recite` gave literary
+  citations to 26 batch-26 entries.
+
+Totals after batch 27: **13077** v2 entries; corpus-mined **15293**,
+10234 segmented and linked; dictionary **37749**; queue **0** again —
+next is esp-jpn (mixed at 5 wp, wp-only at 25).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1011,8 +1042,8 @@ refresh path avoids miner keys altogether.
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
-  sources; 671 queued after batch 26 (667 broad), then esp-jpn lowers
-  the mixed and wp-only tiers. The
+  sources; that tier is **exhausted** after batch 27. Next, esp-jpn lowers
+  the mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
