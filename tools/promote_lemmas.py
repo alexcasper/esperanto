@@ -255,7 +255,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-rz5 (batch 23): duon+ar+id, forc+ej, kamp+an+il, mask+ot,
             # mot+et, ord+in, sub+strat, super+int+end+ant
             'duonarida', 'forceja', 'kampanilo', 'maskoto', 'moteto',
-            'ordino', 'substrato', 'superintendanto'}
+            'ordino', 'substrato', 'superintendanto',
+            # esp-a7p (batch 24): al+kaz+ar, ant+er, bo+real, centr+op,
+            # en+tent, inter+fer, kastr+um, kort+um, morf+in, palat+in,
+            # pri+mas, puf+in, stip+ul, trog+on
+            'alkazaro', 'antero', 'boreala', 'centropo', 'entento',
+            'interfero', 'kastrumo', 'kortuma', 'morfino', 'palatina',
+            'primaso', 'pufino', 'stipulo', 'trogono'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -305,6 +311,8 @@ SPLIT_OVERRIDE = {
     'habilitiĝi': ([], 'habilit', ['iĝ']),     # not habil+it+iĝ
     'rekuperiĝi': ([], 'rekuper', ['iĝ']),     # not re+kup+er+iĝ
     'subaro': (['sub'], 'ar', []),             # stem was 'sub'
+    'devoteco': ([], 'devot', ['ec']),         # not dev+ot+ec
+    'diseriĝi': (['dis'], 'er', ['iĝ']),       # stem was 'dis'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
