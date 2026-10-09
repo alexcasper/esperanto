@@ -782,6 +782,35 @@ Totals after batch 19: **9108** v2 entries; corpus-mined **11324**, 7794
 segmented and linked; dictionary **33780**; queue **2646** (mixed 1232,
 wp-only 1414).
 
+## Batch 20 (esp-s5u) — 500 reviewed, 457 promoted
+
+`DICT/review/v2-batch20-{a,b}.tsv`, re-mined first: 1-source band at 1
+literary + 22 down to 15 wp. Literary vocabulary dominates again
+(*poreterne*, *prodaĵo*, *febleco*, *kreitaro*, *rumoro*, *tabelvorto*,
+*lavmaŝino*, *tiranosaŭro*, *gaŭĉo*).
+
+- **457 lemma** (282 noun, 58 verb, 104 adj, 13 adv) — all promoted; 453
+  mixed citations, 4 Wikipedia-only.
+- **43 rejected** (8.6%, highest yet): 33 foreign — Latin binomial
+  epithets dominate (*sativa*, *officinalis*, *chinensis*, *nobilis*,
+  *edulis*, *nucifera*, *mirabilis*, *merula*, *spinosa*, *domestica*,
+  *africanus*, *Castanea*, *europaeus*, *europea*) plus Latin *coeli*,
+  *nomine*, *nostris*, *veritas*, *cella*; French *celle*, *fille*,
+  *militaire*, *Humaine*; Italian *Nuovo*, *cosa*, *sotto voce*,
+  *Comedia*; German *neuesten*, *katholische*; Spanish *caballo*; Slavic
+  *cena*; Polish fragment; English title *Inferno*. Names *Proteo*,
+  *Marzo*, *Soma*, *Tanagro*. OCR *foino*, *preskai*, *jia*. `uncertain`
+  *lidi*, *noĉita*, *okopo*.
+- **Segmentation**: 10 of 271 wrong (3.7%) — `NO_SPLIT` *albumino*,
+  *alveolaro*, *huligano*, *monisma*, *pentano*, *trapisto*, *violino*;
+  overrides *eksplorado*, *nomadeca*, *senpereco*. Resegmentation also
+  improved *antaŭeniĝi* (antaŭ+ENIĜ → ANTAŬEN+iĝ). `--recite` gave
+  literary citations to 4 batch-19 entries.
+
+Totals after batch 20: **9565** v2 entries; corpus-mined **11781**, 8058
+segmented and linked; dictionary **34237**; queue **2125** (mixed 726,
+wp-only 1399).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -803,8 +832,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 2646 after
-  batch 19 — broad exhausted; mixed 1232, then wp-only 1414. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 2125 after
+  batch 20 — broad exhausted; mixed 726, then wp-only 1399. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
