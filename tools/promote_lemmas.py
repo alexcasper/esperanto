@@ -283,7 +283,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # pri+mor, tar+ant+ul, term+ont+et
             'aŭtoriteco', 'debila', 'delico', 'ekstraordinara',
             'elementara', 'fermato', 'membronumero', 'mondono',
-            'nenifarado', 'primora', 'tarantulo', 'termonteto'}
+            'nenifarado', 'primora', 'tarantulo', 'termonteto',
+            # esp-9i4 (batch 30, mixed tier finished): akr+at+on, cedr+at,
+            # de+pozici, et+on, indi+um, kan+op, kup+ul, morb+id, musk+et,
+            # orf+an, verv+er
+            'akratona', 'cedrato', 'depozicio', 'etono', 'indiumo',
+            'kanopo', 'kupulo', 'morbida', 'musketo', 'orfano',
+            'ververe'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without

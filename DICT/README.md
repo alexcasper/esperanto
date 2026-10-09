@@ -42,7 +42,7 @@ attested in three or more independent sources (recounted in esp-58p, below).
 `derived: true` marks a word built by regular affixation on a root already
 held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
 that the entry's `morphology` carries a self-validating affix segmentation
-(`prefixes`/`suffixes`); 10785 of the 16184 corpus-mined entries. Settled
+(`prefixes`/`suffixes`); 11121 of the 16722 corpus-mined entries. Settled
 policy is that these earn entries, because a reader looking up *reĝino*
 should find it; the flag lets a consumer wanting only roots and opaque
 compounds filter them out.
@@ -78,9 +78,9 @@ tail + wp-only head), **batch 23 (esp-rz5)** 487 (wp-only), **batch 24 (esp-a7p)
 tier lowered to 2 literary sources), **batch 26 (esp-6iu)** 468 (2+wp), **batch 27 (esp-a2u)** 617
 (2-source tier exhausted; 380 literary-only), **batch 28 (esp-jpn)** 454
 (mixed tier lowered to 1 lit + 5 wp, wp-only to 25 wp), **batch 29
-(esp-3bg)** 437 (1 lit + 7..6 wp).
-Corpus-mined total: **16184** (13968 from v2 batches). esp-58p segmented the
-2216 earlier entries too: **10785** corpus-mined entries now carry affix
+(esp-3bg)** 437 (1 lit + 7..6 wp), **batch 30 (esp-9i4)** 538 (1 lit + 6..5 wp; mixed tier finished).
+Corpus-mined total: **16722** (14506 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **11121** corpus-mined entries now carry affix
 segmentation and `grammar_refs` to §2.
 
 | Kind | Count |

@@ -1105,6 +1105,38 @@ Totals after batch 29: **13968** v2 entries; corpus-mined **16184**,
 10785 segmented and linked; dictionary **38640**; queue **2574** (mixed
 613, wp-only 1961).
 
+## Batch 30 (esp-9i4) — 613 reviewed, 538 promoted; mixed tier exhausted
+
+`DICT/review/v2-batch30-{a,b,c}.tsv`, re-mined first: the entire remaining
+mixed tier (1 literary + 6..5 Wikipedia sources: *krevado*, *kristalklara*,
+*kunflugi*, *kunirigi*, *kunkulpa*, *kuracanto*, *kvincentjara*, *laŭjare*,
+*lignosegejo*, *lingvohistoria*).
+
+- **538 lemma** (319 noun, 112 adj, 78 verb, 29 adv) — all promoted; 2
+  all-literary (*ĉasinto*, *ĉeŝultre*), 536 mixed literary+Wikipedia, 0
+  Wikipedia-only.
+- **75 rejected** (12.2%, consistent with expected ~12% in the loan/list-heavy
+  tail of the mixed tier): 42 foreign (word-list columns *semaine*, *verstehe*,
+  *variabili*, *borge*, *cacao*, *lentisci*, *gauche*, *schade*, *contemporaine*,
+  *spanische*, and Latin binomials *trutta*, *genetta*, *chamaeleo*, *acauli*,
+  *serta*); 27 proper-noun (*etruria*, *rono*, *saksona*, *leipziga*,
+  *nurenbergano*, *hurona*, *ĉerokea*, *melaneziano*, *mirmidono*, *noriko*,
+  *delphi*, *efeza*, *kastila*, *orija*, *iberiano*, *kvado*, *shia*, *amito*,
+  *iduso*, *iliriano*, *japona*, *leta*, *meksikana*, *ptolemeido*, *viĉo*,
+  *ŝumava*, *svevo*); 4 OCR (*fojro*←foiro, *kvazai*←kvazaŭ, *oklo*←okulo,
+  *projecto*←projekto); 1 inflection (*atinginti*←atingintus); 1 fragment (*pto*).
+- **Segmentation**: 11 wrong (3.2%) — loanwords *akratona*, *cedrato*,
+  *depozicio*, *etono*, *indiumo*, *kanopo*, *kupulo*, *morbida*, *musketo*,
+  *orfano*, *ververe* → `NO_SPLIT`. `--recite v2-` gave literary citations
+  to 11 previous entries (*abortiga*, *devenulo*, *ducifera*, *efikaĵo*,
+  *enhavoriĉa*, *eskapinto*, *fiolo*, *geŭzo*, *plezurŝipo*, *reprezentiga*,
+  *sorana*).
+
+Totals after batch 30: **14506** v2 entries; corpus-mined **16722**,
+11121 segmented and linked; dictionary **39178**; queue **1956** (mixed
+0, wp-only 1956). The mixed tier is **exhausted**; batch 31 opens the
+wp-only tier (≥25 wp).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
