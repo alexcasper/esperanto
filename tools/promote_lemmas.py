@@ -267,7 +267,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-6iu (batch 26): de+lig+it, de+sap+ont, ĝoj+at+end,
             # kul+ot, pel+er+in, re+viz
             'deligito', 'desaponti', 'ĝojatendi', 'kuloto', 'pelerino',
-            'revizo'}
+            'revizo',
+            # esp-a2u (batch 27): am+ont+il+ad, etaĝ+er, foli+ant, lim+et,
+            # rub+in, sam+um
+            'amontilado', 'etaĝero', 'folianto', 'limeto', 'rubino',
+            'samumo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -323,6 +327,8 @@ SPLIT_OVERRIDE = {
     'geido': (['ge'], 'id', []),               # stem was 'ge'
     'pietisto': ([], 'piet', ['ist']),         # not pi+et+ist
     'patronaro': ([], 'patron', ['ar']),       # not patr+on+ar
+    'seninda': (['sen'], 'ind', []),           # stem was 'sen'
+    'ĉekano': ([], 'ĉek', ['an']),             # not ĉe+kan
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
