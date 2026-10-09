@@ -757,6 +757,31 @@ Totals after batch 18: **8636** v2 entries; corpus-mined **10852**, 7524
 segmented and linked; dictionary **33308**; queue **3181** (mixed 1746,
 wp-only 1435).
 
+## Batch 19 (esp-4h3) — 500 reviewed, 472 promoted
+
+`DICT/review/v2-batch19-{a,b}.tsv`, re-mined first: one late broad-tier
+arrival (*orientaziano*), then the 1-source band at 1 literary + 38 down to
+22 wp (*olimpiado*, *inkunablo*, *haŭbizo*, *mustaĉo*, *zloto*,
+*esperantido*, *superdozo*, *piedpilkado*).
+
+- **472 lemma** (285 noun, 53 verb, 117 adj, 17 adv) — all promoted; 464
+  mixed citations, 1 literary-only, 7 Wikipedia-only.
+- **28 rejected** (5.6%): 20 foreign — Latin species epithets dominate
+  (*communis*, *domesticus*, *americanus*, *medica*, *lutea*, *cristatus*,
+  *palustris*, *europaea*, *dulce*, *aurea*); German *Griechische*,
+  *singen*; French *femme*; Spanish *todas*; Italian *Divina*, *allegro*;
+  Ido *loi*; Swahili *fisi*; Czech *červený*; *partito*. Names *Padova*,
+  *Santi*. OCR *posteŭlo*, *reao*, *viko*, *ima*. `uncertain` *mikspota*,
+  *inico*.
+- **Segmentation**: 6 of 274 wrong (2.2%, down from 6.6%) — `NO_SPLIT`
+  *disdegni*, *olimpiado*, *reverso*, *tornado*; overrides *perletere*
+  (per+leter), *transportisto* (transport+ist). `--recite` gave literary
+  citations to 5 batch-18 entries.
+
+Totals after batch 19: **9108** v2 entries; corpus-mined **11324**, 7794
+segmented and linked; dictionary **33780**; queue **2646** (mixed 1232,
+wp-only 1414).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -778,8 +803,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 3181 after
-  batch 18 — broad exhausted; mixed 1746, then wp-only 1435. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 2646 after
+  batch 19 — broad exhausted; mixed 1232, then wp-only 1414. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
