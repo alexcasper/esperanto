@@ -1247,6 +1247,35 @@ appear capitalised, held pending a names policy), `foreign` 1984,
 first (1016), then wp-only to 20 (1040); 15 wp roughly triples the
 wp-only band and should wait for a rejection-rate check at 20.
 
+## Batch 35 (esp-273) — phase 2c opens; 500 reviewed, 444 promoted
+
+esp-273 lowered the `gap_report` defaults to `--mixed-wp 3 --wp-only 20`
+(queue 2047: mixed 1014, wp-only 1033). `DICT/review/v2-batch35-{a,b}.tsv`
+covers the top 500 — the mixed tier at 1 literary + 4 wp — so **443 of
+the 444 new entries carry a literary citation** (*sestino*, *jarlo*,
+*grioto*, *termidoro*, *kedivo*, *oraĝo*, *liberpensanto*, *sakŝalmisto*,
+*pupteatristo*, *ĉionmanĝanto*).
+
+- **444 lemma** (281 noun, 85 adj, 62 verb, 16 adv) — all promoted.
+- **56 rejected** (11.2%, double the wp-only rate — one literary source
+  is a weak filter at 4 wp): 30 foreign (Latin binomials *Pinus cembra*,
+  *Rubus idaeus*, *Tilia parvifolia*; German/French/Polish/Swahili
+  entries of multilingual word lists *lauten*, *milieu*, *frais*,
+  *jezioro*, *rafiki*, *sasa*; titles *Arc de Triomphe*, *Mesopotamia*),
+  13 fragments (mojibake *dediÄante*, *ĝuados*, *alproksimiÄis*; elided
+  *lingvon'*, *Mine'*), 6 names (*Nereus*, *O'Hara*, *Robin*, *Annaeus*,
+  *Amala*, *Deino*), 3 OCR (*nmi*, *aaaa*, *avanaj*), 3 `uncertain`
+  (*bullo* — standard *bulo*; *konversa*; *maliĝi*), 1 inflection
+  (*dirintus*).
+- **Segmentation**: 10 of 289 wrong (3.5%) — `NO_SPLIT` *arkana*,
+  *budista*, *enirvojo*, *grioto*, *livida*, *skorpiono*; overrides
+  *molinismo* (molin+ism), *malorganizado*, *intergeedzeco*
+  (inter+ge+edz+ec), *disvastigiteco* (dis+vast+ig+it+ec).
+
+Totals after batch 35: **16801** v2 entries; corpus-mined **19017**,
+12232 segmented and linked; dictionary **41473**; queue **1547** (mixed
+514 at 1+4..1+3, wp-only 1033).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
