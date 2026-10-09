@@ -303,7 +303,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # put+in, sen+sorg+an, sud+et, tril+at+er, ĉe+faktor
             'johanito', 'kombinato', 'krepuskula', 'lignito', 'mediana',
             'militarismo', 'nukleotido', 'parieto', 'plumpinto', 'putino',
-            'sensorgano', 'sudeta', 'trilatere', 'ĉefaktoro'}
+            'sensorgano', 'sudeta', 'trilatere', 'ĉefaktoro',
+            # esp-qo7 (batch 34): benedikt+in, bol+er, encefal+it, hol+ism,
+            # kan+in, kur+on, ne+kroz, pop+ul+ism, re+aktiv, re+al+nom,
+            # teknik+um, tril+er
+            'benediktina', 'bolero', 'encefalito', 'holisma', 'kanino',
+            'kurona', 'nekrozo', 'populisma', 'reaktiva', 'realnome',
+            'teknikumo', 'trilera'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -369,6 +375,11 @@ SPLIT_OVERRIDE = {
     'navarano': ([], 'navar', ['an']),         # Navaro, not nav+ar+an
     'retirigi': ([], 'retir', ['ig']),         # retiri, not re+tir
     'retirigo': ([], 'retir', ['ig']),
+    'negado': ([], 'neg', ['ad']),             # negi, not ne+gad
+    # NO_SPLIT 'reaktiva' (reactive) makes reaktiv- a root; reactivate stays
+    # re+aktiv+ig/iĝ.
+    'reaktivigi': (['re'], 'aktiv', ['ig']),
+    'reaktiviĝi': (['re'], 'aktiv', ['iĝ']),
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
