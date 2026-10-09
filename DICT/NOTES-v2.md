@@ -1041,6 +1041,40 @@ nothing else changed; dry runs 0. Future derivatives of these roots split
 correctly with no override. Add a root here once it has needed ~3
 overrides (the same rule as in the skill).
 
+## Phase 2b, batch 28 (esp-jpn) — mixed@5 / wp-only@25; 500 reviewed, 454 promoted
+
+`gap_report.py` defaults lowered: `--mixed-wp` 10 → 5, `--wp-only` 50 → 25
+(the broad tier at 2 literary sources was exhausted by batch 27). After
+re-mining against the batch-27 dictionary the queue held **3581**: mixed
+1615, wp-only 1966 (the probe's 2296 mixed shrank as batch 26–27 stems
+absorbed siblings). Batch 28 took the top 500: 1 literary source + 9 down
+to 7 wp articles.
+
+- **454 lemma** (275 noun, 91 adj, 65 verb, 23 adv) — all promoted; 452
+  mixed citations, 2 Wikipedia-only (*odia*, *sorana*: the literary hit is
+  absent from the miner sample).
+- **46 rejected** (9.2%, the band's expected 3–9% upper end): 32 foreign
+  — Latin binomial epithets (*pratensis*, *noctua*, *arabica*,
+  *giganteus*, *officinale*, *camelus*, *fluviatilis*, *avellana*,
+  *Melia*), multilingual word lists (*chimie*, *blau*, *ziemia*, *dva*),
+  Czech *divadlo*/*strana*/*časopis*, Spanish *relación*, Italian *Duce*,
+  *i miei*, German *Reisende*, *dunkle*, Latin *modus vivendi*, *nomina*,
+  *notitia*; 4 fragments (*alMi*, *alLi*, *alLiaj* run-together pronoun
+  capitals in Bahá'í texts; *Sno.*); 3 OCR (*malla*, *kja*, *dauro*); 3
+  names (*Jamato*, *Baŝo*, *Partujo*); 3 `uncertain` (*pajo*, *timbo*,
+  *tila*); 1 inflection (*volintus*).
+- **Segmentation**: 18 of 292 wrong (6.2%, loan-heavy band as forecast) —
+  `NO_SPLIT` *alamano*, *aĥila*, *fonetismo*, *legumo*, *licenciato*,
+  *peritoneito*, *prikazo*, *serpentino*, *sorana*, *supino*, *temerara*,
+  *trilitera*, *turbulo*; overrides *alpinisto* (alpin+ist), *elfino*
+  (elf+in), *religo* (re+lig), *taŭridano* (taŭrid+an), *ekretiriĝi*
+  (ek+retir+iĝ). The esp-b3y loan roots needed no override this batch.
+  `--recite` gave literary citations to 4 batch-27 entries.
+
+Totals after batch 28: **13531** v2 entries; corpus-mined **15747**,
+10510 segmented and linked; dictionary **38203**; queue **3081** (mixed
+1115, wp-only 1966).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1063,8 +1097,9 @@ refresh path avoids miner keys altogether.
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
-  sources; that tier is **exhausted** after batch 27. Next, esp-jpn lowers
-  the mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The
+  sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
+  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers: 3081 queued after
+  batch 28 (mixed 1115, then wp-only 1966) — about 6 more batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
