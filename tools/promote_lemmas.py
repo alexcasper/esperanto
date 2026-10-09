@@ -289,7 +289,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # produced a near-identical set — union of both override lists).
             'akratona', 'cedrato', 'depozicio', 'etono', 'indiumo',
             'kanopo', 'kastila', 'kombato', 'kupulo', 'morbida', 'musketo',
-            'orfano', 'relato', 'saksona', 'ververe'}
+            'orfano', 'relato', 'saksona', 'ververe',
+            # esp-6d4 (batch 31): acet+on, al+bed, cian+id, el+ek+trik,
+            # hepat+it, liber+aĉ+et, pi+nj+on, stigm+at, talib+an, ĥan+at
+            'acetono', 'albedo', 'cianido', 'elektrika', 'hepatito',
+            'liberaĉeti', 'pinjono', 'stigmato', 'talibano', 'ĥanato'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -341,6 +345,12 @@ SPLIT_OVERRIDE = {
     'remaĉulo': (['re'], 'maĉ', ['ul']),       # not rem+aĉ+ul
     'reagema': ([], 'reag', ['em']),           # reagi, not re+ag+em
     'respirado': ([], 'respir', ['ad']),       # respiri, not re+spir+ad
+    'kontraŭregistara': (['kontraŭ'], 'registar', []),  # not reg+ist+ar
+    'laŭtema': (['laŭ'], 'tem', []),           # by topic, not laŭt+em
+    'libretisto': ([], 'libret', ['ist']),     # not libr+et+ist
+    'repisto': ([], 'rep', ['ist']),           # repo (rap), not re+pist
+    'reorganiziĝi': (['re'], 'organiz', ['iĝ']),
+    'separatisma': ([], 'separat', ['ism']),   # not separ+at+ism
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
