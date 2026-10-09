@@ -1276,6 +1276,36 @@ Totals after batch 35: **16801** v2 entries; corpus-mined **19017**,
 12232 segmented and linked; dictionary **41473**; queue **1547** (mixed
 514 at 1+4..1+3, wp-only 1033).
 
+## Batch 36 (esp-hmx) — mixed tier finished; 515 reviewed, 434 promoted
+
+`DICT/review/v2-batch36-{a,b}.tsv` (258/257), re-mined first: the whole
+remaining mixed tier, 1 literary + 5..3 wp. Every new entry carries a
+literary citation (*trojko*, *arĥimandrito*, *pasigrafio*, *florealo*,
+*cindromerkredo*, *smilodonto*, *kavernurso*, *ĉielskrapulo*,
+*vortŝerco*, *bazopilko*).
+
+- **434 lemma** (277 noun, 91 adj, 52 verb, 14 adv) — all promoted.
+- **81 rejected** (15.7%, up from 11.2% at 1+4): 41 foreign (Latin
+  binomials, German/French/Polish/Czech/Portuguese word-list cells,
+  Occidental/Ido pronouns *vostre*, *omno*), 14 `uncertain` (poetic
+  elisions *gel'*, *fol'*, *tret'*; non-standard *definicio*, *lupulo*,
+  *somno*), 11 OCR (*oio*/*oie* for ĉio/ĉie, *reSo* for reĝo, *Lombon*
+  for tombon, *savaĝa*, *risa*, *antiva*, *pompilo*), 10 fragments, 5
+  names. The 1-literary tier gets noisier as wp support drops; the lit
+  source is often a single OCR'd Bahá'í or poetry scan.
+- **Segmentation**: 14 of 274 wrong (5.1%) — `NO_SPLIT` *georgino*,
+  *klareto*, *oficino*, *plakato*, *returniri*, *taliumo*, *ursulina*;
+  overrides *kuniĝadi*, *misionisto* (mision+ist), *peraera*/*peraere*
+  (per+aer), *reformulo* (reform+ul), *republikano*, *restariginto*
+  (re+star+ig+int).
+- `--recite v2-` gave 31 batch-35 entries extra literary passages from
+  their one literary source (literary-first ordering), replacing
+  Wikipedia second/third citations.
+
+Totals after batch 36: **17235** v2 entries; corpus-mined **19451**,
+12499 segmented and linked; dictionary **41907**; queue **1030** (all
+wp-only, >= 20 wp). Mixed tier exhausted at 1 lit + 3 wp.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
