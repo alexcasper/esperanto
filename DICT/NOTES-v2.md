@@ -730,6 +730,33 @@ Totals after batch 17: **8152** v2 entries; corpus-mined **10368**, 7247
 segmented and linked; dictionary **32824**; queue **3721** (mixed 2259,
 wp-only 1462).
 
+## Batch 18 (esp-1if) — 500 reviewed, 484 promoted
+
+`DICT/review/v2-batch18-{a,b}.tsv`, re-mined first: 1-source band, 1
+literary + 129 down to 39 wp. Modern and technical vocabulary throughout
+(*kopirajto*, *televidilo*, *retpaĝaro*, *motorciklo*, *bushaltejo*,
+*datumaro*, *elŝutebla*, *nubskrapulo*, *kolĥozo*).
+
+- **484 lemma** (308 noun, 47 verb, 114 adj, 15 adv) — all promoted; 467
+  mixed citations, 17 Wikipedia-only.
+- **16 rejected** (3.2%): 14 foreign — Latin *in mundo*, *Sancti*,
+  *Orientalis*, *pereat mundus*, *de bello*, *vitae*, *Ecclesiae*,
+  *nostra*, *alpha*; French *recherche*; German *frei*; Spanish *noche*;
+  Portuguese *rua*; italicised Italian *maestro*. Inflection *bezonati*;
+  `uncertain` *anoŭdo*.
+- **Segmentation**: 19 of 289 wrong (6.6%, highest yet) — false *re-*/*al-*
+  prefixes dominate: `NO_SPLIT` *agendo*, *agrara*, *alemano*,
+  *intersekco*, *irito*, *meteorito*, *paserino*, *reallernejo*,
+  *restrikta*, *sulfato*, *sulfido*, *volatila*; overrides *alkemiisto*,
+  *pubereco*, *reformanto*, *reformisma*, *regenerado*, *rekuperado*,
+  *reorganizado*. The root *reform-* has now needed six overrides
+  (reformado, reformemulo, reformisto, reformema, reformanto, reformisma):
+  the root stock lacks it — filed as a follow-up.
+
+Totals after batch 18: **8636** v2 entries; corpus-mined **10852**, 7524
+segmented and linked; dictionary **33308**; queue **3181** (mixed 1746,
+wp-only 1435).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -751,8 +778,8 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 3721 after
-  batch 17 — broad exhausted; mixed 2259, then wp-only 1462. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 3181 after
+  batch 18 — broad exhausted; mixed 1746, then wp-only 1435. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

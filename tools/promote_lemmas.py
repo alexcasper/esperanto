@@ -227,7 +227,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # sekund+ar, sem+id, sid+er, stadi+on, stat+ist, ul+em
             'altatona', 'demisii', 'eskadrono', 'kelaro', 'platino',
             'popare', 'referato', 'referendumo', 'sekundara', 'semida',
-            'sidera', 'stadiono', 'statisto', 'ulemo'}
+            'sidera', 'stadiono', 'statisto', 'ulemo',
+            # esp-1if (batch 18): ag+end, agr+ar, al+eman, inter+sekc, ir+it,
+            # meteor+it, paser+in, re+al+lernej, re+strikt, sulf+at,
+            # sulf+id, vol+at+il
+            'agendo', 'agrara', 'alemano', 'intersekco', 'irito',
+            'meteorito', 'paserino', 'reallernejo', 'restrikta', 'sulfato',
+            'sulfido', 'volatila'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -258,6 +264,13 @@ SPLIT_OVERRIDE = {
     'alpisto': ([], 'alp', ['ist']),           # not al+pist
     'fanatismo': ([], 'fanat', ['ism']),       # not fan+at+ism
     'senida': (['sen'], 'id', []),             # not stem 'sen' + -id
+    'alkemiisto': ([], 'alkemi', ['ist']),     # not al+kemi+ist
+    'pubereco': ([], 'puber', ['ec']),         # not pub+er+ec
+    'reformanto': ([], 'reform', ['ant']),     # not re+form+ant
+    'reformisma': ([], 'reform', ['ism']),     # not re+form+ism
+    'regenerado': ([], 'regener', ['ad']),     # not re+gener+ad
+    'rekuperado': ([], 'rekuper', ['ad']),     # not re+kup+er+ad
+    'reorganizado': (['re'], 'organiz', ['ad']),  # stem was 'organizad'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
