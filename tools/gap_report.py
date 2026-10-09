@@ -2,7 +2,7 @@
 """Vocabulary gap: frequent corpus lemmas that DICT/entries.jsonl lacks.
 
 Usage:
-  python3 tools/gap_report.py [--min-sources 3] [--min-count 5]
+  python3 tools/gap_report.py [--min-sources 2] [--min-count 5]
                               [--mixed-wp 10] [--wp-only 50]
                               [--queue DICT/shards/gap-queue.jsonl] [--top 40]
 
@@ -33,8 +33,8 @@ sources are single wp-* articles, so a bare source count stops meaning
 breadth: three stubs clear it. Sources are split by register and a lemma is
 queued in the first tier it meets:
 
-  broad    >= --min-sources non-Wikipedia sources (the pre-Vikipedio bar,
-           unchanged in meaning)
+  broad    >= --min-sources non-Wikipedia sources (pre-Vikipedio bar was 3;
+           lowered to 2 by esp-i9h once the 3-source tier was exhausted)
   mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles
   wp-only  no non-Wikipedia source, >= --wp-only wp articles; modern and
            technical vocabulary, reviewed with extra scrutiny
@@ -152,7 +152,7 @@ def classify(c, dict_words, roots, english, args, candidates=()):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument('--min-sources', type=int, default=3)
+    ap.add_argument('--min-sources', type=int, default=2)
     ap.add_argument('--min-count', type=int, default=5)
     ap.add_argument('--mixed-wp', type=int, default=10,
                     help='wp-* articles needed beside 1-2 other sources')

@@ -935,6 +935,35 @@ wp, all >= 5 occurrences).
 The literary-first order is: 2-source broad (1670) → mixed at 5 wp (2296)
 → wp-only at 25 (1997). Filed as follow-up beads.
 
+## Batch 25 (esp-i9h) — phase 2 opens: broad tier lowered to 2 sources
+
+`tools/gap_report.py --min-sources` default **3 → 2**: the broad tier now
+takes any lemma with two non-Wikipedia sources (1675 queued after the
+re-mine; 1671 broad). `DICT/review/v2-batch25-{a,b}.tsv` covers items
+1–500: 2 literary + 24 down to 5 wp. Literary register returns —
+*pilafo*, *odoraĉo*, *dentobroso*, *kanonkuglo*, *gardhundo*,
+*fenestrobreto*, *marĉandado*, *kokosnukso*, *vaporboato*, *ŝeolo*;
+plus Soviet-era language names (*komia*, *udmurta*, *erzja*, *evenka*,
+*inguŝa*) from a nationality list.
+
+- **465 lemma** (263 noun, 100 verb, 87 adj, 15 adv) — all promoted; 463
+  mixed citations, 2 literary-only. Verbs are back at 21% (Wikipedia
+  tiers ran ~10%).
+- **35 rejected** (7%): 27 foreign — multilingual word lists and
+  quotations in French (*neige*, *oui*, *maison*, *depuis*, *peine*,
+  *neveu*, *Ancien*, *arbre*, *reconnaissance*, *comprendre*), German
+  (*sieben*, *deren*, *eigenen*, *neben*, *bleiben*, *brauchen*,
+  *rechten*), Polish (*kto*, *moja*), Latin (*terra incognita*, *mihi*,
+  *arvensis*, *a posteriori*, *civis*), English (*devotion*, *selection*,
+  *cuisine*); names *Karara*, *Fileo*; OCR *nla*, *proti*; fragment
+  interjection *ĥo*; `uncertain` *ibo*, *ostero*, *mando*.
+- **Segmentation**: 8 of 347 wrong (2.3%, literary vocabulary splits
+  cleanly) — `NO_SPLIT` *agregato*, *gracila*, *kabilo*, *limono*,
+  *senila*; overrides *brokantisto*, *geido* (ge+id), *pietisto*.
+
+Totals after batch 25: **11992** v2 entries; corpus-mined **14208**, 9471
+segmented and linked; dictionary **36664**; queue **1175** (broad 1171).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -956,9 +985,9 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) is **empty** after
-  batch 24 at its current thresholds. Next phase lowers them — see
-  "Next tier" under batch 24. The
+- **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
+  sources; 1175 queued after batch 25 (1171 broad), then esp-jpn lowers
+  the mixed and wp-only tiers. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

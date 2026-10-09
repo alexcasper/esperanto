@@ -42,7 +42,7 @@ attested in three or more independent sources (recounted in esp-58p, below).
 `derived: true` marks a word built by regular affixation on a root already
 held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
 that the entry's `morphology` carries a self-validating affix segmentation
-(`prefixes`/`suffixes`); 9129 of the 13743 corpus-mined entries. Settled
+(`prefixes`/`suffixes`); 9471 of the 14208 corpus-mined entries. Settled
 policy is that these earn entries, because a reader looking up *reĝino*
 should find it; the flag lets a consumer wanting only roots and opaque
 compounds filter them out.
@@ -74,9 +74,10 @@ first (esp-0mu). **Batch 8 (esp-gwn)** added 485 (5 non-Wikipedia
 sources), **batch 9 (esp-3ke)** 473 (5–4), **batch 10 (esp-htt)** 474 (4), **batch 11 (esp-n4i)** 484 (4–3), **batch 12 (esp-kw1)** 475 (3), **batch 13 (esp-598)** 473 (3), **batch 14 (esp-31c)** 477 (3), **batch 15 (esp-l2q)** 487 (3, then
 mixed tier 2+wp), **batch 16 (esp-1du)** 472 (2+wp), **batch 17 (esp-13o)** 470 (2–1+wp), **batch 18 (esp-1if)** 484 (1+wp), **batch 19 (esp-4h3)** 472 (1+wp), **batch 20 (esp-s5u)** 457 (1+wp), **batch 21 (esp-1g0)** 461 (1+wp), **batch 22 (esp-n1x)** 474 (mixed
 tail + wp-only head), **batch 23 (esp-rz5)** 487 (wp-only), **batch 24 (esp-a7p)** 540
-(wp-only tail; queue exhausted).
-Corpus-mined total: **13743** (11527 from v2 batches). esp-58p segmented the
-2216 earlier entries too: **9129** corpus-mined entries now carry affix
+(wp-only tail; queue exhausted), **batch 25 (esp-i9h)** 465 (broad
+tier lowered to 2 literary sources).
+Corpus-mined total: **14208** (11992 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **9471** corpus-mined entries now carry affix
 segmentation and `grammar_refs` to §2.
 
 | Kind | Count |
