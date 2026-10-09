@@ -964,6 +964,31 @@ plus Soviet-era language names (*komia*, *udmurta*, *erzja*, *evenka*,
 Totals after batch 25: **11992** v2 entries; corpus-mined **14208**, 9471
 segmented and linked; dictionary **36664**; queue **1175** (broad 1171).
 
+## Batch 26 (esp-6iu) — 500 reviewed, 468 promoted
+
+`DICT/review/v2-batch26-{a,b}.tsv`, re-mined first: 2-source broad tier,
+2 literary + 5 down to 3 wp. Everyday literary vocabulary (*boatejo*,
+*diliĝenco*, *pelerino*, *bilardejo*, *kahelforno*, *cigaredujo*,
+*vekilo*, *ŝlosilaro*, *avĉjo*, *knabinjo*, *kokeriki*, *miaŭado*).
+
+- **468 lemma** (274 noun, 99 verb, 77 adj, 18 adv) — all promoted; 455
+  mixed citations, 13 literary-only.
+- **32 rejected** (6.4%): 20 foreign — German word-list entries
+  (*setzen*, *mehrere*, *dabei*, *offen*, *schlafen*, *dazu*, *schicken*,
+  *fahren*, *kennen*, *geschrieben*), French (*pomme*, *jamais*,
+  *annuaire*, *mesure*), English (*usage*, *proportion*), Latin (*vae*,
+  *ignis*), Italian *addio*, Norwegian *norske*; names *Amona*, *Suza*,
+  *Luigi*; 6 OCR (*fmi*, *nagi*, *divi*, *moneto* for montetoj, *deja*,
+  *trati*); fragment *labo-*; `uncertain` *ĵo*, *agao*.
+- **Segmentation**: 9 of 350 wrong (2.6%) — `NO_SPLIT` *deligito*,
+  *desaponti*, *ĝojatendi*, *kuloto*, *pelerino*, *revizo*; overrides
+  *patronaro* (patron+ar), *plikonatiĝi* (pli+kon+at+iĝ),
+  *prizorgantino* (pri+zorg+ant+in). `--recite` gave literary citations
+  to 15 batch-25 entries.
+
+Totals after batch 26: **12460** v2 entries; corpus-mined **14676**, 9815
+segmented and linked; dictionary **37132**; queue **671** (broad 667).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -986,7 +1011,7 @@ refresh path avoids miner keys altogether.
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
-  sources; 1175 queued after batch 25 (1171 broad), then esp-jpn lowers
+  sources; 671 queued after batch 26 (667 broad), then esp-jpn lowers
   the mixed and wp-only tiers. The
   *capitalised* bucket (3254) waits on a names policy.
 
