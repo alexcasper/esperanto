@@ -1132,6 +1132,32 @@ Totals after batch 30: **14520** v2 entries; corpus-mined **16736**,
 11127 segmented and linked; dictionary **39192**; queue **1956**, all
 wp-only (>= 25 wp, no literary source).
 
+## Batch 31 (esp-6d4) — wp-only@25, 500 reviewed, 473 promoted
+
+`DICT/review/v2-batch31-{a,b}.tsv`, re-mined first: wp-only tier (no
+literary source) 69 down to 39 wp articles. Modern encyclopaedic
+vocabulary: *saĝtelefono*, *kosmoteleskopo*, *ritmenbluso*, *seksismo*,
+*rearbarigo*, *trabfakaĵo*, *masklarejo*, *kladogramo*.
+
+- **473 lemma** (307 noun, 122 adj, 36 verb, 8 adv) — all promoted, all
+  with Wikipedia-only citations by construction.
+- **27 rejected** (5.4%): 16 inflections — the Wikipedia passive habit
+  *-itis*/*-atas* (*venditis*, *deklaritis*, *publikigitis*,
+  *konsekritis*, *dungitis*, *transportitis*, *troviĝantas*…); 9 foreign
+  (*Africano*, *Cultura*, *Cidade*, *freguesias*, *Enseñanza*, Latin
+  *sive*, *canadensis*, *capensis*, *robusta*); fragment *umava*
+  (Šumava); `uncertain` *koĉo* (cochineal vs. coach).
+- **Segmentation**: 16 of 214 wrong (7.5%, loan-heavy) — `NO_SPLIT`
+  *acetono*, *albedo*, *cianido*, *elektrika*, *hepatito*, *liberaĉeti*,
+  *pinjono*, *stigmato*, *talibano*, *ĥanato*; overrides
+  *kontraŭregistara*, *laŭtema* (laŭ+tem), *libretisto*, *repisto*
+  (rep+ist), *reorganiziĝi*, *separatisma*. `--recite` gave literary
+  citations to 13 batch-30 entries.
+
+Totals after batch 31: **14993** v2 entries; corpus-mined **17209**,
+11331 segmented and linked; dictionary **39665**; queue **1450** (all
+wp-only, 39 down to 25 wp).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1156,7 +1182,8 @@ refresh path avoids miner keys altogether.
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
   mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
-  exhausted after batch 30; 1956 wp-only remain — about 4 more batches. The
+  exhausted after batch 30; 1450 wp-only remain after batch 31 — about 3
+  more batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
