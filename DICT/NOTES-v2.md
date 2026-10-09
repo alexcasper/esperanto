@@ -1075,6 +1075,36 @@ Totals after batch 28: **13531** v2 entries; corpus-mined **15747**,
 10510 segmented and linked; dictionary **38203**; queue **3081** (mixed
 1115, wp-only 1966).
 
+## Batch 29 (esp-3bg) — 500 reviewed, 437 promoted
+
+`DICT/review/v2-batch29-{a,b}.tsv`, re-mined first: mixed tier 1 literary
+source + 7 down to 6 wp (plus one 2+10 late arrival, *militservado*).
+
+- **437 lemma** (265 noun, 93 adj, 66 verb, 13 adv) — all promoted; all
+  437 carry mixed literary+wp citations.
+- **63 rejected** (12.6%, above the band's 3–9%): 52 foreign — the
+  multilingual word-list source (`vojo route, voie | way | Weg | дорога`)
+  now dominates the 1-literary band: French *voie*, *affaire*, *seconde*,
+  *ordinaire*, *samedi*, *parmi*, *poche*, *droite*, *taille*, German
+  *siehe*, *einzige*, *heutigen*, *ihnen*, *Thema*, Polish *panna*,
+  *ludzie*, *nauka*; Latin binomials (*glandarius*, *murinus*, *carica*,
+  *oleracea*, *caballus*, *migratorius*) and tags (*amor fati*, *diem
+  perdidi*, *remedia amoris*); Italian *troppo*, *molto*, *viaggio*,
+  *clemenza*; Spanish/Portuguese *coche*, *dinero*, *guia*. 5 `uncertain`
+  (*vao*, *safo*, *klimo*, *hermo*, *siano*), 3 inflections (*fariĝintus*,
+  *akirintus*, *celebratas*), 2 fragments (*mem'*, dialect *kjo*), name
+  *Jasa*.
+- **Segmentation**: 15 of 287 wrong (5.2%) — `NO_SPLIT` *aŭtoriteco*,
+  *debila*, *delico*, *ekstraordinara*, *elementara*, *fermato*,
+  *membronumero*, *mondono*, *nenifarado*, *primora*, *tarantulo*,
+  *termonteto*; overrides *moneraro* (moner+ar), *pranevino*
+  (pra+nev+in), *remaĉulo* (re+maĉ+ul). `--recite` gave literary
+  citations to 23 batch-28 entries (incl. *sorana*).
+
+Totals after batch 29: **13968** v2 entries; corpus-mined **16184**,
+10785 segmented and linked; dictionary **38640**; queue **2574** (mixed
+613, wp-only 1961).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1098,8 +1128,8 @@ refresh path avoids miner keys altogether.
 - **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
-  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers: 3081 queued after
-  batch 28 (mixed 1115, then wp-only 1966) — about 6 more batches. The
+  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers: 2574 queued after
+  batch 29 (mixed 613, then wp-only 1961) — about 5 more batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
