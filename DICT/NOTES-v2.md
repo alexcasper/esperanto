@@ -1272,7 +1272,7 @@ refresh path avoids miner keys altogether.
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
   mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
   exhausted after batch 30; batch 34 emptied the phase-2b queue. Phase 2c
-  (esp-phase2c bead): mixed to 1 lit + >= 3 wp, then wp-only to >= 20 wp
+  (esp-273; demonym pass esp-6w3): mixed to 1 lit + >= 3 wp, then wp-only to >= 20 wp
   (probe table above). The
   *capitalised* bucket (3254) waits on a names policy.
 
