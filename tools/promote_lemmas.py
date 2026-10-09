@@ -261,7 +261,9 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # pri+mas, puf+in, stip+ul, trog+on
             'alkazaro', 'antero', 'boreala', 'centropo', 'entento',
             'interfero', 'kastrumo', 'kortuma', 'morfino', 'palatina',
-            'primaso', 'pufino', 'stipulo', 'trogono'}
+            'primaso', 'pufino', 'stipulo', 'trogono',
+            # esp-i9h (batch 25): agreg+at, grac+il, kab+il, lim+on, sen+il
+            'agregato', 'gracila', 'kabilo', 'limono', 'senila'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -313,6 +315,9 @@ SPLIT_OVERRIDE = {
     'subaro': (['sub'], 'ar', []),             # stem was 'sub'
     'devoteco': ([], 'devot', ['ec']),         # not dev+ot+ec
     'diseriĝi': (['dis'], 'er', ['iĝ']),       # stem was 'dis'
+    'brokantisto': ([], 'brokant', ['ist']),   # not brok+ant+ist
+    'geido': (['ge'], 'id', []),               # stem was 'ge'
+    'pietisto': ([], 'piet', ['ist']),         # not pi+et+ist
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
