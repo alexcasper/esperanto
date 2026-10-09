@@ -871,6 +871,31 @@ attested usage.
 Totals after batch 22: **10500** v2 entries; corpus-mined **12716**, 8618
 segmented and linked; dictionary **35172**; queue **1119** (all wp-only).
 
+## Batch 23 (esp-rz5) — 500 reviewed, 487 promoted
+
+`DICT/review/v2-batch23-{a,b}.tsv`, re-mined first: wp-only tier, 0
+literary + 155 down to 74 wp. Encyclopaedic register throughout:
+ornithology (*vadbirdo*, *flugilpinto*, *kovoperiodo*, *idozorgado*,
+*turfalko*, *petrelo*), music (*konĉerto*, *moteto*, *klaviceno*,
+*bibopo*, *saksofonisto*), politics and society (*secesio*, *junto*,
+*privatigo*, *balotrajto*, *neprofitcela*), and modern technology
+(*komputiko*, *ĝisdatigo*, *animeo*, *kronvirusa*).
+
+- **487 lemma** (316 noun, 47 verb, 116 adj, 8 adv) — all promoted, all
+  with Wikipedia-only citations.
+- **13 rejected** (2.6%, lowest of the v2 run): 8 inflections — the
+  Wikipedia passive *-itas*/*-itis* habit (*menciitas*, *malkonstruitis*,
+  *detruitis*, *entombigitis*, *forigitis*, *uzitas*, *instalitis*,
+  *situantas*); names *Guerra*, *Americana*, *Anio*; Latin *contra*; typo
+  *eoste*.
+- **Segmentation**: 9 of 262 wrong (3.4%) — `NO_SPLIT` *duonarida*,
+  *forceja*, *kampanilo*, *maskoto*, *moteto*, *ordino*, *substrato*,
+  *superintendanto*; override *subaro* (sub+ar). `--recite` gave literary
+  citations to 5 earlier entries.
+
+Totals after batch 23: **10987** v2 entries; corpus-mined **13203**, 8872
+segmented and linked; dictionary **35659**; queue **582** (all wp-only).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -892,9 +917,9 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 1119 after
-  batch 22 — broad and mixed exhausted; wp-only 1119 (>= 50 wp sources,
-  no literary attestation) remain, about two and a half batches. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 582 after
+  batch 23 — broad and mixed exhausted; wp-only 582 (>= 50 wp sources,
+  no literary attestation) remain: one full batch of 500, then 82. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

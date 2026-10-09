@@ -251,7 +251,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'efemerido', 'ekosistemo', 'ekozono', 'elama', 'fibolo',
             'humanitara', 'kalendo', 'klorato', 'logoteto', 'retablo',
             'romantisma', 'romantismo', 'survivi', 'taksono',
-            'transportreto', 'uzino', 'vertiĝo'}
+            'transportreto', 'uzino', 'vertiĝo',
+            # esp-rz5 (batch 23): duon+ar+id, forc+ej, kamp+an+il, mask+ot,
+            # mot+et, ord+in, sub+strat, super+int+end+ant
+            'duonarida', 'forceja', 'kampanilo', 'maskoto', 'moteto',
+            'ordino', 'substrato', 'superintendanto'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -300,6 +304,7 @@ SPLIT_OVERRIDE = {
     'fortransporti': (['for'], 'transport', []),  # not for+trans+port
     'habilitiĝi': ([], 'habilit', ['iĝ']),     # not habil+it+iĝ
     'rekuperiĝi': ([], 'rekuper', ['iĝ']),     # not re+kup+er+iĝ
+    'subaro': (['sub'], 'ar', []),             # stem was 'sub'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
