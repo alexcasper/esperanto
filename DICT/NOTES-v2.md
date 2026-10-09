@@ -1208,6 +1208,45 @@ Totals after batch 33: **15946** v2 entries; corpus-mined **18162**,
 11773 segmented and linked; dictionary **40618**; queue **433** (all
 wp-only, 28 down to 25 wp).
 
+## Batch 34 (esp-qo7) — 432 reviewed, 411 promoted; phase-2b queue empty
+
+`DICT/review/v2-batch34-{a,b}.tsv` (216/216), re-mined first on top of
+glm's concordance sweep (f8e0d2b: 1505 `attestation` blocks refreshed by
+the web lane, same shape, counts within a few sources — no conflict with
+attest_scan). The whole remaining wp-only queue, 28 down to 25 wp, plus
+one late mixed arrival (*populacigrandeco*).
+
+- **411 lemma** (250 noun, 118 adj, 32 verb, 11 adv) — all promoted.
+- **21 rejected** (4.9%): 11 foreign (*Bodas de Sangre*, *peuple*, *motu
+  proprio*, *senegalensis*, *peregrinus*, *Homo erectus*, *Polskie*,
+  *historischen*, *Fidei*, *Reino*, Spanish *inca*), 5 `-itis` passives,
+  3 fragments (*lycéenne*, *Weißensee*, *Intra-*), OCR *ĉeha* (ĉeĥa),
+  name *Lankastro*.
+- **Segmentation**: 13 of 188 wrong (6.9%) — `NO_SPLIT` *benediktina*,
+  *bolero*, *encefalito*, *holisma*, *kanino*, *kurona*, *nekrozo*,
+  *populisma*, *reaktiva*, *realnome*, *teknikumo*, *trilera*; override
+  *negado* (neg+ad). The *reaktiva* root then re-split the older
+  *reaktivigi*/*reaktiviĝi* as reaktiv+ig/iĝ — overridden back to
+  re+aktiv+ig/iĝ (reactivate).
+
+Totals after batch 34: **16357** v2 entries; corpus-mined **18573**,
+11949 segmented and linked; dictionary **41029**; queue **0** at the
+esp-jpn thresholds.
+
+### Phase 2c probe (after batch 34, `--queue $TMPDIR/probe.jsonl`)
+
+| setting | mixed | wp-only | queue |
+|---|---|---|---|
+| mixed-wp 4, wp-only 20 | 672 | 1040 | 1712 |
+| mixed-wp 3, wp-only 20 | 1016 | 1040 | 2056 |
+| mixed-wp 3, wp-only 15 | 1016 | 2824 | 3840 |
+
+Other buckets: `capitalised` 3150 (demonyms such as *italiano* that only
+appear capitalised, held pending a names policy), `foreign` 1984,
+`participle` 16683. Literary-first order: lower the mixed tier to 3 wp
+first (1016), then wp-only to 20 (1040); 15 wp roughly triples the
+wp-only band and should wait for a rejection-rate check at 20.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1232,8 +1271,9 @@ refresh path avoids miner keys altogether.
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
   mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
-  exhausted after batch 30; 433 wp-only remain after batch 33 — batch 34
-  empties the phase-2b queue. The
+  exhausted after batch 30; batch 34 emptied the phase-2b queue. Phase 2c
+  (esp-273; demonym pass esp-6w3): mixed to 1 lit + >= 3 wp, then wp-only to >= 20 wp
+  (probe table above). The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
