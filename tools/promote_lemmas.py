@@ -272,23 +272,26 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # rub+in, sam+um
             'amontilado', 'etaĝero', 'folianto', 'limeto', 'rubino',
             'samumo'}
+# Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
+# _mined_roots cannot recover, because the bare word itself reads as a valid
+# affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
+# them every derivative needed a SPLIT_OVERRIDE (esp-b3y: 26 overrides for
+# these 15 roots). Rank 4, the same as mined roots of last resort.
+LOAN_ROOTS = {'alkemi', 'brokant', 'devot', 'eksplor', 'fanat', 'fiakr',
+              'habilit', 'nomad', 'patron', 'piet', 'puber', 'reform',
+              'regener', 'rekuper', 'transport'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
     'restarigi': (['re'], 'star', ['ig']),
     'restariĝi': (['re'], 'star', ['iĝ']),
     'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
-    'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
     'nevino': ([], 'nev', ['in']),             # not ne+vin
-    'reformisto': ([], 'reform', ['ist']),     # not re+form+ist
-    'reformemulo': ([], 'reform', ['em', 'ul']),  # not re+form+em+ul
-    'fiakristo': ([], 'fiakr', ['ist']),       # fiakro 'cab', not fi+akr+ist
     'revanto': ([], 'rev', ['ant']),           # not re+vant
     'trabaro': ([], 'trab', ['ar']),           # trabo 'beam', not tra+bar
     'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
     'nesentema': (['ne'], 'sent', ['em']),     # not ne+sen+tem
     'ideto': ([], 'ide', ['et']),              # idea, not id+et
-    'reformado': ([], 'reform', ['ad']),       # not re+form+ad
     'trabeto': ([], 'trab', ['et']),           # trabo 'beam', not tra+bet
     'trafigi': ([], 'traf', ['ig']),           # not tra+fig
     'malsuprengrimpi': (['malsupren'], 'grimp', []),  # not mal+suprengrimp
@@ -296,45 +299,24 @@ SPLIT_OVERRIDE = {
     'pliiĝadi': ([], 'pliiĝ', ['ad']),         # pliiĝ+ad, not pli+iĝad
     'ekestri': (['ek'], 'estr', []),           # not stem 'ek' + -estr
     'finestiĝi': ([], 'finest', ['iĝ']),       # fin+est+iĝ, not fi+nest+iĝ
-    'patroneco': ([], 'patron', ['ec']),       # not patr+on+ec
-    'patronino': ([], 'patron', ['in']),       # not patr+on+in
     'sensema': ([], 'sens', ['em']),           # not sen+sem
     'alpisto': ([], 'alp', ['ist']),           # not al+pist
-    'fanatismo': ([], 'fanat', ['ism']),       # not fan+at+ism
     'senida': (['sen'], 'id', []),             # not stem 'sen' + -id
-    'alkemiisto': ([], 'alkemi', ['ist']),     # not al+kemi+ist
-    'pubereco': ([], 'puber', ['ec']),         # not pub+er+ec
-    'reformanto': ([], 'reform', ['ant']),     # not re+form+ant
-    'reformisma': ([], 'reform', ['ism']),     # not re+form+ism
-    'regenerado': ([], 'regener', ['ad']),     # not re+gener+ad
-    'rekuperado': ([], 'rekuper', ['ad']),     # not re+kup+er+ad
     'reorganizado': (['re'], 'organiz', ['ad']),  # stem was 'organizad'
     'perletere': (['per'], 'leter', []),       # not perl+et+er
-    'transportisto': ([], 'transport', ['ist']),  # not trans+port+ist
-    'eksplorado': ([], 'eksplor', ['ad']),     # not eks+plor+ad
-    'nomadeca': ([], 'nomad', ['ec']),         # not nom+ad+ec
     'senpereco': (['sen'], 'pere', ['ec']),    # not sen+per+ec
     'korbatado': ([], 'korbat', ['ad']),       # not korb+at+ad
     'malemigi': (['mal'], 'em', ['ig']),       # stem was 'mal'
     'ĉefino': ([], 'ĉef', ['in']),             # not ĉe+fin
-    'fortransporti': (['for'], 'transport', []),  # not for+trans+port
-    'habilitiĝi': ([], 'habilit', ['iĝ']),     # not habil+it+iĝ
-    'rekuperiĝi': ([], 'rekuper', ['iĝ']),     # not re+kup+er+iĝ
     'subaro': (['sub'], 'ar', []),             # stem was 'sub'
-    'devoteco': ([], 'devot', ['ec']),         # not dev+ot+ec
     'diseriĝi': (['dis'], 'er', ['iĝ']),       # stem was 'dis'
-    'brokantisto': ([], 'brokant', ['ist']),   # not brok+ant+ist
     'geido': (['ge'], 'id', []),               # stem was 'ge'
-    'pietisto': ([], 'piet', ['ist']),         # not pi+et+ist
-    'patronaro': ([], 'patron', ['ar']),       # not patr+on+ar
     'seninda': (['sen'], 'ind', []),           # stem was 'sen'
     'ĉekano': ([], 'ĉek', ['an']),             # not ĉe+kan
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
-    'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
-    'reformema': ([], 'reform', ['em']),       # not re+form+em
 }
 
 
@@ -486,6 +468,8 @@ def main():
     # so later derivations of corpus loanwords split on the loanword root.
     stock = esperanto.root_stock(ENTRIES, mined_roots=True,
                                  no_split=NO_SPLIT)
+    for root in LOAN_ROOTS:
+        stock.setdefault(root, (4, 0))
     resegmented = 0
     if args.resegment:
         batches = {}
