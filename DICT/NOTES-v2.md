@@ -1105,6 +1105,33 @@ Totals after batch 29: **13968** v2 entries; corpus-mined **16184**,
 10785 segmented and linked; dictionary **38640**; queue **2574** (mixed
 613, wp-only 1961).
 
+## Batch 30 (esp-9i4) — 613 reviewed, 552 promoted; mixed tier exhausted
+
+`DICT/review/v2-batch30-{a,b,c}.tsv` (205/204/204), re-mined first: the
+whole remaining mixed tier, 1 literary source + 6 down to 5 wp.
+
+- **552 lemma** (328 noun, 121 adj, 74 verb, 29 adv) — all promoted; 550
+  mixed citations, 2 literary-only.
+- **61 rejected** (10.0%): 36 foreign (word-list columns *sterben*,
+  *suchen*, *semaine*, *borgen*, *lounge*; Latin binomials and tags
+  *Pinus pinea*, *Trutta fario*, *Theobroma cacao*, *fiat justitia*, *in
+  habitu*; German *Komitee*, *Methode*, *Spanische*, *schade*; Japanese
+  *kumi*; Portuguese *jornada*), 7 OCR (*malkrovi*, *maĝo*←manĝo,
+  *manĝaĝo*←manĝaĵo, *aii*, *oia*, *ifri*, *kvazai*), 7 `uncertain`
+  (*etono*, *dadi*, *dobo*, *rono*, *svito*, *tajlo*, *viĉo*), 5
+  fragments (*oklo*, *pro-ponoj*, *tradu_kar_*, *dudekunu*, *ptoj*), 3
+  names (*Likaonido*, *Guna*, *Leta*), 3 inflections (*sciatas*,
+  *dubendas*, *atingintis*).
+- **Segmentation**: 16 of 356 wrong (4.5%) — `NO_SPLIT` *akratona*,
+  *cedrato*, *depozicio*, *indiumo*, *kanopo*, *kastila*, *kombato*,
+  *kupulo*, *morbida*, *musketo*, *orfano*, *relato*, *saksona*,
+  *ververe*; overrides *reagema* (reag+em), *respirado* (respir+ad).
+  `--recite` gave literary citations to 11 batch-29 entries.
+
+Totals after batch 30: **14520** v2 entries; corpus-mined **16736**,
+11127 segmented and linked; dictionary **39192**; queue **1956**, all
+wp-only (>= 25 wp, no literary source).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1128,8 +1155,8 @@ refresh path avoids miner keys altogether.
 - **Prepositional prefixes**: done in esp-4qi (above).
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
-  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers: 2574 queued after
-  batch 29 (mixed 613, then wp-only 1961) — about 5 more batches. The
+  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
+  exhausted after batch 30; 1956 wp-only remain — about 4 more batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
