@@ -233,7 +233,9 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # sulf+id, vol+at+il
             'agendo', 'agrara', 'alemano', 'intersekco', 'irito',
             'meteorito', 'paserino', 'reallernejo', 'restrikta', 'sulfato',
-            'sulfido', 'volatila'}
+            'sulfido', 'volatila',
+            # esp-4h3 (batch 19): dis+degn, olimpi+ad, re+vers, torn+ad
+            'disdegni', 'olimpiado', 'reverso', 'tornado'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -271,6 +273,8 @@ SPLIT_OVERRIDE = {
     'regenerado': ([], 'regener', ['ad']),     # not re+gener+ad
     'rekuperado': ([], 'rekuper', ['ad']),     # not re+kup+er+ad
     'reorganizado': (['re'], 'organiz', ['ad']),  # stem was 'organizad'
+    'perletere': (['per'], 'leter', []),       # not perl+et+er
+    'transportisto': ([], 'transport', ['ist']),  # not trans+port+ist
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
