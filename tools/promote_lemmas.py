@@ -207,30 +207,136 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-598 (batch 13): roots flakon-, kanot-, maltan-, ulan- read
             # as flak+on, kan+ot, mal+tan, ul+an; compound propr+a+decid+e
             # read as propr+ad+ec+id
-            'flakono', 'kanoto', 'maltano', 'ulano', 'propradecide'}
+            'flakono', 'kanoto', 'maltano', 'ulano', 'propradecide',
+            # esp-31c (batch 14): roots brokat-, kvirit-, poplit-, rutul-
+            # read as brok+at, kvir+it, popl+it, rut+ul
+            'brokato', 'kvirito', 'poplito', 'rutula',
+            # esp-l2q (batch 15, mixed tier opens - loan-heavy): artik+ul,
+            # de+port, frag+il, kapel+an, lazar+et, pri+mar, re+fer,
+            # silik+at, strat+eg (strategist), tromp+et (trumpet)
+            'artikulo', 'deporti', 'fragila', 'kapelano', 'lazareto',
+            'primara', 'referi', 'silikato', 'stratego', 'trompeto',
+            # esp-1du (batch 16): brom+id, de+form, divid+end, harmoni+um,
+            # kab+in, met+il, pi+et+at, pri+madon, re+porter, stern+um,
+            # veter+in+ar
+            'bromido', 'deformi', 'dividendo', 'harmoniumo', 'kabino',
+            'metila', 'pietato', 'primadono', 'reportero', 'sternumo',
+            'veterinaro',
+            # esp-13o (batch 17): alt+at+on (alt+a+ton), de+misi, eskadr+on,
+            # kel+ar, plat+in, pop+ar (po+par+e), refer+at, refer+end+um,
+            # sekund+ar, sem+id, sid+er, stadi+on, stat+ist, ul+em
+            'altatona', 'demisii', 'eskadrono', 'kelaro', 'platino',
+            'popare', 'referato', 'referendumo', 'sekundara', 'semida',
+            'sidera', 'stadiono', 'statisto', 'ulemo',
+            # esp-1if (batch 18): ag+end, agr+ar, al+eman, inter+sekc, ir+it,
+            # meteor+it, paser+in, re+al+lernej, re+strikt, sulf+at,
+            # sulf+id, vol+at+il
+            'agendo', 'agrara', 'alemano', 'intersekco', 'irito',
+            'meteorito', 'paserino', 'reallernejo', 'restrikta', 'sulfato',
+            'sulfido', 'volatila',
+            # esp-4h3 (batch 19): dis+degn, olimpi+ad, re+vers, torn+ad
+            'disdegni', 'olimpiado', 'reverso', 'tornado',
+            # esp-s5u (batch 20): album+in, alveol+ar, hul+ig+an, mon+ism,
+            # pent+an, tra+pist, viol+in
+            'albumino', 'alveolaro', 'huligano', 'monisma', 'pentano',
+            'trapisto', 'violino',
+            # esp-1g0 (batch 21): amar+ant, el+and, kol+in, park+et,
+            # pleŭr+it, sen+sor
+            'amaranto', 'elando', 'kolino', 'parketo', 'pleŭrito',
+            'sensora', 'sensoro',
+            # esp-n1x (batch 22, wp-only tier opens): efemer+id,
+            # ek+os+ist+em, ek+ozon, el+am, fi+bol, human+it+ar, kal+end,
+            # klor+at, log+ot+et, re+tabl, rom+ant+ism, sur+viv, taks+on,
+            # trans+portret, uz+in, vert+iĝ
+            'efemerido', 'ekosistemo', 'ekozono', 'elama', 'fibolo',
+            'humanitara', 'kalendo', 'klorato', 'logoteto', 'retablo',
+            'romantisma', 'romantismo', 'survivi', 'taksono',
+            'transportreto', 'uzino', 'vertiĝo',
+            # esp-rz5 (batch 23): duon+ar+id, forc+ej, kamp+an+il, mask+ot,
+            # mot+et, ord+in, sub+strat, super+int+end+ant
+            'duonarida', 'forceja', 'kampanilo', 'maskoto', 'moteto',
+            'ordino', 'substrato', 'superintendanto',
+            # esp-a7p (batch 24): al+kaz+ar, ant+er, bo+real, centr+op,
+            # en+tent, inter+fer, kastr+um, kort+um, morf+in, palat+in,
+            # pri+mas, puf+in, stip+ul, trog+on
+            'alkazaro', 'antero', 'boreala', 'centropo', 'entento',
+            'interfero', 'kastrumo', 'kortuma', 'morfino', 'palatina',
+            'primaso', 'pufino', 'stipulo', 'trogono',
+            # esp-i9h (batch 25): agreg+at, grac+il, kab+il, lim+on, sen+il
+            'agregato', 'gracila', 'kabilo', 'limono', 'senila',
+            # esp-6iu (batch 26): de+lig+it, de+sap+ont, ĝoj+at+end,
+            # kul+ot, pel+er+in, re+viz
+            'deligito', 'desaponti', 'ĝojatendi', 'kuloto', 'pelerino',
+            'revizo',
+            # esp-a2u (batch 27): am+ont+il+ad, etaĝ+er, foli+ant, lim+et,
+            # rub+in, sam+um
+            'amontilado', 'etaĝero', 'folianto', 'limeto', 'rubino',
+            'samumo',
+            # esp-jpn (batch 28): al+aman, aĥ+il, fon+et+ism, leg+um,
+            # licenci+at, peritone+it, pri+kaz, serpent+in, sor+an, sup+in,
+            # tem+er+ar, tril+it+er, turb+ul
+            'alamano', 'aĥila', 'fonetismo', 'legumo', 'licenciato',
+            'peritoneito', 'prikazo', 'serpentino', 'sorana', 'supino',
+            'temerara', 'trilitera', 'turbulo',
+            # esp-3bg (batch 29): aŭtor+it+ec, de+bil, de+lic, eks+tra+ordinar,
+            # element+ar, ferm+at, membr+on+um+er, mond+on, ne+nif+ar+ad,
+            # pri+mor, tar+ant+ul, term+ont+et
+            'aŭtoriteco', 'debila', 'delico', 'ekstraordinara',
+            'elementara', 'fermato', 'membronumero', 'mondono',
+            'nenifarado', 'primora', 'tarantulo', 'termonteto'}
+# Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
+# _mined_roots cannot recover, because the bare word itself reads as a valid
+# affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
+# them every derivative needed a SPLIT_OVERRIDE (esp-b3y: 26 overrides for
+# these 15 roots). Rank 4, the same as mined roots of last resort.
+LOAN_ROOTS = {'alkemi', 'brokant', 'devot', 'eksplor', 'fanat', 'fiakr',
+              'habilit', 'nomad', 'patron', 'piet', 'puber', 'reform',
+              'regener', 'rekuper', 'transport'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
     'restarigi': (['re'], 'star', ['ig']),
     'restariĝi': (['re'], 'star', ['iĝ']),
     'sentemeco': ([], 'sent', ['em', 'ec']),   # not sen+tem+ec
-    'kamaradeco': ([], 'kamarad', ['ec']),     # not kam+ar+ad+ec
     'nevino': ([], 'nev', ['in']),             # not ne+vin
-    'reformisto': ([], 'reform', ['ist']),     # not re+form+ist
-    'reformemulo': ([], 'reform', ['em', 'ul']),  # not re+form+em+ul
-    'fiakristo': ([], 'fiakr', ['ist']),       # fiakro 'cab', not fi+akr+ist
     'revanto': ([], 'rev', ['ant']),           # not re+vant
     'trabaro': ([], 'trab', ['ar']),           # trabo 'beam', not tra+bar
     'prizorganto': (['pri'], 'zorg', ['ant']),  # not pri+zorgant
     'nesentema': (['ne'], 'sent', ['em']),     # not ne+sen+tem
     'ideto': ([], 'ide', ['et']),              # idea, not id+et
-    'reformado': ([], 'reform', ['ad']),       # not re+form+ad
     'trabeto': ([], 'trab', ['et']),           # trabo 'beam', not tra+bet
     'trafigi': ([], 'traf', ['ig']),           # not tra+fig
     'malsuprengrimpi': (['malsupren'], 'grimp', []),  # not mal+suprengrimp
     'aliĝadi': ([], 'aliĝ', ['ad']),           # aliĝ+ad, not al+iĝad
-    'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
-    'reformema': ([], 'reform', ['em']),       # not re+form+em
+    'pliiĝadi': ([], 'pliiĝ', ['ad']),         # pliiĝ+ad, not pli+iĝad
+    'ekestri': (['ek'], 'estr', []),           # not stem 'ek' + -estr
+    'finestiĝi': ([], 'finest', ['iĝ']),       # fin+est+iĝ, not fi+nest+iĝ
+    'sensema': ([], 'sens', ['em']),           # not sen+sem
+    'alpisto': ([], 'alp', ['ist']),           # not al+pist
+    'senida': (['sen'], 'id', []),             # not stem 'sen' + -id
+    'reorganizado': (['re'], 'organiz', ['ad']),  # stem was 'organizad'
+    'perletere': (['per'], 'leter', []),       # not perl+et+er
+    'senpereco': (['sen'], 'pere', ['ec']),    # not sen+per+ec
+    'korbatado': ([], 'korbat', ['ad']),       # not korb+at+ad
+    'malemigi': (['mal'], 'em', ['ig']),       # stem was 'mal'
+    'ĉefino': ([], 'ĉef', ['in']),             # not ĉe+fin
+    'subaro': (['sub'], 'ar', []),             # stem was 'sub'
+    'diseriĝi': (['dis'], 'er', ['iĝ']),       # stem was 'dis'
+    'geido': (['ge'], 'id', []),               # stem was 'ge'
+    'seninda': (['sen'], 'ind', []),           # stem was 'sen'
+    'ĉekano': ([], 'ĉek', ['an']),             # not ĉe+kan
+    'alpinisto': ([], 'alpin', ['ist']),       # not al+pin+ist
+    'elfino': ([], 'elf', ['in']),             # not el+fin
+    'religo': (['re'], 'lig', []),             # not rel+ig
+    'taŭridano': ([], 'taŭrid', ['an']),       # Taŭrido, not taŭr+id+an
+    'ekretiriĝi': (['ek'], 'retir', ['iĝ']),   # retiri, not re+tir
+    'moneraro': ([], 'moner', ['ar']),         # not mon+er+ar
+    'pranevino': (['pra'], 'nev', ['in']),     # not pra+ne+vin
+    'remaĉulo': (['re'], 'maĉ', ['ul']),       # not rem+aĉ+ul
+    'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
+    'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
+    'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
+    'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
 }
 
 
@@ -382,6 +488,8 @@ def main():
     # so later derivations of corpus loanwords split on the loanword root.
     stock = esperanto.root_stock(ENTRIES, mined_roots=True,
                                  no_split=NO_SPLIT)
+    for root in LOAN_ROOTS:
+        stock.setdefault(root, (4, 0))
     resegmented = 0
     if args.resegment:
         batches = {}

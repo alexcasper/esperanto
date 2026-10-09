@@ -622,6 +622,489 @@ Totals after batch 13: **6246** v2 entries; corpus-mined **8462**, 5938
 segmented and linked; dictionary **30918**; queue **5839** (broad 668,
 mixed 3683, wp-only 1488).
 
+## Batch 14 (esp-31c) — 500 reviewed, 477 promoted
+
+`DICT/review/v2-batch14-{a,b}.tsv`, re-mined first (after fast-forwarding
+to glm's batch-13 merge): the 3-source band at its thinnest Wikipedia
+backing (3+4 down to 3+1 wp). Nearly all literary vocabulary
+(*incensilo*, *heleboro*, *brokato*, *talaro*, *nargileo*, *poplito*).
+
+- **477 lemma** (209 noun, 152 verb, 92 adj, 24 adv) — all promoted; 474
+  literary-only, 0 Wikipedia-only.
+- **23 rejected** (4.6%): 17 foreign — German *spreche(n)*, *erhalte(n)*,
+  *verstehe*, *gerade*, *bringe(n)*, *davo(n)*, *ziehe*, *dagege(n)*,
+  *trage(n)*, *hoffe*; French *propo(sées)*, *française*, *ouvrage*,
+  *voici*; English *applause*, *organisatio(n)*; Italian *(in) petto*.
+  OCR *ruga* (ruĝa), *voco* (vicoj), *llia* (lia). Names *Oje*, *Iliono*.
+  Fragment *ĵe*.
+- **Segmentation**: 7 of 367 wrong (1.9%) — roots *brokato*, *kvirito*,
+  *poplito*, *rutula* → `NO_SPLIT`; overrides *kunsentema*, *malsentema*
+  (sent+em, not sen+tem) and *pliiĝadi* (pliiĝ+ad). `--recite` gave
+  literary citations to batch-13's *favorega*, *ĝeniĝi*, *kolektinto*.
+
+Totals after batch 14: **6723** v2 entries; corpus-mined **8939**, 6301
+segmented and linked; dictionary **31395**; queue **5325** (broad 165,
+mixed 3673, wp-only 1487). The broad tier is nearly exhausted: batch 15
+finishes it and opens the mixed tier, where evidence is 1–2 literary
+sources backed by ≥10 Wikipedia articles.
+
+## Batch 15 (esp-l2q) — 500 reviewed, 487 promoted; broad tier exhausted
+
+`DICT/review/v2-batch15-{a,b}.tsv`, re-mined first. Items 1–165 closed the
+broad tier (3+1 down to 3+0 wp: *skvalo*, *laŭbeto*, *bastŝuo*,
+*gagatnigra*); items 166–500 opened the **mixed tier** (2 literary sources
++ ≥43 wp), a sharp register change to modern and encyclopaedic vocabulary
+(*distribuado* 2+1618, *teknologio*, *koncilio*, *komputila*, *arkeologio*,
+*semajnfino*, *antisemitismo*, *sciencfikcia*, *ŝtatsekretario*).
+
+- **487 lemma** (269 noun, 104 verb, 87 adj, 27 adv) — all promoted.
+  Citations follow the register: 158 literary-only, 326 mixed
+  literary+Wikipedia, 3 Wikipedia-only (*alinomi*, *sasanida*, *svahila* —
+  their literary lines are the bare headword in lists).
+- **13 rejected** (2.6%, lowest yet): 10 foreign (*mistake(n)*, *unable*,
+  *durchau(s)*, *empfehle(n)*, *gesproche(n)*, *letzte(n)*, *(in)
+  preparazione*, Spanish *como*, Latin *(nec plus) ultra*, French *gri(s)*);
+  name *Ideografiko*; fragment *(La)tina*; inflection *konsiderati*
+  (konsideratas).
+- **Segmentation**: 14 of 320 wrong (4.4%, highest yet — loanwords cluster
+  in the mixed tier): `NO_SPLIT` *artikulo*, *deporti*, *fragila*,
+  *kapelano*, *lazareto*, *primara*, *referi*, *silikato*, *stratego*,
+  *trompeto*; overrides *ekestri*, *finestiĝi* (fin+est+iĝ), *patroneco*,
+  *patronino* (patron-). Expect this rate to hold through the mixed tier.
+
+Totals after batch 15: **7210** v2 entries; corpus-mined **9426**, 6611
+segmented and linked; dictionary **31882**; queue **4816** (broad 0, mixed
+3329, wp-only 1487).
+
+## Batch 16 (esp-1du) — 500 reviewed, 472 promoted
+
+`DICT/review/v2-batch16-{a,b}.tsv`, re-mined first: mixed tier, 2 literary
+sources + 43 down to 15 wp (*emberizo*, *militismo*, *akumulatoro*,
+*skafaldo*, *superkontinento*, *veterinaro*, *heĝiro*, *harmoniumo*).
+
+- **472 lemma** (260 noun, 80 verb, 110 adj, 22 adv) — all promoted. With
+  only 2 literary sources, every entry now carries 2 literary + 1 Wikipedia
+  citation (468), or Wikipedia only where the literary lines are bare
+  list headwords (*superkontinento*, *mezpersa*, *hindarja*, *baŝkira*).
+- **28 rejected** (5.6%): 19 foreign — Latin *linguae*, *Graeca*, *nobis*,
+  *ergo*, *urbi et orbi*, *amicos*, *aureus*, *cinerea*, *rosea*; French
+  *donne*, *lettre*, *centrale*, *mille*, *danse*; German *blaue*,
+  *musikalische*, *grosse*; Italian *gli*; Polish *dla*. Names *Dido*,
+  *Malaga*. OCR *tua* (tujan), *antaue*, *daurigi*. Inflection *parolati*
+  (parolatas). `uncertain` *nono*, *hosti* (forms are of *hostio*),
+  *kurulo*.
+- **Segmentation**: 12 of 324 wrong (3.7%) — `NO_SPLIT` *bromido*,
+  *deformi*, *dividendo*, *harmoniumo*, *kabino*, *metila*, *pietato*,
+  *primadono*, *reportero*, *sternumo*, *veterinaro*; override *sensema*
+  (sens+em, not sen+sem).
+
+Totals after batch 16: **7682** v2 entries; corpus-mined **9898**, 6924
+segmented and linked; dictionary **32354**; queue **4257** (mixed 2785,
+wp-only 1472).
+
+## Batch 17 (esp-13o) — 500 reviewed, 470 promoted
+
+`DICT/review/v2-batch17-{a,b}.tsv`, re-mined first: the end of the 2-source
+band (2+15 down to 2+10 wp) and the top of the **1-source band** (1 literary
++ 2122 down to 129 wp), where the vocabulary is overwhelmingly modern
+(*reproduktado*, *setlejo*, *cifereca*, *interreta*, *retpaĝo*,
+*referendumo*, *kosmoŝipo*, *infanĝardeno*, *dezajni*).
+
+- **470 lemma** (279 noun, 81 verb, 91 adj, 19 adv) — all promoted; 456
+  mixed literary+Wikipedia citations, 14 Wikipedia-only (their one literary
+  source is a bare headword line).
+- **30 rejected** (6.0%): 20 foreign — French *mariage*, *compte*,
+  *dimanche*, *chien*, *spéciale*, *carte*, *touche*; German *glaube*,
+  *hatte*, *stelle*, *herausgegeben*, *Prosa*, *dritten*, *liegen*; Latin
+  *(camera) obscura*, *(deus ex) machina*; Italian *corpo*; English
+  *division*; Russian *Novosti*; Slavic *slovo*. Names *Priamo*, *Gentano*.
+  OCR *ankora*, *efa* (mis-encoded ĉefa), *ajo*, *asti* (estas). Fragment
+  *ŭo*. `uncertain` *ruro*, *arĥi*, *riso*.
+- **Segmentation**: 17 of 337 wrong (5.0%) — `NO_SPLIT` *altatona*,
+  *demisii*, *eskadrono*, *kelaro*, *platino*, *popare*, *referato*,
+  *referendumo*, *sekundara*, *semida*, *sidera*, *stadiono*, *statisto*,
+  *ulemo*; overrides *alpisto* (alp+ist), *fanatismo* (fanat+ism), *senida*
+  (sen+id). `--recite` gave literary citations to 8 batch-16 entries.
+
+Totals after batch 17: **8152** v2 entries; corpus-mined **10368**, 7247
+segmented and linked; dictionary **32824**; queue **3721** (mixed 2259,
+wp-only 1462).
+
+## Batch 18 (esp-1if) — 500 reviewed, 484 promoted
+
+`DICT/review/v2-batch18-{a,b}.tsv`, re-mined first: 1-source band, 1
+literary + 129 down to 39 wp. Modern and technical vocabulary throughout
+(*kopirajto*, *televidilo*, *retpaĝaro*, *motorciklo*, *bushaltejo*,
+*datumaro*, *elŝutebla*, *nubskrapulo*, *kolĥozo*).
+
+- **484 lemma** (308 noun, 47 verb, 114 adj, 15 adv) — all promoted; 467
+  mixed citations, 17 Wikipedia-only.
+- **16 rejected** (3.2%): 14 foreign — Latin *in mundo*, *Sancti*,
+  *Orientalis*, *pereat mundus*, *de bello*, *vitae*, *Ecclesiae*,
+  *nostra*, *alpha*; French *recherche*; German *frei*; Spanish *noche*;
+  Portuguese *rua*; italicised Italian *maestro*. Inflection *bezonati*;
+  `uncertain` *anoŭdo*.
+- **Segmentation**: 19 of 289 wrong (6.6%, highest yet) — false *re-*/*al-*
+  prefixes dominate: `NO_SPLIT` *agendo*, *agrara*, *alemano*,
+  *intersekco*, *irito*, *meteorito*, *paserino*, *reallernejo*,
+  *restrikta*, *sulfato*, *sulfido*, *volatila*; overrides *alkemiisto*,
+  *pubereco*, *reformanto*, *reformisma*, *regenerado*, *rekuperado*,
+  *reorganizado*. The root *reform-* has now needed six overrides
+  (reformado, reformemulo, reformisto, reformema, reformanto, reformisma):
+  the root stock lacks it — filed as a follow-up.
+
+Totals after batch 18: **8636** v2 entries; corpus-mined **10852**, 7524
+segmented and linked; dictionary **33308**; queue **3181** (mixed 1746,
+wp-only 1435).
+
+## Batch 19 (esp-4h3) — 500 reviewed, 472 promoted
+
+`DICT/review/v2-batch19-{a,b}.tsv`, re-mined first: one late broad-tier
+arrival (*orientaziano*), then the 1-source band at 1 literary + 38 down to
+22 wp (*olimpiado*, *inkunablo*, *haŭbizo*, *mustaĉo*, *zloto*,
+*esperantido*, *superdozo*, *piedpilkado*).
+
+- **472 lemma** (285 noun, 53 verb, 117 adj, 17 adv) — all promoted; 464
+  mixed citations, 1 literary-only, 7 Wikipedia-only.
+- **28 rejected** (5.6%): 20 foreign — Latin species epithets dominate
+  (*communis*, *domesticus*, *americanus*, *medica*, *lutea*, *cristatus*,
+  *palustris*, *europaea*, *dulce*, *aurea*); German *Griechische*,
+  *singen*; French *femme*; Spanish *todas*; Italian *Divina*, *allegro*;
+  Ido *loi*; Swahili *fisi*; Czech *červený*; *partito*. Names *Padova*,
+  *Santi*. OCR *posteŭlo*, *reao*, *viko*, *ima*. `uncertain` *mikspota*,
+  *inico*.
+- **Segmentation**: 6 of 274 wrong (2.2%, down from 6.6%) — `NO_SPLIT`
+  *disdegni*, *olimpiado*, *reverso*, *tornado*; overrides *perletere*
+  (per+leter), *transportisto* (transport+ist). `--recite` gave literary
+  citations to 5 batch-18 entries.
+
+Totals after batch 19: **9108** v2 entries; corpus-mined **11324**, 7794
+segmented and linked; dictionary **33780**; queue **2646** (mixed 1232,
+wp-only 1414).
+
+## Batch 20 (esp-s5u) — 500 reviewed, 457 promoted
+
+`DICT/review/v2-batch20-{a,b}.tsv`, re-mined first: 1-source band at 1
+literary + 22 down to 15 wp. Literary vocabulary dominates again
+(*poreterne*, *prodaĵo*, *febleco*, *kreitaro*, *rumoro*, *tabelvorto*,
+*lavmaŝino*, *tiranosaŭro*, *gaŭĉo*).
+
+- **457 lemma** (282 noun, 58 verb, 104 adj, 13 adv) — all promoted; 453
+  mixed citations, 4 Wikipedia-only.
+- **43 rejected** (8.6%, highest yet): 33 foreign — Latin binomial
+  epithets dominate (*sativa*, *officinalis*, *chinensis*, *nobilis*,
+  *edulis*, *nucifera*, *mirabilis*, *merula*, *spinosa*, *domestica*,
+  *africanus*, *Castanea*, *europaeus*, *europea*) plus Latin *coeli*,
+  *nomine*, *nostris*, *veritas*, *cella*; French *celle*, *fille*,
+  *militaire*, *Humaine*; Italian *Nuovo*, *cosa*, *sotto voce*,
+  *Comedia*; German *neuesten*, *katholische*; Spanish *caballo*; Slavic
+  *cena*; Polish fragment; English title *Inferno*. Names *Proteo*,
+  *Marzo*, *Soma*, *Tanagro*. OCR *foino*, *preskai*, *jia*. `uncertain`
+  *lidi*, *noĉita*, *okopo*.
+- **Segmentation**: 10 of 271 wrong (3.7%) — `NO_SPLIT` *albumino*,
+  *alveolaro*, *huligano*, *monisma*, *pentano*, *trapisto*, *violino*;
+  overrides *eksplorado*, *nomadeca*, *senpereco*. Resegmentation also
+  improved *antaŭeniĝi* (antaŭ+ENIĜ → ANTAŬEN+iĝ). `--recite` gave
+  literary citations to 4 batch-19 entries.
+
+Totals after batch 20: **9565** v2 entries; corpus-mined **11781**, 8058
+segmented and linked; dictionary **34237**; queue **2125** (mixed 726,
+wp-only 1399).
+
+## Batch 21 (esp-1g0) — 500 reviewed, 461 promoted
+
+`DICT/review/v2-batch21-{a,b}.tsv`, re-mined first: 1-source band at 1
+literary + 15 down to 11 wp. Everyday and literary vocabulary
+(*piĵamo*, *patkuko*, *sunokulvitro*, *krucvortenigmo*, *vestokompleto*,
+*orangutano*, *papiamento*, *halukso*, *hufumo*).
+
+- **461 lemma** (271 noun, 72 verb, 105 adj, 13 adv) — all promoted; all
+  461 carry mixed (literary + Wikipedia) citations.
+- **39 rejected** (7.8%): 25 foreign — Latin epithets (*cinereus*,
+  *dioica*, *Persica*, *auritus*, *martius*, *rutilus*, *Gorilla*) plus
+  Latin *hodie*, *licentia poetica*, *e classe*; Spanish *amigo*,
+  *Fiesta*, *antiguo*; Italian *dell'*, *a giorno*, *senza*, *Guida*;
+  German *akademischen*, *viele*; French *bleu*; Czech *ulice*; Polish
+  *miasto*, *mene*; Hindi *chai*; Arabic *haji*. 8 names (*Penelopo*,
+  *Malene*, *Herakleo*, *Labelo*, *Panini*, *Dore*, *Frigo*,
+  *Barbatus*). OCR *anke*, *tala*, *illi*. `uncertain` *rozeta*,
+  *malposte*, *okopa*.
+- **Segmentation**: 10 of 302 wrong (3.3%) — `NO_SPLIT` *amaranto*,
+  *elando*, *kolino*, *parketo*, *pleŭrito*, *sensora*, *sensoro*;
+  overrides *korbatado* (korbat+ad), *malemigi* (mal+em+ig), *ĉefino*
+  (ĉef+in). `--recite` gave literary citations to 2 batch-20 entries.
+
+Totals after batch 21: **10026** v2 entries; corpus-mined **12242**, 8353
+segmented and linked; dictionary **34698**; queue **1623** (mixed 225,
+wp-only 1398).
+
+## Batch 22 (esp-n1x) — 500 reviewed, 474 promoted; mixed tier exhausted
+
+`DICT/review/v2-batch22-{a,b}.tsv`, re-mined first. Items 1–223 closed the
+mixed tier (1 literary + 11..10 wp, plus one late 2+52 arrival,
+*lingvolernado*); items 224–500 opened the **wp-only tier** (0 literary,
+2920 down to 155 wp). The wp-only head is modern encyclopaedic
+vocabulary — biology (*populacio*, *habitato*, *subspecio*, *taksono*,
+*klado*, *nestumi*, *elnestiĝi*), administration (*komarko*,
+*arondismento*, *subŝtato*), and modern life (*flughaveno*, *videoludo*,
+*poŝtelefono*, *aplikaĵo*, *biodiverseco*, *tutmondiĝo*). Wikipedia
+neologisms *setli*/*setliĝi*/*setlanto* and *survivi* are accepted as
+attested usage.
+
+- **474 lemma** (316 noun, 45 verb, 98 adj, 15 adv) — all promoted; 199
+  mixed citations, 275 Wikipedia-only (the wp tier by definition).
+- **26 rejected** (5.2%): 17 foreign — Latin epithets (*terrestris*,
+  *campestris*, *tremula*, *capreolus*, *cuniculus*, *onca*, *cursus*,
+  *Caja*, *in corpore*), German (*Religionen*, *englische*, *gebildete*,
+  *graue*, *menschlichen*), French *espace*, *Sauvage*; Spanish *cuna*.
+  4 inflections — passive *-itis* forms (*submetitas*, *malkonstruitis*,
+  *nomumitis*, *starigitis*), a Wikipedia register habit. Name *Hache*.
+  OCR *aia*, *labe*, *mondoo*, *ambai*.
+- **Segmentation**: 20 of 282 wrong (7.1%, highest yet) — wp vocabulary
+  is loan-heavy. `NO_SPLIT` *efemerido*, *ekosistemo*, *ekozono*,
+  *elama*, *fibolo*, *humanitara*, *kalendo*, *klorato*, *logoteto*,
+  *retablo*, *romantisma*, *romantismo*, *survivi*, *taksono*,
+  *transportreto*, *uzino*, *vertiĝo*; overrides *fortransporti*
+  (for+transport), *habilitiĝi*, *rekuperiĝi* (the *rekuper-* root again;
+  see esp-b3y). `--recite` gave literary citations to 2 batch-21 entries.
+
+Totals after batch 22: **10500** v2 entries; corpus-mined **12716**, 8618
+segmented and linked; dictionary **35172**; queue **1119** (all wp-only).
+
+## Batch 23 (esp-rz5) — 500 reviewed, 487 promoted
+
+`DICT/review/v2-batch23-{a,b}.tsv`, re-mined first: wp-only tier, 0
+literary + 155 down to 74 wp. Encyclopaedic register throughout:
+ornithology (*vadbirdo*, *flugilpinto*, *kovoperiodo*, *idozorgado*,
+*turfalko*, *petrelo*), music (*konĉerto*, *moteto*, *klaviceno*,
+*bibopo*, *saksofonisto*), politics and society (*secesio*, *junto*,
+*privatigo*, *balotrajto*, *neprofitcela*), and modern technology
+(*komputiko*, *ĝisdatigo*, *animeo*, *kronvirusa*).
+
+- **487 lemma** (316 noun, 47 verb, 116 adj, 8 adv) — all promoted, all
+  with Wikipedia-only citations.
+- **13 rejected** (2.6%, lowest of the v2 run): 8 inflections — the
+  Wikipedia passive *-itas*/*-itis* habit (*menciitas*, *malkonstruitis*,
+  *detruitis*, *entombigitis*, *forigitis*, *uzitas*, *instalitis*,
+  *situantas*); names *Guerra*, *Americana*, *Anio*; Latin *contra*; typo
+  *eoste*.
+- **Segmentation**: 9 of 262 wrong (3.4%) — `NO_SPLIT` *duonarida*,
+  *forceja*, *kampanilo*, *maskoto*, *moteto*, *ordino*, *substrato*,
+  *superintendanto*; override *subaro* (sub+ar). `--recite` gave literary
+  citations to 5 earlier entries.
+
+Totals after batch 23: **10987** v2 entries; corpus-mined **13203**, 8872
+segmented and linked; dictionary **35659**; queue **582** (all wp-only).
+
+## Batch 24 (esp-a7p) — 564 reviewed, 540 promoted; queue exhausted
+
+`DICT/review/v2-batch24-{a,b}.tsv` (282 each), re-mined first: one late
+mixed arrival (*morfino*, 2+39) then the rest of the wp-only tier (0
+literary, 82 down to 50 wp). Science and culture vocabulary
+(*termodinamiko*, *triglicerido*, *imunsistemo*, *eoceno*, *perestrojko*,
+*kantaŭtoro*, *rulseĝo*, *serĉilo*, *komikso*, *ŝario*).
+
+- **540 lemma** (352 noun, 43 verb, 137 adj, 8 adv) — all promoted; 539
+  Wikipedia-only citations, 1 mixed.
+- **24 rejected** (4.3%): 10 foreign — Spanish (*viejo*, *El Tiempo*,
+  *la muerte*, *hombre*), Italian (*per Musica*, *di Cappella*), Latin
+  (*Ex Causa*, *australis*, *occidentalis*), German *Heiligen*; 10
+  passive *-itas*/*-itis* inflections; names *Navara*, *Goeta*, *Gotaa*,
+  *Morava*.
+- **Segmentation**: 16 of 271 wrong (5.9%) — `NO_SPLIT` *alkazaro*,
+  *antero*, *boreala*, *centropo*, *entento*, *interfero*, *kastrumo*,
+  *kortuma*, *morfino*, *palatina*, *primaso*, *pufino*, *stipulo*,
+  *trogono*; overrides *devoteco* (devot+ec), *diseriĝi* (dis+er+iĝ).
+
+Totals after batch 24: **11527** v2 entries; corpus-mined **13743**, 9129
+segmented and linked; dictionary **36199**; queue **0** at the esp-nuk
+thresholds (broad >= 3 other, mixed 1–2 other + >= 10 wp, wp-only >= 50
+wp, all >= 5 occurrences).
+
+### Next tier (probed, not yet applied)
+
+`gap_report.py` threshold probes against the batch-24 ledger:
+
+| thresholds | new queue |
+|---|---|
+| `--min-sources 2` (broad = 2 other sources) | 1670 broad |
+| `--mixed-wp 5` (1 other + 5..9 wp) | 2296 mixed |
+| `--wp-only 25` (25..49 wp) | 1997 wp-only |
+| `--mixed-wp 5 --wp-only 25` | 4293 |
+
+The literary-first order is: 2-source broad (1670) → mixed at 5 wp (2296)
+→ wp-only at 25 (1997). Filed as follow-up beads.
+
+## Batch 25 (esp-i9h) — phase 2 opens: broad tier lowered to 2 sources
+
+`tools/gap_report.py --min-sources` default **3 → 2**: the broad tier now
+takes any lemma with two non-Wikipedia sources (1675 queued after the
+re-mine; 1671 broad). `DICT/review/v2-batch25-{a,b}.tsv` covers items
+1–500: 2 literary + 24 down to 5 wp. Literary register returns —
+*pilafo*, *odoraĉo*, *dentobroso*, *kanonkuglo*, *gardhundo*,
+*fenestrobreto*, *marĉandado*, *kokosnukso*, *vaporboato*, *ŝeolo*;
+plus Soviet-era language names (*komia*, *udmurta*, *erzja*, *evenka*,
+*inguŝa*) from a nationality list.
+
+- **465 lemma** (263 noun, 100 verb, 87 adj, 15 adv) — all promoted; 463
+  mixed citations, 2 literary-only. Verbs are back at 21% (Wikipedia
+  tiers ran ~10%).
+- **35 rejected** (7%): 27 foreign — multilingual word lists and
+  quotations in French (*neige*, *oui*, *maison*, *depuis*, *peine*,
+  *neveu*, *Ancien*, *arbre*, *reconnaissance*, *comprendre*), German
+  (*sieben*, *deren*, *eigenen*, *neben*, *bleiben*, *brauchen*,
+  *rechten*), Polish (*kto*, *moja*), Latin (*terra incognita*, *mihi*,
+  *arvensis*, *a posteriori*, *civis*), English (*devotion*, *selection*,
+  *cuisine*); names *Karara*, *Fileo*; OCR *nla*, *proti*; fragment
+  interjection *ĥo*; `uncertain` *ibo*, *ostero*, *mando*.
+- **Segmentation**: 8 of 347 wrong (2.3%, literary vocabulary splits
+  cleanly) — `NO_SPLIT` *agregato*, *gracila*, *kabilo*, *limono*,
+  *senila*; overrides *brokantisto*, *geido* (ge+id), *pietisto*.
+
+Totals after batch 25: **11992** v2 entries; corpus-mined **14208**, 9471
+segmented and linked; dictionary **36664**; queue **1175** (broad 1171).
+
+## Batch 26 (esp-6iu) — 500 reviewed, 468 promoted
+
+`DICT/review/v2-batch26-{a,b}.tsv`, re-mined first: 2-source broad tier,
+2 literary + 5 down to 3 wp. Everyday literary vocabulary (*boatejo*,
+*diliĝenco*, *pelerino*, *bilardejo*, *kahelforno*, *cigaredujo*,
+*vekilo*, *ŝlosilaro*, *avĉjo*, *knabinjo*, *kokeriki*, *miaŭado*).
+
+- **468 lemma** (274 noun, 99 verb, 77 adj, 18 adv) — all promoted; 455
+  mixed citations, 13 literary-only.
+- **32 rejected** (6.4%): 20 foreign — German word-list entries
+  (*setzen*, *mehrere*, *dabei*, *offen*, *schlafen*, *dazu*, *schicken*,
+  *fahren*, *kennen*, *geschrieben*), French (*pomme*, *jamais*,
+  *annuaire*, *mesure*), English (*usage*, *proportion*), Latin (*vae*,
+  *ignis*), Italian *addio*, Norwegian *norske*; names *Amona*, *Suza*,
+  *Luigi*; 6 OCR (*fmi*, *nagi*, *divi*, *moneto* for montetoj, *deja*,
+  *trati*); fragment *labo-*; `uncertain` *ĵo*, *agao*.
+- **Segmentation**: 9 of 350 wrong (2.6%) — `NO_SPLIT` *deligito*,
+  *desaponti*, *ĝojatendi*, *kuloto*, *pelerino*, *revizo*; overrides
+  *patronaro* (patron+ar), *plikonatiĝi* (pli+kon+at+iĝ),
+  *prizorgantino* (pri+zorg+ant+in). `--recite` gave literary citations
+  to 15 batch-25 entries.
+
+Totals after batch 26: **12460** v2 entries; corpus-mined **14676**, 9815
+segmented and linked; dictionary **37132**; queue **671** (broad 667).
+
+## Batch 27 (esp-a2u) — 667 reviewed, 617 promoted; 2-source tier exhausted
+
+`DICT/review/v2-batch27-{a,b,c}.tsv` (223/222/222), re-mined first: the
+whole remaining 2-source broad tier (2 literary + 3 down to 0 wp) plus 4
+late arrivals. The most literary batch of the run: **380 of 617 entries
+cite only literature** (0 wp). Homeric epithets (*bovookula*,
+*rapidapieda*, *kuproarmita*), domestic and period vocabulary
+(*dormoĉapo*, *naztuketo*, *portseĝo*, *fumpotĉapelo*, *etaĝero*,
+*diliĝenco*-era *kaleŝego*), prosody (*iambo*, *troĥeo*).
+
+- **617 lemma** (369 noun, 126 verb, 100 adj, 22 adv) — all promoted;
+  380 literary-only, 234 mixed, 3 Wikipedia-only.
+- **50 rejected** (7.5%): 31 foreign (German word-list and letter-model
+  verbs — *bauen*, *erschienen*, *fangen*, *gegeben*, *vergessen*,
+  *folgende*, *nennen*, *zeigen*, *herzlichen*…; French *traduire*,
+  *aucune*, *parce*, *suivre*; English *creation*, *innovation*,
+  *resolution*, *tense*, *of the*; Polish *gdzie*; Latin *nulli*; Italian
+  *si muove*; Arabic *marhaba*); 10 OCR (*autoro*, *efi*, *tumi*,
+  *lajaro*, *iingvo*, *lnternacia*, *rekonti*, *circonstanco*, *esli*,
+  *vovo*); 4 inflections (*preferintus*, three Homeric participle
+  epithets); names *Donja*, *Havra*; fragments *ulo*, *ineto*;
+  `uncertain` *neno*.
+- **Segmentation**: 8 of 425 wrong (1.9%) — `NO_SPLIT` *amontilado*,
+  *etaĝero*, *folianto*, *limeto*, *rubino*, *samumo*; overrides
+  *seninda* (sen+ind), *ĉekano* (ĉek+an). `--recite` gave literary
+  citations to 26 batch-26 entries.
+
+Totals after batch 27: **13077** v2 entries; corpus-mined **15293**,
+10234 segmented and linked; dictionary **37749**; queue **0** again —
+next is esp-jpn (mixed at 5 wp, wp-only at 25).
+
+## Loan-root stock (esp-b3y)
+
+The segmenter's root stock knows a radiko only when some layer supplies it
+as `root` or `_mined_roots` recovers it from a standalone entry. Neither
+works for loanwords whose bare form itself reads as an affix split:
+*reformo* parses as re+form-o, *transporti* as trans+port-i, *patrono* as
+patr+on-o, so the real root never enters the stock and every derivative
+needed a `SPLIT_OVERRIDE` — 26 of the 60 overrides served just 15 roots.
+
+`promote_lemmas.LOAN_ROOTS` now adds those 15 roots (alkemi, brokant,
+devot, eksplor, fanat, fiakr, habilit, nomad, patron, piet, puber, reform,
+regener, rekuper, transport) to the stock at rank 4 (mined-root rank).
+All 26 overrides reproduced exactly without them and were removed (60 →
+34). `--resegment v2-` + `shard-` corrected 7 pre-v2 entries the overrides
+never reached: *reformo*, *transporti*, *transporto* (re+FORM / trans+PORT
+→ unsplit root) and *transportebla*, *-igi*, *-iĝi*, *-ilo*
+(trans+PORT+x → TRANSPORT+x). Segmented corpus-mined: 10234 → 10231;
+nothing else changed; dry runs 0. Future derivatives of these roots split
+correctly with no override. Add a root here once it has needed ~3
+overrides (the same rule as in the skill).
+
+## Phase 2b, batch 28 (esp-jpn) — mixed@5 / wp-only@25; 500 reviewed, 454 promoted
+
+`gap_report.py` defaults lowered: `--mixed-wp` 10 → 5, `--wp-only` 50 → 25
+(the broad tier at 2 literary sources was exhausted by batch 27). After
+re-mining against the batch-27 dictionary the queue held **3581**: mixed
+1615, wp-only 1966 (the probe's 2296 mixed shrank as batch 26–27 stems
+absorbed siblings). Batch 28 took the top 500: 1 literary source + 9 down
+to 7 wp articles.
+
+- **454 lemma** (275 noun, 91 adj, 65 verb, 23 adv) — all promoted; 452
+  mixed citations, 2 Wikipedia-only (*odia*, *sorana*: the literary hit is
+  absent from the miner sample).
+- **46 rejected** (9.2%, the band's expected 3–9% upper end): 32 foreign
+  — Latin binomial epithets (*pratensis*, *noctua*, *arabica*,
+  *giganteus*, *officinale*, *camelus*, *fluviatilis*, *avellana*,
+  *Melia*), multilingual word lists (*chimie*, *blau*, *ziemia*, *dva*),
+  Czech *divadlo*/*strana*/*časopis*, Spanish *relación*, Italian *Duce*,
+  *i miei*, German *Reisende*, *dunkle*, Latin *modus vivendi*, *nomina*,
+  *notitia*; 4 fragments (*alMi*, *alLi*, *alLiaj* run-together pronoun
+  capitals in Bahá'í texts; *Sno.*); 3 OCR (*malla*, *kja*, *dauro*); 3
+  names (*Jamato*, *Baŝo*, *Partujo*); 3 `uncertain` (*pajo*, *timbo*,
+  *tila*); 1 inflection (*volintus*).
+- **Segmentation**: 18 of 292 wrong (6.2%, loan-heavy band as forecast) —
+  `NO_SPLIT` *alamano*, *aĥila*, *fonetismo*, *legumo*, *licenciato*,
+  *peritoneito*, *prikazo*, *serpentino*, *sorana*, *supino*, *temerara*,
+  *trilitera*, *turbulo*; overrides *alpinisto* (alpin+ist), *elfino*
+  (elf+in), *religo* (re+lig), *taŭridano* (taŭrid+an), *ekretiriĝi*
+  (ek+retir+iĝ). The esp-b3y loan roots needed no override this batch.
+  `--recite` gave literary citations to 4 batch-27 entries.
+
+Totals after batch 28: **13531** v2 entries; corpus-mined **15747**,
+10510 segmented and linked; dictionary **38203**; queue **3081** (mixed
+1115, wp-only 1966).
+
+## Batch 29 (esp-3bg) — 500 reviewed, 437 promoted
+
+`DICT/review/v2-batch29-{a,b}.tsv`, re-mined first: mixed tier 1 literary
+source + 7 down to 6 wp (plus one 2+10 late arrival, *militservado*).
+
+- **437 lemma** (265 noun, 93 adj, 66 verb, 13 adv) — all promoted; all
+  437 carry mixed literary+wp citations.
+- **63 rejected** (12.6%, above the band's 3–9%): 52 foreign — the
+  multilingual word-list source (`vojo route, voie | way | Weg | дорога`)
+  now dominates the 1-literary band: French *voie*, *affaire*, *seconde*,
+  *ordinaire*, *samedi*, *parmi*, *poche*, *droite*, *taille*, German
+  *siehe*, *einzige*, *heutigen*, *ihnen*, *Thema*, Polish *panna*,
+  *ludzie*, *nauka*; Latin binomials (*glandarius*, *murinus*, *carica*,
+  *oleracea*, *caballus*, *migratorius*) and tags (*amor fati*, *diem
+  perdidi*, *remedia amoris*); Italian *troppo*, *molto*, *viaggio*,
+  *clemenza*; Spanish/Portuguese *coche*, *dinero*, *guia*. 5 `uncertain`
+  (*vao*, *safo*, *klimo*, *hermo*, *siano*), 3 inflections (*fariĝintus*,
+  *akirintus*, *celebratas*), 2 fragments (*mem'*, dialect *kjo*), name
+  *Jasa*.
+- **Segmentation**: 15 of 287 wrong (5.2%) — `NO_SPLIT` *aŭtoriteco*,
+  *debila*, *delico*, *ekstraordinara*, *elementara*, *fermato*,
+  *membronumero*, *mondono*, *nenifarado*, *primora*, *tarantulo*,
+  *termonteto*; overrides *moneraro* (moner+ar), *pranevino*
+  (pra+nev+in), *remaĉulo* (re+maĉ+ul). `--recite` gave literary
+  citations to 23 batch-28 entries (incl. *sorana*).
+
+Totals after batch 29: **13968** v2 entries; corpus-mined **16184**,
+10785 segmented and linked; dictionary **38640**; queue **2574** (mixed
+613, wp-only 1961).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -643,8 +1126,10 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 5839 after
-  batch 13 — broad 668, then mixed 3683, then wp-only 1488. The
+- **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
+  sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
+  mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers: 2574 queued after
+  batch 29 (mixed 613, then wp-only 1961) — about 5 more batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

@@ -2,8 +2,8 @@
 """Vocabulary gap: frequent corpus lemmas that DICT/entries.jsonl lacks.
 
 Usage:
-  python3 tools/gap_report.py [--min-sources 3] [--min-count 5]
-                              [--mixed-wp 10] [--wp-only 50]
+  python3 tools/gap_report.py [--min-sources 2] [--min-count 5]
+                              [--mixed-wp 5] [--wp-only 25]
                               [--queue DICT/shards/gap-queue.jsonl] [--top 40]
 
 Reads DICT/candidates.jsonl (tools/mine_lemmas.py + tools/reconcile_lemmas.py)
@@ -33,11 +33,13 @@ sources are single wp-* articles, so a bare source count stops meaning
 breadth: three stubs clear it. Sources are split by register and a lemma is
 queued in the first tier it meets:
 
-  broad    >= --min-sources non-Wikipedia sources (the pre-Vikipedio bar,
-           unchanged in meaning)
-  mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles
-  wp-only  no non-Wikipedia source, >= --wp-only wp articles; modern and
-           technical vocabulary, reviewed with extra scrutiny
+  broad    >= --min-sources non-Wikipedia sources (pre-Vikipedio bar was 3;
+           lowered to 2 by esp-i9h once the 3-source tier was exhausted)
+  mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles (10 until
+           esp-jpn lowered it to 5)
+  wp-only  no non-Wikipedia source, >= --wp-only wp articles (50 until
+           esp-jpn lowered it to 25); modern and technical vocabulary,
+           reviewed with extra scrutiny
 
 and --min-count occurrences in every tier. The queue is ordered by tier,
 then non-Wikipedia sources, then wp articles, then count.
@@ -152,11 +154,11 @@ def classify(c, dict_words, roots, english, args, candidates=()):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument('--min-sources', type=int, default=3)
+    ap.add_argument('--min-sources', type=int, default=2)
     ap.add_argument('--min-count', type=int, default=5)
-    ap.add_argument('--mixed-wp', type=int, default=10,
+    ap.add_argument('--mixed-wp', type=int, default=5,
                     help='wp-* articles needed beside 1-2 other sources')
-    ap.add_argument('--wp-only', type=int, default=50,
+    ap.add_argument('--wp-only', type=int, default=25,
                     help='wp-* articles needed with no other source')
     ap.add_argument('--queue', default=QUEUE)
     ap.add_argument('--top', type=int, default=40)
