@@ -838,6 +838,39 @@ Totals after batch 21: **10026** v2 entries; corpus-mined **12242**, 8353
 segmented and linked; dictionary **34698**; queue **1623** (mixed 225,
 wp-only 1398).
 
+## Batch 22 (esp-n1x) — 500 reviewed, 474 promoted; mixed tier exhausted
+
+`DICT/review/v2-batch22-{a,b}.tsv`, re-mined first. Items 1–223 closed the
+mixed tier (1 literary + 11..10 wp, plus one late 2+52 arrival,
+*lingvolernado*); items 224–500 opened the **wp-only tier** (0 literary,
+2920 down to 155 wp). The wp-only head is modern encyclopaedic
+vocabulary — biology (*populacio*, *habitato*, *subspecio*, *taksono*,
+*klado*, *nestumi*, *elnestiĝi*), administration (*komarko*,
+*arondismento*, *subŝtato*), and modern life (*flughaveno*, *videoludo*,
+*poŝtelefono*, *aplikaĵo*, *biodiverseco*, *tutmondiĝo*). Wikipedia
+neologisms *setli*/*setliĝi*/*setlanto* and *survivi* are accepted as
+attested usage.
+
+- **474 lemma** (316 noun, 45 verb, 98 adj, 15 adv) — all promoted; 199
+  mixed citations, 275 Wikipedia-only (the wp tier by definition).
+- **26 rejected** (5.2%): 17 foreign — Latin epithets (*terrestris*,
+  *campestris*, *tremula*, *capreolus*, *cuniculus*, *onca*, *cursus*,
+  *Caja*, *in corpore*), German (*Religionen*, *englische*, *gebildete*,
+  *graue*, *menschlichen*), French *espace*, *Sauvage*; Spanish *cuna*.
+  4 inflections — passive *-itis* forms (*submetitas*, *malkonstruitis*,
+  *nomumitis*, *starigitis*), a Wikipedia register habit. Name *Hache*.
+  OCR *aia*, *labe*, *mondoo*, *ambai*.
+- **Segmentation**: 20 of 282 wrong (7.1%, highest yet) — wp vocabulary
+  is loan-heavy. `NO_SPLIT` *efemerido*, *ekosistemo*, *ekozono*,
+  *elama*, *fibolo*, *humanitara*, *kalendo*, *klorato*, *logoteto*,
+  *retablo*, *romantisma*, *romantismo*, *survivi*, *taksono*,
+  *transportreto*, *uzino*, *vertiĝo*; overrides *fortransporti*
+  (for+transport), *habilitiĝi*, *rekuperiĝi* (the *rekuper-* root again;
+  see esp-b3y). `--recite` gave literary citations to 2 batch-21 entries.
+
+Totals after batch 22: **10500** v2 entries; corpus-mined **12716**, 8618
+segmented and linked; dictionary **35172**; queue **1119** (all wp-only).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -859,9 +892,9 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 1623 after
-  batch 21 — broad exhausted; mixed 225 (finishes in batch 22), then
-  wp-only 1398. The
+- **Next batches**: the register-aware queue (esp-nuk) holds 1119 after
+  batch 22 — broad and mixed exhausted; wp-only 1119 (>= 50 wp sources,
+  no literary attestation) remain, about two and a half batches. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)

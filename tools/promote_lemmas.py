@@ -243,7 +243,15 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-1g0 (batch 21): amar+ant, el+and, kol+in, park+et,
             # pleŭr+it, sen+sor
             'amaranto', 'elando', 'kolino', 'parketo', 'pleŭrito',
-            'sensora', 'sensoro'}
+            'sensora', 'sensoro',
+            # esp-n1x (batch 22, wp-only tier opens): efemer+id,
+            # ek+os+ist+em, ek+ozon, el+am, fi+bol, human+it+ar, kal+end,
+            # klor+at, log+ot+et, re+tabl, rom+ant+ism, sur+viv, taks+on,
+            # trans+portret, uz+in, vert+iĝ
+            'efemerido', 'ekosistemo', 'ekozono', 'elama', 'fibolo',
+            'humanitara', 'kalendo', 'klorato', 'logoteto', 'retablo',
+            'romantisma', 'romantismo', 'survivi', 'taksono',
+            'transportreto', 'uzino', 'vertiĝo'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -289,6 +297,9 @@ SPLIT_OVERRIDE = {
     'korbatado': ([], 'korbat', ['ad']),       # not korb+at+ad
     'malemigi': (['mal'], 'em', ['ig']),       # stem was 'mal'
     'ĉefino': ([], 'ĉef', ['in']),             # not ĉe+fin
+    'fortransporti': (['for'], 'transport', []),  # not for+trans+port
+    'habilitiĝi': ([], 'habilit', ['iĝ']),     # not habil+it+iĝ
+    'rekuperiĝi': ([], 'rekuper', ['iĝ']),     # not re+kup+er+iĝ
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
