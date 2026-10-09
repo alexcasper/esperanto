@@ -1183,6 +1183,31 @@ Totals after batch 32: **15466** v2 entries; corpus-mined **17682**,
 11562 segmented and linked; dictionary **40138**; queue **941** (all
 wp-only, 32 down to 25 wp).
 
+## Batch 33 (esp-dx7) — wp-only, 500 reviewed, 480 promoted
+
+`DICT/review/v2-batch33-{a,b}.tsv`, re-mined first: wp-only tier 32 down
+to 28 wp articles. *kukabarao*, *nukleotido*, *eritrocito*, *obezeco*,
+*bioteknologio*, *gasgiganto*, *kompaktdisko*, *volejbalo*, *jogurto*,
+*benzinstacio*.
+
+- **480 lemma** (331 noun, 105 adj, 38 verb, 6 adv) — all promoted,
+  Wikipedia-only citations.
+- **20 rejected** (4.0%): 9 foreign (*otras*, *goldenen*, *iPhone*,
+  *Sesto*, *encomienda*, *anthos*, *adversus*, *arctos*, *officinalis*
+  calque *oficina*), 8 `-itis`/`-atas` passives, 2 fragments (*ilina* ←
+  Žilina; *ekskreci*, key collision with *ekskrecio*), name *Kari*.
+- **Segmentation**: 20 of 225 wrong (8.9%) — 14 `NO_SPLIT` (*johanito*,
+  *kombinato*, *krepuskula*, *lignito*, *mediana*, *militarismo*,
+  *nukleotido*, *parieto*, *plumpinto*, *putino*, *sensorgano*,
+  *sudeta*, *trilatere*, *ĉefaktoro*); 6 overrides (*interreproduktado*,
+  *diserigi*, *malina*, *navarano*, *retirigi*, *retirigo*). The
+  esp-b3y loan root *reform-* split *reformiĝi* correctly with no
+  override.
+
+Totals after batch 33: **15946** v2 entries; corpus-mined **18162**,
+11773 segmented and linked; dictionary **40618**; queue **433** (all
+wp-only, 28 down to 25 wp).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1207,8 +1232,8 @@ refresh path avoids miner keys altogether.
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
   mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
-  exhausted after batch 30; 941 wp-only remain after batch 32 — two more
-  batches empty the phase-2b queue. The
+  exhausted after batch 30; 433 wp-only remain after batch 33 — batch 34
+  empties the phase-2b queue. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
