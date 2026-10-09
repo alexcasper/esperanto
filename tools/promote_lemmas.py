@@ -293,7 +293,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-6d4 (batch 31): acet+on, al+bed, cian+id, el+ek+trik,
             # hepat+it, liber+aĉ+et, pi+nj+on, stigm+at, talib+an, ĥan+at
             'acetono', 'albedo', 'cianido', 'elektrika', 'hepatito',
-            'liberaĉeti', 'pinjono', 'stigmato', 'talibano', 'ĥanato'}
+            'liberaĉeti', 'pinjono', 'stigmato', 'talibano', 'ĥanato',
+            # esp-3qq (batch 32): buk+on, el+farb+ar, fulm+ar, kaĝ+ar,
+            # kontinu+um, migr+ad+op+ad, op+id+um, sub+en+kurb
+            'bukono', 'elfarbaro', 'fulmaro', 'kaĝara', 'kontinuumo',
+            'migradopado', 'opidumo', 'subenkurba'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -351,6 +355,8 @@ SPLIT_OVERRIDE = {
     'repisto': ([], 'rep', ['ist']),           # repo (rap), not re+pist
     'reorganiziĝi': (['re'], 'organiz', ['iĝ']),
     'separatisma': ([], 'separat', ['ism']),   # not separ+at+ism
+    'aranereto': ([], 'arane', ['et']),        # not ar+an+er+et
+    'nereproduktulo': (['ne'], 'reprodukt', ['ul']),  # not ne+re+produkt
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem

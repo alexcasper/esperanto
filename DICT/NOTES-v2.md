@@ -1158,6 +1158,31 @@ Totals after batch 31: **14993** v2 entries; corpus-mined **17209**,
 11331 segmented and linked; dictionary **39665**; queue **1450** (all
 wp-only, 39 down to 25 wp).
 
+## Batch 32 (esp-3qq) — wp-only, 500 reviewed, 473 promoted; dictionary passes 40k
+
+`DICT/review/v2-batch32-{a,b}.tsv`, re-mined first: wp-only tier 93 down
+to 32 wp articles. *ŝtatrenverso*, *saĝtelefono*-era *sunpanelo*,
+*superheroo*, *duonkonduktaĵo*, *korbopilko*, *apoptozo*, *reciklado*,
+*ventomuelejo*, *kosmopramo*.
+
+- **473 lemma** (309 noun, 121 adj, 33 verb, 10 adv) — all promoted,
+  Wikipedia-only citations.
+- **27 rejected** (5.4%): 15 foreign (Spanish/Italian/Latin title and
+  epithet words *Siete*, *Agua*, *Primera*, *viridis*, *gigas*,
+  *japonica*, *cum laude*, *concerto grosso*, *sacrae*, *sopra*…), 5
+  inflections (*muntitis*, *trovatas*, *kondamnitis*, *fermitis*,
+  *planitis*), 3 names (*Toda*, *Aĥeno*, *Valdivia*), 2 `uncertain`
+  (*esperto*, *tempero*), OCR *pocento* (procento), key collision *rupi*
+  (rupio).
+- **Segmentation**: 10 of 239 wrong (4.2%) — `NO_SPLIT` *bukono*,
+  *elfarbaro*, *fulmaro*, *kaĝara*, *kontinuumo*, *migradopado*,
+  *opidumo*, *subenkurba*; overrides *aranereto* (arane+et),
+  *nereproduktulo* (ne+reprodukt+ul).
+
+Totals after batch 32: **15466** v2 entries; corpus-mined **17682**,
+11562 segmented and linked; dictionary **40138**; queue **941** (all
+wp-only, 32 down to 25 wp).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -1182,8 +1207,8 @@ refresh path avoids miner keys altogether.
 - **Next batches**: phase 2 (esp-i9h) lowered the broad tier to 2
   sources; that tier is **exhausted** after batch 27. esp-jpn lowered the
   mixed (1 lit + >= 5 wp) and wp-only (>= 25 wp) tiers. The mixed tier is
-  exhausted after batch 30; 1450 wp-only remain after batch 31 — about 3
-  more batches. The
+  exhausted after batch 30; 941 wp-only remain after batch 32 — two more
+  batches empty the phase-2b queue. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
