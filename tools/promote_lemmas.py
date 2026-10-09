@@ -239,7 +239,11 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # esp-s5u (batch 20): album+in, alveol+ar, hul+ig+an, mon+ism,
             # pent+an, tra+pist, viol+in
             'albumino', 'alveolaro', 'huligano', 'monisma', 'pentano',
-            'trapisto', 'violino'}
+            'trapisto', 'violino',
+            # esp-1g0 (batch 21): amar+ant, el+and, kol+in, park+et,
+            # pleŭr+it, sen+sor
+            'amaranto', 'elando', 'kolino', 'parketo', 'pleŭrito',
+            'sensora', 'sensoro'}
 # Reviewer-fixed splits where the scoring picks a valid-looking wrong one:
 # restarigi is re+star+ig ('re-establish'), not rest+ar+ig.
 SPLIT_OVERRIDE = {
@@ -282,6 +286,9 @@ SPLIT_OVERRIDE = {
     'eksplorado': ([], 'eksplor', ['ad']),     # not eks+plor+ad
     'nomadeca': ([], 'nomad', ['ec']),         # not nom+ad+ec
     'senpereco': (['sen'], 'pere', ['ec']),    # not sen+per+ec
+    'korbatado': ([], 'korbat', ['ad']),       # not korb+at+ad
+    'malemigi': (['mal'], 'em', ['ig']),       # stem was 'mal'
+    'ĉefino': ([], 'ĉef', ['in']),             # not ĉe+fin
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
     'malsentema': (['mal'], 'sent', ['em']),   # not mal+sen+tem
     'patronado': ([], 'patron', ['ad']),       # not patr+on+ad
