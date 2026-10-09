@@ -284,12 +284,12 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'aŭtoriteco', 'debila', 'delico', 'ekstraordinara',
             'elementara', 'fermato', 'membronumero', 'mondono',
             'nenifarado', 'primora', 'tarantulo', 'termonteto',
-            # esp-9i4 (batch 30): akr+at+on, cedr+at, de+pozici, indi+um,
-            # kan+op, kast+il, komb+at, kup+ul, morb+id, musk+et, orf+an,
-            # rel+at, saks+on, verv+er
-            'akratona', 'cedrato', 'depozicio', 'indiumo', 'kanopo',
-            'kastila', 'kombato', 'kupulo', 'morbida', 'musketo', 'orfano',
-            'relato', 'saksona', 'ververe'}
+            # esp-9i4 (batch 30): claude's promotion kept (coordinator:
+            # claude owns DICT; gemini's parallel review of the same bead
+            # produced a near-identical set — union of both override lists).
+            'akratona', 'cedrato', 'depozicio', 'etono', 'indiumo',
+            'kanopo', 'kastila', 'kombato', 'kupulo', 'morbida', 'musketo',
+            'orfano', 'relato', 'saksona', 'ververe'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
