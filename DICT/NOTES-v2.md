@@ -896,6 +896,45 @@ ornithology (*vadbirdo*, *flugilpinto*, *kovoperiodo*, *idozorgado*,
 Totals after batch 23: **10987** v2 entries; corpus-mined **13203**, 8872
 segmented and linked; dictionary **35659**; queue **582** (all wp-only).
 
+## Batch 24 (esp-a7p) — 564 reviewed, 540 promoted; queue exhausted
+
+`DICT/review/v2-batch24-{a,b}.tsv` (282 each), re-mined first: one late
+mixed arrival (*morfino*, 2+39) then the rest of the wp-only tier (0
+literary, 82 down to 50 wp). Science and culture vocabulary
+(*termodinamiko*, *triglicerido*, *imunsistemo*, *eoceno*, *perestrojko*,
+*kantaŭtoro*, *rulseĝo*, *serĉilo*, *komikso*, *ŝario*).
+
+- **540 lemma** (352 noun, 43 verb, 137 adj, 8 adv) — all promoted; 539
+  Wikipedia-only citations, 1 mixed.
+- **24 rejected** (4.3%): 10 foreign — Spanish (*viejo*, *El Tiempo*,
+  *la muerte*, *hombre*), Italian (*per Musica*, *di Cappella*), Latin
+  (*Ex Causa*, *australis*, *occidentalis*), German *Heiligen*; 10
+  passive *-itas*/*-itis* inflections; names *Navara*, *Goeta*, *Gotaa*,
+  *Morava*.
+- **Segmentation**: 16 of 271 wrong (5.9%) — `NO_SPLIT` *alkazaro*,
+  *antero*, *boreala*, *centropo*, *entento*, *interfero*, *kastrumo*,
+  *kortuma*, *morfino*, *palatina*, *primaso*, *pufino*, *stipulo*,
+  *trogono*; overrides *devoteco* (devot+ec), *diseriĝi* (dis+er+iĝ).
+
+Totals after batch 24: **11527** v2 entries; corpus-mined **13743**, 9129
+segmented and linked; dictionary **36199**; queue **0** at the esp-nuk
+thresholds (broad >= 3 other, mixed 1–2 other + >= 10 wp, wp-only >= 50
+wp, all >= 5 occurrences).
+
+### Next tier (probed, not yet applied)
+
+`gap_report.py` threshold probes against the batch-24 ledger:
+
+| thresholds | new queue |
+|---|---|
+| `--min-sources 2` (broad = 2 other sources) | 1670 broad |
+| `--mixed-wp 5` (1 other + 5..9 wp) | 2296 mixed |
+| `--wp-only 25` (25..49 wp) | 1997 wp-only |
+| `--mixed-wp 5 --wp-only 25` | 4293 |
+
+The literary-first order is: 2-source broad (1670) → mixed at 5 wp (2296)
+→ wp-only at 25 (1997). Filed as follow-up beads.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
@@ -917,9 +956,9 @@ refresh path avoids miner keys altogether.
 - **UV POS heuristic**: *povi* is filed as the adjective *pova* (UV root
   *pov'*); the participle filter has to check roots, not words, because of it.
 - **Prepositional prefixes**: done in esp-4qi (above).
-- **Next batches**: the register-aware queue (esp-nuk) holds 582 after
-  batch 23 — broad and mixed exhausted; wp-only 582 (>= 50 wp sources,
-  no literary attestation) remain: one full batch of 500, then 82. The
+- **Next batches**: the register-aware queue (esp-nuk) is **empty** after
+  batch 24 at its current thresholds. Next phase lowers them — see
+  "Next tier" under batch 24. The
   *capitalised* bucket (3254) waits on a names policy.
 
 ## Queue rebuild 2026-10-07 (glm pane, post-Vikipedio merge)
