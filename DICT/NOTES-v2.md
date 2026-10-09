@@ -1020,6 +1020,27 @@ Totals after batch 27: **13077** v2 entries; corpus-mined **15293**,
 10234 segmented and linked; dictionary **37749**; queue **0** again —
 next is esp-jpn (mixed at 5 wp, wp-only at 25).
 
+## Loan-root stock (esp-b3y)
+
+The segmenter's root stock knows a radiko only when some layer supplies it
+as `root` or `_mined_roots` recovers it from a standalone entry. Neither
+works for loanwords whose bare form itself reads as an affix split:
+*reformo* parses as re+form-o, *transporti* as trans+port-i, *patrono* as
+patr+on-o, so the real root never enters the stock and every derivative
+needed a `SPLIT_OVERRIDE` — 26 of the 60 overrides served just 15 roots.
+
+`promote_lemmas.LOAN_ROOTS` now adds those 15 roots (alkemi, brokant,
+devot, eksplor, fanat, fiakr, habilit, nomad, patron, piet, puber, reform,
+regener, rekuper, transport) to the stock at rank 4 (mined-root rank).
+All 26 overrides reproduced exactly without them and were removed (60 →
+34). `--resegment v2-` + `shard-` corrected 7 pre-v2 entries the overrides
+never reached: *reformo*, *transporti*, *transporto* (re+FORM / trans+PORT
+→ unsplit root) and *transportebla*, *-igi*, *-iĝi*, *-ilo*
+(trans+PORT+x → TRANSPORT+x). Segmented corpus-mined: 10234 → 10231;
+nothing else changed; dry runs 0. Future derivatives of these roots split
+correctly with no override. Add a root here once it has needed ~3
+overrides (the same rule as in the skill).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
