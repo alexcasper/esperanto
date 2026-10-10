@@ -1332,6 +1332,36 @@ Totals after batch 37: **17694** v2 entries; corpus-mined **19910**,
 12708 segmented and linked; dictionary **42366**; queue **528** (all
 wp-only, 22..20 wp).
 
+## Batch 38 (esp-1qw) — 526 reviewed, 472 promoted; phase-2c queue empty
+
+`DICT/review/v2-batch38-{a,b}.tsv` (263/263), re-mined first: the whole
+remaining wp-only queue, 22 down to 20 wp (*limgardistaro* at 27 a late
+arrival). *platotektoniko*, *jonosfero*, *radioteleskopo*, *bitlibro*,
+*aviadilŝipo*, *trafikŝtopiĝo*, *ventoturbino*, *sufrageto*, *kazuaro*.
+
+- **472 lemma** (318 noun, 103 adj, 39 verb, 12 adv) — all promoted.
+- **54 rejected** (10.3%): 24 foreign (Latin epithets *scrofa*,
+  *latifolia*, *griseus*; Spanish *Castellana*, *fuego*, *hija*,
+  *Adelantado*; Portuguese *caatinga*, already held as *kaatingo*),
+  14 `uncertain` (non-standard or calqued *esperti*, *rivelado*,
+  *regnado*, *interioro*, *kurva*, *rebo*; unclear coinages), 8
+  `-itis`/`-atas` passives, 4 names, 3 fragments (LaTeX *rho*,
+  *aŭtomobilo* → *mobila*, *contienen*), typo *fenomenono*.
+- **Segmentation**: 16 of 225 wrong (7.1%) — 12 `NO_SPLIT` (*altitudina*,
+  *arilo*, *bazotono*, *fluorido*, *internaciskale*, *konstantina*,
+  *ladina*, *livono*, *pasato*, *saponino*, *travertino*, *velara*);
+  overrides *kapetido*/*kapetida* (kapet+id), *konsolidiĝi*,
+  *majoratulo*.
+
+Totals after batch 38: **18166** v2 entries; corpus-mined **20382**,
+12921 segmented and linked; dictionary **42838**; queue **0** at the
+esp-273 thresholds.
+
+**Wp-only rejection trend**: 4.0% (b33, 32..28 wp), 4.9% (b34, 28..25),
+8.2% (b37, 44..22), 10.3% (b38, 22..20). Probe after b38: `--wp-only 18`
+568, `--wp-only 15` 1748. Other buckets: `capitalised` 3133, `foreign`
+1984, `participle` 16604.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in

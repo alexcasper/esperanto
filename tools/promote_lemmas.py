@@ -323,7 +323,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # ur+op+ig, vask+on, vet+on
             'arkonto', 'bubona', 'halogenido', 'keratino', 'kvarcito',
             'patriarkato', 'perianto', 'piaristo', 'pilono', 'romanida',
-            'uropiga', 'vaskono', 'vetono'}
+            'uropiga', 'vaskono', 'vetono',
+            # esp-1qw (batch 38): altitud+in, ar+il, baz+ot+on, fluor+id,
+            # inter+naciskal, konstant+in, lad+in, liv+on, pas+at,
+            # sap+on+in, tra+vert+in, vel+ar
+            'altitudina', 'arilo', 'bazotono', 'fluorido',
+            'internaciskale', 'konstantina', 'ladina', 'livono', 'pasato',
+            'saponino', 'travertino', 'velara'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -409,6 +415,10 @@ SPLIT_OVERRIDE = {
     'erotismo': ([], 'erot', ['ism']),          # not er+ot+ism
     'separatisto': ([], 'separat', ['ist']),    # not separ+at+ist
     'surrealismo': ([], 'surreal', ['ism']),    # not sur+real+ism
+    'kapetido': ([], 'kapet', ['id']),          # Capet, not kap+et+id
+    'kapetida': ([], 'kapet', ['id']),
+    'konsolidiĝi': ([], 'konsolid', ['iĝ']),    # not konsol+id+iĝ
+    'majoratulo': ([], 'majorat', ['ul']),      # not major+at+ul
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
