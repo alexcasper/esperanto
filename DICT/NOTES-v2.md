@@ -1493,6 +1493,21 @@ Totals after batch 43: **20818** v2 entries; corpus-mined **23034**,
 14019 segmented and linked; dictionary **45490**; queue **610**
 (wp-only 12).
 
+## esp-6w3 step 1 — `gap_report --demonyms` (capitalised place adjectives)
+
+The `capitalised` bucket (3120 after batch 44) is mostly names. `gap_report
+--demonyms FILE` pulls out the Esperanto place adjectives and demonyms in it:
+ending -a/-ano/-ana/-ino; place noun (root + o/io/ujo/lando/ia) a dictionary
+word or a mostly-capitalised candidate; >= 3 lower-case occurrences
+(`--demonym-lower`); an inflected form (-aj/-an/-oj/-on…); not all-English
+forms. Result: **116** (e.g. *tjumena*, *helveta*, *kieva*, *tobolska*,
+*potsdama*, *lublina*, *bostona*, *transkaŭkaza*, *sicila*, *petrograda*,
+*aŭstriano*), est. 55–60% acceptable — given names (*anna*, *izabela*) and
+Romance toponyms (*zaragoza*, *murcia*) remain for the reviewer. Requiring the
+place noun to sit in the capitalised bucket itself was too strict (49; lost
+*tobolska*, *potsdama*, *lublina*). The main queue is byte-identical with and
+without the flag. Next: review the 116 as one batch.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
