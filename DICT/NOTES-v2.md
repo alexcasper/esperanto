@@ -1469,6 +1469,30 @@ Totals after batch 42: **20268** v2 entries; corpus-mined **22484**,
 13790 segmented and linked; dictionary **44940**; queue **1231**
 (wp-only 13..12).
 
+## Batch 43 (esp-n9t) — wp-only >= 12; 615 reviewed, 550 promoted
+
+`DICT/review/v2-batch43-{a,b}.tsv` (308/307), re-mined first: 13 down
+to 12 wp (plus *meminstruado*, a late mixed arrival). *biofiziko*,
+*cibernetiko*, *glasnosto*, *fulmomilito*, *lingvofrankao*,
+*ostoporozo*, *nanotubo*, *fulereno*, *lingvomodelo*, *triatlono*.
+
+- **550 lemma** (361 noun, 146 adj, 33 verb, 10 adv) — all promoted.
+- **65 rejected (10.6%)**: 38 foreign (Latin epithets again the bulk —
+  *striatus*, *robustus*, *undulata*, *Bos taurus*, *sclateri*;
+  Spanish *fuerte*, *chica*, *colina*; German *Kritische*,
+  *vergleichende*), 9 passives, 6 names, 6 `uncertain` (*principio*,
+  *optima*, *kreativa*, *erodo*, *supernova*), 4 fragments, 2 typos.
+- **Segmentation**: 18 of 241 wrong (7.5%) — 12 `NO_SPLIT`
+  (*aŭtoritara*, *bariono*, *kurtino*, *lapito*, *oceloto*, *pandano*,
+  *piono*, *pipilo*, *priorato*, *publikano*, *sociano*,
+  *surfaktanto*); overrides *orontido*/*orontida*, *pluregi*
+  (plu+reg), *teatinano*, *transpirado*, *urbanismo*. The *sociano*
+  root re-split the older *socianiĝo* — overridden back to soci+an+iĝ.
+
+Totals after batch 43: **20818** v2 entries; corpus-mined **23034**,
+14019 segmented and linked; dictionary **45490**; queue **610**
+(wp-only 12).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in

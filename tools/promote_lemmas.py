@@ -358,7 +358,13 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'agono', 'akvitana', 'alkano', 'alkeno', 'dissekco', 'duktila',
             'florino', 'galileja', 'jodido', 'karotida', 'momoto',
             'olivino', 'organumo', 'piridino', 'strabismo', 'supratono',
-            'urieto', 'ĉambrotono'}
+            'urieto', 'ĉambrotono',
+            # esp-n9t (batch 43): aŭtor+it+ar, bari+on, kurt+in, lap+it,
+            # ocel+ot, pand+an, pi+on, pip+il, prior+at, publik+an,
+            # soci+an, sur+fakt+ant
+            'aŭtoritara', 'bariono', 'kurtino', 'lapito', 'oceloto',
+            'pandano', 'piono', 'pipilo', 'priorato', 'publikano',
+            'sociano', 'surfaktanto'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -459,6 +465,14 @@ SPLIT_OVERRIDE = {
     'fordismo': ([], 'ford', ['ism']),           # not for+dism
     'funkcionado': ([], 'funkcion', ['ad']),     # not funkci+on+ad
     'nereidino': ([], 'nereid', ['in']),         # not ne+re+id+in
+    'orontido': ([], 'oront', ['id']),           # not or+ont+id
+    'orontida': ([], 'oront', ['id']),
+    'pluregi': (['plu'], 'reg', []),             # not plur+eg
+    'teatinano': ([], 'teatin', ['an']),         # not te+at+in+an
+    'transpirado': ([], 'transpir', ['ad']),     # not trans+pir+ad
+    'urbanismo': ([], 'urban', ['ism']),         # not urb+an+ism
+    # NO_SPLIT 'sociano' (Socinian) made socian- a root; keep soci+an+iĝ
+    'socianiĝo': ([], 'soci', ['an', 'iĝ']),
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
