@@ -1414,6 +1414,34 @@ Totals after batch 40: **19205** v2 entries; corpus-mined **21421**,
 13341 segmented and linked; dictionary **43877**; queue **588**
 (wp-only 16..15).
 
+## Batch 41 (esp-87i) — 591 reviewed, 529 promoted; wp-only >= 15 queue empty
+
+`DICT/review/v2-batch41-{a,b}.tsv` (296/295), re-mined first: the whole
+remaining queue at `--wp-only 15` (16..15 wp), plus three late
+high-count arrivals (*terkultivado* 116 wp, *ĉefredaktisto* 87,
+*bontenado* 76) and one mixed. *superkomputilo*, *mikroprocesoro*,
+*kriptografio*, *aŭdlibro*, *tempomaŝino*, *flamĵetilo*, *aerspaco*,
+*polietileno*, *gibono*, *psikopato*.
+
+- **529 lemma** (331 noun, 143 adj, 35 verb, 20 adv) — all promoted.
+- **62 rejected (10.5%)**, up from 8.6% — mostly a jump in `-itis`/
+  `-atas` passives (13, the most in any batch): 29 foreign (Latin
+  epithets, *de iure*, *via crucis*, *casus belli*; Spanish *donde*,
+  *Ahora*, *Concejo*), 10 `uncertain` (*fokuzi*, *editori*,
+  *kontroverso*, *nomero*, *mediato*), 4 fragments (*Könige*,
+  *Überlingen*), 4 names, 2 typos (*kommitato*, *daura*).
+- **Segmentation**: 14 of 241 wrong (5.8%) — 11 `NO_SPLIT` (*bolivara*,
+  *duetila*, *fazero*, *gibono*, *herbotigo*, *hidrido*, *maronito*,
+  *nitrilo*, *puntendaro*, *signonumero*, *ĵetono*); overrides
+  *ekebli*, *fideismo* (fide+ism), *reproduktigi*.
+
+Totals after batch 41: **19734** v2 entries; corpus-mined **21950**,
+13571 segmented and linked; dictionary **44406**; queue **0** at
+`--wp-only 15`. Probe: `--wp-only 12` **1836**, `--wp-only 10` **3677**.
+
+**Wp-only reject trend**: 10.3% (b38, 22..20), 9.6% (b39, ..18), 8.6%
+(b40, ..16), 10.5% (b41, 16..15).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
