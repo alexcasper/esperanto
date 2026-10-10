@@ -1542,3 +1542,20 @@ esp-4g8's corpus never reached the candidate miner.
 - esp-73s (batch 6, "~500 of gap queue (5-4 sources)") was scoped against
   the old queue; recommend re-scoping batches by source bands off this
   queue instead.
+
+## Batch 44 (esp-uma) — wp-only >= 12 finished; executed by glm under stall rule
+
+claude claimed but stalled 4+ watchdog cycles (zero activity 05:17–14:35);
+glm executed per the human's 2-cycle rule. Re-mined, queue regenerated
+(broad=3920, mixed=613, wp-only=610). All 610 reviewed from citations:
+
+- **554 promoted** (46,044 total), all with glosses.
+- **46 foreign** (Latin species epithets the bulk: atricapilla, bicorni,
+  ferruginea, rotundifolia…; Spanish gobierno/nunca/siempre, German
+  kirchliche/untere, French perruche/princesse, Italian secondo/cogito).
+- **9 fragment**: mis-splits of old -it(a) passives (donaciti, laŭditi,
+  mulditi, produktiti, taŭgigiti, tuŝiti, utiligati, partidi, oĉjo).
+- **1 inflection** (bekoplukante).
+- Rejection rate 9.7% — steady with the b40–43 trend (8.6–10.6%).
+- Queue now empty at wp-only >= 12; next decision (per esp-uma): probe
+  --wp-only 10 vs switch to esp-6w3 (demonym/capitalised, 3,150).
