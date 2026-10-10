@@ -42,7 +42,7 @@ attested in three or more independent sources (recounted in esp-58p, below).
 `derived: true` marks a word built by regular affixation on a root already
 held — *abonanto*, *agado*, *aliulo* — and since esp-58p it means exactly
 that the entry's `morphology` carries a self-validating affix segmentation
-(`prefixes`/`suffixes`); 5938 of the 8462 corpus-mined entries. Settled
+(`prefixes`/`suffixes`); 14019 of the 23034 corpus-mined entries. Settled
 policy is that these earn entries, because a reader looking up *reĝino*
 should find it; the flag lets a consumer wanting only roots and opaque
 compounds filter them out.
@@ -71,9 +71,24 @@ under the register-aware bar (esp-nuk): every one attested in 6–8
 non-Wikipedia sources, plus up to 1,657 Wikipedia articles. **Batch 7
 (esp-weg)** added 478 (5–6 non-Wikipedia sources), with literary citations
 first (esp-0mu). **Batch 8 (esp-gwn)** added 485 (5 non-Wikipedia
-sources), **batch 9 (esp-3ke)** 473 (5–4), **batch 10 (esp-htt)** 474 (4), **batch 11 (esp-n4i)** 484 (4–3), **batch 12 (esp-kw1)** 475 (3), **batch 13 (esp-598)** 473 (3).
-Corpus-mined total: **8462** (6246 from v2 batches). esp-58p segmented the
-2216 earlier entries too: **5938** corpus-mined entries now carry affix
+sources), **batch 9 (esp-3ke)** 473 (5–4), **batch 10 (esp-htt)** 474 (4), **batch 11 (esp-n4i)** 484 (4–3), **batch 12 (esp-kw1)** 475 (3), **batch 13 (esp-598)** 473 (3), **batch 14 (esp-31c)** 477 (3), **batch 15 (esp-l2q)** 487 (3, then
+mixed tier 2+wp), **batch 16 (esp-1du)** 472 (2+wp), **batch 17 (esp-13o)** 470 (2–1+wp), **batch 18 (esp-1if)** 484 (1+wp), **batch 19 (esp-4h3)** 472 (1+wp), **batch 20 (esp-s5u)** 457 (1+wp), **batch 21 (esp-1g0)** 461 (1+wp), **batch 22 (esp-n1x)** 474 (mixed
+tail + wp-only head), **batch 23 (esp-rz5)** 487 (wp-only), **batch 24 (esp-a7p)** 540
+(wp-only tail; queue exhausted), **batch 25 (esp-i9h)** 465 (broad
+tier lowered to 2 literary sources), **batch 26 (esp-6iu)** 468 (2+wp), **batch 27 (esp-a2u)** 617
+(2-source tier exhausted; 380 literary-only), **batch 28 (esp-jpn)** 454
+(mixed tier lowered to 1 lit + 5 wp, wp-only to 25 wp), **batch 29
+(esp-3bg)** 437 (1 lit + 7..6 wp), **batch 30 (esp-9i4)** 552 (mixed tier
+exhausted), **batch 31 (esp-6d4)** 473 (wp-only at >= 25 wp), **batch 32
+(esp-3qq)** 473 (wp-only), **batch 33 (esp-dx7)** 480 (wp-only), **batch 34 (esp-qo7)** 411 (phase-2b
+queue emptied), **batch 35 (esp-273)** 444 (phase 2c, mixed at 1 lit + 4 wp), **batch 36
+(esp-hmx)** 434 (mixed tier finished at 1 lit + 3 wp), **batch 37 (esp-6g2)**
+459 (wp-only >= 20), **batch 38 (esp-1qw)** 472 (phase-2c queue emptied), **batch 39
+(esp-2rp)** 509 (wp-only >= 18), **batch 40 (esp-89z)** 530 (wp-only >= 15),
+**batch 41 (esp-87i)** 529 (wp-only >= 15 queue emptied),
+**batch 42 (esp-vng)** 534 (wp-only >= 12), **batch 43 (esp-n9t)** 550.
+Corpus-mined total: **23034** (20818 from v2 batches). esp-58p segmented the
+2216 earlier entries too: **14019** corpus-mined entries now carry affix
 segmentation and `grammar_refs` to §2.
 
 | Kind | Count |
