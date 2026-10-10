@@ -350,7 +350,15 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             # sign+on+um+er, ĵet+on
             'bolivara', 'duetila', 'fazero', 'gibono', 'herbotigo',
             'hidrido', 'maronito', 'nitrilo', 'puntendaro', 'signonumero',
-            'ĵetono'}
+            'ĵetono',
+            # esp-vng (batch 42): ag+on, akv+it+an, al+kan, al+ken, dis+sekc,
+            # dukt+il, flor+in, gal+il+ej, jod+id, karot+id, mom+ot,
+            # oliv+in, organ+um, pir+id+in, strab+ism, supr+at+on, uri+et,
+            # ĉambr+ot+on
+            'agono', 'akvitana', 'alkano', 'alkeno', 'dissekco', 'duktila',
+            'florino', 'galileja', 'jodido', 'karotida', 'momoto',
+            'olivino', 'organumo', 'piridino', 'strabismo', 'supratono',
+            'urieto', 'ĉambrotono'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -447,6 +455,10 @@ SPLIT_OVERRIDE = {
     'ekebli': (['ek'], 'ebl', []),               # stem was 'ek'
     'fideismo': ([], 'fide', ['ism']),           # not fi+deism
     'reproduktigi': ([], 'reprodukt', ['ig']),   # not re+produkt+ig
+    'avanulo': ([], 'avan', ['ul']),             # not av+an+ul
+    'fordismo': ([], 'ford', ['ism']),           # not for+dism
+    'funkcionado': ([], 'funkcion', ['ad']),     # not funkci+on+ad
+    'nereidino': ([], 'nereid', ['in']),         # not ne+re+id+in
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem

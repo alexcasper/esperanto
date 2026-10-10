@@ -1442,6 +1442,33 @@ Totals after batch 41: **19734** v2 entries; corpus-mined **21950**,
 **Wp-only reject trend**: 10.3% (b38, 22..20), 9.6% (b39, ..18), 8.6%
 (b40, ..16), 10.5% (b41, 16..15).
 
+## Batch 42 (esp-vng) — wp-only >= 12; 600 reviewed, 534 promoted
+
+esp-vng lowered `gap_report --wp-only` 15 -> 12 (queue 1831).
+`DICT/review/v2-batch42-{a,b}.tsv` (300/300) covers the top 600 (68..13
+wp, incl. late arrivals *ŝipkonstruado*, *pianludado*, *vinkultivado*
+and a broad-tier *siamano*): *deŭterio*, *tricio*, *paralakso*,
+*aterosklerozo*, *nanoplanedo*, *kaĉaloto*, *neĝostrigo*, *sapopero*,
+*krematorio*, *hidroksiklorokino*.
+
+- **534 lemma** (365 noun, 125 adj, 28 verb, 16 adv) — all promoted.
+- **66 rejected (11.0%)**: 41 foreign (Latin epithets *musculus*,
+  *sibirica*, *contorta*…; *Le nozze*, *Loggia*, *Bagno*, *moe*,
+  Lithuanian *partija*), 9 `uncertain` (*mentala*, *remito*, *ĉipa*,
+  *soulo*), 6 names, 5 fragments (LaTeX *operatorname*, *Motacilla*),
+  4 passives, typo *ĉirkai*. Latin binomial epithets are now the bulk of
+  rejects at this support level.
+- **Segmentation**: 22 of 237 wrong (9.3%) — 18 `NO_SPLIT` (chemistry
+  *alkano*, *alkeno*, *jodido*, *piridino*, *olivino*; *agono*,
+  *akvitana*, *dissekco*, *duktila*, *florino*, *galileja*, *karotida*,
+  *momoto*, *organumo*, *strabismo*, *supratono*, *urieto*,
+  *ĉambrotono*); overrides *avanulo*, *fordismo*, *funkcionado*,
+  *nereidino*.
+
+Totals after batch 42: **20268** v2 entries; corpus-mined **22484**,
+13790 segmented and linked; dictionary **44940**; queue **1231**
+(wp-only 13..12).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
