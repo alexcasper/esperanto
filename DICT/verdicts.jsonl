@@ -22858,3 +22858,583 @@
 {"lemma": "viglado", "verdict": "lemma", "gloss": "vigilance", "note": null, "reviewed_in": ["v2-batch39-b"], "disputed": null}
 {"lemma": "vintrorezista", "verdict": "lemma", "gloss": "winter-hardy", "note": null, "reviewed_in": ["v2-batch39-b"], "disputed": null}
 {"lemma": "vulkandevena", "verdict": "lemma", "gloss": "of volcanic origin", "note": null, "reviewed_in": ["v2-batch39-b"], "disputed": null}
+{"lemma": "liberprofesiulo", "verdict": "lemma", "gloss": "freelancer", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "muzikteatraĵo", "verdict": "lemma", "gloss": "music-theatre piece", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "rozelo", "verdict": "lemma", "gloss": "rosella", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "lestadianismo", "verdict": "lemma", "gloss": "Laestadianism", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "rapidumskatolo", "verdict": "lemma", "gloss": "gearbox", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "jakamaro", "verdict": "lemma", "gloss": "jacamar", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "cipselo", "verdict": "proper-noun", "gloss": null, "note": "Cypselus", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "turako", "verdict": "lemma", "gloss": "turaco", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "bikŝuejo", "verdict": "lemma", "gloss": "vihara, monks' residence", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malnovritano", "verdict": "lemma", "gloss": "Old Believer", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "triosonato", "verdict": "lemma", "gloss": "trio sonata", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "seto", "verdict": "proper-noun", "gloss": null, "note": "Seto (Ohashi)", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "paftubo", "verdict": "lemma", "gloss": "gun barrel", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kontraŭspiona", "verdict": "lemma", "gloss": "counter-espionage (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "notvaloro", "verdict": "lemma", "gloss": "note value", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ralio", "verdict": "lemma", "gloss": "rally", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "spermatozoo", "verdict": "lemma", "gloss": "spermatozoon", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "romanigo", "verdict": "lemma", "gloss": "Romanisation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "triado", "verdict": "lemma", "gloss": "Triad (gang)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "elektrotrajno", "verdict": "lemma", "gloss": "electric train", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "imunoglobulino", "verdict": "lemma", "gloss": "immunoglobulin", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aŭtokodo", "verdict": "lemma", "gloss": "vehicle registration code", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "oestro", "verdict": "lemma", "gloss": "oestrus", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "penalo", "verdict": "lemma", "gloss": "penalty (kick)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "subdominanto", "verdict": "lemma", "gloss": "subdominant", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "blankorela", "verdict": "lemma", "gloss": "white-eared", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sintetika", "verdict": "lemma", "gloss": "synthetic", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "brunkola", "verdict": "lemma", "gloss": "brown-necked", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "prokarioto", "verdict": "lemma", "gloss": "prokaryote", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "zakarida", "verdict": "lemma", "gloss": "Zakarid", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malkomponiĝado", "verdict": "lemma", "gloss": "decomposition", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "efikanto", "verdict": "lemma", "gloss": "agent, effector", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kubokedro", "verdict": "lemma", "gloss": "cuboctahedron", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "surfado", "verdict": "lemma", "gloss": "surfing", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "infraordo", "verdict": "lemma", "gloss": "infraorder", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "voĉkordo", "verdict": "lemma", "gloss": "vocal cord", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "daŭriva", "verdict": "lemma", "gloss": "sustainable", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "paleognato", "verdict": "lemma", "gloss": "palaeognath", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "penitenco", "verdict": "lemma", "gloss": "penance", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "vesterno", "verdict": "lemma", "gloss": "western (film)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "bakĥantino", "verdict": "lemma", "gloss": "bacchante", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "destrojero", "verdict": "lemma", "gloss": "destroyer", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "esencoleo", "verdict": "lemma", "gloss": "essential oil", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "polisaĥarido", "verdict": "lemma", "gloss": "polysaccharide", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "tetrarkio", "verdict": "lemma", "gloss": "tetrarchy", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "argolanda", "verdict": "lemma", "gloss": "Argolid (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "dolce", "verdict": "foreign", "gloss": null, "note": "Italian 'Dolce & Gabbana'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "flavbrusta", "verdict": "lemma", "gloss": "yellow-breasted", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "tempoindiko", "verdict": "lemma", "gloss": "tempo marking", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ursulanino", "verdict": "lemma", "gloss": "Ursuline nun", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "fastostriko", "verdict": "lemma", "gloss": "hunger strike", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "hanja", "verdict": "foreign", "gloss": null, "note": "Korean 'Hanja'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kvalifikiga", "verdict": "lemma", "gloss": "qualifying", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pakumo", "verdict": "lemma", "gloss": "envelope, wrapping", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "porpafista", "verdict": "lemma", "gloss": "gunners' (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "serino", "verdict": "lemma", "gloss": "serin", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "antaŭmarto", "verdict": "lemma", "gloss": "Vormärz", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "dekanejo", "verdict": "lemma", "gloss": "deanery", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "elaĉetmono", "verdict": "lemma", "gloss": "ransom", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kompasdirekto", "verdict": "lemma", "gloss": "compass direction", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kvaronfinalo", "verdict": "lemma", "gloss": "quarter-final", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "leĝofaranto", "verdict": "lemma", "gloss": "legislator", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "minkampo", "verdict": "lemma", "gloss": "minefield", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "obscuri", "verdict": "foreign", "gloss": null, "note": "Latin 'obscurus'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "operado", "verdict": "lemma", "gloss": "operation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "prifosado", "verdict": "lemma", "gloss": "excavation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "replantado", "verdict": "lemma", "gloss": "replanting", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sindikataro", "verdict": "lemma", "gloss": "trade-union federation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sklavisma", "verdict": "lemma", "gloss": "pro-slavery", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sonidealo", "verdict": "lemma", "gloss": "sound ideal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "subŝtatestro", "verdict": "lemma", "gloss": "state governor", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "teceremonio", "verdict": "lemma", "gloss": "tea ceremony", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "akvomolekulo", "verdict": "lemma", "gloss": "water molecule", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "amasmurdado", "verdict": "lemma", "gloss": "mass murder", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "dikredanto", "verdict": "lemma", "gloss": "believer in God", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "luce", "verdict": "foreign", "gloss": null, "note": "Novial/Italian 'luce'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "maldekstrisma", "verdict": "lemma", "gloss": "leftist", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malnovstile", "verdict": "lemma", "gloss": "Old Style (date)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "memoriae", "verdict": "foreign", "gloss": null, "note": "Latin 'damnatio memoriae'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ostinato", "verdict": "lemma", "gloss": "ostinato", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pinastro", "verdict": "lemma", "gloss": "maritime pine", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "volontulado", "verdict": "lemma", "gloss": "volunteering", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "voĉregistro", "verdict": "lemma", "gloss": "vocal register", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ŝtatformo", "verdict": "lemma", "gloss": "form of state", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aviadilejo", "verdict": "lemma", "gloss": "airport", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "balotlisto", "verdict": "lemma", "gloss": "electoral list", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "influsfero", "verdict": "lemma", "gloss": "sphere of influence", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kinkritikisto", "verdict": "lemma", "gloss": "film critic", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "militfilmo", "verdict": "lemma", "gloss": "war film", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "monerstampejo", "verdict": "lemma", "gloss": "mint", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "neislamano", "verdict": "lemma", "gloss": "non-Muslim", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "nestkaverno", "verdict": "lemma", "gloss": "nest burrow", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ovodukto", "verdict": "lemma", "gloss": "oviduct", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "perbuŝa", "verdict": "lemma", "gloss": "oral", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pluredra", "verdict": "lemma", "gloss": "polyhedral", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "safavido", "verdict": "lemma", "gloss": "Safavid", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sanlaboristo", "verdict": "lemma", "gloss": "health worker", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "silentfilmo", "verdict": "lemma", "gloss": "silent film", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "snajpero", "verdict": "lemma", "gloss": "sniper", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "urbanizaĵo", "verdict": "lemma", "gloss": "housing development", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "antaŭfilmo", "verdict": "lemma", "gloss": "trailer", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kapsiketo", "verdict": "lemma", "gloss": "chilli pepper", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "neĉefa", "verdict": "lemma", "gloss": "minor, secondary", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "neŭrala", "verdict": "lemma", "gloss": "neural", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "novliberala", "verdict": "lemma", "gloss": "neoliberal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "novtropika", "verdict": "lemma", "gloss": "Neotropical", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "nukleofilo", "verdict": "lemma", "gloss": "nucleophile", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "otra", "verdict": "foreign", "gloss": null, "note": "Spanish 'otra'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pianoforte", "verdict": "foreign", "gloss": null, "note": "Italian 'pianoforte'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "porinflama", "verdict": "lemma", "gloss": "pro-inflammatory", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "senatanino", "verdict": "lemma", "gloss": "(female) senator", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "suprenfluo", "verdict": "lemma", "gloss": "updraught", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "tergasa", "verdict": "lemma", "gloss": "natural-gas (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "apologetika", "verdict": "lemma", "gloss": "apologetic (theology)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "burgaro", "verdict": "lemma", "gloss": "castle complex", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "hipoksio", "verdict": "lemma", "gloss": "hypoxia", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "infanteriregimento", "verdict": "lemma", "gloss": "infantry regiment", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "norio", "verdict": "lemma", "gloss": "noria", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "orgenfaristo", "verdict": "lemma", "gloss": "organ builder", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "paroĥaro", "verdict": "lemma", "gloss": "group of parishes", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sendungado", "verdict": "lemma", "gloss": "unemployment", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "silviedo", "verdict": "lemma", "gloss": "warbler (Sylviidae)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "teatrestro", "verdict": "lemma", "gloss": "theatre director", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "venerea", "verdict": "lemma", "gloss": "venereal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "viktorina", "verdict": "lemma", "gloss": "Victoria (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ĉelmuro", "verdict": "lemma", "gloss": "cell wall", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aetate", "verdict": "foreign", "gloss": null, "note": "Latin 'Nostra Aetate'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aktivistino", "verdict": "lemma", "gloss": "(female) activist", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "akvoresurso", "verdict": "lemma", "gloss": "water resource", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aneksigo", "verdict": "lemma", "gloss": "annexation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "distopia", "verdict": "lemma", "gloss": "dystopian", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "elektromekanika", "verdict": "lemma", "gloss": "electromechanical", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "enpaĝigo", "verdict": "lemma", "gloss": "layout", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "filmstelulo", "verdict": "lemma", "gloss": "film star", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kaluno", "verdict": "lemma", "gloss": "heather", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "korespondisto", "verdict": "lemma", "gloss": "correspondent", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "mastrumisto", "verdict": "lemma", "gloss": "housekeeper", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "merengo", "verdict": "lemma", "gloss": "merengue", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "mergado", "verdict": "lemma", "gloss": "diving, immersion", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "montetoĉeno", "verdict": "lemma", "gloss": "chain of hills", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "novpagana", "verdict": "lemma", "gloss": "neopagan", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "orgenfajfilo", "verdict": "lemma", "gloss": "organ pipe", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "poleco", "verdict": "lemma", "gloss": "Polishness", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "racemosa", "verdict": "foreign", "gloss": null, "note": "Latin 'racemosa'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "radiofrekvenco", "verdict": "lemma", "gloss": "radio frequency", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "realiganto", "verdict": "lemma", "gloss": "maker, realiser", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "stokebla", "verdict": "lemma", "gloss": "storable", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "taraksako", "verdict": "lemma", "gloss": "dandelion", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "tesalia", "verdict": "lemma", "gloss": "Thessalian", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ardezkolora", "verdict": "lemma", "gloss": "slate-coloured", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ballo", "verdict": "foreign", "gloss": null, "note": "French 'ballon'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "baronlando", "verdict": "lemma", "gloss": "barony", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ekfilmi", "verdict": "lemma", "gloss": "start filming", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "formortado", "verdict": "lemma", "gloss": "dying out", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "fragileco", "verdict": "lemma", "gloss": "fragility", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "geimperiestro", "verdict": "lemma", "gloss": "emperor and empress", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "geopo", "verdict": "uncertain", "gloss": null, "note": "unclear coinage", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "hispanisto", "verdict": "lemma", "gloss": "Hispanist", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kanteca", "verdict": "lemma", "gloss": "cantabile, song-like", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kaolino", "verdict": "lemma", "gloss": "kaolin", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kaĝobirdo", "verdict": "lemma", "gloss": "cage bird", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "konkeraĵo", "verdict": "lemma", "gloss": "conquest", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kromvojo", "verdict": "lemma", "gloss": "detour", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "loĝigejo", "verdict": "lemma", "gloss": "accommodation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malhelbronza", "verdict": "lemma", "gloss": "dark bronze", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "memkonsumado", "verdict": "lemma", "gloss": "own consumption", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ministreco", "verdict": "lemma", "gloss": "ministry (office)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "nelinia", "verdict": "lemma", "gloss": "non-linear", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "paleosubspecio", "verdict": "lemma", "gloss": "palaeosubspecies", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "plumopinto", "verdict": "lemma", "gloss": "feather tip", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "provizoraĵo", "verdict": "lemma", "gloss": "stopgap", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "radiosignalo", "verdict": "lemma", "gloss": "radio signal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "reloĝanto", "verdict": "lemma", "gloss": "resettler", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "respublikanismo", "verdict": "lemma", "gloss": "republicanism", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sankondiĉo", "verdict": "lemma", "gloss": "state of health", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "signoĉeno", "verdict": "lemma", "gloss": "string (of characters)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "subfina", "verdict": "lemma", "gloss": "subterminal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "turingiano", "verdict": "lemma", "gloss": "Thuringian", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "vinproduktejo", "verdict": "lemma", "gloss": "winery", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "voci", "verdict": "foreign", "gloss": null, "note": "Italian 'Voci'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ŝtalbetona", "verdict": "lemma", "gloss": "reinforced-concrete", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "akvobubalo", "verdict": "lemma", "gloss": "water buffalo", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "antioksidiga", "verdict": "lemma", "gloss": "antioxidant", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aviadilisto", "verdict": "lemma", "gloss": "aviator", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aŭspicianto", "verdict": "lemma", "gloss": "sponsor", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "blovisto", "verdict": "lemma", "gloss": "wind player", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "distinkta", "verdict": "uncertain", "gloss": null, "note": "non-standard for distingiĝa", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "diversega", "verdict": "lemma", "gloss": "very diverse", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ekkomponi", "verdict": "lemma", "gloss": "begin composing", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ekstraktaĵo", "verdict": "lemma", "gloss": "extract", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "elmerĝi", "verdict": "uncertain", "gloss": null, "note": "non-standard for elmergiĝi", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "finfarado", "verdict": "lemma", "gloss": "completion", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "fluginsekto", "verdict": "lemma", "gloss": "flying insect", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "frankona", "verdict": "lemma", "gloss": "Franconian", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "fusca", "verdict": "foreign", "gloss": null, "note": "Latin 'fusca'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "halterlevo", "verdict": "lemma", "gloss": "weightlifting", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "helporganizaĵo", "verdict": "lemma", "gloss": "aid organisation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "hijo", "verdict": "foreign", "gloss": null, "note": "Spanish 'hijo'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "huo", "verdict": "fragment", "gloss": null, "note": "onomatopoeia hu-hu", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kanalaro", "verdict": "lemma", "gloss": "canal system, sewers", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kohezio", "verdict": "lemma", "gloss": "cohesion", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "komediistino", "verdict": "lemma", "gloss": "comedienne", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "komunikisto", "verdict": "lemma", "gloss": "communicator", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "konceptigo", "verdict": "lemma", "gloss": "conceptualisation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "konstitucieco", "verdict": "lemma", "gloss": "constitutionality", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "kontrolpunkto", "verdict": "lemma", "gloss": "checkpoint, control point", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "laŭleĝigo", "verdict": "lemma", "gloss": "legalisation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "lignoindustrio", "verdict": "lemma", "gloss": "timber industry", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "markomerca", "verdict": "lemma", "gloss": "maritime-trade (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "miksrasa", "verdict": "lemma", "gloss": "mixed-race", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "modernigado", "verdict": "lemma", "gloss": "modernisation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "modiĝi", "verdict": "lemma", "gloss": "become fashionable", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "priskribati", "verdict": "inflection", "gloss": null, "note": "passive form priskribatas", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "publicitaĵo", "verdict": "lemma", "gloss": "publication", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "realviva", "verdict": "lemma", "gloss": "real-life", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "regperiodo", "verdict": "lemma", "gloss": "reign", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "toksologio", "verdict": "lemma", "gloss": "toxicology", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "universitaire", "verdict": "foreign", "gloss": null, "note": "French 'universitaire'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "urbaniza", "verdict": "lemma", "gloss": "urbanisation (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "vizono", "verdict": "lemma", "gloss": "mink", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ĉastekniko", "verdict": "lemma", "gloss": "hunting technique", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ĉefkomunumo", "verdict": "lemma", "gloss": "chief municipality", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "aliaranĝo", "verdict": "lemma", "gloss": "rearrangement", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "altatera", "verdict": "lemma", "gloss": "highland (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "apusedo", "verdict": "lemma", "gloss": "swift (Apodidae)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "arkeologiaĵo", "verdict": "lemma", "gloss": "archaeological find", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "arteriosklerozo", "verdict": "lemma", "gloss": "arteriosclerosis", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "bierĝardeno", "verdict": "lemma", "gloss": "beer garden", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "blovinstrumentisto", "verdict": "lemma", "gloss": "wind player", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "degradiĝo", "verdict": "lemma", "gloss": "degradation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "enmodiĝi", "verdict": "lemma", "gloss": "come into fashion", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "flugilbordo", "verdict": "lemma", "gloss": "wing edge", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "fotila", "verdict": "lemma", "gloss": "camera (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "futureca", "verdict": "lemma", "gloss": "futuristic", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "grandkomunumo", "verdict": "lemma", "gloss": "large municipality", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "gvidorgano", "verdict": "lemma", "gloss": "governing body", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "indentigi", "verdict": "ocr-artifact", "gloss": null, "note": "typo for identigi", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "interrompiti", "verdict": "inflection", "gloss": null, "note": "passive form interrompitis", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "jarraporto", "verdict": "lemma", "gloss": "annual report", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "konsilistino", "verdict": "lemma", "gloss": "(female) adviser", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "konstatiĝi", "verdict": "lemma", "gloss": "be ascertained", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "lakuno", "verdict": "lemma", "gloss": "lacuna", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "laŭleĝigi", "verdict": "lemma", "gloss": "legalise", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "legaco", "verdict": "foreign", "gloss": null, "note": "English 'Legacy'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "lignoskulptita", "verdict": "lemma", "gloss": "wood-carved", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "literaturpremio", "verdict": "lemma", "gloss": "literary prize", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malakceptebla", "verdict": "lemma", "gloss": "unacceptable", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "malkongruaĵo", "verdict": "lemma", "gloss": "inconsistency", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "mariakulta", "verdict": "lemma", "gloss": "Marian (adj.)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "mondokoncepto", "verdict": "lemma", "gloss": "world view", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "nutroĉeno", "verdict": "lemma", "gloss": "food chain", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pedagogino", "verdict": "lemma", "gloss": "(female) educator", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "pluraleco", "verdict": "lemma", "gloss": "plurality", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "plurĥora", "verdict": "lemma", "gloss": "polychoral", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "plutrakti", "verdict": "lemma", "gloss": "pursue further", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "porĉiamigi", "verdict": "lemma", "gloss": "immortalise", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "postreprodukta", "verdict": "lemma", "gloss": "post-breeding", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "punktohava", "verdict": "lemma", "gloss": "spotted", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "reinventi", "verdict": "lemma", "gloss": "reinvent", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "reverendo", "verdict": "lemma", "gloss": "reverend", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "samregiona", "verdict": "lemma", "gloss": "of the same region", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "samspeciulo", "verdict": "lemma", "gloss": "conspecific", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sancto", "verdict": "foreign", "gloss": null, "note": "Latin 'Sancto'", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "seksegaleco", "verdict": "lemma", "gloss": "gender equality", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "senakcenta", "verdict": "lemma", "gloss": "unaccented", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "seneskalo", "verdict": "lemma", "gloss": "seneschal", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "senpostenigi", "verdict": "lemma", "gloss": "dismiss", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "senrigarde", "verdict": "lemma", "gloss": "regardless", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "solidigo", "verdict": "lemma", "gloss": "consolidation", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "stoma", "verdict": "fragment", "gloss": null, "note": "split of chrysostoma", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "stratonomo", "verdict": "lemma", "gloss": "street name", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "studebla", "verdict": "lemma", "gloss": "studiable", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "subinflue", "verdict": "lemma", "gloss": "under the influence", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "sudeŭropa", "verdict": "lemma", "gloss": "Southern European", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "terkultiva", "verdict": "lemma", "gloss": "agricultural", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "titonedo", "verdict": "lemma", "gloss": "barn owl (Tytonidae)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "tombokampo", "verdict": "lemma", "gloss": "cemetery field", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "uzantaro", "verdict": "lemma", "gloss": "user base", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "velurnigra", "verdict": "lemma", "gloss": "velvet-black", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "videokamerao", "verdict": "lemma", "gloss": "video camera", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "vidviĝi", "verdict": "lemma", "gloss": "be widowed", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ĉearkta", "verdict": "lemma", "gloss": "Arctic", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ĉefredakti", "verdict": "lemma", "gloss": "edit (as editor-in-chief)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "ŝpalo", "verdict": "lemma", "gloss": "sleeper (railway)", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "alkonstruitaĵo", "verdict": "lemma", "gloss": "annexe", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "alkonstruiti", "verdict": "inflection", "gloss": null, "note": "passive form alkonstruitis", "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "borsisto", "verdict": "lemma", "gloss": "stockbroker", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "centralisma", "verdict": "lemma", "gloss": "centralist", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "defraŭdo", "verdict": "lemma", "gloss": "embezzlement", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "dekoraciisto", "verdict": "lemma", "gloss": "set designer", "note": null, "reviewed_in": ["v2-batch40-a"], "disputed": null}
+{"lemma": "destinejo", "verdict": "lemma", "gloss": "destination", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "disdoniĝi", "verdict": "lemma", "gloss": "be distributed", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dislimigo", "verdict": "lemma", "gloss": "demarcation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dividiti", "verdict": "inflection", "gloss": null, "note": "passive form dividitis", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dizertado", "verdict": "lemma", "gloss": "desertion", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ekdekadenci", "verdict": "lemma", "gloss": "begin to decline", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ekkonstruigi", "verdict": "lemma", "gloss": "start to have built", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ekmembriĝi", "verdict": "lemma", "gloss": "become a member", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ellasejo", "verdict": "lemma", "gloss": "outlet", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "enkondukinto", "verdict": "lemma", "gloss": "introducer", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "filmadaptiĝo", "verdict": "lemma", "gloss": "film adaptation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "gastlaboristo", "verdict": "lemma", "gloss": "guest worker", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "glauca", "verdict": "foreign", "gloss": null, "note": "Latin 'glauca'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "inspirfonto", "verdict": "lemma", "gloss": "source of inspiration", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kategoriiĝi", "verdict": "lemma", "gloss": "be categorised", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "komputikisto", "verdict": "lemma", "gloss": "computer scientist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "konfiskiti", "verdict": "inflection", "gloss": null, "note": "passive form konfiskitis", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kronostrio", "verdict": "lemma", "gloss": "crown stripe", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "laŭbilde", "verdict": "lemma", "gloss": "in the image", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malintegriĝo", "verdict": "lemma", "gloss": "disintegration", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malnaiva", "verdict": "lemma", "gloss": "sophisticated", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "manĝoloko", "verdict": "lemma", "gloss": "feeding place", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "marmanĝaĵo", "verdict": "lemma", "gloss": "seafood", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "maturiĝekzameno", "verdict": "lemma", "gloss": "school-leaving exam", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "mezoregiono", "verdict": "lemma", "gloss": "mesoregion", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "murapogilo", "verdict": "lemma", "gloss": "wall buttress", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "okulkoloro", "verdict": "lemma", "gloss": "eye colour", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pianoludado", "verdict": "lemma", "gloss": "piano playing", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "plendeca", "verdict": "lemma", "gloss": "plaintive", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pliefikigi", "verdict": "lemma", "gloss": "make more effective", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "plievoluigi", "verdict": "lemma", "gloss": "develop further", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pluveturi", "verdict": "lemma", "gloss": "travel on", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "popularega", "verdict": "lemma", "gloss": "hugely popular", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "potencbatalo", "verdict": "lemma", "gloss": "power struggle", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "prienketi", "verdict": "lemma", "gloss": "investigate", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "prifajfi", "verdict": "lemma", "gloss": "whistle at, scorn", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "priverkado", "verdict": "lemma", "gloss": "treatment, adaptation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "prominenta", "verdict": "uncertain", "gloss": null, "note": "anglicism (std elstara)", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "rakontati", "verdict": "inflection", "gloss": null, "note": "passive form rakontatas", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "regurgiti", "verdict": "lemma", "gloss": "regurgitate", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "romanistino", "verdict": "lemma", "gloss": "(female) novelist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "spertebla", "verdict": "lemma", "gloss": "experienceable", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sportoklubo", "verdict": "lemma", "gloss": "sports club", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "stilrimedo", "verdict": "lemma", "gloss": "stylistic device", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sukulenta", "verdict": "lemma", "gloss": "succulent", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "supermerkato", "verdict": "lemma", "gloss": "supermarket", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "surfone", "verdict": "lemma", "gloss": "in the background", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "toksiĝo", "verdict": "lemma", "gloss": "poisoning", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "transformebla", "verdict": "lemma", "gloss": "transformable", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "triaksa", "verdict": "lemma", "gloss": "triaxial", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "unusence", "verdict": "lemma", "gloss": "unequivocally", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "vivsituacio", "verdict": "lemma", "gloss": "life situation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ŝukolibro", "verdict": "lemma", "gloss": "puffleg (hummingbird)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "arbanaso", "verdict": "lemma", "gloss": "whistling duck", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "rozĝardeno", "verdict": "lemma", "gloss": "rose garden", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sklavismo", "verdict": "lemma", "gloss": "slavery system", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "naftisto", "verdict": "lemma", "gloss": "oil worker", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bluvosta", "verdict": "lemma", "gloss": "blue-tailed", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "noktardeo", "verdict": "lemma", "gloss": "night heron", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "romulano", "verdict": "lemma", "gloss": "Romulan", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "libertino", "verdict": "lemma", "gloss": "libertine", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pagsistemo", "verdict": "lemma", "gloss": "payment system", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "trifaza", "verdict": "lemma", "gloss": "three-phase", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "globulo", "verdict": "lemma", "gloss": "globule, blood cell", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kvodlibeto", "verdict": "lemma", "gloss": "quodlibet", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sokotra", "verdict": "lemma", "gloss": "Socotra (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nigraĉapa", "verdict": "lemma", "gloss": "black-capped", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ĉarlestono", "verdict": "proper-noun", "gloss": null, "note": "Charleston", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "indukdenso", "verdict": "lemma", "gloss": "electric flux density", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sangotransfuzo", "verdict": "lemma", "gloss": "blood transfusion", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "okupadzono", "verdict": "lemma", "gloss": "occupation zone", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pacifici", "verdict": "foreign", "gloss": null, "note": "Latin 'pacificus'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "infankanto", "verdict": "lemma", "gloss": "children's song", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "triforio", "verdict": "lemma", "gloss": "triforium", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "vespobuteo", "verdict": "lemma", "gloss": "honey buzzard", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ekzoskeleto", "verdict": "lemma", "gloss": "exoskeleton", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "maskarena", "verdict": "lemma", "gloss": "Mascarene", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "mapuĉo", "verdict": "lemma", "gloss": "Mapuche", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "arborano", "verdict": "lemma", "gloss": "tree dweller", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "monomero", "verdict": "lemma", "gloss": "monomer", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "prunuso", "verdict": "lemma", "gloss": "prunus", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kolorulo", "verdict": "lemma", "gloss": "coloured person", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "laborpunejo", "verdict": "lemma", "gloss": "labour camp", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "popoldomo", "verdict": "lemma", "gloss": "community centre", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tofuo", "verdict": "lemma", "gloss": "tofu", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "brikogotiko", "verdict": "lemma", "gloss": "Brick Gothic", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nememspegulsimetria", "verdict": "lemma", "gloss": "chiral", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "recesiva", "verdict": "lemma", "gloss": "recessive", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "stratovulkano", "verdict": "lemma", "gloss": "stratovolcano", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "elingtona", "verdict": "lemma", "gloss": "Ellingtonian", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kipĉaka", "verdict": "lemma", "gloss": "Kipchak", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ludtabulo", "verdict": "lemma", "gloss": "game board", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "neduuma", "verdict": "lemma", "gloss": "non-binary", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "senkabla", "verdict": "lemma", "gloss": "wireless", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "aĥea", "verdict": "lemma", "gloss": "Achaean", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "baroneco", "verdict": "lemma", "gloss": "barony", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "elektroforezo", "verdict": "lemma", "gloss": "electrophoresis", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "testejo", "verdict": "lemma", "gloss": "test site", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "unitaria", "verdict": "lemma", "gloss": "unitary", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "duiliono", "verdict": "uncertain", "gloss": null, "note": "unclear numeral", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "evangeliaro", "verdict": "lemma", "gloss": "evangeliary", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "monaĥopreĝejo", "verdict": "lemma", "gloss": "monastery church", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "narcisisma", "verdict": "lemma", "gloss": "narcissistic", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tuarego", "verdict": "lemma", "gloss": "Tuareg", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "arbarriĉa", "verdict": "lemma", "gloss": "well-wooded", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "lanĉejo", "verdict": "lemma", "gloss": "launch site", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "studplano", "verdict": "lemma", "gloss": "curriculum", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tankisto", "verdict": "lemma", "gloss": "tank crewman", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "filmomuziko", "verdict": "lemma", "gloss": "film music", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "frazparto", "verdict": "lemma", "gloss": "phrase element", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "fremdvorto", "verdict": "lemma", "gloss": "foreign word", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "micvo", "verdict": "lemma", "gloss": "mitzvah", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "plurnombra", "verdict": "lemma", "gloss": "numerous", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "strigospecio", "verdict": "lemma", "gloss": "owl species", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ĉefestraro", "verdict": "lemma", "gloss": "executive board", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ŝutmonto", "verdict": "lemma", "gloss": "spoil heap", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "antaŭaltaro", "verdict": "lemma", "gloss": "chancel area", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bengalensi", "verdict": "foreign", "gloss": null, "note": "Latin 'bengalensis'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "blovorkestro", "verdict": "lemma", "gloss": "wind orchestra", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "devotaĵo", "verdict": "lemma", "gloss": "devotion", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "klaranino", "verdict": "lemma", "gloss": "Poor Clare", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "lingvovarianto", "verdict": "lemma", "gloss": "language variant", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "uvulara", "verdict": "lemma", "gloss": "uvular", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "aŭtosporto", "verdict": "lemma", "gloss": "motorsport", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "episcopi", "verdict": "foreign", "gloss": null, "note": "Latin 'Canon episcopi'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "francparolanta", "verdict": "lemma", "gloss": "French-speaking", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "fruktokarno", "verdict": "lemma", "gloss": "fruit flesh", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "naftejo", "verdict": "lemma", "gloss": "oilfield", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "studrondo", "verdict": "lemma", "gloss": "study circle", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "analgezia", "verdict": "lemma", "gloss": "analgesic", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ekzotismo", "verdict": "lemma", "gloss": "exoticism", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "estraranino", "verdict": "lemma", "gloss": "(female) board member", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "interiero", "verdict": "uncertain", "gloss": null, "note": "non-standard for interno", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "interpolaĵo", "verdict": "lemma", "gloss": "interpolation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kromio", "verdict": "lemma", "gloss": "chromium", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "makromolekulo", "verdict": "lemma", "gloss": "macromolecule", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "mesina", "verdict": "lemma", "gloss": "Messina (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nipalensi", "verdict": "foreign", "gloss": null, "note": "Latin 'nipalensis'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tarsometatarso", "verdict": "lemma", "gloss": "tarsometatarsus", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tetraploida", "verdict": "lemma", "gloss": "tetraploid", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bhakti", "verdict": "foreign", "gloss": null, "note": "Sanskrit 'Bhakti'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "caerulea", "verdict": "foreign", "gloss": null, "note": "Latin 'caerulea'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "energicentralo", "verdict": "lemma", "gloss": "power station", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "fossa", "verdict": "proper-noun", "gloss": null, "note": "Fossa (name)", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "krimigi", "verdict": "lemma", "gloss": "criminalise", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "laborisma", "verdict": "lemma", "gloss": "Labour (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "multlingvismo", "verdict": "lemma", "gloss": "multilingualism", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nehomogena", "verdict": "lemma", "gloss": "inhomogeneous", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "oceanidino", "verdict": "lemma", "gloss": "Oceanid", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ordenestro", "verdict": "lemma", "gloss": "grand master", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "periodigo", "verdict": "lemma", "gloss": "periodisation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "positive", "verdict": "ocr-artifact", "gloss": null, "note": "misspelling of pozitive", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "publikjura", "verdict": "lemma", "gloss": "public-law (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "retadreso", "verdict": "lemma", "gloss": "email address", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "seleŭkida", "verdict": "lemma", "gloss": "Seleucid", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sklavisto", "verdict": "lemma", "gloss": "slave owner", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "vieji", "verdict": "foreign", "gloss": null, "note": "Spanish 'Viejas'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ŝtatoficistaro", "verdict": "lemma", "gloss": "civil service", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "advokatejo", "verdict": "lemma", "gloss": "bar, law firm", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "farmakologo", "verdict": "lemma", "gloss": "pharmacologist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "gastludo", "verdict": "lemma", "gloss": "guest performance", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "hispanica", "verdict": "foreign", "gloss": null, "note": "Latin 'hispanica'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "hispanida", "verdict": "lemma", "gloss": "Hispanic (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "intervjuspektaklo", "verdict": "lemma", "gloss": "talk show", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "interŝanĝejo", "verdict": "lemma", "gloss": "exchange (place)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kamparfesto", "verdict": "lemma", "gloss": "country festival", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kladistiko", "verdict": "lemma", "gloss": "cladistics", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "korporaciaro", "verdict": "lemma", "gloss": "student corporations", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kunlaborismo", "verdict": "lemma", "gloss": "collaborationism", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kvazaŭĉiamverda", "verdict": "lemma", "gloss": "semi-evergreen", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "montgrimpanto", "verdict": "lemma", "gloss": "mountaineer", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "naturmonumento", "verdict": "lemma", "gloss": "natural monument", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nigrusona", "verdict": "lemma", "gloss": "African-American", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "poŝkomputilo", "verdict": "lemma", "gloss": "pocket computer", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ruldomo", "verdict": "lemma", "gloss": "caravan", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sablobruna", "verdict": "lemma", "gloss": "sand-brown", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "salcburgano", "verdict": "lemma", "gloss": "Salzburger", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sciuredo", "verdict": "lemma", "gloss": "squirrel (Sciuridae)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sejmano", "verdict": "lemma", "gloss": "Sejm deputy", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sindevontigo", "verdict": "lemma", "gloss": "commitment", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sociscienco", "verdict": "lemma", "gloss": "social science", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "startigo", "verdict": "lemma", "gloss": "starting", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tesalonikano", "verdict": "lemma", "gloss": "Thessalonian", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ĵazgitaristo", "verdict": "lemma", "gloss": "jazz guitarist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "anarĥiismo", "verdict": "lemma", "gloss": "anarchism (variant of anarkiismo)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "aneksigi", "verdict": "lemma", "gloss": "annex", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "frontalo", "verdict": "lemma", "gloss": "frontal, façade", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "juristino", "verdict": "lemma", "gloss": "(female) jurist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kavaliero", "verdict": "uncertain", "gloss": null, "note": "variant of kavaliro", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kinofestivalo", "verdict": "lemma", "gloss": "film festival", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "klimatzono", "verdict": "lemma", "gloss": "climate zone", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "konstrutekniko", "verdict": "lemma", "gloss": "building technique", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malcentrigo", "verdict": "lemma", "gloss": "decentralisation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "maĉeto", "verdict": "lemma", "gloss": "machete", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "merkatejo", "verdict": "lemma", "gloss": "market place", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nomadismo", "verdict": "lemma", "gloss": "nomadism", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nordbohemia", "verdict": "lemma", "gloss": "North Bohemian", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "oscililo", "verdict": "lemma", "gloss": "oscillator", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "plugtero", "verdict": "lemma", "gloss": "arable land", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "plurcentra", "verdict": "lemma", "gloss": "pluricentric", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "priteologia", "verdict": "lemma", "gloss": "theological", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "produktoraĵo", "verdict": "lemma", "gloss": "production", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sciencistaro", "verdict": "lemma", "gloss": "scientific community", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "senhejmeco", "verdict": "lemma", "gloss": "homelessness", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "transplanti", "verdict": "lemma", "gloss": "transplant", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "virusologo", "verdict": "lemma", "gloss": "virologist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "adoleskulino", "verdict": "lemma", "gloss": "adolescent girl", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "adversa", "verdict": "uncertain", "gloss": null, "note": "anglicism (std malfavora)", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ajuto", "verdict": "uncertain", "gloss": null, "note": "unclear", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "antike", "verdict": "foreign", "gloss": null, "note": "German 'Antike'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "brustostrio", "verdict": "lemma", "gloss": "breast stripe", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "filialo", "verdict": "lemma", "gloss": "branch (office)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "glicerolo", "verdict": "lemma", "gloss": "glycerol", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "iberamerika", "verdict": "lemma", "gloss": "Ibero-American", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "intertraktanto", "verdict": "lemma", "gloss": "negotiator", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kateca", "verdict": "lemma", "gloss": "cat-like", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kinoaktoro", "verdict": "lemma", "gloss": "film actor", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "komitatkunsido", "verdict": "lemma", "gloss": "committee meeting", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "lignoplanto", "verdict": "lemma", "gloss": "woody plant", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "limfortikaĵo", "verdict": "lemma", "gloss": "border fortification", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malbloki", "verdict": "lemma", "gloss": "unblock", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malvarmigado", "verdict": "lemma", "gloss": "cooling", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "montpiedo", "verdict": "lemma", "gloss": "foothill", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "muziktradicio", "verdict": "lemma", "gloss": "musical tradition", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "nekomunisma", "verdict": "lemma", "gloss": "non-communist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "noktopapilio", "verdict": "lemma", "gloss": "moth", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pianoverko", "verdict": "lemma", "gloss": "piano work", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pinpinglo", "verdict": "lemma", "gloss": "pine needle", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pivotradiko", "verdict": "lemma", "gloss": "taproot", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "platgermane", "verdict": "lemma", "gloss": "in Low German", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "prismoforma", "verdict": "lemma", "gloss": "prism-shaped", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "punktomakulo", "verdict": "lemma", "gloss": "dot, spot", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "regoteritorio", "verdict": "lemma", "gloss": "domain", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "selektiva", "verdict": "lemma", "gloss": "selective", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "startejo", "verdict": "lemma", "gloss": "start, launch site", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "surmetado", "verdict": "lemma", "gloss": "putting on", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tarsio", "verdict": "lemma", "gloss": "tarsier", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "terponto", "verdict": "lemma", "gloss": "land bridge", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "tudora", "verdict": "lemma", "gloss": "Tudor", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "vilaĝoparto", "verdict": "lemma", "gloss": "part of a village", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ŝtatego", "verdict": "lemma", "gloss": "great state", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "akveca", "verdict": "lemma", "gloss": "aqueous", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "amasmovado", "verdict": "lemma", "gloss": "mass movement", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "armeservo", "verdict": "lemma", "gloss": "military service", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bankrotiĝo", "verdict": "lemma", "gloss": "bankruptcy", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bienejo", "verdict": "lemma", "gloss": "farmstead", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "demarkacia", "verdict": "lemma", "gloss": "demarcation (adj.)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dezertiĝado", "verdict": "lemma", "gloss": "desertification", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "didevena", "verdict": "lemma", "gloss": "divine", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "diskĵokeo", "verdict": "lemma", "gloss": "disc jockey", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ellasiĝi", "verdict": "lemma", "gloss": "be released", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "evangelizi", "verdict": "lemma", "gloss": "evangelise", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "eventaro", "verdict": "lemma", "gloss": "events", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "fajnega", "verdict": "lemma", "gloss": "very fine", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "gruntado", "verdict": "lemma", "gloss": "grunting", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "helgrizbruna", "verdict": "lemma", "gloss": "light grey-brown", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kanonikeco", "verdict": "lemma", "gloss": "canonry", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "konceptebla", "verdict": "lemma", "gloss": "conceivable", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kontraŭturka", "verdict": "lemma", "gloss": "anti-Turkish", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "kornetisto", "verdict": "lemma", "gloss": "cornetist", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "larĝsence", "verdict": "lemma", "gloss": "in a broad sense", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "leĝofarado", "verdict": "lemma", "gloss": "legislation", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "malvalidiĝi", "verdict": "lemma", "gloss": "become invalid", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "manĝigo", "verdict": "lemma", "gloss": "feeding", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "multmedia", "verdict": "lemma", "gloss": "multimedia", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "porknaba", "verdict": "lemma", "gloss": "boys'", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "priorino", "verdict": "lemma", "gloss": "prioress", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "pritemi", "verdict": "lemma", "gloss": "concern, deal with", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "sanzorgo", "verdict": "lemma", "gloss": "health care", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "seksemo", "verdict": "lemma", "gloss": "sexuality", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "stabiligilo", "verdict": "lemma", "gloss": "stabiliser", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "subjektivismo", "verdict": "lemma", "gloss": "subjectivism", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "supraokula", "verdict": "lemma", "gloss": "supraocular", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "triptofano", "verdict": "lemma", "gloss": "tryptophan", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ukrainlingva", "verdict": "lemma", "gloss": "Ukrainian-language", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "volatileco", "verdict": "lemma", "gloss": "volatility", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ĝeto", "verdict": "lemma", "gloss": "jet (engine)", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "akvomanko", "verdict": "lemma", "gloss": "water shortage", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "alikonstruiĝi", "verdict": "lemma", "gloss": "be rebuilt", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "barbio", "verdict": "lemma", "gloss": "barbel", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "barokstilo", "verdict": "lemma", "gloss": "Baroque style", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "basreliefo", "verdict": "lemma", "gloss": "bas-relief", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bierfabriko", "verdict": "lemma", "gloss": "brewery", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bildende", "verdict": "foreign", "gloss": null, "note": "German 'Bildende Kunst'", "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "bonteni", "verdict": "lemma", "gloss": "maintain", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dancbando", "verdict": "lemma", "gloss": "dance band", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dismunti", "verdict": "lemma", "gloss": "dismantle", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "dummanĝe", "verdict": "lemma", "gloss": "while eating", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "egalisma", "verdict": "lemma", "gloss": "egalitarian", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
+{"lemma": "ektoparazito", "verdict": "lemma", "gloss": "ectoparasite", "note": null, "reviewed_in": ["v2-batch40-b"], "disputed": null}
