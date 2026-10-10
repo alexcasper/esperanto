@@ -3,7 +3,7 @@
 
 Usage:
   python3 tools/gap_report.py [--min-sources 2] [--min-count 5]
-                              [--mixed-wp 3] [--wp-only 20]
+                              [--mixed-wp 3] [--wp-only 18]
                               [--queue DICT/shards/gap-queue.jsonl] [--top 40]
 
 Reads DICT/candidates.jsonl (tools/mine_lemmas.py + tools/reconcile_lemmas.py)
@@ -38,8 +38,8 @@ queued in the first tier it meets:
   mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles (10 until
            esp-jpn lowered it to 5; esp-273 to 3)
   wp-only  no non-Wikipedia source, >= --wp-only wp articles (50 until
-           esp-jpn lowered it to 25; esp-273 to 20); modern and technical
-           vocabulary, reviewed with extra scrutiny
+           esp-jpn lowered it to 25; esp-273 to 20; esp-2rp to 18);
+           modern and technical vocabulary, reviewed with extra scrutiny
 
 and --min-count occurrences in every tier. The queue is ordered by tier,
 then non-Wikipedia sources, then wp articles, then count.
@@ -158,7 +158,7 @@ def main():
     ap.add_argument('--min-count', type=int, default=5)
     ap.add_argument('--mixed-wp', type=int, default=3,
                     help='wp-* articles needed beside 1-2 other sources')
-    ap.add_argument('--wp-only', type=int, default=20,
+    ap.add_argument('--wp-only', type=int, default=18,
                     help='wp-* articles needed with no other source')
     ap.add_argument('--queue', default=QUEUE)
     ap.add_argument('--top', type=int, default=40)
