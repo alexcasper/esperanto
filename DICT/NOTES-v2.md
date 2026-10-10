@@ -1389,6 +1389,31 @@ Totals after batch 39: **18675** v2 entries; corpus-mined **20891**,
 13126 segmented and linked; dictionary **43347**; queue **0** at
 `--wp-only 18`. Probe: `--wp-only 15` gives **1169**.
 
+## Batch 40 (esp-89z) — wp-only >= 15; 580 reviewed, 530 promoted
+
+esp-89z lowered `gap_report --wp-only` 18 -> 15 (queue 1168).
+`DICT/review/v2-batch40-{a,b}.tsv` (290/290) covers the top 580 (37..16
+wp): *prokarioto*, *spermatozoo*, *imunoglobulino*, *supermerkato*,
+*retadreso*, *senkabla*, *stratovulkano*, *ekzoskeleto*, *tofuo*,
+*fastostriko*.
+
+- **530 lemma** (372 noun, 115 adj, 34 verb, 9 adv) — all promoted.
+- **50 rejected (8.6%)** — still falling (10.3% at 22..20, 9.6% at
+  30..18): 27 foreign (Latin epithets, *Dolce*, *pianoforte*,
+  *Bildende*, *Antike*, *Legacy*, *Bhakti*), 9 `uncertain`
+  (anglicisms *adversa*, *prominenta*, *distinkta*; *interiero*,
+  *kavaliero*), 6 `-itis`/`-atas` passives, 4 names (*Charleston*,
+  *Cypselus*), 2 fragments, 2 typos (*indentigi*, *positive*).
+- **Segmentation**: 18 of 232 wrong (7.8%) — 17 `NO_SPLIT` (*altatera*,
+  *defraŭdo*, *frankona*, *globulo*, *maĉeto*, *mesina*, *monomero*,
+  *ostinato*, *realviva*, *reverendo*, *seneskalo*, *serino*,
+  *triado*, *ursulanino*, *uvulara*, *viktorina*, *vizono*); override
+  *publicitaĵo*.
+
+Totals after batch 40: **19205** v2 entries; corpus-mined **21421**,
+13341 segmented and linked; dictionary **43877**; queue **588**
+(wp-only 16..15).
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in

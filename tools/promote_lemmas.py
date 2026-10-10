@@ -336,7 +336,15 @@ NO_SPLIT = {'ekspiri', 'ŝovinismo',
             'agonisto', 'alkila', 'anhidrido', 'avinjona', 'distiko',
             'glikozido', 'iluminato', 'jardato', 'kastrisma', 'lignino',
             'poiomete', 'sikulo', 'slavona', 'suprotono', 'tomismo',
-            'ĉeĥia'}
+            'ĉeĥia',
+            # esp-89z (batch 40): alt+at+er, de+fraŭd, frank+on, glob+ul,
+            # maĉ+et, mes+in, monom+er, ost+in+at, re+al+viv, re+ver+end,
+            # sen+eskal, ser+in, tri+ad, urs+ul+an+in, uvul+ar, viktor+in,
+            # viz+on
+            'altatera', 'defraŭdo', 'frankona', 'globulo', 'maĉeto',
+            'mesina', 'monomero', 'ostinato', 'realviva', 'reverendo',
+            'seneskalo', 'serino', 'triado', 'ursulanino', 'uvulara',
+            'viktorina', 'vizono'}
 # Loanword radikoj that UV/ReVo layers here do not supply as `root` and that
 # _mined_roots cannot recover, because the bare word itself reads as a valid
 # affix split (reform-o as re+form-o, transport-i as trans+port-i). Without
@@ -429,6 +437,7 @@ SPLIT_OVERRIDE = {
     'restarigado': (['re'], 'star', ['ig', 'ad']),  # not rest+ar+ig+ad
     # new 'enigado' (b39) made enigad- a stem; keep antaŭen+ig+ad
     'antaŭenigado': ([], 'antaŭen', ['ig', 'ad']),
+    'publicitaĵo': ([], 'publicit', ['aĵ']),     # not public+it+aĵ
     'plikonatiĝi': (['pli'], 'kon', ['at', 'iĝ']),  # stem was 'plik'
     'prizorgantino': (['pri'], 'zorg', ['ant', 'in']),  # stem 'zorgant'
     'kunsentema': (['kun'], 'sent', ['em']),   # not kun+sen+tem
