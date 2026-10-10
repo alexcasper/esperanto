@@ -1362,6 +1362,33 @@ esp-273 thresholds.
 568, `--wp-only 15` 1748. Other buckets: `capitalised` 3133, `foreign`
 1984, `participle` 16604.
 
+## Batch 39 (esp-2rp) — wp-only >= 18; 563 reviewed, 509 promoted
+
+esp-2rp lowered `gap_report --wp-only` 20 -> 18 (queue 563).
+`DICT/review/v2-batch39-{a,b}.tsv` (282/281) covers it all (30..18 wp):
+*litosfero*, *magnetosfero*, *mondvarmiĝo*, *klimatŝanĝo*, *ludkonzolo*,
+*uzantinterfaco*, *tujmesaĝilo*, *ruĝenŝoviĝo*, *vibrafono*, *hobito*.
+
+- **509 lemma** (331 noun, 138 adj, 25 verb, 15 adv) — all promoted.
+- **54 rejected (9.6%)** — *below* batch 38's 10.3%, so the rate has
+  levelled off rather than kept climbing: 26 foreign (Latin epithets,
+  Spanish/Italian/Portuguese title words *Cuando*, *poco*, *Cosi fan
+  tutte*, *Semana*), 14 `uncertain` (anglicisms and non-standard
+  *agresiva*, *optimala*, *topika*, *kontroversa*, *informacio*,
+  *transmiti*, *apreci*), 8 `-itis`/`-atas` passives, 4 fragments
+  (*kPa*, *estetika* → *stetika*), 1 name, 1 typo (*ajro*).
+- **Segmentation**: 18 of 221 wrong (8.1%) — 16 `NO_SPLIT` (*agonisto*,
+  *alkila*, *anhidrido*, *avinjona*, *distiko*, *glikozido*,
+  *iluminato*, *jardato*, *kastrisma*, *lignino*, *poiomete*, *sikulo*,
+  *slavona*, *suprotono*, *tomismo*, *ĉeĥia*); override *restarigado*
+  (re+star+ig+ad). The new *enigado* made *enigad-* a stem and re-split
+  the older *antaŭenigado* as antaŭ+enigad — overridden back to
+  antaŭen+ig+ad.
+
+Totals after batch 39: **18675** v2 entries; corpus-mined **20891**,
+13126 segmented and linked; dictionary **43347**; queue **0** at
+`--wp-only 18`. Probe: `--wp-only 15` gives **1169**.
+
 ## Ledger keys orphaned by promotion (input to esp-58p)
 
 Once a corpus-mined entry is promoted its `root` (the whole word stem) is in
