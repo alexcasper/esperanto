@@ -1599,3 +1599,11 @@ Second 500 of the phase-2d queue: **453 lemma, 18 foreign, 7 uncertain,
 Dictionary 46,600 -> 47,049. Notable: klimatoŝanĝo, moao, ĝainismo,
 pentagramo, elektronegativeco, marsupiulo, astrometrio, tekstmesaĝo.
 ~800 queue candidates remain below sources 10.
+
+## Batch 49 (esp-uk8 phase 2d) — wp-only >=10, sources-ranked 1001-1500; glm
+
+Third 500 of the phase-2d queue: **450 lemma, 38 foreign, 7 uncertain,
+1 proper-noun, 1 fragment** (12% non-lemma; foreign = Latin binomial
+epithets + quoted Italian/German/Polish words). Dictionary 47,049 -> 47,496.
+Notable: jazo, ĥalifo, ĥedivo, ebolo, takikardio, latifundio, gejŝo,
+framasonisto, politikscienco, mikrosekundo. ~300 queue candidates remain.
