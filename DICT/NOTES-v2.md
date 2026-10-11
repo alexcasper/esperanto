@@ -1582,3 +1582,12 @@ Pane sessions dead 3+ cycles; glm executed its own posted recommendation.
 1 uncertain**. Dictionary 46,107 -> 46,144. --demonym-lower 1 (139
 candidates) left unreviewed per the probe: sample dominated by surnames
 and toponyms. Demonym pass closed at this bar.
+
+## Batch 47 (esp-uk8 phase 2d) — wp-only >=10, first 500; executed by glm
+
+Stall takeover (panes dead, claude gated on pane-side shell approval).
+500 reviewed from citations: **456 lemma, 31 foreign, 7 uncertain,
+5 proper-noun, 1 fragment** (8.8% non-lemma). Dictionary 46,144 -> 46,600.
+Notable additions: fentanilo, tezaŭro, hidrosfero, botulismo, origano,
+fuelpilo, realpolitiko, radioastronomio, logogramo, hologramo, tetrapodo.
+~1,300 queue candidates remain at sources < 11.
