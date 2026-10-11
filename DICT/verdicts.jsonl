@@ -26629,7 +26629,7 @@
 {"lemma": "deĉiame", "verdict": "lemma", "gloss": "for ever", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "disponebligi", "verdict": "lemma", "gloss": "to make available", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "diviĝo", "verdict": "lemma", "gloss": "division", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "dokumentati", "verdict": "lemma", "gloss": "to document", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "dokumentati", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-batch48-wponly", "v2-fix-esp-4xy"], "disputed": null}
 {"lemma": "dramserio", "verdict": "lemma", "gloss": "drama series", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "dumotora", "verdict": "lemma", "gloss": "twin-engine", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "duonigo", "verdict": "lemma", "gloss": "halving", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -27762,7 +27762,7 @@
 {"lemma": "samlarĝa", "verdict": "lemma", "gloss": "equal-width", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "sampensanto", "verdict": "lemma", "gloss": "like-minded person", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "saturado", "verdict": "lemma", "gloss": "saturation", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
-{"lemma": "scepte", "verdict": "ocr-artifact", "gloss": "sceptically", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
+{"lemma": "scepte", "verdict": "ocr-artifact", "gloss": null, "note": null, "reviewed_in": ["v2-batch50-wponly", "v2-fix-esp-4xy"], "disputed": null}
 {"lemma": "sekurgardisto", "verdict": "lemma", "gloss": "security guard", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "sekvencado", "verdict": "lemma", "gloss": "sequencing", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "sekvontjare", "verdict": "lemma", "gloss": "next year", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
@@ -27822,3 +27822,14 @@
 {"lemma": "vicprezidenteco", "verdict": "lemma", "gloss": "vice-presidency", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
 {"lemma": "fakverkisto", "verdict": "lemma", "gloss": "technical writer", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
 {"lemma": "sturnelo", "verdict": "lemma", "gloss": "meadowlark", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
+{"lemma": "anoncit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "apogit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "enmetit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "filmigit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "ludat", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "planat", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "premiit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "prenit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "priskribit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "represit", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
+{"lemma": "vidat", "verdict": "inflection", "gloss": null, "note": null, "reviewed_in": ["v2-fix-esp-4xy"], "disputed": null}
