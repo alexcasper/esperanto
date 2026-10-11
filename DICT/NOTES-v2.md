@@ -1591,3 +1591,11 @@ Stall takeover (panes dead, claude gated on pane-side shell approval).
 Notable additions: fentanilo, tezaŭro, hidrosfero, botulismo, origano,
 fuelpilo, realpolitiko, radioastronomio, logogramo, hologramo, tetrapodo.
 ~1,300 queue candidates remain at sources < 11.
+
+## Batch 48 (esp-uk8 phase 2d) — wp-only >=10, sources-ranked 501-1000; glm
+
+Second 500 of the phase-2d queue: **453 lemma, 18 foreign, 7 uncertain,
+1 proper-noun** (9.4% non-lemma; foreign mostly Latin binomial epithets).
+Dictionary 46,600 -> 47,049. Notable: klimatoŝanĝo, moao, ĝainismo,
+pentagramo, elektronegativeco, marsupiulo, astrometrio, tekstmesaĝo.
+~800 queue candidates remain below sources 10.
