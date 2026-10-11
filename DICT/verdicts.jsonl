@@ -27110,7 +27110,7 @@
 {"lemma": "ekzistadisto", "verdict": "lemma", "gloss": "existentialist", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "elaphi", "verdict": "foreign", "gloss": null, "note": "Latin binomial", "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "elaĉetomono", "verdict": "lemma", "gloss": "ransom money", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
-{"lemma": "espejo", "verdict": "lemma", "gloss": "mirror", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
+{"lemma": "espejo", "verdict": "foreign", "gloss": null, "note": "Spanish espejo (mirror), Lago Espejo", "reviewed_in": ["v2-batch49-wponly", "v2-fix-esp-uk8"], "disputed": null}
 {"lemma": "evolviĝi", "verdict": "lemma", "gloss": "to evolve", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "fervojtunelo", "verdict": "lemma", "gloss": "railway tunnel", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "flugilkorno", "verdict": "lemma", "gloss": "flügelhorn", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
@@ -27119,7 +27119,7 @@
 {"lemma": "framasonisto", "verdict": "lemma", "gloss": "Freemason", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "grandiflora", "verdict": "foreign", "gloss": null, "note": "Latin binomial", "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "herpeto", "verdict": "lemma", "gloss": "reptile", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
-{"lemma": "hortelano", "verdict": "lemma", "gloss": "hortelano debt instrument", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
+{"lemma": "hortelano", "verdict": "proper-noun", "gloss": null, "note": "Hortelano (surname); El perro del hortelano", "reviewed_in": ["v2-batch49-wponly", "v2-fix-esp-uk8"], "disputed": null}
 {"lemma": "hospitalisto", "verdict": "lemma", "gloss": "hospitaler", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "kairineno", "verdict": "lemma", "gloss": "Cairina (duck)", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "kaktaco", "verdict": "lemma", "gloss": "cactus family", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
@@ -27128,7 +27128,7 @@
 {"lemma": "klasifiksistemo", "verdict": "lemma", "gloss": "classification system", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "kokeca", "verdict": "lemma", "gloss": "chicken-like", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "kolubredo", "verdict": "lemma", "gloss": "colubrid", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
-{"lemma": "konservati", "verdict": "lemma", "gloss": "to conserve", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
+{"lemma": "konservati", "verdict": "inflection", "gloss": null, "note": "passive form konservatas", "reviewed_in": ["v2-batch49-wponly", "v2-fix-esp-uk8"], "disputed": null}
 {"lemma": "kontraŭdolorilo", "verdict": "lemma", "gloss": "analgesic", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "kosmocentro", "verdict": "lemma", "gloss": "cosmic centre", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "laktoglando", "verdict": "lemma", "gloss": "mammary gland", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
@@ -27154,7 +27154,7 @@
 {"lemma": "polikromio", "verdict": "lemma", "gloss": "polychromy", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "poliocephali", "verdict": "foreign", "gloss": null, "note": "Latin binomial", "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "radioizotopo", "verdict": "lemma", "gloss": "radioisotope", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
-{"lemma": "redi", "verdict": "lemma", "gloss": "to say (in Latin)", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
+{"lemma": "redi", "verdict": "fragment", "gloss": null, "note": "split of predicate / redi-", "reviewed_in": ["v2-batch49-wponly", "v2-fix-esp-uk8"], "disputed": null}
 {"lemma": "revolto", "verdict": "lemma", "gloss": "revolt", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "rubeolo", "verdict": "lemma", "gloss": "rubella", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "sangovaskulo", "verdict": "lemma", "gloss": "blood vessel", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
@@ -27287,7 +27287,7 @@
 {"lemma": "tetrinkejo", "verdict": "lemma", "gloss": "tea house", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "tinkturado", "verdict": "lemma", "gloss": "dyeing", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "trafiĝi", "verdict": "lemma", "gloss": "to be hit", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
-{"lemma": "trionfo", "verdict": "lemma", "gloss": "trionfo", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
+{"lemma": "trionfo", "verdict": "foreign", "gloss": null, "note": "Italian Il trionfo del tempo", "reviewed_in": ["v2-batch49-wponly", "v2-fix-esp-uk8"], "disputed": null}
 {"lemma": "trivalenta", "verdict": "lemma", "gloss": "trivalent", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "unuaktaĵo", "verdict": "lemma", "gloss": "one-act play", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
 {"lemma": "unuargumenta", "verdict": "lemma", "gloss": "unary", "note": null, "reviewed_in": ["v2-batch49-wponly"], "disputed": null}
