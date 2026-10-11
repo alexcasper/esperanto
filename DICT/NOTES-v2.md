@@ -1617,3 +1617,15 @@ highest yet — the tail is noisier). Dictionary 47,491 -> 47,779.
 PHASE 2d COMPLETE: queue empty at wp-only >=10. Rejected -itas forms
 and Romance/German/Latin quotations throughout; notable additions:
 hemofilio, katarso, sizigio, baklavo, onomastiko, defundamente.
+
+## Batch 50 arbitration (esp-uk8) — dual-review reconciliation
+
+claude independently reviewed the same final slice (274 lemma / 312
+reviewed). 23 verdict disagreements vs glm's solo pass; deferred to
+claude's stricter calls on all 23 (their 5-for-5 record in the previous
+fix round earned it): 9 -iti participles -> inflection, 8 -> uncertain,
+3 -> foreign (deseo, gallega, pao), 2 -> ocr-artifact, 1 -> fragment,
+1 -> proper-noun; tropeza foreign->lemma accepted (re-promoted).
+18 entries dropped, 47,779 -> 47,761. GLM TAKEAWAY: solo review of the
+noisy tail over-promotes participle forms — the -ita/-iti screening
+must reject passive/participle spellings, not just -atas.
