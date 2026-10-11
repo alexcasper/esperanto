@@ -26527,7 +26527,7 @@
 {"lemma": "listado", "verdict": "lemma", "gloss": "listing", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "lombardia", "verdict": "lemma", "gloss": "Lombardian", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "louka", "verdict": "foreign", "gloss": null, "note": "Czech place word", "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "ludati", "verdict": "lemma", "gloss": "to date, court", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "ludati", "verdict": "inflection", "gloss": "to date, court", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "macrocarpa", "verdict": "foreign", "gloss": null, "note": "Latin binomial", "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "majorano", "verdict": "lemma", "gloss": "marjoram", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "meliaco", "verdict": "lemma", "gloss": "Melia (tree)", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26586,7 +26586,7 @@
 {"lemma": "vendosukceso", "verdict": "lemma", "gloss": "sales success", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "verboformo", "verdict": "lemma", "gloss": "verb form", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "verdecnigra", "verdict": "lemma", "gloss": "greenish-black", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "vidati", "verdict": "lemma", "gloss": "to court", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "vidati", "verdict": "inflection", "gloss": "to court", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "viento", "verdict": "foreign", "gloss": null, "note": "Spanish word", "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "vinkultura", "verdict": "lemma", "gloss": "viticultural", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "vitrofibra", "verdict": "lemma", "gloss": "glass-fibre", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26600,10 +26600,10 @@
 {"lemma": "akvorezervo", "verdict": "lemma", "gloss": "water reserve", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "aljama", "verdict": "lemma", "gloss": "aljama (Muslim community)", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "angloparolanto", "verdict": "lemma", "gloss": "English speaker", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "anonciti", "verdict": "lemma", "gloss": "to announce", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "anonciti", "verdict": "inflection", "gloss": "to announce", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "antaŭkambrio", "verdict": "lemma", "gloss": "Precambrian", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "antikvegipta", "verdict": "lemma", "gloss": "ancient Egyptian", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "apogiti", "verdict": "lemma", "gloss": "to support", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "apogiti", "verdict": "inflection", "gloss": "to support", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "apudloĝanto", "verdict": "lemma", "gloss": "neighbour inhabitant", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "arbarinterno", "verdict": "lemma", "gloss": "forest interior", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "arbarzono", "verdict": "lemma", "gloss": "forest zone", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26648,7 +26648,7 @@
 {"lemma": "eltrovado", "verdict": "lemma", "gloss": "discovery", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "emocieco", "verdict": "lemma", "gloss": "emotionality", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "encentriĝi", "verdict": "lemma", "gloss": "to centre oneself", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "enmetiti", "verdict": "lemma", "gloss": "to be put in", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "enmetiti", "verdict": "inflection", "gloss": "to be put in", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "enrompo", "verdict": "lemma", "gloss": "break-in", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "enspezaro", "verdict": "lemma", "gloss": "income range", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "entronigo", "verdict": "lemma", "gloss": "enthronement", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26659,7 +26659,7 @@
 {"lemma": "fakverko", "verdict": "lemma", "gloss": "specialist work", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "familiaĵo", "verdict": "lemma", "gloss": "family member", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "feriloko", "verdict": "lemma", "gloss": "railway spot", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "filmigiti", "verdict": "lemma", "gloss": "to be filmed", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "filmigiti", "verdict": "inflection", "gloss": "to be filmed", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "filozofiado", "verdict": "lemma", "gloss": "philosophising", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "flankprodukto", "verdict": "lemma", "gloss": "by-product", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "folibazo", "verdict": "lemma", "gloss": "leaf base", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26739,7 +26739,7 @@
 {"lemma": "pianoinstruisto", "verdict": "lemma", "gloss": "piano teacher", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "pinospecio", "verdict": "lemma", "gloss": "pine species", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "pioniraĵo", "verdict": "lemma", "gloss": "pioneering work", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "planati", "verdict": "lemma", "gloss": "to flatten", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "planati", "verdict": "inflection", "gloss": "to flatten", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "plantospeco", "verdict": "lemma", "gloss": "plant species", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "plejprobable", "verdict": "lemma", "gloss": "most probably", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "plietendiĝi", "verdict": "lemma", "gloss": "to extend further", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26753,9 +26753,9 @@
 {"lemma": "prakristanismo", "verdict": "lemma", "gloss": "early Christianity", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "praspecio", "verdict": "lemma", "gloss": "ancestral species", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "prehistoria", "verdict": "lemma", "gloss": "prehistoric", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "preniti", "verdict": "lemma", "gloss": "to take over", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "preniti", "verdict": "inflection", "gloss": "to take over", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "pridubigi", "verdict": "lemma", "gloss": "to cast doubt on", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "priskribiti", "verdict": "lemma", "gloss": "to describe", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "priskribiti", "verdict": "inflection", "gloss": "to describe", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "privatlernejo", "verdict": "lemma", "gloss": "private school", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "provleganto", "verdict": "lemma", "gloss": "proofreader", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "pruntedonanto", "verdict": "lemma", "gloss": "lender", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26766,7 +26766,7 @@
 {"lemma": "redaktistino", "verdict": "lemma", "gloss": "female editor", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "redaktorado", "verdict": "lemma", "gloss": "editing", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "regnaro", "verdict": "lemma", "gloss": "empire, realm", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "represiti", "verdict": "lemma", "gloss": "to repress", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "represiti", "verdict": "inflection", "gloss": "to repress", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "resetli", "verdict": "lemma", "gloss": "to resettle", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "rumanuja", "verdict": "lemma", "gloss": "Romanian", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "samrajteco", "verdict": "lemma", "gloss": "equal rights", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
@@ -26989,7 +26989,7 @@
 {"lemma": "hejtejo", "verdict": "lemma", "gloss": "boiler room", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "jursistemo", "verdict": "lemma", "gloss": "legal system", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "musicae", "verdict": "foreign", "gloss": null, "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
-{"lemma": "premiiti", "verdict": "lemma", "gloss": "prize winner", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
+{"lemma": "premiiti", "verdict": "inflection", "gloss": "prize winner", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "niktibio", "verdict": "lemma", "gloss": "poto (bird)", "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "multiflora", "verdict": "foreign", "gloss": null, "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
 {"lemma": "picta", "verdict": "foreign", "gloss": null, "note": null, "reviewed_in": ["v2-batch48-wponly"], "disputed": null}
