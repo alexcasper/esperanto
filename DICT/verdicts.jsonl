@@ -27817,3 +27817,8 @@
 {"lemma": "ŝtelitaĵo", "verdict": "lemma", "gloss": "stolen item", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "kievano", "verdict": "lemma", "gloss": "Kyivan", "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
 {"lemma": "terrae", "verdict": "foreign", "gloss": null, "note": null, "reviewed_in": ["v2-batch50-wponly"], "disputed": null}
+{"lemma": "ĉevalrajdado", "verdict": "lemma", "gloss": "horse riding", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
+{"lemma": "eklezihistoriisto", "verdict": "lemma", "gloss": "church historian", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
+{"lemma": "vicprezidenteco", "verdict": "lemma", "gloss": "vice-presidency", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
+{"lemma": "fakverkisto", "verdict": "lemma", "gloss": "technical writer", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
+{"lemma": "sturnelo", "verdict": "lemma", "gloss": "meadowlark", "note": null, "reviewed_in": ["v2-batch50-claude-extra"], "disputed": null}
