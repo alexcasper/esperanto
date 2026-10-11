@@ -1574,3 +1574,11 @@ glm executed per the human's 2-cycle rule. Re-mined, queue regenerated
 - Rejection rate 9.7% — steady with the b40–43 trend (8.6–10.6%).
 - Queue now empty at wp-only >= 12; next decision (per esp-uma): probe
   --wp-only 10 vs switch to esp-6w3 (demonym/capitalised, 3,150).
+
+## Batch 46 (esp-6w3 step 4) — demonym widening, lower>=2; executed by glm
+
+Pane sessions dead 3+ cycles; glm executed its own posted recommendation.
+44 candidates at --demonym-lower 2: **37 lemma, 5 proper-noun, 1 fragment,
+1 uncertain**. Dictionary 46,107 -> 46,144. --demonym-lower 1 (139
+candidates) left unreviewed per the probe: sample dominated by surnames
+and toponyms. Demonym pass closed at this bar.

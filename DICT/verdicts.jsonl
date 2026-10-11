@@ -25970,3 +25970,47 @@
 {"lemma": "nona", "verdict": "proper-noun", "gloss": null, "note": "Nona", "reviewed_in": ["v2-batch45-demonyms"], "disputed": null}
 {"lemma": "nordkalifornia", "verdict": "lemma", "gloss": "Northern Californian", "note": null, "reviewed_in": ["v2-batch45-demonyms"], "disputed": null}
 {"lemma": "ternopila", "verdict": "lemma", "gloss": "Ternopil (adj.)", "note": null, "reviewed_in": ["v2-batch45-demonyms"], "disputed": null}
+{"lemma": "ivanova", "verdict": "proper-noun", "gloss": null, "note": "surname (Rajevska-Ivanova etc.)", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "flaviano", "verdict": "uncertain", "gloss": null, "note": "Flavian (emperor title?) vs name", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "riviera", "verdict": "lemma", "gloss": "Riviera", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "mirandola", "verdict": "proper-noun", "gloss": null, "note": "Pico della Mirandola (place/family)", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "ciklada", "verdict": "lemma", "gloss": "Cycladic", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "bajano", "verdict": "lemma", "gloss": "Bayan (khan title person)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "leonkora", "verdict": "lemma", "gloss": "lion-hearted", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "pendolino", "verdict": "lemma", "gloss": "Pendolino (tilting train)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "bardano", "verdict": "lemma", "gloss": "bard (person)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "ĉevolga", "verdict": "lemma", "gloss": "trans-Volga", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "gorica", "verdict": "proper-noun", "gloss": null, "note": "Gorizia (place)", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "burua", "verdict": "lemma", "gloss": "Buru (island, adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "mantova", "verdict": "lemma", "gloss": "Mantua", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "kijiva", "verdict": "lemma", "gloss": "Kiev (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "agila", "verdict": "lemma", "gloss": "Agilolfing (dynasty adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "aristida", "verdict": "lemma", "gloss": "Aristidas (plant genus, adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "kaŝmirano", "verdict": "lemma", "gloss": "Kashmiri (person)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "panĝabano", "verdict": "lemma", "gloss": "Punjabi (person)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "paŭlina", "verdict": "lemma", "gloss": "Pauline", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "timurida", "verdict": "lemma", "gloss": "Timurid", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "lignano", "verdict": "lemma", "gloss": "Lignano (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "volina", "verdict": "lemma", "gloss": "Volhynian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "brjanska", "verdict": "lemma", "gloss": "Bryansk (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "oravia", "verdict": "lemma", "gloss": "Orava (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "antifa", "verdict": "lemma", "gloss": "antifa", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "cra", "verdict": "fragment", "gloss": null, "note": "abbreviation debris", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "galatia", "verdict": "lemma", "gloss": "Galatian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "helesponta", "verdict": "lemma", "gloss": "Hellespontine", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "karelia", "verdict": "lemma", "gloss": "Karelian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "kira", "verdict": "proper-noun", "gloss": null, "note": "Cyra/Kira (name)", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "koloseano", "verdict": "lemma", "gloss": "Colossean", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "otona", "verdict": "lemma", "gloss": "Ottonian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "antoniano", "verdict": "lemma", "gloss": "Antonian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "balsasa", "verdict": "lemma", "gloss": "Balsas (river, adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "surguta", "verdict": "lemma", "gloss": "Surgut (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "tumbesia", "verdict": "lemma", "gloss": "Tumbesian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "novlanda", "verdict": "lemma", "gloss": "Newfoundland (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "arsenia", "verdict": "lemma", "gloss": "Arsenius (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "bengalano", "verdict": "lemma", "gloss": "Bengali (person)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "izaŭria", "verdict": "lemma", "gloss": "Isaurian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "kurlanda", "verdict": "lemma", "gloss": "Courlandian", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "masino", "verdict": "proper-noun", "gloss": null, "note": "Massino (name)", "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "salzburga", "verdict": "lemma", "gloss": "Salzburg (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
+{"lemma": "simeiza", "verdict": "lemma", "gloss": "Simeiz (adj.)", "note": null, "reviewed_in": ["v2-batch46-demonyms"], "disputed": null}
