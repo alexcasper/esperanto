@@ -1607,3 +1607,13 @@ Third 500 of the phase-2d queue: **450 lemma, 38 foreign, 7 uncertain,
 epithets + quoted Italian/German/Polish words). Dictionary 47,049 -> 47,496.
 Notable: jazo, ĥalifo, ĥedivo, ebolo, takikardio, latifundio, gejŝo,
 framasonisto, politikscienco, mikrosekundo. ~300 queue candidates remain.
+
+## Batch 50 (esp-uk8 phase 2d) — FINAL slice, ranks 1501-1806; glm
+
+Takeover after claude quiet 2 cycles. All 306 remaining candidates
+reviewed with the agreed extra screening (-atas/-itis verbs, Romance
+title words): **262 lemma, 36 foreign, 6 uncertain** (13.7% non-lemma,
+highest yet — the tail is noisier). Dictionary 47,491 -> 47,779.
+PHASE 2d COMPLETE: queue empty at wp-only >=10. Rejected -itas forms
+and Romance/German/Latin quotations throughout; notable additions:
+hemofilio, katarso, sizigio, baklavo, onomastiko, defundamente.
