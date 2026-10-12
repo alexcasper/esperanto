@@ -2,9 +2,10 @@
 """Vocabulary gap: frequent corpus lemmas that DICT/entries.jsonl lacks.
 
 Usage:
-  python3 tools/gap_report.py [--min-sources 3] [--min-count 5]
-                              [--mixed-wp 10] [--wp-only 50]
+  python3 tools/gap_report.py [--min-sources 2] [--min-count 5]
+                              [--mixed-wp 3] [--wp-only 10]
                               [--queue DICT/shards/gap-queue.jsonl] [--top 40]
+                              [--demonyms DICT/shards/demonym-queue.jsonl]
 
 Reads DICT/candidates.jsonl (tools/mine_lemmas.py + tools/reconcile_lemmas.py)
 and DICT/entries.jsonl, and sorts every unreviewed candidate into one bucket:
@@ -33,17 +34,29 @@ sources are single wp-* articles, so a bare source count stops meaning
 breadth: three stubs clear it. Sources are split by register and a lemma is
 queued in the first tier it meets:
 
-  broad    >= --min-sources non-Wikipedia sources (the pre-Vikipedio bar,
-           unchanged in meaning)
-  mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles
-  wp-only  no non-Wikipedia source, >= --wp-only wp articles; modern and
-           technical vocabulary, reviewed with extra scrutiny
+  broad    >= --min-sources non-Wikipedia sources (pre-Vikipedio bar was 3;
+           lowered to 2 by esp-i9h once the 3-source tier was exhausted)
+  mixed    1+ non-Wikipedia source and >= --mixed-wp wp articles (10 until
+           esp-jpn lowered it to 5; esp-273 to 3)
+  wp-only  no non-Wikipedia source, >= --wp-only wp articles (50 until
+           esp-jpn lowered it to 25; esp-273 to 20; esp-2rp to 18;
+           esp-89z to 15; esp-vng to 12; esp-uk8 to 10);
+           modern and technical vocabulary, reviewed with extra scrutiny
 
 and --min-count occurrences in every tier. The queue is ordered by tier,
 then non-Wikipedia sources, then wp articles, then count.
 
 The queue is written for review (tools/review_shard.py verdict vocabulary);
 the bucket counts are the gap analysis recorded in DICT/NOTES-v2.md.
+
+--demonyms (esp-6w3) writes a second queue out of the capitalised bucket:
+place adjectives and demonyms that Esperanto writes lower-case (kieva,
+tobolska, aŭstriano). A capitalised candidate qualifies when it ends in
+-a/-ano/-ana/-ino, its place noun (root + o/io/ujo/lando/ia) is a dictionary
+word or a mostly-capitalised candidate, it occurs lower-case at least
+--demonym-lower times, and it is seen inflected (-aj/-an/-oj/-on...). Given
+names (anna, izabela) and Romance toponyms (zaragoza) still get through:
+the queue is ~55-60% acceptable and is reviewed like any other.
 """
 import argparse
 import collections
@@ -82,6 +95,9 @@ questo questa quelle cette notre votre comme elle une chose beide eine keine
 meine seine diese desde este esta'''.split())
 TIERS = ('broad', 'mixed', 'wp-only')
 CAPITAL_SHARE = 0.25
+DEMONYM_ENDINGS = ('anino', 'ano', 'ana', 'ino', 'a')
+PLACE_ENDINGS = ('o', 'io', 'ujo', 'lando', 'ia')
+INFLECTED = ('aj', 'an', 'ajn', 'oj', 'on', 'ojn')
 
 
 def register(c):
@@ -150,16 +166,41 @@ def classify(c, dict_words, roots, english, args, candidates=()):
     return 'queue'
 
 
+def demonym(c, by_lemma, dict_words, english, min_lower):
+    """Place noun backing a capitalised place adjective/demonym, or None."""
+    lemma = c['lemma']
+    stem = next((lemma[:-len(e)] for e in DEMONYM_ENDINGS
+                 if lemma.endswith(e) and len(lemma) > len(e) + 1), None)
+    if stem is None or c.get('lower', 0) < min_lower:
+        return None
+    forms = c.get('forms') or {}
+    if not any(f.lower().endswith(INFLECTED) for f in forms):
+        return None
+    if forms and all(is_english(f, english) for f in forms):
+        return None
+    for end in PLACE_ENDINGS:
+        place = by_lemma.get(stem + end)
+        if (stem + end) in dict_words or (
+                place and 'lower' in place
+                and place['lower'] < CAPITAL_SHARE * place['count']):
+            return stem + end
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument('--min-sources', type=int, default=3)
+    ap.add_argument('--min-sources', type=int, default=2)
     ap.add_argument('--min-count', type=int, default=5)
-    ap.add_argument('--mixed-wp', type=int, default=10,
+    ap.add_argument('--mixed-wp', type=int, default=3,
                     help='wp-* articles needed beside 1-2 other sources')
-    ap.add_argument('--wp-only', type=int, default=50,
+    ap.add_argument('--wp-only', type=int, default=10,
                     help='wp-* articles needed with no other source')
     ap.add_argument('--queue', default=QUEUE)
     ap.add_argument('--top', type=int, default=40)
+    ap.add_argument('--demonyms', metavar='FILE', default=None,
+                    help='also write the capitalised demonym queue (esp-6w3)')
+    ap.add_argument('--demonym-lower', type=int, default=3,
+                    help='lower-case occurrences a demonym needs')
     args = ap.parse_args()
 
     roots, dict_words = esperanto.load_vocabulary(ENTRIES)
@@ -189,6 +230,32 @@ def main():
                 'citations': sorted(c['citations'], key=lambda x:
                                     x['source'].startswith('wp-'))[:3]},
                 ensure_ascii=False) + '\n')
+
+    if args.demonyms:
+        by_lemma = {c['lemma']: c for c in cands}
+        dem = []
+        for c in buckets['capitalised']:
+            place = demonym(c, by_lemma, dict_words, english,
+                            args.demonym_lower)
+            if place:
+                dem.append((c, place))
+        dem.sort(key=lambda cp: (-cp[0]['lower'], -cp[0]['count'],
+                                 cp[0]['lemma']))
+        os.makedirs(os.path.dirname(os.path.abspath(args.demonyms)),
+                    exist_ok=True)
+        with open(args.demonyms, 'w', encoding='utf-8') as fh:
+            for c, place in dem:
+                other, wp = register(c)
+                fh.write(json.dumps({
+                    'lemma': c['lemma'], 'kind': c['kind'],
+                    'count': c['count'], 'lower': c['lower'], 'place': place,
+                    'sources': len(c['sources']), 'other_sources': other,
+                    'wp_sources': wp, 'forms': c['forms'],
+                    'citations': sorted(c['citations'], key=lambda x:
+                                        x['source'].startswith('wp-'))[:3]},
+                    ensure_ascii=False) + '\n')
+        print('demonyms: %d of %d capitalised -> %s'
+              % (len(dem), len(buckets['capitalised']), args.demonyms))
 
     total = sum(len(v) for v in buckets.values())
     print('%d candidate lemmas against %d dictionary words'

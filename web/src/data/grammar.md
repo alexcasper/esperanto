@@ -327,7 +327,49 @@ and indeterminate time expressions.
 - *longo plena je fumo.* — `pg-17482:1522`
 - *preninte la knabaĉon je la mano, trenis lin al la fenestro* — `pg-18178:3331`
 
-### 6.14 Note on evidence
+### 6.14 Prepositions before infinitives: *por*, *anstataŭ*, and *sen*
+
+Textbook grammars traditionally prescribe that only *por*, *anstataŭ*, and
+*antaŭ ol* may govern an infinitive. However, period literary prose frequently
+employs *sen* directly with the infinitive (appearing on 1,953 lines in the
+corpus) alongside participial adverbials:
+
+- *Anstataŭ respondi, la Muso nur graŭlis* — `pg-17482:815`
+- *Al la akvorando ŝi venis, eĉ sen heziti* — `pg-20802:2680`
+
+### 6.15 Tense preservation in indirect speech (Nerekta parolo)
+
+Unlike English sequence of tenses (which backshifts past utterances to past
+perfect), Esperanto preserves the tense of the original direct thought. When
+the subordinate event is simultaneous with the act of speaking, the present
+tense `-as` is retained. Across the corpus, *diris, ke [subjekto] estas* (126 lines)
+occurs twice as often as backshifted *diris, ke [subjekto] estis* (62 lines):
+
+- *ĉiuj diris, ke li estas ĉarma viro* — `pg-27915:630`
+- *Ĉu li diris, ke li estas mia frato?* — `pg-65958:3570`
+
+### 6.16 Inherent root transitivity: *-iĝ-* vs *-ig-*
+
+Roots possess an inherent grammatical transitivity that dictates affixation.
+Transitive roots (*komenci*, *rompi*, *fermi*) require *-iĝ-* to form the
+intransitive middle or unaccusative voice (*komenciĝis* on 3,652 lines).
+Conversely, intransitive roots (*fali*, *dormi*, *bruli*) require causative
+*-ig-* to govern a direct object:
+
+- *ĉiuj trovis la proprajn lokojn, kaj la ludo komenciĝis* — `pg-17482:2336`
+- *la ploradon, ĝis ŝi faligis kelkajn hektolitrojn da larmegoj* — `pg-17482:429`
+
+### 6.17 Linking vowel *-o-* in nominal compounds
+
+Rule 11 allows an optional linking vowel between compounded roots. Corpus
+authors retain the linking vowel `-o-` primarily to soften harsh consonant
+clusters, while omitting it where pronunciation flows smoothly. Both forms
+coexist in standard prose:
+
+- *Jes, la lampo estas ja lumanta sur la skribotablo* — `pg-19803:708` (skribotablo: 101 lines)
+- *En mia skribtablo estas kvar tirkestoj* — `pg-20006:693` (skribtablo: 71 lines)
+
+### 6.18 Note on evidence
 
 Frequencies and counts above come from `tools/find_examples.py --compare` and
 automated regex searches over the Esperanto-language literary and historical
@@ -343,4 +385,6 @@ and multilingual tables are excluded to prevent skewed counts.
 6.3 Compound tenses · 6.4 Demonstrative *ĉi* · 6.5 Inversion in speech tags ·
 6.6 Passive participles -ata/-ita · 6.7 Adverbial accusative · 6.8 Directional accusative ·
 6.9 Correlative pairs · 6.10 Qualitative vs demonstrative · 6.11 Distributive *po* ·
-6.12 Adverbial participles · 6.13 Indefinite *je* · 6.14 Evidence notes)
+6.12 Adverbial participles · 6.13 Indefinite *je* · 6.14 Prepositions before infinitives ·
+6.15 Tense in indirect speech · 6.16 Root transitivity · 6.17 Compound linking vowel ·
+6.18 Evidence notes)
