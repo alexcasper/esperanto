@@ -40,3 +40,12 @@ RAW/lf-arkivo/*
 
 # Vikipedio batch blobs (esp-4g8; per-article digests+URLs in RAW/PROVENANCE-eowiki-20261001.tsv)
 RAW/wp-*.txt
+
+# local secrets (never commit)
+.env
+
+# bd transient lock + sibling pane worktrees (separate checkouts, never committed)
+.beads.gate.lock
+/esp_claude/
+/esp_gemini/
+/esp_glm/
