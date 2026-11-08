@@ -1,0 +1,1000 @@
+{"id": "synth-0001", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Bonvolu sendi la protokolon morgaŭ.", "type": "request"}
+{"id": "synth-0002", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la teston je la tria horo.", "type": "ack"}
+{"id": "synth-0003", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la dosieron vendrede.", "type": "ack"}
+{"id": "synth-0004", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas provi la teston post la tagmanĝo?", "type": "request"}
+{"id": "synth-0005", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Gama helpos al vi post la tagmanĝo.", "type": "name"}
+{"id": "synth-0006", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu sendi la respondojn vespere. / Alfa: Jes, mi faros ĝin. Ĝi estos preta vespere. / Epsilono: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu sendi la respondojn vespere."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta vespere."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0007", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Epsilono helpos al vi vendrede.", "type": "name"}
+{"id": "synth-0008", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la demandojn antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0009", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la mesaĝon vespere.", "type": "status"}
+{"id": "synth-0010", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu ĝisdatigi la demandojn vespere.", "type": "request"}
+{"id": "synth-0011", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas sendi la protokolon je la tria horo?", "type": "request"}
+{"id": "synth-0012", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas unu membrojn, ne tridek.", "type": "number"}
+{"id": "synth-0013", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Alfa helpos al vi matene.", "type": "name"}
+{"id": "synth-0014", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas fini la teston vespere?", "type": "request"}
+{"id": "synth-0015", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la respondojn antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0016", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la listo. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0017", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Tri procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0018", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos vespere.", "type": "status"}
+{"id": "synth-0019", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Bonvolu skribi la liston morgaŭ.", "type": "request"}
+{"id": "synth-0020", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la planon post la tagmanĝo.", "type": "status"}
+{"id": "synth-0021", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ok procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0022", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu la dosieron al Beto, mi petas.", "type": "name"}
+{"id": "synth-0023", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi kvin mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0024", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la demandoj. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0025", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas fini la protokolon baldaŭ?", "type": "request"}
+{"id": "synth-0026", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la mesaĝon antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0027", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La teamo havas ses membrojn, ne cent.", "type": "number"}
+{"id": "synth-0028", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la plano. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0029", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Bonvolu aldoni la liston nun.", "type": "request"}
+{"id": "synth-0030", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Ne problemo. Mi helpos al vi nun.", "type": "ack"}
+{"id": "synth-0031", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "La teamo havas du membrojn, ne sep.", "type": "number"}
+{"id": "synth-0032", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la mesaĝo estos preta hodiaŭ.", "type": "ack"}
+{"id": "synth-0033", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas kontroli la respondojn je la tria horo?", "type": "request"}
+{"id": "synth-0034", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Bonvolu fini la demandojn vespere.", "type": "request"}
+{"id": "synth-0035", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la protokolon tuj.", "type": "ack"}
+{"id": "synth-0036", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La teamo havas ok membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0037", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la raporto estos preta hodiaŭ.", "type": "ack"}
+{"id": "synth-0038", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la respondoj estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0039", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ni bezonas kvindek dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0040", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Zeto helpos al vi baldaŭ.", "type": "name"}
+{"id": "synth-0041", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la teston baldaŭ.", "type": "ack"}
+{"id": "synth-0042", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu aldoni la demandojn matene.", "type": "request"}
+{"id": "synth-0043", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu provi la demandojn lunde.", "type": "request"}
+{"id": "synth-0044", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la demandojn antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0045", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu fini la protokolon hodiaŭ.", "type": "request"}
+{"id": "synth-0046", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Saluton, Gama! Dankon pro via rapida respondo.", "type": "name"}
+{"id": "synth-0047", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu kontroli la raporton je la tria horo. / Delta: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Zeto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu kontroli la raporton je la tria horo."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0048", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu fini la protokolon morgaŭ. / Zeto: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Beto: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu fini la protokolon morgaŭ."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0049", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas dudek membrojn, ne sep.", "type": "number"}
+{"id": "synth-0050", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la raporton baldaŭ.", "type": "request"}
+{"id": "synth-0051", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kontroli la kopion lunde.", "type": "request"}
+{"id": "synth-0052", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu forigi la demandojn tuj. / Delta: Jes, mi faros ĝin. Ĝi estos preta tuj. / Epsilono: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu forigi la demandojn tuj."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta tuj."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0053", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas naŭ membrojn, ne ses.", "type": "number"}
+{"id": "synth-0054", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "La laboro daŭros naŭ horojn.", "type": "number"}
+{"id": "synth-0055", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la demandojn baldaŭ.", "type": "ack"}
+{"id": "synth-0056", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la demandojn je la tria horo.", "type": "ack"}
+{"id": "synth-0057", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la kopio. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0058", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Sendu la raporton al Delta, mi petas.", "type": "name"}
+{"id": "synth-0059", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la protokolon antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0060", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu fini la nomon lunde.", "type": "request"}
+{"id": "synth-0061", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kontroli la demandojn hodiaŭ.", "type": "request"}
+{"id": "synth-0062", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu kontroli la raporton morgaŭ.", "type": "request"}
+{"id": "synth-0063", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu ĝisdatigi la raporton tuj.", "type": "request"}
+{"id": "synth-0064", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la mesaĝon je la tria horo.", "type": "status"}
+{"id": "synth-0065", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas fini la raporton tuj?", "type": "request"}
+{"id": "synth-0066", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La teamo havas naŭ membrojn, ne kvindek.", "type": "number"}
+{"id": "synth-0067", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la liston vespere.", "type": "ack"}
+{"id": "synth-0068", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la demandojn vespere.", "type": "ack"}
+{"id": "synth-0069", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la kopio. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0070", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la liston nun.", "type": "ack"}
+{"id": "synth-0071", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La teamo havas dek membrojn, ne unu.", "type": "number"}
+{"id": "synth-0072", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Bonvolu kopii la adreson baldaŭ.", "type": "request"}
+{"id": "synth-0073", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Bonvolu skribi la respondojn lunde.", "type": "request"}
+{"id": "synth-0074", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La testo estas finita nun. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0075", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Alfa helpos al vi je la tria horo.", "type": "name"}
+{"id": "synth-0076", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi ses mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0077", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas kontroli la respondojn tuj?", "type": "request"}
+{"id": "synth-0078", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la kopion matene.", "type": "ack"}
+{"id": "synth-0079", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu la teston al Epsilono, mi petas.", "type": "name"}
+{"id": "synth-0080", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Bonvolu kontroli la planon lunde.", "type": "request"}
+{"id": "synth-0081", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la teston je la tria horo.", "type": "ack"}
+{"id": "synth-0082", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Bonvolu aldoni la planon hodiaŭ.", "type": "request"}
+{"id": "synth-0083", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Sendu la liston al Delta, mi petas.", "type": "name"}
+{"id": "synth-0084", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas skribi la kopion nun?", "type": "request"}
+{"id": "synth-0085", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la protokolo estos preta nun.", "type": "ack"}
+{"id": "synth-0086", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la adreson hodiaŭ.", "type": "ack"}
+{"id": "synth-0087", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Gama helpos al vi vendrede.", "type": "name"}
+{"id": "synth-0088", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu skribi la kopion antaŭ la sesa horo. / Beto: Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo. / Epsilono: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu skribi la kopion antaŭ la sesa horo."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0089", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi ses mesaĝojn vespere.", "type": "number"}
+{"id": "synth-0090", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la protokolo. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0091", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi tridek mesaĝojn matene.", "type": "number"}
+{"id": "synth-0092", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi kvin mesaĝojn nun.", "type": "number"}
+{"id": "synth-0093", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la demandojn lunde.", "type": "status"}
+{"id": "synth-0094", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la plano estos preta nun.", "type": "ack"}
+{"id": "synth-0095", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la raporton vendrede?", "type": "request"}
+{"id": "synth-0096", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Beto, ĉu vi havas tempon por la tasko?", "type": "name"}
+{"id": "synth-0097", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la liston baldaŭ.", "type": "status"}
+{"id": "synth-0098", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la raporton vendrede.", "type": "ack"}
+{"id": "synth-0099", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu sendi la mesaĝon post la tagmanĝo. / Gama: Jes, mi faros ĝin. Ĝi estos preta post la tagmanĝo. / Delta: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu sendi la mesaĝon post la tagmanĝo."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta post la tagmanĝo."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0100", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu legi la dosieron hodiaŭ.", "type": "request"}
+{"id": "synth-0101", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Sendu la raporton al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0102", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la testo. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0103", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Bonvolu legi la planon matene.", "type": "request"}
+{"id": "synth-0104", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "La dosiero estas granda.", "type": "status"}
+{"id": "synth-0105", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Epsilono helpos al vi hodiaŭ.", "type": "name"}
+{"id": "synth-0106", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Zeto helpos al vi matene.", "type": "name"}
+{"id": "synth-0107", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas skribi la dosieron lunde?", "type": "request"}
+{"id": "synth-0108", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la kopion vespere.", "type": "ack"}
+{"id": "synth-0109", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Bonvolu forigi la teston vendrede.", "type": "request"}
+{"id": "synth-0110", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Bonvolu kontroli la teston antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0111", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La kodo havas eraron. Mi korektis ĝin vendrede.", "type": "status"}
+{"id": "synth-0112", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la kopio. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0113", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu la kopion al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0114", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la raporton tuj.", "type": "ack"}
+{"id": "synth-0115", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La teamo estas forta.", "type": "status"}
+{"id": "synth-0116", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas sendi la protokolon nun?", "type": "request"}
+{"id": "synth-0117", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kopii la kopion vespere.", "type": "request"}
+{"id": "synth-0118", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la demandojn tuj.", "type": "ack"}
+{"id": "synth-0119", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas aldoni la demandojn nun?", "type": "request"}
+{"id": "synth-0120", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi kvin mesaĝojn hodiaŭ.", "type": "number"}
+{"id": "synth-0121", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la kopion post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0122", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu aldoni la demandojn hodiaŭ.", "type": "request"}
+{"id": "synth-0123", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Bone, mi komprenas. Mi komencos hodiaŭ.", "type": "ack"}
+{"id": "synth-0124", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la nomo. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0125", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas tri membrojn, ne cent.", "type": "number"}
+{"id": "synth-0126", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la kopio estos preta vespere.", "type": "ack"}
+{"id": "synth-0127", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas fini la mesaĝon antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0128", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0129", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0130", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la adreson morgaŭ.", "type": "ack"}
+{"id": "synth-0131", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la adreso. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0132", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi naŭ mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0133", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas ĝisdatigi la planon post la tagmanĝo?", "type": "request"}
+{"id": "synth-0134", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la mesaĝon post la tagmanĝo.", "type": "status"}
+{"id": "synth-0135", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Naŭ procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0136", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la protokolo. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0137", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la respondoj estos preta post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0138", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu aldoni la teston matene.", "type": "request"}
+{"id": "synth-0139", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Sendu la kopion al Delta, mi petas.", "type": "name"}
+{"id": "synth-0140", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas sendi la planon nun?", "type": "request"}
+{"id": "synth-0141", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu forigi la raporton nun.", "type": "request"}
+{"id": "synth-0142", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la demandojn matene.", "type": "status"}
+{"id": "synth-0143", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu kopii la planon morgaŭ. / Alfa: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Epsilono: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu kopii la planon morgaŭ."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0144", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la respondoj estos preta vendrede.", "type": "ack"}
+{"id": "synth-0145", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas kontroli la liston baldaŭ?", "type": "request"}
+{"id": "synth-0146", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu forigi la planon hodiaŭ.", "type": "request"}
+{"id": "synth-0147", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas forigi la dosieron nun?", "type": "request"}
+{"id": "synth-0148", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la raporton lunde.", "type": "ack"}
+{"id": "synth-0149", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la kopion vespere.", "type": "status"}
+{"id": "synth-0150", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu kopii la mesaĝon nun. / Beto: Jes, mi faros ĝin. Ĝi estos preta nun. / Epsilono: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu kopii la mesaĝon nun."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0151", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu skribi la demandojn nun. / Zeto: Jes, mi faros ĝin. Ĝi estos preta nun. / Epsilono: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu skribi la demandojn nun."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0152", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi tri mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0153", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi petas, ke vi finu la mesaĝon.", "type": "request"}
+{"id": "synth-0154", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas legi la adreson je la tria horo?", "type": "request"}
+{"id": "synth-0155", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la listo. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0156", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu Zeto estas nun libera? Mi bezonas helpon.", "type": "name"}
+{"id": "synth-0157", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Zeto helpos al vi tuj.", "type": "name"}
+{"id": "synth-0158", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu aldoni la teston hodiaŭ.", "type": "request"}
+{"id": "synth-0159", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas ĝisdatigi la demandojn baldaŭ?", "type": "request"}
+{"id": "synth-0160", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la kopio estos preta tuj.", "type": "ack"}
+{"id": "synth-0161", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas legi la raporton morgaŭ?", "type": "request"}
+{"id": "synth-0162", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la liston matene.", "type": "status"}
+{"id": "synth-0163", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La teamo havas dudek membrojn, ne kvin.", "type": "number"}
+{"id": "synth-0164", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la respondojn nun?", "type": "request"}
+{"id": "synth-0165", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi petas, ke vi kontrolu la dosieron.", "type": "request"}
+{"id": "synth-0166", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi kvin mesaĝojn je la tria horo.", "type": "number"}
+{"id": "synth-0167", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la nomo. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0168", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la mesaĝon vendrede.", "type": "status"}
+{"id": "synth-0169", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas fini la nomon baldaŭ?", "type": "request"}
+{"id": "synth-0170", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu legi la liston nun.", "type": "request"}
+{"id": "synth-0171", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la planon je la tria horo.", "type": "ack"}
+{"id": "synth-0172", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la respondojn nun.", "type": "status"}
+{"id": "synth-0173", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos morgaŭ.", "type": "status"}
+{"id": "synth-0174", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ĉio estas preta.", "type": "status"}
+{"id": "synth-0175", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi unu mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0176", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas dudek membrojn, ne dek.", "type": "number"}
+{"id": "synth-0177", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas forigi la nomon vespere?", "type": "request"}
+{"id": "synth-0178", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi naŭ mesaĝojn nun.", "type": "number"}
+{"id": "synth-0179", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La teamo havas sep membrojn, ne du.", "type": "number"}
+{"id": "synth-0180", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la respondoj. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0181", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la adreso estos preta hodiaŭ.", "type": "ack"}
+{"id": "synth-0182", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas fini la planon post la tagmanĝo?", "type": "request"}
+{"id": "synth-0183", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu la demandojn al Beto, mi petas.", "type": "name"}
+{"id": "synth-0184", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kontroli la demandojn matene.", "type": "request"}
+{"id": "synth-0185", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La teamo havas kvin membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0186", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas skribi la liston je la tria horo?", "type": "request"}
+{"id": "synth-0187", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mia nomo estas Zeto. Mi estas nova agento.", "type": "name"}
+{"id": "synth-0188", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La testo estas finita antaŭ la fino de la tago. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0189", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la adreso. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0190", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi dudek mesaĝojn morgaŭ.", "type": "number"}
+{"id": "synth-0191", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu skribi la adreson tuj.", "type": "request"}
+{"id": "synth-0192", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la raporton vespere.", "type": "request"}
+{"id": "synth-0193", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la listo estos preta tuj.", "type": "ack"}
+{"id": "synth-0194", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu sendi la planon nun. / Delta: Jes, mi faros ĝin. Ĝi estos preta nun. / Zeto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu sendi la planon nun."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0195", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la nomon vendrede.", "type": "status"}
+{"id": "synth-0196", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kopii la adreson antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0197", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la protokolon matene.", "type": "ack"}
+{"id": "synth-0198", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas kontroli la teston antaŭ la fino de la tago?", "type": "request"}
+{"id": "synth-0199", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas legi la teston morgaŭ?", "type": "request"}
+{"id": "synth-0200", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas forigi la kopion antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0201", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la adreson nun.", "type": "ack"}
+{"id": "synth-0202", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la respondojn vendrede.", "type": "ack"}
+{"id": "synth-0203", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la raporto. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0204", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Sendu la teston al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0205", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas aldoni la dosieron matene?", "type": "request"}
+{"id": "synth-0206", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas ses membrojn, ne ok.", "type": "number"}
+{"id": "synth-0207", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Sendu la adreson al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0208", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas provi la liston vendrede?", "type": "request"}
+{"id": "synth-0209", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la nomon hodiaŭ.", "type": "ack"}
+{"id": "synth-0210", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la adreso. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0211", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la listo estos preta je la tria horo.", "type": "ack"}
+{"id": "synth-0212", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas legi la kopion vendrede?", "type": "request"}
+{"id": "synth-0213", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu kontroli la dosieron post la tagmanĝo.", "type": "request"}
+{"id": "synth-0214", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la adreson vespere.", "type": "status"}
+{"id": "synth-0215", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu legi la nomon hodiaŭ. / Gama: Jes, mi faros ĝin. Ĝi estos preta hodiaŭ. / Beto: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu legi la nomon hodiaŭ."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta hodiaŭ."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0216", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu legi la teston antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0217", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Saluton, Beto. Kiel vi fartas?", "type": "name"}
+{"id": "synth-0218", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mia nomo estas Epsilono. Mi estas nova agento.", "type": "name"}
+{"id": "synth-0219", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi dek mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0220", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la respondojn nun.", "type": "ack"}
+{"id": "synth-0221", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la planon nun.", "type": "ack"}
+{"id": "synth-0222", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mia nomo estas Beto. Mi estas nova agento.", "type": "name"}
+{"id": "synth-0223", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la planon lunde.", "type": "ack"}
+{"id": "synth-0224", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Bonvolu fini la mesaĝon baldaŭ.", "type": "request"}
+{"id": "synth-0225", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu legi la demandojn antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0226", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas aldoni la protokolon morgaŭ?", "type": "request"}
+{"id": "synth-0227", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi tri mesaĝojn tuj.", "type": "number"}
+{"id": "synth-0228", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu la mesaĝon al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0229", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu aldoni la liston je la tria horo. / Zeto: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Alfa: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu aldoni la liston je la tria horo."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0230", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la testo estos preta vespere.", "type": "ack"}
+{"id": "synth-0231", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la listo estos preta matene.", "type": "ack"}
+{"id": "synth-0232", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La teamo havas sep membrojn, ne kvin.", "type": "number"}
+{"id": "synth-0233", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la testo estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0234", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la nomon antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0235", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la planon nun?", "type": "request"}
+{"id": "synth-0236", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la dosiero. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0237", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Saluton, Gama. Kiel vi fartas?", "type": "name"}
+{"id": "synth-0238", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la dosieron matene.", "type": "ack"}
+{"id": "synth-0239", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la protokolon post la tagmanĝo.", "type": "status"}
+{"id": "synth-0240", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la kopio. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0241", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas sendi la planon lunde?", "type": "request"}
+{"id": "synth-0242", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu provi la liston je la tria horo.", "type": "request"}
+{"id": "synth-0243", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas skribi la nomon vendrede?", "type": "request"}
+{"id": "synth-0244", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu kontroli la planon vendrede. / Beto: Jes, mi faros ĝin. Ĝi estos preta vendrede. / Delta: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu kontroli la planon vendrede."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta vendrede."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0245", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Kvindek procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0246", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la dosieron antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0247", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi ok mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0248", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la kopio estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0249", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la protokolon je la tria horo.", "type": "status"}
+{"id": "synth-0250", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu kopii la respondojn matene.", "type": "request"}
+{"id": "synth-0251", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas sendi la raporton vendrede?", "type": "request"}
+{"id": "synth-0252", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la demandoj. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0253", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi sep mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0254", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu kopii la adreson antaŭ la fino de la tago. / Delta: Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago. / Zeto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu kopii la adreson antaŭ la fino de la tago."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0255", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi dek mesaĝojn nun.", "type": "number"}
+{"id": "synth-0256", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la teston vendrede.", "type": "status"}
+{"id": "synth-0257", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas fini la kopion matene?", "type": "request"}
+{"id": "synth-0258", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Saluton, Beto! Dankon pro via rapida respondo.", "type": "name"}
+{"id": "synth-0259", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas kvindek membrojn, ne ok.", "type": "number"}
+{"id": "synth-0260", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas fini la dosieron hodiaŭ?", "type": "request"}
+{"id": "synth-0261", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi kvin mesaĝojn vespere.", "type": "number"}
+{"id": "synth-0262", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Bonvolu legi la planon antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0263", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu kopii la dosieron tuj.", "type": "request"}
+{"id": "synth-0264", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La laboro daŭros ses horojn.", "type": "number"}
+{"id": "synth-0265", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Beto helpos al vi je la tria horo.", "type": "name"}
+{"id": "synth-0266", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la dosiero. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0267", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Kvar procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0268", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La teamo havas kvar membrojn, ne sep.", "type": "number"}
+{"id": "synth-0269", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas ses membrojn, ne sep.", "type": "number"}
+{"id": "synth-0270", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu aldoni la mesaĝon baldaŭ.", "type": "request"}
+{"id": "synth-0271", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la raporton vendrede.", "type": "status"}
+{"id": "synth-0272", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas aldoni la dosieron nun?", "type": "request"}
+{"id": "synth-0273", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0274", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la mesaĝon hodiaŭ.", "type": "ack"}
+{"id": "synth-0275", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la protokolo estos preta tuj.", "type": "ack"}
+{"id": "synth-0276", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Zeto, ĉu vi havas tempon por la tasko?", "type": "name"}
+{"id": "synth-0277", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Sendu la raporton al Epsilono, mi petas.", "type": "name"}
+{"id": "synth-0278", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas fini la mesaĝon post la tagmanĝo?", "type": "request"}
+{"id": "synth-0279", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas dek membrojn, ne kvindek.", "type": "number"}
+{"id": "synth-0280", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la kopion lunde.", "type": "ack"}
+{"id": "synth-0281", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Sendu la planon al Gama, mi petas.", "type": "name"}
+{"id": "synth-0282", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu sendi la dosieron antaŭ la fino de la tago. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago. / Delta: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu sendi la dosieron antaŭ la fino de la tago."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0283", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la respondoj estos preta lunde.", "type": "ack"}
+{"id": "synth-0284", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la nomo estos preta post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0285", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi petas, ke vi forigu la planon.", "type": "request"}
+{"id": "synth-0286", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la kopio. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0287", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi dek mesaĝojn je la tria horo.", "type": "number"}
+{"id": "synth-0288", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la liston matene.", "type": "ack"}
+{"id": "synth-0289", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la adreson matene.", "type": "status"}
+{"id": "synth-0290", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la mesaĝo estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0291", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas ses membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0292", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La teamo havas du membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0293", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la dosiero. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0294", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ni bezonas unu dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0295", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas skribi la mesaĝon antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0296", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la nomon baldaŭ.", "type": "ack"}
+{"id": "synth-0297", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la plano. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0298", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0299", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la demandojn antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0300", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu aldoni la mesaĝon antaŭ la sesa horo. / Gama: Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo. / Epsilono: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu aldoni la mesaĝon antaŭ la sesa horo."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0301", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas ĝisdatigi la mesaĝon tuj?", "type": "request"}
+{"id": "synth-0302", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La kodo havas eraron. Mi korektis ĝin hodiaŭ.", "type": "status"}
+{"id": "synth-0303", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la demandojn vendrede.", "type": "status"}
+{"id": "synth-0304", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu sendi la liston matene.", "type": "request"}
+{"id": "synth-0305", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu ĝisdatigi la dosieron baldaŭ.", "type": "request"}
+{"id": "synth-0306", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la respondoj estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0307", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la testo. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0308", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu ĝisdatigi la demandojn lunde. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta lunde. / Zeto: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu ĝisdatigi la demandojn lunde."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta lunde."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0309", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas kvindek membrojn, ne sep.", "type": "number"}
+{"id": "synth-0310", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu skribi la demandojn tuj. / Alfa: Jes, mi faros ĝin. Ĝi estos preta tuj. / Beto: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu skribi la demandojn tuj."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta tuj."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0311", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi naŭ mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0312", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas kopii la raporton je la tria horo?", "type": "request"}
+{"id": "synth-0313", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas tridek membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0314", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la respondojn vespere.", "type": "status"}
+{"id": "synth-0315", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la adreson post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0316", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la adreson lunde.", "type": "ack"}
+{"id": "synth-0317", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu fini la planon je la tria horo. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Beto: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu fini la planon je la tria horo."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0318", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la protokolo. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0319", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la mesaĝon hieraŭ.", "type": "ack"}
+{"id": "synth-0320", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu kopii la dosieron hodiaŭ.", "type": "request"}
+{"id": "synth-0321", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu la teston al Delta, mi petas.", "type": "name"}
+{"id": "synth-0322", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ĉu Alfa estas nun libera? Mi bezonas helpon.", "type": "name"}
+{"id": "synth-0323", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Alfa helpos al vi vendrede.", "type": "name"}
+{"id": "synth-0324", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos lunde.", "type": "status"}
+{"id": "synth-0325", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kontroli la nomon antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0326", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu legi la kopion je la tria horo.", "type": "request"}
+{"id": "synth-0327", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La testo estis bona.", "type": "status"}
+{"id": "synth-0328", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la demandojn post la tagmanĝo.", "type": "status"}
+{"id": "synth-0329", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La teamo havas kvin membrojn, ne tridek.", "type": "number"}
+{"id": "synth-0330", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la mesaĝon lunde.", "type": "status"}
+{"id": "synth-0331", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas tridek membrojn, ne tri.", "type": "number"}
+{"id": "synth-0332", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la protokolo. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0333", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas legi la protokolon tuj?", "type": "request"}
+{"id": "synth-0334", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la testo. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0335", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la teston post la tagmanĝo.", "type": "status"}
+{"id": "synth-0336", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas kontroli la demandojn je la tria horo?", "type": "request"}
+{"id": "synth-0337", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la protokolo. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0338", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi cent mesaĝojn vendrede.", "type": "number"}
+{"id": "synth-0339", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la dosiero estos preta matene.", "type": "ack"}
+{"id": "synth-0340", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu kopii la kopion je la tria horo. / Zeto: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Delta: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu kopii la kopion je la tria horo."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0341", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Bonvolu skribi la nomon hodiaŭ.", "type": "request"}
+{"id": "synth-0342", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu aldoni la demandojn antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0343", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos vendrede.", "type": "status"}
+{"id": "synth-0344", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La teamo havas tridek membrojn, ne sep.", "type": "number"}
+{"id": "synth-0345", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi petas, ke vi finu la raporton.", "type": "request"}
+{"id": "synth-0346", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la dosieron vendrede.", "type": "ack"}
+{"id": "synth-0347", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Delta helpos al vi vendrede.", "type": "name"}
+{"id": "synth-0348", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la dosiero. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0349", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mia amiko Delta helpos al vi antaŭ la fino de la tago.", "type": "name"}
+{"id": "synth-0350", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la dosieron nun.", "type": "ack"}
+{"id": "synth-0351", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu aldoni la dosieron vespere.", "type": "request"}
+{"id": "synth-0352", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mia amiko Delta helpos al vi tuj.", "type": "name"}
+{"id": "synth-0353", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kopii la nomon tuj.", "type": "request"}
+{"id": "synth-0354", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la adreso. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0355", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu sendi la liston morgaŭ. / Gama: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Alfa: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu sendi la liston morgaŭ."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0356", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi tri mesaĝojn hodiaŭ.", "type": "number"}
+{"id": "synth-0357", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi kvin mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0358", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu fini la kopion je la tria horo.", "type": "request"}
+{"id": "synth-0359", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu la respondojn al Gama, mi petas.", "type": "name"}
+{"id": "synth-0360", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la adreso estos preta tuj.", "type": "ack"}
+{"id": "synth-0361", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la planon matene.", "type": "ack"}
+{"id": "synth-0362", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La testo estas finita hodiaŭ. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0363", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Sendu la nomon al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0364", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la planon vespere.", "type": "ack"}
+{"id": "synth-0365", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi kvin mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0366", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la dosieron morgaŭ.", "type": "ack"}
+{"id": "synth-0367", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Nombro de eraroj: unu.", "type": "number"}
+{"id": "synth-0368", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la demandoj. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0369", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la nomo estos preta tuj.", "type": "ack"}
+{"id": "synth-0370", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la protokolo. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0371", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kontroli la raporton baldaŭ.", "type": "request"}
+{"id": "synth-0372", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kopii la planon matene?", "type": "request"}
+{"id": "synth-0373", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la adreson je la tria horo.", "type": "status"}
+{"id": "synth-0374", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La testo estas finita hieraŭ. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0375", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi ok mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0376", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la testo estos preta lunde.", "type": "ack"}
+{"id": "synth-0377", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la raporto estos preta matene.", "type": "ack"}
+{"id": "synth-0378", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu aldoni la kopion nun. / Beto: Jes, mi faros ĝin. Ĝi estos preta nun. / Alfa: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu aldoni la kopion nun."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0379", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la kopion hieraŭ.", "type": "status"}
+{"id": "synth-0380", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la mesaĝon antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0381", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la planon vespere.", "type": "status"}
+{"id": "synth-0382", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kontroli la dosieron lunde?", "type": "request"}
+{"id": "synth-0383", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la respondoj. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0384", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la listo. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0385", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas dudek membrojn, ne du.", "type": "number"}
+{"id": "synth-0386", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu la nomon al Beto, mi petas.", "type": "name"}
+{"id": "synth-0387", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu skribi la liston baldaŭ. / Alfa: Jes, mi faros ĝin. Ĝi estos preta baldaŭ. / Delta: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu skribi la liston baldaŭ."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta baldaŭ."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0388", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu ĝisdatigi la respondojn matene. / Delta: Jes, mi faros ĝin. Ĝi estos preta matene. / Beto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu ĝisdatigi la respondojn matene."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta matene."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0389", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la mesaĝon post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0390", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la plano. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0391", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas dek membrojn, ne dudek.", "type": "number"}
+{"id": "synth-0392", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Sendu la dosieron al Delta, mi petas.", "type": "name"}
+{"id": "synth-0393", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la adreso. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0394", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la respondojn nun.", "type": "ack"}
+{"id": "synth-0395", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi petas, ke vi legu la dosieron.", "type": "request"}
+{"id": "synth-0396", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la planon baldaŭ.", "type": "ack"}
+{"id": "synth-0397", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la raporto estos preta nun.", "type": "ack"}
+{"id": "synth-0398", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La kodo havas eraron. Mi korektis ĝin lunde.", "type": "status"}
+{"id": "synth-0399", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la mesaĝo estos preta vespere.", "type": "ack"}
+{"id": "synth-0400", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la dosiero. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0401", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la teston lunde.", "type": "ack"}
+{"id": "synth-0402", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mia amiko Beto helpos al vi baldaŭ.", "type": "name"}
+{"id": "synth-0403", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas fini la mesaĝon tuj?", "type": "request"}
+{"id": "synth-0404", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la nomon antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0405", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la adreson vespere.", "type": "ack"}
+{"id": "synth-0406", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu provi la demandojn vendrede.", "type": "request"}
+{"id": "synth-0407", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas forigi la mesaĝon nun?", "type": "request"}
+{"id": "synth-0408", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la protokolon antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0409", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la adreso. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0410", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Nombro de eraroj: kvar.", "type": "number"}
+{"id": "synth-0411", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas skribi la raporton lunde?", "type": "request"}
+{"id": "synth-0412", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas kopii la raporton hodiaŭ?", "type": "request"}
+{"id": "synth-0413", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas naŭ membrojn, ne ok.", "type": "number"}
+{"id": "synth-0414", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi kvindek mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0415", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Nombro de eraroj: naŭ.", "type": "number"}
+{"id": "synth-0416", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu kontroli la respondojn vendrede. / Gama: Jes, mi faros ĝin. Ĝi estos preta vendrede. / Delta: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu kontroli la respondojn vendrede."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta vendrede."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0417", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la adreson post la tagmanĝo.", "type": "status"}
+{"id": "synth-0418", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu skribi la protokolon post la tagmanĝo.", "type": "request"}
+{"id": "synth-0419", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la teston baldaŭ.", "type": "ack"}
+{"id": "synth-0420", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la raporto. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0421", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la teston nun.", "type": "status"}
+{"id": "synth-0422", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "La teamo havas tri membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0423", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la testo estos preta hodiaŭ.", "type": "ack"}
+{"id": "synth-0424", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Sendu la protokolon al Gama, mi petas.", "type": "name"}
+{"id": "synth-0425", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la adreson baldaŭ.", "type": "ack"}
+{"id": "synth-0426", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la dosieron je la tria horo.", "type": "status"}
+{"id": "synth-0427", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "La laboro daŭros cent horojn.", "type": "number"}
+{"id": "synth-0428", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la raporton lunde.", "type": "ack"}
+{"id": "synth-0429", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos nun.", "type": "status"}
+{"id": "synth-0430", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Nombro de eraroj: ok.", "type": "number"}
+{"id": "synth-0431", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mia nomo estas Alfa. Mi estas nova agento.", "type": "name"}
+{"id": "synth-0432", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Bonvolu provi la planon nun.", "type": "request"}
+{"id": "synth-0433", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la dosiero. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0434", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu Beto estas nun libera? Mi bezonas helpon.", "type": "name"}
+{"id": "synth-0435", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Sendu la adreson al Epsilono, mi petas.", "type": "name"}
+{"id": "synth-0436", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Sendu la demandojn al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0437", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la respondoj. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0438", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la demandojn baldaŭ.", "type": "ack"}
+{"id": "synth-0439", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la dosieron post la tagmanĝo.", "type": "status"}
+{"id": "synth-0440", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas fini la nomon vespere?", "type": "request"}
+{"id": "synth-0441", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la adreso. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0442", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la protokolo estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0443", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la kopio. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0444", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu aldoni la mesaĝon je la tria horo.", "type": "request"}
+{"id": "synth-0445", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la demandoj. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0446", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Sendu la teston al Beto, mi petas.", "type": "name"}
+{"id": "synth-0447", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Zeto helpos al vi antaŭ la fino de la tago.", "type": "name"}
+{"id": "synth-0448", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la nomo. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0449", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la liston post la tagmanĝo.", "type": "status"}
+{"id": "synth-0450", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu forigi la teston nun.", "type": "request"}
+{"id": "synth-0451", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Alfa helpos al vi vespere.", "type": "name"}
+{"id": "synth-0452", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la dosieron tuj.", "type": "status"}
+{"id": "synth-0453", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi kvar mesaĝojn tuj.", "type": "number"}
+{"id": "synth-0454", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu la mesaĝon al Delta, mi petas.", "type": "name"}
+{"id": "synth-0455", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Certe. Mi sendos la adreson lunde.", "type": "ack"}
+{"id": "synth-0456", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la nomo. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0457", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la teston lunde.", "type": "status"}
+{"id": "synth-0458", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas sendi la nomon hodiaŭ?", "type": "request"}
+{"id": "synth-0459", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la planon baldaŭ.", "type": "status"}
+{"id": "synth-0460", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la demandoj estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0461", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la raporton antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0462", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la respondojn baldaŭ.", "type": "ack"}
+{"id": "synth-0463", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la testo. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0464", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la testo. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0465", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas provi la liston antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0466", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "La teamo havas unu membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0467", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la kopion baldaŭ.", "type": "status"}
+{"id": "synth-0468", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0469", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la raporto. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0470", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi dek mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0471", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la listo. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0472", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la listo. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0473", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi kvin mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0474", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la testo estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0475", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la adreso. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0476", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu skribi la mesaĝon matene.", "type": "request"}
+{"id": "synth-0477", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la adreso estos preta matene.", "type": "ack"}
+{"id": "synth-0478", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas skribi la adreson hodiaŭ?", "type": "request"}
+{"id": "synth-0479", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Bonvolu legi la respondojn antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0480", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi du mesaĝojn nun.", "type": "number"}
+{"id": "synth-0481", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu aldoni la liston vendrede.", "type": "request"}
+{"id": "synth-0482", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas ĝisdatigi la liston matene?", "type": "request"}
+{"id": "synth-0483", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi cent mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0484", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi du mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0485", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi dek mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0486", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la planon vendrede.", "type": "status"}
+{"id": "synth-0487", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La kodo havas eraron. Mi korektis ĝin matene.", "type": "status"}
+{"id": "synth-0488", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi sep mesaĝojn vespere.", "type": "number"}
+{"id": "synth-0489", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la nomo estos preta matene.", "type": "ack"}
+{"id": "synth-0490", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la teston matene.", "type": "status"}
+{"id": "synth-0491", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu la demandojn al Gama, mi petas.", "type": "name"}
+{"id": "synth-0492", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu ĝisdatigi la teston hodiaŭ.", "type": "request"}
+{"id": "synth-0493", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "La teamo havas du membrojn, ne cent.", "type": "number"}
+{"id": "synth-0494", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la nomon vespere.", "type": "status"}
+{"id": "synth-0495", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Bonvolu legi la dosieron vendrede.", "type": "request"}
+{"id": "synth-0496", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Certe. Mi sendos la liston morgaŭ.", "type": "ack"}
+{"id": "synth-0497", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu kontroli la dosieron antaŭ la fino de la tago. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago. / Alfa: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu kontroli la dosieron antaŭ la fino de la tago."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0498", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la raporton baldaŭ.", "type": "ack"}
+{"id": "synth-0499", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la mesaĝo estos preta baldaŭ.", "type": "ack"}
+{"id": "synth-0500", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas sendi la mesaĝon matene?", "type": "request"}
+{"id": "synth-0501", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu sendi la raporton je la tria horo.", "type": "request"}
+{"id": "synth-0502", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la respondojn vespere.", "type": "ack"}
+{"id": "synth-0503", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la kopion matene.", "type": "status"}
+{"id": "synth-0504", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mia amiko Epsilono helpos al vi baldaŭ.", "type": "name"}
+{"id": "synth-0505", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu kopii la adreson nun. / Delta: Jes, mi faros ĝin. Ĝi estos preta nun. / Zeto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu kopii la adreson nun."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0506", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la mesaĝo estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0507", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas facila.", "type": "status"}
+{"id": "synth-0508", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La teamo havas kvar membrojn, ne dek.", "type": "number"}
+{"id": "synth-0509", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la protokolo. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0510", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu skribi la planon lunde.", "type": "request"}
+{"id": "synth-0511", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu skribi la demandojn nun. / Zeto: Jes, mi faros ĝin. Ĝi estos preta nun. / Beto: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu skribi la demandojn nun."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta nun."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0512", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu skribi la protokolon je la tria horo.", "type": "request"}
+{"id": "synth-0513", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la listo. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0514", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la mesaĝo estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0515", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas naŭ membrojn, ne unu.", "type": "number"}
+{"id": "synth-0516", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi petas, ke vi provu la liston.", "type": "request"}
+{"id": "synth-0517", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas sendi la kopion tuj?", "type": "request"}
+{"id": "synth-0518", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la adreson nun.", "type": "status"}
+{"id": "synth-0519", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Beto helpos al vi nun.", "type": "name"}
+{"id": "synth-0520", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0521", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu kontroli la liston post la tagmanĝo.", "type": "request"}
+{"id": "synth-0522", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Ni bezonas cent dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0523", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la respondoj. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0524", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas skribi la teston vespere?", "type": "request"}
+{"id": "synth-0525", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la listo estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0526", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi dek mesaĝojn tuj.", "type": "number"}
+{"id": "synth-0527", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas dek membrojn, ne ok.", "type": "number"}
+{"id": "synth-0528", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la plano. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0529", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la mesaĝon post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0530", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la adreso. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0531", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas skribi la protokolon je la tria horo?", "type": "request"}
+{"id": "synth-0532", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Zeto helpos al vi nun.", "type": "name"}
+{"id": "synth-0533", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas skribi la teston tuj?", "type": "request"}
+{"id": "synth-0534", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Bonvolu fini la planon je la tria horo.", "type": "request"}
+{"id": "synth-0535", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi cent mesaĝojn matene.", "type": "number"}
+{"id": "synth-0536", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la respondojn lunde?", "type": "request"}
+{"id": "synth-0537", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu la mesaĝon al Epsilono, mi petas.", "type": "name"}
+{"id": "synth-0538", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu provi la raporton antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0539", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la teston tuj.", "type": "status"}
+{"id": "synth-0540", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi dudek mesaĝojn matene.", "type": "number"}
+{"id": "synth-0541", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La kodo havas eraron. Mi korektis ĝin post la tagmanĝo.", "type": "status"}
+{"id": "synth-0542", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0543", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Unu procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0544", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas skribi la teston lunde?", "type": "request"}
+{"id": "synth-0545", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas sendi la demandojn hodiaŭ?", "type": "request"}
+{"id": "synth-0546", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la dosieron hodiaŭ.", "type": "status"}
+{"id": "synth-0547", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la respondojn vendrede.", "type": "ack"}
+{"id": "synth-0548", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la adreson matene.", "type": "ack"}
+{"id": "synth-0549", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Jes, mi faros ĝin morgaŭ.", "type": "ack"}
+{"id": "synth-0550", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas provi la adreson lunde?", "type": "request"}
+{"id": "synth-0551", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la nomo. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0552", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la respondojn hodiaŭ.", "type": "ack"}
+{"id": "synth-0553", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la liston antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0554", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas legi la teston hodiaŭ?", "type": "request"}
+{"id": "synth-0555", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la kopio. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0556", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la respondojn lunde.", "type": "status"}
+{"id": "synth-0557", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Alfa helpos al vi nun.", "type": "name"}
+{"id": "synth-0558", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la dosiero estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0559", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu kopii la dosieron tuj. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta tuj. / Zeto: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu kopii la dosieron tuj."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta tuj."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0560", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas dudek membrojn, ne ok.", "type": "number"}
+{"id": "synth-0561", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas kontroli la teston morgaŭ?", "type": "request"}
+{"id": "synth-0562", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la planon antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0563", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la mesaĝo estos preta lunde.", "type": "ack"}
+{"id": "synth-0564", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la demandojn hieraŭ.", "type": "status"}
+{"id": "synth-0565", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Ni bezonas tridek dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0566", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la respondoj. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0567", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la protokolon hieraŭ.", "type": "ack"}
+{"id": "synth-0568", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas forigi la kopion nun?", "type": "request"}
+{"id": "synth-0569", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la respondoj. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0570", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "La teamo havas dek membrojn, ne tri.", "type": "number"}
+{"id": "synth-0571", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas sendi la kopion antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0572", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la plano. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0573", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la protokolo estos preta lunde.", "type": "ack"}
+{"id": "synth-0574", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la mesaĝon je la tria horo.", "type": "ack"}
+{"id": "synth-0575", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos je la tria horo.", "type": "status"}
+{"id": "synth-0576", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ni bezonas du dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0577", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu sendi la dosieron hodiaŭ. / Delta: Jes, mi faros ĝin. Ĝi estos preta hodiaŭ. / Alfa: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu sendi la dosieron hodiaŭ."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta hodiaŭ."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0578", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la demandojn vendrede.", "type": "ack"}
+{"id": "synth-0579", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu aldoni la protokolon tuj. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta tuj. / Beto: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu aldoni la protokolon tuj."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta tuj."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0580", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la raporto. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0581", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Bonvolu ĝisdatigi la liston baldaŭ.", "type": "request"}
+{"id": "synth-0582", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu la planon al Beto, mi petas.", "type": "name"}
+{"id": "synth-0583", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas aldoni la liston vendrede?", "type": "request"}
+{"id": "synth-0584", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la protokolon vendrede.", "type": "ack"}
+{"id": "synth-0585", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "La kodo havas eraron. Mi korektis ĝin tuj.", "type": "status"}
+{"id": "synth-0586", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas naŭ membrojn, ne tri.", "type": "number"}
+{"id": "synth-0587", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi unu mesaĝojn je la tria horo.", "type": "number"}
+{"id": "synth-0588", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la testo estos preta post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0589", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la listo. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0590", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la mesaĝo estos preta nun.", "type": "ack"}
+{"id": "synth-0591", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu provi la protokolon je la tria horo.", "type": "request"}
+{"id": "synth-0592", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la respondoj estos preta nun.", "type": "ack"}
+{"id": "synth-0593", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu fini la kopion antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0594", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi sep mesaĝojn vendrede.", "type": "number"}
+{"id": "synth-0595", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Certe. Mi sendos la planon vespere.", "type": "ack"}
+{"id": "synth-0596", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la respondoj. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0597", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la teston antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0598", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu aldoni la teston vendrede. / Alfa: Jes, mi faros ĝin. Ĝi estos preta vendrede. / Delta: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu aldoni la teston vendrede."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta vendrede."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0599", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi unu mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0600", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Bonvolu skribi la demandojn lunde.", "type": "request"}
+{"id": "synth-0601", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la kopio. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0602", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la kopion je la tria horo.", "type": "status"}
+{"id": "synth-0603", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi ses mesaĝojn hodiaŭ.", "type": "number"}
+{"id": "synth-0604", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la dosieron baldaŭ.", "type": "status"}
+{"id": "synth-0605", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu provi la mesaĝon morgaŭ.", "type": "request"}
+{"id": "synth-0606", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la plano. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0607", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la dosiero. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0608", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos post la tagmanĝo.", "type": "status"}
+{"id": "synth-0609", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la liston hodiaŭ.", "type": "status"}
+{"id": "synth-0610", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Gama helpos al vi baldaŭ.", "type": "name"}
+{"id": "synth-0611", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la demandojn lunde.", "type": "request"}
+{"id": "synth-0612", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la raporton hodiaŭ.", "type": "ack"}
+{"id": "synth-0613", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kopii la protokolon lunde.", "type": "request"}
+{"id": "synth-0614", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La teamo havas unu membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0615", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi sep mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0616", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi cent mesaĝojn tuj.", "type": "number"}
+{"id": "synth-0617", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Bonvolu forigi la protokolon post la tagmanĝo.", "type": "request"}
+{"id": "synth-0618", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la dosiero. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0619", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Sendu la adreson al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0620", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas forigi la teston post la tagmanĝo?", "type": "request"}
+{"id": "synth-0621", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la mesaĝon lunde.", "type": "ack"}
+{"id": "synth-0622", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu skribi la nomon vespere.", "type": "request"}
+{"id": "synth-0623", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bone, mi komprenas. Mi komencos vendrede.", "type": "ack"}
+{"id": "synth-0624", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la raporto. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0625", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la dosieron lunde.", "type": "status"}
+{"id": "synth-0626", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la kopion antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0627", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la plano. Ĝi estos finita hodiaŭ.", "type": "status"}
+{"id": "synth-0628", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas ok membrojn, ne ok.", "type": "number"}
+{"id": "synth-0629", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la mesaĝon antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0630", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Alfa helpos al vi hodiaŭ.", "type": "name"}
+{"id": "synth-0631", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la respondojn baldaŭ.", "type": "status"}
+{"id": "synth-0632", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la protokolon antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0633", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi tri mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0634", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la protokolon tuj.", "type": "status"}
+{"id": "synth-0635", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la listo estos preta lunde.", "type": "ack"}
+{"id": "synth-0636", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas dudek membrojn, ne ses.", "type": "number"}
+{"id": "synth-0637", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas provi la demandojn baldaŭ?", "type": "request"}
+{"id": "synth-0638", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la nomo estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0639", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la dosieron baldaŭ?", "type": "request"}
+{"id": "synth-0640", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la protokolo estos preta vendrede.", "type": "ack"}
+{"id": "synth-0641", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la protokolon matene.", "type": "status"}
+{"id": "synth-0642", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu aldoni la teston je la tria horo.", "type": "request"}
+{"id": "synth-0643", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Zeto helpos al vi vendrede.", "type": "name"}
+{"id": "synth-0644", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la protokolon hodiaŭ.", "type": "status"}
+{"id": "synth-0645", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la raporton nun.", "type": "ack"}
+{"id": "synth-0646", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Sendu la liston al Gama, mi petas.", "type": "name"}
+{"id": "synth-0647", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Zeto: Bonvolu ĝisdatigi la respondojn tuj. / Alfa: Jes, mi faros ĝin. Ĝi estos preta tuj. / Zeto: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Zeto", "text": "Bonvolu ĝisdatigi la respondojn tuj."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta tuj."}, {"sender": "Zeto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0648", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la demandoj estos preta hodiaŭ.", "type": "ack"}
+{"id": "synth-0649", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu legi la liston post la tagmanĝo. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta post la tagmanĝo. / Beto: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu legi la liston post la tagmanĝo."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta post la tagmanĝo."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0650", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la listo. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0651", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas skribi la adreson antaŭ la fino de la tago?", "type": "request"}
+{"id": "synth-0652", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la respondojn lunde.", "type": "ack"}
+{"id": "synth-0653", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mia amiko Beto helpos al vi matene.", "type": "name"}
+{"id": "synth-0654", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la protokolon lunde.", "type": "status"}
+{"id": "synth-0655", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la raporton tuj.", "type": "ack"}
+{"id": "synth-0656", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Certe. Mi sendos la demandojn vespere.", "type": "ack"}
+{"id": "synth-0657", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi naŭ mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0658", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la teston vendrede.", "type": "ack"}
+{"id": "synth-0659", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kontroli la liston tuj.", "type": "request"}
+{"id": "synth-0660", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas tridek membrojn, ne kvindek.", "type": "number"}
+{"id": "synth-0661", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas aldoni la liston nun?", "type": "request"}
+{"id": "synth-0662", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi kvar mesaĝojn matene.", "type": "number"}
+{"id": "synth-0663", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ni bezonas tri dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0664", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas aldoni la adreson vendrede?", "type": "request"}
+{"id": "synth-0665", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la respondoj estos preta tuj.", "type": "ack"}
+{"id": "synth-0666", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Mi konfirmas: la kopio estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0667", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la mesaĝon tuj.", "type": "ack"}
+{"id": "synth-0668", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la dosieron vendrede.", "type": "status"}
+{"id": "synth-0669", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Zeto helpos al vi morgaŭ.", "type": "name"}
+{"id": "synth-0670", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la planon hieraŭ.", "type": "status"}
+{"id": "synth-0671", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la protokolo. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0672", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Jes, mi faros ĝin post la tagmanĝo.", "type": "ack"}
+{"id": "synth-0673", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la respondojn vendrede.", "type": "status"}
+{"id": "synth-0674", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas tri membrojn, ne sep.", "type": "number"}
+{"id": "synth-0675", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la listo estos preta vendrede.", "type": "ack"}
+{"id": "synth-0676", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kopii la raporton matene?", "type": "request"}
+{"id": "synth-0677", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu aldoni la planon morgaŭ. / Zeto: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Alfa: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu aldoni la planon morgaŭ."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0678", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas kopii la planon je la tria horo?", "type": "request"}
+{"id": "synth-0679", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi ok mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0680", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la plano. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0681", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas legi la nomon antaŭ la fino de la tago?", "type": "request"}
+{"id": "synth-0682", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la dosieron nun.", "type": "status"}
+{"id": "synth-0683", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu aldoni la respondojn nun.", "type": "request"}
+{"id": "synth-0684", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Sendu la respondojn al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0685", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Alfa helpos al vi lunde.", "type": "name"}
+{"id": "synth-0686", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas forigi la planon je la tria horo?", "type": "request"}
+{"id": "synth-0687", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas du membrojn, ne tridek.", "type": "number"}
+{"id": "synth-0688", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la protokolo estos preta je la tria horo.", "type": "ack"}
+{"id": "synth-0689", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la respondojn vendrede?", "type": "request"}
+{"id": "synth-0690", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Cent procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0691", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu la adreson al Gama, mi petas.", "type": "name"}
+{"id": "synth-0692", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La teamo havas ok membrojn, ne tridek.", "type": "number"}
+{"id": "synth-0693", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la kopio. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0694", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la raporto. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0695", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu provi la liston hodiaŭ. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta hodiaŭ. / Delta: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu provi la liston hodiaŭ."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta hodiaŭ."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0696", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Saluton, Epsilono! Dankon pro via rapida respondo.", "type": "name"}
+{"id": "synth-0697", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu ĝisdatigi la planon morgaŭ. / Gama: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Alfa: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu ĝisdatigi la planon morgaŭ."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0698", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la planon morgaŭ.", "type": "ack"}
+{"id": "synth-0699", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas kvindek membrojn, ne cent.", "type": "number"}
+{"id": "synth-0700", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Bonvolu provi la dosieron morgaŭ.", "type": "request"}
+{"id": "synth-0701", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas provi la liston baldaŭ?", "type": "request"}
+{"id": "synth-0702", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Gama: Bonvolu aldoni la teston matene. / Delta: Jes, mi faros ĝin. Ĝi estos preta matene. / Gama: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Gama", "text": "Bonvolu aldoni la teston matene."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta matene."}, {"sender": "Gama", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0703", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu skribi la nomon lunde.", "type": "request"}
+{"id": "synth-0704", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La kodo havas eraron. Mi korektis ĝin baldaŭ.", "type": "status"}
+{"id": "synth-0705", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas legi la kopion matene?", "type": "request"}
+{"id": "synth-0706", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la raporton nun.", "type": "status"}
+{"id": "synth-0707", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la protokolo. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0708", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Sep procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0709", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la demandojn hodiaŭ.", "type": "ack"}
+{"id": "synth-0710", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la kopion tuj?", "type": "request"}
+{"id": "synth-0711", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Sendu la protokolon al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0712", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la nomo. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0713", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la teston matene.", "type": "ack"}
+{"id": "synth-0714", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi kvar mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0715", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mia amiko Zeto helpos al vi lunde.", "type": "name"}
+{"id": "synth-0716", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la mesaĝon tuj.", "type": "status"}
+{"id": "synth-0717", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0718", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la demandojn post la tagmanĝo.", "type": "request"}
+{"id": "synth-0719", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la kopion hodiaŭ.", "type": "ack"}
+{"id": "synth-0720", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi tridek mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0721", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ne problemo. Mi helpos al vi je la tria horo.", "type": "ack"}
+{"id": "synth-0722", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas ĝisdatigi la raporton vespere?", "type": "request"}
+{"id": "synth-0723", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la dosieron antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0724", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la testo. Ĝi estos finita vespere.", "type": "status"}
+{"id": "synth-0725", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kopii la dosieron vendrede?", "type": "request"}
+{"id": "synth-0726", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu legi la planon antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0727", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu aldoni la dosieron morgaŭ. / Alfa: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Epsilono: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu aldoni la dosieron morgaŭ."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0728", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la raporto. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0729", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu provi la planon matene.", "type": "request"}
+{"id": "synth-0730", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu legi la teston vespere.", "type": "request"}
+{"id": "synth-0731", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La laboro daŭros unu horojn.", "type": "number"}
+{"id": "synth-0732", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la respondojn matene.", "type": "ack"}
+{"id": "synth-0733", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Sendu la mesaĝon al Beto, mi petas.", "type": "name"}
+{"id": "synth-0734", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la raporton je la tria horo.", "type": "status"}
+{"id": "synth-0735", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La kodo havas eraron. Mi korektis ĝin hieraŭ.", "type": "status"}
+{"id": "synth-0736", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas aldoni la demandojn baldaŭ?", "type": "request"}
+{"id": "synth-0737", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Bonvolu kontroli la nomon lunde.", "type": "request"}
+{"id": "synth-0738", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu la raporton al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0739", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La teamo havas dudek membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0740", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas sep membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0741", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Zeto helpos al vi je la tria horo.", "type": "name"}
+{"id": "synth-0742", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu kontroli la dosieron je la tria horo. / Gama: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Alfa: Dankon. Mi atendas la rezulton. / Gama: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu kontroli la dosieron je la tria horo."}, {"sender": "Gama", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Gama", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0743", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ne problemo. Mi helpos al vi hodiaŭ.", "type": "ack"}
+{"id": "synth-0744", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la kopion antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0745", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La testo estas finita matene. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0746", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas kopii la adreson antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0747", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi dudek mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0748", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Bonvolu sendi la kopion matene.", "type": "request"}
+{"id": "synth-0749", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi dek mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0750", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi laboras pri la testo. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0751", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu sendi la mesaĝon hodiaŭ.", "type": "request"}
+{"id": "synth-0752", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu fini la nomon antaŭ la sesa horo. / Alfa: Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo. / Beto: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu fini la nomon antaŭ la sesa horo."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0753", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la teston hodiaŭ.", "type": "request"}
+{"id": "synth-0754", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la teston baldaŭ.", "type": "status"}
+{"id": "synth-0755", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi naŭ mesaĝojn matene.", "type": "number"}
+{"id": "synth-0756", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Sendu la liston al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0757", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas legi la teston antaŭ la fino de la tago?", "type": "request"}
+{"id": "synth-0758", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Gama helpos al vi nun.", "type": "name"}
+{"id": "synth-0759", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Bonvolu aldoni la protokolon vendrede.", "type": "request"}
+{"id": "synth-0760", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la nomon baldaŭ.", "type": "ack"}
+{"id": "synth-0761", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu aldoni la raporton antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0762", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la respondoj. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0763", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la kopion je la tria horo.", "type": "ack"}
+{"id": "synth-0764", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi sep mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0765", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi sep mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0766", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la planon hieraŭ.", "type": "ack"}
+{"id": "synth-0767", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la nomon antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0768", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas ses membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0769", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas sendi la raporton morgaŭ?", "type": "request"}
+{"id": "synth-0770", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas aldoni la demandojn post la tagmanĝo?", "type": "request"}
+{"id": "synth-0771", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la liston tuj.", "type": "status"}
+{"id": "synth-0772", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu sendi la planon je la tria horo.", "type": "request"}
+{"id": "synth-0773", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la demandoj. Ĝi estos finita lunde.", "type": "status"}
+{"id": "synth-0774", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Bonvolu aldoni la kopion morgaŭ.", "type": "request"}
+{"id": "synth-0775", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la adreso. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0776", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la protokolo estos preta baldaŭ.", "type": "ack"}
+{"id": "synth-0777", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la raporton vespere.", "type": "status"}
+{"id": "synth-0778", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la kopion hodiaŭ.", "type": "status"}
+{"id": "synth-0779", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la planon antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0780", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Sendu la protokolon al Epsilono, mi petas.", "type": "name"}
+{"id": "synth-0781", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Delta: Bonvolu ĝisdatigi la kopion baldaŭ. / Alfa: Jes, mi faros ĝin. Ĝi estos preta baldaŭ. / Delta: Dankon. Mi atendas la rezulton. / Alfa: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Delta", "text": "Bonvolu ĝisdatigi la kopion baldaŭ."}, {"sender": "Alfa", "text": "Jes, mi faros ĝin. Ĝi estos preta baldaŭ."}, {"sender": "Delta", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Alfa", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0782", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu kontroli la protokolon baldaŭ. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta baldaŭ. / Alfa: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu kontroli la protokolon baldaŭ."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta baldaŭ."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0783", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la dosieron hodiaŭ?", "type": "request"}
+{"id": "synth-0784", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu provi la dosieron vespere.", "type": "request"}
+{"id": "synth-0785", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kopii la nomon antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0786", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la liston je la tria horo.", "type": "status"}
+{"id": "synth-0787", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la demandoj estos preta tuj.", "type": "ack"}
+{"id": "synth-0788", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Bonvolu legi la nomon antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0789", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la demandojn vespere.", "type": "status"}
+{"id": "synth-0790", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la raporto. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0791", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "La teamo havas dek membrojn, ne kvin.", "type": "number"}
+{"id": "synth-0792", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la plano. Ĝi estos finita tuj.", "type": "status"}
+{"id": "synth-0793", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas sendi la kopion morgaŭ?", "type": "request"}
+{"id": "synth-0794", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la planon nun.", "type": "status"}
+{"id": "synth-0795", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas kopii la demandojn vendrede?", "type": "request"}
+{"id": "synth-0796", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi ok mesaĝojn baldaŭ.", "type": "number"}
+{"id": "synth-0797", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la adreso estos preta lunde.", "type": "ack"}
+{"id": "synth-0798", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "La reto estas rapida.", "type": "status"}
+{"id": "synth-0799", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la testo estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0800", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas forigi la kopion lunde?", "type": "request"}
+{"id": "synth-0801", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Jes, mi faros ĝin vespere.", "type": "ack"}
+{"id": "synth-0802", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Sendu la nomon al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0803", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi petas, ke vi sendu la mesaĝon.", "type": "request"}
+{"id": "synth-0804", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas provi la planon vespere?", "type": "request"}
+{"id": "synth-0805", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la raporto estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0806", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la adreson hodiaŭ.", "type": "status"}
+{"id": "synth-0807", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Ne problemo. Mi helpos al vi morgaŭ.", "type": "ack"}
+{"id": "synth-0808", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "La tasko estas preta. Mi sendis la dosieron antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0809", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Dankon. Mi ricevis la demandojn nun.", "type": "ack"}
+{"id": "synth-0810", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Bonvolu sendi la dosieron morgaŭ.", "type": "request"}
+{"id": "synth-0811", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Ni bezonas ok dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0812", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas forigi la demandojn je la tria horo?", "type": "request"}
+{"id": "synth-0813", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La tasko estas preta. Mi sendis la demandojn baldaŭ.", "type": "status"}
+{"id": "synth-0814", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi petas, ke vi sendu la raporton.", "type": "request"}
+{"id": "synth-0815", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la listo. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0816", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu fini la adreson tuj.", "type": "request"}
+{"id": "synth-0817", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu kontroli la mesaĝon antaŭ la sesa horo. / Beto: Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo. / Alfa: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu kontroli la mesaĝon antaŭ la sesa horo."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la sesa horo."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0818", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la adreson matene.", "type": "ack"}
+{"id": "synth-0819", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu kopii la liston nun.", "type": "request"}
+{"id": "synth-0820", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Sendu al mi tridek mesaĝojn nun.", "type": "number"}
+{"id": "synth-0821", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas ses membrojn, ne dek.", "type": "number"}
+{"id": "synth-0822", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas skribi la adreson vendrede?", "type": "request"}
+{"id": "synth-0823", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la dosieron tuj.", "type": "ack"}
+{"id": "synth-0824", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu kopii la planon je la tria horo. / Zeto: Jes, mi faros ĝin. Ĝi estos preta je la tria horo. / Beto: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu kopii la planon je la tria horo."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta je la tria horo."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0825", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas du membrojn, ne ses.", "type": "number"}
+{"id": "synth-0826", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Gama helpos al vi vespere.", "type": "name"}
+{"id": "synth-0827", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la raporton matene.", "type": "status"}
+{"id": "synth-0828", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Alfa helpos al vi tuj.", "type": "name"}
+{"id": "synth-0829", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas cent membrojn, ne kvindek.", "type": "number"}
+{"id": "synth-0830", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Du procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0831", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La testo estas finita vendrede. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0832", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la respondojn hodiaŭ.", "type": "ack"}
+{"id": "synth-0833", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita post la tagmanĝo.", "type": "status"}
+{"id": "synth-0834", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La teamo havas kvar membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0835", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Kvin procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0836", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la dosieron vespere.", "type": "status"}
+{"id": "synth-0837", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la protokolon nun.", "type": "status"}
+{"id": "synth-0838", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la dosiero estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0839", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la respondoj. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0840", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Sendu la protokolon al Beto, mi petas.", "type": "name"}
+{"id": "synth-0841", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas fini la demandojn post la tagmanĝo?", "type": "request"}
+{"id": "synth-0842", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Tridek procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0843", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas forigi la protokolon hodiaŭ?", "type": "request"}
+{"id": "synth-0844", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mia amiko Epsilono helpos al vi matene.", "type": "name"}
+{"id": "synth-0845", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas kopii la raporton vespere?", "type": "request"}
+{"id": "synth-0846", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "La teamo havas naŭ membrojn, ne du.", "type": "number"}
+{"id": "synth-0847", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Gama: Bonvolu provi la teston vendrede. / Beto: Jes, mi faros ĝin. Ĝi estos preta vendrede. / Gama: Dankon. Mi atendas la rezulton. / Beto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Gama", "text": "Bonvolu provi la teston vendrede."}, {"sender": "Beto", "text": "Jes, mi faros ĝin. Ĝi estos preta vendrede."}, {"sender": "Gama", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Beto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0848", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu forigi la planon antaŭ la fino de la tago.", "type": "request"}
+{"id": "synth-0849", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0850", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas legi la raporton vespere?", "type": "request"}
+{"id": "synth-0851", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la respondoj. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0852", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu forigi la protokolon vespere.", "type": "request"}
+{"id": "synth-0853", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Alfa helpos al vi post la tagmanĝo.", "type": "name"}
+{"id": "synth-0854", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Mi laboras pri la demandoj. Ĝi estos finita vendrede.", "type": "status"}
+{"id": "synth-0855", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu fini la raporton vespere.", "type": "request"}
+{"id": "synth-0856", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Mia amiko Alfa helpos al vi morgaŭ.", "type": "name"}
+{"id": "synth-0857", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi du mesaĝojn hodiaŭ.", "type": "number"}
+{"id": "synth-0858", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas fini la planon antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0859", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas legi la nomon vespere?", "type": "request"}
+{"id": "synth-0860", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la adreson antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0861", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Sendu al mi unu mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0862", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la kopion vendrede.", "type": "status"}
+{"id": "synth-0863", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu ĝisdatigi la planon baldaŭ. / Zeto: Jes, mi faros ĝin. Ĝi estos preta baldaŭ. / Epsilono: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu ĝisdatigi la planon baldaŭ."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta baldaŭ."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0864", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas provi la nomon tuj?", "type": "request"}
+{"id": "synth-0865", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas forigi la raporton post la tagmanĝo?", "type": "request"}
+{"id": "synth-0866", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la kopion vendrede.", "type": "ack"}
+{"id": "synth-0867", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Beto: Bonvolu kontroli la respondojn hodiaŭ. / Delta: Jes, mi faros ĝin. Ĝi estos preta hodiaŭ. / Beto: Dankon. Mi atendas la rezulton. / Delta: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Beto", "text": "Bonvolu kontroli la respondojn hodiaŭ."}, {"sender": "Delta", "text": "Jes, mi faros ĝin. Ĝi estos preta hodiaŭ."}, {"sender": "Beto", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Delta", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0868", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Saluton, Zeto. Kiel vi fartas?", "type": "name"}
+{"id": "synth-0869", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la teston tuj.", "type": "ack"}
+{"id": "synth-0870", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Ĉu vi povas fini la kopion tuj?", "type": "request"}
+{"id": "synth-0871", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la raporto. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0872", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Ne problemo. Mi helpos al vi matene.", "type": "ack"}
+{"id": "synth-0873", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la adreso estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0874", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la mesaĝo. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0875", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la liston lunde.", "type": "status"}
+{"id": "synth-0876", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas skribi la nomon antaŭ la sesa horo?", "type": "request"}
+{"id": "synth-0877", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Sendu al mi tridek mesaĝojn lunde.", "type": "number"}
+{"id": "synth-0878", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la protokolo estos preta morgaŭ.", "type": "ack"}
+{"id": "synth-0879", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Saluton, Alfa! Dankon pro via rapida respondo.", "type": "name"}
+{"id": "synth-0880", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la planon antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0881", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la demandoj estos preta nun.", "type": "ack"}
+{"id": "synth-0882", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la dosieron hodiaŭ.", "type": "ack"}
+{"id": "synth-0883", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la respondojn morgaŭ?", "type": "request"}
+{"id": "synth-0884", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la kopion tuj.", "type": "ack"}
+{"id": "synth-0885", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la raporto estos preta lunde.", "type": "ack"}
+{"id": "synth-0886", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mia nomo estas Gama. Mi estas nova agento.", "type": "name"}
+{"id": "synth-0887", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la nomon post la tagmanĝo.", "type": "status"}
+{"id": "synth-0888", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "La teamo havas kvin membrojn, ne du.", "type": "number"}
+{"id": "synth-0889", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Ni bezonas sep dosierojn por la tasko.", "type": "number"}
+{"id": "synth-0890", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas sendi la adreson lunde?", "type": "request"}
+{"id": "synth-0891", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La teamo havas cent membrojn, ne unu.", "type": "number"}
+{"id": "synth-0892", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la listo estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0893", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la demandoj. Ĝi estos finita je la tria horo.", "type": "status"}
+{"id": "synth-0894", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu kontroli la nomon tuj.", "type": "request"}
+{"id": "synth-0895", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la liston hieraŭ.", "type": "ack"}
+{"id": "synth-0896", "recipient": "Delta", "seed": 20261024, "sender": "Alfa", "text": "Dankon. Mi ricevis la adreson tuj.", "type": "ack"}
+{"id": "synth-0897", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi konfirmas: la adreso estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0898", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas cent membrojn, ne dudek.", "type": "number"}
+{"id": "synth-0899", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la nomon nun.", "type": "ack"}
+{"id": "synth-0900", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "La teamo havas kvindek membrojn, ne dek.", "type": "number"}
+{"id": "synth-0901", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu provi la respondojn antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0902", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "La testo estas finita je la tria horo. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0903", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Alfa: Bonvolu skribi la liston antaŭ la fino de la tago. / Epsilono: Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago. / Alfa: Dankon. Mi atendas la rezulton. / Epsilono: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Alfa", "text": "Bonvolu skribi la liston antaŭ la fino de la tago."}, {"sender": "Epsilono", "text": "Jes, mi faros ĝin. Ĝi estos preta antaŭ la fino de la tago."}, {"sender": "Alfa", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Epsilono", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0904", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Mi konfirmas: la nomo estos preta je la tria horo.", "type": "ack"}
+{"id": "synth-0905", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Bonvolu kontroli la liston je la tria horo.", "type": "request"}
+{"id": "synth-0906", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas unu membrojn, ne tri.", "type": "number"}
+{"id": "synth-0907", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la protokolon vespere.", "type": "ack"}
+{"id": "synth-0908", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Sendu la planon al Delta, mi petas.", "type": "name"}
+{"id": "synth-0909", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la listo. Ĝi estos finita baldaŭ.", "type": "status"}
+{"id": "synth-0910", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Jes, mi faros ĝin antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0911", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la kopion lunde.", "type": "ack"}
+{"id": "synth-0912", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Beto helpos al vi antaŭ la sesa horo.", "type": "name"}
+{"id": "synth-0913", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "La tasko estas preta. Mi sendis la nomon lunde.", "type": "status"}
+{"id": "synth-0914", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la liston vendrede.", "type": "ack"}
+{"id": "synth-0915", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu legi la nomon hodiaŭ.", "type": "request"}
+{"id": "synth-0916", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la nomon matene.", "type": "status"}
+{"id": "synth-0917", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kopii la dosieron matene.", "type": "request"}
+{"id": "synth-0918", "recipient": "Epsilono", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu aldoni la adreson hodiaŭ.", "type": "request"}
+{"id": "synth-0919", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Nombro de eraroj: kvindek.", "type": "number"}
+{"id": "synth-0920", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kontroli la raporton nun?", "type": "request"}
+{"id": "synth-0921", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la liston nun.", "type": "ack"}
+{"id": "synth-0922", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Dek procentoj de la tasko estas faritaj.", "type": "status"}
+{"id": "synth-0923", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Certe. Mi sendos la demandojn tuj.", "type": "ack"}
+{"id": "synth-0924", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Bonvolu skribi la demandojn antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0925", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Mi laboras pri la plano. Ĝi estos finita matene.", "type": "status"}
+{"id": "synth-0926", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La teamo havas kvin membrojn, ne ok.", "type": "number"}
+{"id": "synth-0927", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la kopion je la tria horo.", "type": "ack"}
+{"id": "synth-0928", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Sendu al mi kvin mesaĝojn vendrede.", "type": "number"}
+{"id": "synth-0929", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La teamo havas dudek membrojn, ne kvar.", "type": "number"}
+{"id": "synth-0930", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Mia amiko Gama helpos al vi tuj.", "type": "name"}
+{"id": "synth-0931", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "La servo funkcias bone.", "type": "status"}
+{"id": "synth-0932", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la planon lunde.", "type": "status"}
+{"id": "synth-0933", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mi konfirmas: la plano estos preta tuj.", "type": "ack"}
+{"id": "synth-0934", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi naŭ mesaĝojn antaŭ la fino de la tago.", "type": "number"}
+{"id": "synth-0935", "recipient": "Alfa", "seed": 20261024, "sender": "Delta", "text": "Mi konfirmas: la raporto estos preta antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0936", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi kvar mesaĝojn je la tria horo.", "type": "number"}
+{"id": "synth-0937", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la respondojn tuj.", "type": "status"}
+{"id": "synth-0938", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Bonvolu fini la liston antaŭ la sesa horo.", "type": "request"}
+{"id": "synth-0939", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Bonvolu forigi la dosieron hodiaŭ.", "type": "request"}
+{"id": "synth-0940", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la respondoj. Ĝi estos finita antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0941", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La teamo havas ses membrojn, ne kvin.", "type": "number"}
+{"id": "synth-0942", "recipient": "Gama", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la planon matene.", "type": "ack"}
+{"id": "synth-0943", "recipient": "Delta", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la protokolon antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0944", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Bonvolu forigi la liston baldaŭ.", "type": "request"}
+{"id": "synth-0945", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu sendi la respondojn post la tagmanĝo.", "type": "request"}
+{"id": "synth-0946", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas kopii la teston morgaŭ?", "type": "request"}
+{"id": "synth-0947", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la demandojn antaŭ la sesa horo.", "type": "status"}
+{"id": "synth-0948", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Ne problemo. Mi helpos al vi antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0949", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "Sendu la dosieron al Alfa, mi petas.", "type": "name"}
+{"id": "synth-0950", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas tri membrojn, ne kvin.", "type": "number"}
+{"id": "synth-0951", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Dankon. Mi ricevis la adreson hieraŭ.", "type": "ack"}
+{"id": "synth-0952", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas kontroli la teston post la tagmanĝo?", "type": "request"}
+{"id": "synth-0953", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Jes, mi faros ĝin tuj.", "type": "ack"}
+{"id": "synth-0954", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Dankon. Mi ricevis la respondojn antaŭ la fino de la tago.", "type": "ack"}
+{"id": "synth-0955", "recipient": "Epsilono", "seed": 20261024, "sender": "Beto", "text": "Mia amiko Gama helpos al vi lunde.", "type": "name"}
+{"id": "synth-0956", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi du mesaĝojn antaŭ la sesa horo.", "type": "number"}
+{"id": "synth-0957", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La teamo havas kvar membrojn, ne tri.", "type": "number"}
+{"id": "synth-0958", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Ĉu vi povas kopii la nomon tuj?", "type": "request"}
+{"id": "synth-0959", "recipient": "Beto", "seed": 20261024, "sender": "Gama", "text": "Mi laboras pri la nomo. Ĝi estos finita nun.", "type": "status"}
+{"id": "synth-0960", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Bonvolu kopii la planon vespere.", "type": "request"}
+{"id": "synth-0961", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "Mi petas, ke vi legu la nomon.", "type": "request"}
+{"id": "synth-0962", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu vi povas provi la demandojn je la tria horo?", "type": "request"}
+{"id": "synth-0963", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "Mia amiko Beto helpos al vi tuj.", "type": "name"}
+{"id": "synth-0964", "recipient": "Beto", "seed": 20261024, "sender": "Alfa", "text": "Bonvolu provi la kopion vendrede.", "type": "request"}
+{"id": "synth-0965", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Mi komencis la laboron hieraŭ kaj mi daŭrigos hodiaŭ.", "type": "status"}
+{"id": "synth-0966", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Mia amiko Delta helpos al vi baldaŭ.", "type": "name"}
+{"id": "synth-0967", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Sendu al mi naŭ mesaĝojn morgaŭ.", "type": "number"}
+{"id": "synth-0968", "recipient": "Gama", "seed": 20261024, "sender": "Delta", "text": "Sendu al mi sep mesaĝojn post la tagmanĝo.", "type": "number"}
+{"id": "synth-0969", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "Bonvolu ĝisdatigi la nomon je la tria horo.", "type": "request"}
+{"id": "synth-0970", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "La tasko estas preta. Mi sendis la demandojn je la tria horo.", "type": "status"}
+{"id": "synth-0971", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "Mia amiko Delta helpos al vi lunde.", "type": "name"}
+{"id": "synth-0972", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "Ĉu vi povas aldoni la protokolon lunde?", "type": "request"}
+{"id": "synth-0973", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Ĉu Gama estas nun libera? Mi bezonas helpon.", "type": "name"}
+{"id": "synth-0974", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "La teamo havas kvindek membrojn, ne naŭ.", "type": "number"}
+{"id": "synth-0975", "recipient": "Delta", "seed": 20261024, "sender": "Beto", "text": "Certe. Mi sendos la liston vespere.", "type": "ack"}
+{"id": "synth-0976", "recipient": "Delta", "seed": 20261024, "sender": "Zeto", "text": "La teamo havas ok membrojn, ne unu.", "type": "number"}
+{"id": "synth-0977", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Dankon. Mi ricevis la adreson vendrede.", "type": "ack"}
+{"id": "synth-0978", "recipient": "Beto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas kontroli la kopion tuj?", "type": "request"}
+{"id": "synth-0979", "recipient": "Gama", "seed": 20261024, "sender": "Zeto", "text": "Bonvolu forigi la demandojn nun.", "type": "request"}
+{"id": "synth-0980", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Sendu la respondojn al Beto, mi petas.", "type": "name"}
+{"id": "synth-0981", "recipient": "Epsilono", "seed": 20261024, "sender": "Delta", "text": "Bonvolu skribi la mesaĝon tuj.", "type": "request"}
+{"id": "synth-0982", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la planon tuj.", "type": "ack"}
+{"id": "synth-0983", "recipient": "Gama", "seed": 20261024, "sender": "Alfa", "text": "La tasko estas preta. Mi sendis la teston antaŭ la fino de la tago.", "type": "status"}
+{"id": "synth-0984", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Mi laboras pri la plano. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-0985", "recipient": "Beto", "seed": 20261024, "sender": "Epsilono", "text": "Mi konfirmas: la nomo estos preta antaŭ la sesa horo.", "type": "ack"}
+{"id": "synth-0986", "recipient": "Epsilono", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas forigi la teston je la tria horo?", "type": "request"}
+{"id": "synth-0987", "recipient": "Beto", "seed": 20261024, "sender": "Zeto", "text": "Ĉu vi povas provi la protokolon hodiaŭ?", "type": "request"}
+{"id": "synth-0988", "recipient": "Zeto", "seed": 20261024, "sender": "Epsilono", "text": "Epsilono: Bonvolu forigi la respondojn morgaŭ. / Zeto: Jes, mi faros ĝin. Ĝi estos preta morgaŭ. / Epsilono: Dankon. Mi atendas la rezulton. / Zeto: Mi finis. La rezulto estas bona; vi povas kontroli ĝin.", "turns": [{"sender": "Epsilono", "text": "Bonvolu forigi la respondojn morgaŭ."}, {"sender": "Zeto", "text": "Jes, mi faros ĝin. Ĝi estos preta morgaŭ."}, {"sender": "Epsilono", "text": "Dankon. Mi atendas la rezulton."}, {"sender": "Zeto", "text": "Mi finis. La rezulto estas bona; vi povas kontroli ĝin."}], "type": "dialogue"}
+{"id": "synth-0989", "recipient": "Zeto", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la protokolon morgaŭ.", "type": "ack"}
+{"id": "synth-0990", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Certe. Mi sendos la nomon matene.", "type": "ack"}
+{"id": "synth-0991", "recipient": "Alfa", "seed": 20261024, "sender": "Zeto", "text": "Certe. Mi sendos la protokolon hodiaŭ.", "type": "ack"}
+{"id": "synth-0992", "recipient": "Alfa", "seed": 20261024, "sender": "Gama", "text": "Certe. Mi sendos la teston vendrede.", "type": "ack"}
+{"id": "synth-0993", "recipient": "Epsilono", "seed": 20261024, "sender": "Gama", "text": "La testo estas finita antaŭ la sesa horo. Ĉio estas bone.", "type": "status"}
+{"id": "synth-0994", "recipient": "Zeto", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la teston hieraŭ.", "type": "status"}
+{"id": "synth-0995", "recipient": "Delta", "seed": 20261024, "sender": "Epsilono", "text": "La teamo havas du membrojn, ne unu.", "type": "number"}
+{"id": "synth-0996", "recipient": "Zeto", "seed": 20261024, "sender": "Delta", "text": "Ĉu vi povas fini la adreson matene?", "type": "request"}
+{"id": "synth-0997", "recipient": "Alfa", "seed": 20261024, "sender": "Beto", "text": "Sendu la planon al Zeto, mi petas.", "type": "name"}
+{"id": "synth-0998", "recipient": "Alfa", "seed": 20261024, "sender": "Epsilono", "text": "Dankon. Mi ricevis la raporton nun.", "type": "ack"}
+{"id": "synth-0999", "recipient": "Zeto", "seed": 20261024, "sender": "Alfa", "text": "Mi laboras pri la respondoj. Ĝi estos finita morgaŭ.", "type": "status"}
+{"id": "synth-1000", "recipient": "Gama", "seed": 20261024, "sender": "Beto", "text": "La tasko estas preta. Mi sendis la adreson lunde.", "type": "status"}
