@@ -32,6 +32,11 @@ QUARANTINE/soc.culture.esperanto/extracted.tsv
 RAW/lf-arkivo/*
 !RAW/lf-arkivo/README.md
 
+# HF dataset blobs (esp-9c0/esp-aor; digests + provenance in RAW/hf-*/README.md)
+RAW/hf-*/data/*
+!RAW/hf-*/README.md
+EVAL/**/.cache/
+
 # nix build artifacts (playwright/chromium install leaves one)
 /result
 
